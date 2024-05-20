@@ -1,0 +1,69 @@
+TOC_HIERARCHY_SCHEMA_TEMPLATE = {
+    "<Level 1 Section Type>": "#",
+    "<Level 2 Section Type>": "##",
+    "<Level 3 Section Type>": "###",
+    "<Level 4 Section Type>": "####",
+    "<Level 5 Section Type>": "#####",
+    "<Level 6 Section Type>": "######"
+}
+
+TOC_HIERARCHY_SYS_PROMPT = f"""You are tasked with creating a JSON dictionary that maps each unique hierarchical section type to the corresponding number of '#' characters used to denote its level in the Table of Contents (ToC). You will be given a Markdown string ToC and you must return a structured JSON object according to the following instructions:
+
+**Instructions:**
+1. **Inclusions:**
+   - You must include every single unique hierarchical section type that appears in the Table of Contents and is prefixed with a number of '#' characters.
+   - Only include section types that are REPEATED in the Table of Contents.
+   
+2. **Exclusions:**
+   - You must NOT include the enumeration of the hierarchical section types. Include only the base section type, e.g., 'Chapter', 'Part', 'Section', etc.
+   
+3. **Comprehensiveness:**
+   - Ensure all levels of hierarchy (represented by varying numbers of '#' characters) are considered.
+   - Include all REPEATED section types regardless of their position in the hierarchy.
+
+4. **Example Format:**
+   - Use the following example format for the dictionary:
+
+{TOC_HIERARCHY_SCHEMA_TEMPLATE}
+"""
+TOC_SCHEMA_SYS_PROMPT = """You are working for the Australian Tax Office (ATO), the Australian Government's principal revenue collection agency. Your task is to transform the Table of Contents (ToC) from the Income Tax Assessment Act, provided in Markdown format, into a structured JSON object according to the following guidelines:
+
+**Instructions:**
+1. **Section Hierarchy:** You must identify the hierarchical level of each section. Each "section" key in the ToC text is prefixed by a series of "#" symbols that correspond to their hierarchical level.
+2. **Section Types:** The ToC contains sections of various types, such as: {section_types}. These must be standalone sections in the JSON object.
+2. **Multiple Sections at the Same Level:** Sections sharing the same number of "#" symbols must be placed at the same hierarchical level within the JSON object.
+3. **Missing Section Numbers:** If a section lacks a numeric identifier, set the "number" value to an empty string ("").
+4. **No Empty Sections:** The "section" key must never be an empty string.
+5. **Lowest Level Formatting:** The lowest level in the JSON hierarchy must only contain the "number" and "title" keys. These levels have no "#" prefix in the ToC.
+
+**Exclusions:**
+- Exclude dots, page numbers, and any text not explicitly listed as a ToC item.
+
+**JSON Format:**
+Please format the ToC into a JSON structure as outlined below:
+
+{TOC_SCHEMA}
+"""
+TOC_SCHEMA_SYS_PROMPT_PLUS = """You are working for the Australian Tax Office (ATO), the Australian Government's principal revenue collection agency. Your task is to transform the Table of Contents (ToC) from the Income Tax Assessment Act, provided in Markdown format, into a structured JSON object according to the following guidelines:
+
+**Instructions:**
+1. **Section Hierarchy:** You must identify the hierarchical level of each section. Each "section" key in the ToC text is prefixed by a series of "#" symbols that correspond to their hierarchical level.
+2. **Section Types:** The ToC contains sections of various types, such as: {section_types}. These must be standalone sections in the JSON object.
+2. **Multiple Sections at the Same Level:** Sections sharing the same number of "#" symbols must be placed at the same hierarchical level within the JSON object.
+3. **Missing Section Numbers:** If a section lacks a numeric identifier, set the "number" value to an empty string ("").
+4. **No Empty Sections:** The "section" key must never be an empty string.
+5. **Lowest Level Formatting:** The lowest level in the JSON hierarchy must only contain the "number" and "title" keys. These levels have no "#" prefix in the ToC.
+
+**Exclusions:**
+- Exclude dots, page numbers, and any text not explicitly listed as a ToC item.
+
+**Split Sections:** 
+The following section has been split into multiple parts: 
+- The current section is: {chapter_title}
+- The current child section is: {part_title}
+
+**JSON Format:**
+Please format the ToC into a JSON structure as outlined below:
+
+{TOC_SCHEMA}
+"""

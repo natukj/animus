@@ -1,0 +1,2273 @@
+{
+    "contents": [
+        {
+            "chapter": "## Chapter 1\u2014Introduction and core provisions 1",
+            "part": "Full Chapter",
+            "toc": [
+                {
+                    "section": "Chapter",
+                    "number": "1",
+                    "title": "Introduction and core provisions",
+                    "children": [
+                        {
+                            "section": "Part",
+                            "number": "1-1",
+                            "title": "Preliminary",
+                            "children": [
+                                {
+                                    "section": "Division",
+                                    "number": "1",
+                                    "title": "Preliminary",
+                                    "children": [
+                                        {
+                                            "number": "1-1",
+                                            "title": "Short title"
+                                        },
+                                        {
+                                            "number": "1-2",
+                                            "title": "Commencement"
+                                        },
+                                        {
+                                            "number": "1-3",
+                                            "title": "Differences in style not to affect meaning"
+                                        },
+                                        {
+                                            "number": "1-4",
+                                            "title": "Application"
+                                        },
+                                        {
+                                            "number": "1-7",
+                                            "title": "Administration of this Act"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Part",
+                            "number": "1-2",
+                            "title": "A Guide to this Act",
+                            "children": [
+                                {
+                                    "section": "Division",
+                                    "number": "2",
+                                    "title": "How to use this Act",
+                                    "children": [
+                                        {
+                                            "section": "Subdivision",
+                                            "number": "2-A",
+                                            "title": "How to find your way around",
+                                            "children": [
+                                                {
+                                                    "number": "2-1",
+                                                    "title": "The design"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "section": "Subdivision",
+                                            "number": "2-B",
+                                            "title": "How the Act is arranged",
+                                            "children": [
+                                                {
+                                                    "number": "2-5",
+                                                    "title": "The pyramid"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "section": "Subdivision",
+                                            "number": "2-C",
+                                            "title": "How to identify defined terms and find the definitions",
+                                            "children": [
+                                                {
+                                                    "number": "2-10",
+                                                    "title": "When defined terms are identified"
+                                                },
+                                                {
+                                                    "number": "2-15",
+                                                    "title": "When terms are _not_ identified"
+                                                },
+                                                {
+                                                    "number": "2-20",
+                                                    "title": "Identifying the defined term in a definition"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "section": "Subdivision",
+                                            "number": "2-D",
+                                            "title": "The numbering system",
+                                            "children": [
+                                                {
+                                                    "number": "2-25",
+                                                    "title": "Purposes"
+                                                },
+                                                {
+                                                    "number": "2-30",
+                                                    "title": "Gaps in the numbering"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "section": "Subdivision",
+                                            "number": "2-E",
+                                            "title": "Status of Guides and other non-operative material",
+                                            "children": [
+                                                {
+                                                    "number": "2-35",
+                                                    "title": "Non-operative material"
+                                                },
+                                                {
+                                                    "number": "2-40",
+                                                    "title": "Guides"
+                                                },
+                                                {
+                                                    "number": "2-45",
+                                                    "title": "Other material"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Division",
+                                    "number": "3",
+                                    "title": "What this Act is about",
+                                    "children": [
+                                        {
+                                            "number": "3-5",
+                                            "title": "Annual income tax"
+                                        },
+                                        {
+                                            "number": "3-10",
+                                            "title": "Your other obligations as a taxpayer"
+                                        },
+                                        {
+                                            "number": "3-15",
+                                            "title": "Your obligations _other than_ as a taxpayer"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Part",
+                            "number": "1-3",
+                            "title": "Core provisions",
+                            "children": [
+                                {
+                                    "section": "Division",
+                                    "number": "4",
+                                    "title": "How to work out the income tax payable on your taxable income",
+                                    "children": [
+                                        {
+                                            "number": "4-1",
+                                            "title": "Who must pay income tax"
+                                        },
+                                        {
+                                            "number": "4-5",
+                                            "title": "Meaning of _you_"
+                                        },
+                                        {
+                                            "number": "4-10",
+                                            "title": "How to work out how much income tax you must pay"
+                                        },
+                                        {
+                                            "number": "4-15",
+                                            "title": "How to work out your taxable income"
+                                        },
+                                        {
+                                            "number": "4-25",
+                                            "title": "Special provisions for working out your basic income tax liability"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Division",
+                                    "number": "5",
+                                    "title": "How to work out when to pay your income tax",
+                                    "children": [
+                                        {
+                                            "section": "Guide",
+                                            "number": "5",
+                                            "title": "Guide to Division 5",
+                                            "children": [
+                                                {
+                                                    "number": "5-1",
+                                                    "title": "What this Division is about"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "section": "Subdivision",
+                                            "number": "5-A",
+                                            "title": "How to work out when to pay your income tax",
+                                            "children": [
+                                                {
+                                                    "number": "5-5",
+                                                    "title": "When income tax is payable"
+                                                },
+                                                {
+                                                    "number": "5-10",
+                                                    "title": "When shortfall interest charge is payable"
+                                                },
+                                                {
+                                                    "number": "5-15",
+                                                    "title": "General interest charge payable on unpaid income tax or shortfall interest charge"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Division",
+                                    "number": "6",
+                                    "title": "Assessable income and exempt income",
+                                    "children": [
+                                        {
+                                            "section": "Guide",
+                                            "number": "6",
+                                            "title": "Guide to Division 6",
+                                            "children": [
+                                                {
+                                                    "number": "6-1",
+                                                    "title": "Diagram showing relationships among concepts in this Division"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "section": "Operative provisions",
+                                            "number": "6",
+                                            "title": "Operative provisions",
+                                            "children": [
+                                                {
+                                                    "number": "6-5",
+                                                    "title": "Income according to ordinary concepts ( _ordinary_ _income_ )"
+                                                },
+                                                {
+                                                    "number": "6-10",
+                                                    "title": "Other assessable income ( _statutory income_ )"
+                                                },
+                                                {
+                                                    "number": "6-15",
+                                                    "title": "What is _not_ assessable income"
+                                                },
+                                                {
+                                                    "number": "6-20",
+                                                    "title": "Exempt income"
+                                                },
+                                                {
+                                                    "number": "6-23",
+                                                    "title": "Non-assessable non-exempt income"
+                                                },
+                                                {
+                                                    "number": "6-25",
+                                                    "title": "Relationships among various rules about ordinary income"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Division",
+                                    "number": "8",
+                                    "title": "Deductions",
+                                    "children": [
+                                        {
+                                            "number": "8-1",
+                                            "title": "General deductions"
+                                        },
+                                        {
+                                            "number": "8-5",
+                                            "title": "Specific deductions"
+                                        },
+                                        {
+                                            "number": "8-10",
+                                            "title": "No double deductions"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Part",
+                            "number": "1-4",
+                            "title": "Checklists of what is covered by concepts used in the core provisions",
+                            "children": [
+                                {
+                                    "section": "Division",
+                                    "number": "9",
+                                    "title": "Entities that must pay income tax",
+                                    "children": [
+                                        {
+                                            "number": "9-1A",
+                                            "title": "Effect of this Division"
+                                        },
+                                        {
+                                            "number": "9-1",
+                                            "title": "List of entities"
+                                        },
+                                        {
+                                            "number": "9-5",
+                                            "title": "Entities that work out their income tax by reference to something other than taxable income"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Division",
+                                    "number": "10",
+                                    "title": "Particular kinds of assessable income",
+                                    "children": [
+                                        {
+                                            "number": "10-1",
+                                            "title": "Effect of this Division"
+                                        },
+                                        {
+                                            "number": "10-5",
+                                            "title": "List of provisions about assessable income"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Division",
+                                    "number": "11",
+                                    "title": "Particular kinds of non-assessable income",
+                                    "children": [
+                                        {
+                                            "section": "Subdivision",
+                                            "number": "11-A",
+                                            "title": "Lists of classes of exempt income",
+                                            "children": [
+                                                {
+                                                    "number": "11-1A",
+                                                    "title": "Effect of this Subdivision"
+                                                },
+                                                {
+                                                    "number": "11-1",
+                                                    "title": "Overview"
+                                                },
+                                                {
+                                                    "number": "11-5",
+                                                    "title": "Entities that are exempt, no matter what kind of ordinary or statutory income they have"
+                                                },
+                                                {
+                                                    "number": "11-15",
+                                                    "title": "Ordinary or statutory income which is exempt"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "section": "Subdivision",
+                                            "number": "11-B",
+                                            "title": "Particular kinds of non-assessable non-exempt income",
+                                            "children": [
+                                                {
+                                                    "number": "11-50",
+                                                    "title": "Effect of this Subdivision"
+                                                },
+                                                {
+                                                    "number": "11-55",
+                                                    "title": "List of non-assessable non-exempt income provisions"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Division",
+                                    "number": "12",
+                                    "title": "Particular kinds of deductions",
+                                    "children": [
+                                        {
+                                            "number": "12-1",
+                                            "title": "Effect of this Division"
+                                        },
+                                        {
+                                            "number": "12-5",
+                                            "title": "List of provisions about deductions"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Division",
+                                    "number": "13",
+                                    "title": "Tax offsets",
+                                    "children": [
+                                        {
+                                            "number": "13-1A",
+                                            "title": "Effect of this Division"
+                                        },
+                                        {
+                                            "number": "13-1",
+                                            "title": "List of tax offsets"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": "## Chapter 2\u2014Liability rules of general application 93",
+            "part": "### Part 2-1\u2014Assessable income 93",
+            "toc": [
+                {
+                    "section": "Chapter",
+                    "number": "2",
+                    "title": "Liability rules of general application",
+                    "children": [
+                        {
+                            "section": "Part",
+                            "number": "2-1",
+                            "title": "Assessable income",
+                            "children": [
+                                {
+                                    "section": "Division",
+                                    "number": "15",
+                                    "title": "Some items of assessable income",
+                                    "children": [
+                                        {
+                                            "section": "Guide",
+                                            "number": "15-1",
+                                            "title": "What this Division is about",
+                                            "children": []
+                                        },
+                                        {
+                                            "section": "Operative provisions",
+                                            "number": "",
+                                            "title": "",
+                                            "children": [
+                                                {
+                                                    "number": "15-2",
+                                                    "title": "Allowances and other things provided in respect of employment or services"
+                                                },
+                                                {
+                                                    "number": "15-3",
+                                                    "title": "Return to work payments"
+                                                },
+                                                {
+                                                    "number": "15-5",
+                                                    "title": "Accrued leave transfer payments"
+                                                },
+                                                {
+                                                    "number": "15-10",
+                                                    "title": "Bounties and subsidies"
+                                                },
+                                                {
+                                                    "number": "15-15",
+                                                    "title": "Profit-making undertaking or plan"
+                                                },
+                                                {
+                                                    "number": "15-20",
+                                                    "title": "Royalties"
+                                                },
+                                                {
+                                                    "number": "15-22",
+                                                    "title": "Payments made to members of a copyright collecting society"
+                                                },
+                                                {
+                                                    "number": "15-23",
+                                                    "title": "Payments of resale royalties by resale royalty collecting society"
+                                                },
+                                                {
+                                                    "number": "15-25",
+                                                    "title": "Amount received for lease obligation to repair"
+                                                },
+                                                {
+                                                    "number": "15-30",
+                                                    "title": "Insurance or indemnity for loss of assessable income"
+                                                },
+                                                {
+                                                    "number": "15-35",
+                                                    "title": "Interest on overpayments and early payments of tax"
+                                                },
+                                                {
+                                                    "number": "15-40",
+                                                    "title": "Providing mining, quarrying or prospecting information or geothermal exploration information"
+                                                },
+                                                {
+                                                    "number": "15-45",
+                                                    "title": "Amounts paid under forestry agreements"
+                                                },
+                                                {
+                                                    "number": "15-46",
+                                                    "title": "Amounts paid under forestry managed investment schemes"
+                                                },
+                                                {
+                                                    "number": "15-50",
+                                                    "title": "Work in progress amounts"
+                                                },
+                                                {
+                                                    "number": "15-55",
+                                                    "title": "Certain amounts paid under funeral policy"
+                                                },
+                                                {
+                                                    "number": "15-60",
+                                                    "title": "Certain amounts paid under scholarship plan"
+                                                },
+                                                {
+                                                    "number": "15-70",
+                                                    "title": "Reimbursed car expenses"
+                                                },
+                                                {
+                                                    "number": "15-75",
+                                                    "title": "Bonuses"
+                                                },
+                                                {
+                                                    "number": "15-80",
+                                                    "title": "Franked distributions entitled to a foreign income tax deduction\u2014Additional Tier 1 capital exception"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Division",
+                                    "number": "17",
+                                    "title": "Effect of GST etc. on assessable income",
+                                    "children": [
+                                        {
+                                            "section": "Guide",
+                                            "number": "17-1",
+                                            "title": "What this Division is about",
+                                            "children": []
+                                        },
+                                        {
+                                            "number": "17-5",
+                                            "title": "GST and increasing adjustments"
+                                        },
+                                        {
+                                            "number": "17-10",
+                                            "title": "Certain decreasing adjustments"
+                                        },
+                                        {
+                                            "number": "17-15",
+                                            "title": "Elements in calculation of amounts"
+                                        },
+                                        {
+                                            "number": "17-20",
+                                            "title": "GST groups and GST joint ventures"
+                                        },
+                                        {
+                                            "number": "17-30",
+                                            "title": "Special credits because of indirect tax transition"
+                                        },
+                                        {
+                                            "number": "17-35",
+                                            "title": "Certain sections not to apply to certain assets or expenditure"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Division",
+                                    "number": "20",
+                                    "title": "Amounts included to reverse the effect of past deductions",
+                                    "children": [
+                                        {
+                                            "section": "Guide",
+                                            "number": "20-1",
+                                            "title": "What this Division is about",
+                                            "children": []
+                                        },
+                                        {
+                                            "number": "20-5",
+                                            "title": "Other provisions that reverse the effect of deductions"
+                                        },
+                                        {
+                                            "section": "Subdivision",
+                                            "number": "20-A",
+                                            "title": "Insurance, indemnity or other recoupment for deductible expenses",
+                                            "children": [
+                                                {
+                                                    "section": "Guide",
+                                                    "number": "20-10",
+                                                    "title": "What this Subdivision is about",
+                                                    "children": []
+                                                },
+                                                {
+                                                    "number": "20-15",
+                                                    "title": "How to use this Subdivision"
+                                                },
+                                                {
+                                                    "number": "20-20",
+                                                    "title": "Assessable recoupments"
+                                                },
+                                                {
+                                                    "number": "20-25",
+                                                    "title": "What is recoupment?"
+                                                },
+                                                {
+                                                    "number": "20-30",
+                                                    "title": "Tables of deductions for which recoupments are assessable"
+                                                },
+                                                {
+                                                    "number": "20-35",
+                                                    "title": "If the expense is deductible in a single income year"
+                                                },
+                                                {
+                                                    "number": "20-40",
+                                                    "title": "If the expense is deductible over 2 or more income years"
+                                                },
+                                                {
+                                                    "number": "20-45",
+                                                    "title": "Effect of balancing charge"
+                                                },
+                                                {
+                                                    "number": "20-50",
+                                                    "title": "If the expense is only partially deductible"
+                                                },
+                                                {
+                                                    "number": "20-55",
+                                                    "title": "Meaning of previous recoupment law"
+                                                },
+                                                {
+                                                    "number": "20-60",
+                                                    "title": "If you are the only entity that can deduct an amount for the loss or outgoing"
+                                                },
+                                                {
+                                                    "number": "20-65",
+                                                    "title": "If 2 or more entities can deduct amounts for the loss or outgoing"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "section": "Subdivision",
+                                            "number": "20-B",
+                                            "title": "Disposal of a car for which lease payments have been deducted",
+                                            "children": [
+                                                {
+                                                    "section": "Guide",
+                                                    "number": "20-100",
+                                                    "title": "What this Subdivision is about",
+                                                    "children": []
+                                                },
+                                                {
+                                                    "number": "20-105",
+                                                    "title": "Map of this Subdivision"
+                                                },
+                                                {
+                                                    "number": "20-110",
+                                                    "title": "Disposal of a leased car for profit"
+                                                },
+                                                {
+                                                    "number": "20-115",
+                                                    "title": "Working out the profit on the disposal"
+                                                },
+                                                {
+                                                    "number": "20-120",
+                                                    "title": "Meaning of notional depreciation"
+                                                },
+                                                {
+                                                    "number": "20-125",
+                                                    "title": "Disposal of a leased car for profit"
+                                                },
+                                                {
+                                                    "number": "20-130",
+                                                    "title": "Successive leases"
+                                                },
+                                                {
+                                                    "number": "20-135",
+                                                    "title": "No amount included if earlier disposal for market value"
+                                                },
+                                                {
+                                                    "number": "20-140",
+                                                    "title": "Reducing the amount to be included if there has been an earlier disposal"
+                                                },
+                                                {
+                                                    "number": "20-145",
+                                                    "title": "No amount included if you inherited the car"
+                                                },
+                                                {
+                                                    "number": "20-150",
+                                                    "title": "Reducing the amount to be included if another provision requires you to include an amount for the disposal"
+                                                },
+                                                {
+                                                    "number": "20-155",
+                                                    "title": "Exception for particular cars taken on hire"
+                                                },
+                                                {
+                                                    "number": "20-157",
+                                                    "title": "Exception for small business entities"
+                                                },
+                                                {
+                                                    "number": "20-160",
+                                                    "title": "Disposal of an interest in a car"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": "## Chapter 2\u2014Liability rules of general application 93",
+            "part": "### Part 2-5\u2014Rules about deductibility of particular kinds of - Split 1",
+            "toc": [
+                {
+                    "section": "Part",
+                    "number": "2-5",
+                    "title": "Rules about deductibility of particular kinds of amounts",
+                    "children": [
+                        {
+                            "section": "Division",
+                            "number": "25",
+                            "title": "Some amounts you can deduct",
+                            "children": [
+                                {
+                                    "section": "Guide",
+                                    "number": "",
+                                    "title": "Guide to Division 25",
+                                    "children": [
+                                        {
+                                            "number": "25-1",
+                                            "title": "What this Division is about"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Operative provisions",
+                                    "number": "",
+                                    "title": "Operative provisions",
+                                    "children": [
+                                        {
+                                            "number": "25-5",
+                                            "title": "Tax-related expenses"
+                                        },
+                                        {
+                                            "number": "25-10",
+                                            "title": "Repairs"
+                                        },
+                                        {
+                                            "number": "25-15",
+                                            "title": "Amount paid for lease obligation to repair"
+                                        },
+                                        {
+                                            "number": "25-20",
+                                            "title": "Lease document expenses"
+                                        },
+                                        {
+                                            "number": "25-25",
+                                            "title": "Borrowing expenses"
+                                        },
+                                        {
+                                            "number": "25-30",
+                                            "title": "Expenses of discharging a mortgage"
+                                        },
+                                        {
+                                            "number": "25-35",
+                                            "title": "Bad debts"
+                                        },
+                                        {
+                                            "number": "25-40",
+                                            "title": "Loss from profit-making undertaking or plan"
+                                        },
+                                        {
+                                            "number": "25-45",
+                                            "title": "Loss by theft etc."
+                                        },
+                                        {
+                                            "number": "25-47",
+                                            "title": "Misappropriation where a balancing adjustment event occurs"
+                                        },
+                                        {
+                                            "number": "25-50",
+                                            "title": "Payments of pensions, gratuities or retiring allowances"
+                                        },
+                                        {
+                                            "number": "25-55",
+                                            "title": "Payments to associations"
+                                        },
+                                        {
+                                            "number": "25-60",
+                                            "title": "Parliament election expenses"
+                                        },
+                                        {
+                                            "number": "25-65",
+                                            "title": "Local government election expenses"
+                                        },
+                                        {
+                                            "number": "25-70",
+                                            "title": "Deduction for election expenses does not extend to entertainment"
+                                        },
+                                        {
+                                            "number": "25-75",
+                                            "title": "Rates and land taxes on premises used to produce mutual receipts"
+                                        },
+                                        {
+                                            "number": "25-85",
+                                            "title": "Certain returns in respect of debt interests"
+                                        },
+                                        {
+                                            "number": "25-90",
+                                            "title": "Deduction relating to foreign non-assessable non-exempt income"
+                                        },
+                                        {
+                                            "number": "25-95",
+                                            "title": "Deduction for work in progress amounts"
+                                        },
+                                        {
+                                            "number": "25-100",
+                                            "title": "Travel between workplaces"
+                                        },
+                                        {
+                                            "number": "25-110",
+                                            "title": "Capital expenditure to terminate lease etc."
+                                        },
+                                        {
+                                            "number": "25-115",
+                                            "title": "Deduction for payment of rent from land investment by operating entity to asset entity in relation to approved economic infrastructure facility"
+                                        },
+                                        {
+                                            "number": "25-120",
+                                            "title": "Transitional\u2014deduction for payment of rent from land investment by operating entity to asset entity"
+                                        },
+                                        {
+                                            "number": "25-125",
+                                            "title": "COVID-19 tests"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Division",
+                            "number": "26",
+                            "title": "Some amounts you cannot deduct, or cannot deduct in full",
+                            "children": [
+                                {
+                                    "section": "Guide",
+                                    "number": "",
+                                    "title": "Guide to Division 26",
+                                    "children": [
+                                        {
+                                            "number": "26-1",
+                                            "title": "What this Division is about"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Operative provisions",
+                                    "number": "",
+                                    "title": "Operative provisions",
+                                    "children": [
+                                        {
+                                            "number": "26-5",
+                                            "title": "Penalties"
+                                        },
+                                        {
+                                            "number": "26-10",
+                                            "title": "Leave payments"
+                                        },
+                                        {
+                                            "number": "26-15",
+                                            "title": "Franchise fees windfall tax"
+                                        },
+                                        {
+                                            "number": "26-17",
+                                            "title": "Commonwealth places windfall tax"
+                                        },
+                                        {
+                                            "number": "26-19",
+                                            "title": "Rebatable benefits"
+                                        },
+                                        {
+                                            "number": "26-20",
+                                            "title": "Assistance to students"
+                                        },
+                                        {
+                                            "number": "26-22",
+                                            "title": "Political contributions and gifts"
+                                        },
+                                        {
+                                            "number": "26-25",
+                                            "title": "Interest or royalty"
+                                        },
+                                        {
+                                            "number": "26-25A",
+                                            "title": "Payments to employees\u2014labour mobility programs"
+                                        },
+                                        {
+                                            "number": "26-26",
+                                            "title": "Non-share distributions and dividends"
+                                        },
+                                        {
+                                            "number": "26-30",
+                                            "title": "Relative\u2019s travel expenses"
+                                        },
+                                        {
+                                            "number": "26-31",
+                                            "title": "Travel related to use of residential premises as residential accommodation"
+                                        },
+                                        {
+                                            "number": "26-35",
+                                            "title": "Reducing deductions for amounts paid to related entities"
+                                        },
+                                        {
+                                            "number": "26-40",
+                                            "title": "Maintaining your family"
+                                        },
+                                        {
+                                            "number": "26-45",
+                                            "title": "Recreational club expenses"
+                                        },
+                                        {
+                                            "number": "26-47",
+                                            "title": "Non-business boating activities"
+                                        },
+                                        {
+                                            "number": "26-50",
+                                            "title": "Expenses for a leisure facility"
+                                        },
+                                        {
+                                            "number": "26-52",
+                                            "title": "Bribes to foreign public officials"
+                                        },
+                                        {
+                                            "number": "26-53",
+                                            "title": "Bribes to public officials"
+                                        },
+                                        {
+                                            "number": "26-54",
+                                            "title": "Expenditure relating to illegal activities"
+                                        },
+                                        {
+                                            "number": "26-55",
+                                            "title": "Limit on deductions"
+                                        },
+                                        {
+                                            "number": "26-60",
+                                            "title": "Superannuation contributions surcharge"
+                                        },
+                                        {
+                                            "number": "26-68",
+                                            "title": "Loss from disposal of eligible venture capital investments"
+                                        },
+                                        {
+                                            "number": "26-70",
+                                            "title": "Loss from disposal of venture capital equity"
+                                        },
+                                        {
+                                            "number": "26-75",
+                                            "title": "Excess non-concessional contributions tax cannot be deducted"
+                                        },
+                                        {
+                                            "number": "26-80",
+                                            "title": "Financing costs on loans to pay superannuation contribution"
+                                        },
+                                        {
+                                            "number": "26-85",
+                                            "title": "Borrowing costs on loans to pay life insurance premiums"
+                                        },
+                                        {
+                                            "number": "26-90",
+                                            "title": "Superannuation supervisory levy"
+                                        },
+                                        {
+                                            "number": "26-95",
+                                            "title": "Superannuation guarantee charge"
+                                        },
+                                        {
+                                            "number": "26-96",
+                                            "title": "Laminaria and Corallina decommissioning levy cannot be deducted"
+                                        },
+                                        {
+                                            "number": "26-97",
+                                            "title": "National Disability Insurance Scheme expenditure"
+                                        },
+                                        {
+                                            "number": "26-98",
+                                            "title": "Division 293 tax cannot be deducted"
+                                        },
+                                        {
+                                            "number": "26-99",
+                                            "title": "Excess transfer balance tax cannot be deducted"
+                                        },
+                                        {
+                                            "number": "26-100",
+                                            "title": "Expenditure attributable to water infrastructure improvement payments"
+                                        },
+                                        {
+                                            "number": "26-102",
+                                            "title": "Expenses associated with holding vacant land"
+                                        },
+                                        {
+                                            "number": "26-105",
+                                            "title": "Non-compliant payments for work and services"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": "## Chapter 2\u2014Liability rules of general application 93",
+            "part": "### Part 2-5\u2014Rules about deductibility of particular kinds of - Split 2",
+            "toc": [
+                {
+                    "section": "Division",
+                    "number": "27",
+                    "title": "Effect of input tax credits etc. on deductions",
+                    "children": [
+                        {
+                            "section": "Guide",
+                            "number": "27-1",
+                            "title": "What this Division is about"
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "27-A",
+                            "title": "General",
+                            "children": [
+                                {
+                                    "number": "27-5",
+                                    "title": "Input tax credits and decreasing adjustments"
+                                },
+                                {
+                                    "number": "27-10",
+                                    "title": "Certain increasing adjustments"
+                                },
+                                {
+                                    "number": "27-15",
+                                    "title": "GST payments"
+                                },
+                                {
+                                    "number": "27-20",
+                                    "title": "Elements in calculation of amounts"
+                                },
+                                {
+                                    "number": "27-25",
+                                    "title": "GST groups and GST joint ventures"
+                                },
+                                {
+                                    "number": "27-35",
+                                    "title": "Certain sections not to apply to certain assets or expenditure"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "27-B",
+                            "title": "Effect of input tax credits etc. on capital allowances",
+                            "children": [
+                                {
+                                    "number": "27-80",
+                                    "title": "Cost or opening adjustable value of depreciating assets reduced for input tax credits"
+                                },
+                                {
+                                    "number": "27-85",
+                                    "title": "Cost or opening adjustable value of depreciating assets reduced: decreasing adjustments"
+                                },
+                                {
+                                    "number": "27-87",
+                                    "title": "Certain decreasing adjustments included in assessable income"
+                                },
+                                {
+                                    "number": "27-90",
+                                    "title": "Cost or opening adjustable value of depreciating assets increased: increasing adjustments"
+                                },
+                                {
+                                    "number": "27-92",
+                                    "title": "Certain increasing adjustments can be deducted"
+                                },
+                                {
+                                    "number": "27-95",
+                                    "title": "Balancing adjustment events"
+                                },
+                                {
+                                    "number": "27-100",
+                                    "title": "Pooling"
+                                },
+                                {
+                                    "number": "27-105",
+                                    "title": "Other Division 40 expenditure"
+                                },
+                                {
+                                    "number": "27-110",
+                                    "title": "Input tax credit etc. relating to 2 or more things"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "section": "Division",
+                    "number": "28",
+                    "title": "Car expenses",
+                    "children": [
+                        {
+                            "section": "Guide",
+                            "number": "28-1",
+                            "title": "What this Division is about"
+                        },
+                        {
+                            "number": "28-5",
+                            "title": "Map of this Division"
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "28-A",
+                            "title": "Deductions for car expenses",
+                            "children": [
+                                {
+                                    "number": "28-10",
+                                    "title": "Application of Division 28"
+                                },
+                                {
+                                    "number": "28-12",
+                                    "title": "Car expenses"
+                                },
+                                {
+                                    "number": "28-13",
+                                    "title": "Meaning of car expense"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "28-B",
+                            "title": "Choosing which method to use",
+                            "children": [
+                                {
+                                    "section": "Guide",
+                                    "number": "28-14",
+                                    "title": "What this Subdivision is about"
+                                },
+                                {
+                                    "number": "28-15",
+                                    "title": "Choosing between the 2 methods"
+                                },
+                                {
+                                    "section": "Operative provision",
+                                    "number": "28-20",
+                                    "title": "Rules governing choice of method"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "28-C",
+                            "title": "The \u201ccents per kilometre\u201d method",
+                            "children": [
+                                {
+                                    "number": "28-25",
+                                    "title": "How to calculate your deduction"
+                                },
+                                {
+                                    "number": "28-30",
+                                    "title": "Capital allowances"
+                                },
+                                {
+                                    "number": "28-35",
+                                    "title": "Substantiation"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "28-F",
+                            "title": "The \u201clog book\u201d method",
+                            "children": [
+                                {
+                                    "number": "28-90",
+                                    "title": "How to calculate your deduction"
+                                },
+                                {
+                                    "number": "28-95",
+                                    "title": "Eligibility"
+                                },
+                                {
+                                    "number": "28-100",
+                                    "title": "Substantiation"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "28-G",
+                            "title": "Keeping a log book",
+                            "children": [
+                                {
+                                    "section": "Guide",
+                                    "number": "28-105",
+                                    "title": "What this Subdivision is about"
+                                },
+                                {
+                                    "number": "28-110",
+                                    "title": "Steps for keeping a log book"
+                                },
+                                {
+                                    "section": "Operative provisions",
+                                    "number": "28-115",
+                                    "title": "Income years for which you need to keep a log book"
+                                },
+                                {
+                                    "number": "28-120",
+                                    "title": "Choosing the 12 week period for a log book"
+                                },
+                                {
+                                    "number": "28-125",
+                                    "title": "How to keep a log book"
+                                },
+                                {
+                                    "number": "28-130",
+                                    "title": "Replacing one car with another"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "28-H",
+                            "title": "Odometer records for a period",
+                            "children": [
+                                {
+                                    "section": "Guide",
+                                    "number": "28-135",
+                                    "title": "What this Subdivision is about"
+                                },
+                                {
+                                    "section": "Operative provision",
+                                    "number": "28-140",
+                                    "title": "How to keep odometer records for a car for a period"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "28-I",
+                            "title": "Retaining the log book and odometer records",
+                            "children": [
+                                {
+                                    "number": "28-150",
+                                    "title": "Retaining the log book for the retention period"
+                                },
+                                {
+                                    "number": "28-155",
+                                    "title": "Retaining odometer records"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "28-J",
+                            "title": "Situations where you cannot use, or do not need to use, one of the 2 methods",
+                            "children": [
+                                {
+                                    "section": "Guide",
+                                    "number": "28-160",
+                                    "title": "What this Subdivision is about"
+                                },
+                                {
+                                    "section": "Operative provisions",
+                                    "number": "28-165",
+                                    "title": "Exception for particular cars taken on hire"
+                                },
+                                {
+                                    "number": "28-170",
+                                    "title": "Exception for particular cars used in particular ways"
+                                },
+                                {
+                                    "number": "28-175",
+                                    "title": "Further miscellaneous exceptions"
+                                },
+                                {
+                                    "number": "28-180",
+                                    "title": "Car expenses related to award transport payments"
+                                },
+                                {
+                                    "number": "28-185",
+                                    "title": "Application of Subdivision 28-J to recipients and payers of certain withholding payments"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": "## Chapter 2\u2014Liability rules of general application 93",
+            "part": "### Part 2-5\u2014Rules about deductibility of particular kinds of - Split 3",
+            "toc": [
+                {
+                    "section": "Division",
+                    "number": "30",
+                    "title": "Gifts or contributions",
+                    "children": [
+                        {
+                            "section": "Guide",
+                            "number": "",
+                            "title": "Guide to Division 30",
+                            "children": [
+                                {
+                                    "number": "30-1",
+                                    "title": "What this Division is about"
+                                },
+                                {
+                                    "number": "30-5",
+                                    "title": "How to find your way around this Division"
+                                }
+                            ]
+                        },
+                        {
+                            "number": "30-10",
+                            "title": "Index"
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "30-A",
+                            "title": "Deductions for gifts or contributions",
+                            "children": [
+                                {
+                                    "number": "30-15",
+                                    "title": "Table of gifts or contributions that you can deduct"
+                                },
+                                {
+                                    "number": "30-17",
+                                    "title": "Requirements for certain recipients"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "30-B",
+                            "title": "Tables of recipients for deductible gifts",
+                            "children": [
+                                {
+                                    "section": "Health",
+                                    "number": "",
+                                    "title": "Health",
+                                    "children": [
+                                        {
+                                            "number": "30-20",
+                                            "title": "Health"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Education",
+                                    "number": "",
+                                    "title": "Education",
+                                    "children": [
+                                        {
+                                            "number": "30-25",
+                                            "title": "Education"
+                                        },
+                                        {
+                                            "number": "30-30",
+                                            "title": "Gifts that must be for certain purposes"
+                                        },
+                                        {
+                                            "number": "30-35",
+                                            "title": "Rural schools hostel buildings"
+                                        },
+                                        {
+                                            "number": "30-37",
+                                            "title": "Scholarship etc. funds"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Research",
+                                    "number": "",
+                                    "title": "Research",
+                                    "children": [
+                                        {
+                                            "number": "30-40",
+                                            "title": "Research"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Welfare and rights",
+                                    "number": "",
+                                    "title": "Welfare and rights",
+                                    "children": [
+                                        {
+                                            "number": "30-45",
+                                            "title": "Welfare and rights"
+                                        },
+                                        {
+                                            "number": "30-45A",
+                                            "title": "Australian disaster relief funds\u2014declarations by Minister"
+                                        },
+                                        {
+                                            "number": "30-46",
+                                            "title": "Australian disaster relief funds\u2014declarations under State and Territory law"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Defence",
+                                    "number": "",
+                                    "title": "Defence",
+                                    "children": [
+                                        {
+                                            "number": "30-50",
+                                            "title": "Defence"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Environment",
+                                    "number": "",
+                                    "title": "The environment",
+                                    "children": [
+                                        {
+                                            "number": "30-55",
+                                            "title": "The environment"
+                                        },
+                                        {
+                                            "number": "30-60",
+                                            "title": "Gifts to a National Parks body or conservation body must satisfy certain requirements"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Industry, trade and design",
+                                    "number": "",
+                                    "title": "Industry, trade and design",
+                                    "children": [
+                                        {
+                                            "number": "30-65",
+                                            "title": "Industry, trade and design"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "The family",
+                                    "number": "",
+                                    "title": "The family",
+                                    "children": [
+                                        {
+                                            "number": "30-70",
+                                            "title": "The family"
+                                        },
+                                        {
+                                            "number": "30-75",
+                                            "title": "Marriage education organisations must be approved"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "International affairs",
+                                    "number": "",
+                                    "title": "International affairs",
+                                    "children": [
+                                        {
+                                            "number": "30-80",
+                                            "title": "International affairs"
+                                        },
+                                        {
+                                            "number": "30-85",
+                                            "title": "Developing country relief funds"
+                                        },
+                                        {
+                                            "number": "30-86",
+                                            "title": "Developed country disaster relief funds"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Sports and recreation",
+                                    "number": "",
+                                    "title": "Sports and recreation",
+                                    "children": [
+                                        {
+                                            "number": "30-90",
+                                            "title": "Sports and recreation"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Philanthropic trusts",
+                                    "number": "",
+                                    "title": "Philanthropic trusts",
+                                    "children": [
+                                        {
+                                            "number": "30-95",
+                                            "title": "Philanthropic trusts"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Cultural organisations",
+                                    "number": "",
+                                    "title": "Cultural organisations",
+                                    "children": [
+                                        {
+                                            "number": "30-100",
+                                            "title": "Cultural organisations"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Fire and emergency services",
+                                    "number": "",
+                                    "title": "Fire and emergency services",
+                                    "children": [
+                                        {
+                                            "number": "30-102",
+                                            "title": "Fire and emergency services"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Other recipients",
+                                    "number": "",
+                                    "title": "Other recipients",
+                                    "children": [
+                                        {
+                                            "number": "30-105",
+                                            "title": "Other recipients"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "30-BA",
+                            "title": "Endorsement of deductible gift recipients",
+                            "children": [
+                                {
+                                    "section": "Guide",
+                                    "number": "",
+                                    "title": "Guide to Subdivision 30-BA",
+                                    "children": [
+                                        {
+                                            "number": "30-115",
+                                            "title": "What this Subdivision is about"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Endorsement as a deductible gift recipient",
+                                    "number": "",
+                                    "title": "Endorsement as a deductible gift recipient",
+                                    "children": [
+                                        {
+                                            "number": "30-120",
+                                            "title": "Endorsement by Commissioner"
+                                        },
+                                        {
+                                            "number": "30-125",
+                                            "title": "Entitlement to endorsement"
+                                        },
+                                        {
+                                            "number": "30-130",
+                                            "title": "Maintaining a gift fund"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Government entities treated like entities",
+                                    "number": "",
+                                    "title": "Government entities treated like entities",
+                                    "children": [
+                                        {
+                                            "number": "30-180",
+                                            "title": "How this Subdivision applies to government entities"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "30-C",
+                            "title": "Rules applying to particular gifts of property",
+                            "children": [
+                                {
+                                    "section": "Valuation requirements",
+                                    "number": "",
+                                    "title": "Valuation requirements",
+                                    "children": [
+                                        {
+                                            "number": "30-200",
+                                            "title": "Getting written valuations"
+                                        },
+                                        {
+                                            "number": "30-205",
+                                            "title": "Proceeds of the sale would have been assessable"
+                                        },
+                                        {
+                                            "number": "30-210",
+                                            "title": "Approved valuers"
+                                        },
+                                        {
+                                            "number": "30-212",
+                                            "title": "Valuations by the Commissioner"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Working out the amount you can deduct for a gift of property",
+                                    "number": "",
+                                    "title": "Working out the amount you can deduct for a gift of property",
+                                    "children": [
+                                        {
+                                            "number": "30-215",
+                                            "title": "How much you can deduct"
+                                        },
+                                        {
+                                            "number": "30-220",
+                                            "title": "Reducing the amount you can deduct"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Joint ownership of property",
+                                    "number": "",
+                                    "title": "Joint ownership of property",
+                                    "children": [
+                                        {
+                                            "number": "30-225",
+                                            "title": "Gift of property by joint owners"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "30-CA",
+                            "title": "Administrative requirements relating to ABNs",
+                            "children": [
+                                {
+                                    "section": "Guide",
+                                    "number": "",
+                                    "title": "Guide to Subdivision 30-CA",
+                                    "children": [
+                                        {
+                                            "number": "30-226",
+                                            "title": "What this Subdivision is about"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Requirements",
+                                    "number": "",
+                                    "title": "Requirements",
+                                    "children": [
+                                        {
+                                            "number": "30-227",
+                                            "title": "Entities to which this Subdivision applies"
+                                        },
+                                        {
+                                            "number": "30-228",
+                                            "title": "Content of receipt for gift or contribution"
+                                        },
+                                        {
+                                            "number": "30-229",
+                                            "title": "Australian Business Register must show deductibility of gifts to deductible gift recipient"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "30-DA",
+                            "title": "Donations to political parties and independent candidates and members",
+                            "children": [
+                                {
+                                    "section": "Guide",
+                                    "number": "",
+                                    "title": "Guide to Subdivision 30-DA",
+                                    "children": [
+                                        {
+                                            "number": "30-241",
+                                            "title": "What this Subdivision is about"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Operative provisions",
+                                    "number": "",
+                                    "title": "Operative provisions",
+                                    "children": [
+                                        {
+                                            "number": "30-242",
+                                            "title": "Deduction for political contributions and gifts"
+                                        },
+                                        {
+                                            "number": "30-243",
+                                            "title": "Amount of the deduction"
+                                        },
+                                        {
+                                            "number": "30-244",
+                                            "title": "When an individual is an independent candidate"
+                                        },
+                                        {
+                                            "number": "30-245",
+                                            "title": "When an individual is an independent member"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "30-DB",
+                            "title": "Spreading certain gift and covenant deductions over up to 5 income years",
+                            "children": [
+                                {
+                                    "section": "Guide",
+                                    "number": "",
+                                    "title": "Guide to Subdivision 30-DB",
+                                    "children": [
+                                        {
+                                            "number": "30-246",
+                                            "title": "What this Subdivision is about"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Operative provisions",
+                                    "number": "",
+                                    "title": "Operative provisions",
+                                    "children": [
+                                        {
+                                            "number": "30-247",
+                                            "title": "Gifts and covenants for which elections can be made"
+                                        },
+                                        {
+                                            "number": "30-248",
+                                            "title": "Making an election"
+                                        },
+                                        {
+                                            "number": "30-249",
+                                            "title": "Effect of election"
+                                        },
+                                        {
+                                            "number": "30-249A",
+                                            "title": "Requirements\u2014environmental property gifts"
+                                        },
+                                        {
+                                            "number": "30-249B",
+                                            "title": "Requirements\u2014heritage property gifts"
+                                        },
+                                        {
+                                            "number": "30-249D",
+                                            "title": "Requirements\u2014conservation covenants"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "30-G",
+                            "title": "Index to this Division",
+                            "children": [
+                                {
+                                    "number": "30-315",
+                                    "title": "Index"
+                                },
+                                {
+                                    "number": "30-320",
+                                    "title": "Effect of this Subdivision"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "section": "Division",
+                    "number": "31",
+                    "title": "Conservation covenants",
+                    "children": [
+                        {
+                            "section": "Guide",
+                            "number": "",
+                            "title": "Guide to Division 31",
+                            "children": [
+                                {
+                                    "number": "31-1",
+                                    "title": "What this Division is about"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Operative provisions",
+                            "number": "",
+                            "title": "Operative provisions",
+                            "children": [
+                                {
+                                    "number": "31-5",
+                                    "title": "Deduction for entering into conservation covenant"
+                                },
+                                {
+                                    "number": "31-10",
+                                    "title": "Requirements for fund, authority or institution"
+                                },
+                                {
+                                    "number": "31-15",
+                                    "title": "Valuations by the Commissioner"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "chapter": "## Chapter 2\u2014Liability rules of general application 93",
+            "part": "### Part 2-5\u2014Rules about deductibility of particular kinds of - Split 4",
+            "toc": [
+                {
+                    "section": "Division",
+                    "number": "32",
+                    "title": "Entertainment expenses",
+                    "children": [
+                        {
+                            "section": "Guide",
+                            "number": "",
+                            "title": "Guide to Division 32",
+                            "children": [
+                                {
+                                    "number": "32-1",
+                                    "title": "What this Division is about"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "32-A",
+                            "title": "No deduction for entertainment expenses",
+                            "children": [
+                                {
+                                    "number": "32-5",
+                                    "title": "No deduction for entertainment expenses"
+                                },
+                                {
+                                    "number": "32-10",
+                                    "title": "Meaning of entertainment"
+                                },
+                                {
+                                    "number": "32-15",
+                                    "title": "No deduction for property used for providing entertainment"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "32-B",
+                            "title": "Exceptions",
+                            "children": [
+                                {
+                                    "number": "32-20",
+                                    "title": "The main exception\u2014fringe benefits"
+                                },
+                                {
+                                    "number": "32-25",
+                                    "title": "The tables set out the other exceptions"
+                                },
+                                {
+                                    "number": "32-30",
+                                    "title": "Employer expenses"
+                                },
+                                {
+                                    "number": "32-35",
+                                    "title": "Seminar expenses"
+                                },
+                                {
+                                    "number": "32-40",
+                                    "title": "Entertainment industry expenses"
+                                },
+                                {
+                                    "number": "32-45",
+                                    "title": "Promotion and advertising expenses"
+                                },
+                                {
+                                    "number": "32-50",
+                                    "title": "Other expenses"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "32-C",
+                            "title": "Definitions relevant to the exceptions",
+                            "children": [
+                                {
+                                    "number": "32-55",
+                                    "title": "In-house dining facility (employer expenses table items 1.1 and 1.2)"
+                                },
+                                {
+                                    "number": "32-60",
+                                    "title": "Dining facility (employer expenses table item 1.3)"
+                                },
+                                {
+                                    "number": "32-65",
+                                    "title": "Seminars (seminar expenses table item 2.1)"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "32-D",
+                            "title": "In-house dining facilities (employer expenses table item 1.2)",
+                            "children": [
+                                {
+                                    "number": "32-70",
+                                    "title": "$30 is assessable for each meal provided to non-employee in an in-house dining facility"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "32-E",
+                            "title": "Anti-avoidance",
+                            "children": [
+                                {
+                                    "number": "32-75",
+                                    "title": "Commissioner may treat you as having incurred entertainment expense"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "32-F",
+                            "title": "Special rules for companies and partnerships",
+                            "children": [
+                                {
+                                    "number": "32-80",
+                                    "title": "Company directors"
+                                },
+                                {
+                                    "number": "32-85",
+                                    "title": "Directors, employees and property of wholly-owned group company"
+                                },
+                                {
+                                    "number": "32-90",
+                                    "title": "Partnerships"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "section": "Division",
+                    "number": "34",
+                    "title": "Non-compulsory uniforms",
+                    "children": [
+                        {
+                            "section": "Guide",
+                            "number": "",
+                            "title": "Guide to Division 34",
+                            "children": [
+                                {
+                                    "number": "34-1",
+                                    "title": "What this Division is about"
+                                },
+                                {
+                                    "number": "34-3",
+                                    "title": "What you need to read"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "34-A",
+                            "title": "Application of Division 34",
+                            "children": [
+                                {
+                                    "number": "34-5",
+                                    "title": "This Division applies to employees and others"
+                                },
+                                {
+                                    "number": "34-7",
+                                    "title": "This Division applies to employers and others"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "34-B",
+                            "title": "Deduction for your non-compulsory uniform",
+                            "children": [
+                                {
+                                    "number": "34-10",
+                                    "title": "What you can deduct"
+                                },
+                                {
+                                    "number": "34-15",
+                                    "title": "What is a non-compulsory uniform?"
+                                },
+                                {
+                                    "number": "34-20",
+                                    "title": "What are occupation specific clothing and protective clothing?"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "34-C",
+                            "title": "Registering the design of a non-compulsory uniform",
+                            "children": [
+                                {
+                                    "number": "34-25",
+                                    "title": "Application to register the design"
+                                },
+                                {
+                                    "number": "34-30",
+                                    "title": "Industry Secretary\u2019s decision on application"
+                                },
+                                {
+                                    "number": "34-33",
+                                    "title": "Written notice of decision"
+                                },
+                                {
+                                    "number": "34-35",
+                                    "title": "When uniform becomes registered"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "34-D",
+                            "title": "Appeals from Industry Secretary\u2019s decision",
+                            "children": [
+                                {
+                                    "number": "34-40",
+                                    "title": "Review of decisions by the Administrative Appeals Tribunal"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "34-E",
+                            "title": "The Register of Approved Occupational Clothing",
+                            "children": [
+                                {
+                                    "number": "34-45",
+                                    "title": "Keeping of the Register"
+                                },
+                                {
+                                    "number": "34-50",
+                                    "title": "Changes to the Register"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "34-F",
+                            "title": "Approved occupational clothing guidelines",
+                            "children": [
+                                {
+                                    "number": "34-55",
+                                    "title": "Approved occupational clothing guidelines"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "34-G",
+                            "title": "The Industry Secretary",
+                            "children": [
+                                {
+                                    "number": "34-60",
+                                    "title": "Industry Secretary to give Commissioner information about entries"
+                                },
+                                {
+                                    "number": "34-65",
+                                    "title": "Delegation of powers by Industry Secretary"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "section": "Division",
+                    "number": "35",
+                    "title": "Deferral of losses from non-commercial business activities",
+                    "children": [
+                        {
+                            "section": "Guide",
+                            "number": "",
+                            "title": "Guide to Division 35",
+                            "children": [
+                                {
+                                    "number": "35-1",
+                                    "title": "What this Division is about"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Operative provisions",
+                            "number": "",
+                            "title": "",
+                            "children": [
+                                {
+                                    "number": "35-5",
+                                    "title": "Object"
+                                },
+                                {
+                                    "number": "35-10",
+                                    "title": "Deferral of deductions from non-commercial business activities"
+                                },
+                                {
+                                    "number": "35-15",
+                                    "title": "Modification if you have exempt income"
+                                },
+                                {
+                                    "number": "35-20",
+                                    "title": "Modification if you become bankrupt"
+                                },
+                                {
+                                    "number": "35-25",
+                                    "title": "Application of Division to certain partnerships"
+                                },
+                                {
+                                    "number": "35-30",
+                                    "title": "Assessable income test"
+                                },
+                                {
+                                    "number": "35-35",
+                                    "title": "Profits test"
+                                },
+                                {
+                                    "number": "35-40",
+                                    "title": "Real property test"
+                                },
+                                {
+                                    "number": "35-45",
+                                    "title": "Other assets test"
+                                },
+                                {
+                                    "number": "35-50",
+                                    "title": "Apportionment"
+                                },
+                                {
+                                    "number": "35-55",
+                                    "title": "Commissioner\u2019s discretion"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "section": "Division",
+                    "number": "36",
+                    "title": "Tax losses of earlier income years",
+                    "children": [
+                        {
+                            "section": "Guide",
+                            "number": "",
+                            "title": "Guide to Division 36",
+                            "children": [
+                                {
+                                    "number": "36-1",
+                                    "title": "What this Division is about"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "36-A",
+                            "title": "Deductions for tax losses of earlier income years",
+                            "children": [
+                                {
+                                    "number": "36-10",
+                                    "title": "How to calculate a tax loss for an income year"
+                                },
+                                {
+                                    "number": "36-15",
+                                    "title": "How to deduct tax losses of entities other than corporate tax entities"
+                                },
+                                {
+                                    "number": "36-17",
+                                    "title": "How to deduct tax losses of corporate tax entities"
+                                },
+                                {
+                                    "number": "36-20",
+                                    "title": "Net exempt income"
+                                },
+                                {
+                                    "number": "36-25",
+                                    "title": "Special rules about tax losses"
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "36-B",
+                            "title": "Effect of you becoming bankrupt",
+                            "children": [
+                                {
+                                    "section": "Guide",
+                                    "number": "",
+                                    "title": "Guide to Subdivision 36-B",
+                                    "children": [
+                                        {
+                                            "number": "36-30",
+                                            "title": "What this Subdivision is about"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Operative provisions",
+                                    "number": "",
+                                    "title": "",
+                                    "children": [
+                                        {
+                                            "number": "36-35",
+                                            "title": "No deduction for tax loss incurred before bankruptcy"
+                                        },
+                                        {
+                                            "number": "36-40",
+                                            "title": "Deduction for amounts paid for debts incurred before bankruptcy"
+                                        },
+                                        {
+                                            "number": "36-45",
+                                            "title": "Limit on deductions for amounts paid"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "section": "Subdivision",
+                            "number": "36-C",
+                            "title": "Excess franking offsets",
+                            "children": [
+                                {
+                                    "section": "Guide",
+                                    "number": "",
+                                    "title": "Guide to Subdivision 36-C",
+                                    "children": [
+                                        {
+                                            "number": "36-50",
+                                            "title": "What this Subdivision is about"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "section": "Operative provision",
+                                    "number": "",
+                                    "title": "",
+                                    "children": [
+                                        {
+                                            "number": "36-55",
+                                            "title": "Converting excess franking offsets into tax loss"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
