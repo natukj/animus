@@ -1,10 +1,81 @@
-from typing import Union, Any, Callable, Dict, Tuple, List
+from __future__ import annotations
+from pydantic import BaseModel, ValidationError
+from typing import Union, Any, Optional, Dict, Tuple, List
 import json
 import asyncio
 from fastapi import UploadFile
-import fitz  
+import fitz
+from thefuzz import fuzz
+from thefuzz import process  
 import llm, prompts
 from parser.base_parser import BaseParser
+
+class TableOfContentsChild(BaseModel):
+    number: str
+    title: str
+
+
+class TableOfContents(BaseModel):
+    section: Optional[str]
+    number: str
+    title: str
+    children: Optional[List[Union[TableOfContents, TableOfContentsChild]]]
+
+    def find_child(self, section: Optional[str], number: str) -> Optional[Union[TableOfContents, TableOfContentsChild]]:
+        """find an existing child by section and number."""
+        if not self.children:
+            return None
+        for child in self.children:
+            if isinstance(child, TableOfContents) and child.section == section and child.number == number:
+                return child
+            if isinstance(child, TableOfContentsChild) and child.number == number:
+                return child
+        return None
+
+    def add_child(self, child: Union[TableOfContents, TableOfContentsChild]):
+        """add a new child or merge with an existing one."""
+        if not self.children:
+            self.children = []
+
+        if isinstance(child, TableOfContents):
+            existing_child = self.find_child(child.section, child.number)
+            if existing_child and isinstance(existing_child, TableOfContents):
+                existing_child.children = merge_children(existing_child.children, child.children or [])
+            else:
+                self.children.append(child)
+        else:
+            if not any(isinstance(existing, TableOfContentsChild) and existing.number == child.number for existing in self.children):
+                self.children.append(child)
+
+
+class Contents(BaseModel):
+    level: str
+    sublevel: str
+    toc: List[TableOfContents]
+
+
+class TableOfContentsDict(BaseModel):
+    contents: List[Contents]
+
+def merge_children(existing_children: Optional[List[Union[TableOfContents, TableOfContentsChild]]], new_children: List[Union[TableOfContents, TableOfContentsChild]]) -> List[Union[TableOfContents, TableOfContentsChild]]:
+    """merge a list of new children into existing children."""
+    if existing_children is None:
+        existing_children = []
+
+    existing_dict = {child.number: child for child in existing_children if isinstance(child, TableOfContents)}
+
+    for new_child in new_children:
+        if isinstance(new_child, TableOfContents):
+            if new_child.number in existing_dict:
+                existing_child = existing_dict[new_child.number]
+                existing_child.children = merge_children(existing_child.children, new_child.children or [])
+            else:
+                existing_children.append(new_child)
+        else:
+            if not any(isinstance(child, TableOfContentsChild) and child.number == new_child.number for child in existing_children):
+                existing_children.append(new_child)
+
+    return existing_children
 
 class ToCParser(BaseParser):
     """Table of Contents (ToC) parser class for Legal (Australian Legislation) PDFs."""
@@ -13,7 +84,10 @@ class ToCParser(BaseParser):
         super().__init__(rate_limit)
         self.document = None
         self.toc_md_string = None
-        self.toc_hierarchy_schema = None
+        self.content_md_string = None
+        self.toc_hierarchy_schema = {'Chapter': '##', 'Part': '###', 'Division': '####', 'Subdivision': '#####', 'Guide': '#####', 'Operative provisions': '#####'}
+        self.adjusted_toc_hierarchy_schema = {'Chapter': '#', 'Part': '##', 'Division': '###', 'Subdivision': '####', 'Guide': '####', 'Operative provisions': '####'}
+        #self.toc_hierarchy_schema = None
         self.toc_schema = None
 
     async def load_document(self, file: Union[UploadFile, str]) -> None:
@@ -27,7 +101,7 @@ class ToCParser(BaseParser):
             self.document = fitz.open(file)
         else:
             raise ValueError("file must be an instance of UploadFile or str.")
-        self.toc_md_string = self.generate_toc_md_string()
+        self.toc_md_string, self.content_md_string = self.generate_md_string()
         self.toc_hierarchy_schema = await self.generate_toc_hierarchy_schema()
         self.toc_schema = await self.generate_toc_schema()
     
@@ -105,19 +179,21 @@ class ToCParser(BaseParser):
         current_max_font = max(current_fonts, key=current_fonts.get, default=0)
         return current_max_font > prev_max_font and current_fonts.get(current_max_font, 0) > previous_fonts.get(current_max_font, 0)
     
-    def generate_toc_md_string(self) -> str:
+    def generate_md_string(self) -> Tuple[str, str]:
         """
         Generate a ToC Markdown string.
         """
         first_toc_page = self.find_first_toc_page_no()
         last_toc_page = self.find_last_toc_page_no(first_toc_page)
         toc_pages = list(range(first_toc_page, last_toc_page))
+        content_pages = list(range(last_toc_page, self.document.page_count))
         toc_md_string = self.to_markdown(self.document, toc_pages)
-        return toc_md_string
+        content_md_string = self.to_markdown(self.document, content_pages)
+        return toc_md_string, content_md_string
 
     async def generate_toc_hierarchy_schema(self) -> Dict[str, str]:
         """
-        Generate a schema for the ToC hierarchy, eg
+        Generate a hierarchy schema for the ToC hierarchy, eg
         {
             'Chapter': '#',
             'Part': '##',
@@ -157,6 +233,7 @@ class ToCParser(BaseParser):
             if top_level_count > 1:
                 adjust_count = top_level_count - 1
                 levels = {k: v[adjust_count:] for k, v in self.toc_hierarchy_schema.items()}
+                self.adjusted_toc_hierarchy_schema = levels
             else:    
                 levels = self.toc_hierarchy_schema
 
@@ -292,7 +369,7 @@ class ToCParser(BaseParser):
                     {"role": "system", "content": prompts.TOC_SCHEMA_SYS_PROMPT_PLUS.format(section_types=section_types, chapter_title=level_title, part_title=sublevel_title, TOC_SCHEMA=TOC_SCHEMA)},
                     {"role": "user", "content": content}
                 ]
-                sublevel_title = "Full Chapter"
+                sublevel_title = "Complete"
             response = await llm.openai_chat_completion_request(messages, response_format="json")
             if response and 'choices' in response and len(response['choices']) > 0:
                 if response["choices"][0]["finish_reason"] == "length":
@@ -324,19 +401,278 @@ class ToCParser(BaseParser):
                 tasks.append(task)
 
         results = await asyncio.gather(*tasks)
-        print(f"the number of results is {len(results)}")
         all_level_schemas = {"contents": []}
 
         for level_title, sublevel_title, result in results:
             if result and result.get('contents'):
                 all_level_schemas["contents"].append({
-                    "chapter": level_title,
-                    "part": sublevel_title,
+                    "level": level_title,
+                    "sublevel": sublevel_title,
                     "toc": result['contents']
                 })
 
         return all_level_schemas
     
-    async def split_toc(self) -> Dict[str, Union[str, Dict[str, str]]]:
-        custom_schema = await self.generate_toc_schema()
-        return {"contents": [custom_schema]}
+    async def find_existing_section(self, toc: List[TableOfContents], section: str, number: str) -> Optional[TableOfContents]:
+        """find an existing section by section and number."""
+        for item in toc:
+            if item.section == section and item.number == number:
+                return item
+        return None
+    
+    async def nest_toc(self, content: Contents, level_split: str = "\u2014", sublevel_split: str = "\u2014") -> TableOfContents:
+        level_info = content.level.split(level_split)
+        level_number = level_info[0].strip().split(" ")[-1]
+        level_title = level_info[1].strip().rsplit(" ", 1)[0]
+        sorted_schema = sorted(self.toc_hierarchy_schema.items(), key=lambda item: len(item[1]))
+        top_level_type = sorted_schema[0][0]
+        sublevel_type = sorted_schema[1][0]
+        
+        if content.sublevel == "Complete" or content.toc[0].section == top_level_type:
+            return TableOfContents(
+                section=top_level_type,
+                number=level_number,
+                title=level_title,
+                children=content.toc[0].children
+            )
+        else:
+            sub_level_info = content.sublevel.split(sublevel_split)
+            sub_level_number = sub_level_info[0].strip().split(" ")[-1]
+            sub_level_title = sub_level_info[1].strip().rsplit(" ", 1)[0]
+            return TableOfContents(
+                section=top_level_type,
+                number=level_number,
+                title=level_title,
+                children=[
+                    TableOfContents(
+                        section=sublevel_type,
+                        number=sub_level_number,
+                        title=sub_level_title,
+                        children=content.toc
+                    )
+                ]
+            )
+        
+    async def merge_toc(self, master_toc: List[TableOfContents], new_toc: List[TableOfContents], ) -> List[TableOfContents]:
+        """
+        Merge a new ToC sections.
+        """
+        sorted_schema = sorted(self.toc_hierarchy_schema.items(), key=lambda item: len(item[1]))
+        top_level_type = sorted_schema[0][0]
+        existing_level = await self.find_existing_section(master_toc, top_level_type, new_toc.number)
+        if existing_level:
+            existing_level.children = merge_children(existing_level.children, new_toc.children or [])
+        else:
+            master_toc.append(new_toc)
+
+    async def build_master_toc(self, data: TableOfContentsDict) -> List[TableOfContents]:
+        """
+        Build the master ToC from the split ToC parts.
+        """
+        master_toc: List[TableOfContents] = []
+        for content in data.contents:
+            toc = await self.nest_toc(content)
+            await self.merge_toc(master_toc, toc)
+        
+        return master_toc
+    
+    def save_toc_to_file(self, toc: List[TableOfContents], file_name: str):
+        """temp for testing"""
+        with open(file_name, "w") as file:
+            json.dump(toc, file, indent=2, default=lambda x: x.dict())
+    
+    async def load_and_build_toc(self, file: Union[UploadFile, str]) -> List[TableOfContents]:
+        """
+        temp for testing
+        Load a PDF document and build the master ToC.
+        """
+        if isinstance(file, UploadFile):
+            raise ValueError("file must be a file path.")
+        elif isinstance(file, str):
+            with open(file, "r") as f:
+                json_data = json.load(f)
+                data = TableOfContentsDict(**json_data)
+                master_toc = await self.build_master_toc(data)
+                save_file_name = f"master_{file}"
+                self.save_toc_to_file(master_toc, save_file_name)
+        else:
+            raise ValueError("file must be an instance of UploadFile or str.")
+        
+    async def generate_levels_list(self, toc: List[Dict[str, Any]]) -> List[Tuple[Optional[str], str, str]]:
+        """
+        Find and return a list of all levels in the ToC with their section, number, and title.
+        """
+        levels_list = []
+
+        def convert_to_model(data: Dict[str, Any]) -> Union[TableOfContents, TableOfContentsChild]:
+            if 'children' in data:
+                data['children'] = [convert_to_model(child) for child in data['children']]
+                return TableOfContents(**data)
+            else:
+                return TableOfContentsChild(**data)
+
+        def traverse_sections(sections: List[Union[TableOfContents, TableOfContentsChild]]):
+            for section in sections:
+                if isinstance(section, TableOfContents):
+                    levels_list.append((section.section, section.number, section.title))
+                    if section.children:
+                        traverse_sections(section.children)
+                # elif isinstance(section, TableOfContentsChild):
+                #     levels_list.append((None, section.number, section.title))
+
+        toc_models = [convert_to_model(item) for item in toc]
+        traverse_sections(toc_models)
+
+        return levels_list
+    
+    async def run_find_levels_from_json_path(self, file_path: str) -> List[Tuple[str, str, str]]:
+        """
+        temp for testing
+        Run the find_levels method from a JSON file path.
+        """
+        with open(file_path, "r") as f:
+            toc = json.load(f)
+            levels = await self.generate_levels_list(toc)
+            return levels
+        
+    async def generate_chunked_content(self) -> Dict[str, Dict[Any]]:
+        """
+        Split the content into a chunk dict based on the levels
+        """
+        level_info_list = await self.run_find_levels_from_json_path(f"master_toc_vol_1.json")
+        #content_md_lines = self.content_md_string.split("\n")
+        with open("zcontent.md", "r") as f:
+            content_md_lines = f.readlines()
+        # create a list of lines that start with '#' and their corresponding index in the original content_md_lines
+        content_md_section_lines = [(line, idx) for idx, line in enumerate(content_md_lines) if line.startswith('#')]
+
+        md_levels = self.adjusted_toc_hierarchy_schema if self.adjusted_toc_hierarchy_schema else self.toc_hierarchy_schema
+
+        doc_dict = {}
+        prev_end_line = 0
+        current_hierarchy = []
+
+        for i, level_info in enumerate(level_info_list):
+            section_type, number, title = level_info
+            section_match = process.extractOne(section_type, md_levels.keys(), score_cutoff=90)
+            if section_match:
+                matched_section = section_match[0]
+                md_index = list(md_levels.keys()).index(matched_section)
+                md_level = md_levels[matched_section]
+            else:
+                # if no match is found, set to the highest number and highest number of '#'
+                md_index = len(md_levels) - 1
+                max_level = max(md_levels.values(), key=len)
+                md_level = max_level
+
+            if section_type and number and title:
+                section_name = f'{section_type} {number} {title}'
+            elif not number:
+                if section_type in title:
+                    section_name = title
+                else:
+                    section_name = f'{section_type} {title}'
+            else:
+                section_name = section_type
+
+            current_node = {
+                "section": section_name,
+                "content": None,
+                "start_line_match": None,
+                "end_line_match": None,
+                "tokens": None,
+                "subsections": []
+            }
+            md_section_name = f"{md_level} {section_name}"
+
+            #match = process.extractOne(md_section_name, content_md_lines[prev_end_line:], score_cutoff=100)
+            match = process.extractOne(md_section_name, [line for line, _ in content_md_section_lines], score_cutoff=100)
+            if match:
+                matched_line = match[0]
+                start_line_match_score = match[1]
+                # start_line = content_md_lines.index(matched_line, prev_end_line)
+                start_line_idx = next(idx for line, idx in content_md_section_lines if line == matched_line)
+                start_line = start_line_idx
+            else:
+                section_name_parts = section_name.split()
+                for j in range(len(section_name_parts) -1, 0, -1):
+                    md_section_name = f"{md_level} {' '.join(section_name_parts[:j])}"
+                    #match = process.extractOne(md_section_name, content_md_lines[prev_end_line:], score_cutoff=100)
+                    match = process.extractOne(md_section_name, [line for line, _ in content_md_section_lines], score_cutoff=100)
+                    if match:
+                        matched_line = match[0]
+                        start_line_match_score = match[1]
+                        #start_line = content_md_lines.index(matched_line, prev_end_line)
+                        start_line_idx = next(idx for line, idx in content_md_section_lines if line == matched_line)
+                        start_line = start_line_idx
+                        break
+            
+            if i <len(level_info_list) - 1:
+                next_section_type, next_section_no, next_section_tile = level_info_list[i + 1]
+                next_section_match = process.extractOne(next_section_type, md_levels.keys(), score_cutoff=95)
+                if next_section_match:
+                    next_matched_section = next_section_match[0]
+                    next_md_index = list(md_levels.keys()).index(next_matched_section)
+                    next_md_level = md_levels[next_matched_section]
+                else:
+                    next_md_index = len(md_levels) - 1
+                    max_level = max(md_levels.values(), key=len)
+                    next_md_level = max_level
+                
+                if next_section_type and next_section_no and next_section_tile:
+                    next_section_name = f'{next_section_type} {next_section_no} {next_section_tile}'
+                elif not next_section_no:
+                    if next_section_type in next_section_tile:
+                        next_section_name = next_section_tile
+                    else:
+                        next_section_name = f'{next_section_type} {next_section_tile}'
+                else:
+                    next_section_name = next_section_type
+
+                next_md_section_name = f"{next_md_level} {next_section_name}"
+                #next_match = process.extractOne(next_md_section_name, content_md_lines[start_line:], score_cutoff=100)
+                next_match = process.extractOne(next_md_section_name, [line for line, _ in content_md_section_lines], score_cutoff=100)
+                if next_match:
+                    next_matched_line = next_match[0]
+                    end_line_match_score = next_match[1]
+                    #end_line = content_md_lines.index(next_matched_line, start_line)
+                    end_line_idx = next(idx for line, idx in content_md_section_lines if line == matched_line)
+                    end_line = end_line_idx
+                else:
+                    next_section_name_parts = next_section_name.split()
+                    for j in range(len(next_section_name_parts) -1, 0, -1):
+                        next_md_section_name = f"{next_md_level} {' '.join(next_section_name_parts[:j])}"
+                        #next_match = process.extractOne(next_md_section_name, content_md_lines[start_line:], score_cutoff=100)
+                        next_match = process.extractOne(next_md_section_name, [line for line, _ in content_md_section_lines], score_cutoff=90)
+                        if next_match:
+                            next_matched_line = next_match[0]
+                            end_line_match_score = next_match[1]
+                            #end_line = content_md_lines.index(next_matched_line, start_line)
+                            end_line_idx = next(idx for line, idx in content_md_section_lines if line == matched_line)
+                            end_line = end_line_idx
+                            break
+            else:
+                end_line = len(content_md_lines) - 1
+            
+            section_text = "".join(content_md_lines[start_line:end_line])
+            num_tokens = self.count_tokens(section_text)
+            current_node["content"] = section_text[:100]
+            current_node["tokens"] = num_tokens
+            current_node["start_line_match"] = f"{md_section_name}: {start_line_match_score}: {matched_line}"
+            current_node["end_line_match"] = f"{next_md_section_name}: {end_line_match_score}: {next_matched_line}"
+
+            while current_hierarchy and current_hierarchy[-1][1] >= md_index:
+                current_hierarchy.pop()
+
+            if not current_hierarchy:
+                doc_dict[section_name] = current_node
+            else:
+                parent_node = current_hierarchy[-1][0]
+                parent_node["subsections"].append(current_node)
+
+            current_hierarchy.append((current_node, md_index))
+            # prev_end_line = end_line
+            # Remove the lines we have covered from content_md_section_lines
+            content_md_section_lines = [(line, idx) for line, idx in content_md_section_lines if idx > end_line]
+
+        return doc_dict

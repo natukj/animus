@@ -1,8 +1,8 @@
 {
     "contents": [
         {
-            "level": "## Chapter 1\u2014Introduction and core provisions 1",
-            "sublevel": "Complete",
+            "chapter": "## Chapter 1\u2014Introduction and core provisions 1",
+            "part": "Full Chapter",
             "toc": [
                 {
                     "section": "Chapter",
@@ -86,7 +86,7 @@
                                                 },
                                                 {
                                                     "number": "2-15",
-                                                    "title": "When terms are not identified"
+                                                    "title": "When terms are _not_ identified"
                                                 },
                                                 {
                                                     "number": "2-20",
@@ -145,7 +145,7 @@
                                         },
                                         {
                                             "number": "3-15",
-                                            "title": "Your obligations other than as a taxpayer"
+                                            "title": "Your obligations _other than_ as a taxpayer"
                                         }
                                     ]
                                 }
@@ -167,7 +167,7 @@
                                         },
                                         {
                                             "number": "4-5",
-                                            "title": "Meaning of you"
+                                            "title": "Meaning of _you_"
                                         },
                                         {
                                             "number": "4-10",
@@ -190,8 +190,8 @@
                                     "children": [
                                         {
                                             "section": "Guide",
-                                            "number": "5-1",
-                                            "title": "What this Division is about",
+                                            "number": "5",
+                                            "title": "Guide to Division 5",
                                             "children": [
                                                 {
                                                     "number": "5-1",
@@ -227,8 +227,8 @@
                                     "children": [
                                         {
                                             "section": "Guide",
-                                            "number": "6-1",
-                                            "title": "Diagram showing relationships among concepts in this Division",
+                                            "number": "6",
+                                            "title": "Guide to Division 6",
                                             "children": [
                                                 {
                                                     "number": "6-1",
@@ -238,20 +238,20 @@
                                         },
                                         {
                                             "section": "Operative provisions",
-                                            "number": "",
-                                            "title": "",
+                                            "number": "6",
+                                            "title": "Operative provisions",
                                             "children": [
                                                 {
                                                     "number": "6-5",
-                                                    "title": "Income according to ordinary concepts (ordinary income)"
+                                                    "title": "Income according to ordinary concepts ( _ordinary_ _income_ )"
                                                 },
                                                 {
                                                     "number": "6-10",
-                                                    "title": "Other assessable income (statutory income)"
+                                                    "title": "Other assessable income ( _statutory income_ )"
                                                 },
                                                 {
                                                     "number": "6-15",
-                                                    "title": "What is not assessable income"
+                                                    "title": "What is _not_ assessable income"
                                                 },
                                                 {
                                                     "number": "6-20",
@@ -411,8 +411,8 @@
             ]
         },
         {
-            "level": "## Chapter 2\u2014Liability rules of general application 93",
-            "sublevel": "### Part 2-1\u2014Assessable income 93",
+            "chapter": "## Chapter 2\u2014Liability rules of general application 93",
+            "part": "### Part 2-1\u2014Assessable income 93",
             "toc": [
                 {
                     "section": "Chapter",
@@ -662,7 +662,7 @@
                                                 },
                                                 {
                                                     "number": "20-125",
-                                                    "title": "Disposal of a leased car for profit (associate case)"
+                                                    "title": "Disposal of a leased car for profit"
                                                 },
                                                 {
                                                     "number": "20-130",
@@ -707,8 +707,8 @@
             ]
         },
         {
-            "level": "## Chapter 2\u2014Liability rules of general application 93",
-            "sublevel": "### Part 2-5\u2014Rules about deductibility of particular kinds of - Split 1",
+            "chapter": "## Chapter 2\u2014Liability rules of general application 93",
+            "part": "### Part 2-5\u2014Rules about deductibility of particular kinds of - Split 1",
             "toc": [
                 {
                     "section": "Part",
@@ -1010,8 +1010,8 @@
             ]
         },
         {
-            "level": "## Chapter 2\u2014Liability rules of general application 93",
-            "sublevel": "### Part 2-5\u2014Rules about deductibility of particular kinds of - Split 2",
+            "chapter": "## Chapter 2\u2014Liability rules of general application 93",
+            "part": "### Part 2-5\u2014Rules about deductibility of particular kinds of - Split 2",
             "toc": [
                 {
                     "section": "Division",
@@ -1020,14 +1020,8 @@
                     "children": [
                         {
                             "section": "Guide",
-                            "number": "",
-                            "title": "Guide to Division 27",
-                            "children": [
-                                {
-                                    "number": "27-1",
-                                    "title": "What this Division is about"
-                                }
-                            ]
+                            "number": "27-1",
+                            "title": "What this Division is about"
                         },
                         {
                             "section": "Subdivision",
@@ -1112,18 +1106,12 @@
                     "children": [
                         {
                             "section": "Guide",
-                            "number": "",
-                            "title": "Guide to Division 28",
-                            "children": [
-                                {
-                                    "number": "28-1",
-                                    "title": "What this Division is about"
-                                },
-                                {
-                                    "number": "28-5",
-                                    "title": "Map of this Division"
-                                }
-                            ]
+                            "number": "28-1",
+                            "title": "What this Division is about"
+                        },
+                        {
+                            "number": "28-5",
+                            "title": "Map of this Division"
                         },
                         {
                             "section": "Subdivision",
@@ -1151,29 +1139,17 @@
                             "children": [
                                 {
                                     "section": "Guide",
-                                    "number": "",
-                                    "title": "Guide to Subdivision 28-B",
-                                    "children": [
-                                        {
-                                            "number": "28-14",
-                                            "title": "What this Subdivision is about"
-                                        },
-                                        {
-                                            "number": "28-15",
-                                            "title": "Choosing between the 2 methods"
-                                        }
-                                    ]
+                                    "number": "28-14",
+                                    "title": "What this Subdivision is about"
+                                },
+                                {
+                                    "number": "28-15",
+                                    "title": "Choosing between the 2 methods"
                                 },
                                 {
                                     "section": "Operative provision",
-                                    "number": "",
-                                    "title": "",
-                                    "children": [
-                                        {
-                                            "number": "28-20",
-                                            "title": "Rules governing choice of method"
-                                        }
-                                    ]
+                                    "number": "28-20",
+                                    "title": "Rules governing choice of method"
                                 }
                             ]
                         },
@@ -1222,41 +1198,29 @@
                             "children": [
                                 {
                                     "section": "Guide",
-                                    "number": "",
-                                    "title": "Guide to Subdivision 28-G",
-                                    "children": [
-                                        {
-                                            "number": "28-105",
-                                            "title": "What this Subdivision is about"
-                                        },
-                                        {
-                                            "number": "28-110",
-                                            "title": "Steps for keeping a log book"
-                                        }
-                                    ]
+                                    "number": "28-105",
+                                    "title": "What this Subdivision is about"
+                                },
+                                {
+                                    "number": "28-110",
+                                    "title": "Steps for keeping a log book"
                                 },
                                 {
                                     "section": "Operative provisions",
-                                    "number": "",
-                                    "title": "",
-                                    "children": [
-                                        {
-                                            "number": "28-115",
-                                            "title": "Income years for which you need to keep a log book"
-                                        },
-                                        {
-                                            "number": "28-120",
-                                            "title": "Choosing the 12 week period for a log book"
-                                        },
-                                        {
-                                            "number": "28-125",
-                                            "title": "How to keep a log book"
-                                        },
-                                        {
-                                            "number": "28-130",
-                                            "title": "Replacing one car with another"
-                                        }
-                                    ]
+                                    "number": "28-115",
+                                    "title": "Income years for which you need to keep a log book"
+                                },
+                                {
+                                    "number": "28-120",
+                                    "title": "Choosing the 12 week period for a log book"
+                                },
+                                {
+                                    "number": "28-125",
+                                    "title": "How to keep a log book"
+                                },
+                                {
+                                    "number": "28-130",
+                                    "title": "Replacing one car with another"
                                 }
                             ]
                         },
@@ -1267,25 +1231,13 @@
                             "children": [
                                 {
                                     "section": "Guide",
-                                    "number": "",
-                                    "title": "Guide to Subdivision 28-H",
-                                    "children": [
-                                        {
-                                            "number": "28-135",
-                                            "title": "What this Subdivision is about"
-                                        }
-                                    ]
+                                    "number": "28-135",
+                                    "title": "What this Subdivision is about"
                                 },
                                 {
                                     "section": "Operative provision",
-                                    "number": "",
-                                    "title": "",
-                                    "children": [
-                                        {
-                                            "number": "28-140",
-                                            "title": "How to keep odometer records for a car for a period"
-                                        }
-                                    ]
+                                    "number": "28-140",
+                                    "title": "How to keep odometer records for a car for a period"
                                 }
                             ]
                         },
@@ -1311,41 +1263,29 @@
                             "children": [
                                 {
                                     "section": "Guide",
-                                    "number": "",
-                                    "title": "Guide to Subdivision 28-J",
-                                    "children": [
-                                        {
-                                            "number": "28-160",
-                                            "title": "What this Subdivision is about"
-                                        }
-                                    ]
+                                    "number": "28-160",
+                                    "title": "What this Subdivision is about"
                                 },
                                 {
                                     "section": "Operative provisions",
-                                    "number": "",
-                                    "title": "",
-                                    "children": [
-                                        {
-                                            "number": "28-165",
-                                            "title": "Exception for particular cars taken on hire"
-                                        },
-                                        {
-                                            "number": "28-170",
-                                            "title": "Exception for particular cars used in particular ways"
-                                        },
-                                        {
-                                            "number": "28-175",
-                                            "title": "Further miscellaneous exceptions"
-                                        },
-                                        {
-                                            "number": "28-180",
-                                            "title": "Car expenses related to award transport payments"
-                                        },
-                                        {
-                                            "number": "28-185",
-                                            "title": "Application of Subdivision 28-J to recipients and payers of certain withholding payments"
-                                        }
-                                    ]
+                                    "number": "28-165",
+                                    "title": "Exception for particular cars taken on hire"
+                                },
+                                {
+                                    "number": "28-170",
+                                    "title": "Exception for particular cars used in particular ways"
+                                },
+                                {
+                                    "number": "28-175",
+                                    "title": "Further miscellaneous exceptions"
+                                },
+                                {
+                                    "number": "28-180",
+                                    "title": "Car expenses related to award transport payments"
+                                },
+                                {
+                                    "number": "28-185",
+                                    "title": "Application of Subdivision 28-J to recipients and payers of certain withholding payments"
                                 }
                             ]
                         }
@@ -1354,8 +1294,8 @@
             ]
         },
         {
-            "level": "## Chapter 2\u2014Liability rules of general application 93",
-            "sublevel": "### Part 2-5\u2014Rules about deductibility of particular kinds of - Split 3",
+            "chapter": "## Chapter 2\u2014Liability rules of general application 93",
+            "part": "### Part 2-5\u2014Rules about deductibility of particular kinds of - Split 3",
             "toc": [
                 {
                     "section": "Division",
@@ -1881,8 +1821,8 @@
             ]
         },
         {
-            "level": "## Chapter 2\u2014Liability rules of general application 93",
-            "sublevel": "### Part 2-5\u2014Rules about deductibility of particular kinds of - Split 4",
+            "chapter": "## Chapter 2\u2014Liability rules of general application 93",
+            "part": "### Part 2-5\u2014Rules about deductibility of particular kinds of - Split 4",
             "toc": [
                 {
                     "section": "Division",
@@ -2166,7 +2106,7 @@
                         {
                             "section": "Operative provisions",
                             "number": "",
-                            "title": "Operative provisions",
+                            "title": "",
                             "children": [
                                 {
                                     "number": "35-5",
@@ -2278,7 +2218,7 @@
                                 {
                                     "section": "Operative provisions",
                                     "number": "",
-                                    "title": "Operative provisions",
+                                    "title": "",
                                     "children": [
                                         {
                                             "number": "36-35",
@@ -2315,7 +2255,7 @@
                                 {
                                     "section": "Operative provision",
                                     "number": "",
-                                    "title": "Operative provision",
+                                    "title": "",
                                     "children": [
                                         {
                                             "number": "36-55",
