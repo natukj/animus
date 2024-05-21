@@ -545,6 +545,7 @@ class ToCParser(BaseParser):
             content_md_lines = f.readlines()
         # create a list of lines that start with '#' and their corresponding index in the original content_md_lines
         content_md_section_lines = [(line, idx) for idx, line in enumerate(content_md_lines) if line.startswith('#')]
+        print(f"reduced content_md_lines from {len(content_md_lines)} to {len(content_md_section_lines)}")
 
         md_levels = self.adjusted_toc_hierarchy_schema if self.adjusted_toc_hierarchy_schema else self.toc_hierarchy_schema
 
@@ -585,8 +586,8 @@ class ToCParser(BaseParser):
             }
             md_section_name = f"{md_level} {section_name}"
 
-            #match = process.extractOne(md_section_name, content_md_lines[prev_end_line:], score_cutoff=100)
-            match = process.extractOne(md_section_name, [line for line, _ in content_md_section_lines], score_cutoff=100)
+            #match = process.extractOne(md_section_name, content_md_lines[prev_end_line:], score_cutoff=95)
+            match = process.extractOne(md_section_name, [line for line, _ in content_md_section_lines], score_cutoff=80)
             if match:
                 matched_line = match[0]
                 start_line_match_score = match[1]
@@ -597,8 +598,8 @@ class ToCParser(BaseParser):
                 section_name_parts = section_name.split()
                 for j in range(len(section_name_parts) -1, 0, -1):
                     md_section_name = f"{md_level} {' '.join(section_name_parts[:j])}"
-                    #match = process.extractOne(md_section_name, content_md_lines[prev_end_line:], score_cutoff=100)
-                    match = process.extractOne(md_section_name, [line for line, _ in content_md_section_lines], score_cutoff=100)
+                    #match = process.extractOne(md_section_name, content_md_lines[prev_end_line:], score_cutoff=95)
+                    match = process.extractOne(md_section_name, [line for line, _ in content_md_section_lines], score_cutoff=80)
                     if match:
                         matched_line = match[0]
                         start_line_match_score = match[1]
@@ -630,25 +631,25 @@ class ToCParser(BaseParser):
                     next_section_name = next_section_type
 
                 next_md_section_name = f"{next_md_level} {next_section_name}"
-                #next_match = process.extractOne(next_md_section_name, content_md_lines[start_line:], score_cutoff=100)
-                next_match = process.extractOne(next_md_section_name, [line for line, _ in content_md_section_lines], score_cutoff=100)
+                #next_match = process.extractOne(next_md_section_name, content_md_lines[start_line:], score_cutoff=95)
+                next_match = process.extractOne(next_md_section_name, [line for line, _ in content_md_section_lines], score_cutoff=80)
                 if next_match:
                     next_matched_line = next_match[0]
                     end_line_match_score = next_match[1]
                     #end_line = content_md_lines.index(next_matched_line, start_line)
-                    end_line_idx = next(idx for line, idx in content_md_section_lines if line == matched_line)
+                    end_line_idx = next(idx for line, idx in content_md_section_lines if line == next_matched_line)
                     end_line = end_line_idx
                 else:
                     next_section_name_parts = next_section_name.split()
                     for j in range(len(next_section_name_parts) -1, 0, -1):
                         next_md_section_name = f"{next_md_level} {' '.join(next_section_name_parts[:j])}"
-                        #next_match = process.extractOne(next_md_section_name, content_md_lines[start_line:], score_cutoff=100)
-                        next_match = process.extractOne(next_md_section_name, [line for line, _ in content_md_section_lines], score_cutoff=90)
+                        #next_match = process.extractOne(next_md_section_name, content_md_lines[start_line:], score_cutoff=95)
+                        next_match = process.extractOne(next_md_section_name, [line for line, _ in content_md_section_lines], score_cutoff=80)
                         if next_match:
                             next_matched_line = next_match[0]
                             end_line_match_score = next_match[1]
                             #end_line = content_md_lines.index(next_matched_line, start_line)
-                            end_line_idx = next(idx for line, idx in content_md_section_lines if line == matched_line)
+                            end_line_idx = next(idx for line, idx in content_md_section_lines if line == next_matched_line)
                             end_line = end_line_idx
                             break
             else:
@@ -656,7 +657,7 @@ class ToCParser(BaseParser):
             
             section_text = "".join(content_md_lines[start_line:end_line])
             num_tokens = self.count_tokens(section_text)
-            current_node["content"] = section_text[:100]
+            current_node["content"] = section_text[:95]
             current_node["tokens"] = num_tokens
             current_node["start_line_match"] = f"{md_section_name}: {start_line_match_score}: {matched_line}"
             current_node["end_line_match"] = f"{next_md_section_name}: {end_line_match_score}: {next_matched_line}"
@@ -673,6 +674,9 @@ class ToCParser(BaseParser):
             current_hierarchy.append((current_node, md_index))
             # prev_end_line = end_line
             # Remove the lines we have covered from content_md_section_lines
-            content_md_section_lines = [(line, idx) for line, idx in content_md_section_lines if idx > end_line]
+            processed_lines_index = next((i for i, (line, idx) in enumerate(content_md_section_lines) if idx == end_line), None)
+            if processed_lines_index is not None:
+                content_md_section_lines = content_md_section_lines[processed_lines_index:]
+            print(f"lines left: {len(content_md_section_lines)}")
 
         return doc_dict
