@@ -31,7 +31,7 @@ async def openai_chat_completion_request(messages, model="gpt-4o", temperature=0
                 "https://api.openai.com/v1/chat/completions",
                 headers=headers,
                 json=json_data,
-                timeout=60,
+                timeout=300,
             )
             response.raise_for_status()
             return response.json()

@@ -1,3 +1,4 @@
+TOC_HIERARCHY_SYS_PROMPT = """You are an expert in data processing, parsing and structuring text into JSON format. Always remember to follow the instructions and guidelines provided, ensuring that the output is accurate and well-structured."""
 TOC_HIERARCHY_SCHEMA_TEMPLATE = {
     "<Level 1 Section Type>": "#",
     "<Level 2 Section Type>": "##",
@@ -7,24 +8,34 @@ TOC_HIERARCHY_SCHEMA_TEMPLATE = {
     "<Level 6 Section Type>": "######"
 }
 
-TOC_HIERARCHY_SYS_PROMPT = f"""You are tasked with creating a JSON dictionary that maps each unique hierarchical section type to the corresponding number of '#' characters used to denote its level in the Table of Contents (ToC). You will be given a Markdown string ToC and you must return a structured JSON object according to the following instructions:
+TOC_HIERARCHY_USER_PROMPT = """You are tasked with creating a JSON dictionary that maps each major unique hierarchical section type to the corresponding number of '#' characters used to denote its level in the Table of Contents (ToC). You will be given a Markdown string ToC and you must return a structured JSON object according to the following instructions:
 
 **Instructions:**
 1. **Inclusions:**
    - You must include every single unique hierarchical section type that appears in the Table of Contents and is prefixed with a number of '#' characters.
-   - Only include section types that are REPEATED in the Table of Contents.
+   - Only include section types that are REPEATED in the Table of Contents, unless they are the Top Level.
    
 2. **Exclusions:**
    - You must NOT include the enumeration of the hierarchical section types. Include only the base section type, e.g., 'Chapter', 'Part', 'Section', etc.
+   - Exclude 'Contents' or 'Table of Contents' as they are not part of the hierarchy.
+   - Exclude any standalone section types that are not repeated in the ToC.
+   - Exclude section types that are too specific or granular, focusing only on the main hierarchical levels.
    
 3. **Comprehensiveness:**
    - Ensure all levels of hierarchy (represented by varying numbers of '#' characters) are considered.
+   - Each level must be mapped to the exact number of '#' characters used to denote it in the markdown text.
    - Include all REPEATED section types regardless of their position in the hierarchy.
+   - Include the Top Level section type even if it is not repeated.
+   - The JSON object must be minimal and contain only the major section types that are used throughout the ToC.
 
 4. **Example Format:**
    - Use the following example format for the dictionary:
 
 {TOC_HIERARCHY_SCHEMA_TEMPLATE}
+
+## Table of Contents Markdown Text:
+
+{toc_md_string}
 """
 TOC_SCHEMA_SYS_PROMPT = """You are working for the Australian Tax Office (ATO), the Australian Government's principal revenue collection agency. Your task is to transform the Table of Contents (ToC) from the Income Tax Assessment Act, provided in Markdown format, into a structured JSON object according to the following guidelines:
 

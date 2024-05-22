@@ -77,18 +77,21 @@ def merge_children(existing_children: Optional[List[Union[TableOfContents, Table
 
     return existing_children
 
-class ToCParser(BaseParser):
-    """Table of Contents (ToC) parser class for Legal (Australian Legislation) PDFs."""
+class PDFParser(BaseParser):
+    """Parses Legal (Australian Legislation) PDFs into Table of Contents (ToC)
+    and creates dict for each item in the ToC with the section, number, title and content."""
     
     def __init__(self, rate_limit: int = 50):
         super().__init__(rate_limit)
         self.document = None
         self.toc_md_string = None
         self.content_md_string = None
-        self.toc_hierarchy_schema = {'Chapter': '##', 'Part': '###', 'Division': '####', 'Subdivision': '#####', 'Guide': '#####', 'Operative provisions': '#####'}
-        self.adjusted_toc_hierarchy_schema = {'Chapter': '#', 'Part': '##', 'Division': '###', 'Subdivision': '####', 'Guide': '####', 'Operative provisions': '####'}
-        #self.toc_hierarchy_schema = None
+        #self.toc_hierarchy_schema = {'Chapter': '##', 'Part': '###', 'Division': '####', 'Subdivision': '#####', 'Guide': '#####', 'Operative provisions': '#####'}
+        #self.adjusted_toc_hierarchy_schema = {'Chapter': '#', 'Part': '##', 'Division': '###', 'Subdivision': '####', 'Guide': '####', 'Operative provisions': '####'}
+        self.toc_hierarchy_schema = None
+        self.adjusted_toc_hierarchy_schema = None
         self.toc_schema = None
+        self.master_toc = None
 
     async def load_document(self, file: Union[UploadFile, str]) -> None:
         """
@@ -102,8 +105,11 @@ class ToCParser(BaseParser):
         else:
             raise ValueError("file must be an instance of UploadFile or str.")
         self.toc_md_string, self.content_md_string = self.generate_md_string()
+        with open("toc.md", "w") as f:
+            f.write(self.toc_md_string)
         self.toc_hierarchy_schema = await self.generate_toc_hierarchy_schema()
         self.toc_schema = await self.generate_toc_schema()
+        print(json.dumps(self.toc_schema, indent=4))
     
     def find_first_toc_page_no(self) -> int:
         """
@@ -181,7 +187,7 @@ class ToCParser(BaseParser):
     
     def generate_md_string(self) -> Tuple[str, str]:
         """
-        Generate a ToC Markdown string.
+        Generate Markdown strings for toc and content.
         """
         first_toc_page = self.find_first_toc_page_no()
         last_toc_page = self.find_last_toc_page_no(first_toc_page)
@@ -190,6 +196,29 @@ class ToCParser(BaseParser):
         toc_md_string = self.to_markdown(self.document, toc_pages)
         content_md_string = self.to_markdown(self.document, content_pages)
         return toc_md_string, content_md_string
+    
+    async def map_toc_to_hierarchy(self, toc_lines: List[str], toc_hierarchy_schema: Dict[str, str]) -> Dict[str, str]:
+        """
+        Map the ToC sections to the hierarchy schema without llm
+            - done to fix llm issue in generate_toc_hierarchy_schema
+            where it will sometimes give {'Chapter': '#',...} instead of {'Chapter': '##',...}
+        """
+        hierarchy_map = {}
+        updated_toc_hierarchy_schema = toc_hierarchy_schema.copy()
+        for line in toc_lines:
+            if line.strip().startswith('#'):
+                level = '#' * line.count('#')
+                heading_text = line.strip('#').strip()
+                key = heading_text.split('—')[0].split(maxsplit=1)[0]
+
+                if key not in hierarchy_map or len(hierarchy_map[key]) > len(level):
+                    hierarchy_map[key] = level
+
+        for key, schema_level in toc_hierarchy_schema.items():
+            if key in hierarchy_map:
+                updated_toc_hierarchy_schema[key] = hierarchy_map[key]
+                    
+        return updated_toc_hierarchy_schema
 
     async def generate_toc_hierarchy_schema(self) -> Dict[str, str]:
         """
@@ -202,21 +231,31 @@ class ToCParser(BaseParser):
         }
         """
         async def process_function():
+            toc_md_lines = self.toc_md_string.split("\n")
+            toc_md_section_lines = [line for line in toc_md_lines if line.startswith('#')]
+            toc_md_section_joined_lines = '\n'.join(toc_md_section_lines)
             messages = [
                 {"role": "system", "content": prompts.TOC_HIERARCHY_SYS_PROMPT},
-                {"role": "user", "content": self.toc_md_string}
+                {"role": "user", "content": prompts.TOC_HIERARCHY_USER_PROMPT.format(TOC_HIERARCHY_SCHEMA_TEMPLATE=prompts.TOC_HIERARCHY_SCHEMA_TEMPLATE, toc_md_string=toc_md_section_joined_lines)}
             ]
+            #print(prompts.TOC_HIERARCHY_USER_PROMPT.format(TOC_HIERARCHY_SCHEMA_TEMPLATE=prompts.TOC_HIERARCHY_SCHEMA_TEMPLATE, toc_md_string=toc_md_section_joined_lines))
             while True:
                 response = await llm.openai_chat_completion_request(messages, response_format="json")
                 if response and 'choices' in response and len(response['choices']) > 0:
                     try:
                         toc_hierarchy_schema = json.loads(response['choices'][0]['message']['content'])
-                        all_keys_present = all(self.toc_md_string.count(key) > 1 for key in toc_hierarchy_schema.keys())
+                        print(toc_hierarchy_schema)
+                        updated_toc_hierarchy_schema = await self.map_toc_to_hierarchy(toc_md_section_lines, toc_hierarchy_schema)
+                        if updated_toc_hierarchy_schema == toc_hierarchy_schema:
+                            print("No changes to ToC Hierarchy Schema")
+                        else:
+                            print(updated_toc_hierarchy_schema)
+                        all_keys_present = all(toc_md_section_joined_lines.count(key) > 1 for key in updated_toc_hierarchy_schema.keys())
                         if not all_keys_present:
                             print("Not all keys present multiple times in ToC")
                             raise Exception("Not all keys present multiple times in ToC")
-                        print(toc_hierarchy_schema)
-                        return toc_hierarchy_schema
+                        # print(toc_hierarchy_schema)
+                        return updated_toc_hierarchy_schema
                     except json.JSONDecodeError:
                         print("Error decoding JSON for ToC Hierarchy Schema")
                         raise
@@ -234,6 +273,7 @@ class ToCParser(BaseParser):
                 adjust_count = top_level_count - 1
                 levels = {k: v[adjust_count:] for k, v in self.toc_hierarchy_schema.items()}
                 self.adjusted_toc_hierarchy_schema = levels
+                print(f"Adjusted ToC Hierarchy Schema: {levels}")
             else:    
                 levels = self.toc_hierarchy_schema
 
@@ -267,8 +307,8 @@ class ToCParser(BaseParser):
     
     def _split_part(self, text: str) -> Tuple[str, str]:
         middle_index = len(text) // 2
-        before = text.rfind("\n\n#### ", 0, middle_index)
-        after = text.find("\n\n#### ", middle_index)
+        before = text.rfind("\n\n", 0, middle_index)
+        after = text.find("\n\n", middle_index)
 
         if before == -1 and after == -1:
             return text[:middle_index], text[middle_index:]
@@ -279,12 +319,15 @@ class ToCParser(BaseParser):
 
         return text[:split_index], text[split_index:]
 
-    def _recursive_split(self, text: str) -> List[str]:
+    def _recursive_split(self, text: str, depth: int = 0, max_depth: int = 10) -> List[str]:
+        if depth > max_depth:
+            raise RecursionError("Maximum recursion depth exceeded")
+
         if self.count_tokens(text) <= 2000:
             return [text]
         else:
             left_half, right_half = self._split_part(text)
-            return self._recursive_split(left_half) + self._recursive_split(right_half)
+            return self._recursive_split(left_half, depth + 1) + self._recursive_split(right_half, depth + 1)
 
     def split_toc_parts_into_parts(self, lines: List[str], second_level_type: str) -> Dict[str, str]:
         """
@@ -315,7 +358,7 @@ class ToCParser(BaseParser):
                     parts[f"{current_part} - Split {i}"] = part
             else:
                 parts[current_part] = full_part_text
-
+        
         return parts
     
     async def split_toc_into_parts(self) -> Dict[str, Union[str, Dict[str, str]]]:
@@ -326,7 +369,8 @@ class ToCParser(BaseParser):
         sorted_schema = sorted(self.toc_hierarchy_schema.items(), key=lambda item: len(item[1]))
         top_level_type = f"{sorted_schema[0][1]} {sorted_schema[0][0]}"
         second_level_type = f"{sorted_schema[1][1]} {sorted_schema[1][0]}"
-
+        print(f"Top Level Type: {top_level_type}")
+        print(f"Second Level Type: {second_level_type}")
         lines = self.toc_md_string.split('\n')
         top_levels = {}
         top_level = None
@@ -402,14 +446,17 @@ class ToCParser(BaseParser):
 
         results = await asyncio.gather(*tasks)
         all_level_schemas = {"contents": []}
-
-        for level_title, sublevel_title, result in results:
-            if result and result.get('contents'):
-                all_level_schemas["contents"].append({
-                    "level": level_title,
-                    "sublevel": sublevel_title,
-                    "toc": result['contents']
-                })
+        try:
+            for level_title, sublevel_title, result in results:
+                if result and result.get('contents'):
+                    all_level_schemas["contents"].append({
+                        "level": level_title,
+                        "sublevel": sublevel_title,
+                        "toc": result['contents']
+                    })
+        except ValidationError as e:
+            print(f"Results: {results}")
+            print(f"Validation Error: {e}")
 
         return all_level_schemas
     
@@ -473,7 +520,8 @@ class ToCParser(BaseParser):
         for content in data.contents:
             toc = await self.nest_toc(content)
             await self.merge_toc(master_toc, toc)
-        
+        self.master_toc = [toc.model_dump() for toc in master_toc]
+        self.save_toc_to_file(master_toc, "master_toc.json")
         return master_toc
     
     def save_toc_to_file(self, toc: List[TableOfContents], file_name: str):
@@ -498,7 +546,8 @@ class ToCParser(BaseParser):
         else:
             raise ValueError("file must be an instance of UploadFile or str.")
         
-    async def generate_levels_list(self, toc: List[Dict[str, Any]]) -> List[Tuple[Optional[str], str, str]]:
+    # async def generate_levels_list(self, master_toc: List[Dict[str, Any]]) -> List[Tuple[Optional[str], str, str]]:
+    async def generate_levels_list(self) -> List[Tuple[Optional[str], str, str]]:
         """
         Find and return a list of all levels in the ToC with their section, number, and title.
         """
@@ -520,7 +569,7 @@ class ToCParser(BaseParser):
                 # elif isinstance(section, TableOfContentsChild):
                 #     levels_list.append((None, section.number, section.title))
 
-        toc_models = [convert_to_model(item) for item in toc]
+        toc_models = [convert_to_model(item) for item in self.master_toc]
         traverse_sections(toc_models)
 
         return levels_list
@@ -539,10 +588,11 @@ class ToCParser(BaseParser):
         """
         Split the content into a chunk dict based on the levels
         """
-        level_info_list = await self.run_find_levels_from_json_path(f"master_toc_vol_1.json")
-        #content_md_lines = self.content_md_string.split("\n")
-        with open("zcontent.md", "r") as f:
-            content_md_lines = f.readlines()
+        #level_info_list = await self.run_find_levels_from_json_path(f"master_toc_vol_1.json")
+        level_info_list = await self.generate_levels_list()
+        content_md_lines = self.content_md_string.split("\n")
+        # with open("zcontent.md", "r") as f:
+        #     content_md_lines = f.readlines()
         # create a list of lines that start with '#' and their corresponding index in the original content_md_lines
         content_md_section_lines = [(line, idx) for idx, line in enumerate(content_md_lines) if line.startswith('#')]
         print(f"reduced content_md_lines from {len(content_md_lines)} to {len(content_md_section_lines)}")
@@ -586,6 +636,7 @@ class ToCParser(BaseParser):
             }
             md_section_name = f"{md_level} {section_name}"
 
+            # optimisation: start from the last end_line
             #match = process.extractOne(md_section_name, content_md_lines[prev_end_line:], score_cutoff=95)
             match = process.extractOne(md_section_name, [line for line, _ in content_md_section_lines], score_cutoff=80)
             if match:
@@ -657,7 +708,7 @@ class ToCParser(BaseParser):
             
             section_text = "".join(content_md_lines[start_line:end_line])
             num_tokens = self.count_tokens(section_text)
-            current_node["content"] = section_text[:95]
+            current_node["content"] = section_text
             current_node["tokens"] = num_tokens
             current_node["start_line_match"] = f"{md_section_name}: {start_line_match_score}: {matched_line}"
             current_node["end_line_match"] = f"{next_md_section_name}: {end_line_match_score}: {next_matched_line}"
@@ -673,10 +724,21 @@ class ToCParser(BaseParser):
 
             current_hierarchy.append((current_node, md_index))
             # prev_end_line = end_line
-            # Remove the lines we have covered from content_md_section_lines
+            # remove the lines we have covered from content_md_section_lines
             processed_lines_index = next((i for i, (line, idx) in enumerate(content_md_section_lines) if idx == end_line), None)
             if processed_lines_index is not None:
                 content_md_section_lines = content_md_section_lines[processed_lines_index:]
-            print(f"lines left: {len(content_md_section_lines)}")
 
         return doc_dict
+    
+    async def parse(self, file: Union[UploadFile, str]) -> Dict[str, Dict[Any]]:
+        """
+        Main method to parse the PDF content.
+        """
+        await self.load_document(file)
+        toc = await self.extract_toc()
+        print(toc)
+        data = TableOfContentsDict(**toc)
+        await self.build_master_toc(data)
+        content_dict = await self.generate_chunked_content()
+        return content_dict
