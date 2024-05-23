@@ -7,13 +7,37 @@ TOC_HIERARCHY_SCHEMA_TEMPLATE = {
     "<Level 5 Section Type>": "#####",
     "<Level 6 Section Type>": "######"
 }
+TOC_HIERARCHY_USER_PROMPT = """You are tasked with creating a JSON dictionary that maps each unique hierarchical section type to the corresponding number of '#' characters used to denote its level in the Table of Contents (ToC). You will be given a Markdown string ToC and you must return a structured JSON object according to the following instructions:
 
-TOC_HIERARCHY_USER_PROMPT = """You are tasked with creating a JSON dictionary that maps each major unique hierarchical section type to the corresponding number of '#' characters used to denote its level in the Table of Contents (ToC). You will be given a Markdown string ToC and you must return a structured JSON object according to the following instructions:
+**Instructions:**
+1. **Inclusions:**
+   - You must include every single unique hierarchical section type that appears in the Table of Contents and is prefixed with a number of '#' characters.
+   - Only include section types that are in the Table of Contents (eg. 'Chapter', 'Part', 'Section', etc.)
+   
+2. **Exclusions:**
+   - You must NOT include the enumeration of the hierarchical section types. Include only the base section type (e.g., 'Chapter', 'Part', 'Section', etc.)
+   - Exclude 'Contents' or 'Table of Contents' as they are not part of the hierarchy.
+   
+3. **Comprehensiveness:**
+   - Ensure all levels of hierarchy (represented by varying numbers of '#' characters) are considered.
+   - Each level must be mapped to the exact number of '#' characters used to denote it in the markdown text.
+
+4. **Example Format:**
+   - Use the following example format for the dictionary:
+
+{TOC_HIERARCHY_SCHEMA_TEMPLATE}
+
+## Table of Contents Markdown Text:
+
+{toc_md_string}
+"""
+TOC_HIERARCHY_USER_PROMPT_OG = """You are tasked with creating a JSON dictionary that maps each major unique hierarchical section type to the corresponding number of '#' characters used to denote its level in the Table of Contents (ToC). You will be given a Markdown string ToC and you must return a structured JSON object according to the following instructions:
 
 **Instructions:**
 1. **Inclusions:**
    - You must include every single unique hierarchical section type that appears in the Table of Contents and is prefixed with a number of '#' characters.
    - Only include section types that are REPEATED in the Table of Contents, unless they are the Top Level.
+   - Only include major section types that are appear throughout the ToC, not specific or granular types.
    
 2. **Exclusions:**
    - You must NOT include the enumeration of the hierarchical section types. Include only the base section type, e.g., 'Chapter', 'Part', 'Section', etc.
@@ -77,4 +101,23 @@ The following section has been split into multiple parts:
 Please format the ToC into a JSON structure as outlined below:
 
 {TOC_SCHEMA}
+"""
+TOC_SECTION_TEMPLATE = {
+    "section": "string (section type, e.g., 'Chapter', 'Part', 'Section')",
+    "number": "string (numeric or textual identifier of the section, e.g., '1', '2-5', 'A', '27B')",
+    "title": "string (title of the section, without the page number, section type or number)"
+}
+TOC_SECTION_USER_PROMPT = """Please format the following line from the Table of Contents (ToC) into a JSON object according to the following structure:
+
+**JSON Format:**
+
+{TOC_SECTION_TEMPLATE}
+
+## Important Note:
+- Do not include the '#' characters in the JSON object.
+- Do not include the page numbers in the "title" field (most likely at the end of the line).
+
+## ToC Line:
+
+{toc_line}
 """

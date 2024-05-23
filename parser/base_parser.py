@@ -52,7 +52,7 @@ class BaseParser:
                 try:
                     return await process_function(*args, **kwargs)
                 except Exception as e:
-                    print(f"Error during processing: {e}")
+                    print(f"Error during rate_limited_process: {e}")
                     attempts += 1
                     if attempts >= max_attempts:
                         print(f"Failed after {max_attempts} attempts")

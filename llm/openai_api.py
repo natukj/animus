@@ -1,10 +1,27 @@
-from tenacity import retry, wait_random_exponential, stop_after_attempt
+from tenacity import retry, wait_random_exponential, stop_after_attempt, retry_if_exception_type
 import httpx
 import os
+import ssl
+from openai import AsyncOpenAI
+client = AsyncOpenAI()
+
+@retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3),
+    retry=retry_if_exception_type(ssl.SSLError))
+async def openai_client_chat_completion_request(messages, model="gpt-4o", temperature=0):
+    # if i don't use this i get Exception: [SSL: SSLV3_ALERT_BAD_RECORD_MAC] sslv3 alert bad record mac (_ssl.c:2580) randomly
+    response = await client.chat.completions.create(
+        model=model,
+        messages=messages,
+        response_format={ "type": "json_object" },
+        temperature=temperature
+    )
+    return response
+
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-@retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3))
+@retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3),
+    retry=retry_if_exception_type(ssl.SSLError))
 async def openai_chat_completion_request(messages, model="gpt-4o", temperature=0.4, tools=None, tool_choice=None, response_format="text"):
     headers = {
         "Content-Type": "application/json",
@@ -25,7 +42,7 @@ async def openai_chat_completion_request(messages, model="gpt-4o", temperature=0
     if tool_choice is not None:
         json_data["tool_choice"] = tool_choice
 
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(verify=False) as client:
         try:
             response = await client.post(
                 "https://api.openai.com/v1/chat/completions",
@@ -43,6 +60,10 @@ async def openai_chat_completion_request(messages, model="gpt-4o", temperature=0
             print(f"Request failed with status code: {e.response.status_code}")
             print(f"Exception: {e}")
             return None
+        except ssl.SSLError as e:
+            print("SSL Error occurred")
+            print(f"Exception: {e}")
+            raise 
         except Exception as e:
             print("Unable to generate ChatCompletion response")
             print(f"Exception: {e}")
