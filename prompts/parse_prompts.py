@@ -19,15 +19,21 @@ TOC_HIERARCHY_USER_PROMPT = """You are tasked with creating a JSON dictionary th
    - Exclude 'Contents' or 'Table of Contents' as they are not part of the hierarchy.
    
 3. **Comprehensiveness:**
-   - Ensure all levels of hierarchy (represented by varying numbers of '#' characters) are considered.
+   - Ensure all unique levels of hierarchy (represented by varying numbers of '#' characters) are included.
    - Each level must be mapped to the exact number of '#' characters used to denote it in the markdown text.
+   - The section type must be verbatim from the ToC markdown. 
 
 4. **Example Format:**
    - Use the following example format for the dictionary:
 
 {TOC_HIERARCHY_SCHEMA_TEMPLATE}
 
-## Table of Contents Markdown Text:
+## IMPORTANT:
+- There should be NO associated numbering in the section types - only the base type - unless specifically included in the section type.
+- If a section type is repeated, but in reference to different enumerations, include the base type only once (e.g., 'Guide to Division N' or 'Subdivision N' should be mapped to 'Guide to Subdivision' and 'Subdivision', respectively).
+- Each item in the JSON object MUST be a unique section type from the ToC.
+
+Please create a JSON dictionary that maps each unique hierarchical section type to the corresponding number of '#' characters from the following ToC Markdown string:
 
 {toc_md_string}
 """
@@ -73,9 +79,11 @@ TOC_SCHEMA_SYS_PROMPT = """You are working for the Australian Tax Office (ATO), 
 
 **Exclusions:**
 - Exclude dots, page numbers, and any text not explicitly listed as a ToC item.
+- If there is no number associated with a section, leave the "number" field empty ("").
+- If there is no title associated with a section, or the title is the same as the section, leave the "title" field empty ("").
 
 **JSON Format:**
-Please format the ToC into a JSON structure as outlined below:
+An example of the JSON structure is provided below:
 
 {TOC_SCHEMA}
 """
@@ -91,14 +99,18 @@ TOC_SCHEMA_SYS_PROMPT_PLUS = """You are working for the Australian Tax Office (A
 
 **Exclusions:**
 - Exclude dots, page numbers, and any text not explicitly listed as a ToC item.
+- If there is no number associated with a section, leave the "number" field empty ("").
+- If there is no title associated with a section, or the title is the same as the section, leave the "title" field empty ("").
 
 **Split Sections:** 
-The following section has been split into multiple parts: 
-- The current section is: {chapter_title}
-- The current child section is: {part_title}
+The following section has been split into multiple parts, the part you will be working on is:
+
+   - {level_title}
+      - {sublevel_title}
+         - {subsublevel_title}
 
 **JSON Format:**
-Please format the ToC into a JSON structure as outlined below:
+An example of the JSON structure is provided below:
 
 {TOC_SCHEMA}
 """

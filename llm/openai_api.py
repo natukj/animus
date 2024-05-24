@@ -2,6 +2,7 @@ from tenacity import retry, wait_random_exponential, stop_after_attempt, retry_i
 import httpx
 import os
 import ssl
+import openai
 from openai import AsyncOpenAI
 client = AsyncOpenAI()
 
@@ -9,13 +10,17 @@ client = AsyncOpenAI()
     retry=retry_if_exception_type(ssl.SSLError))
 async def openai_client_chat_completion_request(messages, model="gpt-4o", temperature=0):
     # if i don't use this i get Exception: [SSL: SSLV3_ALERT_BAD_RECORD_MAC] sslv3 alert bad record mac (_ssl.c:2580) randomly
-    response = await client.chat.completions.create(
-        model=model,
-        messages=messages,
-        response_format={ "type": "json_object" },
-        temperature=temperature
-    )
-    return response
+    try:
+        response = await client.chat.completions.create(
+            model=model,
+            messages=messages,
+            response_format={ "type": "json_object" },
+            temperature=temperature
+        )
+        return response
+    except openai.APIError as e:
+        print(f"OpenAI API returned an API Error: {e}")
+        pass
 
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")

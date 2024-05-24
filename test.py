@@ -1,112 +1,217 @@
 from parser.pdf_parser import PDFParser
 import asyncio
 import json
+import llm, prompts
 from thefuzz import process
+from collections import Counter, defaultdict
+from typing import List, Dict, Union, Any
+import re
+
+async def process_heading(current_part):
+    try:
+        formatted_line = {
+            "section": current_part,
+            "number": current_part,
+            "title": current_part
+        }
+        return formatted_line
+    except Exception as e:
+        print(f"Error: {e}")
+
+async def split_toc_parts_into_parts(lines: List[str], level_types: List[str]) -> Dict[str, Union[str, Dict]]:
+    """
+    Split the ToC parts into sub-parts based on the sub-part type
+    """
+    parts = {}
+    stack = []
+
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        level = None
+        for j, level_type in enumerate(level_types):
+            if line.startswith(level_type):
+                level = j
+                break
+
+        if level is not None:
+            heading = line.strip()
+            # concatenate multi-line headings
+            j = 1
+            while i + j < len(lines) and lines[i + j].startswith(level_types[level].split(" ")[0]):
+                next_line = lines[i + j].strip().lstrip('#').strip()
+                heading += ' ' + next_line
+                j += 1
+
+            heading = await process_heading(heading)
+
+            # pop stack until we reach the correct level
+            while stack and stack[-1][0] >= level:
+                stack.pop()
+
+            if stack:
+                parent = stack[-1][1]
+                if "children" not in parent:
+                    parent["children"] = {}
+                parent["children"][json.dumps(heading)] = {}
+                stack.append((level, parent["children"][json.dumps(heading)]))
+            else:
+                parts[json.dumps(heading)] = {}
+                stack.append((level, parts[json.dumps(heading)]))
+
+            i += j
+        else:
+            if stack:
+                if line.strip():
+                    if "content" not in stack[-1][1]:
+                        stack[-1][1]["content"] = ""
+                    stack[-1][1]["content"] += line.strip() + '\n'
+            i += 1
+
+    return parts
+
+
+async def split_toc_into_parts(toc_md_string: str, toc_hierarchy_schema: Dict[str, str]) -> Dict[str, Union[str, Dict[str, str]]]:
+    """
+    Split the ToC into parts based on the hierarchy schema and token count
+    """
+    lines = toc_md_string.split('\n')
+    grouped_schema = defaultdict(list)
+    for key, value in toc_hierarchy_schema.items():
+        grouped_schema[value].append(key)
+
+    def find_most_common_heading(headings: List[str], lines: List[str]):
+        counts = Counter()
+        for line in lines:
+            for heading in headings:
+                if heading in line:
+                    counts[heading] += 1
+        most_common_heading = counts.most_common(1)[0][0] if counts else None
+        return most_common_heading
+    
+    most_common_headings = {}
+    for level, headings in grouped_schema.items():
+        if len(headings) > 1:
+            most_common_heading = find_most_common_heading(headings, lines)
+            most_common_headings[level] = most_common_heading
+        else:
+            most_common_headings[level] = headings[0]
+
+    sorted_headings = sorted(most_common_headings.items(), key=lambda x: len(x[0]))
+    level_types = [f"{level[0]} {level[1]}" for level in sorted_headings][:3]
+    print(level_types[:3])
+
+    return await split_toc_parts_into_parts(lines, level_types)
+
+async def extract_toc() -> Dict[str, Any]:
+    """
+    Main function to extract and format the ToC.
+    """
+    with open("toc_parts.json", "r") as f:
+        levels = json.load(f)
+
+    tasks = []
+    all_level_schemas = {"contents": []}
+
+    async def process_level(level_title, level_content, sublevel_title=None, subsublevel_title=None):
+        if "content" in level_content:
+            # If there is content, generate the formatted ToC entry
+            print(f"Level: {level_title}, Sublevel: {sublevel_title}, Subsublevel: {subsublevel_title}")
+            task = asyncio.create_task(generate_formatted_toc(level_title, sublevel_title, subsublevel_title, level_content["content"]))
+            tasks.append(task)
+
+        if "children" in level_content:
+            # If there are children, process each child level recursively
+            for child_title, child_content in level_content["children"].items():
+                if "children" in child_content:
+                    # If the child level has further children, process them as subsublevels
+                    for subchild_title, subchild_content in child_content["children"].items():
+                        print(f"Level: {level_title}, Sublevel: {child_title}, Subsublevel: {subchild_title}")
+                        await process_level(level_title, subchild_content, child_title, subchild_title)
+                else:
+                    # If the child level has no further children, process it as a sublevel
+                    print(f"Level: {level_title}, Sublevel: {child_title}")
+                    await process_level(level_title, child_content, child_title)
+
+    for level_title, level_content in levels.items():
+        await process_level(level_title, level_content)
+
+    try:
+        results = await asyncio.gather(*tasks)
+        for level_title, sublevel_title, subsublevel_title, result in results:
+            if result and result.get('contents'):
+                all_level_schemas["contents"].append({
+                    "level": level_title,
+                    "sublevel": sublevel_title,
+                    "subsublevel": subsublevel_title,
+                    "toc": result['contents']
+                })
+    except Exception as e:
+        print(f"Error extracting ToC: {e}")
+
+    return all_level_schemas
+
+async def generate_formatted_toc(level_title, sublevel_title, subsublevel_title, content):
+    # Simulating the API call result
+    simulated_result = {
+        "contents": f"Formatted ToC for Level: {level_title}, Sublevel: {sublevel_title}, Subsublevel: {subsublevel_title}"
+    }
+    return level_title, sublevel_title, subsublevel_title, simulated_result
 
 async def main_run():
-    parser = PDFParser()
-
-    md_levels = {'Chapter': '#', 'Part': '##', 'Division': '###', 'Subdivision': '####', 'Guide': '####', 'Operative provisions': '####', 'General': '####'}
+    toc_hierarchy_schema = {
+        "Anti-overlap provisions": "#####",
+        "Basic case and concepts": "#####",
+        "Boat capital gains": "#####",
+        "Chapter": "##",
+        "Compulsory acquisitions of adjacent land only": "#####",
+        "Demutualisation of Tower Corporation": "#####",
+        "Division": "####",
+        "Dwellings acquired from deceased estates": "#####",
+        "Employment partly full-time and partly part-time": "#####",
+        "Employment wholly full-time or wholly part-time": "#####",
+        "Exempt assets": "#####",
+        "Exempt or loss-denying transactions": "#####",
+        "General": "#####",
+        "General rules": "#####",
+        "Guide to Division": "#####",
+        "Keeping records for CGT purposes": "#####",
+        "Long service leave taken at less than full pay": "#####",
+        "Look-through earnout rights": "#####",
+        "Main provisions": "#####",
+        "Operative provisions": "#####",
+        "Part": "###",
+        "Partial exemption rules": "#####",
+        "Record keeping": "#####",
+        "Roll-overs under Subdivision 126-A": "#####",
+        "Rules that may extend the exemption": "#####",
+        "Rules that may limit the exemption": "#####",
+        "Special disability trusts": "#####",
+        "Special valuation rules": "#####",
+        "Step 1—Have you made a capital gain or a capital loss?": "#####",
+        "Step 2—Work out the amount of the capital gain or loss": "#####",
+        "Step 3—Work out your net capital gain or loss for the income year": "#####",
+        "Subdivision": "#####",
+        "Takeovers and restructures": "#####",
+        "Units in pooled superannuation trusts": "#####",
+        "Venture capital investment": "#####",
+        "Venture capital: investment by superannuation funds for foreign residents": "#####",
+        "What does **_not_** **form part of the cost base**": "#####"
+    }
     
-    level_info_list = await parser.run_find_levels_from_json_path(f"master_toc.json")
-    with open("content.md", "r") as f:
-        content_md_lines = f.readlines()
+    with open("toc.md", "r") as f:
+        toc_md_string = f.read()
 
-    content_md_section_lines = [(line.strip(), idx) for idx, line in enumerate(content_md_lines) if line.startswith('#')]
+    # section_types = re.findall(r"#{3,}\s+(\w+)", content)
+    # section_types = list(set(section_types))
+    # result = await split_toc_into_parts(toc_md_string, toc_hierarchy_schema)
+    # with open("toc_parts.json", "w") as f:
+    #     json.dump(result, f, indent=4)
+    # with open("toc_parts.json", "r") as f:
+    #     levels = json.load(f)
 
-    formatted_section_names = []
-    for level_info in level_info_list:
-        section_type, number, title = level_info
-        if not section_type:
-            section_match = None
-        else:
-            section_match = process.extractOne(section_type, md_levels.keys(), score_cutoff=95)
-        if section_match:
-            matched_section = section_match[0]
-            md_level = md_levels[matched_section]
-        else:
-            max_level = max(md_levels.values(), key=len)
-            md_level = max_level
 
-        if section_type and number and title:
-            section_name = f'{section_type} {number} {title}'
-        elif not number:
-            if section_type in title:
-                section_name = title
-            else:
-                section_name = f'{section_type} {title}'
-        else:
-            section_name = section_type
-        
-        formatted_section_names.append(f"{md_level} {section_name}")
+ 
 
-    start_lines = []
-    remaining_content_md_section_lines = content_md_section_lines[:]
-
-    for i, formatted_section_name in enumerate(formatted_section_names):
-        matches = process.extractBests(formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
-        if matches:
-            highest_score = max(matches, key=lambda x: x[1])[1]
-            highest_score_matches = [match for match in matches if match[1] == highest_score]
-            # select the highest score with the lowest index
-            matched_line = min(highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0]))[0]
-            start_line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == matched_line)
-            
-            remaining_content_md_section_lines = [item for item in remaining_content_md_section_lines if item[1] > start_line_idx]
-            
-            start_line = content_md_lines[start_line_idx].strip()
-            md_level, md_section_name = formatted_section_name.split(' ', 1)
-            start_lines.append((formatted_section_names[i], start_line, start_line_idx))
-            print(f"Matched {md_section_name} to {start_line} at idx: {start_line_idx}")
-        else:
-            print(f"Could not match {formatted_section_names[i].strip().lstrip('#').strip()}")
-            print(f"Remaining: {remaining_content_md_section_lines}")
-
-    # for section, start, idx in start_lines:
-    #     print(f"Section: {section}\nStart Line: {start} at idx: {idx}\n")
-
-    # section_name_embeddings = model.encode(formatted_section_names, convert_to_tensor=True)
-    # md_section_line_embeddings = model.encode([line[0] for line in content_md_section_lines], convert_to_tensor=True)
-    # remaining_md_section_line_embeddings = md_section_line_embeddings
-    
-    # start_lines = []
-    # used_indices = set()
-    # for i, section_name_embedding in enumerate(section_name_embeddings):
-    #     matchs = util.semantic_search(section_name_embedding.unsqueeze(0), remaining_md_section_line_embeddings, score_function=util.cos_sim, top_k=3)
-    #     highest_score = max(match['score'] for match in matchs[0])
-    #     highest_score_matches = [match for match in matchs[0] if match['score'] == highest_score]
-    #     start_idx = min(match['corpus_id'] for match in highest_score_matches if match['corpus_id'] not in used_indices)
-    #     used_indices.add(start_idx)
-    #     start_line_idx = content_md_section_lines[start_idx][1]
-    #     start_line = content_md_lines[start_line_idx].strip()
-    #     start_lines.append((formatted_section_names[i], start_line, start_line_idx))
-    #     print(f"Matched {formatted_section_names[i]} to {start_line} at idx:({start_idx}) {start_line_idx}")
-
-    #     remaining_md_section_line_embeddings = torch.cat([remaining_md_section_line_embeddings[:start_line_idx], remaining_md_section_line_embeddings[start_line_idx + 1:]], dim=0)
-
-    # for section, start, idx in start_lines:
-    #     print(f"Section: {section}\nStart Line: {start} at idx: {idx}\n")
-    
-    # matches = util.semantic_search(section_name_embeddings, md_section_line_embeddings, score_function=util.cos_sim, top_k=10)
-    # start_end_lines = []
-    # used_indices = set()
-    
-    # for i, match_list in enumerate(matches):
-    #     for match in match_list:
-    #         start_idx = match['corpus_id']
-    #         if start_idx not in used_indices:
-    #             start_line_idx = content_md_section_lines[start_idx][1]
-    #             start_line = content_md_lines[start_line_idx].strip()
-    #             start_end_lines.append((formatted_section_names[i], start_line, start_line_idx))
-    #             used_indices.add(start_idx)
-    #             break
-
-    # # Sort by the index to ensure correct order
-    # start_end_lines.sort(key=lambda x: x[2])
-
-    # # Output start lines for each section
-    # for section, start, idx in start_end_lines:
-    #     print(f"Section: {section}\nStart Line: {start} at idx: {idx}\n")
-    # print(f"{len(match_list)} remaining sections unmatched")
 
 asyncio.run(main_run())

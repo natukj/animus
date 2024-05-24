@@ -16,18 +16,15 @@
             "children": [
               {
                 "section": "Guide to Division",
-                "number": "70",
-                "title": "Guide to Division 70",
-                "children": [
-                  {
-                    "number": "70-1",
-                    "title": "What this Division is about"
-                  },
-                  {
-                    "number": "70-5",
-                    "title": "The 3 key features of tax accounting for trading stock"
-                  }
-                ]
+                "number": "70-1",
+                "title": "What this Division is about",
+                "children": []
+              },
+              {
+                "section": "Guide to Division",
+                "number": "70-5",
+                "title": "The 3 key features of tax accounting for trading stock",
+                "children": []
               },
               {
                 "section": "Subdivision",
@@ -36,7 +33,7 @@
                 "children": [
                   {
                     "number": "70-10",
-                    "title": "Meaning of _trading stock_"
+                    "title": "Meaning of trading stock"
                   },
                   {
                     "number": "70-12",
@@ -75,7 +72,7 @@
                   {
                     "section": "General rules",
                     "number": "",
-                    "title": "General rules",
+                    "title": "",
                     "children": [
                       {
                         "number": "70-35",
@@ -94,7 +91,7 @@
                   {
                     "section": "Special valuation rules",
                     "number": "",
-                    "title": "Special valuation rules",
+                    "title": "",
                     "children": [
                       {
                         "number": "70-50",
@@ -123,23 +120,20 @@
                 "children": [
                   {
                     "section": "Guide to Subdivision",
-                    "number": "70-D",
-                    "title": "Guide to Subdivision 70-D",
-                    "children": [
-                      {
-                        "number": "70-75",
-                        "title": "What this Subdivision is about"
-                      },
-                      {
-                        "number": "70-80",
-                        "title": "Why the rules in this Subdivision are necessary"
-                      }
-                    ]
+                    "number": "70-75",
+                    "title": "What this Subdivision is about",
+                    "children": []
+                  },
+                  {
+                    "section": "Guide to Subdivision",
+                    "number": "70-80",
+                    "title": "Why the rules in this Subdivision are necessary",
+                    "children": []
                   },
                   {
                     "section": "Operative provisions",
                     "number": "",
-                    "title": "Operative provisions",
+                    "title": "",
                     "children": [
                       {
                         "number": "70-85",
@@ -199,38 +193,24 @@
             "title": "General rules",
             "children": [
               {
-                "section": "Guide to Division",
-                "number": "80",
-                "title": "What this Division is about",
-                "children": [
-                  {
-                    "number": "80-1",
-                    "title": "What this Division is about"
-                  }
-                ]
+                "number": "80-1",
+                "title": "What this Division is about"
               },
               {
-                "section": "Operative provisions",
-                "number": "",
-                "title": "Operative provisions",
-                "children": [
-                  {
-                    "number": "80-5",
-                    "title": "Holding of an office"
-                  },
-                  {
-                    "number": "80-10",
-                    "title": "Application to the termination of employment"
-                  },
-                  {
-                    "number": "80-15",
-                    "title": "Transfer of property"
-                  },
-                  {
-                    "number": "80-20",
-                    "title": "Payments for your benefit or at your direction or request"
-                  }
-                ]
+                "number": "80-5",
+                "title": "Holding of an office"
+              },
+              {
+                "number": "80-10",
+                "title": "Application to the termination of employment"
+              },
+              {
+                "number": "80-15",
+                "title": "Transfer of property"
+              },
+              {
+                "number": "80-20",
+                "title": "Payments for your benefit or at your direction or request"
               }
             ]
           },
@@ -240,15 +220,8 @@
             "title": "Employment termination payments",
             "children": [
               {
-                "section": "Guide to Division",
-                "number": "82",
-                "title": "What this Division is about",
-                "children": [
-                  {
-                    "number": "82-1",
-                    "title": "What this Division is about"
-                  }
-                ]
+                "number": "82-1",
+                "title": "What this Division is about"
               },
               {
                 "section": "Subdivision",
@@ -256,26 +229,12 @@
                 "title": "Employment termination payments: life benefits",
                 "children": [
                   {
-                    "section": "Guide to Subdivision",
-                    "number": "82-A",
-                    "title": "What this Subdivision is about",
-                    "children": [
-                      {
-                        "number": "82-5",
-                        "title": "What this Subdivision is about"
-                      }
-                    ]
+                    "number": "82-5",
+                    "title": "What this Subdivision is about"
                   },
                   {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Operative provisions",
-                    "children": [
-                      {
-                        "number": "82-10",
-                        "title": "Taxation of life benefit termination payments"
-                      }
-                    ]
+                    "number": "82-10",
+                    "title": "Taxation of life benefit termination payments"
                   }
                 ]
               },
@@ -285,34 +244,20 @@
                 "title": "Employment termination payments: death benefits",
                 "children": [
                   {
-                    "section": "Guide to Subdivision",
-                    "number": "82-B",
-                    "title": "What this Subdivision is about",
-                    "children": [
-                      {
-                        "number": "82-60",
-                        "title": "What this Subdivision is about"
-                      }
-                    ]
+                    "number": "82-60",
+                    "title": "What this Subdivision is about"
                   },
                   {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Operative provisions",
-                    "children": [
-                      {
-                        "number": "82-65",
-                        "title": "Death benefits for dependants"
-                      },
-                      {
-                        "number": "82-70",
-                        "title": "Death benefits for non-dependants"
-                      },
-                      {
-                        "number": "82-75",
-                        "title": "Death benefits paid to trustee of deceased estate"
-                      }
-                    ]
+                    "number": "82-65",
+                    "title": "Death benefits for dependants"
+                  },
+                  {
+                    "number": "82-70",
+                    "title": "Death benefits for non-dependants"
+                  },
+                  {
+                    "number": "82-75",
+                    "title": "Death benefits paid to trustee of deceased estate"
                   }
                 ]
               },
@@ -322,50 +267,36 @@
                 "title": "Key concepts",
                 "children": [
                   {
-                    "section": "Guide to Subdivision",
-                    "number": "82-C",
-                    "title": "What this Subdivision is about",
-                    "children": [
-                      {
-                        "number": "82-125",
-                        "title": "What this Subdivision is about"
-                      }
-                    ]
+                    "number": "82-125",
+                    "title": "What this Subdivision is about"
                   },
                   {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Operative provisions",
-                    "children": [
-                      {
-                        "number": "82-130",
-                        "title": "What is an employment termination payment?"
-                      },
-                      {
-                        "number": "82-135",
-                        "title": "Payments that are not employment termination payments"
-                      },
-                      {
-                        "number": "82-140",
-                        "title": "Tax free component of an employment termination payment"
-                      },
-                      {
-                        "number": "82-145",
-                        "title": "Taxable component of an employment termination payment"
-                      },
-                      {
-                        "number": "82-150",
-                        "title": "What is an invalidity segment of an employment termination payment?"
-                      },
-                      {
-                        "number": "82-155",
-                        "title": "What is a pre-July 83 segment of an employment termination payment?"
-                      },
-                      {
-                        "number": "82-160",
-                        "title": "What is the ETP cap amount?"
-                      }
-                    ]
+                    "number": "82-130",
+                    "title": "What is an employment termination payment?"
+                  },
+                  {
+                    "number": "82-135",
+                    "title": "Payments that are not employment termination payments"
+                  },
+                  {
+                    "number": "82-140",
+                    "title": "Tax free component of an employment termination payment"
+                  },
+                  {
+                    "number": "82-145",
+                    "title": "Taxable component of an employment termination payment"
+                  },
+                  {
+                    "number": "82-150",
+                    "title": "What is an invalidity segment of an employment termination payment?"
+                  },
+                  {
+                    "number": "82-155",
+                    "title": "What is a pre-July 83 segment of an employment termination payment?"
+                  },
+                  {
+                    "number": "82-160",
+                    "title": "What is the ETP cap amount?"
                   }
                 ]
               }
@@ -379,7 +310,7 @@
               {
                 "section": "Guide to Division",
                 "number": "83",
-                "title": "What this Division is about",
+                "title": "Guide to Division 83",
                 "children": [
                   {
                     "number": "83-1",
@@ -395,7 +326,7 @@
                   {
                     "section": "Guide to Subdivision",
                     "number": "83-A",
-                    "title": "What this Subdivision is about",
+                    "title": "Guide to Subdivision 83-A",
                     "children": [
                       {
                         "number": "83-5",
@@ -406,7 +337,7 @@
                   {
                     "section": "Operative provisions",
                     "number": "",
-                    "title": "Operative provisions",
+                    "title": "",
                     "children": [
                       {
                         "number": "83-10",
@@ -428,7 +359,7 @@
                   {
                     "section": "Guide to Subdivision",
                     "number": "83-B",
-                    "title": "What this Subdivision is about",
+                    "title": "Guide to Subdivision 83-B",
                     "children": [
                       {
                         "number": "83-65",
@@ -439,7 +370,7 @@
                   {
                     "section": "General",
                     "number": "",
-                    "title": "General",
+                    "title": "",
                     "children": [
                       {
                         "number": "83-70",
@@ -466,7 +397,7 @@
                   {
                     "section": "Employment wholly full-time or wholly part-time",
                     "number": "",
-                    "title": "Employment wholly full-time or wholly part-time",
+                    "title": "",
                     "children": [
                       {
                         "number": "83-95",
@@ -485,7 +416,7 @@
                   {
                     "section": "Employment partly full-time and partly part-time",
                     "number": "",
-                    "title": "Employment partly full-time and partly part-time",
+                    "title": "",
                     "children": [
                       {
                         "number": "83-110",
@@ -496,7 +427,7 @@
                   {
                     "section": "Long service leave taken at less than full pay",
                     "number": "",
-                    "title": "Long service leave taken at less than full pay",
+                    "title": "",
                     "children": [
                       {
                         "number": "83-115",
@@ -505,36 +436,182 @@
                     ]
                   }
                 ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "83-C",
+                "title": "Genuine redundancy payments and early retirement scheme payments",
+                "children": [
+                  {
+                    "section": "Guide to Subdivision",
+                    "number": "83-C",
+                    "title": "Guide to Subdivision 83-C",
+                    "children": [
+                      {
+                        "number": "83-165",
+                        "title": "What this Subdivision is about"
+                      }
+                    ]
+                  },
+                  {
+                    "section": "Operative provisions",
+                    "number": "",
+                    "title": "",
+                    "children": [
+                      {
+                        "number": "83-170",
+                        "title": "Tax-free treatment of genuine redundancy payments and early retirement scheme payments"
+                      },
+                      {
+                        "number": "83-175",
+                        "title": "What is a genuine redundancy payment?"
+                      },
+                      {
+                        "number": "83-180",
+                        "title": "What is an early retirement scheme payment?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "83-D",
+                "title": "Foreign termination payments",
+                "children": [
+                  {
+                    "section": "Guide to Subdivision",
+                    "number": "83-D",
+                    "title": "Guide to Subdivision 83-D",
+                    "children": [
+                      {
+                        "number": "83-230",
+                        "title": "What this Subdivision is about"
+                      }
+                    ]
+                  },
+                  {
+                    "section": "Operative provisions",
+                    "number": "",
+                    "title": "",
+                    "children": [
+                      {
+                        "number": "83-235",
+                        "title": "Termination payments tax free\u2014foreign resident period"
+                      },
+                      {
+                        "number": "83-240",
+                        "title": "Termination payments tax free\u2014Australian resident period"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "83-E",
+                "title": "Other payments",
+                "children": [
+                  {
+                    "section": "Guide to Subdivision",
+                    "number": "83-E",
+                    "title": "Guide to Subdivision 83-E",
+                    "children": [
+                      {
+                        "number": "83-290",
+                        "title": "What this Subdivision is about"
+                      }
+                    ]
+                  },
+                  {
+                    "section": "Operative provisions",
+                    "number": "",
+                    "title": "",
+                    "children": [
+                      {
+                        "number": "83-295",
+                        "title": "Termination payments made more than 12 months after termination etc."
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
           {
-            "section": "Guide to Subdivision",
-            "number": "83-C",
-            "title": "",
+            "section": "Division",
+            "number": "83A",
+            "title": "Employee share schemes",
             "children": [
               {
-                "number": "83-165",
-                "title": "What this Subdivision is about"
-              }
-            ]
-          },
-          {
-            "section": "Operative provisions",
-            "number": "",
-            "title": "",
-            "children": [
-              {
-                "number": "83-170",
-                "title": "Tax-free treatment of genuine redundancy payments and early retirement scheme payments"
+                "number": "83A-1",
+                "title": "What this Division is about"
               },
               {
-                "number": "83-175",
-                "title": "What is a _genuine redundancy payment_ ?"
+                "section": "Subdivision",
+                "number": "83A-A",
+                "title": "Objects of Division and key concepts",
+                "children": [
+                  {
+                    "number": "83A-5",
+                    "title": "Objects of Division"
+                  },
+                  {
+                    "number": "83A-10",
+                    "title": "Meaning of ESS interest and employee share scheme"
+                  }
+                ]
               },
               {
-                "number": "83-180",
-                "title": "What is an _early retirement scheme payment_ ?"
+                "number": "83A-B",
+                "title": "Immediate inclusion of discount in assessable income"
+              },
+              {
+                "number": "83A-C",
+                "title": "Deferred inclusion of gain in assessable income"
+              },
+              {
+                "number": "83A-D",
+                "title": "Deduction for employer"
+              },
+              {
+                "section": "Subdivision",
+                "number": "83A-E",
+                "title": "Miscellaneous",
+                "children": [
+                  {
+                    "number": "83A-305",
+                    "title": "Acquisition by associates"
+                  },
+                  {
+                    "number": "83A-310",
+                    "title": "Forfeiture etc. of ESS interest"
+                  },
+                  {
+                    "number": "83A-315",
+                    "title": "Market value of ESS interest"
+                  },
+                  {
+                    "number": "83A-320",
+                    "title": "Interests in a trust"
+                  },
+                  {
+                    "number": "83A-325",
+                    "title": "Application of Division to relationships similar to employment"
+                  },
+                  {
+                    "number": "83A-330",
+                    "title": "Application of Division to ceasing employment"
+                  },
+                  {
+                    "number": "83A-335",
+                    "title": "Application of Division to stapled securities"
+                  },
+                  {
+                    "number": "83A-340",
+                    "title": "Application of Division to indeterminate rights"
+                  }
+                ]
               }
             ]
           }
@@ -551,30 +628,16 @@
             "title": "Introduction",
             "children": [
               {
-                "section": "Guide to Part 2-42",
-                "number": "",
-                "title": "",
-                "children": [
-                  {
-                    "number": "84-1",
-                    "title": "What this Part is about"
-                  }
-                ]
+                "number": "84-1",
+                "title": "What this Part is about"
               },
               {
-                "section": "Operative provisions",
-                "number": "",
-                "title": "",
-                "children": [
-                  {
-                    "number": "84-5",
-                    "title": "Meaning of personal services income"
-                  },
-                  {
-                    "number": "84-10",
-                    "title": "This Part does not imply that individuals are employees"
-                  }
-                ]
+                "number": "84-5",
+                "title": "Meaning of personal services income"
+              },
+              {
+                "number": "84-10",
+                "title": "This Part does not imply that individuals are employees"
               }
             ]
           },
@@ -584,54 +647,40 @@
             "title": "Deductions relating to personal services income",
             "children": [
               {
-                "section": "Guide to Division 85",
-                "number": "",
-                "title": "",
-                "children": [
-                  {
-                    "number": "85-1",
-                    "title": "What this Division is about"
-                  }
-                ]
+                "number": "85-1",
+                "title": "What this Division is about"
               },
               {
-                "section": "Operative provisions",
-                "number": "",
-                "title": "",
-                "children": [
-                  {
-                    "number": "85-5",
-                    "title": "Object of this Division"
-                  },
-                  {
-                    "number": "85-10",
-                    "title": "Deductions for non-employees relating to personal services income"
-                  },
-                  {
-                    "number": "85-15",
-                    "title": "Deductions for rent, mortgage interest, rates and land tax"
-                  },
-                  {
-                    "number": "85-20",
-                    "title": "Deductions for payments to associates etc."
-                  },
-                  {
-                    "number": "85-25",
-                    "title": "Deductions for superannuation for associates"
-                  },
-                  {
-                    "number": "85-30",
-                    "title": "Exception: personal services businesses"
-                  },
-                  {
-                    "number": "85-35",
-                    "title": "Exception: employees, office holders and religious practitioners"
-                  },
-                  {
-                    "number": "85-40",
-                    "title": "Application of Subdivision 900-B to individuals who are not employees"
-                  }
-                ]
+                "number": "85-5",
+                "title": "Object of this Division"
+              },
+              {
+                "number": "85-10",
+                "title": "Deductions for non-employees relating to personal services income"
+              },
+              {
+                "number": "85-15",
+                "title": "Deductions for rent, mortgage interest, rates and land tax"
+              },
+              {
+                "number": "85-20",
+                "title": "Deductions for payments to associates etc."
+              },
+              {
+                "number": "85-25",
+                "title": "Deductions for superannuation for associates"
+              },
+              {
+                "number": "85-30",
+                "title": "Exception: personal services businesses"
+              },
+              {
+                "number": "85-35",
+                "title": "Exception: employees, office holders and religious practitioners"
+              },
+              {
+                "number": "85-40",
+                "title": "Application of Subdivision 900-B to individuals who are not employees"
               }
             ]
           },
@@ -641,9 +690,9 @@
             "title": "Alienation of personal services income",
             "children": [
               {
-                "section": "Guide to Division 86",
-                "number": "",
-                "title": "",
+                "section": "Guide to Division",
+                "number": "86",
+                "title": "94",
                 "children": [
                   {
                     "number": "86-1",
@@ -741,19 +790,12 @@
             "title": "Personal services businesses",
             "children": [
               {
-                "section": "Guide to Division 87",
-                "number": "",
-                "title": "",
-                "children": [
-                  {
-                    "number": "87-1",
-                    "title": "What this Division is about"
-                  },
-                  {
-                    "number": "87-5",
-                    "title": "Diagram showing the operation of this Division"
-                  }
-                ]
+                "number": "87-1",
+                "title": "What this Division is about"
+              },
+              {
+                "number": "87-5",
+                "title": "Diagram showing the operation of this Division"
               },
               {
                 "section": "Subdivision",
@@ -847,26 +889,37 @@
             "title": "A Guide to capital gains and losses",
             "children": [
               {
-                "number": "100-1",
-                "title": "What this Division is about"
-              },
-              {
-                "number": "100-5",
-                "title": "Effect of this Division"
-              },
-              {
-                "number": "100-10",
-                "title": "Fundamentals of CGT"
-              },
-              {
-                "number": "100-15",
-                "title": "Overview of Steps 1 and 2"
+                "section": "General overview",
+                "number": "129",
+                "title": "",
+                "children": [
+                  {
+                    "number": "100-1",
+                    "title": "What this Division is about"
+                  },
+                  {
+                    "number": "100-5",
+                    "title": "Effect of this Division"
+                  },
+                  {
+                    "number": "100-10",
+                    "title": "Fundamentals of CGT"
+                  },
+                  {
+                    "number": "100-15",
+                    "title": "Overview of Steps 1 and 2"
+                  }
+                ]
               },
               {
                 "section": "Step 1\u2014Have you made a capital gain or a capital loss?",
-                "number": "100-20",
-                "title": "What events attract CGT?",
+                "number": "133",
+                "title": "",
                 "children": [
+                  {
+                    "number": "100-20",
+                    "title": "What events attract CGT?"
+                  },
                   {
                     "number": "100-25",
                     "title": "What are CGT assets?"
@@ -883,9 +936,13 @@
               },
               {
                 "section": "Step 2\u2014Work out the amount of the capital gain or loss",
-                "number": "100-35",
-                "title": "What is a capital gain or loss?",
+                "number": "136",
+                "title": "",
                 "children": [
+                  {
+                    "number": "100-35",
+                    "title": "What is a capital gain or loss?"
+                  },
                   {
                     "number": "100-40",
                     "title": "What factors come into calculating a capital gain or loss?"
@@ -898,9 +955,13 @@
               },
               {
                 "section": "Step 3\u2014Work out your net capital gain or loss for the income year",
-                "number": "100-50",
-                "title": "How to work out your net capital gain or loss",
+                "number": "137",
+                "title": "",
                 "children": [
+                  {
+                    "number": "100-50",
+                    "title": "How to work out your net capital gain or loss"
+                  },
                   {
                     "number": "100-55",
                     "title": "How do you comply with CGT?"
@@ -909,9 +970,13 @@
               },
               {
                 "section": "Keeping records for CGT purposes",
-                "number": "100-60",
-                "title": "Why keep records?",
+                "number": "138",
+                "title": "",
                 "children": [
+                  {
+                    "number": "100-60",
+                    "title": "Why keep records?"
+                  },
                   {
                     "number": "100-65",
                     "title": "What records?"
@@ -930,50 +995,44 @@
             "title": "Assessable income includes net capital gain",
             "children": [
               {
-                "section": "Guide to Division 102",
                 "number": "102-1",
-                "title": "What this Division is about",
-                "children": [
-                  {
-                    "number": "102-3",
-                    "title": "Concessions in working out your net capital gain"
-                  }
-                ]
+                "title": "What this Division is about"
               },
               {
-                "section": "Operative provisions",
+                "number": "102-3",
+                "title": "Concessions in working out your net capital gain"
+              },
+              {
                 "number": "102-5",
-                "title": "Assessable income includes net capital gain",
-                "children": [
-                  {
-                    "number": "102-10",
-                    "title": "How to work out your net capital loss"
-                  },
-                  {
-                    "number": "102-15",
-                    "title": "How to apply net capital losses"
-                  },
-                  {
-                    "number": "102-20",
-                    "title": "Ways you can make a capital gain or a capital loss"
-                  },
-                  {
-                    "number": "102-22",
-                    "title": "Amounts of capital gains and losses"
-                  },
-                  {
-                    "number": "102-23",
-                    "title": "CGT event still happens even if gain or loss disregarded"
-                  },
-                  {
-                    "number": "102-25",
-                    "title": "Order of application of CGT events"
-                  },
-                  {
-                    "number": "102-30",
-                    "title": "Exceptions and modifications"
-                  }
-                ]
+                "title": "Assessable income includes net capital gain"
+              },
+              {
+                "number": "102-10",
+                "title": "How to work out your net capital loss"
+              },
+              {
+                "number": "102-15",
+                "title": "How to apply net capital losses"
+              },
+              {
+                "number": "102-20",
+                "title": "Ways you can make a capital gain or a capital loss"
+              },
+              {
+                "number": "102-22",
+                "title": "Amounts of capital gains and losses"
+              },
+              {
+                "number": "102-23",
+                "title": "CGT event still happens even if gain or loss disregarded"
+              },
+              {
+                "number": "102-25",
+                "title": "Order of application of CGT events"
+              },
+              {
+                "number": "102-30",
+                "title": "Exceptions and modifications"
               }
             ]
           },
@@ -987,27 +1046,24 @@
                 "title": "What this Division is about"
               },
               {
-                "section": "Operative provisions",
                 "number": "103-5",
-                "title": "Giving property as part of a transaction",
-                "children": [
-                  {
-                    "number": "103-10",
-                    "title": "Entitlement to receive money or property"
-                  },
-                  {
-                    "number": "103-15",
-                    "title": "Requirement to pay money or give property"
-                  },
-                  {
-                    "number": "103-25",
-                    "title": "Choices"
-                  },
-                  {
-                    "number": "103-30",
-                    "title": "Reduction of cost base etc. by net input tax credits"
-                  }
-                ]
+                "title": "Giving property as part of a transaction"
+              },
+              {
+                "number": "103-10",
+                "title": "Entitlement to receive money or property"
+              },
+              {
+                "number": "103-15",
+                "title": "Requirement to pay money or give property"
+              },
+              {
+                "number": "103-25",
+                "title": "Choices"
+              },
+              {
+                "number": "103-30",
+                "title": "Reduction of cost base etc. by net input tax credits"
               }
             ]
           },
@@ -1017,10 +1073,14 @@
             "title": "CGT events",
             "children": [
               {
-                "section": "Guide to Division 104",
-                "number": "104-1",
-                "title": "What this Division is about",
+                "section": "Guide to Division",
+                "number": "104",
+                "title": "",
                 "children": [
+                  {
+                    "number": "104-1",
+                    "title": "What this Division is about"
+                  },
                   {
                     "number": "104-5",
                     "title": "Summary of the CGT events"
@@ -1115,175 +1175,1715 @@
                   {
                     "number": "104-71",
                     "title": "Adjustment of non-assessable part"
+                  },
+                  {
+                    "number": "104-72",
+                    "title": "Reducing your capital gain under CGT event E4 if you are a trustee"
+                  },
+                  {
+                    "number": "104-75",
+                    "title": "Beneficiary becoming entitled to a trust asset: CGT event E5"
+                  },
+                  {
+                    "number": "104-80",
+                    "title": "Disposal to beneficiary to end income right: CGT event E6"
+                  },
+                  {
+                    "number": "104-85",
+                    "title": "Disposal to beneficiary to end capital interest: CGT event E7"
+                  },
+                  {
+                    "number": "104-90",
+                    "title": "Disposal by beneficiary of capital interest: CGT event E8"
+                  },
+                  {
+                    "number": "104-95",
+                    "title": "Making a capital gain"
+                  },
+                  {
+                    "number": "104-100",
+                    "title": "Making a capital loss"
+                  },
+                  {
+                    "number": "104-105",
+                    "title": "Creating a trust over future property: CGT event E9"
+                  },
+                  {
+                    "number": "104-107A",
+                    "title": "AMIT\u2014cost base reduction exceeds cost base: CGT event E10"
+                  },
+                  {
+                    "number": "104-107B",
+                    "title": "Annual cost base adjustment for member\u2019s unit or interest in AMIT"
+                  },
+                  {
+                    "number": "104-107C",
+                    "title": "AMIT cost base net amount"
+                  },
+                  {
+                    "number": "104-107D",
+                    "title": "AMIT cost base reduction amount"
+                  },
+                  {
+                    "number": "104-107E",
+                    "title": "AMIT cost base increase amount"
+                  },
+                  {
+                    "number": "104-107F",
+                    "title": "Receipt of money etc. increasing AMIT cost base reduction amount not to be treated as income"
+                  },
+                  {
+                    "number": "104-107G",
+                    "title": "Effect of AMIT cost base net amount on cost of AMIT membership interest or unit that is a revenue asset\u2014adjustment of cost of asset"
+                  },
+                  {
+                    "number": "104-107H",
+                    "title": "Effect of AMIT cost base net amount on cost of AMIT membership interest or unit that is a revenue asset\u2014amount included in assessable income"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "104-F",
+                "title": "Leases",
+                "children": [
+                  {
+                    "number": "104-110",
+                    "title": "Granting a lease: CGT event F1"
+                  },
+                  {
+                    "number": "104-115",
+                    "title": "Granting a long-term lease: CGT event F2"
+                  },
+                  {
+                    "number": "104-120",
+                    "title": "Lessor pays lessee to get lease changed: CGT event F3"
+                  },
+                  {
+                    "number": "104-125",
+                    "title": "Lessee receives payment for changing lease: CGT event F4"
+                  },
+                  {
+                    "number": "104-130",
+                    "title": "Lessor receives payment for changing lease: CGT event F5"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "104-G",
+                "title": "Shares",
+                "children": [
+                  {
+                    "number": "104-135",
+                    "title": "Capital payment for shares: CGT event G1"
+                  },
+                  {
+                    "number": "104-145",
+                    "title": "Liquidator or administrator declares shares or financial instruments worthless: CGT event G3"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "104-H",
+                "title": "Special capital receipts",
+                "children": [
+                  {
+                    "number": "104-150",
+                    "title": "Forfeiture of deposit: CGT event H1"
+                  },
+                  {
+                    "number": "104-155",
+                    "title": "Receipt for event relating to a CGT asset: CGT event H2"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "104-I",
+                "title": "Australian residency ends",
+                "children": [
+                  {
+                    "number": "104-160",
+                    "title": "Individual or company stops being an Australian resident: CGT event I1"
+                  },
+                  {
+                    "number": "104-165",
+                    "title": "Exception for individuals"
+                  },
+                  {
+                    "number": "104-170",
+                    "title": "Trust stops being a resident trust: CGT event I2"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "104-J",
+                "title": "CGT events relating to roll-overs",
+                "children": [
+                  {
+                    "number": "104-175",
+                    "title": "Company ceasing to be member of wholly-owned group after roll-over: CGT event J1"
+                  },
+                  {
+                    "number": "104-180",
+                    "title": "Sub-group break-up"
+                  },
+                  {
+                    "number": "104-182",
+                    "title": "Consolidated group break-up"
+                  },
+                  {
+                    "number": "104-185",
+                    "title": "Change in relation to replacement asset or improved asset after a roll-over under Subdivision 152-E: CGT event J2"
+                  },
+                  {
+                    "number": "104-190",
+                    "title": "Replacement asset period"
+                  },
+                  {
+                    "number": "104-195",
+                    "title": "Trust failing to cease to exist after roll-over under Subdivision 124-N: CGT event J4"
+                  },
+                  {
+                    "number": "104-197",
+                    "title": "Failure to acquire replacement asset and to incur fourth element expenditure after a roll-over under Subdivision 152-E: CGT event J5"
+                  },
+                  {
+                    "number": "104-198",
+                    "title": "Cost of acquisition of replacement asset or amount of fourth element expenditure, or both, not sufficient to cover disregarded capital gain: CGT event J6"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "104-K",
+                "title": "Other CGT events",
+                "children": [
+                  {
+                    "number": "104-205",
+                    "title": "Incoming international transfer of emissions unit: CGT event K1"
+                  },
+                  {
+                    "number": "104-210",
+                    "title": "Bankrupt pays amount in relation to debt: CGT event K2"
+                  },
+                  {
+                    "number": "104-215",
+                    "title": "Asset passing to tax-advantaged entity: CGT event K3"
+                  },
+                  {
+                    "number": "104-220",
+                    "title": "CGT asset starts being trading stock: CGT event K4"
+                  },
+                  {
+                    "number": "104-225",
+                    "title": "Special collectable losses: CGT event K5"
+                  },
+                  {
+                    "number": "104-230",
+                    "title": "Pre-CGT shares or trust interest: CGT event K6"
+                  },
+                  {
+                    "number": "104-235",
+                    "title": "Balancing adjustment events for depreciating assets and certain assets used for R&D: CGT event K7"
+                  },
+                  {
+                    "number": "104-240",
+                    "title": "Working out capital gain or loss for CGT event K7: general case"
+                  },
+                  {
+                    "number": "104-245",
+                    "title": "Working out capital gain or loss for CGT event K7: pooled assets"
+                  },
+                  {
+                    "number": "104-250",
+                    "title": "Direct value shifts: CGT event K8"
+                  },
+                  {
+                    "number": "104-255",
+                    "title": "Carried interests: CGT event K9"
+                  },
+                  {
+                    "number": "104-260",
+                    "title": "Certain short-term forex realisation gains: CGT event K10"
+                  },
+                  {
+                    "number": "104-265",
+                    "title": "Certain short-term forex realisation losses: CGT event K11"
+                  },
+                  {
+                    "number": "104-270",
+                    "title": "Foreign hybrids: CGT event K12"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "104-L",
+                "title": "Consolidated groups and MEC groups",
+                "children": [
+                  {
+                    "number": "104-500",
+                    "title": "Loss of pre-CGT status of membership interests in entity becoming subsidiary member: CGT event L1"
+                  },
+                  {
+                    "number": "104-505",
+                    "title": "Where pre-formation intra-group roll-over reduction results in negative allocable cost amount: CGT event L2"
+                  },
+                  {
+                    "number": "104-510",
+                    "title": "Where tax cost setting amounts for retained cost base assets exceeds joining allocable cost amount: CGT event L3"
+                  },
+                  {
+                    "number": "104-515",
+                    "title": "Where no reset cost base assets and excess of net allocable cost amount on joining: CGT event L4"
+                  },
+                  {
+                    "number": "104-520",
+                    "title": "Where amount remaining after step 4 of leaving allocable cost amount is negative: CGT event L5"
+                  },
+                  {
+                    "number": "104-525",
+                    "title": "Error in calculation of tax cost setting amount for joining entity\u2019s assets: CGT event L6"
+                  },
+                  {
+                    "number": "104-535",
+                    "title": "Where reduction in tax cost setting amounts for reset cost base assets cannot be allocated: CGT event L8"
                   }
                 ]
               }
             ]
           },
           {
-            "number": "104-110",
-            "title": "Granting a lease: CGT event F1"
+            "section": "Division",
+            "number": "106",
+            "title": "Entity making the gain or loss",
+            "children": [
+              {
+                "number": "106-1",
+                "title": "What this Division is about"
+              },
+              {
+                "section": "Subdivision",
+                "number": "106-A",
+                "title": "Partnerships",
+                "children": [
+                  {
+                    "number": "106-5",
+                    "title": "Partnerships"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "106-B",
+                "title": "Bankruptcy and liquidation",
+                "children": [
+                  {
+                    "number": "106-30",
+                    "title": "Effect of bankruptcy"
+                  },
+                  {
+                    "number": "106-35",
+                    "title": "Effect of liquidation"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "106-C",
+                "title": "Absolutely entitled beneficiaries",
+                "children": [
+                  {
+                    "number": "106-50",
+                    "title": "Absolutely entitled beneficiaries"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "106-D",
+                "title": "Securities, charges and encumbrances",
+                "children": [
+                  {
+                    "number": "106-60",
+                    "title": "Securities, charges and encumbrances"
+                  }
+                ]
+              }
+            ]
           },
           {
-            "number": "104-115",
-            "title": "Granting a long-term lease: CGT event F2"
+            "section": "Division",
+            "number": "108",
+            "title": "CGT assets",
+            "children": [
+              {
+                "section": "Guide to Division",
+                "number": "108",
+                "title": "Guide to Division 108",
+                "children": [
+                  {
+                    "number": "108-1",
+                    "title": "What this Division is about"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "108-A",
+                "title": "What a CGT asset is",
+                "children": [
+                  {
+                    "number": "108-5",
+                    "title": "CGT assets"
+                  },
+                  {
+                    "number": "108-7",
+                    "title": "Interest in CGT assets as joint tenants"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "108-B",
+                "title": "Collectables",
+                "children": [
+                  {
+                    "number": "108-10",
+                    "title": "Losses from collectables to be offset only against gains from collectables"
+                  },
+                  {
+                    "number": "108-15",
+                    "title": "Sets of collectables"
+                  },
+                  {
+                    "number": "108-17",
+                    "title": "Cost base of a collectable"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "108-C",
+                "title": "Personal use assets",
+                "children": [
+                  {
+                    "number": "108-20",
+                    "title": "Losses from personal use assets must be disregarded"
+                  },
+                  {
+                    "number": "108-25",
+                    "title": "Sets of personal use assets"
+                  },
+                  {
+                    "number": "108-30",
+                    "title": "Cost base of a personal use asset"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "108-D",
+                "title": "Separate CGT assets",
+                "children": [
+                  {
+                    "section": "Guide to Subdivision",
+                    "number": "108-D",
+                    "title": "Guide to Subdivision 108-D",
+                    "children": [
+                      {
+                        "number": "108-50",
+                        "title": "What this Subdivision is about"
+                      }
+                    ]
+                  },
+                  {
+                    "section": "Operative provisions",
+                    "number": "",
+                    "title": "Operative provisions",
+                    "children": [
+                      {
+                        "number": "108-55",
+                        "title": "When is a building a separate asset from land?"
+                      },
+                      {
+                        "number": "108-60",
+                        "title": "Depreciating asset that is part of a building is a separate asset"
+                      },
+                      {
+                        "number": "108-65",
+                        "title": "Land adjacent to land acquired before 20 September 1985"
+                      },
+                      {
+                        "number": "108-70",
+                        "title": "When is a capital improvement a separate asset?"
+                      },
+                      {
+                        "number": "108-75",
+                        "title": "Capital improvements to CGT assets for which a roll-over may be available"
+                      },
+                      {
+                        "number": "108-80",
+                        "title": "Deciding if capital improvements are related to each other"
+                      },
+                      {
+                        "number": "108-85",
+                        "title": "Meaning of improvement threshold"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
-            "number": "104-120",
-            "title": "Lessor pays lessee to get lease changed: CGT event F3"
-          },
-          {
-            "number": "104-125",
-            "title": "Lessee receives payment for changing lease: CGT event F4"
-          },
-          {
-            "number": "104-130",
-            "title": "Lessor receives payment for changing lease: CGT event F5"
-          },
-          {
-            "number": "104-500",
-            "title": "Loss of pre-CGT status of membership interests in entity becoming subsidiary member: CGT event L1"
-          },
-          {
-            "number": "104-505",
-            "title": "Where pre-formation intra-group roll-over reduction results in negative allocable cost amount: CGT event L2"
-          },
-          {
-            "number": "104-510",
-            "title": "Where tax cost setting amounts for retained cost base assets exceeds joining allocable cost amount: CGT event L3"
-          },
-          {
-            "number": "104-515",
-            "title": "Where no reset cost base assets and excess of net allocable cost amount on joining: CGT event L4"
-          },
-          {
-            "number": "104-520",
-            "title": "Where amount remaining after step 4 of leaving allocable cost amount is negative: CGT event L5"
-          },
-          {
-            "number": "104-525",
-            "title": "Error in calculation of tax cost setting amount for joining entity\u2019s assets: CGT event L6"
-          },
-          {
-            "number": "104-535",
-            "title": "Where reduction in tax cost setting amounts for reset cost base assets cannot be allocated: CGT event L8"
-          },
-          {
-            "section": "Guide to Division",
+            "section": "Division",
             "number": "109",
-            "title": "What this Division is about",
+            "title": "Acquisition of CGT assets",
             "children": [
               {
                 "number": "109-1",
                 "title": "What this Division is about"
+              },
+              {
+                "section": "Subdivision",
+                "number": "109-A",
+                "title": "Operative rules",
+                "children": [
+                  {
+                    "number": "109-5",
+                    "title": "General acquisition rules"
+                  },
+                  {
+                    "number": "109-10",
+                    "title": "When you acquire a CGT asset without a CGT event"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "109-B",
+                "title": "Signposts to other acquisition rules",
+                "children": [
+                  {
+                    "number": "109-50",
+                    "title": "Effect of this Subdivision"
+                  },
+                  {
+                    "number": "109-55",
+                    "title": "Other acquisition rules"
+                  },
+                  {
+                    "number": "109-60",
+                    "title": "Acquisition rules outside this Part and Part 3-3"
+                  }
+                ]
               }
             ]
           },
           {
-            "section": "Subdivision",
-            "number": "109-A",
-            "title": "Operative rules",
+            "section": "Division",
+            "number": "110",
+            "title": "Cost base and reduced cost base",
             "children": [
               {
-                "number": "109-5",
-                "title": "General acquisition rules"
+                "number": "110-1",
+                "title": "What this Division is about"
               },
               {
-                "number": "109-10",
-                "title": "When you acquire a CGT asset without a CGT event"
+                "number": "110-5",
+                "title": "Modifications to general rules"
+              },
+              {
+                "number": "110-10",
+                "title": "Rules about cost base not relevant for some CGT events"
+              },
+              {
+                "section": "Subdivision",
+                "number": "110-A",
+                "title": "Cost base",
+                "children": [
+                  {
+                    "number": "110-25",
+                    "title": "General rules about cost base"
+                  },
+                  {
+                    "number": "110-35",
+                    "title": "Incidental costs"
+                  },
+                  {
+                    "number": "110-36",
+                    "title": "Indexation"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "",
+                "title": "What does not form part of the cost base",
+                "children": [
+                  {
+                    "number": "110-37",
+                    "title": "Expenditure forming part of cost base or element"
+                  },
+                  {
+                    "number": "110-38",
+                    "title": "Exclusions"
+                  },
+                  {
+                    "number": "110-40",
+                    "title": "Assets acquired before 7.30 pm on 13 May 1997"
+                  },
+                  {
+                    "number": "110-43",
+                    "title": "Partnership interests acquired before 7.30 pm on 13 May 1997"
+                  },
+                  {
+                    "number": "110-45",
+                    "title": "Assets acquired after 7.30 pm on 13 May 1997"
+                  },
+                  {
+                    "number": "110-50",
+                    "title": "Partnership interests acquired after 7.30 pm on 13 May 1997"
+                  },
+                  {
+                    "number": "110-53",
+                    "title": "Exceptions to application of sections 110-45 and 110-50"
+                  },
+                  {
+                    "number": "110-54",
+                    "title": "Debt deductions disallowed by thin capitalisation rules"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "110-B",
+                "title": "Reduced cost base",
+                "children": [
+                  {
+                    "number": "110-55",
+                    "title": "General rules about reduced cost base"
+                  },
+                  {
+                    "number": "110-60",
+                    "title": "Reduced cost base for partnership assets"
+                  }
+                ]
               }
             ]
           },
           {
-            "section": "Subdivision",
-            "number": "109-B",
-            "title": "Signposts to other acquisition rules",
+            "section": "Division",
+            "number": "112",
+            "title": "Modifications to cost base and reduced cost base",
             "children": [
               {
-                "number": "109-50",
-                "title": "Effect of this Subdivision"
+                "number": "112-1",
+                "title": "What this Division is about"
               },
               {
-                "number": "109-55",
-                "title": "Other acquisition rules"
+                "number": "112-5",
+                "title": "Discussion of modifications"
               },
               {
-                "number": "109-60",
-                "title": "Acquisition rules outside this Part and Part 3-3"
+                "section": "Subdivision",
+                "number": "112-A",
+                "title": "General modifications",
+                "children": [
+                  {
+                    "number": "112-15",
+                    "title": "General rule for replacement modifications"
+                  },
+                  {
+                    "number": "112-20",
+                    "title": "Market value substitution rule"
+                  },
+                  {
+                    "number": "112-25",
+                    "title": "Split, changed or merged assets"
+                  },
+                  {
+                    "number": "112-30",
+                    "title": "Apportionment rules"
+                  },
+                  {
+                    "number": "112-35",
+                    "title": "Assumption of liability rule"
+                  },
+                  {
+                    "number": "112-36",
+                    "title": "Acquisitions of assets involving look-through earnout rights"
+                  },
+                  {
+                    "number": "112-37",
+                    "title": "Put options"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "112-B",
+                "title": "Finding tables for special rules",
+                "children": [
+                  {
+                    "number": "112-40",
+                    "title": "Effect of this Subdivision"
+                  },
+                  {
+                    "number": "112-45",
+                    "title": "CGT events"
+                  },
+                  {
+                    "number": "112-46",
+                    "title": "Annual cost base adjustment for member\u2019s unit or interest in AMIT"
+                  },
+                  {
+                    "number": "112-48",
+                    "title": "Gifts acquired by associates"
+                  },
+                  {
+                    "number": "112-50",
+                    "title": "Main residence"
+                  },
+                  {
+                    "number": "112-53",
+                    "title": "Scrip for scrip roll-over"
+                  },
+                  {
+                    "number": "112-53AA",
+                    "title": "Statutory licences"
+                  },
+                  {
+                    "number": "112-53AB",
+                    "title": "Change of incorporation"
+                  },
+                  {
+                    "number": "112-53A",
+                    "title": "MDO roll-over"
+                  },
+                  {
+                    "number": "112-53B",
+                    "title": "Exchange of stapled ownership interests for units in a unit trust"
+                  },
+                  {
+                    "number": "112-53C",
+                    "title": "Water entitlement roll-overs"
+                  },
+                  {
+                    "number": "112-54",
+                    "title": "Demergers"
+                  },
+                  {
+                    "number": "112-54A",
+                    "title": "Transfer of assets between certain trusts"
+                  },
+                  {
+                    "number": "112-55",
+                    "title": "Effect of you dying"
+                  },
+                  {
+                    "number": "112-60",
+                    "title": "Bonus shares or units"
+                  },
+                  {
+                    "number": "112-65",
+                    "title": "Rights"
+                  },
+                  {
+                    "number": "112-70",
+                    "title": "Convertible interests"
+                  },
+                  {
+                    "number": "112-77",
+                    "title": "Exchangeable interests"
+                  },
+                  {
+                    "number": "112-78",
+                    "title": "Exploration investments"
+                  },
+                  {
+                    "number": "112-80",
+                    "title": "Leases"
+                  },
+                  {
+                    "number": "112-85",
+                    "title": "Options"
+                  },
+                  {
+                    "number": "112-87",
+                    "title": "Residency"
+                  },
+                  {
+                    "number": "112-90",
+                    "title": "An asset stops being a pre-CGT asset"
+                  },
+                  {
+                    "number": "112-92",
+                    "title": "Demutualisation of certain entities"
+                  },
+                  {
+                    "number": "112-95",
+                    "title": "Transfer of tax losses and net capital losses within wholly-owned groups of companies"
+                  },
+                  {
+                    "number": "112-97",
+                    "title": "Modifications outside this Part and Part 3-3"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "112-C",
+                "title": "Replacement-asset roll-overs",
+                "children": [
+                  {
+                    "number": "112-100",
+                    "title": "Effect of this Subdivision"
+                  },
+                  {
+                    "number": "112-105",
+                    "title": "What is a replacement-asset roll-over?"
+                  },
+                  {
+                    "number": "112-110",
+                    "title": "How is the cost base of the replacement asset modified?"
+                  },
+                  {
+                    "number": "112-115",
+                    "title": "Table of replacement-asset roll-overs"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "112-D",
+                "title": "Same-asset roll-overs",
+                "children": [
+                  {
+                    "number": "112-135",
+                    "title": "Effect of this Subdivision"
+                  },
+                  {
+                    "number": "112-140",
+                    "title": "What is a same-asset roll-over?"
+                  },
+                  {
+                    "number": "112-145",
+                    "title": "How is the cost base of the asset modified?"
+                  },
+                  {
+                    "number": "112-150",
+                    "title": "Table of same-asset roll-overs"
+                  }
+                ]
               }
             ]
           },
           {
-            "number": "112-80",
-            "title": "Leases"
-          },
-          {
-            "number": "112-85",
-            "title": "Options"
-          },
-          {
-            "number": "112-87",
-            "title": "Residency"
-          },
-          {
-            "number": "112-90",
-            "title": "An asset stops being a pre-CGT asset"
-          },
-          {
-            "number": "112-92",
-            "title": "Demutualisation of certain entities"
-          },
-          {
-            "number": "112-95",
-            "title": "Transfer of tax losses and net capital losses within wholly-owned groups of companies"
-          },
-          {
-            "number": "112-97",
-            "title": "Modifications outside this Part and Part 3-3"
-          },
-          {
-            "section": "Subdivision",
-            "number": "112-C",
-            "title": "Replacement-asset roll-overs",
+            "section": "Division",
+            "number": "114",
+            "title": "Indexation of cost base",
             "children": [
               {
-                "number": "112-100",
-                "title": "Effect of this Subdivision"
+                "number": "114-1",
+                "title": "Indexing elements of cost base"
               },
               {
-                "number": "112-105",
-                "title": "What is a replacement-asset roll-over?"
+                "number": "114-5",
+                "title": "When indexation relevant"
               },
               {
-                "number": "112-110",
-                "title": "How is the cost base of the replacement asset modified?"
+                "number": "114-10",
+                "title": "Requirement for 12 months ownership"
               },
               {
-                "number": "112-115",
-                "title": "Table of replacement-asset roll-overs"
+                "number": "114-15",
+                "title": "Cost base modifications"
+              },
+              {
+                "number": "114-20",
+                "title": "When expenditure is incurred for roll-overs"
               }
             ]
           },
           {
-            "section": "Subdivision",
-            "number": "112-D",
-            "title": "Same-asset roll-overs",
+            "section": "Division",
+            "number": "115",
+            "title": "Discount capital gains and trusts\u2019 net capital gains",
             "children": [
               {
-                "number": "112-135",
-                "title": "Effect of this Subdivision"
+                "number": "115-1",
+                "title": "What this Division is about"
               },
               {
-                "number": "112-140",
-                "title": "What is a same-asset roll-over?"
+                "section": "Subdivision",
+                "number": "115-A",
+                "title": "Discount capital gains",
+                "children": [
+                  {
+                    "number": "115-5",
+                    "title": "What is a discount capital gain?"
+                  },
+                  {
+                    "number": "115-10",
+                    "title": "Who can make a discount capital gain?"
+                  },
+                  {
+                    "number": "115-15",
+                    "title": "Discount capital gain must be made after 21 September 1999"
+                  },
+                  {
+                    "number": "115-20",
+                    "title": "Discount capital gain must not have indexed cost base"
+                  },
+                  {
+                    "number": "115-25",
+                    "title": "Discount capital gain must be on asset acquired at least 12 months before"
+                  },
+                  {
+                    "number": "115-30",
+                    "title": "Special rules about time of acquisition"
+                  },
+                  {
+                    "number": "115-32",
+                    "title": "Special rule about time of acquisition for certain replacement-asset roll-overs"
+                  },
+                  {
+                    "number": "115-34",
+                    "title": "Further special rule about time of acquisition for certain replacement-asset roll-overs"
+                  }
+                ]
               },
               {
-                "number": "112-145",
-                "title": "How is the cost base of the asset modified?"
+                "section": "Subdivision",
+                "number": "",
+                "title": "What are not discount capital gains",
+                "children": [
+                  {
+                    "number": "115-40",
+                    "title": "Capital gain resulting from agreement made within a year of acquisition"
+                  },
+                  {
+                    "number": "115-45",
+                    "title": "Capital gain from equity in an entity with newly acquired assets"
+                  },
+                  {
+                    "number": "115-50",
+                    "title": "Discount capital gain from equity in certain entities"
+                  },
+                  {
+                    "number": "115-55",
+                    "title": "Capital gains involving money received from demutualisation of friendly society health or life insurer"
+                  }
+                ]
               },
               {
-                "number": "112-150",
-                "title": "Table of same-asset roll-overs"
+                "section": "Subdivision",
+                "number": "115-B",
+                "title": "Discount percentage",
+                "children": [
+                  {
+                    "number": "115-100",
+                    "title": "What is the discount percentage for a discount capital gain"
+                  },
+                  {
+                    "number": "115-105",
+                    "title": "Foreign or temporary residents\u2014individuals with direct gains"
+                  },
+                  {
+                    "number": "115-110",
+                    "title": "Foreign or temporary residents\u2014individuals with trust gains"
+                  },
+                  {
+                    "number": "115-115",
+                    "title": "Foreign or temporary residents\u2014percentage for individuals"
+                  },
+                  {
+                    "number": "115-120",
+                    "title": "Foreign or temporary residents\u2014trusts with certain gains"
+                  },
+                  {
+                    "number": "115-125",
+                    "title": "Investors disposing of property used for affordable housing"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "115-C",
+                "title": "Rules about trusts with net capital gains",
+                "children": [
+                  {
+                    "number": "115-200",
+                    "title": "What this Division is about"
+                  },
+                  {
+                    "number": "115-210",
+                    "title": "When this Subdivision applies"
+                  },
+                  {
+                    "number": "115-215",
+                    "title": "Assessing presently entitled beneficiaries"
+                  },
+                  {
+                    "number": "115-220",
+                    "title": "Assessing trustees under section 98 of the Income Tax Assessment Act 1936"
+                  },
+                  {
+                    "number": "115-222",
+                    "title": "Assessing trustees under section 99 or 99A of the Income Tax Assessment Act 1936"
+                  },
+                  {
+                    "number": "115-225",
+                    "title": "Attributable gain"
+                  },
+                  {
+                    "number": "115-227",
+                    "title": "Share of a capital gain"
+                  },
+                  {
+                    "number": "115-228",
+                    "title": "Specifically entitled to an amount of a capital gain"
+                  },
+                  {
+                    "number": "115-230",
+                    "title": "Choice for resident trustee to be specifically entitled to capital gain"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "115-D",
+                "title": "Tax relief for shareholders in listed investment companies",
+                "children": [
+                  {
+                    "number": "115-275",
+                    "title": "What this Subdivision is about"
+                  },
+                  {
+                    "number": "115-280",
+                    "title": "Deduction for certain dividends"
+                  },
+                  {
+                    "number": "115-285",
+                    "title": "Meaning of LIC capital gain"
+                  },
+                  {
+                    "number": "115-290",
+                    "title": "Meaning of listed investment company"
+                  },
+                  {
+                    "number": "115-295",
+                    "title": "Maintaining records"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "section": "Division",
+            "number": "116",
+            "title": "Capital proceeds",
+            "children": [
+              {
+                "number": "116-1",
+                "title": "What this Division is about"
+              },
+              {
+                "number": "116-5",
+                "title": "General rules"
+              },
+              {
+                "number": "116-10",
+                "title": "Modifications to general rules"
+              },
+              {
+                "number": "116-20",
+                "title": "General rules about capital proceeds"
+              },
+              {
+                "number": "116-25",
+                "title": "Table of modifications to the general rules"
+              },
+              {
+                "number": "116-30",
+                "title": "Market value substitution rule: modification 1"
+              },
+              {
+                "number": "116-35",
+                "title": "Companies and trusts that are not widely held"
+              },
+              {
+                "number": "116-40",
+                "title": "Apportionment rule: modification 2"
+              },
+              {
+                "number": "116-45",
+                "title": "Non-receipt rule: modification 3"
+              },
+              {
+                "number": "116-50",
+                "title": "Repaid rule: modification 4"
+              },
+              {
+                "number": "116-55",
+                "title": "Assumption of liability rule: modification 5"
+              },
+              {
+                "number": "116-60",
+                "title": "Misappropriation rule: modification 6"
+              },
+              {
+                "number": "116-65",
+                "title": "Disposal etc. of a CGT asset the subject of an option"
+              },
+              {
+                "number": "116-70",
+                "title": "Option requiring both acquisition and disposal etc"
+              },
+              {
+                "number": "116-75",
+                "title": "Special rule for CGT event happening to a lease"
+              },
+              {
+                "number": "116-80",
+                "title": "Special rule if CGT asset is shares or an interest in a trust"
+              },
+              {
+                "number": "116-85",
+                "title": "Section 47A of 1936 Act applying to rolled-over asset"
+              },
+              {
+                "number": "116-95",
+                "title": "Company changes residence from an unlisted country"
+              },
+              {
+                "number": "116-100",
+                "title": "Gifts of property"
+              },
+              {
+                "number": "116-105",
+                "title": "Conservation covenants"
+              },
+              {
+                "number": "116-110",
+                "title": "Roll-overs for merging superannuation funds"
+              },
+              {
+                "number": "116-115",
+                "title": "Farm-in farm-out arrangements"
+              },
+              {
+                "number": "116-120",
+                "title": "Disposals of assets involving look-through earnout rights"
+              }
+            ]
+          },
+          {
+            "section": "Division",
+            "number": "118",
+            "title": "Exemptions",
+            "children": [
+              {
+                "number": "118-1",
+                "title": "What this Division is about"
+              },
+              {
+                "section": "Subdivision",
+                "number": "118-A",
+                "title": "General exemptions",
+                "children": [
+                  {
+                    "number": "118-5",
+                    "title": "Cars, motor cycles and valour decorations"
+                  },
+                  {
+                    "number": "118-10",
+                    "title": "Collectables and personal use assets"
+                  },
+                  {
+                    "number": "118-12",
+                    "title": "Assets used to produce exempt income etc."
+                  },
+                  {
+                    "number": "118-13",
+                    "title": "Shares in a PDF"
+                  },
+                  {
+                    "number": "118-15",
+                    "title": "Registered emissions units"
+                  }
+                ]
+              },
+              {
+                "section": "Anti-overlap provisions",
+                "number": "",
+                "title": "",
+                "children": [
+                  {
+                    "number": "118-20",
+                    "title": "Reducing capital gains if amount otherwise assessable"
+                  },
+                  {
+                    "number": "118-21",
+                    "title": "Carried interests"
+                  },
+                  {
+                    "number": "118-22",
+                    "title": "Superannuation lump sums and employment termination payments"
+                  },
+                  {
+                    "number": "118-24",
+                    "title": "Depreciating assets"
+                  },
+                  {
+                    "number": "118-25",
+                    "title": "Trading stock"
+                  },
+                  {
+                    "number": "118-27",
+                    "title": "Division 230 financial arrangements and financial arrangements to which Subdivision 250-E applies"
+                  },
+                  {
+                    "number": "118-30",
+                    "title": "Film copyright"
+                  },
+                  {
+                    "number": "118-35",
+                    "title": "R&D"
+                  }
+                ]
+              },
+              {
+                "section": "Exempt or loss-denying transactions",
+                "number": "",
+                "title": "",
+                "children": [
+                  {
+                    "number": "118-37",
+                    "title": "Compensation, damages etc."
+                  },
+                  {
+                    "number": "118-40",
+                    "title": "Expiry of a lease"
+                  },
+                  {
+                    "number": "118-42",
+                    "title": "Transfer of stratum units"
+                  },
+                  {
+                    "number": "118-45",
+                    "title": "Sale of rights to mine"
+                  },
+                  {
+                    "number": "118-55",
+                    "title": "Foreign currency hedging gains and losses"
+                  },
+                  {
+                    "number": "118-60",
+                    "title": "Certain gifts"
+                  },
+                  {
+                    "number": "118-65",
+                    "title": "Later distributions of personal services income"
+                  },
+                  {
+                    "number": "118-70",
+                    "title": "Transactions by exempt entities"
+                  },
+                  {
+                    "number": "118-75",
+                    "title": "Marriage or relationship breakdown settlements"
+                  },
+                  {
+                    "number": "118-77",
+                    "title": "Native title and rights to native title benefits"
+                  }
+                ]
+              },
+              {
+                "section": "Boat capital gains",
+                "number": "",
+                "title": "",
+                "children": [
+                  {
+                    "number": "118-80",
+                    "title": "Reduction of boat capital gain"
+                  }
+                ]
+              },
+              {
+                "section": "Special disability trusts",
+                "number": "",
+                "title": "",
+                "children": [
+                  {
+                    "number": "118-85",
+                    "title": "Special disability trusts"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "118-B",
+                "title": "Main residence",
+                "children": [
+                  {
+                    "number": "118-100",
+                    "title": "What this Subdivision is about"
+                  },
+                  {
+                    "number": "118-105",
+                    "title": "Map of this Subdivision"
+                  },
+                  {
+                    "section": "Basic case and concepts",
+                    "number": "",
+                    "title": "",
+                    "children": [
+                      {
+                        "number": "118-110",
+                        "title": "Basic case"
+                      },
+                      {
+                        "number": "118-115",
+                        "title": "Meaning of dwelling"
+                      },
+                      {
+                        "number": "118-120",
+                        "title": "Extension to adjacent land etc."
+                      },
+                      {
+                        "number": "118-125",
+                        "title": "Meaning of ownership period"
+                      },
+                      {
+                        "number": "118-130",
+                        "title": "Meaning of ownership interest in land or a dwelling"
+                      }
+                    ]
+                  },
+                  {
+                    "section": "Rules that may extend the exemption",
+                    "number": "",
+                    "title": "",
+                    "children": [
+                      {
+                        "number": "118-135",
+                        "title": "Moving into a dwelling"
+                      },
+                      {
+                        "number": "118-140",
+                        "title": "Changing main residences"
+                      },
+                      {
+                        "number": "118-145",
+                        "title": "Absences"
+                      },
+                      {
+                        "number": "118-147",
+                        "title": "Absence from dwelling replacing main residence that was compulsorily acquired, destroyed etc."
+                      },
+                      {
+                        "number": "118-150",
+                        "title": "If you build, repair or renovate a dwelling"
+                      },
+                      {
+                        "number": "118-155",
+                        "title": "Where individual referred to in section 118-150 dies"
+                      },
+                      {
+                        "number": "118-160",
+                        "title": "Destruction of dwelling and sale of land"
+                      }
+                    ]
+                  },
+                  {
+                    "section": "Rules that may limit the exemption",
+                    "number": "",
+                    "title": "",
+                    "children": [
+                      {
+                        "number": "118-165",
+                        "title": "Separate CGT event for adjacent land or other structures"
+                      },
+                      {
+                        "number": "118-170",
+                        "title": "Spouse having different main residence"
+                      },
+                      {
+                        "number": "118-175",
+                        "title": "Dependent child having different main residence"
+                      }
+                    ]
+                  },
+                  {
+                    "section": "Roll-overs under Subdivision 126-A",
+                    "number": "",
+                    "title": "",
+                    "children": [
+                      {
+                        "number": "118-178",
+                        "title": "Previous roll-over under Subdivision 126-A"
+                      },
+                      {
+                        "number": "118-180",
+                        "title": "Acquisition of dwelling from company or trust on marriage or relationship breakdown\u2014roll-over provision applying"
+                      }
+                    ]
+                  },
+                  {
+                    "section": "Partial exemption rules",
+                    "number": "",
+                    "title": "",
+                    "children": [
+                      {
+                        "number": "118-185",
+                        "title": "Partial exemption where dwelling was your main residence during part only of ownership period"
+                      },
+                      {
+                        "number": "118-190",
+                        "title": "Use of dwelling for producing assessable income"
+                      },
+                      {
+                        "number": "118-192",
+                        "title": "Special rule for first use to produce income"
+                      }
+                    ]
+                  },
+                  {
+                    "section": "Dwellings acquired from deceased estates",
+                    "number": "",
+                    "title": "",
+                    "children": [
+                      {
+                        "number": "118-195",
+                        "title": "Dwelling acquired from a deceased estate"
+                      },
+                      {
+                        "number": "118-197",
+                        "title": "Special rule for surviving joint tenant"
+                      },
+                      {
+                        "number": "118-200",
+                        "title": "Partial exemption for deceased estate dwellings"
+                      },
+                      {
+                        "number": "118-205",
+                        "title": "Adjustment if dwelling inherited from deceased individual"
+                      },
+                      {
+                        "number": "118-210",
+                        "title": "Trustee acquiring dwelling under will"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "section": "Special disability trusts",
+                "number": "",
+                "title": "",
+                "children": [
+                  {
+                    "number": "118-215",
+                    "title": "What the following provisions are about"
+                  },
+                  {
+                    "number": "118-218",
+                    "title": "Exemption available to trustee\u2014main case"
+                  },
+                  {
+                    "number": "118-220",
+                    "title": "Exemption available to trustee\u2014after the principal beneficiary\u2019s death"
+                  },
+                  {
+                    "number": "118-222",
+                    "title": "Exemption available to other beneficiary who acquires the CGT asset after the principal beneficiary\u2019s death"
+                  },
+                  {
+                    "number": "118-225",
+                    "title": "Amount of exemption available after the principal beneficiary\u2019s death\u2014general"
+                  },
+                  {
+                    "number": "118-227",
+                    "title": "Amount of exemption available after the principal beneficiary\u2019s death\u2014cost base and reduced cost base"
+                  },
+                  {
+                    "number": "118-230",
+                    "title": "Application of CGT events E5 and E7 in relation to main residence exemption and special disability trusts"
+                  }
+                ]
+              },
+              {
+                "section": "Compulsory acquisitions of adjacent land only",
+                "number": "",
+                "title": "",
+                "children": [
+                  {
+                    "number": "118-240",
+                    "title": "What the following provisions are about"
+                  },
+                  {
+                    "number": "118-245",
+                    "title": "CGT events happening only to adjacent land"
+                  },
+                  {
+                    "number": "118-250",
+                    "title": "Compulsory acquisitions of adjacent land"
+                  },
+                  {
+                    "number": "118-255",
+                    "title": "Maximum exempt area"
+                  },
+                  {
+                    "number": "118-260",
+                    "title": "Partial exemption rules"
+                  },
+                  {
+                    "number": "118-265",
+                    "title": "Extension to adjacent structures"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "118-D",
+                "title": "Insurance and superannuation",
+                "children": [
+                  {
+                    "number": "118-300",
+                    "title": "Insurance policies"
+                  },
+                  {
+                    "number": "118-305",
+                    "title": "Superannuation"
+                  },
+                  {
+                    "number": "118-310",
+                    "title": "RSA\u2019s"
+                  },
+                  {
+                    "number": "118-313",
+                    "title": "Superannuation agreements under the Family Law Act"
+                  },
+                  {
+                    "number": "118-315",
+                    "title": "Segregated exempt assets of life insurance companies"
+                  },
+                  {
+                    "number": "118-320",
+                    "title": "Segregated current pension assets of a complying superannuation entity"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "118-E",
+                "title": "Units in pooled superannuation trusts",
+                "children": [
+                  {
+                    "number": "118-350",
+                    "title": "Units in pooled superannuation trusts"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "118-F",
+                "title": "Venture capital investment",
+                "children": [
+                  {
+                    "number": "118-400",
+                    "title": "What this Subdivision is about"
+                  },
+                  {
+                    "section": "Operative provisions",
+                    "number": "",
+                    "title": "",
+                    "children": [
+                      {
+                        "number": "118-405",
+                        "title": "Exemption for certain foreign venture capital investments through venture capital limited partnerships"
+                      },
+                      {
+                        "number": "118-407",
+                        "title": "Exemption for certain venture capital investments through early stage venture capital limited partnerships"
+                      },
+                      {
+                        "number": "118-408",
+                        "title": "Partial exemption for some capital gains otherwise fully exempt under section 118-407"
+                      },
+                      {
+                        "number": "118-410",
+                        "title": "Exemption for certain foreign venture capital investments through Australian venture capital funds of funds"
+                      },
+                      {
+                        "number": "118-415",
+                        "title": "Exemption for certain venture capital investments by foreign residents"
+                      },
+                      {
+                        "number": "118-420",
+                        "title": "Meaning of eligible venture capital partner etc."
+                      },
+                      {
+                        "number": "118-425",
+                        "title": "Meaning of eligible venture capital investment \u2014 investments in companies"
+                      },
+                      {
+                        "number": "118-427",
+                        "title": "Meaning of eligible venture capital investment \u2014 investments in unit trusts"
+                      },
+                      {
+                        "number": "118-428",
+                        "title": "Additional investment requirements for ESVCLPs"
+                      },
+                      {
+                        "number": "118-430",
+                        "title": "Meaning of at risk"
+                      },
+                      {
+                        "number": "118-432",
+                        "title": "Findings of substantially novel applications of technology"
+                      },
+                      {
+                        "number": "118-435",
+                        "title": "Special rule relating to investment in foreign resident holding companies"
+                      },
+                      {
+                        "number": "118-440",
+                        "title": "Meaning of permitted entity value"
+                      },
+                      {
+                        "number": "118-445",
+                        "title": "Meaning of committed capital"
+                      },
+                      {
+                        "number": "118-450",
+                        "title": "Values of assets and investments of entities without auditors"
+                      },
+                      {
+                        "number": "118-455",
+                        "title": "Impact Assessment of this Subdivision"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "118-G",
+                "title": "Venture capital: investment by superannuation funds for foreign residents",
+                "children": [
+                  {
+                    "number": "118-500",
+                    "title": "What this Subdivision is about"
+                  },
+                  {
+                    "number": "118-505",
+                    "title": "Exemption for certain foreign venture capital"
+                  },
+                  {
+                    "number": "118-510",
+                    "title": "Meaning of resident investment vehicle"
+                  },
+                  {
+                    "number": "118-515",
+                    "title": "Meaning of venture capital entity"
+                  },
+                  {
+                    "number": "118-520",
+                    "title": "Meaning of superannuation fund for foreign residents"
+                  },
+                  {
+                    "number": "118-525",
+                    "title": "Meaning of venture capital equity"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "118-H",
+                "title": "Demutualisation of Tower Corporation",
+                "children": [
+                  {
+                    "number": "118-550",
+                    "title": "Demutualisation of Tower Corporation"
+                  }
+                ]
+              },
+              {
+                "section": "Subdivision",
+                "number": "118-I",
+                "title": "Look-through earnout rights",
+                "children": [
+                  {
+                    "number": "118-560",
+                    "title": "Object"
+                  },
+                  {
+                    "number": "118-565",
+                    "title": "Look-through earnout rights"
+                  },
+                  {
+                    "number": "118-570",
+                    "title": "Extra ways a CGT asset can be an active asset"
+                  },
+                  {
+                    "number": "118-575",
+                    "title": "Creating and ending look-through earnout rights"
+                  },
+                  {
+                    "number": "118-580",
+                    "title": "Temporarily disregard capital losses affected by look-through earnout rights"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "section": "Division",
+            "number": "121",
+            "title": "Record keeping",
+            "children": [
+              {
+                "section": "Guide to Division",
+                "number": "",
+                "title": "Guide to Division 121",
+                "children": [
+                  {
+                    "number": "121-10",
+                    "title": "What this Division is about"
+                  }
+                ]
+              },
+              {
+                "section": "Operative provisions",
+                "number": "",
+                "title": "Operative provisions",
+                "children": [
+                  {
+                    "number": "121-20",
+                    "title": "What records you must keep"
+                  },
+                  {
+                    "number": "121-25",
+                    "title": "How long you must retain the records"
+                  },
+                  {
+                    "number": "121-30",
+                    "title": "Exceptions"
+                  },
+                  {
+                    "number": "121-35",
+                    "title": "Asset register entries"
+                  }
+                ]
               }
             ]
           }

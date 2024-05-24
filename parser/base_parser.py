@@ -1,4 +1,4 @@
-from typing import Union, Any, Callable, List, Dict, Tuple
+from typing import Union, Any, Callable, List, Dict, Tuple, Awaitable
 from abc import ABC, abstractmethod
 from fastapi import UploadFile
 import asyncio
@@ -29,7 +29,7 @@ class BaseParser:
     
     async def rate_limited_process(
         self, 
-        process_function: Callable[..., Any], 
+        process_function: Callable[..., Awaitable[Any]],
         *args: Any, 
         max_attempts: int = 3, 
         **kwargs: Any
