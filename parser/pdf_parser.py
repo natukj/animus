@@ -110,7 +110,7 @@ class PDFParser(BaseParser):
             raise ValueError("file must be an instance of UploadFile or str.")
         self.toc_md_string, self.content_md_string = self.generate_md_string()
         self.toc_hierarchy_schema = await self.generate_toc_hierarchy_schema()
-        self.toc_schema = await self.generate_toc_schema()
+        #self.toc_schema = await self.generate_toc_schema()
         #print(json.dumps(self.toc_schema, indent=4))
     
     def find_first_toc_page_no(self) -> int:
@@ -267,7 +267,7 @@ class PDFParser(BaseParser):
         print(f"Most Common Schema: {json.dumps(most_common_schema, indent=4)}")
         return most_common_schema
     
-    async def filter_schema(self, toc_hierarchy_schema: Dict[str, str], num_sections: int = 5) -> Dict[str, str]:
+    async def filter_schema(self, toc_hierarchy_schema: Dict[str, str], content: str, num_sections: int = 5) -> Dict[str, str]:
         """
         Filter the schema to reduce size and complexity.
         """
@@ -295,9 +295,14 @@ class PDFParser(BaseParser):
 
         sorted_headings = sorted(most_common_headings.items(), key=lambda x: len(x[0]))
         result = {heading: level for level, heading in sorted_headings[:num_sections]}
+        # need to dynamically adjust the schema based on whats present in the content
+        for heading, level in toc_hierarchy_schema.items():
+            formatted_heading = f"{level} {heading}"
+            if formatted_heading in content and heading not in result:
+                result[heading] = level
         return result
     
-    async def generate_toc_schema(self, levels: Dict[str, str] = None, depth: int = 0, max_depth: int = None) -> List[Dict[str, Any]]:
+    async def generate_toc_schema(self, levels: Dict[str, str] = None, content: str = None, depth: int = 0, max_depth: int = None) -> List[Dict[str, Any]]:
         """
         Generate a custom schema for the ToC based on the hierarchy schema.
         """
@@ -308,22 +313,23 @@ class PDFParser(BaseParser):
                 adjust_count = top_level_count - 1
                 levels_unfiltered = {k: v[adjust_count:] for k, v in self.toc_hierarchy_schema.items()}
                 self.adjusted_toc_hierarchy_schema = levels_unfiltered
-                levels = await self.filter_schema(levels_unfiltered)
+                levels = await self.filter_schema(levels_unfiltered, content)
                 print(f"Adjusted ToC Hierarchy Schema: {json.dumps(levels, indent=4)}")
                 #print(f"Adjusted ToC Hierarchy Schema")
             else:    
-                levels = await self.filter_schema(self.toc_hierarchy_schema)
+                levels = await self.filter_schema(self.toc_hierarchy_schema, content)
+                print(f"UNadjusted ToC Hierarchy Schema: {json.dumps(levels, indent=4)}")
 
         if max_depth is None:
             max_depth = max(marker.count('#') for marker in levels.values())
 
         if depth >= max_depth:
-            return []
+            return [], levels
 
         current_depth_levels = [name for name, marker in levels.items() if marker.count('#') == depth + 1]
-        children = await self.generate_toc_schema(levels, depth + 1, max_depth)
+        children, _ = await self.generate_toc_schema(levels, content, depth + 1, max_depth)
 
-        return [
+        toc_schema = [
             {
                 "section": f"string (type of the section, e.g., {level_name})",
                 "number": "string (numeric or textual identifier of the section)",
@@ -340,6 +346,7 @@ class PDFParser(BaseParser):
                 ]
             } for level_name in current_depth_levels
         ]
+        return toc_schema, levels
 
     async def process_heading(self, heading: str) -> Dict[str, str]:
         messages = [
@@ -447,7 +454,10 @@ class PDFParser(BaseParser):
         async def process_function():
             nonlocal sublevel_title
             nonlocal subsublevel_title
-            TOC_SCHEMA = {"contents": [json.dumps(self.toc_schema, indent=4)]}
+            custom_schema, custom_levels = await self.generate_toc_schema(content=content)
+            TOC_SCHEMA = {"contents": [json.dumps(custom_schema, indent=4)]}
+            print(f"Custom Schema: {json.dumps(custom_schema, indent=4)}")
+            # TOC_SCHEMA = {"contents": [json.dumps(self.toc_schema, indent=4)]}
             
             if not sublevel_title:
                 messages = [
@@ -457,7 +467,7 @@ class PDFParser(BaseParser):
                 sublevel_title = "Complete"
                 subsublevel_title = "Complete"
             else:
-                section_types = ", ".join(self.toc_hierarchy_schema.keys())
+                section_types = ", ".join(custom_levels.keys())
                 level_title_dict = json.loads(level_title)
                 level_title_str = f"{level_title_dict['section']} {level_title_dict['number']} {level_title_dict['title']}"
                 sublevel_title_dict = json.loads(sublevel_title)
@@ -469,8 +479,8 @@ class PDFParser(BaseParser):
                     subsublevel_title_str = ""
                     subsublevel_title = "Complete"
                 messages = [
-                    {"role": "system", "content": prompts.TOC_SCHEMA_SYS_PROMPT_PLUS.format(section_types=section_types, level_title=level_title_str, sublevel_title=sublevel_title_str, subsublevel_title=subsublevel_title_str, TOC_SCHEMA=TOC_SCHEMA)},
-                    {"role": "user", "content": content}
+                    {"role": "system", "content": prompts.TOC_SCHEMA_SYS_PROMPT_PLUS},
+                    {"role": "user", "content": prompts.TOC_SCHEMA_USER_PROMPT_PLUS.format(level_title=level_title_str, sublevel_title=sublevel_title_str, subsublevel_title=subsublevel_title_str, section_types=section_types, TOC_SCHEMA=TOC_SCHEMA, content=content)}
                 ]
                 response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o")
                 if not response.choices or not response.choices[0].message:

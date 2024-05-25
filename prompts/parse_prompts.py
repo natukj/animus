@@ -87,32 +87,32 @@ An example of the JSON structure is provided below:
 
 {TOC_SCHEMA}
 """
-TOC_SCHEMA_SYS_PROMPT_PLUS = """You are working for the Australian Tax Office (ATO), the Australian Government's principal revenue collection agency. Your task is to transform the Table of Contents (ToC) from the Income Tax Assessment Act, provided in Markdown format, into a structured JSON object according to the following guidelines:
+TOC_SCHEMA_SYS_PROMPT_PLUS = """You are an expert in data processing, parsing and structuring Markdown text into JSON format. Pay extremely close attention to the instructions and guidelines provided to ensure the output is accurate and well-structured.
+"""
+TOC_SCHEMA_USER_PROMPT_PLUS = """The Australian Tax Office (ATO), the Australian Government's principal revenue collection agency, has tasked me with transforming the Table of Contents (ToC) from the Income Tax Assessment Act, provided in Markdown format, into a structured JSON object. I need you to please do this (or i'll get fired). It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes.
 
-**Instructions:**
-1. **Section Hierarchy:** You must identify the hierarchical level of each section. Each "section" key in the ToC text is prefixed by a series of "#" symbols that correspond to their hierarchical level.
-2. **Section Types:** The ToC contains sections of various types, such as: {section_types}. These must be standalone sections in the JSON object.
-2. **Multiple Sections at the Same Level:** Sections sharing the same number of "#" symbols must be placed at the same hierarchical level within the JSON object.
-3. **Missing Section Numbers:** If a section lacks a numeric identifier, set the "number" value to an empty string ("").
-4. **No Empty Sections:** The "section" key must never be an empty string.
-5. **Lowest Level Formatting:** The lowest level in the JSON hierarchy must only contain the "number" and "title" keys. These levels have no "#" prefix in the ToC.
+## INSTRUCTIONS
+I have split the ToC into multiple parts, and you will be working on the following part:
+      - {level_title}
+         - {sublevel_title}
+            - {subsublevel_title}
 
-**Exclusions:**
-- Exclude dots, page numbers, and any text not explicitly listed as a ToC item.
-- If there is no number associated with a section, leave the "number" field empty ("").
-- If there is no title associated with a section, or the title is the same as the section, leave the "title" field empty ("").
+This part has section types that could include: {section_types}. You need to independently verify this and any other section types that may be present.
 
-**Split Sections:** 
-The following section has been split into multiple parts, the part you will be working on is:
-
-   - {level_title}
-      - {sublevel_title}
-         - {subsublevel_title}
-
-**JSON Format:**
-An example of the JSON structure is provided below:
+Here is an example of the JSON structure you need to follow:
 
 {TOC_SCHEMA}
+
+### IMPORTANT NOTES
+- The lowest level in the JSON hierarchy must only contain the "number" and "title" keys. These levels have no "#" prefix in the ToC, and MUST be the direct children of a parent section.
+- Sections sharing the same number of "#" symbols must be placed at the same hierarchical level within the JSON object.
+- If a section lacks a numeric identifier, set the "number" value to an empty string ("").
+- If a section lacks a title, or the title is the same as the section, set the "title" value to an empty string ("").
+- Exclude dots, page numbers, and any text not explicitly listed as a ToC item.         
+
+Please create a JSON object from the following ToC Markdown text:
+
+{content}
 """
 TOC_SECTION_TEMPLATE = {
     "section": "string (section type, e.g., 'Chapter', 'Part', 'Section')",
