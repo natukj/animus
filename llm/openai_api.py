@@ -8,13 +8,13 @@ client = AsyncOpenAI()
 
 @retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3),
     retry=retry_if_exception_type(ssl.SSLError))
-async def openai_client_chat_completion_request(messages, model="gpt-4o", temperature=0):
+async def openai_client_chat_completion_request(messages, model="gpt-4o", temperature=0, response_format="json_object"):
     # if i don't use this i get Exception: [SSL: SSLV3_ALERT_BAD_RECORD_MAC] sslv3 alert bad record mac (_ssl.c:2580) randomly
     try:
         response = await client.chat.completions.create(
             model=model,
             messages=messages,
-            response_format={ "type": "json_object" },
+            response_format={ "type": response_format },
             temperature=temperature
         )
         return response

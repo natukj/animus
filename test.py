@@ -88,6 +88,11 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
 
     content_md_lines = content_md_string.split("\n")
     content_md_section_lines = [(line, idx) for idx, line in enumerate(content_md_lines) if line.startswith('#')]
+    # section_lines=""
+    # for line, idx in content_md_section_lines:
+    #     section_lines += f"{line} [{idx}]\n"
+    # with open("zzz_section_lines.md", "w") as f:
+    #     f.write(section_lines)
     
     with open(master_toc_file, "r") as f:
         master_toc = json.load(f)
@@ -119,6 +124,11 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
                 return f'{md_level} {section} {title}'
         elif not section:
             return f'{md_level} {number} {title}'
+        elif not title:
+            if number in section:
+                return f'{md_level} {section}'
+            else:
+                return f'{md_level} {section} {number}'
         else:
             return f'{md_level} {section}'
 
@@ -144,48 +154,42 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
             return flattened
         
         remaining_content_md_section_lines = content_md_section_lines.copy()
-        processed_indices = set()
         def get_section_content(next_formatted_section_name: str, formatted_section_name: str = None) -> Tuple[str, int]:
-            nonlocal remaining_content_md_section_lines, processed_indices
+            nonlocal remaining_content_md_section_lines
             if formatted_section_name:
                 start_matches = process.extractBests(formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
-                print(f'formatted_section_name: {formatted_section_name}')
                 if start_matches:
                     start_highest_score = max(start_matches, key=lambda x: x[1])[1]
                     start_highest_score_matches = [match for match in start_matches if match[1] == start_highest_score]
                     start_matched_line = min(start_highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0]))[0]
-                    #start_matched_line = min(start_highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0] and idx not in processed_indices))[0]
-                    print(f"Matched start from {len(start_highest_score_matches)}: {formatted_section_name} to {start_matched_line}")
                     start_line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == start_matched_line)
-                    # if len(start_highest_score_matches) > 1:
-                    #     processed_indices.add(start_line_idx)
                 else:
                     print(f"Could not match start: {formatted_section_name}")
                     start_line_idx = remaining_content_md_section_lines[0][1]
             else:
                 start_line_idx = remaining_content_md_section_lines[0][1]
 
-
-            matches = process.extractBests(next_formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
-            print(f'next_formatted_section_name: {next_formatted_section_name}')
-            if matches:
-                highest_score = max(matches, key=lambda x: x[1])[1]
-                highest_score_matches = [match for match in matches if match[1] == highest_score]
-                print(highest_score_matches)
-                matched_line = min(highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0]))[0]
-                #matched_line = min(highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0] and idx not in processed_indices))[0]
-                print(f"Matched end from {len(highest_score_matches)}: {next_formatted_section_name} to {matched_line}")
-                line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == matched_line)
-                # if len(highest_score_matches) > 1:
-                #     processed_indices.add(line_idx)
+            if next_formatted_section_name:
+                matches = process.extractBests(next_formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
+                if matches:
+                    highest_score = max(matches, key=lambda x: x[1])[1]
+                    highest_score_matches = [match for match in matches if match[1] == highest_score]
+                    matched_line = min(highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0]))[0]
+                    line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == matched_line)
+                    if next_formatted_section_name == "#### Guide to Subdivision 122-5 What this Subdivision is about":
+                        print(f"Matched: {next_formatted_section_name} at {line_idx} with {matched_line}")
+                        #print(f'from: {matches}')
+                        for line, idx in remaining_content_md_section_lines:
+                            print(f"{idx}: {line}")
+                else:
+                    print(remaining_content_md_section_lines)
+                    raise ValueError(f"Could not match end: {next_formatted_section_name}")
             else:
-                print(f"Could not match end: {next_formatted_section_name}")
-                #line_idx = remaining_content_md_section_lines[-1][1]
+                line_idx = len(content_md_lines)
 
             section_content = "\n".join(content_md_lines[start_line_idx:line_idx-1])
             num_tokens = len(section_content.strip())
             remaining_content_md_section_lines = [item for item in remaining_content_md_section_lines if item[1] >= line_idx]
-            #print(f"Remaining lines: {remaining_content_md_section_lines}")
             return section_content, num_tokens
                 
 
@@ -206,9 +210,11 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
                     if current_index + 1 < len(flattened_toc):
                         next_item = flattened_toc[current_index + 1]
                         next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else format_section_name("", next_item.number, next_item.title)
-
+                        #print(next_formatted_section_name)
                         section_content, _ = get_section_content(next_formatted_section_name=next_formatted_section_name)
-                        section_dict["content"] = section_content
+                        #section_dict["content"] = section_content
+                        if len(section_content) > len(formatted_section_name)*1.3:
+                            section_dict["content"] = section_content
 
                     if section.children:
                         traverse_sections(section.children, section_dict, flattened_toc)
@@ -229,76 +235,12 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
 
                         section_content, _ = get_section_content(next_formatted_section_name=next_formatted_section_name)
                         child_dict["content"] = section_content
-
-
-                # if isinstance(section, TableOfContents):
-                #     formatted_section_name = format_section_name(section.section, section.number, section.title)
-                #     section_dict = {
-                #         "section": section.section,
-                #         "number": section.number,
-                #         "title": section.title,
-                #         "content": "",
-                #         "children": []
-                #     }
-                #     parent_dict["children"].append(section_dict)
-                    
-                #     current_index = flattened_toc.index(section)
-                #     if current_index + 1 < len(flattened_toc):
-                #         next_item = flattened_toc[current_index + 1]
-                #         if isinstance(next_item, TableOfContents):
-                #             next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title)
-                #         elif isinstance(next_item, TableOfContentsChild):
-                #             next_formatted_section_name = format_section_name("", next_item.number, next_item.title)
-
-                #         #section_content, _ = get_section_content(formatted_section_name, next_formatted_section_name)
-                #         section_content = next_formatted_section_name
-                #         print(section_content)
-                #         section_dict["content"] = section_content
-                    
-                #     if section.children:
-                #         traverse_sections(section.children, section_dict, flattened_toc)
-                
-                # elif isinstance(section, TableOfContentsChild):
-                #     formatted_section_name = format_section_name("", section.number, section.title)
-                #     child_dict = {
-                #         "number": section.number,
-                #         "title": section.title,
-                #         "content": ""
-                #     }
-                #     parent_dict["children"].append(child_dict)
-                    
-                #     current_index = flattened_toc.index(section)
-                #     if current_index + 1 < len(flattened_toc):
-                #         next_item = flattened_toc[current_index + 1]
-                #         if isinstance(next_item, TableOfContents):
-                #             next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title)
-                #         elif isinstance(next_item, TableOfContentsChild):
-                #             next_formatted_section_name = format_section_name("", next_item.number, next_item.title)
-
-                #         #section_content, _ = get_section_content(formatted_section_name, next_formatted_section_name)
-                #         section_content = next_formatted_section_name
-                #         print(section_content)
-                #         child_dict["content"] = section_content
+                    else:
+                        section_content, _ = get_section_content(next_formatted_section_name="")
+                        child_dict["content"] = section_content
         
         toc_models = [convert_to_model(item) for item in master_toc]
         flattened_toc = flatten_toc(toc_models)
-        
-        # for item in flattened_toc:
-        #     if isinstance(item, TableOfContents):
-        #         print(f"{item.section} {item.number}: {item.title}")
-        #     elif isinstance(item, TableOfContentsChild):
-        #         print(f"{item.number}: {item.title}")
-
-        #     current_index = flattened_toc.index(item)
-        #     if current_index + 1 < len(flattened_toc):
-        #         next_item = flattened_toc[current_index + 1]
-        #         if isinstance(next_item, TableOfContents):
-        #             next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title)
-        #         elif isinstance(next_item, TableOfContentsChild):
-        #             next_formatted_section_name = format_section_name("", next_item.number, next_item.title)
-        #         section_content = next_formatted_section_name
-        #         print(section_content)
-        # return
         
         for item in toc_models:
             formatted_section_name = format_section_name(item.section, item.number, item.title)
@@ -320,8 +262,6 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
                     next_formatted_section_name = format_section_name("", next_item.number, next_item.title)
                 
                 section_content, _ = get_section_content(formatted_section_name=formatted_section_name, next_formatted_section_name=next_formatted_section_name)
-                # section_content = next_formatted_section_name
-                # print(section_content)
                 section_dict["content"] = section_content
             
             traverse_sections(item.children, section_dict, flattened_toc)
@@ -332,47 +272,80 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
 
 async def main_run():
     toc_hierarchy_schema = {
-        "A Guide to capital gains and losses": "#####",
-        "Anti-overlap provisions": "#####",
-        "Basic case and concepts": "#####",
-        "Boat capital gains": "#####",
+        "Application of this Subdivision": "#####",
+        "Applying net capital losses of earlier income years": "#####",
+        "Australian permanent establishments of foreign financial entities": "#####",
+        "Business continuity test": "#####",
+        "Change of incorporation without change of entity": "#####",
         "Chapter": "##",
-        "Compulsory acquisitions of adjacent land only": "#####",
+        "Common rules": "#####",
+        "Concessional tracing rules": "#####",
+        "Conditions for transfer": "#####",
+        "Consequence of transfer: franking debit arises": "#####",
+        "Consequence of transfer: tainting of share capital account": "#####",
+        "Corporate change in a company": "#####",
+        "Deducting bad debts": "#####",
+        "Deducting tax losses of earlier income years": "#####",
         "Division": "####",
-        "Dwellings acquired from deceased estates": "#####",
-        "Employment partly full-time and partly part-time": "#####",
-        "Employment wholly full-time or wholly part-time": "#####",
-        "Exempt assets": "#####",
-        "Exempt or loss-denying transactions": "#####",
-        "General": "#####",
-        "General overview": "#####",
+        "Effect of agreement to transfer more than can be transferred": "#####",
+        "Effect of transferring a net capital loss": "#####",
+        "Effect of transferring a tax loss": "#####",
+        "Entitlement to and amount of loss carry back tax offset": "#####",
         "General rules": "#####",
         "Guide to Division": "#####",
-        "Keeping records for CGT purposes": "#####",
-        "Long service leave taken at less than full pay": "#####",
-        "Main provisions": "#####",
+        "Guide to Subdivision": "#####",
+        "Information relevant to Division 165": "#####",
+        "Information relevant to Division 175": "#####",
+        "Loss carry back choice": "#####",
+        "Object of this Subdivision": "#####",
+        "Old corporation wound up": "#####",
         "Operative provisions": "#####",
+        "Other rules relating to voting power and rights": "#####",
+        "Other special provisions": "#####",
         "Part": "###",
-        "Partial exemption rules": "#####",
-        "Roll-overs under Subdivision 126-A": "#####",
-        "Rules that may extend the exemption": "#####",
-        "Rules that may limit the exemption": "#####",
-        "Special disability trusts": "#####",
-        "Special valuation rules": "#####",
-        "Step 1\u2014Have you made a capital gain or a capital loss?": "#####",
-        "Step 2\u2014Work out the amount of the capital gain or loss": "#####",
-        "Step 3\u2014Work out your net capital gain or loss for the income year": "#####",
+        "Provisions applying to both transfers of tax losses and transfers of net capital losses within wholly-owned groups of companies": "#####",
+        "Reduction case": "#####",
+        "Reductions after alterations in ownership or control of loss company": "#####",
+        "Replacement case": "#####",
+        "Replacement-asset roll-over for a creation case": "#####",
+        "Replacement-asset roll-over if you dispose of a CGT asset": "#####",
+        "Replacement-asset roll-over if you dispose of all the assets of a business": "#####",
+        "Rights to dividends or capital distributions": "#####",
+        "Rules affecting the operation of the tests": "#####",
+        "Same-asset roll-over consequences for the company": "#####",
+        "Special consequences of some roll-overs": "#####",
+        "Special provisions relating to ownership by non-fixed trusts": "#####",
+        "Special rules for joint tenants": "#####",
+        "Stakes held directly and/or indirectly by widely held companies": "#####",
+        "Stakes of less than 10% in the tested company": "#####",
         "Subdivision": "#####",
-        "Takeovers and restructures": "#####",
-        "What are not discount capital gains?": "#####",
-        "What does not form part of the cost base": "#####",
-        "What is a discount capital gain?": "#####"
+        "Tax benefits from unused bad debt deductions": "#####",
+        "Tax benefits from unused capital losses of the current year": "#####",
+        "Tax benefits from unused deductions": "#####",
+        "Tax benefits from unused net capital losses of earlier income years": "#####",
+        "Tax benefits from unused tax losses": "#####",
+        "Tests for finding out whether the company has maintained the same owners": "#####",
+        "The object of this Division": "#####",
+        "The ownership tests: substantial continuity of ownership": "#####",
+        "The primary and alternative tests": "#####",
+        "Transactions by a company that is a member of a linked group": "#####",
+        "Variation to CGT asset case": "#####",
+        "Voting power": "#####",
+        "What transfers into a company\u2019s share capital account does this Division apply to?": "#####",
+        "When identity of foreign stakeholders is not known": "#####",
+        "When is a roll-over available": "#####",
+        "When the rules in this Subdivision do not apply": "#####",
+        "Working out a PDF\u2019s loss carry back tax offset": "#####",
+        "Working out a PDF\u2019s net capital gain and net capital loss": "#####",
+        "Working out a PDF\u2019s taxable income and tax loss": "#####",
+        "Working out the net capital gain and the net capital loss for the income year of the change": "#####",
+        "Working out the taxable income and tax loss for the income year of the change": "#####"
     }
     top_level = min(toc_hierarchy_schema.values(), key=lambda x: x.count('#'))
     top_level_count = top_level.count('#')
     adjust_count = top_level_count - 1
     adjusted_toc_hierarchy_schema = {k: v[adjust_count:] for k, v in toc_hierarchy_schema.items()}
-    with open("content.md", "r") as f:
+    with open("zzcontent_md_string.md", "r") as f:
         content_md_string = f.read()
 
     doc_dict = generate_chunked_content(content_md_string, "master_toc.json", toc_hierarchy_schema=adjusted_toc_hierarchy_schema)

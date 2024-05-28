@@ -5,7 +5,7 @@ import llm, prompts
 
 
 async def main_run():
-    vol_num = 3
+    vol_num = 4
     pdf_path = f"/Users/jamesqxd/Documents/norgai-docs/TAX/C2024C00046VOL0{vol_num}.pdf"
     
     parser = PDFParser()
@@ -26,7 +26,9 @@ async def main_run():
     # for level in levels:
     #     print(level)
     content_dict = await parser.parse(pdf_path)
-    with open(f"zcontent_vol_{vol_num}.json", "w") as f:
+    with open(f"master_toc{vol_num}_content.json", "w") as f:
         json.dump(content_dict, f, indent=4)
+
+    
 
 asyncio.run(main_run())

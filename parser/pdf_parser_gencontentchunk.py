@@ -8,7 +8,7 @@ from fastapi import UploadFile
 import fitz
 from collections import Counter, defaultdict
 from thefuzz import process  
-import llm, prompts, utils
+import llm, prompts
 from parser.base_parser import BaseParser
 
 JSONstr = NewType('JSONstr', str)
@@ -16,16 +16,12 @@ JSONstr = NewType('JSONstr', str)
 class TableOfContentsChild(BaseModel):
     number: str
     title: str
-    content: Optional[str] = None
-    tokens: Optional[int] = None
 
 
 class TableOfContents(BaseModel):
     section: Optional[str]
     number: str
     title: str
-    content: Optional[str] = None
-    tokens: Optional[int] = None
     children: Optional[List[Union[TableOfContents, TableOfContentsChild]]]
 
     def find_child(self, section: Optional[str], number: str) -> Optional[Union[TableOfContents, TableOfContentsChild]]:
@@ -86,17 +82,19 @@ def merge_children(existing_children: Optional[List[Union[TableOfContents, Table
     return existing_children
 
 class PDFParser(BaseParser):
-    """
-    Parses a PDF that contains a Table of Contents (ToC) and extracts structured content to a dict.
-    """
+    """Parses Legal (Australian Legislation) PDFs into Table of Contents (ToC)
+    and creates dict for each item in the ToC with the section, number, title and content."""
     
-    def __init__(self, rate_limit: int = 50):
+    def __init__(self, rate_limit: int = 30):
         super().__init__(rate_limit)
         self.document = None
         self.toc_md_string = None
         self.content_md_string = None
+        #self.toc_hierarchy_schema = {'Chapter': '##', 'Part': '###', 'Division': '####', 'Subdivision': '#####', 'Guide': '#####', 'Operative provisions': '#####'}
+        #self.adjusted_toc_hierarchy_schema = {'Chapter': '#', 'Part': '##', 'Division': '###', 'Subdivision': '####', 'Guide': '####', 'Operative provisions': '####'}
         self.toc_hierarchy_schema = None
         self.adjusted_toc_hierarchy_schema = None
+        self.toc_schema = None
         self.master_toc = None
 
     async def load_document(self, file: Union[UploadFile, str]) -> None:
@@ -112,10 +110,8 @@ class PDFParser(BaseParser):
             raise ValueError("file must be an instance of UploadFile or str.")
         self.toc_md_string, self.content_md_string = self.generate_md_string()
         self.toc_hierarchy_schema = await self.generate_toc_hierarchy_schema()
-        with open("zztoc_md_string.md", "w") as f:
-            f.write(self.toc_md_string) 
-        with open("zzcontent_md_string.md", "w") as f:
-            f.write(self.content_md_string)
+        #self.toc_schema = await self.generate_toc_schema()
+        #print(json.dumps(self.toc_schema, indent=4))
     
     def find_first_toc_page_no(self) -> int:
         """
@@ -127,7 +123,7 @@ class PDFParser(BaseParser):
             blocks = page.get_text("dict", flags=fitz.TEXTFLAGS_TEXT)["blocks"]
             if self.is_toc_like_page(blocks):
                 consecutive_toc_like_pages += 1
-                if consecutive_toc_like_pages >= 2:  # at least two consecutive TOC-like pages
+                if consecutive_toc_like_pages >= 2:  # At least two consecutive TOC-like pages
                     return page_number - 1
             else:
                 consecutive_toc_like_pages = 0
@@ -265,17 +261,10 @@ class PDFParser(BaseParser):
                     raise
 
         # usually gets it right but ~1/5 times it doesn't
-        schemas = await asyncio.gather(*[self.rate_limited_process(process_function) for _ in range(5)])
+        schemas = await asyncio.gather(*[self.rate_limited_process(process_function) for _ in range(3)])
         schema_counter = Counter(tuple(sorted(schema.items())) for schema in schemas)
         most_common_schema = dict(schema_counter.most_common(1)[0][0])
-        utils.print_coloured(f"{json.dumps(most_common_schema, indent=4)}", "green")
-        # if schema_counter.most_common(1)[0][1] > 1:
-        #     most_common_schema = dict(schema_counter.most_common(1)[0][0])
-        #     print(f"Most Common Schema: {json.dumps(most_common_schema, indent=4)}")
-        # else:
-        #     longest_schema = max(schemas, key=len)
-        #     most_common_schema = longest_schema
-        #     print(f"Longest Schema: {json.dumps(most_common_schema, indent=4)}")
+        print(f"Most Common Schema: {json.dumps(most_common_schema, indent=4)}")
         return most_common_schema
     
     async def filter_schema(self, toc_hierarchy_schema: Dict[str, str], content: str, num_sections: int = 5) -> Dict[str, str]:
@@ -306,7 +295,7 @@ class PDFParser(BaseParser):
 
         sorted_headings = sorted(most_common_headings.items(), key=lambda x: len(x[0]))
         result = {heading: level for level, heading in sorted_headings[:num_sections]}
-        # dynamically adjust the schema based on whats present in the content
+        # need to dynamically adjust the schema based on whats present in the content
         for heading, level in toc_hierarchy_schema.items():
             formatted_heading = f"{level} {heading}"
             if formatted_heading in content and heading not in result:
@@ -343,8 +332,8 @@ class PDFParser(BaseParser):
         toc_schema = [
             {
                 "section": f"string (type of the section, e.g., {level_name})",
-                "number": "string (optional, numeric or textual identifier of the section)",
-                "title": "string (optional, title of the section)",
+                "number": "string (numeric or textual identifier of the section)",
+                "title": "string (title of the section)",
                 "children": children if children else [
                     {
                         "number": "string (numeric or textual identifier of the section)",
@@ -467,10 +456,10 @@ class PDFParser(BaseParser):
             nonlocal subsublevel_title
             custom_schema, custom_levels = await self.generate_toc_schema(content=content)
             TOC_SCHEMA = {"contents": [json.dumps(custom_schema, indent=4)]}
-            #print(f"Custom Schema: {json.dumps(custom_schema, indent=4)}")
+            print(f"Custom Schema: {json.dumps(custom_schema, indent=4)}")
+            # TOC_SCHEMA = {"contents": [json.dumps(self.toc_schema, indent=4)]}
             
             if not sublevel_title:
-                print("No sublevel title THIS SHOULD NEVER PRINT")
                 messages = [
                     {"role": "system", "content": prompts.TOC_SCHEMA_SYS_PROMPT.format(section_types=", ".join(self.toc_hierarchy_schema.keys()), TOC_SCHEMA=TOC_SCHEMA)},
                     {"role": "user", "content": content}
@@ -497,42 +486,10 @@ class PDFParser(BaseParser):
                 if not response.choices or not response.choices[0].message:
                     print("Unexpected response structure:", response)
                     raise Exception("Unexpected response structure")
-                if response.choices[0].finish_reason == "length":
-                    utils.print_coloured(f"TOO LONG: {level_title_str} / {sublevel_title_str} / {subsublevel_title_str}", "red")
-                    inital_message_content = response.choices[0].message.content
-                    split_content = inital_message_content.rsplit('},', 1)
-                    if len(split_content) == 2:
-                        inital_message_content, remaining_content = split_content
-                        remaining_content = '},' + remaining_content.strip()
-                        utils.print_coloured(remaining_content, "yellow")
-                    else:
-                        remaining_content = ''
-                    additional_messages = [
-                        {"role": "assistant", "content": inital_message_content},
-                        {"role": "user", "content": "Please continue from EXACTLY where you left off so that the two responses can be concatenated and form a complete JSON object. Make sure to include the closing brackets, quotation marks and commas. Do NOT add any additional text, such as '```json' or '```'."},
-                        {"role": "assistant", "content": remaining_content}]
-                    combined_messages = messages + additional_messages
-                    retries = 0
-                    max_retries = 5
-                    while retries < max_retries:
-                        response2 = await llm.openai_client_chat_completion_request(combined_messages, model="gpt-4-turbo", response_format="text")
-                        try:
-                            message_content2 = response2.choices[0].message.content
-                            if message_content2.startswith("},") == False:
-                                message_content2 = "}," + message_content2
-                            total_message_content = inital_message_content + message_content2
-                            toc_schema = json.loads(total_message_content)
-                            utils.print_coloured(f"{level_title_str} / {sublevel_title_str} / {subsublevel_title_str}", "green")
-                            return (level_title, sublevel_title, subsublevel_title, toc_schema)
-                        except json.JSONDecodeError:
-                            retries += 1
-                            utils.print_coloured(f"Error decoding TOO LONG JSON ... / {subsublevel_title_str}, attempt {retries}", "red")
-                            if retries >= max_retries:
-                                raise Exception("Max retries reached, unable to complete JSON")
                 try:
                     message_content = response.choices[0].message.content
                     toc_schema = json.loads(message_content)
-                    utils.print_coloured(f"{level_title_str} / {sublevel_title_str} / {subsublevel_title_str}", "green")
+                    print(f"Completed JSON for {level_title_str} / {sublevel_title_str} / {subsublevel_title_str}")
                     return (level_title, sublevel_title, subsublevel_title, toc_schema)
                 except json.JSONDecodeError:
                     print(f"Error decoding JSON for {level_title} - {sublevel_title}")
@@ -542,7 +499,7 @@ class PDFParser(BaseParser):
     
     async def extract_toc(self) -> TableOfContentsDict:
         """
-        Extract and format the ToC.
+        Main method to extract and format the ToC.
         """
         levels = await self.split_toc_into_parts()
         tasks = []
@@ -686,172 +643,177 @@ class PDFParser(BaseParser):
         with open(file_name, "w") as file:
             json.dump(toc, file, indent=2, default=lambda x: x.dict())
     
-    async def generate_master_toc_content(self) -> Dict[str, Dict[Any]]:
+    async def load_and_build_toc(self, file: Union[UploadFile, str]) -> List[TableOfContents]:
         """
-        Add the document content to the master ToC.
+        temp for testing
+        Load a toc.json and build master toc.
         """
+        if isinstance(file, UploadFile):
+            raise ValueError("file must be a file path.")
+        elif isinstance(file, str):
+            with open(file, "r") as f:
+                json_data = json.load(f)
+                data = TableOfContentsDict(**json_data)
+                master_toc = await self.build_master_toc(data)
+                save_file_name = f"master_{file}"
+                self.save_toc_to_file(master_toc, save_file_name)
+        else:
+            raise ValueError("file must be an instance of UploadFile or str.")
+        
+    async def generate_levels_list(self) -> List[Tuple[Optional[str], str, str]]:
+        """
+        Find and return a list of all levels in the ToC with their section, number, and title.
+        """
+        levels_list = []
+
+        def convert_to_model(data: Dict[str, Any]) -> Union[TableOfContents, TableOfContentsChild]:
+            if 'children' in data:
+                data['children'] = [convert_to_model(child) for child in data['children']]
+                return TableOfContents(**data)
+            else:
+                return TableOfContentsChild(**data)
+
+        def traverse_sections(sections: List[Union[TableOfContents, TableOfContentsChild]]):
+            for section in sections:
+                if isinstance(section, TableOfContents):
+                    levels_list.append((section.section, section.number, section.title))
+                    if section.children:
+                        traverse_sections(section.children)
+                # elif isinstance(section, TableOfContentsChild):
+                #     levels_list.append((None, section.number, section.title))
+
+        toc_models = [convert_to_model(item) for item in self.master_toc]
+        traverse_sections(toc_models)
+
+        return levels_list
+    
+    async def generate_levels_list_from_json(self, master_toc: List[Dict[str, Any]]) -> List[Tuple[Optional[str], str, str]]:
+        """
+        temp for testing
+        Find and return a list of all levels in the ToC with their section, number, and title.
+        """
+        levels_list = []
+
+        def convert_to_model(data: Dict[str, Any]) -> Union[TableOfContents, TableOfContentsChild]:
+            if 'children' in data:
+                data['children'] = [convert_to_model(child) for child in data['children']]
+                return TableOfContents(**data)
+            else:
+                return TableOfContentsChild(**data)
+
+        def traverse_sections(sections: List[Union[TableOfContents, TableOfContentsChild]]):
+            for section in sections:
+                if isinstance(section, TableOfContents):
+                    levels_list.append((section.section, section.number, section.title))
+                    if section.children:
+                        traverse_sections(section.children)
+                # elif isinstance(section, TableOfContentsChild):
+                #     levels_list.append((None, section.number, section.title))
+
+        toc_models = [convert_to_model(item) for item in master_toc]
+        traverse_sections(toc_models)
+
+        return levels_list
+    
+    async def run_find_levels_from_json_path(self, file_path: str) -> List[Tuple[str, str, str]]:
+        """
+        temp for testing
+        Run the find_levels method from a JSON file path.
+        """
+        with open(file_path, "r") as f:
+            toc = json.load(f)
+            levels = await self.generate_levels_list_from_json(toc)
+            return levels
+    
+    async def generate_chunked_content(self) -> Dict[str, Dict[Any]]:
+        """
+        Split the content into a chunk dict based on the levels
+        """
+        level_info_list = await self.generate_levels_list()
         content_md_lines = self.content_md_string.split("\n")
         content_md_section_lines = [(line, idx) for idx, line in enumerate(content_md_lines) if line.startswith('#')]
 
         md_levels = self.adjusted_toc_hierarchy_schema if self.adjusted_toc_hierarchy_schema else self.toc_hierarchy_schema
 
-        def format_section_name(section: str, number: str, title: str) -> str:
-            section_match = process.extractOne(section, md_levels.keys(), score_cutoff=98) if section else None
-            md_level = md_levels.get(section_match[0], max(md_levels.values(), key=len) + "#") if section_match else max(md_levels.values(), key=len) + "#"
+        formatted_section_names = []
+        for level_info in level_info_list:
+            section_type, number, title = level_info
+            if not section_type:
+                section_match = None
+            else:
+                section_match = process.extractOne(section_type, md_levels.keys(), score_cutoff=95)
+            if section_match:
+                matched_section = section_match[0]
+                md_level = md_levels[matched_section]
+            else:
+                max_level = max(md_levels.values(), key=len)
+                md_level = max_level
 
-            formatted_parts = []
-            if section and not section in title:
-                formatted_parts.append(section)
-            if number and not number in title:
-                formatted_parts.append(number)
-            if title:
-                formatted_parts.append(title)
-
-            return f'{md_level} {" ".join(formatted_parts)}'
-            
-        def traverse_and_update_toc(master_toc: List[Dict[str, Any]]):
-            levels_dict = {"contents": []}
-
-            def convert_to_model(data: Dict[str, Any]) -> Union[TableOfContents, TableOfContentsChild]:
-                if 'children' in data:
-                    data['children'] = [convert_to_model(child) for child in data['children']]
-                    return TableOfContents(**data)
+            if section_type and number and title:
+                if section_type in title and number in title:
+                    section_name = title
+                elif section_type in title:
+                    section_name = f'{title} {number}'
                 else:
-                    return TableOfContentsChild(**data)
-
-            def flatten_toc(toc_models: List[Union[TableOfContents, TableOfContentsChild]]) -> List[Union[TableOfContents, TableOfContentsChild]]:
-                flattened = []
-                for model in toc_models:
-                    if isinstance(model, TableOfContents):
-                        flattened.append(model)
-                        if model.children:
-                            flattened.extend(flatten_toc(model.children))
-                    elif isinstance(model, TableOfContentsChild):
-                        flattened.append(model)
-                return flattened
-            
-            remaining_content_md_section_lines = content_md_section_lines.copy()
-            def get_section_content(next_formatted_section_name: str, formatted_section_name: str = None) -> Tuple[str, int]:
-                nonlocal remaining_content_md_section_lines
-                if formatted_section_name:
-                    start_matches = process.extractBests(formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
-                    if start_matches:
-                        start_highest_score = max(start_matches, key=lambda x: x[1])[1]
-                        start_highest_score_matches = [match for match in start_matches if match[1] == start_highest_score]
-                        start_matched_line = min(start_highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0]))[0]
-                        start_line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == start_matched_line)
-                    else:
-                        print(f"Could not match start: {formatted_section_name}")
-                        start_line_idx = remaining_content_md_section_lines[0][1]
+                    section_name = f'{section_type} {number} {title}'
+            elif not number:
+                if section_type in title:
+                    section_name = title
                 else:
-                    start_line_idx = remaining_content_md_section_lines[0][1]
-
-                if next_formatted_section_name:
-                    matches = process.extractBests(next_formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
-                    if matches:
-                        highest_score = max(matches, key=lambda x: x[1])[1]
-                        highest_score_matches = [match for match in matches if match[1] == highest_score]
-                        matched_line = min(highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0]))[0]
-                        line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == matched_line)
-                    else:
-                        print(remaining_content_md_section_lines)
-                        raise ValueError(f"Could not match end: {next_formatted_section_name}")
-                else:
-                    line_idx = len(content_md_lines)
-
-                section_content = "\n".join(content_md_lines[start_line_idx:line_idx-1])
-                num_tokens = self.count_tokens(section_content)
-                remaining_content_md_section_lines = [item for item in remaining_content_md_section_lines if item[1] >= line_idx]
-                return section_content, num_tokens
-                    
-
-            def traverse_sections(sections: List[Union[TableOfContents, TableOfContentsChild]], parent_dict: Dict[str, Any], flattened_toc: List[Union[TableOfContents, TableOfContentsChild]]):
-                for section in sections:
-                    if isinstance(section, TableOfContents):
-                        formatted_section_name = format_section_name(section.section, section.number, section.title)
-                        section_dict = {
-                            "section": section.section,
-                            "number": section.number,
-                            "title": section.title,
-                            "content": "",
-                            "tokens": 0,
-                            "children": []
-                        }
-                        parent_dict["children"].append(section_dict)
-
-                        current_index = flattened_toc.index(section)
-                        if current_index + 1 < len(flattened_toc):
-                            next_item = flattened_toc[current_index + 1]
-                            next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else format_section_name("", next_item.number, next_item.title)
-
-                            section_content, section_tokens = get_section_content(next_formatted_section_name=next_formatted_section_name)
-                            #section_dict["content"] = section_content
-                            if len(section_content) > len(formatted_section_name)*1.3:
-                                section_dict["content"] = section_content
-                                section_dict["tokens"] = section_tokens
-
-
-                        if section.children:
-                            traverse_sections(section.children, section_dict, flattened_toc)
-                    
-                    elif isinstance(section, TableOfContentsChild):
-                        formatted_section_name = format_section_name("", section.number, section.title)
-                        child_dict = {
-                            "number": section.number,
-                            "title": section.title,
-                            "content": "",
-                            "tokens": 0
-                        }
-                        parent_dict["children"].append(child_dict)
-
-                        current_index = flattened_toc.index(section)
-                        if current_index + 1 < len(flattened_toc):
-                            next_item = flattened_toc[current_index + 1]
-                            next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else format_section_name("", next_item.number, next_item.title)
-
-                            section_content, section_tokens = get_section_content(next_formatted_section_name=next_formatted_section_name)
-                            child_dict["content"] = section_content
-                            child_dict["tokens"] = section_tokens
-                        else:
-                            section_content, section_tokens = get_section_content(next_formatted_section_name="")
-                            child_dict["content"] = section_content
-                            child_dict["tokens"] = section_tokens
+                    section_name = f'{section_type} {title}'
+            else:
+                section_name = section_type
             
-            toc_models = [convert_to_model(item) for item in master_toc]
-            flattened_toc = flatten_toc(toc_models)
-            
-            for item in toc_models:
-                formatted_section_name = format_section_name(item.section, item.number, item.title)
-                section_dict = {
-                    "section": item.section,
-                    "number": item.number,
-                    "title": item.title,
-                    "content": "",
-                    "tokens": 0,
-                    "children": []
-                }
-                levels_dict["contents"].append(section_dict)
+            formatted_section_names.append(f"{md_level} {section_name}")
+
+        doc_dict = {}
+        current_hierarchy = []
+        start_lines = []
+        remaining_content_md_section_lines = content_md_section_lines[:]
+        for i, formatted_section_name in enumerate(formatted_section_names):
+            matches = process.extractBests(formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
+            if matches:
+                highest_score = max(matches, key=lambda x: x[1])[1]
+                highest_score_matches = [match for match in matches if match[1] == highest_score]
+                # select the highest score with the lowest index
+                matched_line = min(highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0]))[0]
+                start_line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == matched_line)
                 
-                current_index = flattened_toc.index(item)
-                if current_index + 1 < len(flattened_toc):
-                    next_item = flattened_toc[current_index + 1]
-                    if isinstance(next_item, TableOfContents):
-                        next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title)
-                    elif isinstance(next_item, TableOfContentsChild):
-                        next_formatted_section_name = format_section_name("", next_item.number, next_item.title)
-                    
-                    section_content, section_tokens = get_section_content(formatted_section_name=formatted_section_name, next_formatted_section_name=next_formatted_section_name)
-                    if len(section_content) > len(formatted_section_name)*1.3:
-                        section_dict["content"] = section_content
-                        section_dict["tokens"] = section_tokens
-                
-                traverse_sections(item.children, section_dict, flattened_toc)
-            
-            return levels_dict
+                remaining_content_md_section_lines = [item for item in remaining_content_md_section_lines if item[1] > start_line_idx]
+                md_l, md_section_name = formatted_section_name.split(" ", 1)
+                start_lines.append((md_l.strip(), md_section_name.strip(), start_line_idx))
+            else:
+                print(f"Could not match {formatted_section_name}")
+                print(f"Remaining: {len(remaining_content_md_section_lines)}")
         
-        return traverse_and_update_toc(self.master_toc)
+        for i, (md_l, section_name, start_line) in enumerate(start_lines):
+            if i < len(start_lines) - 1:
+                end_line = start_lines[i + 1][2] - 1
+            else:
+                end_line = len(content_md_lines) - 1
 
-        
+            section_text = "\n".join(content_md_lines[start_line:end_line + 1])
+            num_tokens = self.count_tokens(section_text)
+            
+            current_node = {
+                "section": section_name,
+                "content": section_text,
+                "tokens": num_tokens,
+                "subsections": []
+            }
+
+            while current_hierarchy and current_hierarchy[-1][1] >= md_l:
+                current_hierarchy.pop()
+
+            if not current_hierarchy:
+                doc_dict[section_name] = current_node
+            else:
+                parent_node = current_hierarchy[-1][0]
+                parent_node["subsections"].append(current_node)
+
+            current_hierarchy.append((current_node, md_l))
+
+        return doc_dict
     
     async def parse(self, file: Union[UploadFile, str]) -> Dict[str, Dict[Any]]:
         """
@@ -863,5 +825,100 @@ class PDFParser(BaseParser):
             json.dump(toc, f, indent=4)
         data = TableOfContentsDict(**toc)
         await self.build_master_toc(data)
-        content_dict = await self.generate_master_toc_content()
+        content_dict = await self.generate_chunked_content()
         return content_dict
+    
+    async def generate_chunked_content2(self) -> Dict[str, Dict[Any]]:
+        content_md_lines = self.content_md_string.split("\n")
+        content_md_section_lines = [(line, idx) for idx, line in enumerate(content_md_lines) if line.startswith('#')]
+        # should be able to imply md levels from the master toc
+        md_levels = self.adjusted_toc_hierarchy_schema if self.adjusted_toc_hierarchy_schema else self.toc_hierarchy_schema
+
+        def format_section_name(section: str, number: str, title: str) -> str:
+            if not section:
+                section_match = None
+            else:
+                section_match = process.extractOne(section, md_levels.keys(), score_cutoff=98)
+            if section_match:
+                matched_section = section_match[0]
+                md_level = md_levels[matched_section]
+            else:
+                max_level = max(md_levels.values(), key=len)
+                md_level = max_level
+            if section and number and title:
+                if section in title and number in title:
+                    return f'{md_level} {title}'
+                elif section in title:
+                    return f'{md_level} {title} {number}'
+                else:
+                    return f'{md_level} {section} {number} {title}'
+            elif not number:
+                if section in title:
+                    return f'{md_level} {title}'
+                else:
+                    return f'{md_level} {section} {title}'
+            else:
+                return f'{md_level} {section}'
+
+        def traverse_sections(sections: List[Union[TableOfContents, TableOfContentsChild]], parent_dict: Dict[str, Any]):
+            for section in sections:
+                if isinstance(section, TableOfContents):
+                    section_dict = {
+                        "section": section.section,
+                        "number": section.number,
+                        "title": section.title,
+                        "subsections": []
+                    }
+                    parent_dict["subsections"].append(section_dict)
+                    if section.children:
+                        traverse_sections(section.children, section_dict)
+                elif isinstance(section, TableOfContentsChild):
+                    section_dict = {
+                        "number": section.number,
+                        "title": section.title
+                    }
+                    parent_dict["subsections"].append(section_dict)
+
+        def update_content_and_tokens(sections: List[Union[TableOfContents, TableOfContentsChild]]):
+            for section in sections:
+                if isinstance(section, TableOfContents):
+                    formatted_section_name = format_section_name(section.section, section.number, section.title)
+                    matches = process.extractBests(formatted_section_name, [line for line, _ in content_md_section_lines], score_cutoff=80, limit=10)
+                    if matches:
+                        highest_score = max(matches, key=lambda x: x[1])[1]
+                        highest_score_matches = [match for match in matches if match[1] == highest_score]
+                        # select the highest score with the lowest index
+                        matched_line = min(highest_score_matches, key=lambda x: next(idx for line, idx in content_md_section_lines if line == x[0]))[0]
+                        start_line_idx = next(idx for line, idx in content_md_section_lines if line == matched_line)
+
+                        next_section_index = sections.index(section) + 1
+                        while next_section_index < len(sections):
+                            next_section = sections[next_section_index]
+                            if isinstance(next_section, TableOfContents):
+                                next_formatted_section_name = format_section_name(next_section.section, next_section.number, next_section.title)
+                                next_matches = process.extractBests(next_formatted_section_name, [line for line, _ in content_md_section_lines], score_cutoff=80, limit=10)
+                                if next_matches:
+                                    next_highest_score = max(next_matches, key=lambda x: x[1])[1]
+                                    next_highest_score_matches = [match for match in next_matches if match[1] == next_highest_score]
+                                    next_matched_line = min(next_highest_score_matches, key=lambda x: next(idx for line, idx in content_md_section_lines if line == x[0]))[0]
+                                    end_line_idx = next(idx for line, idx in content_md_section_lines if line == next_matched_line) - 1
+                                    break
+                            next_section_index += 1
+                        else:
+                            end_line_idx = len(content_md_lines) - 1
+
+                        section_text = "\n".join(content_md_lines[start_line_idx:end_line_idx + 1])
+                        num_tokens = self.count_tokens(section_text)
+                        section["content"] = section_text
+                        section["tokens"] = num_tokens
+                    else:
+                        print(f"Could not match {formatted_section_name}")
+
+                    if section.children:
+                        update_content_and_tokens(section.children)
+        
+        doc_dict = {"subsections": []}
+        traverse_sections(self.master_toc, doc_dict)
+        update_content_and_tokens(doc_dict["subsections"])
+
+        return doc_dict

@@ -89,7 +89,9 @@ An example of the JSON structure is provided below:
 """
 TOC_SCHEMA_SYS_PROMPT_PLUS = """You are an expert in data processing, parsing and structuring Markdown text into JSON format. Pay extremely close attention to the instructions and guidelines provided to ensure the output is accurate and well-structured.
 """
-TOC_SCHEMA_USER_PROMPT_PLUS = """The Australian Tax Office (ATO), the Australian Government's principal revenue collection agency, has tasked me with transforming the Table of Contents (ToC) from the Income Tax Assessment Act, provided in Markdown format, into a structured JSON object. I need you to please do this (or i'll get fired). It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes.
+FUCK="""The Australian Tax Office (ATO), the Australian Government's principal revenue collection agency, has tasked me with transforming the Table of Contents (ToC) from the Income Tax Assessment Act, provided in Markdown format, into a structured JSON object. I need you to please do this (or i'll get fired). It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes."""
+
+TOC_SCHEMA_USER_PROMPT_PLUS = """I need you to please transform the Table of Contents (ToC) I will provide, in Markdown format, into a structured JSON object. It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes.
 
 ## INSTRUCTIONS
 I have split the ToC into multiple parts, and you will be working on the following part:
@@ -97,18 +99,22 @@ I have split the ToC into multiple parts, and you will be working on the followi
          - {sublevel_title}
             - {subsublevel_title}
 
-This part has section types that could include: {section_types}. You need to independently verify this and any other section types that may be present.
+This part has section types that could include: {section_types}. You need to independently verify this and any other section types that may be present. All section types should be prefixed by "#" symbols and must be standalone sections in the JSON object. Any line without a "#" prefix is a child of the previous line that has a "#" prefix.
 
 Here is an example of the JSON structure you need to follow:
 
 {TOC_SCHEMA}
 
-### IMPORTANT NOTES
-- The lowest level in the JSON hierarchy must only contain the "number" and "title" keys. These levels have no "#" prefix in the ToC, and MUST be the direct children of a parent section.
+## IMPORTANT NOTES
+- The lowest level in the JSON hierarchy must ONLY contain the "number" and "title" keys. These levels have no "#" prefix in the ToC, and MUST be the direct children of a parent section.
 - Sections sharing the same number of "#" symbols must be placed at the same hierarchical level within the JSON object.
 - If a section lacks a numeric identifier, set the "number" value to an empty string ("").
 - If a section lacks a title, or the title is the same as the section, set the "title" value to an empty string ("").
-- Exclude dots, page numbers, and any text not explicitly listed as a ToC item (page numbers are usually at the end of the line).         
+- Exclude dots, page numbers, and any text not explicitly listed as a ToC item (page numbers are usually at the end of the line).
+
+Please pay close attention this specific note - **The lowest level in the JSON hierarchy must ONLY contain the "number" and "title" keys. These levels have no "#" prefix in the ToC, and MUST be the direct children of a parent section** - ANY line in the ToC that has no "#" prefix is a child of the previous line that has a "#" prefix.
+
+It is of the upmost importance that the structure is correct and accurate. Failure to do so will result in a loss of trust and confidence in our services. Please do not let this happen.
 
 Please create a JSON object from the following ToC Markdown text:
 

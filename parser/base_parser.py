@@ -31,7 +31,7 @@ class BaseParser:
         self, 
         process_function: Callable[..., Awaitable[Any]],
         *args: Any, 
-        max_attempts: int = 3, 
+        max_attempts: int = 5, 
         **kwargs: Any
     ) -> Any:
         """
