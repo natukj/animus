@@ -1,171 +1,343 @@
+from __future__ import annotations
 from parser.pdf_parser import PDFParser
 import asyncio
 import json
 import llm, prompts
 from thefuzz import process
-from collections import Counter, defaultdict
-from typing import List, Dict, Union, Any
-import re
+from collections import Counter, defaultdict, OrderedDict
+from pydantic import BaseModel, ValidationError
+from typing import Union, Any, Optional, Dict, Tuple, List, NewType
+import time
 
-async def process_heading(current_part):
-    try:
-        formatted_line = {
-            "section": current_part,
-            "number": current_part,
-            "title": current_part
-        }
-        return formatted_line
-    except Exception as e:
-        print(f"Error: {e}")
+JSONstr = NewType('JSONstr', str)
 
-async def split_toc_parts_into_parts(lines: List[str], level_types: List[str]) -> Dict[str, Union[str, Dict]]:
-    """
-    Split the ToC parts into sub-parts based on the sub-part type
-    """
-    parts = {}
-    stack = []
+class TableOfContentsChild(BaseModel):
+    number: str
+    title: str
+    content: Optional[str] = None
+    tokens: Optional[int] = None
 
-    i = 0
-    while i < len(lines):
-        line = lines[i]
-        level = None
-        for j, level_type in enumerate(level_types):
-            if line.startswith(level_type):
-                level = j
-                break
 
-        if level is not None:
-            heading = line.strip()
-            # concatenate multi-line headings
-            j = 1
-            while i + j < len(lines) and lines[i + j].startswith(level_types[level].split(" ")[0]):
-                next_line = lines[i + j].strip().lstrip('#').strip()
-                heading += ' ' + next_line
-                j += 1
+class TableOfContents(BaseModel):
+    section: Optional[str]
+    number: str
+    title: str
+    content: Optional[str] = None
+    tokens: Optional[int] = None
+    children: Optional[List[Union[TableOfContents, TableOfContentsChild]]]
 
-            heading = await process_heading(heading)
+    def find_child(self, section: Optional[str], number: str) -> Optional[Union[TableOfContents, TableOfContentsChild]]:
+        """find an existing child by section and number."""
+        if not self.children:
+            return None
+        for child in self.children:
+            if isinstance(child, TableOfContents) and child.section == section and child.number == number:
+                return child
+            if isinstance(child, TableOfContentsChild) and child.number == number:
+                return child
+        return None
 
-            # pop stack until we reach the correct level
-            while stack and stack[-1][0] >= level:
-                stack.pop()
+    def add_child(self, child: Union[TableOfContents, TableOfContentsChild]):
+        """add a new child or merge with an existing one."""
+        if not self.children:
+            self.children = []
 
-            if stack:
-                parent = stack[-1][1]
-                if "children" not in parent:
-                    parent["children"] = {}
-                parent["children"][json.dumps(heading)] = {}
-                stack.append((level, parent["children"][json.dumps(heading)]))
+        if isinstance(child, TableOfContents):
+            existing_child = self.find_child(child.section, child.number)
+            if existing_child and isinstance(existing_child, TableOfContents):
+                existing_child.children = merge_children(existing_child.children, child.children or [])
             else:
-                parts[json.dumps(heading)] = {}
-                stack.append((level, parts[json.dumps(heading)]))
-
-            i += j
+                self.children.append(child)
         else:
-            if stack:
-                if line.strip():
-                    if "content" not in stack[-1][1]:
-                        stack[-1][1]["content"] = ""
-                    stack[-1][1]["content"] += line.strip() + '\n'
-            i += 1
-
-    return parts
+            if not any(isinstance(existing, TableOfContentsChild) and existing.number == child.number for existing in self.children):
+                self.children.append(child)
 
 
-async def split_toc_into_parts(toc_md_string: str, toc_hierarchy_schema: Dict[str, str]) -> Dict[str, Union[str, Dict[str, str]]]:
-    """
-    Split the ToC into parts based on the hierarchy schema and token count
-    """
-    lines = toc_md_string.split('\n')
-    grouped_schema = defaultdict(list)
-    for key, value in toc_hierarchy_schema.items():
-        grouped_schema[value].append(key)
+class Contents(BaseModel):
+    level: JSONstr
+    sublevel: JSONstr | str
+    subsublevel: JSONstr | str
+    toc: List[TableOfContents]
 
-    def find_most_common_heading(headings: List[str], lines: List[str]):
-        counts = Counter()
-        for line in lines:
-            for heading in headings:
-                if heading in line:
-                    counts[heading] += 1
-        most_common_heading = counts.most_common(1)[0][0] if counts else None
-        return most_common_heading
+
+class TableOfContentsDict(BaseModel):
+    contents: List[Contents]
+
+def merge_children(existing_children: Optional[List[Union[TableOfContents, TableOfContentsChild]]], new_children: List[Union[TableOfContents, TableOfContentsChild]]) -> List[Union[TableOfContents, TableOfContentsChild]]:
+    """merge a list of new children into existing children."""
+    if existing_children is None:
+        existing_children = []
+
+    existing_dict = OrderedDict((child.number, child) for child in existing_children if isinstance(child, TableOfContents))
+
+    for new_child in new_children:
+        if isinstance(new_child, TableOfContents):
+            if new_child.number in existing_dict:
+                existing_child = existing_dict[new_child.number]
+                existing_child.children = merge_children(existing_child.children, new_child.children or [])
+            else:
+                existing_children.append(new_child)
+                existing_dict[new_child.number] = new_child
+        else:
+            if not any(isinstance(child, TableOfContentsChild) and child.number == new_child.number for child in existing_children):
+                existing_children.append(new_child)
+
+    return existing_children
+
+def generate_chunked_content(content_md_string: str, master_toc_file: str, adjusted_toc_hierarchy_schema: Dict[str, str] = None, toc_hierarchy_schema: Dict[str, str] = None) -> Dict[str, Dict[str, Any]]:
+
+    content_md_lines = content_md_string.split("\n")
+    content_md_section_lines = [(line, idx) for idx, line in enumerate(content_md_lines) if line.startswith('#')]
     
-    most_common_headings = {}
-    for level, headings in grouped_schema.items():
-        if len(headings) > 1:
-            most_common_heading = find_most_common_heading(headings, lines)
-            most_common_headings[level] = most_common_heading
+    with open(master_toc_file, "r") as f:
+        master_toc = json.load(f)
+    
+    md_levels = adjusted_toc_hierarchy_schema if adjusted_toc_hierarchy_schema else toc_hierarchy_schema
+
+    def format_section_name(section: str, number: str, title: str) -> str:
+        if not section:
+            section_match = None
         else:
-            most_common_headings[level] = headings[0]
+            section_match = process.extractOne(section, md_levels.keys(), score_cutoff=98)
+        if section_match:
+            matched_section = section_match[0]
+            md_level = md_levels[matched_section]
+        else:
+            max_level = max(md_levels.values(), key=len)
+            md_level = max_level + "#"
+        if section and number and title:
+            if section in title and number in title:
+                return f'{md_level} {title}'
+            elif section in title:
+                return f'{md_level} {title} {number}'
+            else:
+                return f'{md_level} {section} {number} {title}'
+        elif not number:
+            if section in title:
+                return f'{md_level} {title}'
+            else:
+                return f'{md_level} {section} {title}'
+        elif not section:
+            return f'{md_level} {number} {title}'
+        else:
+            return f'{md_level} {section}'
 
-    sorted_headings = sorted(most_common_headings.items(), key=lambda x: len(x[0]))
-    level_types = [f"{level[0]} {level[1]}" for level in sorted_headings][:3]
-    print(level_types[:3])
+    def traverse_and_update_toc(master_toc: List[Dict[str, Any]]):
+        levels_dict = {"contents": []}
 
-    return await split_toc_parts_into_parts(lines, level_types)
+        def convert_to_model(data: Dict[str, Any]) -> Union[TableOfContents, TableOfContentsChild]:
+            if 'children' in data:
+                data['children'] = [convert_to_model(child) for child in data['children']]
+                return TableOfContents(**data)
+            else:
+                return TableOfContentsChild(**data)
 
-async def extract_toc() -> Dict[str, Any]:
-    """
-    Main function to extract and format the ToC.
-    """
-    with open("toc_parts.json", "r") as f:
-        levels = json.load(f)
-
-    tasks = []
-    all_level_schemas = {"contents": []}
-
-    async def process_level(level_title, level_content, sublevel_title=None, subsublevel_title=None):
-        if "content" in level_content:
-            # If there is content, generate the formatted ToC entry
-            print(f"Level: {level_title}, Sublevel: {sublevel_title}, Subsublevel: {subsublevel_title}")
-            task = asyncio.create_task(generate_formatted_toc(level_title, sublevel_title, subsublevel_title, level_content["content"]))
-            tasks.append(task)
-
-        if "children" in level_content:
-            # If there are children, process each child level recursively
-            for child_title, child_content in level_content["children"].items():
-                if "children" in child_content:
-                    # If the child level has further children, process them as subsublevels
-                    for subchild_title, subchild_content in child_content["children"].items():
-                        print(f"Level: {level_title}, Sublevel: {child_title}, Subsublevel: {subchild_title}")
-                        await process_level(level_title, subchild_content, child_title, subchild_title)
+        def flatten_toc(toc_models: List[Union[TableOfContents, TableOfContentsChild]]) -> List[Union[TableOfContents, TableOfContentsChild]]:
+            flattened = []
+            for model in toc_models:
+                if isinstance(model, TableOfContents):
+                    flattened.append(model)
+                    if model.children:
+                        flattened.extend(flatten_toc(model.children))
+                elif isinstance(model, TableOfContentsChild):
+                    flattened.append(model)
+            return flattened
+        
+        remaining_content_md_section_lines = content_md_section_lines.copy()
+        processed_indices = set()
+        def get_section_content(next_formatted_section_name: str, formatted_section_name: str = None) -> Tuple[str, int]:
+            nonlocal remaining_content_md_section_lines, processed_indices
+            if formatted_section_name:
+                start_matches = process.extractBests(formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
+                print(f'formatted_section_name: {formatted_section_name}')
+                if start_matches:
+                    start_highest_score = max(start_matches, key=lambda x: x[1])[1]
+                    start_highest_score_matches = [match for match in start_matches if match[1] == start_highest_score]
+                    start_matched_line = min(start_highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0]))[0]
+                    #start_matched_line = min(start_highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0] and idx not in processed_indices))[0]
+                    print(f"Matched start from {len(start_highest_score_matches)}: {formatted_section_name} to {start_matched_line}")
+                    start_line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == start_matched_line)
+                    # if len(start_highest_score_matches) > 1:
+                    #     processed_indices.add(start_line_idx)
                 else:
-                    # If the child level has no further children, process it as a sublevel
-                    print(f"Level: {level_title}, Sublevel: {child_title}")
-                    await process_level(level_title, child_content, child_title)
+                    print(f"Could not match start: {formatted_section_name}")
+                    start_line_idx = remaining_content_md_section_lines[0][1]
+            else:
+                start_line_idx = remaining_content_md_section_lines[0][1]
 
-    for level_title, level_content in levels.items():
-        await process_level(level_title, level_content)
 
-    try:
-        results = await asyncio.gather(*tasks)
-        for level_title, sublevel_title, subsublevel_title, result in results:
-            if result and result.get('contents'):
-                all_level_schemas["contents"].append({
-                    "level": level_title,
-                    "sublevel": sublevel_title,
-                    "subsublevel": subsublevel_title,
-                    "toc": result['contents']
-                })
-    except Exception as e:
-        print(f"Error extracting ToC: {e}")
+            matches = process.extractBests(next_formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
+            print(f'next_formatted_section_name: {next_formatted_section_name}')
+            if matches:
+                highest_score = max(matches, key=lambda x: x[1])[1]
+                highest_score_matches = [match for match in matches if match[1] == highest_score]
+                print(highest_score_matches)
+                matched_line = min(highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0]))[0]
+                #matched_line = min(highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0] and idx not in processed_indices))[0]
+                print(f"Matched end from {len(highest_score_matches)}: {next_formatted_section_name} to {matched_line}")
+                line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == matched_line)
+                # if len(highest_score_matches) > 1:
+                #     processed_indices.add(line_idx)
+            else:
+                print(f"Could not match end: {next_formatted_section_name}")
+                #line_idx = remaining_content_md_section_lines[-1][1]
 
-    return all_level_schemas
+            section_content = "\n".join(content_md_lines[start_line_idx:line_idx-1])
+            num_tokens = len(section_content.strip())
+            remaining_content_md_section_lines = [item for item in remaining_content_md_section_lines if item[1] >= line_idx]
+            #print(f"Remaining lines: {remaining_content_md_section_lines}")
+            return section_content, num_tokens
+                
 
-async def generate_formatted_toc(level_title, sublevel_title, subsublevel_title, content):
-    # Simulating the API call result
-    simulated_result = {
-        "contents": f"Formatted ToC for Level: {level_title}, Sublevel: {sublevel_title}, Subsublevel: {subsublevel_title}"
-    }
-    return level_title, sublevel_title, subsublevel_title, simulated_result
+        def traverse_sections(sections: List[Union[TableOfContents, TableOfContentsChild]], parent_dict: Dict[str, Any], flattened_toc: List[Union[TableOfContents, TableOfContentsChild]]):
+            for section in sections:
+                if isinstance(section, TableOfContents):
+                    formatted_section_name = format_section_name(section.section, section.number, section.title)
+                    section_dict = {
+                        "section": section.section,
+                        "number": section.number,
+                        "title": section.title,
+                        "content": "",
+                        "children": []
+                    }
+                    parent_dict["children"].append(section_dict)
+
+                    current_index = flattened_toc.index(section)
+                    if current_index + 1 < len(flattened_toc):
+                        next_item = flattened_toc[current_index + 1]
+                        next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else format_section_name("", next_item.number, next_item.title)
+
+                        section_content, _ = get_section_content(next_formatted_section_name=next_formatted_section_name)
+                        section_dict["content"] = section_content
+
+                    if section.children:
+                        traverse_sections(section.children, section_dict, flattened_toc)
+                
+                elif isinstance(section, TableOfContentsChild):
+                    formatted_section_name = format_section_name("", section.number, section.title)
+                    child_dict = {
+                        "number": section.number,
+                        "title": section.title,
+                        "content": ""
+                    }
+                    parent_dict["children"].append(child_dict)
+
+                    current_index = flattened_toc.index(section)
+                    if current_index + 1 < len(flattened_toc):
+                        next_item = flattened_toc[current_index + 1]
+                        next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else format_section_name("", next_item.number, next_item.title)
+
+                        section_content, _ = get_section_content(next_formatted_section_name=next_formatted_section_name)
+                        child_dict["content"] = section_content
+
+
+                # if isinstance(section, TableOfContents):
+                #     formatted_section_name = format_section_name(section.section, section.number, section.title)
+                #     section_dict = {
+                #         "section": section.section,
+                #         "number": section.number,
+                #         "title": section.title,
+                #         "content": "",
+                #         "children": []
+                #     }
+                #     parent_dict["children"].append(section_dict)
+                    
+                #     current_index = flattened_toc.index(section)
+                #     if current_index + 1 < len(flattened_toc):
+                #         next_item = flattened_toc[current_index + 1]
+                #         if isinstance(next_item, TableOfContents):
+                #             next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title)
+                #         elif isinstance(next_item, TableOfContentsChild):
+                #             next_formatted_section_name = format_section_name("", next_item.number, next_item.title)
+
+                #         #section_content, _ = get_section_content(formatted_section_name, next_formatted_section_name)
+                #         section_content = next_formatted_section_name
+                #         print(section_content)
+                #         section_dict["content"] = section_content
+                    
+                #     if section.children:
+                #         traverse_sections(section.children, section_dict, flattened_toc)
+                
+                # elif isinstance(section, TableOfContentsChild):
+                #     formatted_section_name = format_section_name("", section.number, section.title)
+                #     child_dict = {
+                #         "number": section.number,
+                #         "title": section.title,
+                #         "content": ""
+                #     }
+                #     parent_dict["children"].append(child_dict)
+                    
+                #     current_index = flattened_toc.index(section)
+                #     if current_index + 1 < len(flattened_toc):
+                #         next_item = flattened_toc[current_index + 1]
+                #         if isinstance(next_item, TableOfContents):
+                #             next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title)
+                #         elif isinstance(next_item, TableOfContentsChild):
+                #             next_formatted_section_name = format_section_name("", next_item.number, next_item.title)
+
+                #         #section_content, _ = get_section_content(formatted_section_name, next_formatted_section_name)
+                #         section_content = next_formatted_section_name
+                #         print(section_content)
+                #         child_dict["content"] = section_content
+        
+        toc_models = [convert_to_model(item) for item in master_toc]
+        flattened_toc = flatten_toc(toc_models)
+        
+        # for item in flattened_toc:
+        #     if isinstance(item, TableOfContents):
+        #         print(f"{item.section} {item.number}: {item.title}")
+        #     elif isinstance(item, TableOfContentsChild):
+        #         print(f"{item.number}: {item.title}")
+
+        #     current_index = flattened_toc.index(item)
+        #     if current_index + 1 < len(flattened_toc):
+        #         next_item = flattened_toc[current_index + 1]
+        #         if isinstance(next_item, TableOfContents):
+        #             next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title)
+        #         elif isinstance(next_item, TableOfContentsChild):
+        #             next_formatted_section_name = format_section_name("", next_item.number, next_item.title)
+        #         section_content = next_formatted_section_name
+        #         print(section_content)
+        # return
+        
+        for item in toc_models:
+            formatted_section_name = format_section_name(item.section, item.number, item.title)
+            section_dict = {
+                "section": item.section,
+                "number": item.number,
+                "title": item.title,
+                "content": "",
+                "children": []
+            }
+            levels_dict["contents"].append(section_dict)
+            
+            current_index = flattened_toc.index(item)
+            if current_index + 1 < len(flattened_toc):
+                next_item = flattened_toc[current_index + 1]
+                if isinstance(next_item, TableOfContents):
+                    next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title)
+                elif isinstance(next_item, TableOfContentsChild):
+                    next_formatted_section_name = format_section_name("", next_item.number, next_item.title)
+                
+                section_content, _ = get_section_content(formatted_section_name=formatted_section_name, next_formatted_section_name=next_formatted_section_name)
+                # section_content = next_formatted_section_name
+                # print(section_content)
+                section_dict["content"] = section_content
+            
+            traverse_sections(item.children, section_dict, flattened_toc)
+        
+        return levels_dict
+    
+    return traverse_and_update_toc(master_toc)
 
 async def main_run():
     toc_hierarchy_schema = {
+        "A Guide to capital gains and losses": "#####",
         "Anti-overlap provisions": "#####",
         "Basic case and concepts": "#####",
         "Boat capital gains": "#####",
         "Chapter": "##",
         "Compulsory acquisitions of adjacent land only": "#####",
-        "Demutualisation of Tower Corporation": "#####",
         "Division": "####",
         "Dwellings acquired from deceased estates": "#####",
         "Employment partly full-time and partly part-time": "#####",
@@ -173,45 +345,40 @@ async def main_run():
         "Exempt assets": "#####",
         "Exempt or loss-denying transactions": "#####",
         "General": "#####",
+        "General overview": "#####",
         "General rules": "#####",
         "Guide to Division": "#####",
         "Keeping records for CGT purposes": "#####",
         "Long service leave taken at less than full pay": "#####",
-        "Look-through earnout rights": "#####",
         "Main provisions": "#####",
         "Operative provisions": "#####",
         "Part": "###",
         "Partial exemption rules": "#####",
-        "Record keeping": "#####",
         "Roll-overs under Subdivision 126-A": "#####",
         "Rules that may extend the exemption": "#####",
         "Rules that may limit the exemption": "#####",
         "Special disability trusts": "#####",
         "Special valuation rules": "#####",
-        "Step 1—Have you made a capital gain or a capital loss?": "#####",
-        "Step 2—Work out the amount of the capital gain or loss": "#####",
-        "Step 3—Work out your net capital gain or loss for the income year": "#####",
+        "Step 1\u2014Have you made a capital gain or a capital loss?": "#####",
+        "Step 2\u2014Work out the amount of the capital gain or loss": "#####",
+        "Step 3\u2014Work out your net capital gain or loss for the income year": "#####",
         "Subdivision": "#####",
         "Takeovers and restructures": "#####",
-        "Units in pooled superannuation trusts": "#####",
-        "Venture capital investment": "#####",
-        "Venture capital: investment by superannuation funds for foreign residents": "#####",
-        "What does **_not_** **form part of the cost base**": "#####"
+        "What are not discount capital gains?": "#####",
+        "What does not form part of the cost base": "#####",
+        "What is a discount capital gain?": "#####"
     }
-    
-    with open("toc.md", "r") as f:
-        toc_md_string = f.read()
+    top_level = min(toc_hierarchy_schema.values(), key=lambda x: x.count('#'))
+    top_level_count = top_level.count('#')
+    adjust_count = top_level_count - 1
+    adjusted_toc_hierarchy_schema = {k: v[adjust_count:] for k, v in toc_hierarchy_schema.items()}
+    with open("content.md", "r") as f:
+        content_md_string = f.read()
 
-    # section_types = re.findall(r"#{3,}\s+(\w+)", content)
-    # section_types = list(set(section_types))
-    # result = await split_toc_into_parts(toc_md_string, toc_hierarchy_schema)
-    # with open("toc_parts.json", "w") as f:
-    #     json.dump(result, f, indent=4)
-    # with open("toc_parts.json", "r") as f:
-    #     levels = json.load(f)
-
-
- 
-
+    doc_dict = generate_chunked_content(content_md_string, "master_toc.json", toc_hierarchy_schema=adjusted_toc_hierarchy_schema)
+    with open("zzz_content.json", "w") as f:
+        json.dump(doc_dict, f, indent=4)
+    # for level in doc_dict:
+    #     print(level)
 
 asyncio.run(main_run())

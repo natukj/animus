@@ -828,14 +828,97 @@ class PDFParser(BaseParser):
         content_dict = await self.generate_chunked_content()
         return content_dict
     
-    async def parse_from_json(self, file_path: str) -> Dict[str, Dict[Any]]:
-        """
-        temp for testing
-        Main method to parse the PDF content from a JSON file.
-        """
-        with open(file_path, "r") as f:
-            toc = json.load(f)
-            data = TableOfContentsDict(**toc)
-            await self.build_master_toc(data)   
-        content_dict = await self.generate_chunked_content()
-        return content_dict
+    async def generate_chunked_content2(self) -> Dict[str, Dict[Any]]:
+        content_md_lines = self.content_md_string.split("\n")
+        content_md_section_lines = [(line, idx) for idx, line in enumerate(content_md_lines) if line.startswith('#')]
+        # should be able to imply md levels from the master toc
+        md_levels = self.adjusted_toc_hierarchy_schema if self.adjusted_toc_hierarchy_schema else self.toc_hierarchy_schema
+
+        def format_section_name(section: str, number: str, title: str) -> str:
+            if not section:
+                section_match = None
+            else:
+                section_match = process.extractOne(section, md_levels.keys(), score_cutoff=98)
+            if section_match:
+                matched_section = section_match[0]
+                md_level = md_levels[matched_section]
+            else:
+                max_level = max(md_levels.values(), key=len)
+                md_level = max_level
+            if section and number and title:
+                if section in title and number in title:
+                    return f'{md_level} {title}'
+                elif section in title:
+                    return f'{md_level} {title} {number}'
+                else:
+                    return f'{md_level} {section} {number} {title}'
+            elif not number:
+                if section in title:
+                    return f'{md_level} {title}'
+                else:
+                    return f'{md_level} {section} {title}'
+            else:
+                return f'{md_level} {section}'
+
+        def traverse_sections(sections: List[Union[TableOfContents, TableOfContentsChild]], parent_dict: Dict[str, Any]):
+            for section in sections:
+                if isinstance(section, TableOfContents):
+                    section_dict = {
+                        "section": section.section,
+                        "number": section.number,
+                        "title": section.title,
+                        "subsections": []
+                    }
+                    parent_dict["subsections"].append(section_dict)
+                    if section.children:
+                        traverse_sections(section.children, section_dict)
+                elif isinstance(section, TableOfContentsChild):
+                    section_dict = {
+                        "number": section.number,
+                        "title": section.title
+                    }
+                    parent_dict["subsections"].append(section_dict)
+
+        def update_content_and_tokens(sections: List[Union[TableOfContents, TableOfContentsChild]]):
+            for section in sections:
+                if isinstance(section, TableOfContents):
+                    formatted_section_name = format_section_name(section.section, section.number, section.title)
+                    matches = process.extractBests(formatted_section_name, [line for line, _ in content_md_section_lines], score_cutoff=80, limit=10)
+                    if matches:
+                        highest_score = max(matches, key=lambda x: x[1])[1]
+                        highest_score_matches = [match for match in matches if match[1] == highest_score]
+                        # select the highest score with the lowest index
+                        matched_line = min(highest_score_matches, key=lambda x: next(idx for line, idx in content_md_section_lines if line == x[0]))[0]
+                        start_line_idx = next(idx for line, idx in content_md_section_lines if line == matched_line)
+
+                        next_section_index = sections.index(section) + 1
+                        while next_section_index < len(sections):
+                            next_section = sections[next_section_index]
+                            if isinstance(next_section, TableOfContents):
+                                next_formatted_section_name = format_section_name(next_section.section, next_section.number, next_section.title)
+                                next_matches = process.extractBests(next_formatted_section_name, [line for line, _ in content_md_section_lines], score_cutoff=80, limit=10)
+                                if next_matches:
+                                    next_highest_score = max(next_matches, key=lambda x: x[1])[1]
+                                    next_highest_score_matches = [match for match in next_matches if match[1] == next_highest_score]
+                                    next_matched_line = min(next_highest_score_matches, key=lambda x: next(idx for line, idx in content_md_section_lines if line == x[0]))[0]
+                                    end_line_idx = next(idx for line, idx in content_md_section_lines if line == next_matched_line) - 1
+                                    break
+                            next_section_index += 1
+                        else:
+                            end_line_idx = len(content_md_lines) - 1
+
+                        section_text = "\n".join(content_md_lines[start_line_idx:end_line_idx + 1])
+                        num_tokens = self.count_tokens(section_text)
+                        section["content"] = section_text
+                        section["tokens"] = num_tokens
+                    else:
+                        print(f"Could not match {formatted_section_name}")
+
+                    if section.children:
+                        update_content_and_tokens(section.children)
+        
+        doc_dict = {"subsections": []}
+        traverse_sections(self.master_toc, doc_dict)
+        update_content_and_tokens(doc_dict["subsections"])
+
+        return doc_dict

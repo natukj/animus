@@ -108,7 +108,7 @@ Here is an example of the JSON structure you need to follow:
 - Sections sharing the same number of "#" symbols must be placed at the same hierarchical level within the JSON object.
 - If a section lacks a numeric identifier, set the "number" value to an empty string ("").
 - If a section lacks a title, or the title is the same as the section, set the "title" value to an empty string ("").
-- Exclude dots, page numbers, and any text not explicitly listed as a ToC item.         
+- Exclude dots, page numbers, and any text not explicitly listed as a ToC item (page numbers are usually at the end of the line).         
 
 Please create a JSON object from the following ToC Markdown text:
 
