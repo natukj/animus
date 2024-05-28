@@ -493,7 +493,7 @@ class PDFParser(BaseParser):
                     {"role": "system", "content": prompts.TOC_SCHEMA_SYS_PROMPT_PLUS},
                     {"role": "user", "content": prompts.TOC_SCHEMA_USER_PROMPT_PLUS.format(level_title=level_title_str, sublevel_title=sublevel_title_str, subsublevel_title=subsublevel_title_str, section_types=section_types, TOC_SCHEMA=TOC_SCHEMA, content=content)}
                 ]
-                response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o")
+                response = await llm.openai_client_chat_completion_request(messages, model="gpt-4-turbo")
                 if not response.choices or not response.choices[0].message:
                     print("Unexpected response structure:", response)
                     raise Exception("Unexpected response structure")

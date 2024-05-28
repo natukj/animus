@@ -21,328 +21,10 @@
             "tokens": null,
             "children": [
               {
-                "section": "Guide to Division",
                 "number": "122-1",
                 "title": "What this Division is about",
                 "content": null,
-                "tokens": null,
-                "children": []
-              },
-              {
-                "section": "Subdivision",
-                "number": "122-A",
-                "title": "Disposal or creation of assets by an individual or trustee to a wholly-owned company",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "122-5",
-                    "title": "What this Subdivision is about",
-                    "content": null,
-                    "tokens": null,
-                    "children": []
-                  },
-                  {
-                    "section": "When is a roll-over available",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "122-15",
-                        "title": "Disposal or creation of assets\u2014wholly-owned company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-20",
-                        "title": "What you receive for the trigger event",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-25",
-                        "title": "Other requirements to be satisfied",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-35",
-                        "title": "What if the company undertakes to discharge a liability (disposal case)",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-37",
-                        "title": "Rules for working out what a liability in respect of an asset is",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Replacement-asset roll-over if you dispose of a CGT asset",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "122-40",
-                        "title": "Disposal of a CGT asset",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Replacement-asset roll-over if you dispose of all the assets of a business",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "122-45",
-                        "title": "Disposal of all the assets of a business",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-50",
-                        "title": "All assets acquired on or after 20 September 1985",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-55",
-                        "title": "All assets acquired before 20 September 1985",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-60",
-                        "title": "Assets acquired before and after 20 September 1985",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Replacement-asset roll-over for a creation case",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "122-65",
-                        "title": "Creation of asset",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Same-asset roll-over consequences for the company (disposal case)",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "122-70",
-                        "title": "Consequences for the company (disposal case)",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Same-asset roll-over consequences for the company (creation case)",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "122-75",
-                        "title": "Consequences for the company (creation case)",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "122-B",
-                "title": "Disposal or creation of assets by partners to a wholly-owned company",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "122-120",
-                    "title": "What this Subdivision is about",
-                    "content": null,
-                    "tokens": null,
-                    "children": []
-                  },
-                  {
-                    "section": "When is a roll-over available",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "122-125",
-                        "title": "Disposal or creation of assets\u2014wholly-owned company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-130",
-                        "title": "What the partners receive for the trigger event",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-135",
-                        "title": "Other requirements to be satisfied",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-140",
-                        "title": "What if the company undertakes to discharge a liability (disposal case)",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-145",
-                        "title": "Rules for working out what a liability in respect of an interest in an asset is",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Replacement-asset roll-over if partners dispose of a CGT asset",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "122-150",
-                        "title": "Capital gain or loss disregarded",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-155",
-                        "title": "Disposal of post-CGT or pre-CGT interests",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-160",
-                        "title": "Disposal of both post-CGT and pre-CGT interests",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Replacement-asset roll-over if the partners dispose of all the assets of a business",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "122-170",
-                        "title": "Capital gain or loss disregarded",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-175",
-                        "title": "Other consequences",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-180",
-                        "title": "All interests acquired on or after 20 September 1985",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-185",
-                        "title": "All interests acquired before 20 September 1985",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "122-190",
-                        "title": "Interests acquired before and after 20 September 1985",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Replacement-asset roll-over for a creation case",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "122-195",
-                        "title": "Creation of asset",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Same-asset roll-over consequences for the company (disposal case)",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "122-200",
-                        "title": "Consequences for the company (disposal case)",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Same-asset roll-over consequences for the company (creation case)",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "122-205",
-                        "title": "Consequences for the company (creation case)",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
+                "tokens": null
               }
             ]
           },
@@ -590,7 +272,7 @@
                   },
                   {
                     "section": "Object of this Subdivision",
-                    "number": "124-I",
+                    "number": "",
                     "title": "",
                     "content": null,
                     "tokens": null,
@@ -605,7 +287,7 @@
                   },
                   {
                     "section": "Change of incorporation without change of entity",
-                    "number": "124-I",
+                    "number": "",
                     "title": "",
                     "content": null,
                     "tokens": null,
@@ -620,7 +302,7 @@
                   },
                   {
                     "section": "Old corporation wound up",
-                    "number": "124-I",
+                    "number": "",
                     "title": "",
                     "content": null,
                     "tokens": null,
@@ -635,7 +317,7 @@
                   },
                   {
                     "section": "Special consequences of some roll-overs",
-                    "number": "124-I",
+                    "number": "",
                     "title": "",
                     "content": null,
                     "tokens": null,
@@ -680,7 +362,7 @@
                   },
                   {
                     "section": "Operative provisions",
-                    "number": "124-J",
+                    "number": "",
                     "title": "",
                     "content": null,
                     "tokens": null,
@@ -776,7 +458,7 @@
                   },
                   {
                     "section": "Operative provisions",
-                    "number": "124-L",
+                    "number": "",
                     "title": "",
                     "content": null,
                     "tokens": null,
@@ -845,7 +527,7 @@
                   },
                   {
                     "section": "Operative provisions",
-                    "number": "124-M",
+                    "number": "",
                     "title": "",
                     "content": null,
                     "tokens": null,
@@ -962,7 +644,7 @@
                   },
                   {
                     "section": "Operative provisions",
-                    "number": "124-N",
+                    "number": "",
                     "title": "",
                     "content": null,
                     "tokens": null,
@@ -1025,7 +707,7 @@
                   },
                   {
                     "section": "Operative provisions",
-                    "number": "124-P",
+                    "number": "",
                     "title": "",
                     "content": null,
                     "tokens": null,
@@ -1082,7 +764,7 @@
                   },
                   {
                     "section": "Operative provisions",
-                    "number": "124-Q",
+                    "number": "",
                     "title": "",
                     "content": null,
                     "tokens": null,
@@ -1139,7 +821,7 @@
                   },
                   {
                     "section": "Replacement case",
-                    "number": "124-R",
+                    "number": "",
                     "title": "",
                     "content": null,
                     "tokens": null,
@@ -1184,7 +866,7 @@
                   },
                   {
                     "section": "Reduction case",
-                    "number": "124-R",
+                    "number": "",
                     "title": "",
                     "content": null,
                     "tokens": null,
@@ -1210,33 +892,6 @@
                       {
                         "number": "124-1150",
                         "title": "Roll-over consequences\u2014some original entitlements pre-CGT, others post-CGT",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Variation to CGT asset case",
-                    "number": "124-R",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "124-1155",
-                        "title": "Roll-over for variation to CGT asset",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "124-1160",
-                        "title": "Roll-over consequences",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "124-1165",
-                        "title": "Roll-over consequences\u2014partial roll-over",
                         "content": null,
                         "tokens": null
                       }
@@ -1268,7 +923,7 @@
                   },
                   {
                     "section": "Operative provisions",
-                    "number": "124-S",
+                    "number": "",
                     "title": "",
                     "content": null,
                     "tokens": null,
@@ -1323,238 +978,10 @@
             "tokens": null,
             "children": [
               {
-                "section": "Guide to Division",
-                "number": "125",
-                "title": "127",
+                "number": "125-1",
+                "title": "What this Division is about",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "125-1",
-                    "title": "What this Division is about",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "125-A",
-                "title": "Object of this Division",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "125-5",
-                    "title": "Object of this Division",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "125-B",
-                "title": "Consequences for owners of interests",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "125-B",
-                    "title": "128",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "125-50",
-                        "title": "Guide to Subdivision 125-B",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "129",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "125-55",
-                        "title": "When a roll-over is available for a demerger",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "125-60",
-                        "title": "Meaning of ownership interest and related terms",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "125-65",
-                        "title": "Meanings of demerger group, head entity and demerger subsidiary",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "125-70",
-                        "title": "Meanings of demerger, demerged entity and demerging entity",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "125-75",
-                        "title": "Exceptions to subsection 125-70(2)",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "125-80",
-                        "title": "What is the roll-over?",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "125-85",
-                        "title": "Cost base adjustments where CGT event happens but no roll-over chosen",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "125-90",
-                        "title": "Cost base adjustments where no CGT event",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "125-95",
-                        "title": "No other cost base adjustment after demerger",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "125-100",
-                        "title": "No further demerger relief in some cases",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "125-C",
-                "title": "Consequences for members of demerger group",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "125-C",
-                    "title": "143",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "125-150",
-                        "title": "Guide to Subdivision 125-C",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "143",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "125-155",
-                        "title": "Certain capital gains or losses disregarded for demerging entity",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "125-160",
-                        "title": "No CGT event J1",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "125-165",
-                        "title": "Adjusted capital loss for value shift under a demerger",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "125-170",
-                        "title": "Reduced cost base reduction if demerger asset subject to roll-over",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "125-D",
-                "title": "Public trading trusts",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "125-D",
-                    "title": "145",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "125-225",
-                        "title": "Guide to Subdivision 125-D",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "145",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "125-230",
-                        "title": "Application of Division to public trading trusts",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "125-E",
-                "title": "Miscellaneous",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "125-235",
-                    "title": "Share and interest sale facilities",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
+                "tokens": null
               }
             ]
           },
@@ -1566,310 +993,10 @@
             "tokens": null,
             "children": [
               {
-                "section": "Guide to Division",
-                "number": "126",
-                "title": "",
+                "number": "126-1",
+                "title": "What this Division is about",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "126-1",
-                    "title": "What this Division is about",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "126-A",
-                "title": "Marriage or relationship breakdowns",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "126-5",
-                    "title": "CGT event involving spouses",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "126-15",
-                    "title": "CGT event involving company or trustee",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "126-20",
-                    "title": "Subsequent CGT event happening to roll-over asset where transferor was a CFC or a non-resident trust",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "126-25",
-                    "title": "Conditions for the purposes of subsections 126-5(3A) and 126-15(5)",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "126-B",
-                "title": "Companies in the same wholly-owned group",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "126-B",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "126-40",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "126-45",
-                        "title": "Roll-over for members of wholly-owned group",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "126-50",
-                        "title": "Requirements for roll-over",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "126-55",
-                        "title": "When there is a roll-over",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "126-60",
-                        "title": "Consequences of roll-over",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "126-75",
-                        "title": "Originating company is a CFC",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "126-85",
-                        "title": "Effect of roll-over on certain liquidations",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "126-C",
-                "title": "Changes to trust deeds",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "126-C",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "126-125",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "number": "126-130",
-                    "title": "Changes to trust deeds",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "126-135",
-                    "title": "Consequences of roll-over",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "126-D",
-                "title": "Small superannuation funds",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "126-140",
-                    "title": "CGT event involving small superannuation funds",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "126-E",
-                "title": "Entitlement to shares after demutualisation and scrip for scrip roll-over",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "126-E",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "126-185",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "126-190",
-                        "title": "When there is a roll-over",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "126-195",
-                        "title": "Consequences of roll-over",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "126-G",
-                "title": "Transfer of assets between certain trusts",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "126-G",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "126-215",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "126-220",
-                        "title": "Object of this Subdivision",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "126-225",
-                        "title": "When a roll-over may be chosen",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "126-230",
-                        "title": "Beneficiaries\u2019 entitlements not be discretionary etc.",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "126-235",
-                        "title": "Exceptions for roll-over",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "126-240",
-                        "title": "Consequences for the trusts",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "126-245",
-                        "title": "Consequences for beneficiaries\u2014general approach for working out cost base etc.",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "126-250",
-                        "title": "Consequences for beneficiaries\u2014other approach for working out cost base etc.",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "126-255",
-                        "title": "No other cost base etc. adjustment for beneficiaries",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "126-260",
-                        "title": "Giving information to beneficiaries",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "126-265",
-                        "title": "Interest sale facilities",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
+                "tokens": null
               }
             ]
           },
@@ -1881,67 +1008,10 @@
             "tokens": null,
             "children": [
               {
-                "section": "Guide to Division",
-                "number": "128",
-                "title": "",
+                "number": "128-1",
+                "title": "What this Division is about",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "128-1",
-                    "title": "What this Division is about",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "General rules",
-                "number": "",
-                "title": "",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "128-10",
-                    "title": "Capital gain or loss when you die is disregarded",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "128-15",
-                    "title": "Effect on the legal personal representative or beneficiary",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "128-20",
-                    "title": "When does an asset pass to a beneficiary?",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "128-25",
-                    "title": "The beneficiary is a trustee of a superannuation fund etc",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Special rules for joint tenants",
-                "number": "",
-                "title": "",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "128-50",
-                    "title": "Joint tenants",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
+                "tokens": null
               }
             ]
           },
@@ -1954,7 +1024,7 @@
             "children": [
               {
                 "section": "Guide to Division",
-                "number": "130",
+                "number": "",
                 "title": "",
                 "content": null,
                 "tokens": null,
@@ -1976,7 +1046,7 @@
                 "children": [
                   {
                     "section": "Guide to Subdivision",
-                    "number": "130-A",
+                    "number": "",
                     "title": "",
                     "content": null,
                     "tokens": null,
@@ -2187,61 +1257,10 @@
             "tokens": null,
             "children": [
               {
-                "section": "Subdivision",
-                "number": "137-A",
-                "title": "When CGT events do not happen",
+                "number": "137-1",
+                "title": "What this Subdivision is about",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "137-A",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "137-1",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "137-10",
-                        "title": "Meaning of key terms",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "137-15",
-                        "title": "CGT event does not happen when a certain kind of granny flat arrangement is entered into",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "137-20",
-                        "title": "CGT event does not happen when a certain kind of granny flat arrangement is varied",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "137-25",
-                        "title": "CGT event does not happen when a certain kind of granny flat arrangement is terminated",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
+                "tokens": null
               }
             ]
           },
@@ -2253,124 +1272,16 @@
             "tokens": null,
             "children": [
               {
-                "section": "Subdivision",
-                "number": "149-A",
-                "title": "Key concepts",
+                "number": "149-10",
+                "title": "What is a pre-CGT asset?",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "149-10",
-                    "title": "What is a pre-CGT asset?",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "149-15",
-                    "title": "Majority underlying interests in a CGT asset",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
+                "tokens": null
               },
               {
-                "section": "Subdivision",
-                "number": "149-B",
-                "title": "When asset of non-public entity stops being a pre-CGT asset",
+                "number": "149-15",
+                "title": "Majority underlying interests in a CGT asset",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "149-25",
-                    "title": "Which entities are affected",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "149-30",
-                    "title": "Effects if asset no longer has same majority underlying ownership",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "149-35",
-                    "title": "Cost base elements of asset that stops being a pre-CGT asset",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "149-C",
-                "title": "When asset of public entity stops being a pre-CGT asset",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "149-50",
-                    "title": "Which entities are affected",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "149-55",
-                    "title": "Entity to give the Commissioner evidence periodically as to whether asset still has same majority underlying ownership",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "149-60",
-                    "title": "What the evidence must show",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "149-70",
-                    "title": "Effects if asset no longer has same majority underlying ownership",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "149-75",
-                    "title": "Cost base elements of asset that stops being a pre-CGT asset",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "149-80",
-                    "title": "No more evidence needed after asset stops being a pre-CGT asset",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "149-F",
-                "title": "How to treat a \u201cdemutualised\u201d public entity",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "149-162",
-                    "title": "Subdivision applies only if entity gives sufficient evidence",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "149-165",
-                    "title": "Members treated as having underlying interests in assets until demutualisation",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "149-170",
-                    "title": "Effect of demutualisation of interposed company",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
+                "tokens": null
               }
             ]
           },
@@ -2382,472 +1293,10 @@
             "tokens": null,
             "children": [
               {
-                "section": "Guide to Division",
-                "number": "152",
-                "title": "",
+                "number": "152-1",
+                "title": "What this Division is about",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "152-1",
-                    "title": "What this Division is about",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "152-A",
-                "title": "Basic conditions for relief under this Division",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "152-A",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-5",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Basic conditions for relief",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-10",
-                        "title": "Basic conditions for relief",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-12",
-                        "title": "Special conditions for CGT event D1",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Maximum net asset value test",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-15",
-                        "title": "Maximum net asset value test",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-20",
-                        "title": "Meaning of net value of the CGT assets",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Active asset test",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-35",
-                        "title": "Active asset test",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-40",
-                        "title": "Meaning of active asset",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-45",
-                        "title": "Continuing time periods for involuntary disposals",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Treatment of passively held CGT assets",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-47",
-                        "title": "Spouses or children taken to be affiliates for certain passively held CGT assets",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-48",
-                        "title": "Working out an entity\u2019s aggregated turnover for passively held CGT assets",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-49",
-                        "title": "Businesses that are winding up",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Significant individual test",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-50",
-                        "title": "Significant individual test",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-55",
-                        "title": "Meaning of significant individual",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "CGT concession stakeholder",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-60",
-                        "title": "Meaning of CGT concession stakeholder",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Small business participation percentage",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-65",
-                        "title": "Small business participation percentage",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-70",
-                        "title": "Direct small business participation percentage",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-75",
-                        "title": "Indirect small business participation percentage",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Nomination of controllers of discretionary trust",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-78",
-                        "title": "Trustee of discretionary trust may nominate beneficiaries to be controllers of trust",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "CGT event happens to asset or interest within 2 years of an individual\u2019s death",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-80",
-                        "title": "CGT event happens to an asset or interest within 2 years of individual\u2019s death",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "152-B",
-                "title": "Small business 15-year exemption",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "152-B",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-100",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-105",
-                        "title": "15-year exemption for individuals",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-110",
-                        "title": "15-year exemption for companies and trusts",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-115",
-                        "title": "Continuing time periods for involuntary disposals",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-125",
-                        "title": "Payments to company\u2019s or trust\u2019s CGT concession stakeholders are exempt",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "152-C",
-                "title": "Small business 50% reduction",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "152-C",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-200",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-205",
-                        "title": "You get the small business 50% reduction",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-210",
-                        "title": "You may also get the small business retirement exemption and small business roll-over relief",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-215",
-                        "title": "15-year rule has priority",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-220",
-                        "title": "You may choose not to apply this Subdivision",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "152-D",
-                "title": "Small business retirement exemption",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "152-D",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-300",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-305",
-                        "title": "Choosing the exemption",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-310",
-                        "title": "Consequences of choice",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-315",
-                        "title": "Choosing the amount to disregard",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-320",
-                        "title": "Meaning of CGT retirement exemption limit",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-325",
-                        "title": "Company or trust conditions",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-330",
-                        "title": "15-year rule has priority",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "152-E",
-                "title": "Small business roll-over",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "152-E",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-400",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "152-410",
-                        "title": "When you can obtain the roll-over",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-415",
-                        "title": "What the roll-over consists of",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-420",
-                        "title": "Rules where an individual who has obtained a roll-over dies",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "152-430",
-                        "title": "15-year rule has priority",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
+                "tokens": null
               }
             ]
           }
@@ -2868,85 +1317,10 @@
             "tokens": null,
             "children": [
               {
-                "section": "Guide to Division",
-                "number": "160",
-                "title": "285",
+                "number": "160-1",
+                "title": "What this Division is about",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "160-1",
-                    "title": "What this Division is about",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "160-A",
-                "title": "Entitlement to and amount of loss carry back tax offset",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "160-5",
-                    "title": "Entitlement to loss carry back tax offset",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "160-10",
-                    "title": "Amount of loss carry back tax offset",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "160-B",
-                "title": "Loss carry back choice",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "160-15",
-                    "title": "Loss carry back choice",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "160-16",
-                    "title": "Changing a loss carry back choice",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "160-20",
-                    "title": "Entity must have had turnover less than $5 billion for loss year",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "160-25",
-                    "title": "Entity must have been a corporate tax entity during relevant years",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "160-30",
-                    "title": "Transferred tax losses, income tax liabilities etc. not included",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "160-35",
-                    "title": "Integrity rule\u2014no loss carry back tax offset if scheme entered into",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
+                "tokens": null
               }
             ]
           },
@@ -2958,52 +1332,10 @@
             "tokens": null,
             "children": [
               {
-                "section": "Guide to Division",
-                "number": "164",
-                "title": "",
+                "number": "164-1",
+                "title": "What this Division is about",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "164-1",
-                    "title": "What this Division is about",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Operative provisions",
-                "number": "",
-                "title": "",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "164-5",
-                    "title": "Object",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "164-10",
-                    "title": "Non-share capital account",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "164-15",
-                    "title": "Credits to non-share capital account",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "164-20",
-                    "title": "Debits to non-share capital account",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
+                "tokens": null
               }
             ]
           },
@@ -3017,7 +1349,7 @@
               {
                 "section": "Guide to Division",
                 "number": "165",
-                "title": "",
+                "title": "What this Division is about",
                 "content": null,
                 "tokens": null,
                 "children": [
@@ -3030,772 +1362,28 @@
                 ]
               },
               {
-                "section": "Subdivision",
                 "number": "165-A",
                 "title": "Deducting tax losses of earlier income years",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "165-A",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-5",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-10",
-                        "title": "To deduct a tax loss",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-12",
-                        "title": "Company must maintain the same owners",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-13",
-                        "title": "Alternatively, the company must satisfy the business continuity test",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-15",
-                        "title": "The same people must control the voting power, or the company must satisfy the business continuity test",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-20",
-                        "title": "When company can deduct part of a tax loss",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
+                "tokens": null
               },
               {
-                "section": "Subdivision",
                 "number": "165-B",
                 "title": "Working out the taxable income and tax loss for the income year of the change",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "165-B",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-23",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-25",
-                        "title": "Summary of this Subdivision",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "number": "165-30",
-                    "title": "Flow chart showing the application of this Subdivision",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-35",
-                        "title": "On a change of ownership, unless the company satisfies the business continuity test",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-37",
-                        "title": "Who has more than a 50% stake in the company during a period",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-40",
-                        "title": "On a change of control of the voting power in the company, unless the company satisfies the business continuity test",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Working out the company\u2019s taxable income",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-45",
-                        "title": "First, divide the income year into periods",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-50",
-                        "title": "Next, calculate the notional loss or notional taxable income for each period",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-55",
-                        "title": "How to attribute deductions to periods",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-60",
-                        "title": "How to attribute assessable income to periods",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-65",
-                        "title": "How to calculate the company\u2019s taxable income for the income year",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Working out the company\u2019s tax loss",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-70",
-                        "title": "How to calculate the company\u2019s tax loss for the income year",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Special rules that apply if the company is in partnership",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-75",
-                        "title": "How to calculate the company\u2019s notional loss or notional taxable income for a period when the company was a partner",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-80",
-                        "title": "How to calculate the company\u2019s share of a partnership\u2019s notional loss or notional net income for a period if both entities have the same income year",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-85",
-                        "title": "How to calculate the company\u2019s share of a partnership\u2019s notional loss or notional net income for a period if the entities have different income years",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-90",
-                        "title": "Company\u2019s full year deductions include a share of partnership\u2019s full year deductions",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
+                "tokens": null
               },
               {
-                "section": "Subdivision",
-                "number": "165-CA",
-                "title": "Applying net capital losses of earlier income years",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "165-CA",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-93",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-96",
-                        "title": "When a company cannot apply a net capital loss",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "165-CB",
-                "title": "Working out the net capital gain and the net capital loss for the income year of the change",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "165-CB",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-99",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-102",
-                        "title": "On a change of ownership, or of control of voting power, unless the company satisfies the business continuity test",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Working out the company\u2019s net capital gain and net capital loss",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-105",
-                        "title": "First, divide the income year into periods",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-108",
-                        "title": "Next, calculate the notional net capital gain or notional net capital loss for each period",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-111",
-                        "title": "How to work out the company\u2019s net capital gain",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-114",
-                        "title": "How to work out the company\u2019s net capital loss",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "165-CC",
-                "title": "Change of ownership or control of company that has an unrealised net loss",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "165-CC",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-115",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115AA",
-                        "title": "Special rules to save compliance costs",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-115A",
-                        "title": "Application of Subdivision",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115B",
-                        "title": "What happens when the company makes a capital loss or becomes entitled to a deduction in respect of a CGT asset after a changeover time",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115BA",
-                        "title": "What happens when a CGT event happens after a changeover time to a CGT asset of the company that is trading stock",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115BB",
-                        "title": "Order of application of assets: residual unrealised net loss",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115C",
-                        "title": "Changeover time\u2014change in ownership of company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115D",
-                        "title": "Changeover time\u2014change in control of company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115E",
-                        "title": "What is an unrealised net loss",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115F",
-                        "title": "Notional gains and losses",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "165-CD",
-                "title": "Reductions after alterations in ownership or control of loss company",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "165-CD",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-115GA",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115GB",
-                        "title": "When adjustments must be made",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115GC",
-                        "title": "How adjustments are calculated",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115H",
-                        "title": "How this Subdivision applies",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-115J",
-                        "title": "Object of Subdivision",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115K",
-                        "title": "Application and interpretation",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115L",
-                        "title": "Alteration time\u2014alteration in ownership of company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115M",
-                        "title": "Alteration time\u2014alteration in control of company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115N",
-                        "title": "Alteration time\u2014declaration by liquidator or administrator",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115P",
-                        "title": "Notional alteration time\u2014disposal of interests in company within 12 months before alteration time",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115Q",
-                        "title": "Notional alteration time\u2014disposal of interests in company earlier than 12 months before alteration time",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115R",
-                        "title": "When company is a loss company at first or only alteration time in income year",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115S",
-                        "title": "When company is a loss company at second or later alteration time in income year",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115T",
-                        "title": "Reduction of certain amounts included in company\u2019s overall loss at alteration time",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115U",
-                        "title": "Adjusted unrealised loss",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115V",
-                        "title": "Notional losses",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115W",
-                        "title": "Calculation of trading stock decrease",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115X",
-                        "title": "Relevant equity interest",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115Y",
-                        "title": "Relevant debt interest",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115Z",
-                        "title": "What constitutes a controlling stake in a company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115ZA",
-                        "title": "Reductions and other consequences if entity has relevant equity interest or relevant debt interest in loss company immediately before alteration time",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115ZB",
-                        "title": "Adjustment amounts for the purposes of section 165-115ZA",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115ZC",
-                        "title": "Notices to be given",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-115ZD",
-                        "title": "Adjustment (or further adjustment) for interest realised at a loss after global method has been used",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
                 "number": "165-C",
                 "title": "Deducting bad debts",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "165-C",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-117",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-119",
-                        "title": "Application of Subdivision",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-120",
-                        "title": "To deduct a bad debt",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-123",
-                        "title": "Company must maintain the same owners",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-126",
-                        "title": "Alternatively, the company must satisfy the business continuity test",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-129",
-                        "title": "Same people must control the voting power, or the company must satisfy the business continuity test",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-132",
-                        "title": "When tax losses resulting from bad debts cannot be deducted",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
+                "tokens": null
               },
               {
-                "section": "Subdivision",
                 "number": "165-D",
                 "title": "Tests for finding out whether the company has maintained the same owners",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "The primary and alternative tests",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-150",
-                        "title": "Who has more than 50% of the voting power in the company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-155",
-                        "title": "Who has rights to more than 50% of the company\u2019s dividends",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-160",
-                        "title": "Who has rights to more than 50% of the company\u2019s capital distributions",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-165",
-                        "title": "Rules about tests for a condition or occurrence of a circumstance",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-175",
-                        "title": "Tests can be satisfied by a single person",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Rules affecting the operation of the tests",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "165-180",
-                        "title": "Arrangements affecting beneficial ownership of shares",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-185",
-                        "title": "Shares treated as not having carried rights",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-190",
-                        "title": "Shares treated as always having carried rights",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-200",
-                        "title": "Rules do not affect totals of shares, units in unit trusts or rights carried by shares and units",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-202",
-                        "title": "Shares held by government entities and charities etc.",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-203",
-                        "title": "Companies where no shares have been issued",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-205",
-                        "title": "Death of share owner",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-207",
-                        "title": "Trustees of family trusts",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-208",
-                        "title": "Companies in liquidation etc.",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "165-209",
-                        "title": "Dual listed companies",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
+                "tokens": null
               },
               {
                 "section": "Subdivision",
@@ -3872,6 +1460,12 @@
                     "title": "Notices where requirements of section 165-235 are met",
                     "content": null,
                     "tokens": null
+                  },
+                  {
+                    "number": "165-245",
+                    "title": "When an entity has a fixed entitlement to income or capital of a company",
+                    "content": null,
+                    "tokens": null
                   }
                 ]
               },
@@ -3906,340 +1500,10 @@
             "tokens": null,
             "children": [
               {
-                "section": "Guide to Division",
-                "number": "166",
-                "title": "428",
+                "number": "166-1",
+                "title": "What this Division is about",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "166-1",
-                    "title": "What this Division is about",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "166-AA",
-                "title": "The object of this Division",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "166-3",
-                    "title": "The object of this Division",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "166-A",
-                "title": "Deducting tax losses of earlier income years",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "166-5",
-                    "title": "How Subdivision 165-A applies to a widely held or eligible Division 166 company",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "166-15",
-                    "title": "Companies can choose that this Subdivision is not to apply to them",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "166-B",
-                "title": "Working out the taxable income, tax loss, net capital gain and net capital loss for the income year of the change",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "166-20",
-                    "title": "How Subdivisions 165-B and 165-CB apply to a widely held or eligible Division 166 company",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "166-25",
-                    "title": "How to work out the taxable income, tax loss, net capital gain and net capital loss",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "166-35",
-                    "title": "Companies can choose that this Subdivision is not to apply to them",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "166-C",
-                "title": "Deducting bad debts",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "166-40",
-                    "title": "How Subdivision 165-C applies to a widely held or eligible Division 166 company",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "166-50",
-                    "title": "Companies can choose that this Subdivision is not to apply to them",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "166-CA",
-                "title": "Changeover times and alteration times",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "166-80",
-                    "title": "How Subdivision 165-CC or 165-CD applies to a widely held or eligible Division 166 company",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "166-90",
-                    "title": "Companies can choose that this Subdivision is not to apply to them",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "166-D",
-                "title": "Tests for finding out whether the widely held or eligible Division 166 company has maintained the same owners",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "166-D",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "166-135",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "The ownership tests: substantial continuity of ownership",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "166-145",
-                        "title": "The ownership tests: substantial continuity of ownership",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "166-165",
-                        "title": "Relationship with rules in Division 165",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Corporate change in a company",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "166-175",
-                        "title": "Corporate change in a company",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "166-E",
-                "title": "Concessional tracing rules",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "166-E",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "166-215",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Application of this Subdivision",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "166-220",
-                        "title": "Application of this Subdivision",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Stakes of less than 10% in the tested company",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "166-225",
-                        "title": "Direct stakes of less than 10% in the tested company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "166-230",
-                        "title": "Indirect stakes of less than 10% in the tested company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "166-235",
-                        "title": "Voting, dividend and capital stakes",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Stakes held directly and/or indirectly by widely held companies",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "166-240",
-                        "title": "Stakes held directly and/or indirectly by widely held companies",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "166-245",
-                        "title": "Stakes held by other entities",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "When identity of foreign stakeholders is not known",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "166-255",
-                        "title": "Bearer shares in foreign listed companies",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "166-260",
-                        "title": "Depository entities holding stakes in foreign listed companies",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Other rules relating to voting power and rights",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "166-265",
-                        "title": "Persons who actually control voting power or have rights are taken not to control power or have rights",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "166-270",
-                        "title": "Single notional entity stakeholders taken to have minimum voting control, dividend rights and capital rights",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "166-272",
-                        "title": "Same shares or interests to be held",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "When the rules in this Subdivision do not apply",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "166-275",
-                        "title": "Rules in this Subdivision intended to be concessional",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "166-280",
-                        "title": "Controlled test companies",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
+                "tokens": null
               }
             ]
           },
@@ -4251,151 +1515,10 @@
             "tokens": null,
             "children": [
               {
-                "section": "Guide to Division",
-                "number": "167",
-                "title": "",
+                "number": "167-1",
+                "title": "What this Division is about",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "167-1",
-                    "title": "What this Division is about",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "167-A",
-                "title": "Rights to dividends or capital distributions",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "167-A",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "167-5",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "167-7",
-                        "title": "Simplified outline of this Subdivision",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "167-10",
-                        "title": "When this Subdivision applies",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "167-15",
-                        "title": "First way\u2014disregard debt interests",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "167-20",
-                        "title": "Second way\u2014also disregard secondary share classes",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "167-25",
-                        "title": "Third way\u2014treat remaining shares as having fixed rights to dividends and capital distributions",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "167-30",
-                        "title": "Fixing rights if practicable to work out market values",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "167-35",
-                        "title": "Fixing rights if impracticable to work out market values etc.",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "167-40",
-                        "title": "The valuing times for conditions listed in subsection 167-10(1)",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "167-B",
-                "title": "Voting power",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "167-B",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "167-75",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "167-80",
-                        "title": "When this Subdivision applies",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "167-85",
-                        "title": "Different method for working out voting power",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "167-90",
-                        "title": "Dual listed companies",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
+                "tokens": null
               }
             ]
           },
@@ -4407,472 +1530,16 @@
             "tokens": null,
             "children": [
               {
-                "section": "Subdivision",
-                "number": "170-A",
-                "title": "Transfer of tax losses within certain wholly-owned groups of companies",
+                "number": "170-1",
+                "title": "What this Subdivision is about",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "",
-                    "title": "Guide to Subdivision 170-A",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "170-1",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-5",
-                        "title": "Basic principles for transferring tax losses",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Effect of transferring a tax loss",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "170-10",
-                        "title": "When a company can transfer a tax loss",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-15",
-                        "title": "Income company is taken to have incurred transferred loss",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-20",
-                        "title": "Who can deduct transferred loss",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-25",
-                        "title": "Tax treatment of consideration for transferred tax loss",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Conditions for transfer",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "170-30",
-                        "title": "Companies must be in existence and members of the same wholly-owned group etc.",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-32",
-                        "title": "Tax loss incurred by the loss company because of a transfer under Subdivision 707-A",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-33",
-                        "title": "Alternative test of relations between the loss company and other companies",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-35",
-                        "title": "The loss company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-40",
-                        "title": "The income company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-42",
-                        "title": "If the income company has become the head company of a consolidated group or MEC group",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-45",
-                        "title": "Maximum amount that can be transferred",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-50",
-                        "title": "Transfer by written agreement",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-55",
-                        "title": "Losses must be transferred in order they are incurred",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-60",
-                        "title": "Income company cannot transfer transferred tax loss",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Effect of agreement to transfer more than can be transferred",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "170-65",
-                        "title": "Agreement transfers as much as can be transferred",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-70",
-                        "title": "Amendment of assessments",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Australian permanent establishments of foreign financial entities",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "170-75",
-                        "title": "Treatment like Australian branches of foreign banks",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
+                "tokens": null
               },
               {
-                "section": "Subdivision",
-                "number": "170-B",
-                "title": "Transfer of net capital losses within certain wholly-owned groups of companies",
+                "number": "170-5",
+                "title": "Basic principles for transferring tax losses",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "",
-                    "title": "Guide to Subdivision 170-B",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "170-101",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-105",
-                        "title": "Basic principles for transferring a net capital loss",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Effect of transferring a net capital loss",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "170-110",
-                        "title": "When a company can transfer a net capital loss",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-115",
-                        "title": "Who can apply transferred loss",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-120",
-                        "title": "Gain company is taken to have made transferred loss",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-125",
-                        "title": "Tax treatment of consideration for transferred tax loss",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Conditions for transfer",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "170-130",
-                        "title": "Companies must be in existence and members of the same wholly-owned group etc.",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-132",
-                        "title": "Net capital loss made by the loss company because of a transfer under Subdivision 707-A",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-133",
-                        "title": "Alternative test of relations between the loss company and other companies",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-135",
-                        "title": "The loss company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-140",
-                        "title": "The gain company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-142",
-                        "title": "If the gain company has become the head company of a consolidated group or MEC group",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-145",
-                        "title": "Maximum amount that can be transferred",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-150",
-                        "title": "Transfer by written agreement",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-155",
-                        "title": "Losses must be transferred in order they are made",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-160",
-                        "title": "Gain company cannot transfer transferred net capital loss",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Effect of agreement to transfer more than can be transferred",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "170-165",
-                        "title": "Agreement transfers as much as can be transferred",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-170",
-                        "title": "Amendment of assessments",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "Australian permanent establishments of foreign financial entities",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "170-174",
-                        "title": "Treatment like Australian branches of foreign banks",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "170-C",
-                "title": "Provisions applying to both transfers of tax losses and transfers of net capital losses within wholly-owned groups of companies",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "",
-                    "title": "Guide to Subdivision 170-C",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "170-201",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "170-205",
-                        "title": "Object of Subdivision",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-210",
-                        "title": "Transfer of tax loss: direct and indirect interests in the loss company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-215",
-                        "title": "Transfer of tax loss: direct and indirect interests in the income company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-220",
-                        "title": "Transfer of net capital loss: direct and indirect interests in the loss company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-225",
-                        "title": "Transfer of net capital loss: direct and indirect interests in the gain company",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "170-D",
-                "title": "Transactions by a company that is a member of a linked group",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "section": "Guide to Subdivision",
-                    "number": "",
-                    "title": "Guide to Subdivision 170-D",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "170-250",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "170-255",
-                        "title": "Application of Subdivision",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-260",
-                        "title": "Linked group",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-265",
-                        "title": "Connected entity",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-270",
-                        "title": "Immediate consequences for originating company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-275",
-                        "title": "Subsequent consequences for originating company",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "170-280",
-                        "title": "What happens if certain events happen in respect of the asset",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  }
-                ]
+                "tokens": null
               }
             ]
           },
@@ -4886,7 +1553,7 @@
               {
                 "section": "Guide to Division",
                 "number": "175",
-                "title": "",
+                "title": "What this Division is about",
                 "content": null,
                 "tokens": null,
                 "children": [
@@ -5082,61 +1749,10 @@
             "tokens": null,
             "children": [
               {
-                "section": "Guide to Division",
-                "number": "180",
-                "title": "",
+                "number": "180-1",
+                "title": "What this Division is about",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "180-1",
-                    "title": "What this Division is about",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "180-A",
-                "title": "Information relevant to Division 165",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "180-5",
-                    "title": "Information about family trusts with interests in companies",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "180-10",
-                    "title": "Notice where requirements of section 180-5 are met",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "180-B",
-                "title": "Information relevant to Division 175",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "180-15",
-                    "title": "Information about family trusts with interests in companies",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "180-20",
-                    "title": "Notice where requirements of section 180-15 are met",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
+                "tokens": null
               }
             ]
           },
@@ -5148,245 +1764,86 @@
             "tokens": null,
             "children": [
               {
-                "section": "Subdivision",
+                "section": "Guide to Subdivision",
                 "number": "195-A",
-                "title": "Pooled development funds (PDFs)",
+                "title": "",
                 "content": null,
                 "tokens": null,
                 "children": [
                   {
-                    "section": "Guide to Subdivision",
-                    "number": "",
-                    "title": "Guide to Subdivision 195-A",
+                    "number": "195-1",
+                    "title": "What this Subdivision is about",
                     "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "195-1",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Working out a PDF\u2019s taxable income and tax loss",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "195-5",
-                        "title": "Deductibility of PDF tax losses",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-10",
-                        "title": "PDF cannot transfer tax loss",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-15",
-                        "title": "Tax loss for year in which company becomes a PDF",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Working out a PDF\u2019s net capital gain and net capital loss",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "195-25",
-                        "title": "Applying a PDF\u2019s net capital losses",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-30",
-                        "title": "PDF cannot transfer net capital loss",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-35",
-                        "title": "Net capital loss for year in which company becomes a PDF",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
-                  },
-                  {
-                    "section": "Working out a PDF\u2019s loss carry back tax offset",
-                    "number": "",
-                    "title": "",
-                    "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "195-37",
-                        "title": "PDF cannot carry back tax loss",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
+                    "tokens": null
                   }
                 ]
               },
               {
-                "section": "Subdivision",
-                "number": "195-B",
-                "title": "Limited partnerships",
+                "section": "Working out a PDF\u2019s taxable income and tax loss",
+                "number": "",
+                "title": "",
                 "content": null,
                 "tokens": null,
                 "children": [
                   {
-                    "section": "Guide to Subdivision",
-                    "number": "",
-                    "title": "Guide to Subdivision 195-B",
+                    "number": "195-5",
+                    "title": "Deductibility of PDF tax losses",
                     "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "195-60",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
+                    "tokens": null
                   },
                   {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
+                    "number": "195-10",
+                    "title": "PDF cannot transfer tax loss",
                     "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "195-65",
-                        "title": "Tax losses cannot be transferred to a VCLP, an ESVCLP, an AFOF or a VCMP",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-70",
-                        "title": "Previous tax losses can be deducted after ceasing to be a VCLP, an ESVCLP, an AFOF or a VCMP",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-72",
-                        "title": "Tax losses cannot be carried back to before ceasing to be a VCLP, an ESVCLP, an AFOF or a VCMP",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-75",
-                        "title": "Determinations to take account of income years of less than 12 months",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
+                    "tokens": null
+                  },
+                  {
+                    "number": "195-15",
+                    "title": "Tax loss for year in which company becomes a PDF",
+                    "content": null,
+                    "tokens": null
                   }
                 ]
               },
               {
-                "section": "Subdivision",
-                "number": "195-C",
-                "title": "Corporate collective investment vehicles",
+                "section": "Working out a PDF\u2019s net capital gain and net capital loss",
+                "number": "",
+                "title": "",
                 "content": null,
                 "tokens": null,
                 "children": [
                   {
-                    "section": "Guide to Subdivision",
-                    "number": "",
-                    "title": "Guide to Subdivision 195-C",
+                    "number": "195-25",
+                    "title": "Applying a PDF\u2019s net capital losses",
                     "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "195-100",
-                        "title": "What this Subdivision is about",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
+                    "tokens": null
                   },
                   {
-                    "section": "Operative provisions",
-                    "number": "",
-                    "title": "",
+                    "number": "195-30",
+                    "title": "PDF cannot transfer net capital loss",
                     "content": null,
-                    "tokens": null,
-                    "children": [
-                      {
-                        "number": "195-105",
-                        "title": "Effect of this Subdivision",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-110",
-                        "title": "Each sub-fund of a CCIV is taken to be a separate trust",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-115",
-                        "title": "A CCIV sub-fund trust is a unit trust",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-120",
-                        "title": "Beneficiary of a CCIV sub-fund trust has fixed entitlements to shares of income and capital of the trust",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-123",
-                        "title": "How to work out the income of the trust estate of a CCIV sub-fund trust for an income year",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-125",
-                        "title": "When a beneficiary of a CCIV sub-fund trust is presently entitled to trust income",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-127",
-                        "title": "When a beneficiary of a CCIV sub-fund trust has an individual interest in exempt income and non-assessable non-exempt income of the trust estate",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-130",
-                        "title": "Application of Division 275 (managed investment trusts) to a CCIV sub-fund trust",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-135",
-                        "title": "Application of Division 276 (AMITs) to a CCIV sub-fund trust",
-                        "content": null,
-                        "tokens": null
-                      },
-                      {
-                        "number": "195-140",
-                        "title": "Entry on Australian Business Register",
-                        "content": null,
-                        "tokens": null
-                      }
-                    ]
+                    "tokens": null
+                  },
+                  {
+                    "number": "195-35",
+                    "title": "Net capital loss for year in which company becomes a PDF",
+                    "content": null,
+                    "tokens": null
+                  }
+                ]
+              },
+              {
+                "section": "Working out a PDF\u2019s loss carry back tax offset",
+                "number": "",
+                "title": "",
+                "content": null,
+                "tokens": null,
+                "children": [
+                  {
+                    "number": "195-37",
+                    "title": "PDF cannot carry back tax loss",
+                    "content": null,
+                    "tokens": null
                   }
                 ]
               }
@@ -5400,166 +1857,10 @@
             "tokens": null,
             "children": [
               {
-                "section": "Guide to Division",
-                "number": "197",
-                "title": "579",
+                "number": "197-1",
+                "title": "What this Division is about",
                 "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "197-1",
-                    "title": "What this Division is about",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "197-A",
-                "title": "What transfers into a company\u2019s share capital account does this Division apply to?",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "197-5",
-                    "title": "Division generally applies to an amount transferred to share capital account from another account",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-10",
-                    "title": "Exclusion for amounts that could be identified as share capital",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-15",
-                    "title": "Exclusion for amounts transferred under debt/equity swaps",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-20",
-                    "title": "Exclusion for amounts transferred leading to there being no shares with a par value\u2014non-Corporations Act companies",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-25",
-                    "title": "Exclusion for transfers from option premium reserves",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-30",
-                    "title": "Exclusion for transfers made in connection with demutualisations of non-insurance etc. companies",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-35",
-                    "title": "Exclusion for transfers made in connection with demutualisations of insurance etc. companies",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-37",
-                    "title": "Exclusion for transfers made in connection with demutualisations of private health insurers",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-38",
-                    "title": "Exclusion for transfers connected with demutualisations of friendly society health or life insurers",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-40",
-                    "title": "Exclusion for post-demutualisation transfers relating to life insurance companies",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-42",
-                    "title": "Exclusion for exploration credits",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "197-B",
-                "title": "Consequence of transfer: franking debit arises",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "197-45",
-                    "title": "A franking debit arises in relation to the transfer",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
-              },
-              {
-                "section": "Subdivision",
-                "number": "197-C",
-                "title": "Consequence of transfer: tainting of share capital account",
-                "content": null,
-                "tokens": null,
-                "children": [
-                  {
-                    "number": "197-50",
-                    "title": "The share capital account becomes tainted (if it is not already tainted)",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-55",
-                    "title": "Choosing to untaint a tainted share capital account",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-60",
-                    "title": "Choosing to untaint\u2014liability to untainting tax",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-65",
-                    "title": "Choosing to untaint\u2014further franking debits may arise",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-70",
-                    "title": "Due date for payment of untainting tax",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-75",
-                    "title": "General interest charge for late payment of untainting tax",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-80",
-                    "title": "Notice of liability to pay untainting tax",
-                    "content": null,
-                    "tokens": null
-                  },
-                  {
-                    "number": "197-85",
-                    "title": "Evidentiary effect of notice of liability to pay untainting tax",
-                    "content": null,
-                    "tokens": null
-                  }
-                ]
+                "tokens": null
               }
             ]
           }
