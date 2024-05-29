@@ -5,7 +5,8 @@ TOC_HIERARCHY_SCHEMA_TEMPLATE = {
     "<Level 3 Section Type>": "###",
     "<Level 4 Section Type>": "####",
     "<Level 5 Section Type>": "#####",
-    "<Level 6 Section Type>": "######"
+    "<Level 6 Section Type>": "######",
+    # Add more levels as needed
 }
 TOC_HIERARCHY_USER_PROMPT = """You are tasked with creating a JSON dictionary that maps each unique hierarchical section type to the corresponding number of '#' characters used to denote its level in the Table of Contents (ToC). You will be given a Markdown string ToC and you must return a structured JSON object according to the following instructions:
 
@@ -30,8 +31,9 @@ TOC_HIERARCHY_USER_PROMPT = """You are tasked with creating a JSON dictionary th
 
 ## IMPORTANT:
 - There should be NO associated numbering in the section types - only the base type - unless specifically included in the section type.
-- If a section type is repeated, but in reference to different enumerations, include the base type only once (e.g., 'Guide to Division N' or 'Subdivision N' should be mapped to 'Guide to Subdivision' and 'Subdivision', respectively).
+- If a section type is repeated, but in reference to different enumerations, include the base type only once (e.g., 'Guide to Division N' or 'Application of Division N' should be mapped to 'Guide to Subdivision' and 'Application of Division', respectively).
 - Each item in the JSON object MUST be a unique section type from the ToC.
+- You MUST include all unique section types from the ToC, even if they are not repeated, WITHOUT any associated numbering.
 
 Please create a JSON dictionary that maps each unique hierarchical section type to the corresponding number of '#' characters from the following ToC Markdown string:
 
@@ -105,12 +107,14 @@ Here is an example of the JSON structure you need to follow:
 
 {TOC_SCHEMA}
 
+Please note, the above schema is just an example and may not contain all the section types you will encounter. Please ensure you include all section types present in the ToC, at the correct hierarchical level.
+
 ## IMPORTANT NOTES
 - The lowest level in the JSON hierarchy must ONLY contain the "number" and "title" keys. These levels have no "#" prefix in the ToC, and MUST be the direct children of a parent section.
 - Sections sharing the same number of "#" symbols must be placed at the same hierarchical level within the JSON object.
 - A section must NEVER contain an empty "children" list.
 - If a section lacks a numeric identifier, set the "number" value to an empty string ("").
-- If a section lacks a title, or the title is the same as the section, set the "title" value to an empty string ("").
+- If a section lacks a title, or the title is the same as the section, set the "title" value to an empty string ("") - do NOT use the page number (at the end of the line).
 - When a ToC line has no "#" prefix, and starts with a number, it is a child of the previous line that has a "#" prefix.
 - Exclude dots, page numbers, and any text not explicitly listed as a ToC item (page numbers are usually at the end of the line).
 

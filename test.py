@@ -86,13 +86,39 @@ def merge_children(existing_children: Optional[List[Union[TableOfContents, Table
 
 def generate_chunked_content(content_md_string: str, master_toc_file: str, adjusted_toc_hierarchy_schema: Dict[str, str] = None, toc_hierarchy_schema: Dict[str, str] = None) -> Dict[str, Dict[str, Any]]:
 
-    content_md_lines = content_md_string.split("\n")
-    content_md_section_lines = [(line, idx) for idx, line in enumerate(content_md_lines) if line.startswith('#')]
+    # content_md_lines = content_md_string.split("\n")
+    # content_md_section_lines = [(line, idx) for idx, line in enumerate(content_md_lines) if line.startswith('#')]
     # section_lines=""
     # for line, idx in content_md_section_lines:
     #     section_lines += f"{line} [{idx}]\n"
     # with open("zzz_section_lines.md", "w") as f:
     #     f.write(section_lines)
+    def parse_markdown_headings():
+        content_md_lines = content_md_string.split("\n")
+        content_md_section_lines = []
+        processed_lines = []
+        for i in range(len(content_md_lines)):
+            line = content_md_lines[i]
+            if line.startswith('#') and i not in processed_lines:
+                current_part = line.strip()
+                j = 1
+                while i + j < len(content_md_lines) and content_md_lines[i + j].startswith('#'):
+                    next_line = content_md_lines[i + j].strip().lstrip('#').strip()
+                    current_part += ' ' + next_line
+                    processed_lines.append(i + j)
+                    j += 1
+                content_md_section_lines.append((current_part, i))
+
+        section_lines = ""
+        for heading, idx in content_md_section_lines:
+            section_lines += f"{heading} [{idx}]\n"
+
+        with open("zzz_section_lines.md", "w") as f:
+            f.write(section_lines)
+        
+        return content_md_lines, content_md_section_lines
+    
+    content_md_lines, content_md_section_lines = parse_markdown_headings()
     
     with open(master_toc_file, "r") as f:
         master_toc = json.load(f)
@@ -100,37 +126,18 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
     md_levels = adjusted_toc_hierarchy_schema if adjusted_toc_hierarchy_schema else toc_hierarchy_schema
 
     def format_section_name(section: str, number: str, title: str) -> str:
-        if not section:
-            section_match = None
-        else:
-            section_match = process.extractOne(section, md_levels.keys(), score_cutoff=98)
-        if section_match:
-            matched_section = section_match[0]
-            md_level = md_levels[matched_section]
-        else:
-            max_level = max(md_levels.values(), key=len)
-            md_level = max_level + "#"
-        if section and number and title:
-            if section in title and number in title:
-                return f'{md_level} {title}'
-            elif section in title:
-                return f'{md_level} {title} {number}'
-            else:
-                return f'{md_level} {section} {number} {title}'
-        elif not number:
-            if section in title:
-                return f'{md_level} {title}'
-            else:
-                return f'{md_level} {section} {title}'
-        elif not section:
-            return f'{md_level} {number} {title}'
-        elif not title:
-            if number in section:
-                return f'{md_level} {section}'
-            else:
-                return f'{md_level} {section} {number}'
-        else:
-            return f'{md_level} {section}'
+        section_match = process.extractOne(section, md_levels.keys(), score_cutoff=98) if section else None
+        md_level = md_levels.get(section_match[0], max(md_levels.values(), key=len) + "#") if section_match else max(md_levels.values(), key=len) + "#"
+
+        formatted_parts = []
+        if section and not section in title:
+            formatted_parts.append(section)
+        if number and not number in title:
+            formatted_parts.append(number)
+        if title:
+            formatted_parts.append(title)
+
+        return f'{md_level} {" ".join(formatted_parts)}'
 
     def traverse_and_update_toc(master_toc: List[Dict[str, Any]]):
         levels_dict = {"contents": []}
@@ -176,11 +183,12 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
                     highest_score_matches = [match for match in matches if match[1] == highest_score]
                     matched_line = min(highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0]))[0]
                     line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == matched_line)
-                    if next_formatted_section_name == "#### Guide to Subdivision 122-5 What this Subdivision is about":
+                    print(f"Matched: {next_formatted_section_name} at {line_idx} with {matched_line}")
+                    if next_formatted_section_name == "##### 245-40 Forgivenesses to which operative rules do not apply":
                         print(f"Matched: {next_formatted_section_name} at {line_idx} with {matched_line}")
-                        #print(f'from: {matches}')
-                        for line, idx in remaining_content_md_section_lines:
-                            print(f"{idx}: {line}")
+                        print(f'from: {matches}')
+                        # for line, idx in remaining_content_md_section_lines:
+                        #     print(f"{idx}: {line}")
                 else:
                     print(remaining_content_md_section_lines)
                     raise ValueError(f"Could not match end: {next_formatted_section_name}")
@@ -272,74 +280,41 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
 
 async def main_run():
     toc_hierarchy_schema = {
-        "Application of this Subdivision": "#####",
-        "Applying net capital losses of earlier income years": "#####",
-        "Australian permanent establishments of foreign financial entities": "#####",
-        "Business continuity test": "#####",
-        "Change of incorporation without change of entity": "#####",
+        "Administering the imputation system": "####",
+        "Amount of the franking credit on a distribution": "#####",
+        "Anti-streaming rules": "####",
+        "Application of imputation rules to co-operative companies": "####",
+        "Arrangements treated as a sale and loan": "####",
+        "Assets put to tax preferred use": "####",
+        "Benchmark rule": "####",
+        "Capital protected borrowings": "####",
         "Chapter": "##",
-        "Common rules": "#####",
-        "Concessional tracing rules": "#####",
-        "Conditions for transfer": "#####",
-        "Consequence of transfer: franking debit arises": "#####",
-        "Consequence of transfer: tainting of share capital account": "#####",
-        "Corporate change in a company": "#####",
-        "Deducting bad debts": "#####",
-        "Deducting tax losses of earlier income years": "#####",
+        "Consequences of the debt/equity rules": "####",
+        "Cum dividend sales and securities lending arrangements": "####",
+        "Distribution statements": "#####",
         "Division": "####",
-        "Effect of agreement to transfer more than can be transferred": "#####",
-        "Effect of transferring a net capital loss": "#####",
-        "Effect of transferring a tax loss": "#####",
-        "Entitlement to and amount of loss carry back tax offset": "#####",
-        "General rules": "#####",
+        "Effect of receiving a franked distribution": "####",
+        "Exempting entities and former exempting entities": "####",
+        "Financial claims scheme for account-holders with insolvent ADIs": "####",
+        "Forgiveness of commercial debts": "####",
+        "Franking a distribution": "#####",
+        "Franking accounts, franking deficit tax liabilities and the related tax offset": "####",
         "Guide to Division": "#####",
+        "Guide to Part": "####",
         "Guide to Subdivision": "#####",
-        "Information relevant to Division 165": "#####",
-        "Information relevant to Division 175": "#####",
-        "Loss carry back choice": "#####",
-        "Object of this Subdivision": "#####",
-        "Old corporation wound up": "#####",
+        "Imputation for NZ resident companies and related companies": "####",
+        "Imputation for life insurance companies": "####",
+        "Leases of luxury cars": "####",
+        "Limited recourse debt": "####",
+        "Objects and application": "#####",
         "Operative provisions": "#####",
-        "Other rules relating to voting power and rights": "#####",
-        "Other special provisions": "#####",
         "Part": "###",
-        "Provisions applying to both transfers of tax losses and transfers of net capital losses within wholly-owned groups of companies": "#####",
-        "Reduction case": "#####",
-        "Reductions after alterations in ownership or control of loss company": "#####",
-        "Replacement case": "#####",
-        "Replacement-asset roll-over for a creation case": "#####",
-        "Replacement-asset roll-over if you dispose of a CGT asset": "#####",
-        "Replacement-asset roll-over if you dispose of all the assets of a business": "#####",
-        "Rights to dividends or capital distributions": "#####",
-        "Rules affecting the operation of the tests": "#####",
-        "Same-asset roll-over consequences for the company": "#####",
-        "Special consequences of some roll-overs": "#####",
-        "Special provisions relating to ownership by non-fixed trusts": "#####",
-        "Special rules for joint tenants": "#####",
-        "Stakes held directly and/or indirectly by widely held companies": "#####",
-        "Stakes of less than 10% in the tested company": "#####",
+        "Particular financial transactions": "####",
         "Subdivision": "#####",
-        "Tax benefits from unused bad debt deductions": "#####",
-        "Tax benefits from unused capital losses of the current year": "#####",
-        "Tax benefits from unused deductions": "#####",
-        "Tax benefits from unused net capital losses of earlier income years": "#####",
-        "Tax benefits from unused tax losses": "#####",
-        "Tests for finding out whether the company has maintained the same owners": "#####",
-        "The object of this Division": "#####",
-        "The ownership tests: substantial continuity of ownership": "#####",
-        "The primary and alternative tests": "#####",
-        "Transactions by a company that is a member of a linked group": "#####",
-        "Variation to CGT asset case": "#####",
-        "Voting power": "#####",
-        "What transfers into a company\u2019s share capital account does this Division apply to?": "#####",
-        "When identity of foreign stakeholders is not known": "#####",
-        "When is a roll-over available": "#####",
-        "When the rules in this Subdivision do not apply": "#####",
-        "Working out a PDF\u2019s loss carry back tax offset": "#####",
-        "Working out a PDF\u2019s net capital gain and net capital loss": "#####",
-        "Working out a PDF\u2019s taxable income and tax loss": "#####",
-        "Working out the net capital gain and the net capital loss for the income year of the change": "#####",
-        "Working out the taxable income and tax loss for the income year of the change": "#####"
+        "Taxation of financial arrangements": "####",
+        "Venture capital franking": "####",
+        "Which distributions can be franked?": "#####",
+        "Who can frank a distribution?": "#####"
     }
     top_level = min(toc_hierarchy_schema.values(), key=lambda x: x.count('#'))
     top_level_count = top_level.count('#')

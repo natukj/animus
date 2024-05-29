@@ -3,7 +3,7 @@ from pydantic import BaseModel, ValidationError
 from typing import Union, Any, Optional, Dict, Tuple, List, NewType
 import json
 import asyncio
-import re
+import base64
 from fastapi import UploadFile
 import fitz
 from collections import Counter, defaultdict
@@ -16,16 +16,11 @@ JSONstr = NewType('JSONstr', str)
 class TableOfContentsChild(BaseModel):
     number: str
     title: str
-    content: Optional[str] = None
-    tokens: Optional[int] = None
-
 
 class TableOfContents(BaseModel):
     section: Optional[str]
     number: str
     title: str
-    content: Optional[str] = None
-    tokens: Optional[int] = None
     children: Optional[List[Union[TableOfContents, TableOfContentsChild]]]
 
     def find_child(self, section: Optional[str], number: str) -> Optional[Union[TableOfContents, TableOfContentsChild]]:
@@ -88,6 +83,7 @@ def merge_children(existing_children: Optional[List[Union[TableOfContents, Table
 class PDFParser(BaseParser):
     """
     Parses a PDF that contains a Table of Contents (ToC) and extracts structured content to a dict.
+    Absolutely hinders on the ToC and Markdown formatting of the toc.
     """
     
     def __init__(self, rate_limit: int = 50):
@@ -110,94 +106,111 @@ class PDFParser(BaseParser):
             self.document = fitz.open(file)
         else:
             raise ValueError("file must be an instance of UploadFile or str.")
-        self.toc_md_string, self.content_md_string = self.generate_md_string()
+        self.toc_md_string, self.content_md_string = await self.generate_md_string()
         self.toc_hierarchy_schema = await self.generate_toc_hierarchy_schema()
         with open("zztoc_md_string.md", "w") as f:
             f.write(self.toc_md_string) 
         with open("zzcontent_md_string.md", "w") as f:
             f.write(self.content_md_string)
     
-    def find_first_toc_page_no(self) -> int:
+    async def find_toc_pages(self) -> List[int]:
         """
-        Find the first ToC page number in the document.
+        Find the ToC pages in the document.
         """
-        consecutive_toc_like_pages = 0
-        for page_number in range(self.document.page_count):
-            page = self.document[page_number]
-            blocks = page.get_text("dict", flags=fitz.TEXTFLAGS_TEXT)["blocks"]
-            if self.is_toc_like_page(blocks):
-                consecutive_toc_like_pages += 1
-                if consecutive_toc_like_pages >= 2:  # at least two consecutive TOC-like pages
-                    return page_number - 1
-            else:
-                consecutive_toc_like_pages = 0
-        print("Table of Contents not found.")
-        return 0
-
-    def is_toc_like_page(self, blocks: List[dict]) -> bool:
-        """
-        Determine if a page is ToC-like based on the text blocks.
-        """
-        toc_indicators = sum(1 for block in blocks for line in block['lines'] if self.is_toc_entry(line['spans']))
-        return toc_indicators >= len(blocks) / 2
-
-    def is_toc_entry(self, spans: List[dict]) -> bool:
-        """
-        Assess if the spans in a line are characteristic of ToC entries: small font, consistent, number-heavy.
-        """
-        text = " ".join(span['text'] for span in spans)
-        font_sizes = [span['size'] for span in spans]
-        return all(span['size'] < 12 for span in spans) and '...' not in text and any(char.isdigit() for char in text)
-
-    def find_last_toc_page_no(self, start_page: int) -> int:
-        """
-        Find the last ToC page number in the document, starting from a given page.
-        """
-        current_fonts = {}
-        previous_fonts = {}
-        toc_end_page = start_page
+        def encode_page_as_base64(page: fitz.Page):
+            pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+            return base64.b64encode(pix.tobytes()).decode('utf-8')
         
-        for page_number in range(start_page, self.document.page_count):
-            page = self.document[page_number]
-            blocks = page.get_text("dict", flags=fitz.TEXTFLAGS_TEXT)["blocks"]
-            current_fonts = {}
-
-            for block in blocks:
-                for line in block['lines']:
-                    for span in line['spans']:
-                        font_size = round(span['size'])
-                        if font_size not in current_fonts:
-                            current_fonts[font_size] = len(span['text'].strip())
-                        else:
-                            current_fonts[font_size] += len(span['text'].strip())
-
-            # compare font sizes distributions between current and previous page
-            if previous_fonts:
-                # check if there's a significant increase in larger fonts usage
-                larger_font_transition = self.check_larger_font_transition(previous_fonts, current_fonts)
-                if larger_font_transition:
-                    toc_end_page = page_number - 1
-                    break
+        async def verify_toc_page(page: fitz.Page):
+            while True:
+                messages=[
+                    {
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": "Is this page a Table of Contents? Respond with ONLY 'yes' or 'no'"},
+                        {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": f"data:image/jpeg;base64,{encode_page_as_base64(page)}",
+                        },
+                        },
+                    ],
+                    }
+                ]
+                response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o", response_format="text")
+                message_content = response.choices[0].message.content
+                utils.print_coloured(message_content, "cyan")
+                if message_content.lower() == "yes" or "yes" in message_content.lower():
+                    return True
+                elif message_content.lower() == "no" or "no" in message_content.lower():
+                    return False
+                
+        toc_pages = []
+        for i in range(self.document.page_count):
+            page = self.document[i]
+            page_rect = page.rect
+            right_rect = fitz.Rect(page_rect.width * 0.7, 0, page_rect.width, page_rect.height)
+            words = page.get_text("words", clip=right_rect)
+            words = [w for w in words if fitz.Rect(w[:4]) in right_rect]
+            page_num_count = sum(1 for w in words if w[4].isdigit())
+            percentage = page_num_count / len(words) if len(words) > 0 else 0
+            if percentage > 0.4:
+                toc_pages.append(i)
+        if not toc_pages:
+            raise ValueError("No Table of Contents found - can not proceed.")
+        utils.print_coloured(f"ToC candidates: {toc_pages}", "yellow")
+        # verify the first and last pages
+        start_index = 0
+        end_index = len(toc_pages) - 1
+        start_count, end_count = 0, 0
+        start_found, end_found = False, False
+        while start_index <= end_index:
+            if start_found and end_found:
+                break
+            tasks = []
+            if not start_found:
+                tasks.append(self.rate_limited_process(verify_toc_page, self.document[toc_pages[start_index] - start_count]))
+            if not end_found:
+                tasks.append(self.rate_limited_process(verify_toc_page, self.document[toc_pages[end_index] + end_count]))
             
-            previous_fonts = current_fonts.copy()
+            results = await asyncio.gather(*tasks)
+            if not start_found:
+                start_result = results[0]
+                if start_result:
+                    prev_page_result = await self.rate_limited_process(verify_toc_page, self.document[toc_pages[start_index] - start_count - 1])
+                    if prev_page_result:
+                        start_count += 1
+                        continue
+                    else:
+                        start_found = True
+                else:
+                    start_index += 1
 
-        return toc_end_page + 1
-
-    def check_larger_font_transition(self, previous_fonts: Dict[int, int], current_fonts: Dict[int, int]) -> bool:
-        """
-        Check if there is a significant transition to larger fonts, indicating the end of the TOC.
-        """
-        prev_max_font = max(previous_fonts, key=previous_fonts.get, default=0)
-        current_max_font = max(current_fonts, key=current_fonts.get, default=0)
-        return current_max_font > prev_max_font and current_fonts.get(current_max_font, 0) > previous_fonts.get(current_max_font, 0)
+            if not end_found:
+                end_result = results[-1]
+                if end_result:
+                    next_page_result = await self.rate_limited_process(verify_toc_page, self.document[toc_pages[end_index] + end_count + 1])
+                    if next_page_result:
+                        end_count += 1
+                        continue
+                    else:
+                        end_found = True
+                else:
+                    end_index -= 1
+                
+                if start_index > end_index:
+                    return []
+            
+        verified_toc_pages = list(range(toc_pages[start_index] - start_count, toc_pages[end_index] + end_count))
+        utils.print_coloured(f"Verified ToC pages: {verified_toc_pages}", "green")
+        return verified_toc_pages
     
-    def generate_md_string(self) -> Tuple[str, str]:
+    async def generate_md_string(self) -> Tuple[str, str]:
         """
         Generate Markdown strings for toc and content.
         """
-        first_toc_page = self.find_first_toc_page_no()
-        last_toc_page = self.find_last_toc_page_no(first_toc_page)
-        toc_pages = list(range(first_toc_page, last_toc_page))
+        toc_pages = await self.find_toc_pages()
+        last_toc_page = toc_pages[-1] + 1
         content_pages = list(range(last_toc_page, self.document.page_count))
         toc_md_string = self.to_markdown(self.document, toc_pages)
         content_md_string = self.to_markdown(self.document, content_pages)
@@ -236,10 +249,16 @@ class PDFParser(BaseParser):
             'Subdivision': '####'
         }
         """
-        async def process_function():
-            toc_md_lines = self.toc_md_string.split("\n")
-            toc_md_section_lines = [line for line in toc_md_lines if line.startswith('#')]
-            toc_md_section_joined_lines = '\n'.join(toc_md_section_lines)
+        async def split_lines(lines: List[str], num_parts: int):
+            length = len(lines)
+            part_size = length // num_parts
+            parts = []
+            for i in range(num_parts):
+                start = i * part_size
+                end = (i + 1) * part_size if i < num_parts - 1 else length
+                parts.append(lines[start:end])
+            return parts
+        async def process_function(toc_md_section_joined_lines):
             messages = [
                 {"role": "system", "content": prompts.TOC_HIERARCHY_SYS_PROMPT},
                 {"role": "user", "content": prompts.TOC_HIERARCHY_USER_PROMPT.format(TOC_HIERARCHY_SCHEMA_TEMPLATE=prompts.TOC_HIERARCHY_SCHEMA_TEMPLATE, toc_md_string=toc_md_section_joined_lines)}
@@ -264,19 +283,23 @@ class PDFParser(BaseParser):
                     print("Error decoding JSON for ToC Hierarchy Schema")
                     raise
 
-        # usually gets it right but ~1/5 times it doesn't
-        schemas = await asyncio.gather(*[self.rate_limited_process(process_function) for _ in range(5)])
-        schema_counter = Counter(tuple(sorted(schema.items())) for schema in schemas)
-        most_common_schema = dict(schema_counter.most_common(1)[0][0])
-        utils.print_coloured(f"{json.dumps(most_common_schema, indent=4)}", "green")
-        # if schema_counter.most_common(1)[0][1] > 1:
-        #     most_common_schema = dict(schema_counter.most_common(1)[0][0])
-        #     print(f"Most Common Schema: {json.dumps(most_common_schema, indent=4)}")
-        # else:
-        #     longest_schema = max(schemas, key=len)
-        #     most_common_schema = longest_schema
-        #     print(f"Longest Schema: {json.dumps(most_common_schema, indent=4)}")
-        return most_common_schema
+        toc_md_lines = self.toc_md_string.split("\n")
+        toc_md_section_lines = [line for line in toc_md_lines if line.startswith('#')]
+        toc_md_sections = ['\n'.join(section) for section in await split_lines(toc_md_section_lines, 5)]
+
+        schemas = await asyncio.gather(*[self.rate_limited_process(process_function, section) for section in toc_md_sections])
+        
+        # Combine unique values from all schemas
+        combined_schema = {}
+        for schema in schemas:
+            for key, value in schema.items():
+                if key not in combined_schema:
+                    combined_schema[key] = value
+
+        utils.print_coloured(f"{json.dumps(combined_schema, indent=4)}", "green")
+
+        return combined_schema
+
     
     async def filter_schema(self, toc_hierarchy_schema: Dict[str, str], content: str, num_sections: int = 5) -> Dict[str, str]:
         """
@@ -532,6 +555,7 @@ class PDFParser(BaseParser):
                 try:
                     message_content = response.choices[0].message.content
                     toc_schema = json.loads(message_content)
+                    ## TODO: check if the schema is valid i.e no empty children and if the hierarchy is correct
                     utils.print_coloured(f"{level_title_str} / {sublevel_title_str} / {subsublevel_title_str}", "green")
                     return (level_title, sublevel_title, subsublevel_title, toc_schema)
                 except json.JSONDecodeError:
@@ -650,7 +674,7 @@ class PDFParser(BaseParser):
                                 section=subsublevel_section,
                                 number=subsublevel_number,
                                 title=subsublevel_title,
-                                children=content.toc[0].children
+                                children=content.toc
                             )
                         ]
                     )
@@ -690,8 +714,26 @@ class PDFParser(BaseParser):
         """
         Add the document content to the master ToC.
         """
-        content_md_lines = self.content_md_string.split("\n")
-        content_md_section_lines = [(line, idx) for idx, line in enumerate(content_md_lines) if line.startswith('#')]
+        # content_md_lines = self.content_md_string.split("\n")
+        # content_md_section_lines = [(line, idx) for idx, line in enumerate(content_md_lines) if line.startswith('#')]
+        def format_md_lines():
+            content_md_lines = self.content_md_string.split("\n")
+            content_md_section_lines = []
+            processed_lines = []
+            for i in range(len(content_md_lines)):
+                line = content_md_lines[i]
+                if line.startswith('#') and i not in processed_lines:
+                    current_part = line.strip()
+                    j = 1
+                    while i + j < len(content_md_lines) and content_md_lines[i + j].startswith('#'):
+                        next_line = content_md_lines[i + j].strip().lstrip('#').strip()
+                        current_part += ' ' + next_line
+                        processed_lines.append(i + j)
+                        j += 1
+                    content_md_section_lines.append((current_part, i))
+            return content_md_lines, content_md_section_lines
+        
+        content_md_lines, content_md_section_lines = format_md_lines()
 
         md_levels = self.adjusted_toc_hierarchy_schema if self.adjusted_toc_hierarchy_schema else self.toc_hierarchy_schema
 
@@ -753,6 +795,7 @@ class PDFParser(BaseParser):
                         highest_score_matches = [match for match in matches if match[1] == highest_score]
                         matched_line = min(highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0]))[0]
                         line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == matched_line)
+                        print(f"Match: {next_formatted_section_name}: {matched_line} [{line_idx}]")
                     else:
                         print(remaining_content_md_section_lines)
                         raise ValueError(f"Could not match end: {next_formatted_section_name}")

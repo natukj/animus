@@ -5,6 +5,7 @@ import ssl
 import openai
 from openai import AsyncOpenAI
 client = AsyncOpenAI()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 @retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3),
     retry=retry_if_exception_type(ssl.SSLError))
@@ -22,8 +23,10 @@ async def openai_client_chat_completion_request(messages, model="gpt-4o", temper
         print(f"OpenAI API returned an API Error: {e}")
         pass
 
+# @retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3),
+#     retry=retry_if_exception_type(ssl.SSLError))
+# async def 
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 @retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3),
     retry=retry_if_exception_type(ssl.SSLError))
