@@ -7,7 +7,7 @@ from thefuzz import process
 from collections import Counter, defaultdict, OrderedDict
 from pydantic import BaseModel, ValidationError
 from typing import Union, Any, Optional, Dict, Tuple, List, NewType
-import time
+import re
 
 JSONstr = NewType('JSONstr', str)
 
@@ -118,7 +118,8 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
         
         return content_md_lines, content_md_section_lines
     
-    content_md_lines, content_md_section_lines = parse_markdown_headings()
+    content_md_lines, _ = parse_markdown_headings()
+    content_md_section_lines = [(line, idx) for idx, line in enumerate(content_md_lines)]
     
     with open(master_toc_file, "r") as f:
         master_toc = json.load(f)
@@ -128,6 +129,8 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
     def format_section_name(section: str, number: str, title: str) -> str:
         section_match = process.extractOne(section, md_levels.keys(), score_cutoff=98) if section else None
         md_level = md_levels.get(section_match[0], max(md_levels.values(), key=len) + "#") if section_match else max(md_levels.values(), key=len) + "#"
+        # if md_level.count('#') > 1:
+        #     md_level = '*' * md_level.count('#')
 
         formatted_parts = []
         if section and not section in title:
@@ -177,18 +180,26 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
                 start_line_idx = remaining_content_md_section_lines[0][1]
 
             if next_formatted_section_name:
-                matches = process.extractBests(next_formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
+                number_match = re.findall(r'\d+\.?\d*', next_formatted_section_name)
+                if number_match:
+                    if number_match[0] == "4.5":
+                        number_match = ["**4.5** **** **** **ROSTERS**"]
+                    filtered_remaining_content_md_section_lines = [(line, idx) for line, idx in remaining_content_md_section_lines if number_match[0] in line]
+                    matches = process.extractBests(next_formatted_section_name, [line for line, _ in filtered_remaining_content_md_section_lines], score_cutoff=80, limit=10)
+                else:
+                    matches = process.extractBests(next_formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
                 if matches:
                     highest_score = max(matches, key=lambda x: x[1])[1]
                     highest_score_matches = [match for match in matches if match[1] == highest_score]
                     matched_line = min(highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0]))[0]
                     line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == matched_line)
                     print(f"Matched: {next_formatted_section_name} at {line_idx} with {matched_line}")
-                    if next_formatted_section_name == "##### 245-40 Forgivenesses to which operative rules do not apply":
+                    if "Rosters 4.5" in next_formatted_section_name:
                         print(f"Matched: {next_formatted_section_name} at {line_idx} with {matched_line}")
                         print(f'from: {matches}')
                         # for line, idx in remaining_content_md_section_lines:
                         #     print(f"{idx}: {line}")
+                        exit()
                 else:
                     print(remaining_content_md_section_lines)
                     raise ValueError(f"Could not match end: {next_formatted_section_name}")
@@ -280,41 +291,88 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
 
 async def main_run():
     toc_hierarchy_schema = {
-        "Administering the imputation system": "####",
-        "Amount of the franking credit on a distribution": "#####",
-        "Anti-streaming rules": "####",
-        "Application of imputation rules to co-operative companies": "####",
-        "Arrangements treated as a sale and loan": "####",
-        "Assets put to tax preferred use": "####",
-        "Benchmark rule": "####",
-        "Capital protected borrowings": "####",
-        "Chapter": "##",
-        "Consequences of the debt/equity rules": "####",
-        "Cum dividend sales and securities lending arrangements": "####",
-        "Distribution statements": "#####",
-        "Division": "####",
-        "Effect of receiving a franked distribution": "####",
-        "Exempting entities and former exempting entities": "####",
-        "Financial claims scheme for account-holders with insolvent ADIs": "####",
-        "Forgiveness of commercial debts": "####",
-        "Franking a distribution": "#####",
-        "Franking accounts, franking deficit tax liabilities and the related tax offset": "####",
-        "Guide to Division": "#####",
-        "Guide to Part": "####",
-        "Guide to Subdivision": "#####",
-        "Imputation for NZ resident companies and related companies": "####",
-        "Imputation for life insurance companies": "####",
-        "Leases of luxury cars": "####",
-        "Limited recourse debt": "####",
-        "Objects and application": "#####",
-        "Operative provisions": "#####",
-        "Part": "###",
-        "Particular financial transactions": "####",
-        "Subdivision": "#####",
-        "Taxation of financial arrangements": "####",
-        "Venture capital franking": "####",
-        "Which distributions can be franked?": "#####",
-        "Who can frank a distribution?": "#####"
+        "PART": "#",
+        "Title": "##",
+        "Date of Operation": "##",
+        "Scope of Agreement": "##",
+        "Relationship to Other Industrial Instruments": "##",
+        "Posting of the Agreement": "##",
+        "Variation of Agreement": "##",
+        "Negotiation of Further Agreements": "##",
+        "Definitions": "##",
+        "Consultation and Cooperation": "##",
+        "Confidentiality": "##",
+        "Consultation regarding Change": "##",
+        "Grievance and Dispute Resolution": "##",
+        "Managing Performance and Conduct": "##",
+        "Flexibility Arrangements": "##",
+        "Anti-Discrimination, Bullying and Harassment": "##",
+        "Diversity": "##",
+        "Employment Categories and Contract of Employment": "##",
+        "Full Time Employees": "##",
+        "Part Time Employees": "##",
+        "Casual Employees": "##",
+        "Probationary Period": "##",
+        "Duties": "##",
+        "Location of Hospital": "##",
+        "Request for Transfer": "##",
+        "Termination of Employment": "##",
+        "Redundancy and Redeployment": "##",
+        "Transmission of Business": "##",
+        "Portability of Entitlements": "##",
+        "Professional Development, Training and Careers": "##",
+        "Uniforms": "##",
+        "Amenities": "##",
+        "Ordinary Hours": "##",
+        "Working a 38 hour week / Accruing Days Off": "##",
+        "Overtime (Authorised)": "##",
+        "On-call and Recall": "##",
+        "Rosters": "##",
+        "Meal Hours and Rest Breaks": "##",
+        "Banking of Ordinary Hours": "##",
+        "Payment of Wages": "##",
+        "Payment on Termination": "##",
+        "Overpayment of Salaries": "##",
+        "Underpayment of Salaries": "##",
+        "Classifications and Progression Through Pay Points": "##",
+        "Recognition of Previous Service and Experience": "##",
+        "Time Not Worked": "##",
+        "Higher Duties": "##",
+        "Penalty Rates": "##",
+        "Allowances": "##",
+        "Superannuation": "##",
+        "Salary Packaging": "##",
+        "Annual Leave": "##",
+        "Personal/Carer\u2019s Leave": "##",
+        "Public Holidays": "##",
+        "Parental Leave": "##",
+        "Compassionate Leave": "##",
+        "Community Service Leave": "##",
+        "Long Service Leave": "##",
+        "Study Leave": "##",
+        "Professional Development Leave": "##",
+        "Representative Leave / Trade Union Training Leave": "##",
+        "Family Violence Leave": "##",
+        "Leave Without Pay": "##",
+        "Pandemic Leave": "##",
+        "Schedules": "#",
+        "Appendices": "#",
+        "Time and Wages Record": "##",
+        "Daylight Savings": "##",
+        "Staffing, Workload Management and Demand Escalation": "##",
+        "Employer Direction to Take Annual Leave \u2013 Close Down": "##",
+        "Paid or Unpaid Leave Due to Low Occupancy or Cancellations": "##",
+        "Occupational Health and Safety": "##",
+        "Union involvement": "##",
+        "Agreement Implementation Committee": "##",
+        "Union Delegates": "##",
+        "Hospitals to be covered by Agreement": "##",
+        "Classification Definitions and Grades": "##",
+        "Advanced Enrolled Nurse Criteria": "##",
+        "Clinical Nurse Specialist Criteria": "##",
+        "Wage Rates and Timetables for Increases": "##",
+        "Allowances and Timetables for Increases": "##",
+        "Declared Full Time Shifts Lengths": "##"
     }
     top_level = min(toc_hierarchy_schema.values(), key=lambda x: x.count('#'))
     top_level_count = top_level.count('#')

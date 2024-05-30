@@ -5,8 +5,9 @@ import llm, prompts
 
 
 async def main_run():
-    vol_num = 6
-    pdf_path = f"/Users/jamesqxd/Documents/norgai-docs/TAX/C2024C00046VOL0{vol_num}.pdf"
+    vol_num = "RH_VIC_NURSES2025"
+    #pdf_path = f"/Users/jamesqxd/Documents/norgai-docs/TAX/C2024C00046VOL0{vol_num}.pdf"
+    pdf_path = "/Users/jamesqxd/Documents/norgai-docs/EBA/RamsayHealth/RH_VIC_NURSES2025.pdf"
     
     parser = PDFParser()
     content_dict = await parser.parse(pdf_path)

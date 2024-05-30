@@ -195,6 +195,7 @@ def to_markdown(doc: fitz.Document, pages: list = None) -> str:
         return out_string.replace(" \n", "\n")
 
     hdr_prefix = IdentifyHeaders(doc, pages=pages)
+    #hdr_prefix = IdentifyHeaders(doc, pages=pages, body_limit=9) # change threshold for header detection
     md_string = ""
 
     for pno in pages:

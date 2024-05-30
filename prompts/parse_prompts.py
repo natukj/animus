@@ -39,6 +39,34 @@ Please create a JSON dictionary that maps each unique hierarchical section type 
 
 {toc_md_string}
 """
+TOC_HIERARCHY_USER_PROMPT_NOMD = """Please create a structured JSON object from the Table of Contents (ToC) I will provide, in Markdown format. Each line in the ToC will be seperated by a '\\n' character. You must return each section and item from the ToC and map it to it's appropriate level of hierarchy. It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes.
+
+## INSTRUCTIONS
+   - The JSON object must map each unique hierarchical section or item to a corresponding number of '#' characters used to denote its level in the ToC. The sections and items must be verbatim from the ToC markdown text. 
+   - The Markdown text may not have the '#' characters, so you must infer the hierarchy based on the formatting and enumerations, markdown formatting, and pattern of the section types. For example, the top level section level might be indicated by '**' or capitalization. Sections with the same formatting are at the same level. Items in the ToC should be mapped to highest level of hierarchy.
+   - You must include ALL unique sections and items from the ToC, even if they are not repeated or don't have any formatting, WITHOUT any associated numbering.
+   - For repeated section types, include the base type only once (e.g., 'Part N <title>', 'Schedule N <title>' or 'Appendix N <title>' should be mapped to 'Part', 'Schedule' and 'Appendix', respectively). Do NOT include the section titles.
+   - Exclude 'Contents' or 'Table of Contents', 'Arrangment of Agreement', 'Clause No.', 'Page No.' or any ToC heading as they are not part of the hierarchy.
+   - Assume that the beginning of the ToC will be an item enumerated with '1' or 'I', e.g. 'Part 1' or 'Chapter 1', and this is the top level of the hierarchy (nothing before this is part of the ToC).
+
+
+Here is an example of the JSON structure you need to follow:
+
+{TOC_HIERARCHY_SCHEMA_TEMPLATE}
+
+## IMPORTANT NOTES
+   - There should be NO associated numbering in the section types - only the base type - unless specifically included in the section type.
+   - Each entry in the JSON object MUST be a unique section from the ToC.
+   - Each entry in the JSON object MUST be verbatim from the ToC markdown text (including capitalization).
+   - You MUST include all unique sections from the ToC, even if they are not repeated, WITHOUT any associated numbering.
+   - The levels of hierarchy represented by varying numbers of '#' characters must be in incriements of 1 (e.g., '#', '##', '###', etc.), however, there can be multiple section types at the same level.
+
+EVERY SINGLE unique section base types and items in the ToC MUST be included VERBATIM from the text (including capitalization) in the JSON object. Do NOT include section titles, only the base types. Do NOT include anything that is not part of the ToC - all ToC sections and items are most likely associated with a number or enumeration and must be the only entries in the JSON object.
+
+Please create a JSON dictionary that maps each unique hierarchical section and item to a corresponding number of '#' characters, based on its hierarchy, from the following ToC Markdown string:
+
+{toc_md_string}
+"""
 TOC_HIERARCHY_USER_PROMPT_OG = """You are tasked with creating a JSON dictionary that maps each major unique hierarchical section type to the corresponding number of '#' characters used to denote its level in the Table of Contents (ToC). You will be given a Markdown string ToC and you must return a structured JSON object according to the following instructions:
 
 **Instructions:**
@@ -69,25 +97,29 @@ TOC_HIERARCHY_USER_PROMPT_OG = """You are tasked with creating a JSON dictionary
 
 {toc_md_string}
 """
-TOC_SCHEMA_SYS_PROMPT = """You are working for the Australian Tax Office (ATO), the Australian Government's principal revenue collection agency. Your task is to transform the Table of Contents (ToC) from the Income Tax Assessment Act, provided in Markdown format, into a structured JSON object according to the following guidelines:
+TOC_SCHEMA_USER_PROMPT = """I need you to please transform the Table of Contents (ToC) I will provide, in Markdown format, into a structured JSON object. Each line in the ToC will be seperated by a '\\n' character. It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes.
 
-**Instructions:**
-1. **Section Hierarchy:** You must identify the hierarchical level of each section. Each "section" key in the ToC text is prefixed by a series of "#" symbols that correspond to their hierarchical level.
-2. **Section Types:** The ToC contains sections of various types, such as: {section_types}. These must be standalone sections in the JSON object.
-2. **Multiple Sections at the Same Level:** Sections sharing the same number of "#" symbols must be placed at the same hierarchical level within the JSON object.
-3. **Missing Section Numbers:** If a section lacks a numeric identifier, set the "number" value to an empty string ("").
-4. **No Empty Sections:** The "section" key must never be an empty string.
-5. **Lowest Level Formatting:** The lowest level in the JSON hierarchy must only contain the "number" and "title" keys. These levels have no "#" prefix in the ToC.
+## INSTRUCTIONS
+I have split the ToC into multiple parts, and you will be working on {level_title}. Please do not include this level in the JSON object.
 
-**Exclusions:**
-- Exclude dots, page numbers, and any text not explicitly listed as a ToC item.
-- If there is no number associated with a section, leave the "number" field empty ("").
-- If there is no title associated with a section, or the title is the same as the section, leave the "title" field empty ("").
+This part has sections that could include: {section_types}. You need to independently verify this and any other sections that may be present. All section types with the same enumeration must be placed at the same hierarchical level within the JSON object.
 
-**JSON Format:**
-An example of the JSON structure is provided below:
+Here is an example of the JSON structure you need to follow:
 
 {TOC_SCHEMA}
+
+Please note, the above schema is just an example and may not contain all the section types you will encounter. Please ensure you include all section types present in the ToC, at the correct hierarchical level.
+
+## IMPORTANT NOTES
+- If a section lacks a numeric identifier, set the "number" value to an empty string ("").
+- If a section lacks a title, or the title is the same as the section, set the "title" value to an empty string ("") - do NOT use the page number (at the end of the line).
+- Exclude dots, page numbers, and any text not explicitly listed as a ToC item (page numbers are usually at the end of the line).
+
+It is of the upmost importance that the structure is correct and accurate. Failure to do so will result in a loss of trust and confidence in our services. Please do not let this happen.
+
+Please create a JSON object from the following ToC Markdown lines:
+
+{content}
 """
 TOC_SCHEMA_SYS_PROMPT_PLUS = """You are an expert in data processing, parsing and structuring Markdown text into JSON format. Pay extremely close attention to the instructions and guidelines provided to ensure the output is accurate and well-structured.
 """

@@ -6,7 +6,6 @@ import asyncio
 import base64
 from fastapi import UploadFile
 import fitz
-import re
 from collections import Counter, defaultdict
 from thefuzz import process  
 import llm, prompts, utils
@@ -95,8 +94,6 @@ class PDFParser(BaseParser):
         self.toc_hierarchy_schema = None
         self.adjusted_toc_hierarchy_schema = None
         self.master_toc = None
-        self.no_md_flag = False
-        self.simple_toc_flag = False
 
     async def load_document(self, file: Union[UploadFile, str]) -> None:
         """
@@ -120,7 +117,6 @@ class PDFParser(BaseParser):
         """
         Find the ToC pages in the document.
         """
-        return [4, 5]
         def encode_page_as_base64(page: fitz.Page):
             pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
             return base64.b64encode(pix.tobytes()).decode('utf-8')
@@ -205,7 +201,7 @@ class PDFParser(BaseParser):
                 if start_index > end_index:
                     return []
             
-        verified_toc_pages = list(range(toc_pages[start_index] - start_count, toc_pages[end_index] + end_count + 1))
+        verified_toc_pages = list(range(toc_pages[start_index] - start_count, toc_pages[end_index] + end_count))
         utils.print_coloured(f"Verified ToC pages: {verified_toc_pages}", "green")
         return verified_toc_pages
     
@@ -253,7 +249,7 @@ class PDFParser(BaseParser):
             'Subdivision': '####'
         }
         """
-        async def split_lines(lines: List[str], num_parts: int) -> List[List[str]]:
+        async def split_lines(lines: List[str], num_parts: int):
             length = len(lines)
             part_size = length // num_parts
             parts = []
@@ -262,18 +258,13 @@ class PDFParser(BaseParser):
                 end = (i + 1) * part_size if i < num_parts - 1 else length
                 parts.append(lines[start:end])
             return parts
-        
-        async def process_function(toc_md_section_joined_lines: str):
-            if self.no_md_flag:
-                USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_NOMD.format(TOC_HIERARCHY_SCHEMA_TEMPLATE=prompts.TOC_HIERARCHY_SCHEMA_TEMPLATE, toc_md_string=toc_md_section_joined_lines)
-            else:
-                USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT.format(TOC_HIERARCHY_SCHEMA_TEMPLATE=prompts.TOC_HIERARCHY_SCHEMA_TEMPLATE, toc_md_string=toc_md_section_joined_lines)
+        async def process_function(toc_md_section_joined_lines):
             messages = [
                 {"role": "system", "content": prompts.TOC_HIERARCHY_SYS_PROMPT},
-                {"role": "user", "content": USER_PROMPT}
+                {"role": "user", "content": prompts.TOC_HIERARCHY_USER_PROMPT.format(TOC_HIERARCHY_SCHEMA_TEMPLATE=prompts.TOC_HIERARCHY_SCHEMA_TEMPLATE, toc_md_string=toc_md_section_joined_lines)}
             ]
             while True:
-                response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o")
+                response = await llm.openai_client_chat_completion_request(messages, model="gpt-4-turbo")
                 try:
                     if not response.choices or not response.choices[0].message:
                         print("Unexpected response structure:", response)
@@ -282,42 +273,30 @@ class PDFParser(BaseParser):
                     message_content = response.choices[0].message.content
                     toc_hierarchy_schema = json.loads(message_content)
                     print(f"Schema: {json.dumps(toc_hierarchy_schema, indent=4)}")
-                    if not self.no_md_flag:
-                        updated_toc_hierarchy_schema = await self.map_toc_to_hierarchy(toc_md_section_lines, toc_hierarchy_schema)
-                        if updated_toc_hierarchy_schema == toc_hierarchy_schema:
-                            print("No changes to ToC Hierarchy Schema")
-                        else:
-                            print(updated_toc_hierarchy_schema)
-                        return updated_toc_hierarchy_schema
+                    updated_toc_hierarchy_schema = await self.map_toc_to_hierarchy(toc_md_section_lines, toc_hierarchy_schema)
+                    if updated_toc_hierarchy_schema == toc_hierarchy_schema:
+                        print("No changes to ToC Hierarchy Schema")
                     else:
-                        return toc_hierarchy_schema
+                        print(updated_toc_hierarchy_schema)
+                    return updated_toc_hierarchy_schema
                 except json.JSONDecodeError:
                     print("Error decoding JSON for ToC Hierarchy Schema")
                     raise
 
         toc_md_lines = self.toc_md_string.split("\n")
         toc_md_section_lines = [line for line in toc_md_lines if line.startswith('#')]
-        print(f"Number of ToC lines: {len(toc_md_section_lines)}")
-        if len(toc_md_section_lines) > 100:
-            toc_md_sections = ['\n'.join(section) for section in await split_lines(toc_md_section_lines, 5)]
-        else:
-            self.no_md_flag = True
-            toc_md_sections = ['\n'.join(section) for section in await split_lines(toc_md_lines, 4)]
+        toc_md_sections = ['\n'.join(section) for section in await split_lines(toc_md_section_lines, 5)]
 
         schemas = await asyncio.gather(*[self.rate_limited_process(process_function, section) for section in toc_md_sections])
         
-        # combine unique values from all schemas
-        # split this up as llm was missing some values in long tocs
+        # Combine unique values from all schemas
         combined_schema = {}
         for schema in schemas:
             for key, value in schema.items():
-                if key not in combined_schema and key != "Part":
+                if key not in combined_schema:
                     combined_schema[key] = value
 
         utils.print_coloured(f"{json.dumps(combined_schema, indent=4)}", "green")
-
-        # TODO: FIX this is so fucking annoying and bad
-        # post-process to keep only the capitalised keys when duplicates with different capitalisations exist
 
         return combined_schema
 
@@ -352,7 +331,7 @@ class PDFParser(BaseParser):
         result = {heading: level for level, heading in sorted_headings[:num_sections]}
         # dynamically adjust the schema based on whats present in the content
         for heading, level in toc_hierarchy_schema.items():
-            formatted_heading = f"{level} {heading}" if not self.no_md_flag else heading
+            formatted_heading = f"{level} {heading}"
             if formatted_heading in content and heading not in result:
                 result[heading] = level
         return result
@@ -370,6 +349,7 @@ class PDFParser(BaseParser):
                 self.adjusted_toc_hierarchy_schema = levels_unfiltered
                 levels = await self.filter_schema(levels_unfiltered, content)
                 print(f"Adjusted ToC Hierarchy Schema: {json.dumps(levels, indent=4)}")
+                #print(f"Adjusted ToC Hierarchy Schema")
             else:    
                 levels = await self.filter_schema(self.toc_hierarchy_schema, content)
                 print(f"UNadjusted ToC Hierarchy Schema: {json.dumps(levels, indent=4)}")
@@ -436,7 +416,6 @@ class PDFParser(BaseParser):
             line = lines[i]
             level = None
             for j, level_type in enumerate(level_types):
-                # should probably pass the '#'s in the level_types to define the level
                 if line.startswith(level_type):
                     level = j
                     break
@@ -473,46 +452,6 @@ class PDFParser(BaseParser):
 
         return parts
     
-    async def split_no_md_toc_parts_into_parts(self, lines: List[str], level_types: List[str]) -> Dict[str, Union[str, Dict]]:
-        parts = {}
-        stack = []
-        i = 0
-        while i < len(lines):
-            line = lines[i].strip()
-            level = None
-            # for j, level_type in enumerate(level_types):
-            #     if level_type in line:
-            #         level = j
-            #         break
-            for level_type, level_num in level_types:
-                if level_type in line:
-                    level = level_num
-                    break
-            if level is not None:
-                heading = line.strip()
-                heading = await self.rate_limited_process(self.process_heading, heading)
-                while stack and stack[-1][0] >= level:
-                    stack.pop()
-                if stack:
-                    parent = stack[-1][1]
-                    if "children" not in parent:
-                        parent["children"] = {}
-                    parent["children"][json.dumps(heading)] = {}
-                    stack.append((level, parent["children"][json.dumps(heading)]))
-                else:
-                    parts[json.dumps(heading)] = {}
-                    stack.append((level, parts[json.dumps(heading)]))
-                i += 1
-            else:
-                if stack:
-                    if line.strip():
-                        if "content" not in stack[-1][1]:
-                            stack[-1][1]["content"] = ""
-                        stack[-1][1]["content"] += line.strip() + '\n'
-                i += 1
-
-        return parts
-    
     async def split_toc_into_parts(self) -> Dict[str, Union[str, Dict[str, str]]]:
         """
         Split the ToC into parts based on the hierarchy schema and token count
@@ -539,24 +478,10 @@ class PDFParser(BaseParser):
             else:
                 most_common_headings[level] = headings[0]
 
-        def sort_key(item: Tuple[str, str]):
-            level, heading = item
-            commonality = sum(1 for line in lines if heading in line)
-            num_hashes = level.count('#')
-            return (-commonality, num_hashes)
-        #sorted_headings = sorted(most_common_headings.items(), key=sort_key)
-        #sorted_headings = sorted(most_common_headings.items(), key=lambda x: len(x[0]))
-        
-        if self.no_md_flag:
-            sorted_headings = sorted(self.toc_hierarchy_schema.items(), key=lambda x: x[1].count('#'))
-            level_types = [(heading, level.count('#')) for heading, level in sorted_headings[:3]]
-            print(level_types)
-            level_types = [('SCHEDULES', 1), ('APPENDICES', 1), ('PART', 1)]
-            return await self.split_no_md_toc_parts_into_parts(lines, level_types)
-        else:
-            sorted_headings = sorted(most_common_headings.items(), key=lambda x: len(x[0]))
-            level_types = [f"{level[0]} {level[1]}" for level in sorted_headings][:3] # only take the top 3 levels
-            return await self.split_toc_parts_into_parts(lines, level_types)
+        sorted_headings = sorted(most_common_headings.items(), key=lambda x: len(x[0]))
+        level_types = [f"{level[0]} {level[1]}" for level in sorted_headings][:3] # only take the first 3 levels
+
+        return await self.split_toc_parts_into_parts(lines, level_types)
     
     async def generate_formatted_toc(self, level_title: JSONstr, sublevel_title: Union[JSONstr, None], subsublevel_title: Union[JSONstr, None], content: str) -> Tuple[JSONstr, JSONstr, JSONstr, Dict[str, Any]]:
 
@@ -565,17 +490,13 @@ class PDFParser(BaseParser):
             nonlocal subsublevel_title
             custom_schema, custom_levels = await self.generate_toc_schema(content=content)
             TOC_SCHEMA = {"contents": [json.dumps(custom_schema, indent=4)]}
+            #print(f"Custom Schema: {json.dumps(custom_schema, indent=4)}")
             
             if not sublevel_title:
-                section_types = ", ".join(custom_levels.keys())
-                level_title_dict = json.loads(level_title)
-                level_title_str = f"{level_title_dict['section']} {level_title_dict.get('number', '')} {level_title_dict['title']}"
-                print(level_title_str)
-                sublevel_title_str = ""
-                subsublevel_title_str = ""
+                print("No sublevel title THIS SHOULD NEVER PRINT")
                 messages = [
-                    {"role": "system", "content": prompts.TOC_SCHEMA_SYS_PROMPT_PLUS},
-                    {"role": "user", "content": prompts.TOC_SCHEMA_USER_PROMPT.format(level_title=level_title_str, section_types=section_types, TOC_SCHEMA=TOC_SCHEMA, content=content)}
+                    {"role": "system", "content": prompts.TOC_SCHEMA_SYS_PROMPT.format(section_types=", ".join(self.toc_hierarchy_schema.keys()), TOC_SCHEMA=TOC_SCHEMA)},
+                    {"role": "user", "content": content}
                 ]
                 sublevel_title = "Complete"
                 subsublevel_title = "Complete"
@@ -595,51 +516,51 @@ class PDFParser(BaseParser):
                     {"role": "system", "content": prompts.TOC_SCHEMA_SYS_PROMPT_PLUS},
                     {"role": "user", "content": prompts.TOC_SCHEMA_USER_PROMPT_PLUS.format(level_title=level_title_str, sublevel_title=sublevel_title_str, subsublevel_title=subsublevel_title_str, section_types=section_types, TOC_SCHEMA=TOC_SCHEMA, content=content)}
                 ]
-            response = await llm.openai_client_chat_completion_request(messages, model="gpt-4-turbo")
-            if not response.choices or not response.choices[0].message:
-                print("Unexpected response structure:", response)
-                raise Exception("Unexpected response structure")
-            if response.choices[0].finish_reason == "length":
-                utils.print_coloured(f"TOO LONG: {level_title_str} / {sublevel_title_str} / {subsublevel_title_str}", "red")
-                inital_message_content = response.choices[0].message.content
-                split_content = inital_message_content.rsplit('},', 1)
-                if len(split_content) == 2:
-                    inital_message_content, remaining_content = split_content
-                    remaining_content = '},' + remaining_content.strip()
-                    utils.print_coloured(remaining_content, "yellow")
-                else:
-                    remaining_content = ''
-                additional_messages = [
-                    {"role": "assistant", "content": inital_message_content},
-                    {"role": "user", "content": "Please continue from EXACTLY where you left off so that the two responses can be concatenated and form a complete JSON object. Make sure to include the closing brackets, quotation marks and commas. Do NOT add any additional text, such as '```json' or '```'."},
-                    {"role": "assistant", "content": remaining_content}]
-                combined_messages = messages + additional_messages
-                retries = 0
-                max_retries = 5
-                while retries < max_retries:
-                    response2 = await llm.openai_client_chat_completion_request(combined_messages, model="gpt-4-turbo", response_format="text")
-                    try:
-                        message_content2 = response2.choices[0].message.content
-                        if message_content2.startswith("},") == False:
-                            message_content2 = "}," + message_content2
-                        total_message_content = inital_message_content + message_content2
-                        toc_schema = json.loads(total_message_content)
-                        utils.print_coloured(f"{level_title_str} / {sublevel_title_str} / {subsublevel_title_str}", "green")
-                        return (level_title, sublevel_title, subsublevel_title, toc_schema)
-                    except json.JSONDecodeError:
-                        retries += 1
-                        utils.print_coloured(f"Error decoding TOO LONG JSON ... / {subsublevel_title_str}, attempt {retries}", "red")
-                        if retries >= max_retries:
-                            raise Exception("Max retries reached, unable to complete JSON")
-            try:
-                message_content = response.choices[0].message.content
-                toc_schema = json.loads(message_content)
-                ## TODO: check if the schema is valid i.e no empty children and if the hierarchy is correct
-                utils.print_coloured(f"{level_title_str} / {sublevel_title_str} / {subsublevel_title_str}", "green")
-                return (level_title, sublevel_title, subsublevel_title, toc_schema)
-            except json.JSONDecodeError:
-                print(f"Error decoding JSON for {level_title} - {sublevel_title}")
-                raise
+                response = await llm.openai_client_chat_completion_request(messages, model="gpt-4-turbo")
+                if not response.choices or not response.choices[0].message:
+                    print("Unexpected response structure:", response)
+                    raise Exception("Unexpected response structure")
+                if response.choices[0].finish_reason == "length":
+                    utils.print_coloured(f"TOO LONG: {level_title_str} / {sublevel_title_str} / {subsublevel_title_str}", "red")
+                    inital_message_content = response.choices[0].message.content
+                    split_content = inital_message_content.rsplit('},', 1)
+                    if len(split_content) == 2:
+                        inital_message_content, remaining_content = split_content
+                        remaining_content = '},' + remaining_content.strip()
+                        utils.print_coloured(remaining_content, "yellow")
+                    else:
+                        remaining_content = ''
+                    additional_messages = [
+                        {"role": "assistant", "content": inital_message_content},
+                        {"role": "user", "content": "Please continue from EXACTLY where you left off so that the two responses can be concatenated and form a complete JSON object. Make sure to include the closing brackets, quotation marks and commas. Do NOT add any additional text, such as '```json' or '```'."},
+                        {"role": "assistant", "content": remaining_content}]
+                    combined_messages = messages + additional_messages
+                    retries = 0
+                    max_retries = 5
+                    while retries < max_retries:
+                        response2 = await llm.openai_client_chat_completion_request(combined_messages, model="gpt-4-turbo", response_format="text")
+                        try:
+                            message_content2 = response2.choices[0].message.content
+                            if message_content2.startswith("},") == False:
+                                message_content2 = "}," + message_content2
+                            total_message_content = inital_message_content + message_content2
+                            toc_schema = json.loads(total_message_content)
+                            utils.print_coloured(f"{level_title_str} / {sublevel_title_str} / {subsublevel_title_str}", "green")
+                            return (level_title, sublevel_title, subsublevel_title, toc_schema)
+                        except json.JSONDecodeError:
+                            retries += 1
+                            utils.print_coloured(f"Error decoding TOO LONG JSON ... / {subsublevel_title_str}, attempt {retries}", "red")
+                            if retries >= max_retries:
+                                raise Exception("Max retries reached, unable to complete JSON")
+                try:
+                    message_content = response.choices[0].message.content
+                    toc_schema = json.loads(message_content)
+                    ## TODO: check if the schema is valid i.e no empty children and if the hierarchy is correct
+                    utils.print_coloured(f"{level_title_str} / {sublevel_title_str} / {subsublevel_title_str}", "green")
+                    return (level_title, sublevel_title, subsublevel_title, toc_schema)
+                except json.JSONDecodeError:
+                    print(f"Error decoding JSON for {level_title} - {sublevel_title}")
+                    raise
 
         return await self.rate_limited_process(process_function)
     
@@ -705,7 +626,7 @@ class PDFParser(BaseParser):
                 section=level_section,
                 number=level_number,
                 title=level_title,
-                children=content.toc
+                children=content.toc[0].children
             )
         sublevel_section, sublevel_number, sublevel_title = parse_level(content.sublevel)
         if content.subsublevel == "Complete":
@@ -718,7 +639,7 @@ class PDFParser(BaseParser):
                         section=sublevel_section,
                         number=sublevel_number,
                         title=sublevel_title,
-                        children=content.toc
+                        children=content.toc[0].children
                     )
                 ]
             )
@@ -813,10 +734,6 @@ class PDFParser(BaseParser):
             return content_md_lines, content_md_section_lines
         
         content_md_lines, content_md_section_lines = format_md_lines()
-        if self.no_md_flag:
-            content_md_section_lines = [(line, idx) for idx, line in enumerate(content_md_lines)]
-        with open("zzcontent_md_section_lines.md", "w") as f:
-            f.write("\n".join([f"{line} [{idx}]" for line, idx in content_md_section_lines]))
 
         md_levels = self.adjusted_toc_hierarchy_schema if self.adjusted_toc_hierarchy_schema else self.toc_hierarchy_schema
 
@@ -872,14 +789,7 @@ class PDFParser(BaseParser):
                     start_line_idx = remaining_content_md_section_lines[0][1]
 
                 if next_formatted_section_name:
-                    # should pass number to the function instead of using regex
-                    # TODO: improve this logic
-                    number_match = re.findall(r'\d+\.?\d*', next_formatted_section_name)
-                    if number_match:
-                        filtered_remaining_content_md_section_lines = [(line, idx) for line, idx in remaining_content_md_section_lines if number_match[0] in line]
-                        matches = process.extractBests(next_formatted_section_name, [line for line, _ in filtered_remaining_content_md_section_lines], score_cutoff=80, limit=10)
-                    else:
-                        matches = process.extractBests(next_formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
+                    matches = process.extractBests(next_formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
                     if matches:
                         highest_score = max(matches, key=lambda x: x[1])[1]
                         highest_score_matches = [match for match in matches if match[1] == highest_score]
