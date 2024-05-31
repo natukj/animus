@@ -1,128 +1,182 @@
+from __future__ import annotations
+from pydantic import BaseModel, ValidationError
+from typing import Union, Any, Optional, Dict, Tuple, List, NewType
 import json
 import asyncio
-from typing import Any, Dict, List, Tuple, Union
+from thefuzz import process  
 import llm, prompts, utils
 
-all_level_schemas = {"contents": []}
-with open("levels.json", "r") as f:
-    levels= json.load(f)
+JSONstr = NewType('JSONstr', str)
 
-async def generate_toc_schema(levels: Dict[str, str], content: str = None, depth: int = 0, max_depth: int = None) -> Tuple[List[Dict[str, Any]], Dict[str, str]]:
-    """
-    Generate a custom schema for the ToC based on the hierarchy schema.
-    """
-    if not levels:
-        raise ValueError("Levels dictionary cannot be empty.")
+class TableOfContentsChild(BaseModel):
+    number: str
+    title: str
 
-    if max_depth is None:
-        max_depth = max(marker.count('#') for marker in levels.values())
+class TableOfContents(BaseModel):
+    section: Optional[str]
+    number: str
+    title: str
+    children: Optional[List[Union[TableOfContents, TableOfContentsChild]]]
 
-    if depth >= max_depth:
-        return [], levels
+    def find_child(self, section: Optional[str], number: str) -> Optional[Union[TableOfContents, TableOfContentsChild]]:
+        """find an existing child by section and number."""
+        if not self.children:
+            return None
+        for child in self.children:
+            if isinstance(child, TableOfContents) and child.section == section and child.number == number:
+                return child
+            if isinstance(child, TableOfContentsChild) and child.number == number:
+                return child
+        return None
 
-    current_depth_levels = [name for name, marker in levels.items() if marker.count('#') == depth + 1]
+    def add_child(self, child: Union[TableOfContents, TableOfContentsChild]):
+        """add a new child or merge with an existing one."""
+        if not self.children:
+            self.children = []
 
-    children = []
-    if depth + 1 < max_depth:
-        children, _ = await generate_toc_schema(levels, content, depth + 1, max_depth)
-
-    toc_schema = [
-        {
-            "section": level_name,
-            "number": "string (optional, numeric or textual identifier of the section)",
-            "title": "string (optional, title of the section)",
-            "children": children
-        } for level_name in current_depth_levels
-    ]
-
-    return toc_schema, levels
-
-async def generate_formatted_toc(content:str, levels: Dict[str, str]) -> str:
-    """
-    Generate a formatted Table of Contents (ToC) based on the provided content and levels.
-    """
-    custom_schema, _ = await generate_toc_schema(levels)
-    TOC_SCHEMA = {"contents": [json.dumps(custom_schema, indent=4)]}
-    section_types = ', '.join([f"'{section}'" for section in levels.keys()])
-    level_title_str = "Chapter 3 Specialist liability rules"
-    sublevel_title_str = "Part 3-5 Corporate taxpayers and corporate distributions"
-    subsublevel_title_str = "Division 165 Income tax consequences of changing ownership or control of a company"
-    messages = [
-        {"role": "system", "content": prompts.TOC_SCHEMA_SYS_PROMPT_PLUS},
-        {"role": "user", "content": prompts.TOC_SCHEMA_USER_PROMPT_PLUS.format(level_title=level_title_str, sublevel_title=sublevel_title_str, subsublevel_title=subsublevel_title_str, section_types=section_types, TOC_SCHEMA=TOC_SCHEMA, content=content)}
-    ]
-    # response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o")
-    # if response.choices[0].finish_reason == "length":
-    #     utils.print_coloured(f"RESPONSE TOO LONG: {level_title_str} / {sublevel_title_str} / {subsublevel_title_str}", "red")
-    #     inital_message_content = response.choices[0].message.content
-    if True:
-        with open("inital_message_content.json", "r") as f:
-            inital_message_content = f.read()
-        split_content = inital_message_content.rsplit('},', 1)
-        if len(split_content) == 2:
-            inital_message_content, remaining_content = split_content
-            remaining_content = '},' + remaining_content.strip()
-            utils.print_coloured(remaining_content, "yellow")
+        if isinstance(child, TableOfContents):
+            existing_child = self.find_child(child.section, child.number)
+            if existing_child and isinstance(existing_child, TableOfContents):
+                existing_child.children = merge_children(existing_child.children, child.children or [])
+            else:
+                self.children.append(child)
         else:
-            remaining_content = ''
-        additional_messages = [
-            {"role": "assistant", "content": inital_message_content},
-            {"role": "user", "content": "Please continue from EXACTLY where you left off so that the two responses can be concatenated and form a complete JSON object. Make sure to include the closing brackets, quotation marks and commas. Do NOT add any additional text, such as '```json' or '```'."},
-            {"role": "assistant", "content": remaining_content}]
-        combined_messages = messages + additional_messages
-        retries = 0
-        max_retries = 3
-        while retries < max_retries:
-            response2 = await llm.openai_client_chat_completion_request(combined_messages, model="gpt-4-turbo", response_format="text")
-            try:
-                message_content2 = response2.choices[0].message.content
-                print(message_content2)
-                if message_content2.startswith("},") == False:
-                    message_content2 = "}," + message_content2
-                total_message_content = inital_message_content + message_content2
-                toc_schema = json.loads(total_message_content)
-                utils.print_coloured(f"{level_title_str} / {sublevel_title_str} / {subsublevel_title_str}", "green")
-                return toc_schema
-            except json.JSONDecodeError:
-                retries += 1
-                utils.print_coloured(f"Error decoding TOO LONG JSON ... / {subsublevel_title_str}, attempt {retries}", "red")
-                if retries >= max_retries:
-                    raise Exception("Max retries reached, unable to complete JSON")
+            if not any(isinstance(existing, TableOfContentsChild) and existing.number == child.number for existing in self.children):
+                self.children.append(child)
 
-    return
 
-async def extract_toc(levels, schema, depth=0, path=[]):
-    """
-    Traverse and print the structure of the ToC based on levels.
-    """
-    toc_schema = None
-    for level, content in levels.items():
-        new_path = path + [level]
-        if 'content' in content:
-            level_path = ' > '.join(new_path)
-            # print(f"Level path: {' > '.join(new_path)}, Content: {content['content'][:100]}")
-            if level_path == """{"section": "Chapter", "number": "3", "title": "Specialist liability rules"} > {"section": "Part", "number": "3-5", "title": "Corporate taxpayers and corporate distributions"} > {"section": "Division", "number": "165", "title": "Income tax consequences of changing ownership or control of a company"}""":
-                print(f"Level path: {level_path}")
-                toc_schema = await generate_formatted_toc(content['content'], schema)
-        if 'children' in content:
-            await extract_toc(content['children'], schema, depth + 1, new_path)
-    return toc_schema
+class Contents(BaseModel):
+    level: JSONstr
+    sublevel: JSONstr | str
+    subsublevel: JSONstr | str
+    toc: List[Union[TableOfContents, TableOfContentsChild]]
+
+
+class TableOfContentsDict(BaseModel):
+    contents: List[Contents]
+
+def merge_children(existing_children: Optional[List[Union[TableOfContents, TableOfContentsChild]]], new_children: List[Union[TableOfContents, TableOfContentsChild]]) -> List[Union[TableOfContents, TableOfContentsChild]]:
+    """merge a list of new children into existing children."""
+    if existing_children is None:
+        existing_children = []
+
+    existing_dict = {child.number: child for child in existing_children if isinstance(child, TableOfContents)}
+
+    for new_child in new_children:
+        if isinstance(new_child, TableOfContents):
+            if new_child.number in existing_dict:
+                existing_child = existing_dict[new_child.number]
+                existing_child.children = merge_children(existing_child.children, new_child.children or [])
+            else:
+                existing_children.append(new_child)
+        else:
+            if not any(isinstance(child, TableOfContentsChild) and child.number == new_child.number for child in existing_children):
+                existing_children.append(new_child)
+
+    return existing_children
+
+async def find_existing_section(toc: List[TableOfContents], section: str, number: str) -> Optional[TableOfContents]:
+        """find an existing section by section and number."""
+        for item in toc:
+            if item.section == section and item.number == number:
+                return item
+        return None
     
+async def nest_toc(content: Contents) -> TableOfContents:
+    def parse_level(level_json: JSONstr):
+        level_dict = json.loads(level_json)
+        return level_dict['section'], level_dict['number'], level_dict['title']
+    def find_nested_toc(tocs: List[Union[TableOfContents, TableOfContentsChild]], section: str, number: str) -> Optional[TableOfContents]:
+        """recursively search for a TableOfContents by section and number in nested children."""
+        for toc in tocs:
+            if isinstance(toc, TableOfContents):
+                if toc.section == section and toc.number == number:
+                    return toc
+                found = find_nested_toc(toc.children or [], section, number)
+                if found:
+                    return found
+        return None
+
     
-async def main():
-    TOC_SCHEMA = {
-        "Chapter": "#",
-        "Part": "##",
-        "Division": "###",
-        "Subdivision": "####",
-        "Guide to Division": "####",
-        "Guide to Subdivision": "####",
-        "Operative provisions": "####"
+    level_section, level_number, level_title = parse_level(content.level)
+    result_toc = TableOfContents(section=level_section, number=level_number, title=level_title, children=[])
+
+    if content.sublevel == "Complete":
+        level_toc = find_nested_toc(content.toc, level_section, level_number)
+        if level_toc:
+            utils.print_coloured(f"level_toc: {level_toc}", "red")
+            result_toc.children = level_toc.children
+        else:
+            result_toc.children = content.toc 
+    else:
+        sublevel_section, sublevel_number, sublevel_title = parse_level(content.sublevel)
+        sublevel_toc = TableOfContents(section=sublevel_section, number=sublevel_number, title=sublevel_title, children=[])
+        result_toc.children = [sublevel_toc] 
+
+        if content.subsublevel == "Complete":
+            found_sublevel_toc = find_nested_toc(content.toc, sublevel_section, sublevel_number)
+            if found_sublevel_toc:
+                utils.print_coloured(f"sublevel_toc: {found_sublevel_toc}", "cyan")
+                sublevel_toc.children = [found_sublevel_toc]
+            else:
+                sublevel_toc.children = content.toc
+        else:
+            subsublevel_section, subsublevel_number, subsublevel_title = parse_level(content.subsublevel)
+            subsublevel_toc = TableOfContents(section=subsublevel_section, number=subsublevel_number, title=subsublevel_title, children=[])
+            sublevel_toc.children = [subsublevel_toc]
+
+            found_subsublevel_toc = find_nested_toc(content.toc, subsublevel_section, subsublevel_number)
+            if found_subsublevel_toc:
+                utils.print_coloured(f"subsublevel_toc: {found_subsublevel_toc}", "green")
+                subsublevel_toc.children = [found_subsublevel_toc]
+            else:
+                subsublevel_toc.children = content.toc
+
+    return result_toc
+    
+async def merge_toc(master_toc: List[TableOfContents], toc: List[TableOfContents], ) -> List[TableOfContents]:
+    """
+    Merge a new ToC sections.
+    """
+    toc_hierarchy_schema = {
+        "Chapter": "##",
+        "Part": "###",
+        "Division": "####",
+        "Subdivision": "#####"
     }
-    pls = await extract_toc(levels, TOC_SCHEMA)
-    print(json.dumps(pls, indent=4))
-    #print(json.dumps(schema, indent=4))
+    sorted_schema = sorted(toc_hierarchy_schema.items(), key=lambda item: len(item[1]))
+    top_level_type = sorted_schema[0][0]
+    existing_level = await find_existing_section(master_toc, top_level_type, toc.number)
+    if existing_level:
+        existing_level.children = merge_children(existing_level.children, toc.children or [])
+    else:
+        master_toc.append(toc)
+
+def save_toc_to_file(toc: List[TableOfContents], file_name: str):
+    """temp for testing"""
+    with open(file_name, "w") as file:
+        json.dump(toc, file, indent=2, default=lambda x: x.dict())
+
+async def build_master_toc(data: TableOfContentsDict) -> List[TableOfContents]:
+    """
+    Build the master ToC from the split ToC parts.
+    """
+    master_toc: List[TableOfContents] = []
+    for content in data.contents:
+        toc = await nest_toc(content)
+        await merge_toc(master_toc, toc)
+    master_toc = [toc.model_dump() for toc in master_toc]
+    return master_toc
+
+
+async def main():
+    with open("toc.json", "r") as file:
+        data = json.load(file)
+    try:
+        toc_dict = TableOfContentsDict(**data)
+        master_toc = await build_master_toc(toc_dict)
+        save_toc_to_file(master_toc, "zzzzzz.json")
+    except ValidationError as e:
+        print(e)
 
 asyncio.run(main())
-"""RESPONSE TOO LONG: Chapter 3 Specialist liability rules / Part 3-5 Corporate taxpayers and corporate distributions / Division 165 Income tax consequences of changing ownership or control of a company"""
-"""Level path: {"section": "Chapter", "number": "3", "title": "Specialist liability rules"} > {"section": "Part", "number": "3-5", "title": "Corporate taxpayers and corporate distributions"} > {"section": "Division", "number": "165", "title": "Income tax consequences of changing ownership or control of a company"}"""

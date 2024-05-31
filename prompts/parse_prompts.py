@@ -133,7 +133,9 @@ I have split the ToC into multiple parts, and you will be working on the followi
          - {sublevel_title}
             - {subsublevel_title}
 
-This part has section types that could include: {section_types}. You need to independently verify this and any other section types that may be present. All section types should be prefixed by "#" symbols and must be standalone sections in the JSON object. Any line without a "#" prefix is a child of the previous line that has a "#" prefix.
+Please do not include these levels in the JSON object.
+
+This part has section types that could include: {section_types}. You need to independently verify this and any other section types that may be present. All section types should be prefixed by "#" symbols and must be standalone sections in the JSON object. Any line without a "#" prefix is a child of the previous line that has a "#" prefix. If there are no "#" symbols in any of the lines, you have only been given the lowest level of the hierarchy (which should only contain the "number" and "title" keys).
 
 Here is an example of the JSON structure you need to follow:
 
@@ -148,10 +150,11 @@ Please note, the above schema is just an example and may not contain all the sec
 - If a section lacks a numeric identifier, set the "number" value to an empty string ("").
 - If a section lacks a title, or the title is the same as the section, set the "title" value to an empty string ("") - do NOT use the page number (at the end of the line).
 - When a ToC line has no "#" prefix, and starts with a number, it is a child of the previous line that has a "#" prefix.
+- If there are no '#' symbols in any of the lines, you have only been given the lowest level of the hierarchy (which should only contain the "number" and "title" keys).
 - Exclude dots, page numbers, and any text not explicitly listed as a ToC item (page numbers are usually at the end of the line).
 
 
-Please pay close attention this specific note - **The lowest level in the JSON hierarchy must ONLY contain the "number" and "title" keys. These levels have no "#" prefix in the ToC, and MUST be the direct children of a parent section** - ANY line in the ToC that has no "#" prefix is a child of the previous line that has a "#" prefix.
+Please pay close attention this specific note - **The lowest level in the JSON hierarchy must ONLY contain the "number" and "title" keys. These levels have no "#" prefix in the ToC, and MUST be the direct children of a parent section** - ANY line in the ToC that has no "#" prefix is a child of the previous line that has a "#" prefix. If there are no "#" symbols in any of the lines, you have only been given the lowest level of the hierarchy (which should only contain the "number" and "title" keys).
 
 It is of the upmost importance that the structure is correct and accurate. Failure to do so will result in a loss of trust and confidence in our services. Please do not let this happen.
 
@@ -164,17 +167,15 @@ TOC_SECTION_TEMPLATE = {
     "number": "string (numeric or textual identifier of the section, e.g., '1', '2-5', 'A', '27B')",
     "title": "string (title of the section, without the page number, section type or number)"
 }
-TOC_SECTION_USER_PROMPT = """Please format the following line from the Table of Contents (ToC) into a JSON object according to the following structure:
-
-**JSON Format:**
+TOC_SECTION_USER_PROMPT = """Please format the Table of Contents (ToC) line into a JSON object according to the following structure:
 
 {TOC_SECTION_TEMPLATE}
 
-## Important Note:
+## IMPORTANT NOTES
 - Do not include the '#' characters in the JSON object.
-- Do not include the page numbers in the "title" field (most likely at the end of the line).
+- It is EXTREMELY important to not include the page numbers in the "title" field (most likely at the end of the line).
 
-## ToC Line:
+Here is the ToC line you need to format:
 
 {toc_line}
 """

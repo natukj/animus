@@ -3,11 +3,27 @@ import asyncio
 import json
 import llm, prompts
 
+"""
+✔ Modern Awards
+✔ Fair Work Act 2009
+✔ Income Tax Assessment Act 1997
+Goods and Services Tax Act 1999
+✔ Corporations Act 2001
+Privacy Act 1988
+Competition and Consumer Act 2010
+Work Health and Safety Act 2011
+Environment Protection and Biodiversity Conservation Act 1999
+Superannuation Guarantee (Administration) Act 1992
+National Employment Standards
+Australian Securities and Investments Commission Act 2001
+"""
+
+
 
 async def main_run():
-    vol_num = "RH_VIC_NURSES2025"
+    vol_num = "Corporations-Act-2001-Vol1"
     #pdf_path = f"/Users/jamesqxd/Documents/norgai-docs/TAX/C2024C00046VOL0{vol_num}.pdf"
-    pdf_path = "/Users/jamesqxd/Documents/norgai-docs/EBA/RamsayHealth/RH_VIC_NURSES2025.pdf"
+    pdf_path = "/Users/jamesqxd/Documents/norgai-docs/ACTS/Corporations-Act-2001-Australia-Vol1.pdf"
     
     parser = PDFParser()
     content_dict = await parser.parse(pdf_path)

@@ -7,6 +7,7 @@ import base64
 from fastapi import UploadFile
 import fitz
 import re
+import uuid
 from collections import Counter, defaultdict
 from thefuzz import process  
 import llm, prompts, utils
@@ -55,7 +56,7 @@ class Contents(BaseModel):
     level: JSONstr
     sublevel: JSONstr | str
     subsublevel: JSONstr | str
-    toc: List[TableOfContents]
+    toc: List[Union[TableOfContents, TableOfContentsChild]]
 
 
 class TableOfContentsDict(BaseModel):
@@ -96,7 +97,6 @@ class PDFParser(BaseParser):
         self.adjusted_toc_hierarchy_schema = None
         self.master_toc = None
         self.no_md_flag = False
-        self.simple_toc_flag = False
 
     async def load_document(self, file: Union[UploadFile, str]) -> None:
         """
@@ -120,7 +120,6 @@ class PDFParser(BaseParser):
         """
         Find the ToC pages in the document.
         """
-        return [4, 5]
         def encode_page_as_base64(page: fitz.Page):
             pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
             return base64.b64encode(pix.tobytes()).decode('utf-8')
@@ -297,12 +296,13 @@ class PDFParser(BaseParser):
 
         toc_md_lines = self.toc_md_string.split("\n")
         toc_md_section_lines = [line for line in toc_md_lines if line.startswith('#')]
-        print(f"Number of ToC lines: {len(toc_md_section_lines)}")
-        if len(toc_md_section_lines) > 100:
+        utils.print_coloured(f"Number of ToC lines: {len(toc_md_section_lines)} out of {len(toc_md_lines)} with a ratio of {len(toc_md_section_lines) / len(toc_md_lines)}", "yellow")
+        if len(toc_md_section_lines) / len(toc_md_lines) > 0.05:
             toc_md_sections = ['\n'.join(section) for section in await split_lines(toc_md_section_lines, 5)]
         else:
             self.no_md_flag = True
             toc_md_sections = ['\n'.join(section) for section in await split_lines(toc_md_lines, 4)]
+            utils.print_coloured("No ToC Flag Set", "yellow")
 
         schemas = await asyncio.gather(*[self.rate_limited_process(process_function, section) for section in toc_md_sections])
         
@@ -311,12 +311,12 @@ class PDFParser(BaseParser):
         combined_schema = {}
         for schema in schemas:
             for key, value in schema.items():
-                if key not in combined_schema and key != "Part":
+                if key not in combined_schema: # and key != "Part": stupid ramsey nurses 
                     combined_schema[key] = value
 
         utils.print_coloured(f"{json.dumps(combined_schema, indent=4)}", "green")
 
-        # TODO: FIX this is so fucking annoying and bad
+        # TODO: make all text .lower() 
         # post-process to keep only the capitalised keys when duplicates with different capitalisations exist
 
         return combined_schema
@@ -369,10 +369,10 @@ class PDFParser(BaseParser):
                 levels_unfiltered = {k: v[adjust_count:] for k, v in self.toc_hierarchy_schema.items()}
                 self.adjusted_toc_hierarchy_schema = levels_unfiltered
                 levels = await self.filter_schema(levels_unfiltered, content)
-                print(f"Adjusted ToC Hierarchy Schema: {json.dumps(levels, indent=4)}")
+                #print(f"Adjusted ToC Hierarchy Schema: {json.dumps(levels, indent=4)}")
             else:    
                 levels = await self.filter_schema(self.toc_hierarchy_schema, content)
-                print(f"UNadjusted ToC Hierarchy Schema: {json.dumps(levels, indent=4)}")
+                #print(f"UNadjusted ToC Hierarchy Schema: {json.dumps(levels, indent=4)}")
 
         if max_depth is None:
             max_depth = max(marker.count('#') for marker in levels.values())
@@ -427,41 +427,49 @@ class PDFParser(BaseParser):
 
     async def split_toc_parts_into_parts(self, lines: List[str], level_types: List[str]) -> Dict[str, Union[str, Dict]]:
         """
-        Split the ToC parts into sub-parts based on the sub-part type
+        Split the ToC parts into sub-parts based on the sub-part type, 
+        processing headings concurrently while maintaining the original structure.
         """
         parts = {}
         stack = []
         i = 0
+        heading_futures = []
+
+        async def process_heading_queue():
+            return await asyncio.gather(*[future for future, _ in heading_futures])
+
         while i < len(lines):
             line = lines[i]
             level = None
             for j, level_type in enumerate(level_types):
-                # should probably pass the '#'s in the level_types to define the level
                 if line.startswith(level_type):
                     level = j
                     break
             if level is not None:
                 heading = line.strip()
-                # concatenate multi-line headings
                 j = 1
-                while i + j < len(lines) and lines[i + j].startswith(level_types[level].split(" ")[0]):
+                while i + j < len(lines) and lines[i + j].startswith(level_types[level].split(" ")[0] + ' '):
                     next_line = lines[i + j].strip().lstrip('#').strip()
                     heading += ' ' + next_line
                     j += 1
 
-                heading = await self.rate_limited_process(self.process_heading, heading)
-                # pop stack until we reach the correct level
+                # strip last number from heading (pagenumber)
+                heading = re.sub(r'\s\d+$', '', heading)
+                placeholder = str(uuid.uuid4())  
+
                 while stack and stack[-1][0] >= level:
                     stack.pop()
                 if stack:
                     parent = stack[-1][1]
                     if "children" not in parent:
                         parent["children"] = {}
-                    parent["children"][json.dumps(heading)] = {}
-                    stack.append((level, parent["children"][json.dumps(heading)]))
+                    parent["children"][placeholder] = {}
+                    stack.append((level, parent["children"][placeholder]))
                 else:
-                    parts[json.dumps(heading)] = {}
-                    stack.append((level, parts[json.dumps(heading)]))
+                    parts[placeholder] = {}
+                    stack.append((level, parts[placeholder]))
+
+                heading_futures.append((self.rate_limited_process(self.process_heading, heading), placeholder)) 
                 i += j
             else:
                 if stack:
@@ -471,19 +479,26 @@ class PDFParser(BaseParser):
                         stack[-1][1]["content"] += line.strip() + '\n'
                 i += 1
 
+        processed_headings = await process_heading_queue() 
+        for processed_heading, original_heading in zip(processed_headings, [heading for _, heading in heading_futures]):
+            def replace_heading(data):
+                if isinstance(data, dict):
+                    for key in list(data.keys()): 
+                        if key == original_heading:
+                            data[json.dumps(processed_heading)] = data.pop(original_heading)
+                        else:
+                            replace_heading(data[key])
+            replace_heading(parts)
         return parts
     
     async def split_no_md_toc_parts_into_parts(self, lines: List[str], level_types: List[str]) -> Dict[str, Union[str, Dict]]:
+        # TODO: add concurrency as above
         parts = {}
         stack = []
         i = 0
         while i < len(lines):
             line = lines[i].strip()
             level = None
-            # for j, level_type in enumerate(level_types):
-            #     if level_type in line:
-            #         level = j
-            #         break
             for level_type, level_num in level_types:
                 if level_type in line:
                     level = level_num
@@ -517,7 +532,8 @@ class PDFParser(BaseParser):
         """
         Split the ToC into parts based on the hierarchy schema and token count
         """
-        lines = self.toc_md_string.split('\n')
+        lines_dirty = self.toc_md_string.split('\n')
+        lines = [line for line in lines_dirty if line.strip()]
         grouped_schema = defaultdict(list)
         for key, value in self.toc_hierarchy_schema.items():
             grouped_schema[value].append(key)
@@ -538,20 +554,12 @@ class PDFParser(BaseParser):
                 most_common_headings[level] = most_common_heading
             else:
                 most_common_headings[level] = headings[0]
-
-        def sort_key(item: Tuple[str, str]):
-            level, heading = item
-            commonality = sum(1 for line in lines if heading in line)
-            num_hashes = level.count('#')
-            return (-commonality, num_hashes)
-        #sorted_headings = sorted(most_common_headings.items(), key=sort_key)
-        #sorted_headings = sorted(most_common_headings.items(), key=lambda x: len(x[0]))
         
         if self.no_md_flag:
             sorted_headings = sorted(self.toc_hierarchy_schema.items(), key=lambda x: x[1].count('#'))
             level_types = [(heading, level.count('#')) for heading, level in sorted_headings[:3]]
             print(level_types)
-            level_types = [('SCHEDULES', 1), ('APPENDICES', 1), ('PART', 1)]
+            #level_types = [('SCHEDULES', 1), ('APPENDICES', 1), ('PART', 1)] #RAMSAY NURSES ALWAYS WRONG
             return await self.split_no_md_toc_parts_into_parts(lines, level_types)
         else:
             sorted_headings = sorted(most_common_headings.items(), key=lambda x: len(x[0]))
@@ -566,7 +574,7 @@ class PDFParser(BaseParser):
             custom_schema, custom_levels = await self.generate_toc_schema(content=content)
             TOC_SCHEMA = {"contents": [json.dumps(custom_schema, indent=4)]}
             
-            if not sublevel_title:
+            if self.no_md_flag:
                 section_types = ", ".join(custom_levels.keys())
                 level_title_dict = json.loads(level_title)
                 level_title_str = f"{level_title_dict['section']} {level_title_dict.get('number', '')} {level_title_dict['title']}"
@@ -583,8 +591,12 @@ class PDFParser(BaseParser):
                 section_types = ", ".join(custom_levels.keys())
                 level_title_dict = json.loads(level_title)
                 level_title_str = f"{level_title_dict['section']} {level_title_dict['number']} {level_title_dict['title']}"
-                sublevel_title_dict = json.loads(sublevel_title)
-                sublevel_title_str = f"{sublevel_title_dict['section']} {sublevel_title_dict['number']} {sublevel_title_dict['title']}"
+                if sublevel_title:
+                    sublevel_title_dict = json.loads(sublevel_title)
+                    sublevel_title_str = f"{sublevel_title_dict['section']} {sublevel_title_dict['number']} {sublevel_title_dict['title']}"
+                else:
+                    sublevel_title_str = ""
+                    sublevel_title = "Complete"
                 if subsublevel_title:
                     subsublevel_title_dict = json.loads(subsublevel_title)
                     subsublevel_title_str = f"{subsublevel_title_dict['section']} {subsublevel_title_dict['number']} {subsublevel_title_dict['title']}"
@@ -695,74 +707,59 @@ class PDFParser(BaseParser):
         return None
     
     async def nest_toc(self, content: Contents) -> TableOfContents:
+        """builds a nested table of contents based on content levels"""
         def parse_level(level_json: JSONstr):
             level_dict = json.loads(level_json)
             return level_dict['section'], level_dict['number'], level_dict['title']
         
+        def find_nested_toc(tocs: List[Union[TableOfContents, TableOfContentsChild]], section: str, number: str) -> Optional[TableOfContents]:
+            """recursively search for a TableOfContents by section and number in nested children"""
+            for toc in tocs:
+                if isinstance(toc, TableOfContents):
+                    if toc.section == section and toc.number == number:
+                        return toc
+                    found = find_nested_toc(toc.children or [], section, number)
+                    if found:
+                        return found
+            return None
+        
         level_section, level_number, level_title = parse_level(content.level)
-        if content.sublevel == "Complete" or content.toc[0].section == level_section:
-            return TableOfContents(
-                section=level_section,
-                number=level_number,
-                title=level_title,
-                children=content.toc
-            )
-        sublevel_section, sublevel_number, sublevel_title = parse_level(content.sublevel)
-        if content.subsublevel == "Complete":
-            return TableOfContents(
-                section=level_section,
-                number=level_number,
-                title=level_title,
-                children=[
-                    TableOfContents(
-                        section=sublevel_section,
-                        number=sublevel_number,
-                        title=sublevel_title,
-                        children=content.toc
-                    )
-                ]
-            )
-        subsublevel_section, subsublevel_number, subsublevel_title = parse_level(content.subsublevel)
-        subsublevel_toc = content.toc[0].find_child(subsublevel_section, subsublevel_number)
-        if subsublevel_toc:
-            return TableOfContents(
-                section=level_section,
-                number=level_number,
-                title=level_title,
-                children=[
-                    TableOfContents(
-                        section=sublevel_section,
-                        number=sublevel_number,
-                        title=sublevel_title,
-                        children=[subsublevel_toc]
-                    )
-                ]
-            )
+        result_toc = TableOfContents(section=level_section, number=level_number, title=level_title, children=[])
+        if content.sublevel == "Complete":
+            level_toc = find_nested_toc(content.toc, level_section, level_number)
+            if level_toc:
+                result_toc.children = level_toc.children
+            else:
+                result_toc.children = content.toc 
         else:
-            return TableOfContents(
-                section=level_section,
-                number=level_number,
-                title=level_title,
-                children=[
-                    TableOfContents(
-                        section=sublevel_section,
-                        number=sublevel_number,
-                        title=sublevel_title,
-                        children=[
-                            TableOfContents(
-                                section=subsublevel_section,
-                                number=subsublevel_number,
-                                title=subsublevel_title,
-                                children=content.toc
-                            )
-                        ]
-                    )
-                ]
-            )
+            sublevel_section, sublevel_number, sublevel_title = parse_level(content.sublevel)
+            sublevel_toc = TableOfContents(section=sublevel_section, number=sublevel_number, title=sublevel_title, children=[])
+            result_toc.children = [sublevel_toc]
+
+            if content.subsublevel == "Complete":
+                found_sublevel_toc = find_nested_toc(content.toc, sublevel_section, sublevel_number)
+                if found_sublevel_toc:
+                    utils.print_coloured(f"sublevel_toc: {found_sublevel_toc}", "cyan")
+                    sublevel_toc.children = [found_sublevel_toc]
+                else:
+                    sublevel_toc.children = content.toc
+            else:
+                subsublevel_section, subsublevel_number, subsublevel_title = parse_level(content.subsublevel)
+                subsublevel_toc = TableOfContents(section=subsublevel_section, number=subsublevel_number, title=subsublevel_title, children=[])
+                sublevel_toc.children = [subsublevel_toc]
+
+                found_subsublevel_toc = find_nested_toc(content.toc, subsublevel_section, subsublevel_number)
+                if found_subsublevel_toc:
+                    utils.print_coloured(f"subsublevel_toc: {found_subsublevel_toc}", "green")
+                    subsublevel_toc.children = [found_subsublevel_toc]
+                else:
+                    subsublevel_toc.children = content.toc
+
+        return result_toc
         
     async def merge_toc(self, master_toc: List[TableOfContents], toc: List[TableOfContents], ) -> List[TableOfContents]:
         """
-        Merge a new ToC sections.
+        merge ToC sections
         """
         sorted_schema = sorted(self.toc_hierarchy_schema.items(), key=lambda item: len(item[1]))
         top_level_type = sorted_schema[0][0]
@@ -774,7 +771,7 @@ class PDFParser(BaseParser):
 
     async def build_master_toc(self, data: TableOfContentsDict) -> List[TableOfContents]:
         """
-        Build the master ToC from the split ToC parts.
+        build the master ToC from the split ToC parts
         """
         master_toc: List[TableOfContents] = []
         for content in data.contents:
@@ -887,7 +884,8 @@ class PDFParser(BaseParser):
                         line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == matched_line)
                         print(f"Match: {next_formatted_section_name}: {matched_line} [{line_idx}]")
                     else:
-                        print(remaining_content_md_section_lines)
+                        for line, idx in remaining_content_md_section_lines:
+                            print(f"Line: {line} [{idx}]")
                         raise ValueError(f"Could not match end: {next_formatted_section_name}")
                 else:
                     line_idx = len(content_md_lines)
