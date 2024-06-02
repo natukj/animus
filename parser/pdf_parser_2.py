@@ -110,12 +110,12 @@ class PDFParser(BaseParser):
         else:
             raise ValueError("file must be an instance of UploadFile or str.")
         self.toc_md_string, self.content_md_string = await self.generate_md_string()
-        self.toc_hierarchy_schema = await self.generate_toc_hierarchy_schema()
-        # with open("zztoc_md_string.md", "w") as f:
-        #     f.write(self.toc_md_string) 
-        # with open("zzcontent_md_string.md", "w") as f:
-        #     f.write(self.content_md_string)
-        # exit()
+        #self.toc_hierarchy_schema = await self.generate_toc_hierarchy_schema()
+        with open("zztoc_md_string.md", "w") as f:
+            f.write(self.toc_md_string) 
+        with open("zzcontent_md_string.md", "w") as f:
+            f.write(self.content_md_string)
+        exit()
     
     async def find_toc_pages(self) -> List[int]:
         """
@@ -123,8 +123,7 @@ class PDFParser(BaseParser):
         """
         # vol9
         #return [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
-        # uk companies act
-        # return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58]
+        return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58]
         def encode_page_as_base64(page: fitz.Page):
             pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
             return base64.b64encode(pix.tobytes()).decode('utf-8')
@@ -242,15 +241,11 @@ class PDFParser(BaseParser):
         """
         Generate Markdown strings for toc and content.
         """
-        # toc_pages = await self.find_toc_pages()
-        # last_toc_page = toc_pages[-1] + 1
-        # content_pages = list(range(last_toc_page, self.document.page_count))
-        # toc_md_string = self.to_markdown(self.document, toc_pages)
-        # content_md_string = self.to_markdown(self.document, content_pages)
-        with open("zztoc_md_string.md", "r") as f:
-            toc_md_string = f.read()
-        with open("zzcontent_md_string.md", "r") as f:
-            content_md_string = f.read()
+        toc_pages = await self.find_toc_pages()
+        last_toc_page = toc_pages[-1] + 1
+        content_pages = list(range(last_toc_page, self.document.page_count))
+        toc_md_string = self.to_markdown(self.document, toc_pages)
+        content_md_string = self.to_markdown(self.document, content_pages)
         return toc_md_string, content_md_string
     
     async def map_toc_to_hierarchy(self, toc_lines: List[str], toc_hierarchy_schema: Dict[str, str]) -> Dict[str, str]:

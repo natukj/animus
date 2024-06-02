@@ -21,9 +21,9 @@ Australian Securities and Investments Commission Act 2001
 
 
 async def main_run():
-    vol_num = "Corporations-Act-2001-Vol1"
+    vol_num = "UKCOMPANIESACT2006"
     #pdf_path = f"/Users/jamesqxd/Documents/norgai-docs/TAX/C2024C00046VOL0{vol_num}.pdf"
-    pdf_path = "/Users/jamesqxd/Documents/norgai-docs/ACTS/Corporations-Act-2001-Australia-Vol1.pdf"
+    pdf_path = "/Users/jamesqxd/Documents/norgai-docs/ACTS/ukCOMPANIESACT2006.pdf"
     
     parser = PDFParser()
     content_dict = await parser.parse(pdf_path)

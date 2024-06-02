@@ -164,9 +164,11 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
             return flattened
         
         remaining_content_md_section_lines = content_md_section_lines.copy()
-        def get_section_content(next_formatted_section_name: str, formatted_section_name: str = None) -> Tuple[str, int]:
+        #def get_section_content(next_formatted_section_name: str, formatted_section_name: str = None) -> Tuple[str, int]:
+        def get_section_content(next_section: Tuple[str, str, str], section: Tuple[str, str, str] = None) -> Tuple[str, int]:
             nonlocal remaining_content_md_section_lines
-            if formatted_section_name:
+            if section:
+                formatted_section_name = format_section_name(*section)
                 start_matches = process.extractBests(formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
                 if start_matches:
                     start_highest_score = max(start_matches, key=lambda x: x[1])[1]
@@ -179,12 +181,13 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
             else:
                 start_line_idx = remaining_content_md_section_lines[0][1]
 
-            if next_formatted_section_name:
-                number_match = re.findall(r'\d+\.?\d*', next_formatted_section_name)
-                if number_match:
-                    if number_match[0] == "4.5":
-                        number_match = ["**4.5** **** **** **ROSTERS**"]
-                    filtered_remaining_content_md_section_lines = [(line, idx) for line, idx in remaining_content_md_section_lines if number_match[0] in line]
+            if next_section:
+                #number_match = re.findall(r'\d+\.?\d*', next_formatted_section_name)
+                next_formatted_section_name = format_section_name(*next_section)
+                next_number = next_section[1] if next_section[1] else ""
+                if next_number:
+                    print(f"Next number: {next_number}")
+                    filtered_remaining_content_md_section_lines = [(line, idx) for line, idx in remaining_content_md_section_lines if next_number in line]
                     matches = process.extractBests(next_formatted_section_name, [line for line, _ in filtered_remaining_content_md_section_lines], score_cutoff=80, limit=10)
                 else:
                     matches = process.extractBests(next_formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
@@ -194,7 +197,7 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
                     matched_line = min(highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0]))[0]
                     line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == matched_line)
                     print(f"Matched: {next_formatted_section_name} at {line_idx} with {matched_line}")
-                    if "Rosters 4.5" in next_formatted_section_name:
+                    if "Rules for demutualising health" in next_formatted_section_name:
                         print(f"Matched: {next_formatted_section_name} at {line_idx} with {matched_line}")
                         print(f'from: {matches}')
                         # for line, idx in remaining_content_md_section_lines:
@@ -228,9 +231,10 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
                     current_index = flattened_toc.index(section)
                     if current_index + 1 < len(flattened_toc):
                         next_item = flattened_toc[current_index + 1]
-                        next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else format_section_name("", next_item.number, next_item.title)
+                        #next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else format_section_name("", next_item.number, next_item.title)
                         #print(next_formatted_section_name)
-                        section_content, _ = get_section_content(next_formatted_section_name=next_formatted_section_name)
+                        #section_content, _ = get_section_content(next_formatted_section_name=next_formatted_section_name)
+                        section_content, _ = get_section_content(next_section=(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else ("", next_item.number, next_item.title))
                         #section_dict["content"] = section_content
                         if len(section_content) > len(formatted_section_name)*1.3:
                             section_dict["content"] = section_content
@@ -250,12 +254,13 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
                     current_index = flattened_toc.index(section)
                     if current_index + 1 < len(flattened_toc):
                         next_item = flattened_toc[current_index + 1]
-                        next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else format_section_name("", next_item.number, next_item.title)
+                        #next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else format_section_name("", next_item.number, next_item.title)
 
-                        section_content, _ = get_section_content(next_formatted_section_name=next_formatted_section_name)
+                        #section_content, _ = get_section_content(next_formatted_section_name=next_formatted_section_name)
+                        section_content, _ = get_section_content(next_section=(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else ("", next_item.number, next_item.title))
                         child_dict["content"] = section_content
                     else:
-                        section_content, _ = get_section_content(next_formatted_section_name="")
+                        section_content, _ = get_section_content(next_section="")
                         child_dict["content"] = section_content
         
         toc_models = [convert_to_model(item) for item in master_toc]
@@ -275,12 +280,13 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
             current_index = flattened_toc.index(item)
             if current_index + 1 < len(flattened_toc):
                 next_item = flattened_toc[current_index + 1]
-                if isinstance(next_item, TableOfContents):
-                    next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title)
-                elif isinstance(next_item, TableOfContentsChild):
-                    next_formatted_section_name = format_section_name("", next_item.number, next_item.title)
+                # if isinstance(next_item, TableOfContents):
+                #     next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title)
+                # elif isinstance(next_item, TableOfContentsChild):
+                #     next_formatted_section_name = format_section_name("", next_item.number, next_item.title)
                 
-                section_content, _ = get_section_content(formatted_section_name=formatted_section_name, next_formatted_section_name=next_formatted_section_name)
+                # section_content, _ = get_section_content(formatted_section_name=formatted_section_name, next_formatted_section_name=next_formatted_section_name)
+                section_content, section_tokens = get_section_content(section=(item.section, item.number, item.title), next_section=(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else ("", next_item.number, next_item.title))
                 section_dict["content"] = section_content
             
             traverse_sections(item.children, section_dict, flattened_toc)
@@ -291,88 +297,72 @@ def generate_chunked_content(content_md_string: str, master_toc_file: str, adjus
 
 async def main_run():
     toc_hierarchy_schema = {
-        "PART": "#",
-        "Title": "##",
-        "Date of Operation": "##",
-        "Scope of Agreement": "##",
-        "Relationship to Other Industrial Instruments": "##",
-        "Posting of the Agreement": "##",
-        "Variation of Agreement": "##",
-        "Negotiation of Further Agreements": "##",
-        "Definitions": "##",
-        "Consultation and Cooperation": "##",
-        "Confidentiality": "##",
-        "Consultation regarding Change": "##",
-        "Grievance and Dispute Resolution": "##",
-        "Managing Performance and Conduct": "##",
-        "Flexibility Arrangements": "##",
-        "Anti-Discrimination, Bullying and Harassment": "##",
-        "Diversity": "##",
-        "Employment Categories and Contract of Employment": "##",
-        "Full Time Employees": "##",
-        "Part Time Employees": "##",
-        "Casual Employees": "##",
-        "Probationary Period": "##",
-        "Duties": "##",
-        "Location of Hospital": "##",
-        "Request for Transfer": "##",
-        "Termination of Employment": "##",
-        "Redundancy and Redeployment": "##",
-        "Transmission of Business": "##",
-        "Portability of Entitlements": "##",
-        "Professional Development, Training and Careers": "##",
-        "Uniforms": "##",
-        "Amenities": "##",
-        "Ordinary Hours": "##",
-        "Working a 38 hour week / Accruing Days Off": "##",
-        "Overtime (Authorised)": "##",
-        "On-call and Recall": "##",
-        "Rosters": "##",
-        "Meal Hours and Rest Breaks": "##",
-        "Banking of Ordinary Hours": "##",
-        "Payment of Wages": "##",
-        "Payment on Termination": "##",
-        "Overpayment of Salaries": "##",
-        "Underpayment of Salaries": "##",
-        "Classifications and Progression Through Pay Points": "##",
-        "Recognition of Previous Service and Experience": "##",
-        "Time Not Worked": "##",
-        "Higher Duties": "##",
-        "Penalty Rates": "##",
-        "Allowances": "##",
-        "Superannuation": "##",
-        "Salary Packaging": "##",
-        "Annual Leave": "##",
-        "Personal/Carer\u2019s Leave": "##",
-        "Public Holidays": "##",
-        "Parental Leave": "##",
-        "Compassionate Leave": "##",
-        "Community Service Leave": "##",
-        "Long Service Leave": "##",
-        "Study Leave": "##",
-        "Professional Development Leave": "##",
-        "Representative Leave / Trade Union Training Leave": "##",
-        "Family Violence Leave": "##",
-        "Leave Without Pay": "##",
-        "Pandemic Leave": "##",
-        "Schedules": "#",
-        "Appendices": "#",
-        "Time and Wages Record": "##",
-        "Daylight Savings": "##",
-        "Staffing, Workload Management and Demand Escalation": "##",
-        "Employer Direction to Take Annual Leave \u2013 Close Down": "##",
-        "Paid or Unpaid Leave Due to Low Occupancy or Cancellations": "##",
-        "Occupational Health and Safety": "##",
-        "Union involvement": "##",
-        "Agreement Implementation Committee": "##",
-        "Union Delegates": "##",
-        "Hospitals to be covered by Agreement": "##",
-        "Classification Definitions and Grades": "##",
-        "Advanced Enrolled Nurse Criteria": "##",
-        "Clinical Nurse Specialist Criteria": "##",
-        "Wage Rates and Timetables for Increases": "##",
-        "Allowances and Timetables for Increases": "##",
-        "Declared Full Time Shifts Lengths": "##"
+        "Chapter": "##",
+        "Part": "###",
+        "Division": "####",
+        "Guide to Division": "#####",
+        "Subdivision": "#####",
+        "Rules for policy holders": "#####",
+        "Rules for demutualising health insurer": "#####",
+        "Rules for other entities": "#####",
+        "Guide to Subdivision": "#####",
+        "Gains and losses of members, insured entities and successors": "#####",
+        "Friendly society\u2019s gains and losses": "#####",
+        "Other entities\u2019 gains and losses": "#####",
+        "Effects of CGT events happening to interests and assets in trust": "#####",
+        "Operative provisions": "#####",
+        "What is included in a life insurance company\u2019s assessable income": "#####",
+        "Deductions and capital losses": "#####",
+        "Income tax, taxable income and tax loss of life insurance companies": "#####",
+        "General rules": "#####",
+        "Taxable income and tax loss of life insurance companies": "#####",
+        "Special rules about roll-overs": "#####",
+        "Object of this Subdivision": "#####",
+        "Requirements for a roll-over under this Subdivision": "#####",
+        "Consequences of a roll-over under this Subdivision": "#####",
+        "Object": "#####",
+        "Meaning of R&D activities and other terms": "#####",
+        "Entitlement to tax offset": "#####",
+        "Notional deductions for R&D expenditure": "#####",
+        "Notional deductions etc. for decline in value of depreciating assets used for R&D activities": "#####",
+        "Integrity Rules": "#####",
+        "Clawback of R&D recoupments, feedstock adjustments and balancing adjustments": "#####",
+        "Catch up deductions for balancing adjustment events for assets used for R&D activities": "#####",
+        "Application to earlier income year R&D expenditure incurred to associates": "#####",
+        "Application to R&D partnerships": "#####",
+        "Application to Cooperative Research Centres": "#####",
+        "Other matters": "#####",
+        "Tax incentives for early stage investors in innovation companies": "#####",
+        "Films generally (tax offsets for Australian production expenditure)": "####",
+        "Tax offsets for Australian expenditure in making a film": "#####",
+        "Refundable tax offset for Australian expenditure in making a film (location offset)": "#####",
+        "Refundable tax offset for post, digital and visual effects production for a film (PDV offset)": "#####",
+        "Refundable tax offset for Australian expenditure in making an Australian film (producer offset)": "#####",
+        "Production expenditure and qualifying Australian production expenditure": "#####",
+        "Production expenditure\u2014common rules": "#####",
+        "Production expenditure\u2014special rules for the location offset": "#####",
+        "Qualifying Australian production expenditure\u2014common rules": "#####",
+        "Qualifying Australian production expenditure\u2014special rules for the location offset and the PDV offset": "#####",
+        "Qualifying Australian production expenditure\u2014special rules for the producer offset": "#####",
+        "Expenditure generally\u2014common rules": "#####",
+        "Certificates for films and other matters": "#####",
+        "Digital games (tax offset for Australian expenditure on digital games)": "####",
+        "NRAS certificates issued to individuals, corporate tax entities and superannuation funds": "#####",
+        "NRAS certificates issued to NRAS approved participants": "#####",
+        "NRAS certificates issued to partnerships and trustees": "#####",
+        "Miscellaneous": "#####",
+        "Tax offset or extra income tax": "#####",
+        "How to work out the comparison rate": "#####",
+        "Your gross averaging amount": "#####",
+        "Your averaging adjustment": "#####",
+        "How to work out your averaging component": "#####",
+        "Uplift of tax losses": "#####",
+        "Change of ownership of trusts and companies": "#####",
+        "Consolidated groups": "#####",
+        "Designating infrastructure projects": "#####",
+        "Infrastructure project capital expenditure cap": "#####",
+        "Entitlement to junior minerals exploration incentive tax offset": "#####",
+        "Amount of junior minerals exploration incentive tax offset": "#####"
     }
     top_level = min(toc_hierarchy_schema.values(), key=lambda x: x.count('#'))
     top_level_count = top_level.count('#')
