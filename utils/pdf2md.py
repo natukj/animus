@@ -78,15 +78,7 @@ def to_markdown(doc: fitz.Document, pages: list = None) -> str:
             return text
 
     def write_text(page, clip, hdr_prefix):
-        """Output the text found inside the given clip.
-
-        This is an alternative for plain text in that it outputs
-        text enriched with markdown styling.
-        The logic is capable of recognizing headers, body text, code blocks,
-        inline code, bold, italic and bold-italic styling.
-        There is also some effort for list supported (ordered / unordered) in
-        that typical characters are replaced by respective markdown characters.
-        """
+        """Output the text found inside the given clip."""
         out_string = ""
         code = False  # mode indicator: outputting code
 
@@ -126,71 +118,131 @@ def to_markdown(doc: fitz.Document, pages: list = None) -> str:
                         out_string += "\n"
 
                 if all_mono:
-                    # compute approx. distance from left - assuming a width
-                    # of 0.5*fontsize.
-                    delta = int(
-                        (spans[0]["bbox"][0] - block["bbox"][0])
-                        / (spans[0]["size"] * 0.5)
-                    )
-                    if not code:  # if not already in code output  mode:
-                        out_string += "```"  # switch on "code" mode
+                    if not code:
+                        out_string += "```\n"
                         code = True
-                    if not same_line:  # new code line with left indentation
-                        out_string += "\n" + " " * delta + text + " "
-                        previous_y = this_y
-                    else:  # same line, simply append
-                        out_string += text + " "
-                    continue  # done with this line
+                    out_string += text
+                    continue
 
-                for i, s in enumerate(spans):  # iterate spans of the line
-                    # this line is not all-mono, so switch off "code" mode
-                    if code:  # still in code output mode?
-                        out_string += "```\n"  # switch of code mode
-                        code = False
-                    # decode font properties
+                bold_text = ""
+                italic_text = ""
+                for i, s in enumerate(spans):  
+                    if code:
+                        if s["text"].endswith("```"):  # switch off code mode
+                            code = False
+                            out_string = out_string[:-3] + f"{s['text']}\n"
+                        else:
+                            out_string += s["text"]
+                        continue
+
                     mono = s["flags"] & 8
                     bold = s["flags"] & 16
                     italic = s["flags"] & 2
 
                     if mono:
-                        # this is text in some monospaced font
-                        out_string += f"`{s['text'].strip()}` "
-                    else:  # not a mono text
-                        # for first span, get header prefix string if present
+                        out_string += s["text"]
+                    else: 
                         if i == 0:
                             hdr_string = hdr_prefix.get_header_id(s)
                         else:
                             hdr_string = ""
-                        prefix = ""
-                        suffix = ""
-                        if hdr_string == "":
-                            if bold:
-                                prefix = "**"
-                                suffix += "**"
-                            if italic:
-                                prefix += "_"
-                                suffix = "_" + suffix
 
-                        ltext = resolve_links(links, s)
-                        if ltext:
-                            text = f"{hdr_string}{prefix}{ltext}{suffix} "
+                        # handle bold and italic text accumulation
+                        if bold and italic:
+                            if bold_text:
+                                ltext = resolve_links(links, {'text': bold_text, 'bbox': s['bbox']})
+                                if ltext:
+                                    out_string += f"{hdr_string}**{ltext}**"
+                                else:
+                                    out_string += f"{hdr_string}**{bold_text}**"
+                                bold_text = ""
+                            if italic_text:
+                                ltext = resolve_links(links, {'text': italic_text, 'bbox': s['bbox']})
+                                if ltext:
+                                    out_string += f"_{ltext}_"
+                                else:
+                                    out_string += f"_{italic_text}_"
+                                italic_text = ""
+                            bold_text += s['text']
+                            italic_text += s['text'] 
+                        elif bold:
+                            if italic_text:
+                                ltext = resolve_links(links, {'text': italic_text, 'bbox': s['bbox']})
+                                if ltext:
+                                    out_string += f"_{ltext}_"
+                                else:
+                                    out_string += f"_{italic_text}_"
+                                italic_text = ""
+                            bold_text += s['text']
+                        elif italic:
+                            if bold_text:
+                                ltext = resolve_links(links, {'text': bold_text, 'bbox': s['bbox']})
+                                if ltext:
+                                    out_string += f"{hdr_string}**{ltext}**"
+                                else:
+                                    out_string += f"{hdr_string}**{bold_text}**"
+                                bold_text = ""
+                            italic_text += s['text']
                         else:
-                            text = f"{hdr_string}{prefix}{s['text'].strip()}{suffix} "
-                        text = (
-                            text.replace("<", "&lt;")
+                            # if previous text was bold or italic, apply formatting
+                            if bold_text:
+                                ltext = resolve_links(links, {'text': bold_text, 'bbox': s['bbox']})
+                                if ltext:
+                                    out_string += f"{hdr_string}**{ltext}**"
+                                else:
+                                    out_string += f"{hdr_string}**{bold_text}**"
+                                bold_text = "" 
+                            if italic_text:
+                                ltext = resolve_links(links, {'text': italic_text, 'bbox': s['bbox']})
+                                if ltext:
+                                    out_string += f"_{ltext}_"
+                                else:
+                                    out_string += f"_{italic_text}_"
+                                italic_text = ""
+
+                            # handle regular text
+                            ltext = resolve_links(links, s) 
+                            if ltext:
+                                out_string += f"{hdr_string}{ltext} "
+                            else:
+                                out_string += f"{hdr_string}{s['text'].strip()} "
+
+                        # handle replacements for Markdown
+                        out_string = (
+                            out_string.replace("<", "&lt;")
                             .replace(">", "&gt;")
                             .replace(chr(0xF0B7), "-")
                             .replace(chr(0xB7), "-")
                             .replace(chr(8226), "-")
                             .replace(chr(9679), "-")
-                        )
-                        out_string += text
+                            .replace(r".) ", ".) ")
+                            .replace(" ;", ";")
+                            .replace(" :", ":")
+                            .replace("( ", "(")
+                            .replace(" )", ")")
+                        ) 
+                # check if bold or italic segments are pending at the end of the line
+                if bold_text:
+                    ltext = resolve_links(links, {'text': bold_text, 'bbox': s['bbox']})
+                    if ltext:
+                        out_string += f"**{ltext}**"
+                    else:
+                        out_string += f"**{bold_text}**"
+                    bold_text = "" 
+                if italic_text:
+                    ltext = resolve_links(links, {'text': italic_text, 'bbox': s['bbox']})
+                    if ltext:
+                        out_string += f"_{ltext}_"
+                    else:
+                        out_string += f"_{italic_text}_"
+                    italic_text = ""
+
                 previous_y = this_y
                 if not code:
                     out_string += "\n"
             out_string += "\n"
         if code:
-            out_string += "```\n"  # switch of code mode
+            out_string += "```\n"  
             code = False
         return out_string.replace(" \n", "\n")
 

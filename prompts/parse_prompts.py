@@ -42,18 +42,18 @@ Please create a JSON dictionary that maps each unique hierarchical section type 
 
 {toc_md_string}
 """
-TOC_HIERARCHY_USER_PROMPT_NOMD= """Please create a structured JSON object from the Table of Contents (ToC) I will provide, as an image and in Markdown format. Each line in the ToC will be seperated by a '\\n' character. You must return each section and item from the ToC and map it to it's appropriate level of hierarchy. It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes.
+TOC_HIERARCHY_USER_PROMPT_VISION = """Please create a structured JSON object from a Table of Contents (ToC) page(s). I will provide the page(s) as an image(s) and in Markdown format. Each line in the ToC Markdown will be seperated by a '\\n' character. You must return each section and item from the ToC and map it to it's appropriate level of hierarchy. It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes.
 
 ## INSTRUCTIONS
    - The JSON object must map each unique hierarchical section or item to a corresponding number of '#' characters used to denote its level in the ToC. The sections and items must be verbatim from the ToC markdown text. 
    - The Markdown text may not have the '#' characters, so you must infer the hierarchy based on the formatting and enumerations, markdown formatting, and pattern of the section types. For example, the top level section level might be indicated by '**' or capitalization. Sections with the same formatting are at the same level. Items in the ToC should be mapped to highest level of hierarchy.
    - You must include ALL unique sections and items from the ToC, even if they are not repeated or don't have any formatting, WITHOUT any associated numbering.
-   - For repeated section types, include the base type only once (e.g., 'Part N <title>', 'Schedule N <title>' or 'Appendix N <title>' should be mapped to 'Part', 'Schedule' and 'Appendix', respectively). Do NOT include the section titles.
+   - For section types that are most likely repeated, include the base type only once (e.g., 'Part N <title>', 'Chapter N <title>' or 'Appendix N <title>' should be mapped to 'Part', 'Chapter' and 'Appendix', respectively). Do NOT include the section titles.
    - Exclude 'Contents' or 'Table of Contents', 'Arrangment of Agreement', 'Clause No.', 'Page No.' or any ToC heading as they are not part of the hierarchy.
    - Assume that the beginning of the ToC will be an item enumerated with '1' or 'I', e.g. 'Part 1' or 'Chapter 1', and this is the top level of the hierarchy (nothing before this is part of the ToC).
 
 
-Here is an example of the JSON structure you need to follow:
+{PROIR_SCHEMA_OR_TEMPLATE_STRING}
 
 {TOC_HIERARCHY_SCHEMA_TEMPLATE}
 
@@ -64,13 +64,13 @@ Here is an example of the JSON structure you need to follow:
    - You MUST include all unique sections from the ToC, even if they are not repeated, WITHOUT any associated numbering.
    - The levels of hierarchy represented by varying numbers of '#' characters must be in incriements of 1 (e.g., '#', '##', '###', etc.), however, there can be multiple section types at the same level.
 
-EVERY SINGLE unique section base types and items in the ToC MUST be included VERBATIM from the text (including capitalization) in the JSON object. Do NOT include section titles, only the base types. Do NOT include anything that is not part of the ToC - all ToC sections and items are most likely associated with a number or enumeration and must be the only entries in the JSON object.
+EVERY SINGLE unique section base types and items in the ToC MUST be included VERBATIM from the text in the JSON object. Do NOT include section titles, only the base types. Do NOT include anything that is not part of the ToC - all ToC sections and items are most likely associated with a number or enumeration and must be the only entries in the JSON object.
 
 Please create a JSON dictionary that maps each unique hierarchical section and item to a corresponding number of '#' characters, based on its hierarchy, from the following ToC Markdown string:
 
 {toc_md_string}
 """
-TOC_HIERARCHY_USER_PROMPT_NOMD_OG = """Please create a structured JSON object from the Table of Contents (ToC) I will provide, in Markdown format. Each line in the ToC will be seperated by a '\\n' character. You must return each section and item from the ToC and map it to it's appropriate level of hierarchy. It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes.
+TOC_HIERARCHY_USER_PROMPT_NOMD = """Please create a structured JSON object from the Table of Contents (ToC) I will provide, in Markdown format. Each line in the ToC will be seperated by a '\\n' character. You must return each section and item from the ToC and map it to it's appropriate level of hierarchy. It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes.
 
 ## INSTRUCTIONS
    - The JSON object must map each unique hierarchical section or item to a corresponding number of '#' characters used to denote its level in the ToC. The sections and items must be verbatim from the ToC markdown text. 
