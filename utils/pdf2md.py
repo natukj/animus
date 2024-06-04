@@ -205,6 +205,8 @@ def to_markdown(doc: fitz.Document, pages: list = None) -> str:
                             if ltext:
                                 out_string += f"{hdr_string}{ltext} "
                             else:
+                                if s['text'].strip() == "":
+                                    continue
                                 out_string += f"{hdr_string}{s['text'].strip()} "
 
                         # handle replacements for Markdown

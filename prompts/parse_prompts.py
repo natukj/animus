@@ -4,8 +4,6 @@ TOC_HIERARCHY_SCHEMA_TEMPLATE = {
     "<Level 2 Section Type>": "##",
     "<Level 3 Section Type>": "###",
     "<Level 4 Section Type>": "####",
-    "<Level 5 Section Type>": "#####",
-    "<Level 6 Section Type>": "######",
     # Add more levels as needed
 }
 TOC_HIERARCHY_USER_PROMPT = """You are tasked with creating a JSON dictionary that maps each unique hierarchical section type to the corresponding number of '#' characters used to denote its level in the Table of Contents (ToC). You will be given a Markdown string ToC and you must return a structured JSON object according to the following instructions:
@@ -42,85 +40,179 @@ Please create a JSON dictionary that maps each unique hierarchical section type 
 
 {toc_md_string}
 """
-TOC_HIERARCHY_USER_PROMPT_V1SION = """I will provide you with the first 2 pages of a Table of Contents (ToC) in both Markdown format and as images. You need to create a JSON object that maps each hierarchical section type and item to a corresponding number of '#' characters used to denote its level in the ToC. It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes.
+TOC_HIERARCHY_USER_PROMPT_V1SION_PR3 = """I will provide you with the first 2 pages of a Table of Contents (ToC) in both Markdown format and as images. I need you to determine how many levels of section hierarchy are present in the ToC based on the markdown and visual formatting. I need you to return this determination as a JSON object, following this structure:
 
-## MARKDOWN FORMATTING
+      {{
+            "<Level 1 Section Type>": {{
+                  "level": "#",
+                  "description": "(string, description of the section type)",
+                  "lines": "(array of strings, ALL verbatim level 1 section lines from the ToC including any enumerations and Markdown formatting)"
+            }},
+            "<Level 2 Section Type>": {{
+                  "level": "##",
+                  "description": "(string, description of the section type)",
+                  "lines": "(array of strings, ALL verbatim level 2 section lines from the ToC including any enumerations and Markdown formatting)"
+            }},
+            "<Level 3 Section Type>": {{
+                  "level": "###",
+                  "description": "(string, description of the section type)",
+                  "lines": "(array of strings, ALL verbatim level 3 section lines from the ToC including any enumerations and Markdown formatting)"
+            }}
+            # Add more levels as needed
+      }}
+
+## INSTRUCTIONS
+   - The JSON object must be extremely descriptive, as you will be using it to determine the hierarchy levels present in the rest of the ToC. Assume that the beginning of the ToC will be an section enumerated with '1' or 'I', e.g. 'Part 1' or 'Chapter 1', and this is the top level of the hierarchy (nothing before this is part of the ToC).
+   - Each line in the ToC Markdown will be seperated by a '\\n' character, each section line should only be one line. However, if you think it is necessary to include more than one line, please do so, but you must add this in the description.
+   - Only sections are to be added to the JSON object, not items. The lowest level of hierarchy should (i.e., the most number of '#' characters) must be the section that contains the items in the ToC. Please include this in the description of the section type.
+   - If there are no items below the lowest level of hierarchy, then you have added too many levels of hierarchy.
+
+Please format the JSON object as described above, based on the hierarchy levels present in the ToC, here is the Markdown string of the ToC:
+
+{toc_md_string}
+"""
+TOC_HIERARCHY_USER_PROMPT_V1SION_PR32 = """I will provide you with 2 pages of a Table of Contents (ToC) in both Markdown format and as images. I need you to determine how many of each level of section hierarchy are present in the ToC based on the markdown and visual formatting. I need you to return this determination as a JSON object, following this structure:
+
+      {{
+            "#": {{
+                  "lines": "(array of strings, verbatim level 1 section lines from the ToC including any enumerations and Markdown formatting)"
+            }},
+            "##": {{
+                  "lines": "(array of strings, verbatim level 2 section lines from the ToC including any enumerations and Markdown formatting)"
+            }},
+            "###": {{
+                  "lines": "(array of strings, verbatim level 3 section lines from the ToC including any enumerations and Markdown formatting)"
+            }}
+      }}
+
+{guide_str}
+
+## INSTRUCTIONS
+   - Strictly follow the above guide and examples closely to determine the hierarchy levels present in the ToC pages provided.
+   - You can NOT add higher levels of hierarchy than shown above (e.g., if the highest level is '###', you can not add '####').
+   - Make sure you include ALL section lines from the ToC, at the appropriate level of hierarchy, in the JSON object.
+   - Each line in the ToC Markdown will be seperated by a '\\n' character, each section line should only be one line.
+   - Only sections are to be added to the JSON object, not items. 
+   - If there are no items below the lowest level of hierarchy, then you have added too many levels of hierarchy.
+
+Please format the JSON object as described above, based on the hierarchy levels present in the ToC, here is the Markdown string of the ToC:
+
+{toc_md_string}
+"""
+TOC_HIERARCHY_USER_PROMPT_V1SION_PRE = """I will provide you with the first 2 pages of a Table of Contents (ToC) in both Markdown format and as images. I need you to determine how many levels of section hierarchy are present in the ToC based on the markdown and visual formatting. I need you to return this determination as a JSON object, following this structure:
+
+      {{
+            "<Level 1 Section Type>": {{
+                  "level": "#",
+                  "description": "(string, description of the section type)",
+                  "example": "(string, verbatin example(s) of the section from the ToC including any enumerations and Markdown formatting)"
+            }},
+            "<Level 2 Section Type>": {{
+                  "level": "##",
+                  "description": "(string, description of the section type)",
+                  "example": "(string, verbatin example(s) of the section from the ToC including any enumerations and Markdown formatting)"
+            }},
+            "<Level 3 Section Type>": {{
+                  "level": "###",
+                  "description": "(string, description of the section type)",
+                  "example": "(string, verbatin example(s) of the section from the ToC including any enumerations and Markdown formatting)"
+            }}
+            # Add more levels as needed
+      }}
+
+## INSTRUCTIONS
+   - The JSON object must be extremely descriptive, as you will be using it to determine the hierarchy levels present in the rest of the ToC. Assume that the beginning of the ToC will be an section enumerated with '1' or 'I', e.g. 'Part 1' or 'Chapter 1', and this is the top level of the hierarchy (nothing before this is part of the ToC).
+   - Each line in the ToC Markdown will be seperated by a '\\n' character, each section example should only be one line. However, if you think it is necessary to include more than one line, please do so, but you must add this in the description.
+   - Only sections are to be added to the JSON object, not items. The lowest level of hierarchy should (i.e., the most number of '#' characters) must be the section that contains the items in the ToC. Please include this in the description of the section type.
+   - If there are no items below the lowest level of hierarchy, then you have added too many levels of hierarchy.
+
+Please format the JSON object as described above, based on the hierarchy levels present in the ToC, here is the Markdown string of the ToC:
+
+{toc_md_string}
+"""
+TOC_HIERARCHY_USER_PROMPT_V1SION = """I will provide you with the first 2 pages of a Table of Contents (ToC) in both Markdown format and as images. You need to create a JSON object that maps each hierarchical section type to a corresponding number of '#' characters used to denote its level in the ToC. 
+
+{guide_str}
+
+## INSTRUCTIONS
+   - First, determine how many levels of hierarchy are present in the ToC based on the different markdown and visual formatting. 
+   - Use your intuition, the markdown text, and the images to determine the hierarchy levels, for example, common section types like 'Part' or 'Chapter' are likely to be at highers levels than standalone sections.
+   - Once you have determined the hierarchy levels present, use the Markdown text and visual formatting to map each section type to the corresponding number of '#' characters.
+   - Pay very close attention to the formatting in the Markdown text and images to ensure the hierarchy levels are accurate. You must NOT add any additional levels of hierarchy that are not present in the ToC - less is more - keep the JSON object minimal and accurate.
+   - The lowest level of hierarchy should (i.e., the most number of '#' characters) must be the section that contains the items in the ToC.
+   - You have only been given the first 2 pages, do not assume the last section you see is the last level of hierarchy - use your intuition and the formatting to map it correctly. It is important to be as accurate as possible.
+
+## MARKDOWN FORMATTING GUIDE
    - The Markdown text may not have the '#' characters, so you must infer the hierarchy based on the formatting and enumerations, markdown formatting, and pattern of the section types.
+   - Sections with the same formatting are most likely at the same level (e.g., a prefix of '**' or '_', Capitalization, etc.) unless it is clear that one is a subsection or child of the other.
    - The enumeration of the section types is an indication of the hierarchy level. If a section type enumeration begins at '1' after a different section type, it is most likely a child of that section type.
-   - Each line in the ToC Markdown will be seperated by a '\\n' character. You must return each section type and item from the ToC and map it to it's appropriate level of hierarchy.
+   - Each line in the ToC Markdown will be seperated by a '\\n' character. You must return each section type from the ToC and map it to it's appropriate level of hierarchy.
 
-## IMAGES
+## IMAGE GUIDE
    - The images will help you determine the hierarchy based on section placement and formatting.
    - The images will be provided in the order of the Markdown text, so you can match the images to the corresponding Markdown text.
-   - Sections and items with the same visual formatting are at the same level.
-
-## GENERAL INSTRUCTIONS
-   - First, use your intuition, the markdown text and the images to determine the hierarchy levels, for example, common section types like 'Part' or 'Chapter' are likely to be at highers levels than standalone sections or items.
-   - Once you have determined the hierarchy levels present, use the Markdown text formatting and enumerations to map each section type and item to the corresponding number of '#' characters.
+   - Sections with the same visual formatting are most likely at the same level and shoul be mapped to the same number of '#' characters.
 
 ## RULES
-   - The JSON object must map each unique hierarchical section type and each item to a corresponding number of '#' characters used to denote its level in the ToC. The sections and items must be verbatim from the ToC markdown text. 
-   - You must include ALL unique sections and ALL items from the ToC, even if they are not repeated or don't have any formatting, WITHOUT any associated numbering.
+   - The JSON object must map each unique hierarchical section type to a corresponding number of '#' characters used to denote its level in the ToC. The sections must be verbatim from the ToC markdown text. 
+   - You must include ALL unique sections from the ToC, even if they are not repeated or don't have any formatting, WITHOUT any associated numbering.
+   - Sections that have the same formatting in the Markdown and images MUST be at the same level in the hierarchy. Use the images to verify the hierarchy levels and ensure the JSON object is accurate.
    - For section types that are most likely repeated, include the base type only once (e.g., 'Part N <title>', 'Chapter N <title>' or 'Appendix N <title>' should be mapped to 'Part', 'Chapter' and 'Appendix', respectively). Do NOT include the section titles.
    - Exclude 'Contents' or 'Table of Contents', 'Arrangment of Agreement', 'Clause No.', 'Page No.' or any ToC heading as they are not part of the hierarchy.
-   - Assume that the beginning of the ToC will be an item enumerated with '1' or 'I', e.g. 'Part 1' or 'Chapter 1', and this is the top level of the hierarchy (nothing before this is part of the ToC).
-
+   - Assume that the beginning of the ToC will be an section enumerated with '1' or 'I', e.g. 'Part 1' or 'Chapter 1', and this is the top level of the hierarchy (nothing before this is part of the ToC).
+   - The lowest level of hierarchy should (i.e., the most number of '#' characters) must be the section that contains the items in the ToC.
 
 Here is an example of the JSON structure you need to follow:
 
 {TOC_HIERARCHY_SCHEMA_TEMPLATE}
 
 ## IMPORTANT NOTES
-   - There should be NO associated numbering in the section types or items - unless the numbering is not an enumeration.
-   - Each entry in the JSON object MUST be a section type or item from the ToC.
-   - Each entry in the JSON object MUST be verbatim from the ToC markdown text.
-   - You MUST include all section types and items from the ToC, WITHOUT any associated numbering.
+   - There should be NO associated numbering in the section types - unless the numbering is not an enumeration.
+   - Do NOT include the items in the JSON object, only the base section types and sections.
+   - You MUST include all sections and section types from the ToC, WITHOUT any associated numbering.
    - The levels of hierarchy represented by varying numbers of '#' characters must be in incriements of 1 (e.g., '#', '##', '###', etc.), however, there can be multiple section types at the same level.
 
-EVERY SINGLE unique section base type and EVERY SINGLE item in the ToC MUST be included VERBATIM from the text in the JSON object. Do NOT include section titles, only the base types. Do NOT include anything that is not part of the ToC - all ToC sections and items are most likely associated with a number or enumeration and must be the only entries in the JSON object. Use your intuition and the images to determine the hierarchy levels, for example, common section types like 'Part' or 'Chapter' are likely to be at highers levels than standalone sections or items.
+Use your intuition and the images to determine the hierarchy levels, for example, common section types like 'Part' or 'Chapter' are likely to be at highers levels than standalone sections. The levels of hierarchy represented by varying numbers of '#' characters MUST be consistent with the Markdown and visual formatting - THIS IS EXTREMELY IMPORTANT - there can be no mistakes.
 
-Please create a JSON object that maps each hierarchical section and item to a corresponding number of '#' characters, based on its hierarchy, from the following ToC Markdown string:
+Note, you have only been given the first 2 pages, do not assume the last section you see is the last level of hierarchy - use your intuition and the formatting to map it correctly.
+
+Please create a JSON object that maps each hierarchical section to a corresponding number of '#' characters, based on its hierarchy, from the following ToC Markdown string:
 
 {toc_md_string}
 """
-TOC_HIERARCHY_USER_PROMPT_VISION = """I will provide you with a Table of Contents (ToC) page in both Markdown formatting and as an image. You need to create a JSON object that maps each hierarchical section type and item to a corresponding number of '#' characters used to denote its level in the ToC. It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes.
+TOC_HIERARCHY_USER_PROMPT_VISION = """I will provide you with 2 Table of Contents (ToC) pages in both Markdown formatting and as an image. You need to create a JSON object that maps each hierarchical section type to a corresponding number of '#' characters used to denote its level in the ToC. It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes.
 
-## MARKDOWN FORMAT INSTRUCTIONS
+## INSTRUCTIONS
+   - You must return each section type from the ToC and map it to it's appropriate level of hierarchy. For example:
+
+      {TOC_HIERARCHY_SCHEMA_TEMPLATE}
+
+   - The above JSON object followed the mapping guide below to determine levels of hierarchy based on the different markdown formatting:
+
+      {unique_schema_str}
+
+   - The above mapping guide gives you the a section line in the ToC Markdown followed by a '->' and how it should be mapped to the JSON object.
+   - Pay very close attention to the formatting in the Markdown text and images to ensure the hierarchy levels are accurate. You must NOT add any additional levels of hierarchy that are not present in the ToC - less is more.
+   - Sections with the same formatting in the Markdown but different hierarchy levels (i.e., different numbers of '#' characters) are most likely due to the number of parent sections. 
+   - There should not be any standalone sections in the JSON object that have the same level of hierarchy as a main, repeated section type (e.g., 'Part', 'Chapter', 'Schedule', 'Appendix', etc.).
+
+## MARKDOWN FORMATTING
    - The Markdown text may not have the '#' characters, so you must infer the hierarchy based on the formatting and enumerations, markdown formatting, and pattern of the section types.
-   - Sections and items with the same formatting are at the same level (e.g., a prefix of '**' or '_', Capitalization, etc.) UNLESS it is clear that one is a subsection or child of the other.
-   - Sections and items with the same level of enumeration are at the same level, e.g., '1' and '13' or '2.1' and '11.2'.
-   - Each line in the ToC Markdown will be seperated by a '\\n' character. You must return each section type and item from the ToC and map it to it's appropriate level of hierarchy.
-
-   Here is the hierarchy formatting mapping you must follow:
-
-   {unique_schema_str}
-
-   The hierarchy mapping must be followed exactly as shown above. The resulting JSON object must follow this mapping and be structured as shown in the example below:
-
-   {TOC_HIERARCHY_SCHEMA_TEMPLATE}
-
-   Use this as a template and guide for hierarchy levels and the number of '#' characters to apply to the different formatting in the ToC. You have been given page {page_num} from the ToC so do NOT assume the hierarchy based on the position in the Markdown. Follow the formatting given above extremely closely.
+   - Sections with the same formatting are at the same level (e.g., a prefix of '**' or '_', Capitalization, etc.) UNLESS it is clear that one is a subsection or child of the other.
+   - Each line in the ToC Markdown will be seperated by a '\\n' character. You must return each section type from the ToC and map it to it's appropriate level of hierarchy.
 
 ## IMAGE INSTRUCTIONS
    - The images will help you determine the hierarchy based on section placement and formatting.
-   - Sections and items with the same visual formatting are at the same level.
+   - Sections with the same visual formatting are most likely at the same level.
 
-## INSTRUCTIONS
-   - The JSON object must map each unique hierarchical section type and each item to a corresponding number of '#' characters used to denote its level in the ToC. The sections and items must be verbatim from the ToC markdown text. 
-   - You must include ALL unique sections and ALL items from the ToC, WITHOUT any associated numbering.
-   - For section types that are most likely repeated, include the base type only once (e.g., 'Part N <title>', 'Chapter N <title>' or 'Appendix N <title>' should be mapped to 'Part', 'Chapter' and 'Appendix', respectively). Do NOT include the section titles.
-   - Exclude 'Contents' or 'Table of Contents', 'Arrangment of Agreement', 'Clause No.', 'Page No.' or any ToC heading as they are not part of the hierarchy.
+## RULES
+   - You must include ALL unique sections from the ToC, WITHOUT any associated numbering.
+   - Do NOT include the items in the JSON object, only the section types.
+   - For section types that are most likely repeated, include the base type only once (e.g., 'Part N <title>', 'Chapter N <title>', 'Schedule N <title>', or 'Appendix N <title>' should be mapped to 'Part', 'Chapter', 'Schedule' and 'Appendix', respectively). Do NOT include the section titles.
+   - You can NOT add higher levels of hierarchy than shown above (e.g., if the highest level is '####', you can not add '#####').
+   - There should not be any standalone sections in the JSON object that have the same level of hierarchy as a main, repeated section type (e.g., 'Part', 'Chapter', 'Schedule', 'Appendix', etc.).
 
-## IMPORTANT NOTES
-   - There should be NO associated numbering in the section types or items - unless the numbering is not an enumeration.
-   - Each entry in the JSON object MUST be a section type or item from the ToC.
-   - Each entry in the JSON object MUST be verbatim from the ToC markdown text.
-   - You MUST include all section types and all items from the ToC, WITHOUT any associated numbering.
-   - The levels of hierarchy represented by varying numbers of '#' characters must be in incriements of 1 (e.g., '#', '##', '###', etc.), however, there can be multiple section types at the same level.
-
-EVERY SINGLE unique section base type and EVERY SINGLE item in the ToC MUST be included VERBATIM from the text in the JSON object. Do NOT include section titles, only the base types. Do NOT include anything that is not part of the ToC - all ToC sections and items are most likely associated with a number or enumeration and must be the only entries in the JSON object.
-
-Please create a JSON object that maps each hierarchical section and item to a corresponding number of '#' characters, based on its hierarchy, from the following ToC Markdown string:
+Please create a JSON object that maps each hierarchical section and to a corresponding number of '#' characters, based on its hierarchy, from the following ToC Markdown string:
 
 {toc_md_string}
 """

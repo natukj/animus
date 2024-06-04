@@ -18,116 +18,42 @@ def encode_page_as_base64(page: fitz.Page):
 
 
 pages = list(range(0, 59))
+# grouped_pages = pages[2::2]
+# if pages[-1] != grouped_pages[-1]:
+#     grouped_pages.append(pages[-1])
+# last_page = grouped_pages[-1]
+grouped_pages = [pages[i:i+2] for i in range(0, len(pages), 2)]
+# if len(grouped_pages[-1]) < 2:
+#     grouped_pages[-1].append(grouped_pages[0])
 
+# for group in grouped_pages:
+#     print(group)
+
+# print(grouped_pages[0])
+# print(grouped_pages[0][0])
+# exit()
 doc = fitz.open("/Users/jamesqxd/Documents/norgai-docs/ACTS/ukCOMPANIESACT2006.pdf")
 # base_parser = BaseParser()
 # toc_md_section_joined_lines = base_parser.to_markdown(doc, pages)
 # with open("ztest_toc.md", "w") as f:
 #     f.write(toc_md_section_joined_lines)
 
-# prior_schema_og = {
-#     "Part": "#",
-#     "Chapter": "##",
-#     "General introductory provisions": "###",
-#     "Companies and Companies Acts": "####",
-#     "Companies": "#####",
-#     "The Companies Acts": "#####",
-#     "Types of company": "####",
-#     "Limited and unlimited companies": "#####",
-#     "Private and public companies": "#####",
-#     "Companies limited by guarantee and having share capital": "#####",
-#     "Community interest companies": "#####",
-#     "Company formation": "###",
-#     "General": "####",
-#     "Method of forming company": "#####",
-#     "Memorandum of association": "#####",
-#     "Requirements for registration": "####",
-#     "Registration documents": "#####",
-#     "Statement of capital and initial shareholdings": "#####",
-#     "Statement of guarantee": "#####",
-#     "Statement of proposed officers": "#####",
-#     "Statement of compliance": "#####",
-#     "Registration and its effect": "####",
-#     "Registration": "#####",
-#     "Issue of certificate of incorporation": "#####",
-#     "Effect of registration": "#####",
-#     "A company\u2019s constitution": "#####",
-#     "Introductory": "####",
-#     "Articles of association": "#####",
-#     "Power of Secretary of State to prescribe model articles": "#####",
-#     "Default application of model articles": "#####",
-#     "Alteration of articles": "####",
-#     "Amendment of articles": "#####",
-#     "Entrenched provisions of the articles": "#####",
-#     "Notice to registrar of existence of restriction on amendment of articles": "#####",
-#     "Statement of compliance where amendment of articles restricted": "#####",
-#     "Effect of alteration of articles on company\u2019s members": "#####",
-#     "Registrar to be sent copy of amended articles": "#####",
-#     "Registrar\u2019s notice to comply in case of failure with respect to amended articles": "#####",
-#     "Supplementary": "####",
-#     "Existing companies: provisions of memorandum treated as provisions of articles": "#####",
-#     "Resolutions and agreements affecting a company\u2019s constitution": "####",
-#     "Copies of resolutions or agreements to be forwarded to registrar": "####",
-#     "Miscellaneous and supplementary provisions": "###",
-#     "Statement of company\u2019s objects": "#####"
-# }
-# def create_unique_hierarchy(schema):
-#     result = {}
-#     levels = set()
-#     for key, value in schema.items():
-#         if value not in levels:
-#             result[key] = value
-#             levels.add(value)
-#     return result
-
-# unique_schema = create_unique_hierarchy(prior_schema)
-# print(json.dumps(unique_schema, indent=4))
-
-# base_parser = BaseParser()
-# toc_md_section_joined_lines = base_parser.to_markdown(doc, pages=[0, 1])
-# # with open("z12test_toc.md", "w") as f:
-# #     f.write(toc_md_section_joined_lines)
-
-# lines = toc_md_section_joined_lines.split("\n")
-# unique_schema_str = ""
-# for key, value in unique_schema.items():
-#     match = process.extractOne(key, [line for line in lines])[0]
-#     unique_schema_str += f"{match} -> {key}: {value}\n"
-# print(unique_schema_str)
-
 async def main_run():
     base_parser = BaseParser()
-    async def create_unique_hierarchy(schema: str):
-        result = {}
-        levels = {}
-        for key, value in schema.items():
-            if value not in levels:
-                levels[value] = 1
-                result[key] = value
-            elif levels[value] < 2:
-                levels[value] += 1
-                result[key] = value
-
-        return result
-        # result = {}
-        # levels = set()
-        # for key, value in schema.items():
-        #     if value not in levels:
-        #         result[key] = value
-        #         levels.add(value)
-        # return result
-    async def process_page(page_num: int, prior_schema: str = None):
+    async def process_page(page_nums: List[int], prior_schema: str = None, guide_flag: bool = False):
         nonlocal unique_schema_str
         nonlocal unique_schema
         if not prior_schema:
-            next_page_num = page_num + 1
-            next_page = doc[next_page_num]
-            toc_md_toc_section_str = base_parser.to_markdown(doc, [page_num, next_page_num])
-            USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_V1SION.format(TOC_HIERARCHY_SCHEMA_TEMPLATE=prompts.TOC_HIERARCHY_SCHEMA_TEMPLATE, toc_md_string=toc_md_toc_section_str)
+            toc_md_toc_section_str = base_parser.to_markdown(doc, page_nums)
+            if not guide_flag:
+                USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_V1SION_PRE.format(toc_md_string=toc_md_toc_section_str)
+            else:
+                USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_V1SION.format(TOC_HIERARCHY_SCHEMA_TEMPLATE=prompts.TOC_HIERARCHY_SCHEMA_TEMPLATE, toc_md_string=toc_md_toc_section_str)
         else:
-            toc_md_toc_section_str = base_parser.to_markdown(doc, [page_num])
-            USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_VISION.format(unique_schema_str=unique_schema_str, page_num=page_num, TOC_HIERARCHY_SCHEMA_TEMPLATE=unique_schema, toc_md_string=toc_md_toc_section_str)
-        page = doc[page_num]
+            unique_schema_dump = json.dumps(unique_schema, indent=2)
+            toc_md_toc_section_str = base_parser.to_markdown(doc, page_nums)
+            USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_VISION.format(unique_schema_str=unique_schema_str, TOC_HIERARCHY_SCHEMA_TEMPLATE=unique_schema_dump, toc_md_string=toc_md_toc_section_str)
+        page = doc[page_nums[0]]
         messages = [
             {
                 "role": "user",
@@ -142,16 +68,17 @@ async def main_run():
                 ]
             }
         ]
-        if not prior_schema:
-            next_page = doc[next_page_num]
-            messages[0]["content"].append(
-                {
-                    "type": "image_url",
-                    "image_url": {
-                        "url": f"data:image/jpeg;base64,{encode_page_as_base64(next_page)}",
-                    },
-                }
-            )
+        if len(page_nums) > 1:
+            for next_page_num in page_nums[1:]:
+                next_page = doc[next_page_num]
+                messages[0]["content"].append(
+                    {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": f"data:image/jpeg;base64,{encode_page_as_base64(next_page)}",
+                        },
+                    }
+                )
         while True:
             response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o")
             try:
@@ -160,7 +87,25 @@ async def main_run():
                 if not prior_schema:
                     ordered_items = sorted(toc_hierarchy_schema.items(), key=lambda x: x[1].count('#'))
                     ordered_dict = dict(ordered_items)
-                    utils.print_coloured(f"Schema {page_num}: {json.dumps(ordered_dict, indent=2)}", "yellow")
+                    utils.print_coloured(f"{json.dumps(ordered_dict, indent=2)}", "yellow")
+                else:
+                    highest_level_toc=max(toc_hierarchy_schema.values(), key=lambda x: x.count('#'))
+                    highest_level_toc_count = highest_level_toc.count('#')
+                    highest_level_temp=max(prior_schema.values(), key=lambda x: x.count('#'))
+                    highest_level_temp_count = highest_level_temp.count('#')
+                    if highest_level_toc_count > highest_level_temp_count:
+                        for key, value in toc_hierarchy_schema.items():
+                            level_count = value.count('#')
+                            if level_count > highest_level_temp_count:
+                                toc_hierarchy_schema[key] = value[:highest_level_temp_count]
+                                utils.print_coloured(f"changed {key} to {value[:highest_level_temp_count]}", "red")
+                        # utils.print_coloured(f"Schema {page_num}: {json.dumps(toc_hierarchy_schema, indent=2)}", "yellow")
+                        # additional_messages = [
+                        #     {"role": "assistant", "content": message_content},
+                        #     {"role": "user", "content": f"Please correct the schema. There should not be levels higher than {highest_level_temp} x '#'."}
+                        # ]
+                        # messages = messages + additional_messages   
+                        # continue
                 return toc_hierarchy_schema
             except json.JSONDecodeError as e:
                 print(f"JSONDecodeError: {e}")
@@ -172,18 +117,29 @@ async def main_run():
                 print("Retrying...")
                 continue
     #pages = [17]
-    prior_schema = await process_page(pages[0])
-    unique_schema = await create_unique_hierarchy(prior_schema)
+    schema_guide = await process_page(grouped_pages[0])
+    prior_schema = await process_page(grouped_pages[0])
+    #unique_schema = await create_unique_hierarchy(prior_schema)
+    unique_schema = prior_schema
     # prior_schema_items = sorted(prior_schema.items(), key=lambda x: x[1].count('#'))
     # unique_schema = dict(prior_schema_items)
-    toc_md_section_joined_lines = base_parser.to_markdown(doc, pages=[pages[0], pages[1]])
+    toc_md_section_joined_lines = base_parser.to_markdown(doc, pages=grouped_pages[0])
     lines = toc_md_section_joined_lines.split("\n")
     unique_schema_str = ""
     for key, value in unique_schema.items():
         match = process.extractOne(key, [line for line in lines])[0]
         unique_schema_str += f"{match} -> {key}: {value}\n"
     print(unique_schema_str)
-    toc_hierarchy_schemas = await asyncio.gather(*[process_page(page_num, prior_schema=prior_schema) for page_num in pages[2:5]])
+    for i in range(0, 11):
+        print(f"{10 - i} seconds left...")
+        await asyncio.sleep(1)
+    # toc_hierarchy_schemas = await asyncio.gather(*[process_page(page_num, prior_schema=prior_schema) for page_num in pages[2:]])
+    toc_hierarchy_schemas = await asyncio.gather(
+        *[
+            process_page(page_nums, prior_schema=prior_schema)
+            for page_nums in grouped_pages[1:]
+        ]
+    )
     #toc_hierarchy_schemas.append(prior_schema)
     combined_toc_hierarchy_schema = prior_schema
     for toc_hierarchy_schema in toc_hierarchy_schemas:
@@ -198,6 +154,8 @@ async def main_run():
     ordered_items = sorted(combined_toc_hierarchy_schema.items(), key=lambda x: x[1].count('#'))
     ordered_dict = dict(ordered_items)
     utils.print_coloured(f"{json.dumps(ordered_dict, indent=4)}", "green")
+    with open("toc_hierarchy_schema.json", "w") as f:
+        json.dump(ordered_dict, f, indent=2)
 
 
 

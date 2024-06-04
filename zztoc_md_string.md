@@ -1,35 +1,11 @@
 
-_Companies Act 2006 (c._ **_46_** _)_
-_Schedule 16 — Repeals_
-701
-
-_Short title and chapter_ _Extent of repeal or revocation_
-
-
-|Companies (Audit, Investigations and Community Enterprise) Act 2004 (c. 27) Civil Partnership Act 2004 (c. 33)|Sections 1 to 6. In Schedule 2, Part 1. In Schedule 27, paragraph 128.|
-|---|---|
-
-
-? Crown copyright 2006
-
-Printed in the UK by The Stationery O Y ce Limited
-under the authority and superintendence of Carol Tullo, Controller of
-Her Majesty’s Stationery O Y ce and Queen’s Printer of Acts of Parliament
-
-12/2006 352246 19585
-
-
-
------
-
-
 # Companies Act 2006
 
-### CHAPTER 46
+**CHAPTER 46**
 
 ## CONTENTS
 
-**P** **ART** **1**
+**PART 1**
 
 G ENERAL  INTRODUCTORY  PROVISIONS
 
@@ -45,7 +21,7 @@ _Types of company_
 5 Companies limited by guarantee and having share capital
 6 Community interest companies
 
-**P** **ART** **2**
+**PART 2**
 
 C OMPANY  FORMATION
 
@@ -67,7 +43,7 @@ _Requirements for registration_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ ii
+_Companies Act 2006 (c. _**46**_46)_ii
 
 _Registration and its effect_
 
@@ -75,17 +51,17 @@ _Registration and its effect_
 15 Issue of certificate of incorporation
 16 Effect of registration
 
-**P** **ART** **3**
+**PART 3**
 
 A COMPANY ’ S  CONSTITUTION
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 I NTRODUCTORY
 
 17 A company’s constitution
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 A RTICLES  OF  ASSOCIATION
 
@@ -110,14 +86,14 @@ _Supplementary_
 28 Existing companies: provisions of memorandum treated as provisions of
 articles
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 R ESOLUTIONS  AND  AGREEMENTS  AFFECTING  A  COMPANY ’ S  CONSTITUTION
 
 29 Resolutions and agreements affecting a company’s constitution
 30 Copies of resolutions or agreements to be forwarded to registrar
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 M ISCELLANEOUS  AND  SUPPLEMENTARY  PROVISIONS
 
@@ -130,7 +106,7 @@ _Statement of company’s objects_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ iii
+_Companies Act 2006 (c. _**46**_46)_iii
 
 _Other provisions with respect to a company’s constitution_
 
@@ -146,7 +122,7 @@ _Supplementary provisions_
 37 Right to participate in profits otherwise than as member void
 38 Application to single member companies of enactments and rules of law
 
-**P** **ART** **4**
+**PART 4**
 
 A COMPANY ’ S  CAPACITY  AND  RELATED  MATTERS
 
@@ -176,11 +152,11 @@ _Other matters_
 51 Pre-incorporation contracts, deeds and obligations
 52 Bills of exchange and promissory notes
 
-**P** **ART** **5**
+**PART 5**
 
 A COMPANY ’ S  NAME
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 G ENERAL  REQUIREMENTS
 
@@ -193,7 +169,7 @@ _Prohibited names_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ iv
+_Companies Act 2006 (c. _**46**_46)_iv
 
 _Sensitive words and expressions_
 
@@ -205,7 +181,7 @@ _Permitted characters etc_
 
 57 Permitted characters etc
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 I NDICATIONS  OF  COMPANY  TYPE  OR  LEGAL  FORM
 
@@ -224,7 +200,7 @@ _Inappropriate use of indications of company type or legal form_
 
 65 Inappropriate use of indications of company type or legal form
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 S IMILARITY  TO  OTHER  NAMES
 
@@ -243,7 +219,7 @@ _Similarity to other name in which person has goodwill_
 73 Order requiring name to be changed
 74 Appeal from adjudicator’s decision
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 O THER  POWERS  OF  THE S ECRETARY  OF S TATE
 
@@ -255,9 +231,9 @@ O THER  POWERS  OF  THE S ECRETARY  OF S TATE
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ v
+_Companies Act 2006 (c. _**46**_46)_v
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
 C HANGE  OF  NAME
 
@@ -267,7 +243,7 @@ C HANGE  OF  NAME
 80 Change of name: registration and issue of new certificate of incorporation
 81 Change of name: effect
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
 T RADING  DISCLOSURES
 
@@ -276,7 +252,7 @@ T RADING  DISCLOSURES
 84 Criminal consequences of failure to make required disclosures
 85 Minor variations in form of name to be left out of account
 
-**P** **ART** **6**
+**PART 6**
 
 A COMPANY ’ S  REGISTERED  OFFICE
 
@@ -289,7 +265,7 @@ _Welsh companies_
 
 88 Welsh companies
 
-**P** **ART** **7**
+**PART 7**
 
 R E - REGISTRATION  AS  A  MEANS  OF  ALTERING  A  COMPANY ’ S  STATUS
 
@@ -317,7 +293,7 @@ _Public company becoming private_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ vi
+_Companies Act 2006 (c. _**46**_46)_vi
 
 99 Notice to registrar of court application or order
 100 Application and accompanying documents
@@ -342,17 +318,17 @@ _Public company becoming private and unlimited_
 110 Application and accompanying documents
 111 Issue of certificate of incorporation on re-registration
 
-**P** **ART** **8**
+**PART 8**
 
 A COMPANY ’ S  MEMBERS
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 T HE  MEMBERS  OF  A  COMPANY
 
 112 The members of a company
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 R EGISTER  OF  MEMBERS
 
@@ -379,7 +355,7 @@ _Special cases_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ vii
+_Companies Act 2006 (c. _**46**_46)_vii
 
 124 Company holding its own shares as treasury shares
 
@@ -390,7 +366,7 @@ _Supplementary_
 127 Register to be evidence
 128 Time limit for claims arising from entry in register
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 O VERSEAS  BRANCH  REGISTERS
 
@@ -402,7 +378,7 @@ O VERSEAS  BRANCH  REGISTERS
 134 Jurisdiction of local courts
 135 Discontinuance of overseas branch register
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 P ROHIBITION  ON  SUBSIDIARY  BEING  MEMBER  OF  ITS  HOLDING  COMPANY
 
@@ -435,9 +411,9 @@ _Supplementary_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ viii
+_Companies Act 2006 (c. _**46**_46)_viii
 
-**P** **ART** **9**
+**PART 9**
 
 E XERCISE  OF  MEMBERS ’ RIGHTS
 
@@ -460,11 +436,11 @@ _Exercise of rights where shares held on behalf of others_
 ways
 153 Exercise of rights where shares held on behalf of others: members’ requests
 
-**P** **ART** **10**
+**PART 10**
 
 A COMPANY ’ S  DIRECTORS
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 A PPOINTMENT  AND  REMOVAL  OF  DIRECTORS
 
@@ -496,14 +472,14 @@ _Register of directors, etc_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ ix
+_Companies Act 2006 (c. _**46**_46)_ix
 
 _Removal_
 
 168 Resolution to remove director
 169 Director’s right to protest against removal
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 G ENERAL  DUTIES  OF  DIRECTORS
 
@@ -528,7 +504,7 @@ _Supplementary provisions_
 180 Consent, approval or authorisation by members
 181 Modification of provisions in relation to charitable companies
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 D ECLARATION  OF  INTEREST  IN  EXISTING  TRANSACTION  OR  ARRANGEMENT
 
@@ -539,7 +515,7 @@ D ECLARATION  OF  INTEREST  IN  EXISTING  TRANSACTION  OR  ARRANGEMENT
 186 Declaration of interest in case of company with sole director
 187 Declaration of interest in existing transaction by shadow director
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 T RANSACTIONS  WITH  DIRECTORS  REQUIRING  APPROVAL  OF  MEMBERS
 
@@ -559,7 +535,7 @@ _Substantial property transactions_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ x
+_Companies Act 2006 (c. _**46**_46)_x
 
 193 Exception in case of company in winding up or administration
 194 Exception for transactions on recognised investment exchange
@@ -610,7 +586,7 @@ shadow directors
 225 Cases where approval is required under more than one provision
 226 Requirement of consent of Charity Commission: companies that are charities
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
 D IRECTORS ’ SERVICE  CONTRACTS
 
@@ -621,19 +597,19 @@ D IRECTORS ’ SERVICE  CONTRACTS
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xi
+_Companies Act 2006 (c. _**46**_46)_xi
 
 228 Copy of contract or memorandum of terms to be available for inspection
 229 Right of member to inspect and request copy
 230 Directors’ service contracts: application of provisions to shadow directors
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
 C ONTRACTS  WITH  SOLE  MEMBERS  WHO  ARE  DIRECTORS
 
 231 Contract with sole member who is also a director
 
-**C** **HAPTER** **7**
+**CHAPTER 7**
 
 D IRECTORS ’ LIABILITIES
 
@@ -651,9 +627,9 @@ _Ratification of acts giving rise to liability_
 
 239 Ratification of acts of directors
 
-**C** **HAPTER** **8**
+**CHAPTER 8**
 
-D IRECTORS ’ RESIDENTIAL  ADDRESSES : PROTECTION  FROM  DISCLOSURE
+D IRECTORS ’ RESIDENTIAL  ADDRESSES: PROTECTION  FROM  DISCLOSURE
 
 240 Protected information
 241 Protected information: restriction on use or disclosure by company
@@ -663,7 +639,7 @@ D IRECTORS ’ RESIDENTIAL  ADDRESSES : PROTECTION  FROM  DISCLOSURE
 245 Circumstances in which registrar may put address on the public record
 246 Putting the address on the public record
 
-**C** **HAPTER** **9**
+**CHAPTER 9**
 
 S UPPLEMENTARY  PROVISIONS
 
@@ -681,7 +657,7 @@ _Records of meetings of directors_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xii
+_Companies Act 2006 (c. _**46**_46)_xii
 
 _Meaning of "director" and "shadow director"_
 
@@ -702,11 +678,11 @@ _General_
 258 Power to increase financial limits
 259 Transactions under foreign law
 
-**P** **ART** **11**
+**PART 11**
 
 D ERIVATIVE  CLAIMS  AND  PROCEEDINGS  BY  MEMBERS
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 D ERIVATIVE  CLAIMS  IN E NGLAND  AND W ALES  OR N ORTHERN I RELAND
 
@@ -717,7 +693,7 @@ D ERIVATIVE  CLAIMS  IN E NGLAND  AND W ALES  OR N ORTHERN I RELAND
 264 Application for permission to continue derivative claim brought by another
 member
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 D ERIVATIVE  PROCEEDINGS  IN S COTLAND
 
@@ -728,7 +704,7 @@ D ERIVATIVE  PROCEEDINGS  IN S COTLAND
 269 Application by member to be substituted for member pursuing derivative
 proceedings
 
-**P** **ART** **12**
+**PART 12**
 
 C OMPANY  SECRETARIES
 
@@ -741,7 +717,7 @@ _Private companies_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xiii
+_Companies Act 2006 (c. _**46**_46)_xiii
 
 _Public companies_
 
@@ -759,11 +735,11 @@ _Provisions applying to private companies with a secretary and to public compani
 279 Particulars of secretaries to be registered: power to make regulations
 280 Acts done by person in dual capacity
 
-**P** **ART** **13**
+**PART 13**
 
 R ESOLUTIONS  AND  MEETINGS
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 G ENERAL  PROVISIONS  ABOUT  RESOLUTIONS
 
@@ -775,7 +751,7 @@ G ENERAL  PROVISIONS  ABOUT  RESOLUTIONS
 286 Votes of joint holders of shares
 287 Saving for provisions of articles as to determination of entitlement to vote
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 W RITTEN  RESOLUTIONS
 
@@ -803,7 +779,7 @@ _Agreeing to written resolutions_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xiv
+_Companies Act 2006 (c. _**46**_46)_xiv
 
 _Supplementary_
 
@@ -811,7 +787,7 @@ _Supplementary_
 299 Publication of written resolution on website
 300 Relationship between this Chapter and provisions of company’s articles
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 R ESOLUTIONS  AT  MEETINGS
 
@@ -866,7 +842,7 @@ _Proxies_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xv
+_Companies Act 2006 (c. _**46**_46)_xv
 
 329 Right of proxy to demand a poll
 330 Notice required of termination of proxy’s authority
@@ -885,9 +861,9 @@ _Application to class meetings_
 334 Application to class meetings
 335 Application to class meetings: companies without a share capital
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
-P UBLIC  COMPANIES : ADDITIONAL  REQUIREMENTS  FOR AGM S
+P UBLIC  COMPANIES: ADDITIONAL  REQUIREMENTS  FOR AGM S
 
 336 Public companies: annual general meeting
 337 Public companies: notice of AGM
@@ -897,7 +873,7 @@ AGMs
 AGMs
 340 Public companies: expenses of circulating members’ resolutions for AGM
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
 A DDITIONAL  REQUIREMENTS  FOR  QUOTED  COMPANIES
 
@@ -928,12 +904,12 @@ _Supplementary_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xvi
+_Companies Act 2006 (c. _**46**_46)_xvi
 
 354 Power to limit or extend the types of company to which provisions of this
 Chapter apply
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
 R ECORDS  OF  RESOLUTIONS  AND  MEETINGS
 
@@ -943,14 +919,14 @@ R ECORDS  OF  RESOLUTIONS  AND  MEETINGS
 358 Inspection of records of resolutions and meetings
 359 Records of resolutions and meetings of class of members
 
-**C** **HAPTER** **7**
+**CHAPTER 7**
 
 S UPPLEMENTARY  PROVISIONS
 
 360 Computation of periods of notice etc: clear day rule
 361 Meaning of “quoted company”
 
-**P** **ART** **14**
+**PART 14**
 
 C ONTROL  OF  POLITICAL  DONATIONS  AND  EXPENDITURE
 
@@ -990,7 +966,7 @@ _Exemptions_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xvii
+_Companies Act 2006 (c. _**46**_46)_xvii
 
 378 Donations not amounting to more than £5,000 in any twelve month period
 
@@ -998,11 +974,11 @@ _Supplementary provisions_
 
 379 Minor definitions
 
-**P** **ART** **15**
+**PART 15**
 
 A CCOUNTS  AND  REPORTS
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 I NTRODUCTION
 
@@ -1021,7 +997,7 @@ _Quoted and unquoted companies_
 
 385 Quoted and unquoted companies
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 A CCOUNTING  RECORDS
 
@@ -1030,7 +1006,7 @@ A CCOUNTING  RECORDS
 388 Where and for how long records to be kept
 389 Where and for how long records to be kept: offences
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 A COMPANY ’ S  FINANCIAL  YEAR
 
@@ -1038,7 +1014,7 @@ A COMPANY ’ S  FINANCIAL  YEAR
 391 Accounting reference periods and accounting reference date
 392 Alteration of accounting reference date
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 A NNUAL  ACCOUNTS
 
@@ -1051,7 +1027,7 @@ _General_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xviii
+_Companies Act 2006 (c. _**46**_46)_xviii
 
 _Individual accounts_
 
@@ -1094,7 +1070,7 @@ _Approval and signing of accounts_
 
 414 Approval and signing of accounts
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
 D IRECTORS ’ REPORT
 
@@ -1111,17 +1087,17 @@ _Directors’ report_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xix
+_Companies Act 2006 (c. _**46**_46)_xix
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
-Q UOTED  COMPANIES : DIRECTORS ’ REMUNERATION  REPORT
+Q UOTED  COMPANIES: DIRECTORS ’ REMUNERATION  REPORT
 
 420 Duty to prepare directors’ remuneration report
 421 Contents of directors’ remuneration report
 422 Approval and signing of directors’ remuneration report
 
-**C** **HAPTER** **7**
+**CHAPTER 7**
 
 P UBLICATION  OF  ACCOUNTS  AND  REPORTS
 
@@ -1157,9 +1133,9 @@ _Requirements in connection with publication of accounts and reports_
 435 Requirements in connection with publication of non-statutory accounts
 436 Meaning of “publication” in relation to accounts and reports
 
-**C** **HAPTER** **8**
+**CHAPTER 8**
 
-P UBLIC  COMPANIES : LAYING  OF  ACCOUNTS  AND  REPORTS  BEFORE  GENERAL  MEETING
+P UBLIC  COMPANIES: LAYING  OF  ACCOUNTS  AND  REPORTS  BEFORE  GENERAL  MEETING
 
 437 Public companies: laying of accounts and reports before general meeting
 438 Public companies: offence of failure to lay accounts and reports
@@ -1169,16 +1145,16 @@ P UBLIC  COMPANIES : LAYING  OF  ACCOUNTS  AND  REPORTS  BEFORE  GENERAL  MEETIN
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xx
+_Companies Act 2006 (c. _**46**_46)_xx
 
-**C** **HAPTER** **9**
+**CHAPTER 9**
 
-Q UOTED  COMPANIES : MEMBERS ’ APPROVAL  OF  DIRECTORS ’ REMUNERATION  REPORT
+Q UOTED  COMPANIES: MEMBERS ’ APPROVAL  OF  DIRECTORS ’ REMUNERATION  REPORT
 
 439 Quoted companies: members’ approval of directors’ remuneration report
 440 Quoted companies: offences in connection with procedure for approval
 
-**C** **HAPTER** **10**
+**CHAPTER 10**
 
 F ILING  OF  ACCOUNTS  AND  REPORTS
 
@@ -1207,7 +1183,7 @@ _Failure to file accounts and reports_
 452 Default in filing accounts and reports: court order
 453 Civil penalty for failure to file accounts and reports
 
-**C** **HAPTER** **11**
+**CHAPTER 11**
 
 R EVISION  OF  DEFECTIVE  ACCOUNTS  AND  REPORTS
 
@@ -1230,7 +1206,7 @@ _Application to court_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxi
+_Companies Act 2006 (c. _**46**_46)_xxi
 
 _Power of authorised person to require documents etc_
 
@@ -1240,7 +1216,7 @@ explanations
 461 Permitted disclosure of information obtained under compulsory powers
 462 Power to amend categories of permitted disclosure
 
-**C** **HAPTER** **12**
+**CHAPTER 12**
 
 S UPPLEMENTARY  PROVISIONS
 
@@ -1271,11 +1247,11 @@ _Other supplementary provisions_
 473 Parliamentary procedure for certain regulations under this Part
 474 Minor definitions
 
-**P** **ART** **16**
+**PART 16**
 
 A UDIT
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 R EQUIREMENT  FOR  AUDITED  ACCOUNTS
 
@@ -1289,7 +1265,7 @@ _Requirement for audited accounts_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxii
+_Companies Act 2006 (c. _**46**_46)_xxii
 
 _Exemption from audit: small companies_
 
@@ -1311,7 +1287,7 @@ _General power of amendment by regulations_
 
 484 General power of amendment by regulations
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 A PPOINTMENT  OF  AUDITORS
 
@@ -1337,7 +1313,7 @@ _General provisions_
 494 Disclosure of services provided by auditor or associates and related
 remuneration
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 F UNCTIONS  OF  AUDITOR
 
@@ -1352,7 +1328,7 @@ _Auditor’s report_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxiii
+_Companies Act 2006 (c. _**46**_46)_xxiii
 
 _Duties and rights of auditors_
 
@@ -1376,7 +1352,7 @@ _Offences in connection with auditor’s report_
 Northern Ireland
 509 Guidance for regulatory authorities: Scotland
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 R EMOVAL , RESIGNATION , ETC  OF  AUDITORS
 
@@ -1415,15 +1391,15 @@ _Statement by auditor on ceasing to hold office_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxiv
+_Companies Act 2006 (c. _**46**_46)_xxiv
 
 _Supplementary_
 
 526 Effect of casual vacancies
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
-Q UOTED  COMPANIES : RIGHT  OF  MEMBERS  TO  RAISE  AUDIT  CONCERNS  AT  ACCOUNTS 
+Q UOTED  COMPANIES: RIGHT  OF  MEMBERS  TO  RAISE  AUDIT  CONCERNS  AT  ACCOUNTS 
 MEETING
 
 527 Members’ power to require website publication of audit concerns
@@ -1432,7 +1408,7 @@ MEETING
 530 Website publication: offences
 531 Meaning of “quoted company”
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
 A UDITORS ’ LIABILITY
 
@@ -1452,17 +1428,17 @@ _Liability limitation agreements_
 537 Effect of liability limitation agreement
 538 Disclosure of agreement by company
 
-**C** **HAPTER** **7**
+**CHAPTER 7**
 
 S UPPLEMENTARY  PROVISIONS
 
 539 Minor definitions
 
-**P** **ART** **17**
+**PART 17**
 
 A COMPANY ’ S  SHARE  CAPITAL
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 S HARES  AND  SHARE  CAPITAL  OF  A  COMPANY
 
@@ -1478,7 +1454,7 @@ _Shares_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxv
+_Companies Act 2006 (c. _**46**_46)_xxv
 
 544 Transferability of shares
 545 Companies having a share capital
@@ -1489,9 +1465,9 @@ _Share capital_
 547 Called-up share capital
 548 Equity share capital
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
-A LLOTMENT  OF  SHARES : GENERAL  PROVISIONS
+A LLOTMENT  OF  SHARES: GENERAL  PROVISIONS
 
 _Power of directors to allot shares_
 
@@ -1520,9 +1496,9 @@ _Supplementary provisions_
 558 When shares are allotted
 559 Provisions about allotment not applicable to shares taken on formation
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
-A LLOTMENT  OF  EQUITY  SECURITIES : EXISTING  SHAREHOLDERS ’ RIGHT  OF  PRE - EMPTION
+A LLOTMENT  OF  EQUITY  SECURITIES: EXISTING  SHAREHOLDERS ’ RIGHT  OF  PRE - EMPTION
 
 _Introductory_
 
@@ -1539,7 +1515,7 @@ _Existing shareholders’ right of pre-emption_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxvi
+_Companies Act 2006 (c. _**46**_46)_xxvi
 
 _Exceptions to right of pre-emption_
 
@@ -1570,15 +1546,15 @@ _Supplementary_
 576 Saving for certain older pre-emption requirements
 577 Provisions about pre-emption not applicable to shares taken on formation
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
-P UBLIC  COMPANIES : ALLOTMENT  WHERE  ISSUE  NOT  FULLY  SUBSCRIBED
+P UBLIC  COMPANIES: ALLOTMENT  WHERE  ISSUE  NOT  FULLY  SUBSCRIBED
 
 578 Public companies: allotment where issue not fully subscribed
 579 Public companies: effect of irregular allotment where issue not fully
 subscribed
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
 P AYMENT  FOR  SHARES
 
@@ -1602,7 +1578,7 @@ services
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxvii
+_Companies Act 2006 (c. _**46**_46)_xxvii
 
 _Supplementary provisions_
 
@@ -1612,9 +1588,9 @@ _Supplementary provisions_
 591 Enforceability of undertakings to do work etc
 592 The appropriate rate of interest
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
-P UBLIC  COMPANIES : INDEPENDENT  VALUATION  OF  NON - CASH  CONSIDERATION
+P UBLIC  COMPANIES: INDEPENDENT  VALUATION  OF  NON - CASH  CONSIDERATION
 
 _Non-cash consideration for shares_
 
@@ -1645,7 +1621,7 @@ _Supplementary provisions_
 608 Enforceability of undertakings to do work etc
 609 The appropriate rate of interest
 
-**C** **HAPTER** **7**
+**CHAPTER 7**
 
 S HARE  PREMIUMS
 
@@ -1665,7 +1641,7 @@ _Relief from requirements as to share premiums_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxviii
+_Companies Act 2006 (c. _**46**_46)_xxviii
 
 615 Relief may be reflected in company’s balance sheet
 
@@ -1673,7 +1649,7 @@ _Supplementary provisions_
 
 616 Interpretation of this Chapter
 
-**C** **HAPTER** **8**
+**CHAPTER 8**
 
 A LTERATION  OF  SHARE  CAPITAL
 
@@ -1701,7 +1677,7 @@ _Redenomination of share capital_
 627 Notice to registrar of reduction of capital in connection with redenomination
 628 Redenomination reserve
 
-**C** **HAPTER** **9**
+**CHAPTER 9**
 
 C LASSES  OF  SHARE  AND  CLASS  RIGHTS
 
@@ -1727,14 +1703,14 @@ _Matters to be notified to the registrar_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxix
+_Companies Act 2006 (c. _**46**_46)_xxix
 
 637 Notice of particulars of variation of rights attached to shares
 638 Notice of new class of members
 639 Notice of name or other designation of class of members
 640 Notice of particulars of variation of class rights
 
-**C** **HAPTER** **10**
+**CHAPTER 10**
 
 R EDUCTION  OF  SHARE  CAPITAL
 
@@ -1766,7 +1742,7 @@ _Effect of reduction of capital_
 652 Liability of members following reduction of capital
 653 Liability to creditor in case of omission from list of creditors
 
-**C** **HAPTER** **11**
+**CHAPTER 11**
 
 M ISCELLANEOUS  AND  SUPPLEMENTARY  PROVISIONS
 
@@ -1780,13 +1756,13 @@ M ISCELLANEOUS  AND  SUPPLEMENTARY  PROVISIONS
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxx
+_Companies Act 2006 (c. _**46**_46)_xxx
 
-**P** **ART** **18**
+**PART 18**
 
 A CQUISITION  BY  LIMITED  COMPANY  OF  ITS  OWN  SHARES
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 G ENERAL  PROVISIONS
 
@@ -1825,7 +1801,7 @@ interest
 675 Meaning of “pension scheme”
 676 Application of provisions to directors
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 F INANCIAL  ASSISTANCE  FOR  PURCHASE  OF  OWN  SHARES
 
@@ -1842,7 +1818,7 @@ _Circumstances in which financial assistance prohibited_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxxi
+_Companies Act 2006 (c. _**46**_46)_xxxi
 
 679 Assistance by public company for acquisition of shares in its private holding
 company
@@ -1857,7 +1833,7 @@ _Supplementary_
 
 683 Definitions for this Chapter
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 R EDEEMABLE  SHARES
 
@@ -1868,7 +1844,7 @@ R EDEEMABLE  SHARES
 688 Redeemed shares treated as cancelled
 689 Notice to registrar of redemption
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 P URCHASE  OF  OWN  SHARES
 
@@ -1901,7 +1877,7 @@ _Authority for market purchase_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxxii
+_Companies Act 2006 (c. _**46**_46)_xxxii
 
 _Supplementary provisions_
 
@@ -1913,7 +1889,7 @@ _Supplementary provisions_
 707 Return to registrar of purchase of own shares
 708 Notice to registrar of cancellation of shares
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
 R EDEMPTION  OR  PURCHASE  BY  PRIVATE  COMPANY  OUT  OF  CAPITAL
 
@@ -1949,7 +1925,7 @@ _Supplementary provisions_
 
 723 When payment out of capital to be made
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
 T REASURY  SHARES
 
@@ -1964,14 +1940,14 @@ T REASURY  SHARES
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxxiii
+_Companies Act 2006 (c. _**46**_46)_xxxiii
 
 729 Treasury shares: cancellation
 730 Treasury shares: notice of cancellation
 731 Treasury shares: treatment of proceeds of sale
 732 Treasury shares: offences
 
-**C** **HAPTER** **7**
+**CHAPTER 7**
 
 S UPPLEMENTARY  PROVISIONS
 
@@ -1981,7 +1957,7 @@ S UPPLEMENTARY  PROVISIONS
 736 Meaning of “distributable profits”
 737 General power to make further provision by regulations
 
-**P** **ART** **19**
+**PART 19**
 
 D EBENTURES
 
@@ -2018,13 +1994,13 @@ _Supplementary provisions_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxxiv
+_Companies Act 2006 (c. _**46**_46)_xxxiv
 
-**P** **ART** **20**
+**PART 20**
 
 P RIVATE  AND  PUBLIC  COMPANIES
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 P ROHIBITION  OF  PUBLIC  OFFERS  BY  PRIVATE  COMPANIES
 
@@ -2035,7 +2011,7 @@ P ROHIBITION  OF  PUBLIC  OFFERS  BY  PRIVATE  COMPANIES
 759 Enforcement of prohibition: remedial order
 760 Validity of allotment etc not affected
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 M INIMUM  SHARE  CAPITAL  REQUIREMENT  FOR  PUBLIC  COMPANIES
 
@@ -2048,13 +2024,13 @@ M INIMUM  SHARE  CAPITAL  REQUIREMENT  FOR  PUBLIC  COMPANIES
 currencies etc
 767 Consequences of doing business etc without a trading certificate
 
-**P** **ART** **21**
+**PART 21**
 
 C ERTIFICATION  AND  TRANSFER  OF  SECURITIES
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
-C ERTIFICATION  AND  TRANSFER  OF  SECURITIES : GENERAL
+C ERTIFICATION  AND  TRANSFER  OF  SECURITIES: GENERAL
 
 _Share certificates_
 
@@ -2078,7 +2054,7 @@ _Transfer of securities_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxxv
+_Companies Act 2006 (c. _**46**_46)_xxxv
 
 _Issue of certificates etc on transfer_
 
@@ -2099,7 +2075,7 @@ _Supplementary provisions_
 
 782 Issue of certificates etc: court order to make good default
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 E VIDENCING  AND  TRANSFER  OF  TITLE  TO  SECURITIES  WITHOUT  WRITTEN  INSTRUMENT
 
@@ -2121,7 +2097,7 @@ _Supplementary_
 789 Duty to consult
 790 Resolutions to be forwarded to registrar
 
-**P** **ART** **22**
+**PART 22**
 
 I NFORMATION  ABOUT  INTERESTS  IN  A  COMPANY ’ S  SHARES
 
@@ -2141,7 +2117,7 @@ _Notice requiring information about interests in shares_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxxvi
+_Companies Act 2006 (c. _**46**_46)_xxxvi
 
 796 Notice requiring information: persons exempted from obligation to comply
 
@@ -2199,13 +2175,13 @@ _Other supplementary provisions_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxxvii
+_Companies Act 2006 (c. _**46**_46)_xxxvii
 
-**P** **ART** **23**
+**PART 23**
 
 D ISTRIBUTIONS
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 R ESTRICTIONS  ON  WHEN  DISTRIBUTIONS  MAY  BE  MADE
 
@@ -2225,7 +2201,7 @@ _Distributions by investment companies_
 834 Investment company: condition as to holdings in other companies
 835 Power to extend provisions relating to investment companies
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 J USTIFICATION  OF  DISTRIBUTION  BY  REFERENCE  TO  ACCOUNTS
 
@@ -2243,7 +2219,7 @@ _Application of provisions to successive distributions etc_
 
 840 Successive distributions etc by reference to the same accounts
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 S UPPLEMENTARY  PROVISIONS
 
@@ -2259,7 +2235,7 @@ _Accounting matters_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxxviii
+_Companies Act 2006 (c. _**46**_46)_xxxviii
 
 _Distributions in kind_
 
@@ -2279,7 +2255,7 @@ _Other matters_
 852 Saving for other restrictions on distributions
 853 Minor definitions
 
-**P** **ART** **24**
+**PART 24**
 
 A COMPANY ’ S  ANNUAL  RETURN
 
@@ -2290,11 +2266,11 @@ A COMPANY ’ S  ANNUAL  RETURN
 858 Failure to deliver annual return
 859 Application of provisions to shadow directors
 
-**P** **ART** **25**
+**PART 25**
 
 C OMPANY  CHARGES
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 C OMPANIES  REGISTERED  IN E NGLAND  AND W ALES  OR  IN N ORTHERN I RELAND
 
@@ -2322,7 +2298,7 @@ Kingdom
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xxxix
+_Companies Act 2006 (c. _**46**_46)_xxxix
 
 _Orders charging land: Northern Ireland_
 
@@ -2347,7 +2323,7 @@ _Companies’ records and registers_
 877 Instruments creating charges and register of charges to be available for
 inspection
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 C OMPANIES  REGISTERED  IN S COTLAND
 
@@ -2384,7 +2360,7 @@ _Avoidance of certain charges_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xl
+_Companies Act 2006 (c. _**46**_46)_xl
 
 _Companies’ records and registers_
 
@@ -2393,14 +2369,14 @@ _Companies’ records and registers_
 892 Instruments creating charges and register of charges to be available for
 inspection
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 P OWERS  OF  THE S ECRETARY  OF S TATE
 
 893 Power to make provision for effect of registration in special register
 894 General power to make amendments to this Part
 
-**P** **ART** **26**
+**PART 26**
 
 A RRANGEMENTS  AND  RECONSTRUCTIONS
 
@@ -2426,11 +2402,11 @@ _Obligations of company with respect to articles etc_
 
 901 Obligations of company with respect to articles etc
 
-**P** **ART** **27**
+**PART 27**
 
 M ERGERS  AND  DIVISIONS  OF  PUBLIC  COMPANIES
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 I NTRODUCTORY
 
@@ -2442,9 +2418,9 @@ I NTRODUCTORY
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xli
+_Companies Act 2006 (c. _**46**_46)_xli
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 M ERGER
 
@@ -2477,7 +2453,7 @@ _Other exceptions_
 918 Other circumstances in which meeting of members of transferee company not
 required (merger)
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 D IVISION
 
@@ -2504,7 +2480,7 @@ _Requirements to be complied with in case of division_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xlii
+_Companies Act 2006 (c. _**46**_46)_xlii
 
 _Exceptions where shares of transferor company held by transferee company_
 
@@ -2518,7 +2494,7 @@ required (division)
 933 Agreement to dispense with reports etc (division)
 934 Power of court to exclude certain requirements (division)
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 S UPPLEMENTARY  PROVISIONS
 
@@ -2542,11 +2518,11 @@ _Interpretation_
 
 941 Meaning of “liabilities” and “property”
 
-**P** **ART** **28**
+**PART 28**
 
 T AKEOVERS  ETC
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 T HE T AKEOVER P ANEL
 
@@ -2567,7 +2543,7 @@ _Information_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xliii
+_Companies Act 2006 (c. _**46**_46)_xliii
 
 948 Restrictions on disclosure
 949 Offence of disclosure in contravention of section 948
@@ -2603,7 +2579,7 @@ _Miscellaneous and supplementary_
 964 Amendments to Financial Services and Markets Act 2000
 965 Power to extend to Isle of Man and Channel Islands
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 I MPEDIMENTS  TO  TAKEOVERS
 
@@ -2629,9 +2605,9 @@ _Supplementary_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xliv
+_Companies Act 2006 (c. _**46**_46)_xliv
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 “S QUEEZE - OUT ” AND “S ELL - OUT ”
 
@@ -2668,13 +2644,13 @@ _Interpretation_
 990 Debentures carrying voting rights
 991 Interpretation
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 A MENDMENTS  TO P ART 7 OF  THE C OMPANIES A CT 1985
 
 992 Matters to be dealt with in directors’ report
 
-**P** **ART** **29**
+**PART 29**
 
 F RAUDULENT  TRADING
 
@@ -2685,9 +2661,9 @@ F RAUDULENT  TRADING
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xlv
+_Companies Act 2006 (c. _**46**_46)_xlv
 
-**P** **ART** **30**
+**PART 30**
 
 P ROTECTION  OF  MEMBERS  AGAINST  UNFAIR  PREJUDICE
 
@@ -2703,11 +2679,11 @@ _Supplementary provisions_
 998 Copy of order affecting company’s constitution to be delivered to registrar
 999 Supplementary provisions where company’s constitution altered
 
-**P** **ART** **31**
+**PART 31**
 
 D ISSOLUTION  AND  RESTORATION  TO  THE  REGISTER
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 S TRIKING  OFF
 
@@ -2730,7 +2706,7 @@ concluded
 1010 Withdrawal of application
 1011 Meaning of “creditor”
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 P ROPERTY  OF  DISSOLVED  COMPANY
 
@@ -2745,7 +2721,7 @@ _Property vesting as bona vacantia_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xlvi
+_Companies Act 2006 (c. _**46**_46)_xlvi
 
 _Effect of Crown disclaimer: England and Wales and Northern Ireland_
 
@@ -2765,7 +2741,7 @@ _Supplementary provisions_
 
 1023 Liability for rentcharge on company’s land after dissolution
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 R ESTORATION  TO  THE  REGISTER
 
@@ -2790,9 +2766,9 @@ _Supplementary provisions_
 1034 Effect of restoration to the register where property has vested as bona
 vacantia
 
-**P** **ART** **32**
+**PART 32**
 
-C OMPANY  INVESTIGATIONS : AMENDMENTS
+C OMPANY  INVESTIGATIONS: AMENDMENTS
 
 1035 Powers of Secretary of State to give directions to inspectors
 1036 Resignation, removal and replacement of inspectors
@@ -2805,13 +2781,13 @@ C OMPANY  INVESTIGATIONS : AMENDMENTS
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xlvii
+_Companies Act 2006 (c. _**46**_46)_xlvii
 
-**P** **ART** **33**
+**PART 33**
 
 UK COMPANIES  NOT  FORMED  UNDER  COMPANIES  LEGISLATION
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 C OMPANIES  NOT  FORMED  UNDER  COMPANIES  LEGISLATION  BUT  AUTHORISED  TO  REGISTER
 
@@ -2819,13 +2795,13 @@ C OMPANIES  NOT  FORMED  UNDER  COMPANIES  LEGISLATION  BUT  AUTHORISED  TO  REG
 1041 Definition of “joint stock company”
 1042 Power to make provision by regulations
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 U NREGISTERED  COMPANIES
 
 1043 Unregistered companies
 
-**P** **ART** **34**
+**PART 34**
 
 O VERSEAS  COMPANIES
 
@@ -2862,9 +2838,9 @@ _Supplementary_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xlviii
+_Companies Act 2006 (c. _**46**_46)_xlviii
 
-**P** **ART** **35**
+**PART 35**
 
 T HE  REGISTRAR  OF  COMPANIES
 
@@ -2924,7 +2900,7 @@ _Inspection etc of the register_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ xlix
+_Companies Act 2006 (c. _**46**_46)_xlix
 
 1087 Material not available for public inspection
 1088 Application to registrar to make address unavailable for public inspection
@@ -2982,9 +2958,9 @@ _Supplementary provisions_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ l
+_Companies Act 2006 (c. _**46**_46)_l
 
-**P** **ART** **36**
+**PART 36**
 
 O FFENCES  UNDER  THE C OMPANIES A CTS
 
@@ -3017,9 +2993,9 @@ _Supplementary_
 
 1133 Transitional provision
 
-**P** **ART** **37**
+**PART 37**
 
-C OMPANIES : SUPPLEMENTARY  PROVISIONS
+C OMPANIES: SUPPLEMENTARY  PROVISIONS
 
 _Company records_
 
@@ -3042,7 +3018,7 @@ _Service addresses_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ li
+_Companies Act 2006 (c. _**46**_46)_li
 
 _Sending or supplying documents or information_
 
@@ -3071,9 +3047,9 @@ _Courts and legal proceedings_
 1156 Meaning of “the court”
 1157 Power of court to grant relief in certain cases
 
-**P** **ART** **38**
+**PART 38**
 
-C OMPANIES : INTERPRETATION
+C OMPANIES: INTERPRETATION
 
 _Meaning of "UK-registered company"_
 
@@ -3105,7 +3081,7 @@ _Other definitions_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ lii
+_Companies Act 2006 (c. _**46**_46)_lii
 
 1171 The former Companies Acts
 
@@ -3115,9 +3091,9 @@ _General_
 1173 Minor definitions: general
 1174 Index of defined expressions
 
-**P** **ART** **39**
+**PART 39**
 
-C OMPANIES : MINOR  AMENDMENTS
+C OMPANIES: MINOR  AMENDMENTS
 
 1175 Removal of special provisions about accounts and audit of charitable
 companies
@@ -3128,9 +3104,9 @@ companies
 1180 Repeal of certain provisions about company charges
 1181 Access to constitutional documents of RTE and RTM companies
 
-**P** **ART** **40**
+**PART 40**
 
-C OMPANY  DIRECTORS : FOREIGN  DISQUALIFICATION  ETC
+C OMPANY  DIRECTORS: FOREIGN  DISQUALIFICATION  ETC
 
 _Introductory_
 
@@ -3159,13 +3135,13 @@ _Power to require statements to be sent to the registrar of companies_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ liii
+_Companies Act 2006 (c. _**46**_46)_liii
 
-**P** **ART** **41**
+**PART 41**
 
 B USINESS  NAMES
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 R ESTRICTED  OR  PROHIBITED  NAMES
 
@@ -3190,7 +3166,7 @@ _Supplementary_
 
 1199 Savings for existing lawful business names
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 D ISCLOSURE  REQUIRED  IN  CASE  OF  INDIVIDUAL  OR  PARTNERSHIP
 
@@ -3210,7 +3186,7 @@ _Consequences of failure to make required disclosure_
 1205 Criminal consequences of failure to make required disclosure
 1206 Civil consequences of failure to make required disclosure
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 S UPPLEMENTARY
 
@@ -3221,15 +3197,15 @@ S UPPLEMENTARY
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ liv
+_Companies Act 2006 (c. _**46**_46)_liv
 
 1208 Interpretation
 
-**P** **ART** **42**
+**PART 42**
 
 S TATUTORY A UDITORS
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 I NTRODUCTORY
 
@@ -3237,7 +3213,7 @@ I NTRODUCTORY
 1210 Meaning of “statutory auditor” etc
 1211 Eligibility for appointment as a statutory auditor: overview
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 I NDIVIDUALS  AND  FIRMS
 
@@ -3281,9 +3257,9 @@ _Enforcement_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ lv
+_Companies Act 2006 (c. _**46**_46)_lv
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 A UDITORS G ENERAL
 
@@ -3327,7 +3303,7 @@ _Grants_
 
 1238 Grants to the Independent Supervisor
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 T HE  REGISTER  OF  AUDITORS  ETC
 
@@ -3339,9 +3315,9 @@ T HE  REGISTER  OF  AUDITORS  ETC
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ lvi
+_Companies Act 2006 (c. _**46**_46)_lvi
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
 R EGISTERED  THIRD  COUNTRY  AUDITORS
 
@@ -3364,7 +3340,7 @@ _Enforcement_
 1246 Removal of third country auditors from the register of auditors
 1247 Grants to bodies concerned with arrangements under Schedule 12
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
 S UPPLEMENTARY  AND  GENERAL
 
@@ -3401,7 +3377,7 @@ _General provision relating to offences_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ lvii
+_Companies Act 2006 (c. _**46**_46)_lvii
 
 _Notices etc_
 
@@ -3420,7 +3396,7 @@ _Miscellaneous and general_
 bodies
 1264 Consequential amendments
 
-**P** **ART** **43**
+**PART 43**
 
 T RANSPARENCY  OBLIGATIONS  AND  RELATED  MATTERS
 
@@ -3443,7 +3419,7 @@ _Other matters_
 amendments
 1273 Corporate governance regulations
 
-**P** **ART** **44**
+**PART 44**
 
 M ISCELLANEOUS  PROVISIONS
 
@@ -3464,7 +3440,7 @@ _Information as to exercise of voting rights by institutional investors_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ lviii
+_Companies Act 2006 (c. _**46**_46)_lviii
 
 1280 Obligations with respect to provision of information
 
@@ -3480,7 +3456,7 @@ _Commonhold associations_
 
 1283 Amendment of memorandum or articles of commonhold association
 
-**P** **ART** **45**
+**PART 45**
 
 N ORTHERN I RELAND
 
@@ -3490,7 +3466,7 @@ N ORTHERN I RELAND
 organisation
 1287 Extension of enactments relating to business names
 
-**P** **ART** **46**
+**PART 46**
 
 G ENERAL  SUPPLEMENTARY  PROVISIONS
 
@@ -3513,7 +3489,7 @@ _Consequential and transitional provisions_
 1296 Power to make transitional provision and savings
 1297 Continuity of the law
 
-**P** **ART** **47**
+**PART 47**
 
 F INAL  PROVISIONS
 
@@ -3526,7 +3502,7 @@ F INAL  PROVISIONS
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_ lix
+_Companies Act 2006 (c. _**46**_46)_lix
 
 Schedule 1 — Connected persons: references to an interest in shares or
 debentures

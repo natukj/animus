@@ -91,6 +91,7 @@ class PDFParser(BaseParser):
     def __init__(self, rate_limit: int = 50):
         super().__init__(rate_limit)
         self.document = None
+        self.toc_pages = None
         self.toc_md_string = None
         self.content_md_string = None
         self.toc_hierarchy_schema = None
@@ -110,13 +111,346 @@ class PDFParser(BaseParser):
         else:
             raise ValueError("file must be an instance of UploadFile or str.")
         self.toc_md_string, self.content_md_string = await self.generate_md_string()
-        self.toc_md_string_lines = self.toc_md_string.split("\n").lower()
-        self.content_md_string_lines = self.content_md_string.split("\n").lower()
-        self.toc_hierarchy_schema = await self.generate_toc_hierarchy_schema()
-        with open("zztoc_md_string.md", "w") as f:
-            f.write(self.toc_md_string) 
-        with open("zzcontent_md_string.md", "w") as f:
-            f.write(self.content_md_string)
+        # self.toc_md_string_lines = self.toc_md_string.split("\n").lower()
+        # self.content_md_string_lines = self.content_md_string.split("\n").lower()
+        #self.toc_hierarchy_schema = await self.generate_toc_hierarchy_schema()
+        # with open("zztoc_md_string.md", "w") as f:
+        #     f.write(self.toc_md_string) 
+        # with open("zzcontent_md_string.md", "w") as f:
+        #     f.write(self.content_md_string)
+        self.no_md_flag = True
+        self.toc_hierarchy_schema = {
+            "Part": "#",
+            "Schedule": "#",
+            "Chapter": "##",
+            "General supplementary provisions": "##",
+            "Final provisions": "##",
+            "Northern ireland": "##",
+            "General": "###",
+            "Companies and Companies Acts": "###",
+            "Types of company": "###",
+            "Requirements for registration": "###",
+            "Registration and its effect": "###",
+            "Introductory": "###",
+            "Articles of association": "###",
+            "Alteration of articles": "###",
+            "Supplementary": "###",
+            "Resolutions and agreements affecting a company\u2019s constitution": "###",
+            "Miscellaneous and supplementary provisions": "###",
+            "Companies and companies acts": "###",
+            "Other provisions with respect to a company\u2019s constitution": "###",
+            "Supplementary provisions": "###",
+            "Capacity of company and power of directors to bind it": "###",
+            "Formalities of doing business under the law of england and wales or northern ireland": "###",
+            "Formalities of doing business under the law of scotland": "###",
+            "Other matters": "###",
+            "Prohibited names": "###",
+            "Sensitive words and expressions": "###",
+            "Permitted characters etc": "###",
+            "Indications of company type or legal form": "###",
+            "Similarity to other names": "###",
+            "Other powers of the secretary of state": "###",
+            "Welsh companies": "###",
+            "Private company becoming public": "###",
+            "Public company becoming private": "###",
+            "Special cases": "###",
+            "General prohibition": "###",
+            "Subsidiary acting as personal representative or trustee": "###",
+            "Subsidiary acting as dealer in securities": "###",
+            "Exercise of members\u2019 rights": "###",
+            "A company\u2019s directors": "###",
+            "Removal": "###",
+            "The general duties": "###",
+            "Declaration of interest in existing transaction or arrangement": "###",
+            "Transactions with directors requiring approval of members": "###",
+            "Loans, quasi-loans and credit transactions": "###",
+            "Payments for loss of office": "###",
+            "Provision protecting directors from liability": "###",
+            "Ratification of acts giving rise to liability": "###",
+            "Provision for employees on cessation or transfer of business": "###",
+            "Records of meetings of directors": "###",
+            "Meaning of \"director\" and \"shadow director\"": "###",
+            "Other definitions": "###",
+            "Private companies": "###",
+            "Public companies": "###",
+            "Provisions applying to private companies with a secretary and to public companies": "###",
+            "General provisions about written resolutions": "###",
+            "Circulation of written resolutions": "###",
+            "Agreeing to written resolutions": "###",
+            "Resolutions at meetings": "###",
+            "Adjourned meetings": "###",
+            "Electronic communications": "###",
+            "Application to class meetings": "###",
+            "Public companies: additional requirements for agms": "###",
+            "Additional requirements for quoted companies": "###",
+            "Website publication of poll results": "###",
+            "Independent report on poll": "###",
+            "Donations and expenditure to which this part applies": "###",
+            "Authorisation required for donations or expenditure": "###",
+            "Remedies in case of unauthorised donations or expenditure": "###",
+            "Exemptions": "###",
+            "Companies subject to the small companies regime": "###",
+            "Quoted and unquoted companies": "###",
+            "Individual accounts": "###",
+            "Group accounts: small companies": "###",
+            "Group accounts: other companies": "###",
+            "Group accounts: general": "###",
+            "Information to be given in notes to the accounts": "###",
+            "Approval and signing of accounts": "###",
+            "Directors\u2019 report": "###",
+            "Quoted companies: directors\u2019 remuneration report": "###",
+            "Duty to circulate copies of accounts and reports": "###",
+            "Option to provide summary financial statement": "###",
+            "Quoted companies: requirements as to website publication": "###",
+            "Right of member or debenture holder to demand copies of accounts and reports": "###",
+            "Requirements in connection with publication of accounts and reports": "###",
+            "Public companies: laying of accounts and reports before general meeting": "###",
+            "Duty to file accounts and reports": "###",
+            "Filing obligations of different descriptions of company": "###",
+            "Requirements where abbreviated accounts delivered": "###",
+            "Failure to file accounts and reports": "###",
+            "Voluntary revision": "###",
+            "Secretary of state\u2019s notice": "###",
+            "Application to court": "###",
+            "Power of authorised person to require documents etc": "###",
+            "Liability for false or misleading statements in reports": "###",
+            "Accounting and reporting standards": "###",
+            "Companies qualifying as medium-sized": "###",
+            "General power to make further provision about accounts and reports": "###",
+            "Other supplementary provisions": "###",
+            "Requirement for audited accounts": "###",
+            "Exemption from audit: small companies": "###",
+            "Exemption from audit: dormant companies": "###",
+            "Companies subject to public sector audit": "###",
+            "General power of amendment by regulations": "###",
+            "General provisions": "###",
+            "Auditor\u2019s report": "###",
+            "Duties and rights of auditors": "###",
+            "Signature of auditor\u2019s report": "###",
+            "Offences in connection with auditor\u2019s report": "###",
+            "Removal of auditor": "###",
+            "Failure to re-appoint auditor": "###",
+            "Resignation of auditor": "###",
+            "Statement by auditor on ceasing to hold office": "###",
+            "Voidness of provisions protecting auditors from liability": "###",
+            "Indemnity for costs of defending proceedings": "###",
+            "Liability limitation agreements": "###",
+            "Shares": "###",
+            "Share capital": "###",
+            "Power of directors to allot shares": "###",
+            "Prohibition of commissions, discounts and allowances": "###",
+            "Registration of allotment": "###",
+            "Return of allotment": "###",
+            "Existing shareholders\u2019 right of pre-emption": "###",
+            "Exceptions to right of pre-emption": "###",
+            "Exclusion of right of pre-emption": "###",
+            "Disapplication of pre-emption rights": "###",
+            "General rules": "###",
+            "Additional rules for public companies": "###",
+            "Non-cash consideration for shares": "###",
+            "Transfer of non-cash asset in initial period": "###",
+            "The share premium account": "###",
+            "Relief from requirements as to share premiums": "###",
+            "How share capital may be altered": "###",
+            "Subdivision or consolidation of shares": "###",
+            "Reconversion of stock into shares": "###",
+            "Redenomination of share capital": "###",
+            "Variation of class rights": "###",
+            "Matters to be notified to the registrar": "###",
+            "Private companies: reduction of capital supported by solvency statement": "###",
+            "Reduction of capital confirmed by the court": "###",
+            "Public company reducing capital below authorised minimum": "###",
+            "Effect of reduction of capital": "###",
+            "Exceptions from prohibition": "###",
+            "Authority for purchase of own shares": "###",
+            "Authority for off-market purchase": "###",
+            "Authority for market purchase": "###",
+            "The permissible capital payment": "###",
+            "Requirements for payment out of capital": "###",
+            "Objection to payment by members or creditors": "###",
+            "Treasury shares": "###",
+            "Register of debenture holders": "###",
+            "Share certificates": "###",
+            "Issue of certificates etc on allotment": "###",
+            "Transfer of securities": "###",
+            "Issue of certificates etc on transfer": "###",
+            "Issue of certificates etc on allotment or transfer to financial institution": "###",
+            "Share warrants": "###",
+            "Powers exercisable": "###",
+            "Notice requiring information about interests in shares": "###",
+            "Orders imposing restrictions on shares": "###",
+            "Power of members to require company to act": "###",
+            "Register of interests disclosed": "###",
+            "Meaning of interest in shares": "###",
+            "Distributions by investment companies": "###",
+            "Justification of distribution by reference to accounts": "###",
+            "Requirements applicable in relation to relevant accounts": "###",
+            "Application of provisions to successive distributions etc": "###",
+            "Accounting matters": "###",
+            "Distributions in kind": "###",
+            "Consequences of unlawful distribution": "###",
+            "Requirement to register company charges": "###",
+            "Special rules about debentures": "###",
+            "Charges in other jurisdictions": "###",
+            "Orders charging land: northern ireland": "###",
+            "The register of charges": "###",
+            "Avoidance of certain charges": "###",
+            "Companies\u2019 records and registers": "###",
+            "Charges requiring registration": "###",
+            "Charges on property outside the united kingdom": "###",
+            "Powers of the secretary of state": "###",
+            "Arrangements and reconstructions": "###",
+            "Mergers and divisions of public companies": "###",
+            "Requirements applicable to merger": "###",
+            "Exceptions where shares of transferor company held by transferee company": "###",
+            "Other exceptions": "###",
+            "Requirements to be complied with in case of division": "###",
+            "Expert\u2019s report and related matters": "###",
+            "Powers of the court": "###",
+            "Liability of transferee companies": "###",
+            "Interpretation": "###",
+            "The panel and its rules": "###",
+            "Information": "###",
+            "Co-operation": "###",
+            "Hearings and appeals": "###",
+            "Contravention of rules etc": "###",
+            "Funding": "###",
+            "Miscellaneous and supplementary": "###",
+            "Opting in and opting out": "###",
+            "Consequences of opting in": "###",
+            "Takeover offers": "###",
+            "Squeeze-out": "###",
+            "Sell-out": "###",
+            "Main provisions": "###",
+            "Registrar\u2019s power to strike off defunct company": "###",
+            "Voluntary striking off": "###",
+            "Property vesting as bona vacantia": "###",
+            "General effect of disclaimer": "###",
+            "Disclaimer of leaseholds": "###",
+            "Power of court to make vesting order": "###",
+            "Protection of persons holding under a lease": "###",
+            "Land subject to rentcharge": "###",
+            "Effect of crown disclaimer: england and wales and northern ireland": "###",
+            "Effect of crown disclaimer: scotland": "###",
+            "Liability for rentcharge on company\u2019s land after dissolution": "###",
+            "Administrative restoration to the register": "###",
+            "Restoration to the register by the court": "###",
+            "Powers of secretary of state to give directions to inspectors": "###",
+            "Resignation, removal and replacement of inspectors": "###",
+            "Power to obtain information from former inspectors etc": "###",
+            "Power to require production of documents": "###",
+            "Disqualification orders: consequential amendments": "###",
+            "Registration of particulars": "###",
+            "Other requirements": "###",
+            "The registrar": "###",
+            "Certificates of incorporation": "###",
+            "Registered numbers": "###",
+            "Delivery of documents to the registrar": "###",
+            "Requirements for proper delivery": "###",
+            "Public notice of receipt of certain documents": "###",
+            "The register": "###",
+            "Inspection etc of the register": "###",
+            "Correction or removal of material on the register": "###",
+            "The registrar\u2019s index of company names": "###",
+            "Language requirements: translation": "###",
+            "Language requirements: transliteration": "###",
+            "Offences under the companies act": "###",
+            "Production and inspection of documents": "###",
+            "Company records": "###",
+            "Service addresses": "###",
+            "Sending or supplying documents or information": "###",
+            "Requirements as to independent valuation": "###",
+            "Notice of appointment of certain officers": "###",
+            "Courts and legal proceedings": "###",
+            "Meaning of \"uk-registered company\"": "###",
+            "Meaning of \"subsidiary\" and related expressions": "###",
+            "Meaning of \"undertaking\" and related expressions": "###",
+            "Power to disqualify": "###",
+            "Power to make persons liable for company\u2019s debts": "###",
+            "Power to require statements to be sent to the registrar of companies": "###",
+            "Sensitive words or expressions": "###",
+            "Misleading names": "###",
+            "Disclosure requirements": "###",
+            "Consequences of failure to make required disclosure": "###",
+            "Individuals and firms": "###",
+            "Auditors general": "###",
+            "The register of auditors": "###",
+            "Information to be made available to public": "###",
+            "Duties": "###",
+            "Power to require second company audit": "###",
+            "False and misleading statements": "###",
+            "Fees": "###",
+            "Delegation of secretary of state\u2019s functions": "###",
+            "International obligations": "###",
+            "General provision relating to offences": "###",
+            "Notices etc": "###",
+            "Miscellaneous and general": "###",
+            "Transparency obligations": "###",
+            "Regulation of actuaries etc": "###",
+            "Information as to exercise of voting rights by institutional investors": "###",
+            "Regulations and orders": "###",
+            "Meaning of \"enactment\"": "###",
+            "Consequential and transitional provisions": "###",
+            "Disclosure of information under the enterprise act": "###",
+            "Expenses of winding up": "###",
+            "Commonhold associations": "###",
+            "Statement of company\u2019s objects": "####",
+            "Required indications for limited companies": "####",
+            "Inappropriate use of indications of company type or legal form": "####",
+            "Similarity to other name on registrar\u2019s index": "####",
+            "Similarity to other name in which person has goodwill": "####",
+            "Effect of provisions in company\u2019s articles": "####",
+            "Information rights": "####",
+            "Exercise of rights where shares held on behalf of others": "####",
+            "Appointment and removal of directors": "####",
+            "Service contracts": "####",
+            "Substantial property transactions": "####",
+            "General provisions about resolutions at meetings": "####",
+            "Calling meetings": "####",
+            "Notice of meetings": "####",
+            "Members\u2019 statements": "####",
+            "Procedure at meetings": "####",
+            "Proxies": "####",
+            "Shares held by company\u2019s nominee": "####",
+            "Shares held by or for public company": "####",
+            "Charges of public company on own shares": "####",
+            "Circumstances in which financial assistance prohibited": "####",
+            "Application of this part": "####",
+            "Meeting of creditors or members": "####",
+            "Court sanction for compromise or arrangement": "####",
+            "Reconstructions and amalgamations": "####",
+            "Obligations of company with respect to articles etc": "####",
+            "Application for administrative restoration to the register": "####",
+            "Requirements for administrative restoration": "####",
+            "Application to be accompanied by statement of compliance": "####",
+            "Registrar\u2019s decision on application for administrative restoration": "####",
+            "Effect of administrative restoration": "####",
+            "Application to court for restoration to the register": "####",
+            "When application to the court may be made": "####",
+            "Decision on application for restoration by the court": "####",
+            "Effect of court order for restoration to the register": "####",
+            "Company\u2019s name on restoration": "####",
+            "Effect of restoration to the register where property has vested as bona vacantia": "####",
+            "Eligibility for appointment": "####",
+            "Independence requirement": "####",
+            "Effect of appointment of a partnership": "####",
+            "Supervisory bodies": "####",
+            "Professional qualifications": "####",
+            "Enforcement": "####",
+            "Conduct of audits": "####",
+            "The independent supervisor": "####",
+            "Supervision of auditors general": "####",
+            "Reporting requirement": "####",
+            "Proceedings": "####",
+            "Grants": "####",
+            "Requirement to have directors": "#####",
+            "Appointment": "#####",
+            "Register of directors, etc": "#####"
+        }
+
+    def encode_page_as_base64(self, page: fitz.Page):
+        pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+        return base64.b64encode(pix.tobytes()).decode('utf-8')
     
     async def find_toc_pages(self) -> List[int]:
         """
@@ -243,15 +577,15 @@ class PDFParser(BaseParser):
         """
         Generate Markdown strings for toc and content.
         """
-        # toc_pages = await self.find_toc_pages()
-        # last_toc_page = toc_pages[-1] + 1
-        # content_pages = list(range(last_toc_page, self.document.page_count))
-        # toc_md_string = self.to_markdown(self.document, toc_pages)
-        # content_md_string = self.to_markdown(self.document, content_pages)
-        with open("zztoc_md_string.md", "r") as f:
-            toc_md_string = f.read()
-        with open("zzcontent_md_string.md", "r") as f:
-            content_md_string = f.read()
+        self.toc_pages = await self.find_toc_pages()
+        last_toc_page = self.toc_pages[-1] + 1
+        content_pages = list(range(last_toc_page, self.document.page_count))
+        toc_md_string = self.to_markdown(self.document, self.toc_pages)
+        content_md_string = self.to_markdown(self.document, content_pages)
+        # with open("zztoc_md_string.md", "r") as f:
+        #     toc_md_string = f.read()
+        # with open("zzcontent_md_string.md", "r") as f:
+        #     content_md_string = f.read()
         return toc_md_string, content_md_string
     
     async def map_toc_to_hierarchy(self, toc_lines: List[str], toc_hierarchy_schema: Dict[str, str]) -> Dict[str, str]:
@@ -297,6 +631,18 @@ class PDFParser(BaseParser):
                 parts.append(lines[start:end])
             return parts
         
+        async def create_hierarchy_schema_subset(schema: str):
+            result = {}
+            levels = {}
+            for key, value in schema.items():
+                if value not in levels:
+                    levels[value] = 1
+                    result[key] = value
+                elif levels[value] < 2:
+                    levels[value] += 1
+                    result[key] = value
+            return result
+        
         async def process_function(toc_md_section_joined_lines: str):
             if self.no_md_flag:
                 USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_NOMD.format(TOC_HIERARCHY_SCHEMA_TEMPLATE=prompts.TOC_HIERARCHY_SCHEMA_TEMPLATE, toc_md_string=toc_md_section_joined_lines)
@@ -329,6 +675,61 @@ class PDFParser(BaseParser):
                     print("Error decoding JSON for ToC Hierarchy Schema")
                     raise
 
+        async def process_page(page_num: int, prior_schema: str = None):
+            nonlocal unique_schema_str
+            nonlocal unique_schema
+            if not prior_schema:
+                toc_md_toc_section_str = self.to_markdown(self.document, [page_num, page_num + 1])
+                USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_V1SION.format(TOC_HIERARCHY_SCHEMA_TEMPLATE=prompts.TOC_HIERARCHY_SCHEMA_TEMPLATE, toc_md_string=toc_md_toc_section_str)
+            else:
+                toc_md_toc_section_str = self.to_markdown(self.document, [page_num])
+                USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_VISION.format(unique_schema_str=unique_schema_str, page_num=page_num, TOC_HIERARCHY_SCHEMA_TEMPLATE=unique_schema, toc_md_string=toc_md_toc_section_str)
+            page = self.document[page_num]
+            messages = [
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": USER_PROMPT},
+                        {
+                            "type": "image_url",
+                            "image_url": {
+                                "url": f"data:image/jpeg;base64,{self.encode_page_as_base64(page)}",
+                            },
+                        }
+                    ]
+                }
+            ]
+            if not prior_schema:
+                next_page = self.document[page_num + 1]
+                messages[0]["content"].append(
+                    {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": f"data:image/jpeg;base64,{self.encode_page_as_base64(next_page)}",
+                        },
+                    }
+                )
+            while True:
+                response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o")
+                try:
+                    message_content = response.choices[0].message.content
+                    toc_hierarchy_schema = json.loads(message_content)
+                    if not prior_schema:
+                        ordered_items = sorted(toc_hierarchy_schema.items(), key=lambda x: x[1].count('#'))
+                        ordered_dict = dict(ordered_items)
+                        utils.print_coloured(f"Schema {page_num}: {json.dumps(ordered_dict, indent=2)}", "magenta")
+                    return toc_hierarchy_schema
+                except json.JSONDecodeError as e:
+                    print(f"JSONDecodeError: {e}")
+                    print(f"Message content: {message_content}")
+                    print("Retrying...")
+                    continue
+                except Exception as e:
+                    print(f"Error: {e}")
+                    print("Retrying...")
+                    continue
+        
+        # TODO: must be a better way to determine this
         toc_md_lines = self.toc_md_string.split("\n")
         toc_md_section_lines = [line for line in toc_md_lines if line.startswith('#')]
         utils.print_coloured(f"Number of ToC lines: {len(toc_md_section_lines)} out of {len(toc_md_lines)} with a ratio of {len(toc_md_section_lines) / len(toc_md_lines)}", "yellow")
@@ -336,23 +737,37 @@ class PDFParser(BaseParser):
             toc_md_sections = ['\n'.join(section) for section in await split_lines(toc_md_section_lines, 5)]
         else:
             self.no_md_flag = True
-            toc_md_sections = ['\n'.join(section) for section in await split_lines(toc_md_lines, 10)]
             utils.print_coloured("No ToC Flag Set", "yellow")
+            # TODO: make toc_md_toc_section_str global
+            toc_md_toc_section_str = self.to_markdown(self.document, [self.toc_pages[0], self.toc_pages[0] + 1])
+            prior_schema = await process_page(self.toc_pages[0])
+            unique_schema = await create_hierarchy_schema_subset(prior_schema)
+            toc_md_toc_section_lines = toc_md_toc_section_str.split("\n")
+            toc_md_toc_section_lines = [line for line in toc_md_toc_section_lines if line.strip()] 
+            unique_schema_str = ""
+            utils.print_coloured(f"Unique Schema: {json.dumps(unique_schema, indent=4)}", "cyan")
+            for key, value in unique_schema.items():
+                match = process.extractOne(key, [line for line in toc_md_toc_section_lines])[0]
+                unique_schema_str += f"{match} -> {key}: {value}\n"
+            utils.print_coloured(unique_schema_str, "magenta")
 
-        schemas = await asyncio.gather(*[self.rate_limited_process(process_function, section) for section in toc_md_sections])
+        if not self.no_md_flag:
+            combined_schema = {}
+            schemas = await asyncio.gather(*[self.rate_limited_process(process_function, section) for section in toc_md_sections])
+        else:
+            combined_schema = {re.sub(r'\s*\d+$', '', k.capitalize()): v for k, v in prior_schema.items()}
+            schemas = await asyncio.gather(*[self.rate_limited_process(process_page, page_num, prior_schema=prior_schema) for page_num in self.toc_pages[2:]])
         
         # combine unique values from all schemas
         # split this up as llm was missing some values in long tocs
-        combined_schema = {}
+        #combined_schema = {}
         for schema in schemas:
             for key, value in schema.items():
-                if key not in combined_schema: # and key != "Part": stupid ramsey nurses 
-                    combined_schema[key] = value
+                capitalised_key = re.sub(r'\s*\d+$', '', key.capitalize())
+                if capitalised_key not in combined_schema: 
+                    combined_schema[capitalised_key] = value
 
         utils.print_coloured(f"{json.dumps(combined_schema, indent=4)}", "green")
-
-        # TODO: make all text .lower() 
-        # post-process to keep only the capitalised keys when duplicates with different capitalisations exist
 
         return combined_schema
 
@@ -403,10 +818,10 @@ class PDFParser(BaseParser):
                 adjust_count = top_level_count - 1
                 levels_unfiltered = {k: v[adjust_count:] for k, v in self.toc_hierarchy_schema.items()}
                 self.adjusted_toc_hierarchy_schema = levels_unfiltered
-                levels = await self.filter_schema(levels_unfiltered, content)
+                levels = await self.filter_schema(levels_unfiltered, content, 2) # added 2 uk companies act
                 #print(f"Adjusted ToC Hierarchy Schema: {json.dumps(levels, indent=4)}")
             else:    
-                levels = await self.filter_schema(self.toc_hierarchy_schema, content)
+                levels = await self.filter_schema(self.toc_hierarchy_schema, content, 2) # added 2 uk companies act
                 #print(f"UNadjusted ToC Hierarchy Schema: {json.dumps(levels, indent=4)}")
 
         if max_depth is None:
@@ -526,31 +941,37 @@ class PDFParser(BaseParser):
         return parts
     
     async def split_no_md_toc_parts_into_parts(self, lines: List[str], level_types: List[str]) -> Dict[str, Union[str, Dict]]:
-        # TODO: add concurrency as above
         parts = {}
         stack = []
         i = 0
+        heading_futures = []
+
+        async def process_heading_queue():
+            return await asyncio.gather(*[future for future, _ in heading_futures])
+        
         while i < len(lines):
             line = lines[i].strip()
             level = None
             for level_type, level_num in level_types:
-                if level_type in line:
+                # if level_type in line:
+                if line.lower().startswith(f"**{level_type.lower()}"):
                     level = level_num
                     break
             if level is not None:
                 heading = line.strip()
-                heading = await self.rate_limited_process(self.process_heading, heading)
+                placeholder = str(uuid.uuid4())
+                heading_futures.append((self.rate_limited_process(self.process_heading, heading), placeholder))
                 while stack and stack[-1][0] >= level:
                     stack.pop()
                 if stack:
                     parent = stack[-1][1]
                     if "children" not in parent:
                         parent["children"] = {}
-                    parent["children"][json.dumps(heading)] = {}
-                    stack.append((level, parent["children"][json.dumps(heading)]))
+                    parent["children"][placeholder] = {}
+                    stack.append((level, parent["children"][placeholder]))
                 else:
-                    parts[json.dumps(heading)] = {}
-                    stack.append((level, parts[json.dumps(heading)]))
+                    parts[placeholder] = {}
+                    stack.append((level, parts[placeholder]))
                 i += 1
             else:
                 if stack:
@@ -560,6 +981,16 @@ class PDFParser(BaseParser):
                         stack[-1][1]["content"] += line.strip() + '\n'
                 i += 1
 
+        processed_headings = await process_heading_queue()
+        for processed_heading, original_heading in zip(processed_headings, [heading for _, heading in heading_futures]):
+            def replace_heading(data):
+                if isinstance(data, dict):
+                    for key in list(data.keys()): 
+                        if key == original_heading:
+                            data[json.dumps(processed_heading)] = data.pop(original_heading)
+                        else:
+                            replace_heading(data[key])
+            replace_heading(parts)
         return parts
     
     async def split_toc_into_parts(self) -> Dict[str, Union[str, Dict[str, str]]]:
@@ -612,13 +1043,14 @@ class PDFParser(BaseParser):
                 section_types = ", ".join(custom_levels.keys())
                 level_title_dict = json.loads(level_title)
                 level_title_str = f"{level_title_dict['section']} {level_title_dict.get('number', '')} {level_title_dict['title']}"
-                print(level_title_str)
                 sublevel_title_str = ""
                 subsublevel_title_str = ""
                 messages = [
                     {"role": "system", "content": prompts.TOC_SCHEMA_SYS_PROMPT_PLUS},
                     {"role": "user", "content": prompts.TOC_SCHEMA_USER_PROMPT.format(level_title=level_title_str, section_types=section_types, TOC_SCHEMA=TOC_SCHEMA, content=content)}
                 ]
+                messages_str = json.dumps(messages, indent=4)
+                utils.print_coloured(f"{level_title_str} ({self.count_tokens(messages_str)} tokens)", "red")
                 sublevel_title = "Complete"
                 subsublevel_title = "Complete"
             else:
@@ -701,6 +1133,8 @@ class PDFParser(BaseParser):
         Extract and format the ToC.
         """
         levels = await self.split_toc_into_parts()
+        # with open("levels.json", "r") as f:
+        #     levels = json.load(f)
         tasks = []
         all_level_schemas = {"contents": []}
         with open("levels.json", "w") as f:
@@ -721,9 +1155,35 @@ class PDFParser(BaseParser):
                             await process_level(level_title, subchild_content, child_title, subchild_title)
                     else:
                         await process_level(level_title, child_content, child_title)
+        
+        async def process_level_no_md(level_title, level_content, sublevel_title=None, subsublevel_title=None):
+            if "content" in level_content:
+                if level_content["content"].count('\n') == 1:
+                    level_title_dict = json.loads(level_title)
+                    if not level_title_dict["title"]:
+                        level_title_dict["title"] = level_content["content"]
+                        level_title = json.dumps(level_title_dict)
+                else:
+                    # if there is content, generate the formatted ToC request
+                    task = asyncio.create_task(self.generate_formatted_toc(level_title, sublevel_title, subsublevel_title, level_content["content"]))
+                    tasks.append(task)
 
-        for level_title, level_content in levels.items():
-            await process_level(level_title, level_content)
+            if "children" in level_content:
+                # process each child level recursively
+                for child_title, child_content in level_content["children"].items():
+                    if "children" in child_content:
+                        # process further children, process them as subsublevels
+                        for subchild_title, subchild_content in child_content["children"].items():
+                            await process_level_no_md(level_title, subchild_content, child_title, subchild_title)
+                    else:
+                        await process_level_no_md(level_title, child_content, child_title)
+
+        if not self.no_md_flag:
+            for level_title, level_content in levels.items():
+                await process_level(level_title, level_content)
+        else:
+            for level_title, level_content in levels.items():
+                await process_level_no_md(level_title, level_content)
 
         try:
             results = await asyncio.gather(*tasks)

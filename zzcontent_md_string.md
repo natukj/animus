@@ -3,11 +3,11 @@
 -----
 
 
-**ELIZABETH II** c. **46**
+**ELIZABETH II**c. **46**
 
 ## Companies Act 2006
 
-#### 2006 CHAPTER 46
+**2006 CHAPTER 46**
 
 #### An Act to reform company law and restate the greater part of the enactments
 #### relating to companies; to make other provision relating to companies and
@@ -21,13 +21,13 @@ E  IT  ENACTED by the Queen’s most Excellent Majesty, by and with the advice a
 consent of the Lords Spiritual and Temporal, and Commons, in this present
 Parliament assembled, and by the authority of the same, as follows:—
 
-**P** **ART** **1**
+**PART 1**
 
 G ENERAL  INTRODUCTORY  PROVISIONS
 
 _Companies and Companies Acts_
 
-**1** **Companies**
+**1****Companies**
 
 (1) In the Companies Acts, unless the context otherwise requires—
 “company” means a company formed and registered under this Act, that
@@ -47,7 +47,7 @@ that Order,
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 1 — General introductory provisions_
 2
@@ -64,7 +64,7 @@ this Act (see Chapter 2 of that Part).
 (3) For provisions applying to companies incorporated outside the United
 Kingdom, see Part 34 (overseas companies).
 
-**2** **The Companies Acts**
+**2****The Companies Acts**
 
 (1) In this Act “the Companies Acts” means—
 (a) the company law provisions of this Act,
@@ -81,7 +81,7 @@ purposes of those Parts.
 
 _Types of company_
 
-**3** **Limited and unlimited companies**
+**3****Limited and unlimited companies**
 
 (1) A company is a “limited company” if the liability of its members is limited by
 its constitution.
@@ -97,7 +97,7 @@ company is “limited by guarantee”.
 (4) If there is no limit on the liability of its members, the company is an “unlimited
 company”.
 
-**4** **Private and public companies**
+**4****Private and public companies**
 
 (1) A “private company” is any company that is not a public company.
 
@@ -113,7 +113,7 @@ company have been complied with on or after the relevant date.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 1 — General introductory provisions_
 3
 
@@ -126,7 +126,7 @@ December 1980;
 (4) For the two major differences between private and public companies, see Part
 20.
 
-**5** **Companies limited by guarantee and having share capital**
+**5****Companies limited by guarantee and having share capital**
 
 (1) A company cannot be formed as, or become, a company limited by guarantee
 with a share capital.
@@ -141,7 +141,7 @@ provision for a share capital.
 This applies whether or not the nominal value or number of the shares or
 interests is specified by the provision.
 
-**6** **Community interest companies**
+**6****Community interest companies**
 
 (1) In accordance with Part 2 of the Companies (Audit, Investigations and
 Community Enterprise) Act 2004 (c. 27)—
@@ -153,13 +153,13 @@ become a community interest company.
 
 (2) The other provisions of the Companies Acts have effect subject to that Part.
 
-**P** **ART** **2**
+**PART 2**
 
 C OMPANY  FORMATION
 
 _General_
 
-**7** **Method of forming company**
+**7****Method of forming company**
 
 (1) A company is formed under this Act by one or more persons—
 (a) subscribing their names to a memorandum of association (see section
@@ -174,12 +174,12 @@ sections 9 to 13).
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 2 — Company formation_
 4
 
-**8** **Memorandum of association**
+**8****Memorandum of association**
 
 (1) A memorandum of association is a memorandum stating that the
 subscribers—
@@ -192,7 +192,7 @@ by each subscriber.
 
 _Requirements for registration_
 
-**9** **Registration documents**
+**9****Registration documents**
 
 (1) The memorandum of association must be delivered to the registrar together
 with an application for registration of the company, the documents required by
@@ -237,11 +237,11 @@ office of the company is to be situated in Northern Ireland.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 2 — Company formation_
 5
 
-**10** **Statement of capital and initial shareholdings**
+**10****Statement of capital and initial shareholdings**
 
 (1) The statement of capital and initial shareholdings required to be delivered in
 the case of a company that is to have a share capital must comply with this
@@ -273,7 +273,7 @@ of premium).
 class, the information required under subsection (4)(a) is required for each
 class.
 
-**11** **Statement of guarantee**
+**11****Statement of guarantee**
 
 (1) The statement of guarantee required to be delivered in the case of a company
 that is to be limited by guarantee must comply with this section.
@@ -290,7 +290,7 @@ he ceases to be a member,
 (c) adjustment of the rights of the contributories among themselves,
 not exceeding a specified amount.
 
-**12** **Statement of proposed officers**
+**12****Statement of proposed officers**
 
 (1) The statement of the company’s proposed officers required to be delivered to
 the registrar must contain the required particulars of—
@@ -302,7 +302,7 @@ directors of the company;
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 2 — Company formation_
 6
@@ -326,7 +326,7 @@ capacity.
 If all the partners in a firm are to be joint secretaries, consent may be given by
 one partner on behalf of all of them.
 
-**13** **Statement of compliance**
+**13****Statement of compliance**
 
 (1) The statement of compliance required to be delivered to the registrar is a
 statement that the requirements of this Act as to registration have been
@@ -337,12 +337,12 @@ compliance.
 
 _Registration and its effect_
 
-**14** **Registration**
+**14****Registration**
 
 If the registrar is satisfied that the requirements of this Act as to registration are
 complied with, he shall register the documents delivered to him.
 
-**15** **Issue of certificate of incorporation**
+**15****Issue of certificate of incorporation**
 
 (1) On the registration of a company, the registrar of companies shall give a
 certificate that the company is incorporated.
@@ -368,11 +368,11 @@ under this Act.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 2 — Company formation_
 7
 
-**16** **Effect of registration**
+**16****Effect of registration**
 
 (1) The registration of a company has the following effects as from the date of
 incorporation.
@@ -396,15 +396,15 @@ capital and initial shareholdings.
 (b) as secretary or joint secretary of the company,
 are deemed to have been appointed to that office.
 
-**P** **ART** **3**
+**PART 3**
 
 A COMPANY ’ S  CONSTITUTION
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 I NTRODUCTORY
 
-**17** **A company’s constitution**
+**17****A company’s constitution**
 
 Unless the context otherwise requires, references in the Companies Acts to a
 company’s constitution include—
@@ -412,13 +412,13 @@ company’s constitution include—
 (b) any resolutions and agreements to which Chapter 3 applies (see section
 29).
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 A RTICLES  OF  ASSOCIATION
 
 _General_
 
-**18** **Articles of association**
+**18****Articles of association**
 
 (1) A company must have articles of association prescribing regulations for the
 company.
@@ -436,7 +436,7 @@ register articles of association.
 
 8
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 3 — A company’s constitution_
 
 _Chapter 2 — Articles of association_
@@ -447,7 +447,7 @@ _Chapter 2 — Articles of association_
 (4) References in the Companies Acts to a company’s “articles” are to its articles of
 association.
 
-**19** **Power of Secretary of State to prescribe model articles**
+**19****Power of Secretary of State to prescribe model articles**
 
 (1) The Secretary of State may by regulations prescribe model articles of
 association for companies.
@@ -463,7 +463,7 @@ affect a company registered before the amendment takes effect.
 
 (5) Regulations under this section are subject to negative resolution procedure.
 
-**20** **Default application of model articles**
+**20****Default application of model articles**
 
 (1) On the formation of a limited company—
 (a) if articles are not registered, or
@@ -479,7 +479,7 @@ registered.
 
 _Alteration of articles_
 
-**21** **Amendment of articles**
+**21****Amendment of articles**
 
 (1) A company may amend its articles by special resolution.
 
@@ -501,11 +501,11 @@ is subject to—
 
 9
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 3 — A company’s constitution_
 _Chapter 2 — Articles of association_
 
-**22** **Entrenched provisions of the articles**
+**22****Entrenched provisions of the articles**
 
 (1) A company’s articles may contain provision (“provision for entrenchment”) to
 the effect that specified provisions of the articles may be amended or repealed
@@ -526,7 +526,7 @@ company’s articles.
 (4) Nothing in this section affects any power of a court or other authority to alter
 a company’s articles.
 
-**23** **Notice to registrar of existence of restriction on amendment of articles**
+**23****Notice to registrar of existence of restriction on amendment of articles**
 
 (1) Where a company’s articles—
 (a) on formation contain provision for entrenchment,
@@ -543,7 +543,7 @@ the company must give notice of that fact to the registrar.
 power of the company to amend its articles,
 the company must give notice of that fact to the registrar.
 
-**24** **Statement of compliance where amendment of articles restricted**
+**24****Statement of compliance where amendment of articles restricted**
 
 (1) This section applies where a company’s articles are subject—
 (a) to provision for entrenchment, or
@@ -567,7 +567,7 @@ where relevant, any applicable order of a court or other authority.
 
 10
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 3 — A company’s constitution_
 
 _Chapter 2 — Articles of association_
@@ -575,7 +575,7 @@ _Chapter 2 — Articles of association_
 (4) The registrar may rely on the statement of compliance as sufficient evidence of
 the matters stated in it.
 
-**25** **Effect of alteration of articles on company’s members**
+**25****Effect of alteration of articles on company’s members**
 
 (1) A member of a company is not bound by an alteration to its articles after the
 date on which he became a member, if and so far as the alteration—
@@ -587,7 +587,7 @@ company’s share capital or otherwise to pay money to the company.
 (2) Subsection (1) does not apply in a case where the member agrees in writing,
 either before or after the alteration is made, to be bound by the alteration.
 
-**26** **Registrar to be sent copy of amended articles**
+**26****Registrar to be sent copy of amended articles**
 
 (1) Where a company amends its articles it must send to the registrar a copy of the
 articles as amended not later than 15 days after the amendment takes effect.
@@ -606,7 +606,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**27** **Registrar’s notice to comply in case of failure with respect to amended articles**
+**27****Registrar’s notice to comply in case of failure with respect to amended articles**
 
 (1) If it appears to the registrar that a company has failed to comply with any
 enactment requiring it—
@@ -635,7 +635,7 @@ failure mentioned in subsection (1).
 
 11
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 3 — A company’s constitution_
 _Chapter 2 — Articles of association_
 
@@ -644,7 +644,7 @@ Consolidated Fund.
 
 _Supplementary_
 
-**28** **Existing companies: provisions of memorandum treated as provisions of**
+**28****Existing companies: provisions of memorandum treated as provisions of **
 **articles**
 
 (1) Provisions that immediately before the commencement of this Part were
@@ -661,11 +661,11 @@ provision as they apply to provision made on the company’s formation, except
 that the duty under section 23(1)(a) to give notice to the registrar does not
 apply.
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 R ESOLUTIONS  AND  AGREEMENTS  AFFECTING  A  COMPANY ’ S  CONSTITUTION
 
-**29** **Resolutions and agreements affecting a company’s constitution**
+**29****Resolutions and agreements affecting a company’s constitution**
 
 (1) This Chapter applies to—
 (a) any special resolution;
@@ -685,7 +685,7 @@ virtue of any enactment.
 members of a company, do not include the company itself where it is such a
 member by virtue only of its holding shares as treasury shares.
 
-**30** **Copies of resolutions or agreements to be forwarded to registrar**
+**30****Copies of resolutions or agreements to be forwarded to registrar**
 
 (1) A copy of every resolution or agreement to which this Chapter applies, or (in
 the case of a resolution or agreement that is not in writing) a written
@@ -701,7 +701,7 @@ memorandum setting out its terms, must be forwarded to the registrar within
 
 12
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 3 — A company’s constitution_
 
 _Chapter 3 — Resolutions and agreements affecting a company’s constitution_
@@ -717,13 +717,13 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 (4) For the purposes of this section, a liquidator of the company is treated as an
 officer of it.
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 M ISCELLANEOUS  AND  SUPPLEMENTARY  PROVISIONS
 
 _Statement of company’s objects_
 
-**31** **Statement of company’s objects**
+**31****Statement of company’s objects**
 
 (1) Unless a company’s articles specifically restrict the objects of the company, its
 objects are unrestricted.
@@ -749,7 +749,7 @@ and Trustee Investment (Scotland) Act 2005 (asp 10).
 
 _Other provisions with respect to a company’s constitution_
 
-**32** **Constitutional documents to be provided to members**
+**32****Constitutional documents to be provided to members**
 
 (1) A company must, on request by any member, send to him the following
 documents—
@@ -768,7 +768,7 @@ enactment), or
 
 13
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 3 — A company’s constitution_
 _Chapter 4 — Miscellaneous and supplementary provisions_
 
@@ -804,7 +804,7 @@ committed by every officer of the company who is in default.
 (4) A person guilty of an offence under this section is liable on summary
 conviction to a fine not exceeding level 3 on the standard scale.
 
-**33** **Effect of company’s constitution**
+**33****Effect of company’s constitution**
 
 (1) The provisions of a company’s constitution bind the company and its members
 to the same extent as if there were covenants on the part of the company and
@@ -815,7 +815,7 @@ due from him to the company.
 In England and Wales and Northern Ireland it is of the nature of an ordinary
 contract debt.
 
-**34** **Notice to registrar where company’s constitution altered by enactment**
+**34****Notice to registrar where company’s constitution altered by enactment**
 
 (1) This section applies where a company’s constitution is altered by an
 enactment, other than an enactment amending the general law.
@@ -834,7 +834,7 @@ the enactment.
 
 14
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 3 — A company’s constitution_
 
 _Chapter 4 — Miscellaneous and supplementary provisions_
@@ -863,7 +863,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**35** **Notice to registrar where company’s constitution altered by order**
+**35****Notice to registrar where company’s constitution altered by order**
 
 (1) Where a company’s constitution is altered by an order of a court or other
 authority, the company must give notice to the registrar of the alteration not
@@ -898,11 +898,11 @@ the delivery to the registrar of a copy of the order in question.
 
 15
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 3 — A company’s constitution_
 _Chapter 4 — Miscellaneous and supplementary provisions_
 
-**36** **Documents to be incorporated in or accompany copies of articles issued by**
+**36****Documents to be incorporated in or accompany copies of articles issued by **
 **company**
 
 (1) Every copy of a company’s articles issued by the company must be
@@ -940,14 +940,14 @@ officer of it.
 
 _Supplementary provisions_
 
-**37** **Right to participate in profits otherwise than as member void**
+**37****Right to participate in profits otherwise than as member void**
 
 In the case of a company limited by guarantee and not having a share capital
 any provision in the company’s articles, or in any resolution of the company,
 purporting to give a person a right to participate in the divisible profits of the
 company otherwise than as a member is void.
 
-**38** **Application to single member companies of enactments and rules of law**
+**38****Application to single member companies of enactments and rules of law**
 
 Any enactment or rule of law applicable to companies formed by two or more
 persons or having two or more members applies with any necessary
@@ -959,18 +959,18 @@ one person as a member.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 4 — A company’s capacity and related matters_
 16
 
-**P** **ART** **4**
+**PART 4**
 
 A COMPANY ’ S  CAPACITY  AND  RELATED  MATTERS
 
 _Capacity of company and power of directors to bind it_
 
-**39** **A company’s capacity**
+**39****A company’s capacity**
 
 (1) The validity of an act done by a company shall not be called into question on
 the ground of lack of capacity by reason of anything in the company’s
@@ -978,7 +978,7 @@ constitution.
 
 (2) This section has effect subject to section 42 (companies that are charities).
 
-**40** **Power of directors to bind the company**
+**40****Power of directors to bind the company**
 
 (1) In favour of a person dealing with a company in good faith, the power of the
 directors to bind the company, or authorise others to do so, is deemed to be free
@@ -1020,11 +1020,11 @@ section 42 (companies that are charities).
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 4 — A company’s capacity and related matters_
 17
 
-**41** **Constitutional limitations: transactions involving directors or their associates**
+**41****Constitutional limitations: transactions involving directors or their associates**
 
 (1) This section applies to a transaction if or to the extent that its validity depends
 on section 40 (power of directors deemed to be free of limitations under
@@ -1074,7 +1074,7 @@ appear to the court to be just.
 (b) the reference to a person connected with a director has the same
 meaning as in Part 10 (company directors).
 
-**42** **Constitutional limitations: companies that are charities**
+**42****Constitutional limitations: companies that are charities**
 
 (1) Sections 39 and 40 (company’s capacity and power of directors to bind
 company) do not apply to the acts of a company that is a charity except in
@@ -1085,7 +1085,7 @@ favour of a person who—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 4 — A company’s capacity and related matters_
 18
@@ -1123,7 +1123,7 @@ Act 1989 (c. 40)).
 
 _Formalities of doing business under the law of England and Wales or Northern Ireland_
 
-**43** **Company contracts**
+**43****Company contracts**
 
 (1) Under the law of England and Wales or Northern Ireland a contract may be
 made—
@@ -1135,7 +1135,7 @@ or implied.
 also apply, unless a contrary intention appears, to a contract made by or on
 behalf of a company.
 
-**44** **Execution of documents**
+**44****Execution of documents**
 
 (1) Under the law of England and Wales or Northern Ireland a document is
 executed by a company—
@@ -1150,7 +1150,7 @@ company—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 4 — A company’s capacity and related matters_
 19
 
@@ -1186,7 +1186,7 @@ authorised by the firm to sign on its behalf.
 company in the name of or on behalf of another person whether or not that
 person is also a company.
 
-**45** **Common seal**
+**45****Common seal**
 
 (1) A company may have a common seal, but need not have one.
 
@@ -1206,7 +1206,7 @@ conviction to a fine not exceeding level 3 on the standard scale.
 
 (6) This section does not form part of the law of Scotland.
 
-**46** **Execution of deeds**
+**46****Execution of deeds**
 
 (1) A document is validly executed by a company as a deed for the purposes of
 section 1(2)(b) of the Law of Property (Miscellaneous Provisions) Act 1989
@@ -1217,7 +1217,7 @@ section 1(2)(b) of the Law of Property (Miscellaneous Provisions) Act 1989
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 4 — A company’s capacity and related matters_
 20
@@ -1228,7 +1228,7 @@ _Part 4 — A company’s capacity and related matters_
 (2) For the purposes of subsection (1)(b) a document is presumed to be delivered
 upon its being executed, unless a contrary intention is proved.
 
-**47** **Execution of deeds or other documents by attorney**
+**47****Execution of deeds or other documents by attorney**
 
 (1) Under the law of England and Wales or Northern Ireland a company may, by
 instrument executed as a deed, empower a person, either generally or in
@@ -1240,7 +1240,7 @@ elsewhere, has effect as if executed by the company.
 
 _Formalities of doing business under the law of Scotland_
 
-**48** **Execution of documents by companies**
+**48****Execution of documents by companies**
 
 (1) The following provisions form part of the law of Scotland only.
 
@@ -1257,7 +1257,7 @@ has effect as if so executed.
 
 _Other matters_
 
-**49** **Official seal for use abroad**
+**49****Official seal for use abroad**
 
 (1) A company that has a common seal may have an official seal for use outside
 the United Kingdom.
@@ -1281,7 +1281,7 @@ deed or other document to which the company is party.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 4 — A company’s capacity and related matters_
 21
 
@@ -1296,7 +1296,7 @@ of the agent’s authority has been given to the person dealing with him.
 document to which the seal is affixed the date on which, and place at which, it
 is affixed.
 
-**50** **Official seal for share certificates etc**
+**50****Official seal for share certificates etc**
 
 (1) A company that has a common seal may have an official seal for use—
 (a) for sealing securities issued by the company, or
@@ -1308,7 +1308,7 @@ on its face of the word “Securities”, and
 (b) when duly affixed to the document has the same effect as the
 company’s common seal.
 
-**51** **Pre-incorporation contracts, deeds and obligations**
+**51****Pre-incorporation contracts, deeds and obligations**
 
 (1) A contract that purports to be made by or on behalf of a company at a time
 when the company has not been formed has effect, subject to any agreement to
@@ -1321,7 +1321,7 @@ Northern Ireland, and
 (b) to the undertaking of an obligation under the law of Scotland,
 as it applies to the making of a contract.
 
-**52** **Bills of exchange and promissory notes**
+**52****Bills of exchange and promissory notes**
 
 A bill of exchange or promissory note is deemed to have been made, accepted
 or endorsed on behalf of a company if made, accepted or endorsed in the name
@@ -1335,22 +1335,22 @@ its authority.
 
 22
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 
 _Chapter 1 — General requirements_
 
-**P** **ART** **5**
+**PART 5**
 
 A COMPANY ’ S  NAME
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 G ENERAL  REQUIREMENTS
 
 _Prohibited names_
 
-**53** **Prohibited names**
+**53****Prohibited names**
 
 A company must not be registered under this Act by a name if, in the opinion
 of the Secretary of State—
@@ -1359,7 +1359,7 @@ of the Secretary of State—
 
 _Sensitive words and expressions_
 
-**54** **Names suggesting connection with government or public authority**
+**54****Names suggesting connection with government or public authority**
 
 (1) The approval of the Secretary of State is required for a company to be
 registered under this Act by a name that would be likely to give the impression
@@ -1383,7 +1383,7 @@ public nature.
 
 (3) Regulations under this section are subject to affirmative resolution procedure.
 
-**55** **Other sensitive words or expressions**
+**55****Other sensitive words or expressions**
 
 (1) The approval of the Secretary of State is required for a company to be
 registered under this Act by a name that includes a word or expression for the
@@ -1399,11 +1399,11 @@ section.
 
 23
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 _Chapter 1 — General requirements_
 
-**56** **Duty to seek comments of government department or other specified body**
+**56****Duty to seek comments of government department or other specified body**
 
 (1) The Secretary of State may by regulations under—
 (a) section 54 (name suggesting connection with government or public
@@ -1434,7 +1434,7 @@ under this section has been made, and
 
 _Permitted characters etc_
 
-**57** **Permitted characters etc**
+**57****Permitted characters etc**
 
 (1) The Secretary of State may make provision by regulations—
 (a) as to the letters or other characters, signs or symbols (including accents
@@ -1462,18 +1462,18 @@ this section.
 
 24
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 
 _Chapter 2 — Indications of company type or legal form_
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 I NDICATIONS  OF  COMPANY  TYPE  OR  LEGAL  FORM
 
 _Required indications for limited companies_
 
-**58** **Public limited companies**
+**58****Public limited companies**
 
 (1) The name of a limited company that is a public company must end with
 “public limited company” or “p.l.c.”.
@@ -1485,7 +1485,7 @@ cyfyngedig cyhoeddus” or “c.c.c.”.
 33(3) and (4) of the Companies (Audit, Investigations and Community
 Enterprise) Act 2004 (c. 27)).
 
-**59** **Private limited companies**
+**59****Private limited companies**
 
 (1) The name of a limited company that is a private company must end with
 “limited” or “ltd.”.
@@ -1499,7 +1499,7 @@ or “cyf.”.
 33(1) and (2) of the Companies (Audit, Investigations and Community
 Enterprise) Act 2004).
 
-**60** **Exemption from requirement as to use of “limited”**
+**60****Exemption from requirement as to use of “limited”**
 
 (1) A private company is exempt from section 59 (requirement to have name
 ending with “limited” or permitted alternative) if—
@@ -1529,11 +1529,11 @@ stated in it.
 
 25
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 _Chapter 2 — Indications of company type or legal form_
 
-**61** **Continuation of existing exemption: companies limited by shares**
+**61****Continuation of existing exemption: companies limited by shares**
 
 (1) This section applies to a private company limited by shares—
 (a) that on 25th February 1982—
@@ -1570,7 +1570,7 @@ generally to be transferred on its winding up either—
 charity and anything incidental or conducive thereto,
 (whether or not the body is a member of the company).
 
-**62** **Continuation of existing exemption: companies limited by guarantee**
+**62****Continuation of existing exemption: companies limited by guarantee**
 
 (1) A private company limited by guarantee that immediately before the
 commencement of this Part—
@@ -1595,7 +1595,7 @@ anything incidental or conducive to any of those objects.
 
 26
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 
 _Chapter 2 — Indications of company type or legal form_
@@ -1610,7 +1610,7 @@ generally to be transferred on its winding up either—
 charity and anything incidental or conducive thereto,
 (whether or not the body is a member of the company).
 
-**63** **Exempt company: restriction on amendment of articles**
+**63****Exempt company: restriction on amendment of articles**
 
 (1) A private company—
 (a) that is exempt under section 61 or 62 from the requirement to use
@@ -1659,11 +1659,11 @@ earlier enactments).
 
 27
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 _Chapter 2 — Indications of company type or legal form_
 
-**64** **Power to direct change of name in case of company ceasing to be entitled to**
+**64****Power to direct change of name in case of company ceasing to be entitled to **
 **exemption**
 
 (1) If it appears to the Secretary of State that a company whose name does not
@@ -1710,7 +1710,7 @@ a community interest company.
 
 _Inappropriate use of indications of company type or legal form_
 
-**65** **Inappropriate use of indications of company type or legal form**
+**65****Inappropriate use of indications of company type or legal form**
 
 (1) The Secretary of State may make provision by regulations prohibiting the use
 in a company name of specified words, expressions or other indications —
@@ -1726,7 +1726,7 @@ with a particular type of company or form of organisation.
 
 28
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 
 _Chapter 2 — Indications of company type or legal form_
@@ -1745,13 +1745,13 @@ includes anything prohibited by regulations under this section.
 
 (5) Regulations under this section are subject to negative resolution procedure.
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 S IMILARITY  TO  OTHER  NAMES
 
 _Similarity to other name on registrar’s index_
 
-**66** **Name not to be the same as another in the index**
+**66****Name not to be the same as another in the index**
 
 (1) A company must not be registered under this Act by a name that is the same as
 another name appearing in the registrar’s index of company names.
@@ -1778,7 +1778,7 @@ circumstances or withdrawal of consent does not affect the registration.
 
 (6) In this section “specified” means specified in the regulations.
 
-**67** **Power to direct change of name in case of similarity to existing name**
+**67****Power to direct change of name in case of similarity to existing name**
 
 (1) The Secretary of State may direct a company to change its name if it has been
 registered in a name that is the same as or, in the opinion of the Secretary of
@@ -1794,7 +1794,7 @@ of company names, or
 
 29
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 _Chapter 3 — Similarity to other names_
 
@@ -1818,7 +1818,7 @@ does not give rise to grounds for a direction under this section.
 
 (6) In this section “specified” means specified in the regulations.
 
-**68** **Direction to change name: supplementary provisions**
+**68****Direction to change name: supplementary provisions**
 
 (1) The following provisions have effect in relation to a direction under section 67
 (power to direct change of name in case of similarity to existing name).
@@ -1847,7 +1847,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 _Similarity to other name in which person has goodwill_
 
-**69** **Objection to company’s registered name**
+**69****Objection to company’s registered name**
 
 (1) A person (“the applicant”) may object to a company’s registered name on the
 ground—
@@ -1861,7 +1861,7 @@ has goodwill, or
 
 30
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 
 _Chapter 3 — Similarity to other names_
@@ -1904,7 +1904,7 @@ registering the name.
 
 (7) In this section “goodwill” includes reputation of any description.
 
-**70** **Company names adjudicators**
+**70****Company names adjudicators**
 
 (1) The Secretary of State shall appoint persons to be company names
 adjudicators.
@@ -1929,7 +1929,7 @@ or misconduct.
 
 31
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 _Chapter 3 — Similarity to other names_
 
@@ -1945,7 +1945,7 @@ may determine.
 adjudicators of their functions;
 (d) compensate persons for ceasing to be adjudicators.
 
-**71** **Procedural rules**
+**71****Procedural rules**
 
 (1) The Secretary of State may make rules about proceedings before a company
 names adjudicator.
@@ -1981,7 +1981,7 @@ that could be the subject of provision in the rules.
 subject to annulment in pursuance of a resolution of either House of
 Parliament.
 
-**72** **Decision of adjudicator to be made available to public**
+**72****Decision of adjudicator to be made available to public**
 
 (1) A company names adjudicator must, within 90 days of determining an
 application under section 69, make his decision and his reasons for it available
@@ -1994,7 +1994,7 @@ to the public.
 
 32
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 
 _Chapter 3 — Similarity to other names_
@@ -2002,7 +2002,7 @@ _Chapter 3 — Similarity to other names_
 (2) He may do so by means of a website or by such other means as appear to him
 to be appropriate.
 
-**73** **Order requiring name to be changed**
+**73****Order requiring name to be changed**
 
 (1) If an application under section 69 is upheld, the adjudicator shall make an
 order—
@@ -2041,7 +2041,7 @@ give notice of his determination—
 takes effect in accordance with section 81(1) (on the issue of the new
 certification of incorporation).
 
-**74** **Appeal from adjudicator’s decision**
+**74****Appeal from adjudicator’s decision**
 
 (1) An appeal lies to the court from any decision of a company names adjudicator
 to uphold or dismiss an application under section 69.
@@ -2062,7 +2062,7 @@ effect of the adjudicator’s order is suspended.
 
 33
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 _Chapter 3 — Similarity to other names_
 
@@ -2077,11 +2077,11 @@ determination—
 (a) to the parties to the appeal, and
 (b) to the registrar.
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 O THER  POWERS  OF  THE S ECRETARY  OF S TATE
 
-**75** **Provision of misleading information etc**
+**75****Provision of misleading information etc**
 
 (1) If it appears to the Secretary of State—
 (a) that misleading information has been given for the purposes of a
@@ -2114,7 +2114,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**76** **Misleading indication of activities**
+**76****Misleading indication of activities**
 
 (1) If in the opinion of the Secretary of State the name by which a company is
 registered gives so misleading an indication of the nature of its activities as to
@@ -2128,7 +2128,7 @@ company to change its name.
 
 34
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 
 _Chapter 4 — Other powers of the Secretary of State_
@@ -2160,11 +2160,11 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
 C HANGE  OF  NAME
 
-**77** **Change of name**
+**77****Change of name**
 
 (1) A company may change its name—
 (a) by special resolution (see section 78), or
@@ -2180,7 +2180,7 @@ company name);
 (appeal against decision of company names adjudicator);
 (d) under section 1033 (company’s name on restoration to the register).
 
-**78** **Change of name by special resolution**
+**78****Change of name by special resolution**
 
 (1) Where a change of name has been agreed to by a company by special
 resolution, the company must give notice to the registrar.
@@ -2194,7 +2194,7 @@ registrar.
 
 35
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 _Chapter 5 — Change of name_
 
@@ -2211,7 +2211,7 @@ stating that it has occurred, and
 (c) the registrar may rely on the statement as sufficient evidence of the
 matters stated in it.
 
-**79** **Change of name by means provided for in company’s articles**
+**79****Change of name by means provided for in company’s articles**
 
 (1) Where a change of a company’s name has been made by other means provided
 for by its articles—
@@ -2222,7 +2222,7 @@ has been made by means provided for by the company’s articles.
 (2) The registrar may rely on the statement as sufficient evidence of the matters
 stated in it.
 
-**80** **Change of name: registration and issue of new certificate of incorporation**
+**80****Change of name: registration and issue of new certificate of incorporation**
 
 (1) This section applies where the registrar receives notice of a change of a
 company’s name.
@@ -2238,7 +2238,7 @@ name.
 (3) On the registration of the new name, the registrar must issue a certificate of
 incorporation altered to meet the circumstances of the case.
 
-**81** **Change of name: effect**
+**81****Change of name: effect**
 
 (1) A change of a company’s name has effect from the date on which the new
 certificate of incorporation is issued.
@@ -2257,16 +2257,16 @@ name.
 
 36
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 
 _Chapter 6 — Trading disclosures_
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
 T RADING  DISCLOSURES
 
-**82** **Requirement to disclose company name etc**
+**82****Requirement to disclose company name etc**
 
 (1) The Secretary of State may by regulations make provision requiring
 companies—
@@ -2290,7 +2290,7 @@ words (or vice versa) shall be disregarded.
 
 (5) Regulations under this section are subject to affirmative resolution procedure.
 
-**83** **Civil consequences of failure to make required disclosure**
+**83****Civil consequences of failure to make required disclosure**
 
 (1) This section applies to any legal proceedings brought by a company to which
 section 82 applies (requirement to disclose company name etc) to enforce a
@@ -2311,7 +2311,7 @@ just and equitable to permit the proceedings to continue.
 (3) This section does not affect the right of any person to enforce such rights as he
 may have against another person in any proceedings brought by that person.
 
-**84** **Criminal consequences of failure to make required disclosures**
+**84****Criminal consequences of failure to make required disclosures**
 
 (1) Regulations under section 82 may provide—
 (a) that where a company fails, without reasonable excuse, to comply with
@@ -2325,7 +2325,7 @@ is committed by—
 
 37
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 5 — A company’s name_
 _Chapter 6 — Trading disclosures_
 
@@ -2342,7 +2342,7 @@ officer of the company.
 
 (3) In subsection (1)(a) “specified” means specified in the regulations.
 
-**85** **Minor variations in form of name to be left out of account**
+**85****Minor variations in form of name to be left out of account**
 
 (1) For the purposes of this Chapter, in considering a company’s name no account
 is to be taken of—
@@ -2357,18 +2357,18 @@ being taken to be different names.
 (2) This does not affect the operation of regulations under section 57(1)(a)
 permitting only specified characters, diacritical marks or punctuation.
 
-**P** **ART** **6**
+**PART 6**
 
 A COMPANY ’ S  REGISTERED  OFFICE
 
 _General_
 
-**86** **A company’s registered office**
+**86****A company’s registered office**
 
 A company must at all times have a registered office to which all
 communications and notices may be addressed.
 
-**87** **Change of address of registered office**
+**87****Change of address of registered office**
 
 (1) A company may change the address of its registered office by giving notice to
 the registrar.
@@ -2388,7 +2388,7 @@ index or other document, or
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 6 — A company’s registered office_
 38
@@ -2409,7 +2409,7 @@ it is not to be treated as having failed to comply with that duty.
 
 _Welsh companies_
 
-**88** **Welsh companies**
+**88****Welsh companies**
 
 (1) In the Companies Acts a “Welsh company” means a company as to which it is
 stated in the register that its registered office is to be situated in Wales.
@@ -2434,13 +2434,13 @@ the registrar, who shall—
 (b) issue a new certificate of incorporation altered to meet the
 circumstances of the case.
 
-**P** **ART** **7**
+**PART 7**
 
 R E - REGISTRATION  AS  A  MEANS  OF  ALTERING  A  COMPANY ’ S  STATUS
 
 _Introductory_
 
-**89** **Alteration of status by re-registration**
+**89****Alteration of status by re-registration**
 
 A company may by re-registration under this Part alter its status—
 (a) from a private company to a public company (see sections 90 to 96);
@@ -2451,7 +2451,7 @@ A company may by re-registration under this Part alter its status—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 7 — Re-registration as a means of altering a company’s status_
 39
 
@@ -2464,7 +2464,7 @@ _Part 7 — Re-registration as a means of altering a company’s status_
 
 _Private company becoming public_
 
-**90** **Re-registration of private company as public**
+**90****Re-registration of private company as public**
 
 (1) A private company (whether limited or unlimited) may be re-registered as a
 public company limited by shares if—
@@ -2491,7 +2491,7 @@ as are necessary in connection with its becoming a public company.
 (4) If the company is unlimited it must also make such changes in its articles as are
 necessary in connection with its becoming a company limited by shares.
 
-**91** **Requirements as to share capital**
+**91****Requirements as to share capital**
 
 (1) The following requirements must be met at the time the special resolution is
 passed that the company should be re-registered as a public company—
@@ -2513,7 +2513,7 @@ value or any premium on them otherwise than in cash, and the
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 7 — Re-registration as a means of altering a company’s status_
 40
@@ -2560,7 +2560,7 @@ and
 (c) the effect of the reduction is, or will be, that the nominal value of the
 company’s allotted share capital is below the authorised minimum.
 
-**92** **Requirements as to net assets**
+**92****Requirements as to net assets**
 
 (1) A company applying to re-register as a public company must obtain—
 (a) a balance sheet prepared as at a date not more than seven months
@@ -2577,7 +2577,7 @@ reserves.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 7 — Re-registration as a means of altering a company’s status_
 41
 
@@ -2612,7 +2612,7 @@ reserves.
 (6) In this Part “net assets” and “undistributable reserves” have the same meaning
 as in section 831 (net asset restriction on distributions by public companies).
 
-**93** **Recent allotment of shares for non-cash consideration**
+**93****Recent allotment of shares for non-cash consideration**
 
 (1) This section applies where—
 (a) shares are allotted by the company in the period between the date as at
@@ -2642,7 +2642,7 @@ by—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 7 — Re-registration as a means of altering a company’s status_
 42
@@ -2691,7 +2691,7 @@ Insolvency (Northern Ireland) Order 1989 (S.I. 1989/2405 (N.I.
 19)) (liquidator in winding up accepting shares as consideration
 for sale of company’s property)).
 
-**94** **Application and accompanying documents**
+**94****Application and accompanying documents**
 
 (1) An application for re-registration as a public company must contain—
 (a) a statement of the company’s proposed name on re-registration; and
@@ -2705,7 +2705,7 @@ company’s proposed secretary (see section 95).
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 7 — Re-registration as a means of altering a company’s status_
 43
 
@@ -2726,7 +2726,7 @@ as a public company have been complied with.
 (4) The registrar may accept the statement of compliance as sufficient evidence
 that the company is entitled to be re-registered as a public company.
 
-**95** **Statement of proposed secretary**
+**95****Statement of proposed secretary**
 
 (1) The statement of the company’s proposed secretary must contain the required
 particulars of the person who is or the persons who are to be the secretary or
@@ -2740,7 +2740,7 @@ or each of the persons named as joint secretaries, to act in the relevant capaci
 If all the partners in a firm are to be joint secretaries, consent may be given by
 one partner on behalf of all of them.
 
-**96** **Issue of certificate of incorporation on re-registration**
+**96****Issue of certificate of incorporation on re-registration**
 
 (1) If on an application for re-registration as a public company the registrar is
 satisfied that the company is entitled to be so re-registered, the company shall
@@ -2769,14 +2769,14 @@ registration have been complied with.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 7 — Re-registration as a means of altering a company’s status_
 44
 
 _Public company becoming private_
 
-**97** **Re-registration of public company as private limited company**
+**97****Re-registration of public company as private limited company**
 
 (1) A public company may be re-registered as a private limited company if—
 (a) a special resolution that it should be so re-registered is passed,
@@ -2805,7 +2805,7 @@ that order has been delivered to the registrar.
 as are necessary in connection with its becoming a private company limited by
 shares or, as the case may be, by guarantee.
 
-**98** **Application to court to cancel resolution**
+**98****Application to court to cancel resolution**
 
 (1) Where a special resolution by a public company to be re-registered as a private
 limited company has been passed, an application to the court for the
@@ -2833,7 +2833,7 @@ cancelling or confirming the resolution.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 7 — Re-registration as a means of altering a company’s status_
 45
 
@@ -2854,7 +2854,7 @@ consequence of that provision.
 (6) The court’s order may, if the court thinks fit, require the company not to make
 any, or any specified, amendments to its articles without the leave of the court.
 
-**99** **Notice to registrar of court application or order**
+**99****Notice to registrar of court application or order**
 
 (1) On making an application under section 98 (application to court to cancel
 resolution) the applicants, or the person making the application on their behalf,
@@ -2879,7 +2879,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**100** **Application and accompanying documents**
+**100****Application and accompanying documents**
 
 (1) An application for re-registration as a private limited company must contain a
 statement of the company’s proposed name on re-registration.
@@ -2899,7 +2899,7 @@ as a private limited company have been complied with.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 7 — Re-registration as a means of altering a company’s status_
 46
@@ -2907,7 +2907,7 @@ _Part 7 — Re-registration as a means of altering a company’s status_
 (4) The registrar may accept the statement of compliance as sufficient evidence
 that the company is entitled to be re-registered as a private limited company.
 
-**101** **Issue of certificate of incorporation on re-registration**
+**101****Issue of certificate of incorporation on re-registration**
 
 (1) If on an application for re-registration as a private limited company the
 registrar is satisfied that the company is entitled to be so re-registered, the
@@ -2929,7 +2929,7 @@ registration have been complied with.
 
 _Private limited company becoming unlimited_
 
-**102** **Re-registration of private limited company as unlimited**
+**102****Re-registration of private limited company as unlimited**
 
 (1) A private limited company may be re-registered as an unlimited company if—
 (a) all the members of the company have assented to its being so re-
@@ -2964,7 +2964,7 @@ includes—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 7 — Re-registration as a means of altering a company’s status_
 47
 
@@ -2974,7 +2974,7 @@ member of the company;
 (b) a trustee under a protected trustee deed (within the meaning of the
 Bankruptcy (Scotland) Act 1985) granted by a member of the company.
 
-**103** **Application and accompanying documents**
+**103****Application and accompanying documents**
 
 (1) An application for re-registration as an unlimited company must contain a
 statement of the company’s proposed name on re-registration.
@@ -3000,7 +3000,7 @@ empowered to do so.
 (5) The registrar may accept the statement of compliance as sufficient evidence
 that the company is entitled to be re-registered as an unlimited company.
 
-**104** **Issue of certificate of incorporation on re-registration**
+**104****Issue of certificate of incorporation on re-registration**
 
 (1) If on an application for re-registration of a private limited company as an
 unlimited company the registrar is satisfied that the company is entitled to be
@@ -3025,14 +3025,14 @@ registration have been complied with.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 7 — Re-registration as a means of altering a company’s status_
 48
 
 _Unlimited private company becoming limited_
 
-**105** **Re-registration of unlimited company as limited**
+**105****Re-registration of unlimited company as limited**
 
 (1) An unlimited company may be re-registered as a private limited company if—
 (a) a special resolution that it should be so re-registered is passed,
@@ -3054,7 +3054,7 @@ shares or by guarantee.
 as are necessary in connection with its becoming a company limited by shares
 or, as the case may be, by guarantee.
 
-**106** **Application and accompanying documents**
+**106****Application and accompanying documents**
 
 (1) An application for re-registration as a limited company must contain a
 statement of the company’s proposed name on re-registration.
@@ -3089,11 +3089,11 @@ that the company is entitled to be re-registered as a limited company.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 7 — Re-registration as a means of altering a company’s status_
 49
 
-**107** **Issue of certificate of incorporation on re-registration**
+**107****Issue of certificate of incorporation on re-registration**
 
 (1) If on an application for re-registration of an unlimited company as a limited
 company the registrar is satisfied that the company is entitled to be so re-
@@ -3113,7 +3113,7 @@ company, and
 (5) The certificate is conclusive evidence that the requirements of this Act as to re-
 registration have been complied with.
 
-**108** **Statement of capital required where company already has share capital**
+**108****Statement of capital required where company already has share capital**
 
 (1) A company which on re-registration under section 107 already has allotted
 share capital must within 15 days after the re-registration deliver a statement
@@ -3150,14 +3150,14 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 7 — Re-registration as a means of altering a company’s status_
 50
 
 _Public company becoming private and unlimited_
 
-**109** **Re-registration of public company as private and unlimited**
+**109****Re-registration of public company as private and unlimited**
 
 (1) A public company limited by shares may be re-registered as an unlimited
 private company with a share capital if—
@@ -3194,7 +3194,7 @@ member of the company;
 (b) a trustee under a protected trustee deed (within the meaning of the
 Bankruptcy (Scotland) Act 1985) granted by a member of the company.
 
-**110** **Application and accompanying documents**
+**110****Application and accompanying documents**
 
 (1) An application for re-registration of a public company as an unlimited private
 company must contain a statement of the company’s proposed name on re-
@@ -3215,7 +3215,7 @@ as an unlimited private company have been complied with.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 7 — Re-registration as a means of altering a company’s status_
 51
 
@@ -3231,7 +3231,7 @@ empowered to do so.
 that the company is entitled to be re-registered as an unlimited private
 company.
 
-**111** **Issue of certificate of incorporation on re-registration**
+**111****Issue of certificate of incorporation on re-registration**
 
 (1) If on an application for re-registration of a public company as an unlimited
 private company the registrar is satisfied that the company is entitled to be so
@@ -3251,15 +3251,15 @@ unlimited private company, and
 (5) The certificate is conclusive evidence that the requirements of this Act as to re-
 registration have been complied with.
 
-**P** **ART** **8**
+**PART 8**
 
 A COMPANY ’ S  MEMBERS
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 T HE  MEMBERS  OF  A  COMPANY
 
-**112** **The members of a company**
+**112****The members of a company**
 
 (1) The subscribers of a company’s memorandum are deemed to have agreed to
 become members of the company, and on its registration become members and
@@ -3275,18 +3275,18 @@ name is entered in its register of members, is a member of the company.
 
 52
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 8 — A company’s members_
 
 _Chapter 2 — Register of members_
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 R EGISTER  OF  MEMBERS
 
 _General_
 
-**113** **Register of members**
+**113****Register of members**
 
 (1) Every company must keep a register of its members.
 
@@ -3329,7 +3329,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**114** **Register to be kept available for inspection**
+**114****Register to be kept available for inspection**
 
 (1) A company’s register of members must be kept available for inspection—
 (a) at its registered office, or
@@ -3342,7 +3342,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 53
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 8 — A company’s members_
 _Chapter 2 — Register of members_
 
@@ -3368,7 +3368,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**115** **Index of members**
+**115****Index of members**
 
 (1) Every company having more than 50 members must keep an index of the
 names of the members of the company, unless the register of members is in
@@ -3392,7 +3392,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**116** **Rights to inspect and require copies**
+**116****Rights to inspect and require copies**
 
 (1) The register and the index of members’ names must be open to the
 inspection—
@@ -3409,7 +3409,7 @@ part of it, on payment of such fee as may be prescribed.
 
 54
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 8 — A company’s members_
 
 _Chapter 2 — Register of members_
@@ -3431,7 +3431,7 @@ behalf, and
 (iii) the purpose for which the information is to be used by that
 person.
 
-**117** **Register of members: response to request for inspection or copy**
+**117****Register of members: response to request for inspection or copy**
 
 (1) Where a company receives a request under section 116 (register of members:
 right to inspect and require copy), it must within five working days either—
@@ -3459,7 +3459,7 @@ not to comply with the request, the company must comply with the request
 immediately upon the court giving its decision or, as the case may be, the
 proceedings being discontinued.
 
-**118** **Register of members: refusal of inspection or default in providing copy**
+**118****Register of members: refusal of inspection or default in providing copy**
 
 (1) If an inspection required under section 116 (register of members: right to
 inspect and require copy) is refused or default is made in providing a copy
@@ -3475,7 +3475,7 @@ court, an offence is committed by—
 
 55
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 8 — A company’s members_
 _Chapter 2 — Register of members_
 
@@ -3488,7 +3488,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 immediate inspection or, as the case may be, direct that the copy required be
 sent to the person requesting it.
 
-**119** **Register of members: offences in connection with request for or disclosure of**
+**119****Register of members: offences in connection with request for or disclosure of **
 **information**
 
 (1) It is an offence for a person knowingly or recklessly to make in a request under
@@ -3515,7 +3515,7 @@ statutory maximum (or both);
 exceeding six months, or to a fine not exceeding the statutory
 maximum (or both).
 
-**120** **Information as to state of register and index**
+**120****Information as to state of register and index**
 
 (1) When a person inspects the register, or the company provides him with a copy
 of the register or any part of it, the company must inform him of the most
@@ -3541,12 +3541,12 @@ conviction to a fine not exceeding level 3 on the standard scale.
 
 56
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 8 — A company’s members_
 
 _Chapter 2 — Register of members_
 
-**121** **Removal of entries relating to former members**
+**121****Removal of entries relating to former members**
 
 An entry relating to a former member of the company may be removed from
 the register after the expiration of ten years from the date on which he ceased
@@ -3554,7 +3554,7 @@ to be a member.
 
 _Special cases_
 
-**122** **Share warrants**
+**122****Share warrants**
 
 (1) On the issue of a share warrant the company must—
 (a) enter in the register of members—
@@ -3587,7 +3587,7 @@ cancelled.
 (6) On the surrender of a share warrant, the date of the surrender must be entered
 in the register.
 
-**123** **Single member companies**
+**123****Single member companies**
 
 (1) If a limited company is formed under this Act with only one member there
 shall be entered in the company’s register of members, with the name and
@@ -3608,7 +3608,7 @@ member—
 
 57
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 8 — A company’s members_
 _Chapter 2 — Register of members_
 
@@ -3632,7 +3632,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**124** **Company holding its own shares as treasury shares**
+**124****Company holding its own shares as treasury shares**
 
 (1) Where a company purchases its own shares in circumstances in which section
 724 (treasury shares) applies—
@@ -3648,7 +3648,7 @@ company must be entered in the register as the member holding those shares.
 
 _Supplementary_
 
-**125** **Power of court to rectify register**
+**125****Power of court to rectify register**
 
 (1) If—
 (a) the name of any person is, without sufficient cause, entered in or
@@ -3674,7 +3674,7 @@ alleged members, or between members or alleged members on the one hand
 
 58
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 8 — A company’s members_
 
 _Chapter 2 — Register of members_
@@ -3687,18 +3687,18 @@ the registrar of companies, the court, when making an order for rectification of
 the register, shall by its order direct notice of the rectification to be given to the
 registrar.
 
-**126** **Trusts not to be entered on register**
+**126****Trusts not to be entered on register**
 
 No notice of any trust, expressed, implied or constructive, shall be entered on
 the register of members of a company registered in England and Wales or
 Northern Ireland, or be receivable by the registrar.
 
-**127** **Register to be evidence**
+**127****Register to be evidence**
 
 The register of members is prima facie evidence of any matters which are by
 this Act directed or authorised to be inserted in it.
 
-**128** **Time limit for claims arising from entry in register**
+**128****Time limit for claims arising from entry in register**
 
 (1) Liability incurred by a company—
 (a) from the making or deletion of an entry in the register of members, or
@@ -3710,11 +3710,11 @@ made or deleted or, as the case may be, the failure first occurred.
 any rule that the obligation giving rise to the liability prescribes before the
 expiry of that period).
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 O VERSEAS  BRANCH  REGISTERS
 
-**129** **Overseas branch registers**
+**129****Overseas branch registers**
 
 (1) A company having a share capital may, if it transacts business in a country or
 territory to which this Chapter applies, cause to be kept there a branch register
@@ -3740,7 +3740,7 @@ The Gambia Pakistan
 
 59
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 8 — A company’s members_
 _Chapter 3 — Overseas branch registers_
 
@@ -3779,7 +3779,7 @@ to a dominion register, or
 are to be read (unless the context otherwise requires) as a reference to an
 overseas branch register kept under this section.
 
-**130** **Notice of opening of overseas branch register**
+**130****Notice of opening of overseas branch register**
 
 (1) A company that begins to keep an overseas branch register must give notice to
 the registrar within 14 days of doing so, stating the country or territory in
@@ -3795,7 +3795,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**131** **Keeping of overseas branch register**
+**131****Keeping of overseas branch register**
 
 (1) An overseas branch register is regarded as part of the company’s register of
 members (“the main register”).
@@ -3811,7 +3811,7 @@ overseas branch register.
 
 60
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 8 — A company’s members_
 
 _Chapter 3 — Overseas branch registers_
@@ -3821,7 +3821,7 @@ _Chapter 3 — Overseas branch registers_
 (4) Subject to the provisions of this Act, a company may by its articles make such
 provision as it thinks fit as to the keeping of overseas branch registers.
 
-**132** **Register or duplicate to be kept available for inspection in UK**
+**132****Register or duplicate to be kept available for inspection in UK**
 
 (1) A company that keeps an overseas branch register must keep available for
 inspection—
@@ -3843,7 +3843,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**133** **Transactions in shares registered in overseas branch register**
+**133****Transactions in shares registered in overseas branch register**
 
 (1) Shares registered in an overseas branch register must be distinguished from
 those registered in the main register.
@@ -3857,7 +3857,7 @@ Kingdom, and
 (b) unless executed in a part of the United Kingdom, is exempt from stamp
 duty.
 
-**134** **Jurisdiction of local courts**
+**134****Jurisdiction of local courts**
 
 (1) A competent court in a country or territory where an overseas branch register
 is kept may exercise the same jurisdiction as is exercisable by a court in the
@@ -3879,7 +3879,7 @@ inspection or a copy (see section 119),
 
 61
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 8 — A company’s members_
 _Chapter 3 — Overseas branch registers_
 
@@ -3890,7 +3890,7 @@ jurisdiction in the country or territory where the register is kept.
 3 of Schedule 14 to the Companies Act 1985 (c. 6) (which made similar
 provision) extended immediately before the coming into force of this Chapter.
 
-**135** **Discontinuance of overseas branch register**
+**135****Discontinuance of overseas branch register**
 
 (1) A company may discontinue an overseas branch register.
 
@@ -3912,13 +3912,13 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 P ROHIBITION  ON  SUBSIDIARY  BEING  MEMBER  OF  ITS  HOLDING  COMPANY
 
 _General prohibition_
 
-**136** **Prohibition on subsidiary being a member of its holding company**
+**136****Prohibition on subsidiary being a member of its holding company**
 
 (1) Except as provided by this Chapter—
 (a) a body corporate cannot be a member of a company that is its holding
@@ -3930,7 +3930,7 @@ void.
 section 138 (subsidiary acting as personal representative or trustee), and
 section 141 (subsidiary acting as authorised dealer in securities).
 
-**137** **Shares acquired before prohibition became applicable**
+**137****Shares acquired before prohibition became applicable**
 
 (1) Where a body corporate became a holder of shares in a company—
 (a) before the relevant date, or
@@ -3945,7 +3945,7 @@ Companies Act 1985 or Article 33(1) of the Companies (Northern
 
 62
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 8 — A company’s members_
 
 _Chapter 4 — Prohibition on subsidiary being member of its holding company_
@@ -3971,7 +3971,7 @@ written resolution or at meetings of the company or of any class of its members.
 
 _Subsidiary acting as personal representative or trustee_
 
-**138** **Subsidiary acting as personal representative or trustee**
+**138****Subsidiary acting as personal representative or trustee**
 
 (1) The prohibition in section 136 (prohibition on subsidiary being a member of its
 holding company) does not apply where the subsidiary is concerned only—
@@ -4005,11 +4005,11 @@ performance of its duties as trustee.
 
 63
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 8 — A company’s members_
 _Chapter 4 — Prohibition on subsidiary being member of its holding company_
 
-**139** **Interests to be disregarded: residual interest under pension scheme or**
+**139****Interests to be disregarded: residual interest under pension scheme or **
 **employees’ share scheme**
 
 (1) Where shares in a company are held on trust for the purposes of a pension
@@ -4051,7 +4051,7 @@ death; and
 (b) “employee” shall be read as if a director of a company were employed
 by it.
 
-**140** **Interests to be disregarded: employer’s rights of recovery under pension**
+**140****Interests to be disregarded: employer’s rights of recovery under pension **
 **scheme or employees’ share scheme**
 
 (1) Where shares in a company are held on trust for the purposes of a pension
@@ -4073,7 +4073,7 @@ section 61 of the Pension Schemes Act 1993 (c. 48) or section 57 of the Pension
 
 64
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 8 — A company’s members_
 
 _Chapter 4 — Prohibition on subsidiary being member of its holding company_
@@ -4095,7 +4095,7 @@ company were employed by it.
 
 _Subsidiary acting as dealer in securities_
 
-**141** **Subsidiary acting as authorised dealer in securities**
+**141****Subsidiary acting as authorised dealer in securities**
 
 (1) The prohibition in section 136 (prohibition on subsidiary being a member of its
 holding company) does not apply where the shares are held by the subsidiary
@@ -4140,7 +4140,7 @@ carrying out of contracts of insurance;
 
 65
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 8 — A company’s members_
 _Chapter 4 — Prohibition on subsidiary being member of its holding company_
 
@@ -4156,7 +4156,7 @@ meaning here as they do in those provisions.
 See section 22 of that Act, orders made under that section and Schedule 2 to
 that Act.
 
-**142** **Protection of third parties in other cases where subsidiary acting as dealer in**
+**142****Protection of third parties in other cases where subsidiary acting as dealer in **
 **securities**
 
 (1) This section applies where—
@@ -4175,24 +4175,24 @@ had not been in contravention of the prohibition.
 
 _Supplementary_
 
-**143** **Application of provisions to companies not limited by shares**
+**143****Application of provisions to companies not limited by shares**
 
 In relation to a company other than a company limited by shares, the references
 in this Chapter to shares shall be read as references to the interest of its
 members as such, whatever the form of that interest.
 
-**144** **Application of provisions to nominees**
+**144****Application of provisions to nominees**
 
 The provisions of this Chapter apply to a nominee acting on behalf of a
 subsidiary as to the subsidiary itself.
 
-**P** **ART** **9**
+**PART 9**
 
 E XERCISE  OF  MEMBERS ’ RIGHTS
 
 _Effect of provisions in company’s articles_
 
-**145** **Effect of provisions of articles as to enjoyment or exercise of members’ rights**
+**145****Effect of provisions of articles as to enjoyment or exercise of members’ rights**
 
 (1) This section applies where provision is made by a company’s articles enabling
 a member to nominate another person or persons as entitled to enjoy or
@@ -4203,7 +4203,7 @@ exercise all or any specified rights of the member in relation to the company.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 9 — Exercise of members’ rights_
 66
@@ -4233,7 +4233,7 @@ disposition of the whole or part of a member’s interest in the company.
 
 _Information rights_
 
-**146** **Traded companies: nomination of persons to enjoy information rights**
+**146****Traded companies: nomination of persons to enjoy information rights**
 
 (1) This section applies to a company whose shares are admitted to trading on a
 regulated market.
@@ -4265,11 +4265,11 @@ information rights only.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 9 — Exercise of members’ rights_
 67
 
-**147** **Information rights: form in which copies to be provided**
+**147****Information rights: form in which copies to be provided**
 
 (1) This section applies as regards the form in which copies are to be provided to
 a person nominated under section 146 (nomination of person to enjoy
@@ -4302,7 +4302,7 @@ supplied to him by the company by means of a website.
 (b) does not affect his right under section 1145 to require a hard copy
 version of a document or information provided in any other form.
 
-**148** **Termination or suspension of nomination**
+**148****Termination or suspension of nomination**
 
 (1) The following provisions have effect in relation to a nomination under section
 146 (nomination of person to enjoy information rights).
@@ -4330,7 +4330,7 @@ reconstruction.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 9 — Exercise of members’ rights_
 68
@@ -4367,7 +4367,7 @@ required to act on it.
 It does not prevent the company from continuing to do so, to such extent or for
 such period as it thinks fit.
 
-**149** **Information as to possible rights in relation to voting**
+**149****Information as to possible rights in relation to voting**
 
 (1) This section applies where a company sends a copy of a notice of a meeting to
 a person nominated under section 146 (nomination of person to enjoy
@@ -4392,11 +4392,11 @@ must either—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 9 — Exercise of members’ rights_
 69
 
-**150** **Information rights: status of rights**
+**150****Information rights: status of rights**
 
 (1) This section has effect as regards the rights conferred by a nomination under
 section 146 (nomination of person to enjoy information rights).
@@ -4440,7 +4440,7 @@ the validity of anything done by or on behalf of the company.
 copy communications) and section 149 (information as to possible
 voting rights).
 
-**151** **Information rights: power to amend**
+**151****Information rights: power to amend**
 
 (1) The Secretary of State may by regulations amend the provisions of sections 146
 to 150 (information rights) so as to—
@@ -4458,7 +4458,7 @@ State to be necessary.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 9 — Exercise of members’ rights_
 70
@@ -4467,7 +4467,7 @@ _Part 9 — Exercise of members’ rights_
 
 _Exercise of rights where shares held on behalf of others_
 
-**152** **Exercise of rights where shares held on behalf of others: exercise in different**
+**152****Exercise of rights where shares held on behalf of others: exercise in different **
 **ways**
 
 (1) Where a member holds shares in a company on behalf of more than one
@@ -4490,7 +4490,7 @@ are exercised in each way.
 the company is entitled to assume that he is exercising all his rights and is
 exercising them in the same way.
 
-**153** **Exercise of rights where shares held on behalf of others: members’ requests**
+**153****Exercise of rights where shares held on behalf of others: members’ requests **
 
 (1) This section applies for the purposes of—
 (a) section 314 (power to require circulation of statement),
@@ -4522,7 +4522,7 @@ persons making the request,
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 9 — Exercise of members’ rights_
 71
 
@@ -4548,30 +4548,30 @@ divided by the number of persons making the request, is not less than
 (g) the request complies with any other requirements of the section in
 question as to contents, timing and otherwise.
 
-**P** **ART** **10**
+**PART 10**
 
 A COMPANY ’ S  DIRECTORS
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 A PPOINTMENT  AND  REMOVAL  OF  DIRECTORS
 
 _Requirement to have directors_
 
-**154** **Companies required to have directors**
+**154****Companies required to have directors**
 
 (1) A private company must have at least one director.
 
 (2) A public company must have at least two directors.
 
-**155** **Companies required to have at least one director who is a natural person**
+**155****Companies required to have at least one director who is a natural person**
 
 (1) A company must have at least one director who is a natural person.
 
 (2) This requirement is met if the office of director is held by a natural person as a
 corporation sole or otherwise by virtue of an office.
 
-**156** **Direction requiring company to make appointment**
+**156****Direction requiring company to make appointment**
 
 (1) If it appears to the Secretary of State that a company is in breach of—
 section 154 (requirements as to number of directors), or
@@ -4586,7 +4586,7 @@ the Secretary of State may give the company a direction under this section.
 
 72
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 1 — Appointment and removal of directors_
@@ -4625,7 +4625,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 _Appointment_
 
-**157** **Minimum age for appointment as director**
+**157****Minimum age for appointment as director**
 
 (1) A person may not be appointed a director of a company unless he has attained
 the age of 16 years.
@@ -4654,14 +4654,14 @@ director.
 
 73
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 1 — Appointment and removal of directors_
 
 (6) This section has effect subject to section 158 (power to provide for exceptions
 from minimum age requirement).
 
-**158** **Power to provide for exceptions from minimum age requirement**
+**158****Power to provide for exceptions from minimum age requirement**
 
 (1) The Secretary of State may make provision by regulations for cases in which a
 person who has not attained the age of 16 years may be appointed a director of
@@ -4681,7 +4681,7 @@ different cases.
 
 (5) Regulations under this section are subject to negative resolution procedure.
 
-**159** **Existing under-age directors**
+**159****Existing under-age directors**
 
 (1) This section applies where—
 (a) a person appointed a director of a company before section 157
@@ -4703,7 +4703,7 @@ of directors but need not give notice to the registrar of the change.
 by virtue of this section to be a director of a company, the registrar shall note
 that fact on the register.
 
-**160** **Appointment of directors of public company to be voted on individually**
+**160****Appointment of directors of public company to be voted on individually**
 
 (1) At a general meeting of a public company a motion for the appointment of two
 or more persons as directors of the company by a single resolution must not be
@@ -4722,7 +4722,7 @@ reappointment of retiring directors in default of another appointment applies.
 
 74
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 1 — Appointment and removal of directors_
@@ -4734,7 +4734,7 @@ motion for his appointment.
 (4) Nothing in this section applies to a resolution amending the company’s
 articles.
 
-**161** **Validity of acts of directors**
+**161****Validity of acts of directors**
 
 (1) The acts of a person acting as a director are valid notwithstanding that it is
 afterwards discovered—
@@ -4748,7 +4748,7 @@ afterwards discovered—
 
 _Register of directors, etc_
 
-**162** **Register of directors**
+**162****Register of directors**
 
 (1) Every company must keep a register of its directors.
 
@@ -4790,11 +4790,11 @@ compel an immediate inspection of it.
 
 75
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 1 — Appointment and removal of directors_
 
-**163** **Particulars of directors to be registered: individuals**
+**163****Particulars of directors to be registered: individuals**
 
 (1) A company’s register of directors must contain the following particulars in the
 case of an individual—
@@ -4831,7 +4831,7 @@ years, or
 (5) A person’s service address may be stated to be “The company’s registered
 office”.
 
-**164** **Particulars of directors to be registered: corporate directors and firms**
+**164****Particulars of directors to be registered: corporate directors and firms**
 
 A company’s register of directors must contain the following particulars in the
 case of a body corporate, or a firm that is a legal person under the law by which
@@ -4855,7 +4855,7 @@ governed, and
 
 76
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 1 — Appointment and removal of directors_
@@ -4863,7 +4863,7 @@ _Chapter 1 — Appointment and removal of directors_
 (ii) if applicable, the register in which it is entered (including details
 of the state) and its registration number in that register.
 
-**165** **Register of directors’ residential addresses**
+**165****Register of directors’ residential addresses**
 
 (1) Every company must keep a register of directors’ residential addresses.
 
@@ -4890,7 +4890,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 director is a body corporate or a firm that is a legal person under the law by
 which it is governed.
 
-**166** **Particulars of directors to be registered: power to make regulations**
+**166****Particulars of directors to be registered: power to make regulations**
 
 (1) The Secretary of State may make provision by regulations amending—
 section 163 (particulars of directors to be registered: individuals),
@@ -4903,7 +4903,7 @@ addresses.
 
 (2) Regulations under this section are subject to affirmative resolution procedure.
 
-**167** **Duty to notify registrar of changes**
+**167****Duty to notify registrar of changes**
 
 (1) A company must, within the period of 14 days from—
 (a) a person becoming or ceasing to be a director, or
@@ -4923,7 +4923,7 @@ register of directors’ residential addresses, and
 
 77
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 1 — Appointment and removal of directors_
 
@@ -4950,7 +4950,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 _Removal_
 
-**168** **Resolution to remove director**
+**168****Resolution to remove director **
 
 (1) A company may by ordinary resolution at a meeting remove a director before
 the expiration of his period of office, notwithstanding anything in any
@@ -4975,7 +4975,7 @@ director or of any appointment terminating with that as director, or
 (b) as derogating from any power to remove a director that may exist apart
 from this section.
 
-**169** **Director’s right to protest against removal**
+**169****Director’s right to protest against removal **
 
 (1) On receipt of notice of an intended resolution to remove a director under
 section 168, the company must forthwith send a copy of the notice to the
@@ -4991,7 +4991,7 @@ on the resolution at the meeting.
 
 78
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 1 — Appointment and removal of directors_
@@ -5021,13 +5021,13 @@ rights conferred by this section are being abused.
 application under subsection (5) to be paid in whole or in part by the director,
 notwithstanding that he is not a party to the application.
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 G ENERAL  DUTIES  OF  DIRECTORS
 
 _Introductory_
 
-**170** **Scope and nature of general duties**
+**170****Scope and nature of general duties**
 
 (1) The general duties specified in sections 171 to 177 are owed by a director of a
 company to the company.
@@ -5058,7 +5058,7 @@ applying the general duties.
 
 79
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 2 — General duties of directors_
 
@@ -5067,13 +5067,13 @@ corresponding common law rules or equitable principles so apply.
 
 _The general duties_
 
-**171** **Duty to act within powers**
+**171****Duty to act within powers**
 
 A director of a company must—
 (a) act in accordance with the company’s constitution, and
 (b) only exercise powers for the purposes for which they are conferred.
 
-**172** **Duty to promote the success of the company**
+**172****Duty to promote the success of the company**
 
 (1) A director of a company must act in the way he considers, in good faith, would
 be most likely to promote the success of the company for the benefit of its
@@ -5097,7 +5097,7 @@ members were to achieving those purposes.
 law requiring directors, in certain circumstances, to consider or act in the
 interests of creditors of the company.
 
-**173** **Duty to exercise independent judgment**
+**173****Duty to exercise independent judgment**
 
 (1) A director of a company must exercise independent judgment.
 
@@ -5106,7 +5106,7 @@ interests of creditors of the company.
 that restricts the future exercise of discretion by its directors, or
 (b) in a way authorised by the company’s constitution.
 
-**174** **Duty to exercise reasonable care, skill and diligence**
+**174****Duty to exercise reasonable care, skill and diligence**
 
 (1) A director of a company must exercise reasonable care, skill and diligence.
 
@@ -5123,14 +5123,14 @@ director in relation to the company, and
 
 80
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 2 — General duties of directors_
 
 (b) the general knowledge, skill and experience that the director has.
 
-**175** **Duty to avoid conflicts of interest**
+**175****Duty to avoid conflicts of interest**
 
 (1) A director of a company must avoid a situation in which he has, or can have, a
 direct or indirect interest that conflicts, or possibly may conflict, with the
@@ -5167,7 +5167,7 @@ agreed to if their votes had not been counted.
 (7) Any reference in this section to a conflict of interest includes a conflict of
 interest and duty and a conflict of duties.
 
-**176** **Duty not to accept benefits from third parties**
+**176****Duty not to accept benefits from third parties**
 
 (1) A director of a company must not accept a benefit from a third party conferred
 by reason of—
@@ -5192,14 +5192,14 @@ regarded as likely to give rise to a conflict of interest.
 
 81
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 2 — General duties of directors_
 
 (5) Any reference in this section to a conflict of interest includes a conflict of
 interest and duty and a conflict of duties.
 
-**177** **Duty to declare interest in proposed transaction or arrangement**
+**177****Duty to declare interest in proposed transaction or arrangement**
 
 (1) If a director of a company is in any way, directly or indirectly, interested in a
 proposed transaction or arrangement with the company, he must declare the
@@ -5237,7 +5237,7 @@ the company’s constitution.
 
 _Supplementary provisions_
 
-**178** **Civil consequences of breach of general duties**
+**178****Civil consequences of breach of general duties**
 
 (1) The consequences of breach (or threatened breach) of sections 171 to 177 are the
 same as would apply if the corresponding common law rule or equitable
@@ -5254,17 +5254,17 @@ way as any other fiduciary duty owed to a company by its directors.
 
 82
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 2 — General duties of directors_
 
-**179** **Cases within more than one of the general duties**
+**179****Cases within more than one of the general duties**
 
 Except as otherwise provided, more than one of the general duties may apply
 in any given case.
 
-**180** **Consent, approval or authorisation by members**
+**180****Consent, approval or authorisation by members**
 
 (1) In a case where—
 (a) section 175 (duty to avoid conflicts of interest) is complied with by
@@ -5301,7 +5301,7 @@ the directors, or any of them, in accordance with those provisions.
 (5) Otherwise, the general duties have effect (except as otherwise provided or the
 context otherwise requires) notwithstanding any enactment or rule of law.
 
-**181** **Modification of provisions in relation to charitable companies**
+**181****Modification of provisions in relation to charitable companies**
 
 (1) In their application to a company that is a charity, the provisions of this
 Chapter have effect subject to this section.
@@ -5322,7 +5322,7 @@ to the extent that the company’s articles allow that duty to be so
 
 83
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 2 — General duties of directors_
 
@@ -5354,11 +5354,11 @@ of the Companies Act 2006 (general duties of directors).”.
 
 (5) This section does not extend to Scotland.
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 D ECLARATION  OF  INTEREST  IN  EXISTING  TRANSACTION  OR  ARRANGEMENT
 
-**182** **Declaration of interest in existing transaction or arrangement**
+**182****Declaration of interest in existing transaction or arrangement**
 
 (1) Where a director of a company is in any way, directly or indirectly, interested
 in a transaction or arrangement that has been entered into by the company, he
@@ -5388,7 +5388,7 @@ make the declaration.
 
 84
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 3 — Declaration of interest in existing transaction or arrangement_
@@ -5411,7 +5411,7 @@ been or are to be considered—
 (ii) by a committee of the directors appointed for the purpose under
 the company’s constitution.
 
-**183** **Offence of failure to declare interest**
+**183****Offence of failure to declare interest**
 
 (1) A director who fails to comply with the requirements of section 182
 (declaration of interest in existing transaction or arrangement) commits an
@@ -5422,7 +5422,7 @@ offence.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**184** **Declaration made by notice in writing**
+**184****Declaration made by notice in writing**
 
 (1) This section applies to a declaration of interest made by notice in writing.
 
@@ -5443,7 +5443,7 @@ at the next meeting of the directors after the notice is given, and
 (b) the provisions of section 248 (minutes of meetings of directors) apply as
 if the declaration had been made at that meeting.
 
-**185** **General notice treated as sufficient declaration**
+**185****General notice treated as sufficient declaration**
 
 (1) General notice in accordance with this section is a sufficient declaration of
 interest in relation to the matters to which it relates.
@@ -5455,7 +5455,7 @@ interest in relation to the matters to which it relates.
 
 85
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 3 — Declaration of interest in existing transaction or arrangement_
 
@@ -5479,7 +5479,7 @@ person.
 (b) the director takes reasonable steps to secure that it is brought up and
 read at the next meeting of the directors after it is given.
 
-**186** **Declaration of interest in case of company with sole director**
+**186****Declaration of interest in case of company with sole director**
 
 (1) Where a declaration of interest under section 182 (duty to declare interest in
 existing transaction or arrangement) is required of a sole director of a company
@@ -5494,7 +5494,7 @@ if the declaration had been made at that meeting.
 member who is also a director: terms to be set out in writing or recorded in
 minutes).
 
-**187** **Declaration of interest in existing transaction by shadow director**
+**187****Declaration of interest in existing transaction by shadow director**
 
 (1) The provisions of this Chapter relating to the duty under section 182 (duty to
 declare interest in existing transaction or arrangement) apply to a shadow
@@ -5517,18 +5517,18 @@ writing in accordance with section 184.
 
 86
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 4 — Transactions with directors requiring approval of members_
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 T RANSACTIONS  WITH  DIRECTORS  REQUIRING  APPROVAL  OF  MEMBERS
 
 _Service contracts_
 
-**188** **Directors’ long-term service contracts: requirement of members’ approval**
+**188****Directors’ long-term service contracts: requirement of members’ approval**
 
 (1) This section applies to provision under which the guaranteed term of a
 director’s employment—
@@ -5584,7 +5584,7 @@ body corporate that—
 
 87
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 4 — Transactions with directors requiring approval of members_
 
@@ -5593,7 +5593,7 @@ _Chapter 4 — Transactions with directors requiring approval of members_
 (7) In this section “employment” means any employment under a director’s
 service contract.
 
-**189** **Directors’ long-term service contracts: civil consequences of contravention**
+**189****Directors’ long-term service contracts: civil consequences of contravention**
 
 If a company agrees to provision in contravention of section 188 (directors’
 long-term service contracts: requirement of members’ approval)—
@@ -5603,7 +5603,7 @@ terminate it at any time by the giving of reasonable notice.
 
 _Substantial property transactions_
 
-**190** **Substantial property transactions: requirement of members’ approval**
+**190****Substantial property transactions: requirement of members’ approval**
 
 (1) A company may not enter into an arrangement under which—
 (a) a director of the company or of its holding company, or a person
@@ -5648,12 +5648,12 @@ requiring members’ approval).
 
 88
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 4 — Transactions with directors requiring approval of members_
 
-**191** **Meaning of “substantial”**
+**191****Meaning of “substantial”**
 
 (1) This section explains what is meant in section 190 (requirement of approval for
 substantial property transactions) by a “substantial” non-cash asset.
@@ -5676,7 +5676,7 @@ is most recent.
 (5) Whether an asset is a substantial asset shall be determined as at the time the
 arrangement is entered into.
 
-**192** **Exception for transactions with members or other group companies**
+**192****Exception for transactions with members or other group companies**
 
 Approval is not required under section 190 (requirement of members’
 approval for substantial property transactions)—
@@ -5686,7 +5686,7 @@ member of that company, or
 (i) a holding company and its wholly-owned subsidiary, or
 (ii) two wholly-owned subsidiaries of the same holding company.
 
-**193** **Exception in case of company in winding up or administration**
+**193****Exception in case of company in winding up or administration**
 
 (1) This section applies to a company—
 (a) that is being wound up (unless the winding up is a members’ voluntary
@@ -5702,7 +5702,7 @@ or
 (b) for an arrangement entered into by a company to which this section
 applies.
 
-**194** **Exception for transactions on recognised investment exchange**
+**194****Exception for transactions on recognised investment exchange**
 
 (1) Approval is not required under section 190 (requirement of members’
 approval for substantial property transactions) for a transaction on a
@@ -5715,7 +5715,7 @@ recognised investment exchange effected by a director, or a person connected
 
 89
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 4 — Transactions with directors requiring approval of members_
 
@@ -5729,7 +5729,7 @@ whom the transaction is to be effected; and
 (b) “recognised investment exchange” has the same meaning as in Part 18
 of the Financial Services and Markets Act 2000 (c. 8).
 
-**195** **Property transactions: civil consequences of contravention**
+**195****Property transactions: civil consequences of contravention **
 
 (1) This section applies where a company enters into an arrangement in
 contravention of section 190 (requirement of members’ approval for
@@ -5782,7 +5782,7 @@ with that section.
 
 90
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 4 — Transactions with directors requiring approval of members_
@@ -5796,7 +5796,7 @@ the relevant circumstances constituting the contravention.
 enactment or rule of law by virtue of which the arrangement or transaction
 may be called in question or any liability to the company may arise.
 
-**196** **Property transactions: effect of subsequent affirmation**
+**196****Property transactions: effect of subsequent affirmation **
 
 Where a transaction or arrangement is entered into by a company in
 contravention of section 190 (requirement of members’ approval) but, within a
@@ -5809,7 +5809,7 @@ the transaction or arrangement may no longer be avoided under section 195.
 
 _Loans, quasi-loans and credit transactions_
 
-**197** **Loans to directors: requirement of members’ approval**
+**197****Loans to directors: requirement of members’ approval**
 
 (1) A company may not—
 (a) make a loan to a director of the company or of its holding company, or
@@ -5847,7 +5847,7 @@ with the loan.
 
 91
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 4 — Transactions with directors requiring approval of members_
 
@@ -5856,7 +5856,7 @@ body corporate that—
 (a) is not a UK-registered company, or
 (b) is a wholly-owned subsidiary of another body corporate.
 
-**198** **Quasi-loans to directors: requirement of members’ approval**
+**198****Quasi-loans to directors: requirement of members’ approval**
 
 (1) This section applies to a company if it is—
 (a) a public company, or
@@ -5898,7 +5898,7 @@ body corporate that—
 (a) is not a UK-registered company, or
 (b) is a wholly-owned subsidiary of another body corporate.
 
-**199** **Meaning of “quasi-loan” and related expressions**
+**199****Meaning of “quasi-loan” and related expressions**
 
 (1) A “quasi-loan” is a transaction under which one party (“the creditor”) agrees to
 pay, or pays otherwise than in pursuance of an agreement, a sum for another
@@ -5913,7 +5913,7 @@ pursuance of an agreement, expenditure incurred by another party for another
 
 92
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 4 — Transactions with directors requiring approval of members_
@@ -5929,7 +5929,7 @@ borrower.
 (3) The liabilities of the borrower under a quasi-loan include the liabilities of any
 person who has agreed to reimburse the creditor on behalf of the borrower.
 
-**200** **Loans or quasi-loans to persons connected with directors: requirement of**
+**200****Loans or quasi-loans to persons connected with directors: requirement of **
 **members’ approval**
 
 (1) This section applies to a company if it is—
@@ -5979,11 +5979,11 @@ body corporate that—
 
 93
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 4 — Transactions with directors requiring approval of members_
 
-**201** **Credit transactions: requirement of members’ approval**
+**201****Credit transactions: requirement of members’ approval**
 
 (1) This section applies to a company if it is—
 (a) a public company, or
@@ -6029,7 +6029,7 @@ body corporate that—
 (a) is not a UK-registered company, or
 (b) is a wholly-owned subsidiary of another body corporate.
 
-**202** **Meaning of “credit transaction”**
+**202****Meaning of “credit transaction”**
 
 (1) A “credit transaction” is a transaction under which one party (“the creditor”)—
 (a) supplies any goods or sells any land under a hire-purchase agreement
@@ -6043,7 +6043,7 @@ or a conditional sale agreement,
 
 94
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 4 — Transactions with directors requiring approval of members_
@@ -6061,7 +6061,7 @@ hired or otherwise disposed of under the transaction.
 Credit Act 1974 (c. 39); and
 “services” means anything other than goods or land.
 
-**203** **Related arrangements: requirement of members’ approval**
+**203****Related arrangements: requirement of members’ approval**
 
 (1) A company may not—
 (a) take part in an arrangement under which—
@@ -6110,7 +6110,7 @@ body corporate that—
 
 95
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 4 — Transactions with directors requiring approval of members_
 
@@ -6122,7 +6122,7 @@ would have required approval under section 197, 198, 200 or 201 if it had been
 entered into by the company, the transaction shall be treated as having been
 entered into on the date of the arrangement.
 
-**204** **Exception for expenditure on company business**
+**204****Exception for expenditure on company business**
 
 (1) Approval is not required under section 197, 198, 200 or 201 (requirement of
 members’ approval for loans etc) for anything done by a company—
@@ -6140,7 +6140,7 @@ aggregate of—
 (b) the value of any other relevant transactions or arrangements,
 exceeds £50,000.
 
-**205** **Exception for expenditure on defending proceedings etc**
+**205****Exception for expenditure on defending proceedings etc**
 
 (1) Approval is not required under section 197, 198, 200 or 201 (requirement of
 members’ approval for loans etc) for anything done by a company—
@@ -6174,7 +6174,7 @@ done is to be discharged, in the event of—
 
 96
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 4 — Transactions with directors requiring approval of members_
@@ -6196,7 +6196,7 @@ shares by innocent nominee), or
 section 1157 (general power of court to grant relief in case of honest and
 reasonable conduct).
 
-**206** **Exception for expenditure in connection with regulatory action or**
+**206****Exception for expenditure in connection with regulatory action or **
 **investigation**
 
 Approval is not required under section 197, 198, 200 or 201 (requirement of
@@ -6211,7 +6211,7 @@ breach of trust by him in relation to the company or an associated
 company, or
 (b) to enable any such director to avoid incurring such expenditure.
 
-**207** **Exceptions for minor and business transactions**
+**207****Exceptions for minor and business transactions**
 
 (1) Approval is not required under section 197, 198 or 200 for a company to make
 a loan or quasi-loan, or to give a guarantee or provide security in connection
@@ -6239,7 +6239,7 @@ credit transaction, if—
 
 97
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 4 — Transactions with directors requiring approval of members_
 
@@ -6250,7 +6250,7 @@ entered into are not more favourable, than it is reasonable to expect the
 company would have offered to, or in respect of, a person of the same
 financial standing but unconnected with the company.
 
-**208** **Exceptions for intra-group transactions**
+**208****Exceptions for intra-group transactions**
 
 (1) Approval is not required under section 197, 198 or 200 for—
 (a) the making of a loan or quasi-loan to an associated body corporate, or
@@ -6264,7 +6264,7 @@ associated body corporate, or
 transaction entered into by any person for the benefit of an associated
 body corporate.
 
-**209** **Exceptions for money-lending companies**
+**209****Exceptions for money-lending companies**
 
 (1) Approval is not required under section 197, 198 or 200 for the making of a loan
 or quasi-loan, or the giving of a guarantee or provision of security in
@@ -6304,7 +6304,7 @@ house so used or any land occupied and enjoyed with it, or
 
 98
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 4 — Transactions with directors requiring approval of members_
@@ -6312,7 +6312,7 @@ _Chapter 4 — Transactions with directors requiring approval of members_
 (c) in substitution for any loan made by any person and falling within
 paragraph (a) or (b).
 
-**210** **Other relevant transactions or arrangements**
+**210****Other relevant transactions or arrangements**
 
 (1) This section has effect for determining what are “other relevant transactions or
 arrangements” for the purposes of any exception to section 197, 198, 200 or 201.
@@ -6347,7 +6347,7 @@ is not a relevant transaction or arrangement if, at the time the question arises
 whether the transaction or arrangement in question falls within a relevant
 exception, it is no longer such a subsidiary.
 
-**211** **The value of transactions and arrangements**
+**211****The value of transactions and arrangements**
 
 (1) For the purposes of sections 197 to 214 (loans etc)—
 (a) the value of a transaction or arrangement is determined as follows, and
@@ -6372,7 +6372,7 @@ they had been supplied (at the time the transaction is entered into) in the
 
 99
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 4 — Transactions with directors requiring approval of members_
 
@@ -6393,7 +6393,7 @@ and
 been reduced,
 its value is deemed to exceed £50,000.
 
-**212** **The person for whom a transaction or arrangement is entered into**
+**212****The person for whom a transaction or arrangement is entered into**
 
 For the purposes of sections 197 to 214 (loans etc) the person for whom a
 transaction or arrangement is entered into is—
@@ -6408,7 +6408,7 @@ is entered into;
 arrangements), the person for whom the transaction is made to which
 the arrangement relates.
 
-**213** **Loans etc: civil consequences of contravention**
+**213****Loans etc: civil consequences of contravention**
 
 (1) This section applies where a company enters into a transaction or arrangement
 in contravention of section 197, 198, 200, 201 or 203 (requirement of members’
@@ -6436,7 +6436,7 @@ indirectly by the transaction or arrangement, and
 
 100
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 4 — Transactions with directors requiring approval of members_
@@ -6475,7 +6475,7 @@ he did not know the relevant circumstances constituting the contravention.
 enactment or rule of law by virtue of which the transaction or arrangement
 may be called in question or any liability to the company may arise.
 
-**214** **Loans etc: effect of subsequent affirmation**
+**214****Loans etc: effect of subsequent affirmation **
 
 Where a transaction or arrangement is entered into by a company in
 contravention of section 197, 198, 200, 201 or 203 (requirement of members’
@@ -6490,7 +6490,7 @@ the transaction or arrangement may no longer be avoided under section 213.
 
 _Payments for loss of office_
 
-**215** **Payments for loss of office**
+**215****Payments for loss of office**
 
 (1) In this Chapter a “payment for loss of office” means a payment made to a
 director or past director of a company—
@@ -6503,7 +6503,7 @@ director or past director of a company—
 
 101
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 4 — Transactions with directors requiring approval of members_
 
@@ -6539,7 +6539,7 @@ is treated as payment to the director.
 (4) References in those sections to payment by a person include payment by
 another person at the direction of, or on behalf of, the person referred to.
 
-**216** **Amounts taken to be payments for loss of office**
+**216****Amounts taken to be payments for loss of office**
 
 (1) This section applies where in connection with any such transfer as is
 mentioned in section 218 or 219 (payment in connection with transfer of
@@ -6568,12 +6568,12 @@ for the purposes of those sections to have been a payment for loss of office.
 
 102
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 4 — Transactions with directors requiring approval of members_
 
-**217** **Payment by company: requirement of members’ approval**
+**217****Payment by company: requirement of members’ approval**
 
 (1) A company may not make a payment for loss of office to a director of the
 company unless the payment has been approved by a resolution of the
@@ -6601,7 +6601,7 @@ body corporate that—
 (a) is not a UK-registered company, or
 (b) is a wholly-owned subsidiary of another body corporate.
 
-**218** **Payment in connection with transfer of undertaking etc: requirement of**
+**218****Payment in connection with transfer of undertaking etc: requirement of **
 **members’ approval**
 
 (1) No payment for loss of office may be made by any person to a director of a
@@ -6637,7 +6637,7 @@ body corporate that—
 
 103
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 4 — Transactions with directors requiring approval of members_
 
@@ -6652,7 +6652,7 @@ any person to whom the transfer is made, is privy,
 is presumed, except in so far as the contrary is shown, to be a payment to which
 this section applies.
 
-**219** **Payment in connection with share transfer: requirement of members’**
+**219****Payment in connection with share transfer: requirement of members’ **
 **approval**
 
 (1) No payment for loss of office may be made by any person to a director of a
@@ -6704,7 +6704,7 @@ body corporate that—
 
 104
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 4 — Transactions with directors requiring approval of members_
@@ -6716,7 +6716,7 @@ person to whom the transfer is made, is privy,
 is presumed, except in so far as the contrary is shown, to be a payment to which
 this section applies.
 
-**220** **Exception for payments in discharge of legal obligations etc**
+**220****Exception for payments in discharge of legal obligations etc**
 
 (1) Approval is not required under section 217, 218 or 219 (payments requiring
 members’ approval) for a payment made in good faith—
@@ -6743,7 +6743,7 @@ section 217 and section 219, subsection (2) above applies and not subsection (3)
 (5) A payment part of which falls within subsection (1) above and part of which
 does not is treated as if the parts were separate payments.
 
-**221** **Exception for small payments**
+**221****Exception for small payments**
 
 (1) Approval is not required under section 217, 218 or 219 (payments requiring
 members’ approval) if—
@@ -6772,7 +6772,7 @@ subsidiaries,
 
 105
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 4 — Transactions with directors requiring approval of members_
 
@@ -6781,7 +6781,7 @@ same transfer—
 (a) to the director to whom the payment in question was made, and
 (b) by the company making the payment or any of its subsidiaries.
 
-**222** **Payments made without approval: civil consequences**
+**222****Payments made without approval: civil consequences**
 
 (1) If a payment is made in contravention of section 217 (payment by company)—
 (a) it is held by the recipient on trust for the company making the payment,
@@ -6810,7 +6810,7 @@ otherwise.
 
 _Supplementary_
 
-**223** **Transactions requiring members’ approval: application of provisions to**
+**223****Transactions requiring members’ approval: application of provisions to **
 **shadow directors**
 
 (1) For the purposes of—
@@ -6823,7 +6823,7 @@ a shadow director is treated as a director.
 (2) Any reference in those provisions to loss of office as a director does not apply
 in relation to loss of a person’s status as a shadow director.
 
-**224** **Approval by written resolution: accidental failure to send memorandum**
+**224****Approval by written resolution: accidental failure to send memorandum**
 
 (1) Where—
 (a) approval under this Chapter is sought by written resolution, and
@@ -6837,7 +6837,7 @@ to every eligible member before the resolution is passed,
 
 106
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 4 — Transactions with directors requiring approval of members_
@@ -6848,7 +6848,7 @@ requirement has been met.
 
 (2) Subsection (1) has effect subject to any provision of the company’s articles.
 
-**225** **Cases where approval is required under more than one provision**
+**225****Cases where approval is required under more than one provision**
 
 (1) Approval may be required under more than one provision of this Chapter.
 
@@ -6856,11 +6856,11 @@ requirement has been met.
 
 (3) This does not require a separate resolution for the purposes of each provision.
 
-**226** **Requirement of consent of Charity Commission: companies that are charities**
+**226****Requirement of consent of Charity Commission: companies that are charities**
 
 For section 66 of the Charities Act 1993 (c. 10) substitute—
 
-**“66** **Consent of Commission required for approval etc by members of**
+**“66****Consent of Commission required for approval etc by members of **
 **charitable companies**
 
 (1) Where a company is a charity—
@@ -6884,7 +6884,7 @@ etc);
 (g) section 218 (payments to directors for loss of office: transfer of
 undertaking etc).
 
-**66A** **Consent of Commission required for certain acts of charitable**
+**66A****Consent of Commission required for certain acts of charitable **
 **company**
 
 (1) A company that is a charity may not do an act to which this section
@@ -6906,7 +6906,7 @@ owned subsidiary of another body corporate.
 
 107
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 4 — Transactions with directors requiring approval of members_
 
@@ -6917,11 +6917,11 @@ section 66(2) above.
 referred to in subsection (2)(b) shall be treated as of no effect in relation
 to the act.”.
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
 D IRECTORS ’ SERVICE  CONTRACTS
 
-**227** **Directors’ service contracts**
+**227****Directors’ service contracts**
 
 (1) For the purposes of this Part a director’s “service contract”, in relation to a
 company, means a contract under which—
@@ -6937,7 +6937,7 @@ terms of a person’s appointment as a director of a company.
 They are not restricted to contracts for the performance of services outside the
 scope of the ordinary duties of a director.
 
-**228** **Copy of contract or memorandum of terms to be available for inspection**
+**228****Copy of contract or memorandum of terms to be available for inspection**
 
 (1) A company must keep available for inspection—
 (a) a copy of every director’s service contract with the company or with a
@@ -6973,7 +6973,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 
 108
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 5 — Directors’ service contracts_
@@ -6984,7 +6984,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 (7) The provisions of this section apply to a variation of a director’s service
 contract as they apply to the original contract.
 
-**229** **Right of member to inspect and request copy**
+**229****Right of member to inspect and request copy**
 
 (1) Every copy or memorandum required to be kept under section 228 must be
 open to inspection by any member of the company without charge.
@@ -7008,16 +7008,16 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 immediate inspection or, as the case may be, direct that the copy required be
 sent to the person requiring it.
 
-**230** **Directors’ service contracts: application of provisions to shadow directors**
+**230****Directors’ service contracts: application of provisions to shadow directors**
 
 A shadow director is treated as a director for the purposes of the provisions of
 this Chapter.
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
 C ONTRACTS  WITH  SOLE  MEMBERS  WHO  ARE  DIRECTORS
 
-**231** **Contract with sole member who is also a director**
+**231****Contract with sole member who is also a director**
 
 (1) This section applies where—
 (a) a limited company having only one member enters into a contract with
@@ -7039,7 +7039,7 @@ company following the making of the contract.
 
 109
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 6 — Contracts with sole members who are directors_
 
@@ -7058,13 +7058,13 @@ validity of the contract.
 enactment or rule of law applying to contracts between a company and a
 director of the company.
 
-**C** **HAPTER** **7**
+**CHAPTER 7**
 
 D IRECTORS ’ LIABILITIES
 
 _Provision protecting directors from liability_
 
-**232** **Provisions protecting directors from liability**
+**232****Provisions protecting directors from liability**
 
 (1) Any provision that purports to exempt a director of a company (to any extent)
 from any liability that would otherwise attach to him in connection with any
@@ -7086,14 +7086,14 @@ articles or in any contract with the company or otherwise.
 (4) Nothing in this section prevents a company’s articles from making such
 provision as has previously been lawful for dealing with conflicts of interest.
 
-**233** **Provision of insurance**
+**233****Provision of insurance**
 
 Section 232(2) (voidness of provisions for indemnifying directors) does not
 prevent a company from purchasing and maintaining for a director of the
 company, or of an associated company, insurance against any such liability as
 is mentioned in that subsection.
 
-**234** **Qualifying third party indemnity provision**
+**234****Qualifying third party indemnity provision**
 
 (1) Section 232(2) (voidness of provisions for indemnifying directors) does not
 apply to qualifying third party indemnity provision.
@@ -7105,7 +7105,7 @@ apply to qualifying third party indemnity provision.
 
 110
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 7 — Directors’ liabilities_
@@ -7150,7 +7150,7 @@ shares by innocent nominee), or
 section 1157 (general power of court to grant relief in case of honest and
 reasonable conduct).
 
-**235** **Qualifying pension scheme indemnity provision**
+**235****Qualifying pension scheme indemnity provision**
 
 (1) Section 232(2) (voidness of provisions for indemnifying directors) does not
 apply to qualifying pension scheme indemnity provision.
@@ -7172,7 +7172,7 @@ following requirements are met.
 
 111
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 7 — Directors’ liabilities_
 
@@ -7201,7 +7201,7 @@ appeal has ended, or
 scheme as defined in section 150(5) of the Finance Act 2004 (c. 12) that is
 established under a trust.
 
-**236** **Qualifying indemnity provision to be disclosed in directors’ report**
+**236****Qualifying indemnity provision to be disclosed in directors’ report**
 
 (1) This section requires disclosure in the directors’ report of—
 (a) qualifying third party indemnity provision, and
@@ -7235,12 +7235,12 @@ provision was in force.
 
 112
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 7 — Directors’ liabilities_
 
-**237** **Copy of qualifying indemnity provision to be available for inspection**
+**237****Copy of qualifying indemnity provision to be available for inspection**
 
 (1) This section has effect where qualifying indemnity provision is made for a
 director of a company, and applies—
@@ -7285,7 +7285,7 @@ provision as they apply to the original provision.
 (a) qualifying third party indemnity provision, and
 (b) qualifying pension scheme indemnity provision.
 
-**238** **Right of member to inspect and request copy**
+**238****Right of member to inspect and request copy**
 
 (1) Every copy or memorandum required to be kept by a company under section
 237 must be open to inspection by any member of the company without charge.
@@ -7303,7 +7303,7 @@ the company.
 
 113
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 7 — Directors’ liabilities_
 
@@ -7322,7 +7322,7 @@ sent to the person requiring it.
 
 _Ratification of acts giving rise to liability_
 
-**239** **Ratification of acts of directors**
+**239****Ratification of acts of directors**
 
 (1) This section applies to the ratification by a company of conduct by a director
 amounting to negligence, default, breach of duty or breach of trust in relation
@@ -7366,16 +7366,16 @@ are incapable of being ratified by the company.
 
 114
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 8 — Directors’ residential addresses: protection from disclosure_
 
-**C** **HAPTER** **8**
+**CHAPTER 8**
 
-D IRECTORS ’ RESIDENTIAL  ADDRESSES : PROTECTION  FROM  DISCLOSURE
+D IRECTORS ’ RESIDENTIAL  ADDRESSES: PROTECTION  FROM  DISCLOSURE
 
-**240** **Protected information**
+**240****Protected information**
 
 (1) This Chapter makes provision for protecting, in the case of a company director
 who is an individual—
@@ -7389,7 +7389,7 @@ ceasing to be a director of the company.
 References in this Chapter to a director include, to that extent, a former
 director.
 
-**241** **Protected information: restriction on use or disclosure by company**
+**241****Protected information: restriction on use or disclosure by company**
 
 (1) A company must not use or disclose protected information about any of its
 directors, except—
@@ -7401,7 +7401,7 @@ particulars to be sent to the registrar, or
 (2) Subsection (1) does not prohibit any use or disclosure of protected information
 with the consent of the director concerned.
 
-**242** **Protected information: restriction on use or disclosure by registrar**
+**242****Protected information: restriction on use or disclosure by registrar**
 
 (1) The registrar must omit protected information from the material on the register
 that is available for inspection where—
@@ -7429,11 +7429,11 @@ or
 
 115
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 8 — Directors’ residential addresses: protection from disclosure_
 
-**243** **Permitted use or disclosure by the registrar**
+**243****Permitted use or disclosure by the registrar**
 
 (1) The registrar may use protected information for communicating with the
 director in question.
@@ -7474,7 +7474,7 @@ public nature.
 
 (8) Regulations under this section are subject to negative resolution procedure.
 
-**244** **Disclosure under court order**
+**244****Disclosure under court order**
 
 (1) The court may make an order for the disclosure of protected information by the
 company or by the registrar if—
@@ -7496,7 +7496,7 @@ and the court is otherwise satisfied that it is appropriate to make the order.
 
 116
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 8 — Directors’ residential addresses: protection from disclosure_
@@ -7508,7 +7508,7 @@ interest.
 (4) The order must specify the persons to whom, and purposes for which,
 disclosure is authorised.
 
-**245** **Circumstances in which registrar may put address on the public record**
+**245****Circumstances in which registrar may put address on the public record**
 
 (1) The registrar may put a director’s usual residential address on the public
 record if—
@@ -7540,7 +7540,7 @@ specified period.
 (6) What is meant by putting the address on the public record is explained in
 section 246.
 
-**246** **Putting the address on the public record**
+**246****Putting the address on the public record**
 
 (1) The registrar, on deciding in accordance with section 245 that a director’s usual
 residential address is to be put on the public record, shall proceed as if notice
@@ -7564,7 +7564,7 @@ as his service address, and
 
 117
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 8 — Directors’ residential addresses: protection from disclosure_
 
@@ -7592,13 +7592,13 @@ by the registrar under this section may not register a service address other tha
 his usual residential address for a period of five years from the date of the
 registrar’s decision.
 
-**C** **HAPTER** **9**
+**CHAPTER 9**
 
 S UPPLEMENTARY  PROVISIONS
 
 _Provision for employees on cessation or transfer of business_
 
-**247** **Power to make provision for employees on cessation or transfer of business**
+**247****Power to make provision for employees on cessation or transfer of business**
 
 (1) The powers of the directors of a company include (if they would not otherwise
 do so) power to make provision for the benefit of persons employed or
@@ -7630,7 +7630,7 @@ former directors or shadow directors.
 
 118
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 9 — Supplementary provisions_
@@ -7644,7 +7644,7 @@ power conferred by this section must be complied with.
 
 _Records of meetings of directors_
 
-**248** **Minutes of directors’ meetings**
+**248****Minutes of directors’ meetings**
 
 (1) Every company must cause minutes of all proceedings at meetings of its
 directors to be recorded.
@@ -7659,7 +7659,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**249** **Minutes as evidence**
+**249****Minutes as evidence**
 
 (1) Minutes recorded in accordance with section 248, if purporting to be
 authenticated by the chairman of the meeting or by the chairman of the next
@@ -7675,12 +7675,12 @@ and
 
 _Meaning of "director" and "shadow director"_
 
-**250** **“Director”**
+**250****“Director”**
 
 In the Companies Acts “director” includes any person occupying the position
 of director, by whatever name called.
 
-**251** **“Shadow director”**
+**251****“Shadow director”**
 
 (1) In the Companies Acts “shadow director”, in relation to a company, means a
 person in accordance with whose directions or instructions the directors of the
@@ -7696,7 +7696,7 @@ directors act on advice given by him in a professional capacity.
 
 119
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 9 — Supplementary provisions_
 
@@ -7710,7 +7710,7 @@ accordance with its directions or instructions.
 
 _Other definitions_
 
-**252** **Persons connected with a director**
+**252****Persons connected with a director**
 
 (1) This section defines what is meant by references in this Part to a person being
 “connected” with a director of a company (or a director being “connected” with
@@ -7744,7 +7744,7 @@ connected with the director.
 (3) References in this Part to a person connected with a director of a company do
 not include a person who is himself a director of the company.
 
-**253** **Members of a director’s family**
+**253****Members of a director’s family**
 
 (1) This section defines what is meant by references in this Part to members of a
 director’s family.
@@ -7759,7 +7759,7 @@ director’s family.
 
 120
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 9 — Supplementary provisions_
@@ -7775,7 +7775,7 @@ director and have not attained the age of 18;
 (3) Subsection (2)(b) does not apply if the other person is the director’s
 grandparent or grandchild, sister, brother, aunt or uncle, or nephew or niece.
 
-**254** **Director “connected with” a body corporate**
+**254****Director “connected with” a body corporate**
 
 (1) This section defines what is meant by references in this Part to a director being
 “connected with” a body corporate.
@@ -7809,7 +7809,7 @@ body corporate with which a director is connected is not treated for the
 purposes of this section as connected with a director by reason only of
 that fact.
 
-**255** **Director “controlling” a body corporate**
+**255****Director “controlling” a body corporate**
 
 (1) This section defines what is meant by references in this Part to a director
 “controlling” a body corporate.
@@ -7826,7 +7826,7 @@ or
 
 121
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 _Chapter 9 — Supplementary provisions_
 
@@ -7859,7 +7859,7 @@ body corporate with which a director is connected is not treated for the
 purposes of this section as connected with a director by reason only of
 that fact.
 
-**256** **Associated bodies corporate**
+**256****Associated bodies corporate**
 
 For the purposes of this Part—
 (a) bodies corporate are associated if one is a subsidiary of the other or both
@@ -7867,7 +7867,7 @@ are subsidiaries of the same body corporate, and
 (b) companies are associated if one is a subsidiary of the other or both are
 subsidiaries of the same body corporate.
 
-**257** **References to company’s constitution**
+**257****References to company’s constitution**
 
 (1) References in this Part to a company’s constitution include—
 (a) any resolution or other decision come to in accordance with the
@@ -7886,14 +7886,14 @@ to matters contained in company’s constitution).
 
 122
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 10 — A company’s directors_
 
 _Chapter 9 — Supplementary provisions_
 
 _General_
 
-**258** **Power to increase financial limits**
+**258****Power to increase financial limits**
 
 (1) The Secretary of State may by order substitute for any sum of money specified
 in this Part a larger sum specified in the order.
@@ -7905,21 +7905,21 @@ it comes into force.
 Accordingly, proceedings in respect of any liability incurred before that time
 may be continued or instituted as if the order had not been made.
 
-**259** **Transactions under foreign law**
+**259****Transactions under foreign law**
 
 For the purposes of this Part it is immaterial whether the law that (apart from
 this Act) governs an arrangement or transaction is the law of the United
 Kingdom, or a part of it, or not.
 
-**P** **ART** **11**
+**PART 11**
 
 D ERIVATIVE  CLAIMS  AND  PROCEEDINGS  BY  MEMBERS
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 D ERIVATIVE  CLAIMS  IN E NGLAND  AND W ALES  OR N ORTHERN I RELAND
 
-**260** **Derivative claims**
+**260****Derivative claims**
 
 (1) This Chapter applies to proceedings in England and Wales or Northern Ireland
 by a member of a company—
@@ -7953,7 +7953,7 @@ company.
 
 123
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 11 — Derivative claims and proceedings by members_
 _Chapter 1 — Derivative claims in England and Wales or Northern Ireland_
 
@@ -7961,7 +7961,7 @@ _Chapter 1 — Derivative claims in England and Wales or Northern Ireland_
 member but to whom shares in the company have been transferred or
 transmitted by operation of law.
 
-**261** **Application for permission to continue derivative claim**
+**261****Application for permission to continue derivative claim**
 
 (1) A member of a company who brings a derivative claim under this Chapter
 must apply to the court for permission (in Northern Ireland, leave) to continue
@@ -7985,7 +7985,7 @@ thinks fit,
 (c) adjourn the proceedings on the application and give such directions as
 it thinks fit.
 
-**262** **Application for permission to continue claim as a derivative claim**
+**262****Application for permission to continue claim as a derivative claim**
 
 (1) This section applies where—
 (a) a company has brought a claim, and
@@ -8018,7 +8018,7 @@ and
 
 124
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 11 — Derivative claims and proceedings by members_
 
 _Chapter 1 — Derivative claims in England and Wales or Northern Ireland_
@@ -8030,7 +8030,7 @@ such terms as it thinks fit,
 (c) adjourn the proceedings on the application and give such directions as
 it thinks fit.
 
-**263** **Whether permission to be given**
+**263****Whether permission to be given**
 
 (1) The following provisions have effect where a member of a company applies for
 permission (in Northern Ireland, leave) under section 261 or 262.
@@ -8083,7 +8083,7 @@ permission (or leave).
 
 125
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 11 — Derivative claims and proceedings by members_
 _Chapter 1 — Derivative claims in England and Wales or Northern Ireland_
 
@@ -8092,7 +8092,7 @@ persons as he considers appropriate.
 
 (7) Regulations under this section are subject to affirmative resolution procedure.
 
-**264** **Application for permission to continue derivative claim brought by another**
+**264****Application for permission to continue derivative claim brought by another **
 **member**
 
 (1) This section applies where a member of a company (“the claimant”)—
@@ -8128,11 +8128,11 @@ thinks fit,
 (c) adjourn the proceedings on the application and give such directions as
 it thinks fit.
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 D ERIVATIVE  PROCEEDINGS  IN S COTLAND
 
-**265** **Derivative proceedings**
+**265****Derivative proceedings**
 
 (1) In Scotland, a member of a company may raise proceedings in respect of an act
 or omission specified in subsection (3) in order to protect the interests of the
@@ -8148,7 +8148,7 @@ company and obtain a remedy on its behalf.
 
 126
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 11 — Derivative claims and proceedings by members_
 
 _Chapter 2 — Derivative proceedings in Scotland_
@@ -8184,7 +8184,7 @@ the “cause of action”,
 member but to whom shares in the company have been transferred or
 transmitted by operation of law.
 
-**266** **Requirement for leave and notice**
+**266****Requirement for leave and notice**
 
 (1) Derivative proceedings may be raised by a member of a company only with the
 leave of the court.
@@ -8215,7 +8215,7 @@ evidence to be obtained, and
 
 127
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 11 — Derivative claims and proceedings by members_
 _Chapter 2 — Derivative proceedings in Scotland_
 
@@ -8228,7 +8228,7 @@ application.
 (c) adjourn the proceedings on the application and make such order as to
 further procedure as it thinks fit.
 
-**267** **Application to continue proceedings as derivative proceedings**
+**267****Application to continue proceedings as derivative proceedings**
 
 (1) This section applies where—
 (a) a company has raised proceedings, and
@@ -8266,7 +8266,7 @@ application.
 (c) adjourn the proceedings on the application and make such order as to
 further procedure as it thinks fit.
 
-**268** **Granting of leave**
+**268****Granting of leave**
 
 (1) The court must refuse leave to raise derivative proceedings or an application
 under section 267 if satisfied—
@@ -8278,7 +8278,7 @@ under section 267 if satisfied—
 
 128
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 11 — Derivative claims and proceedings by members_
 
 _Chapter 2 — Derivative proceedings in Scotland_
@@ -8331,7 +8331,7 @@ persons as he considers appropriate.
 
 (6) Regulations under this section are subject to affirmative resolution procedure.
 
-**269** **Application by member to be substituted for member pursuing derivative**
+**269****Application by member to be substituted for member pursuing derivative **
 **proceedings**
 
 (1) This section applies where a member of a company (“the claimant”)—
@@ -8345,7 +8345,7 @@ persons as he considers appropriate.
 
 129
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 11 — Derivative claims and proceedings by members_
 _Chapter 2 — Derivative proceedings in Scotland_
 
@@ -8382,13 +8382,13 @@ application.
 (c) adjourn the proceedings on the application and make such order as to
 further procedure as it thinks fit.
 
-**P** **ART** **12**
+**PART 12**
 
 C OMPANY  SECRETARIES
 
 _Private companies_
 
-**270** **Private company not required to have secretary**
+**270****Private company not required to have secretary**
 
 (1) A private company is not required to have a secretary.
 
@@ -8409,7 +8409,7 @@ company; and
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 12 — Company secretaries_
 130
@@ -8422,11 +8422,11 @@ the directors.
 
 _Public companies_
 
-**271** **Public company required to have secretary**
+**271****Public company required to have secretary**
 
 A public company must have a secretary.
 
-**272** **Direction requiring public company to appoint secretary**
+**272****Direction requiring public company to appoint secretary**
 
 (1) If it appears to the Secretary of State that a public company is in breach of
 section 271 (requirement to have secretary), the Secretary of State may give the
@@ -8463,7 +8463,7 @@ conviction to a fine not exceeding level 5 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 5 on the standard scale.
 
-**273** **Qualifications of secretaries of public companies**
+**273****Qualifications of secretaries of public companies**
 
 (1) It is the duty of the directors of a public company to take all reasonable steps
 to secure that the secretary (or each joint secretary) of the company—
@@ -8473,7 +8473,7 @@ to secure that the secretary (or each joint secretary) of the company—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 12 — Company secretaries_
 131
 
@@ -8504,7 +8504,7 @@ company.
 
 _Provisions applying to private companies with a secretary and to public companies_
 
-**274** **Discharge of functions where office vacant or secretary unable to act**
+**274****Discharge of functions where office vacant or secretary unable to act**
 
 Where in the case of any company the office of secretary is vacant, or there is
 for any other reason no secretary capable of acting, anything required or
@@ -8514,7 +8514,7 @@ authorised to be done by or to the secretary may be done—
 or to any person authorised generally or specifically in that behalf by
 the directors.
 
-**275** **Duty to keep register of secretaries**
+**275****Duty to keep register of secretaries**
 
 (1) A company must keep a register of its secretaries.
 
@@ -8536,7 +8536,7 @@ unless it has at all times been kept at the company’s registered office.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 12 — Company secretaries_
 132
@@ -8560,7 +8560,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 (8) In the case of a refusal of inspection of the register, the court may by order
 compel an immediate inspection of it.
 
-**276** **Duty to notify registrar of changes**
+**276****Duty to notify registrar of changes**
 
 (1) A company must, within the period of 14 days from—
 (a) a person becoming or ceasing to be its secretary or one of its joint
@@ -8582,7 +8582,7 @@ conviction to a fine not exceeding level 5 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 5 on the standard scale.
 
-**277** **Particulars of secretaries to be registered: individuals**
+**277****Particulars of secretaries to be registered: individuals**
 
 (1) A company’s register of secretaries must contain the following particulars in
 the case of an individual—
@@ -8601,7 +8601,7 @@ surname or in addition to either or both of them.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 12 — Company secretaries_
 133
 
@@ -8623,7 +8623,7 @@ years, or
 (5) The address required to be stated in the register is a service address.
 This may be stated to be “The company’s registered office”.
 
-**278** **Particulars of secretaries to be registered: corporate secretaries and firms**
+**278****Particulars of secretaries to be registered: corporate secretaries and firms**
 
 (1) A company’s register of secretaries must contain the following particulars in
 the case of a body corporate, or a firm that is a legal person under the law by
@@ -8646,7 +8646,7 @@ of the state) and its registration number in that register.
 particulars that would be required if the firm were a legal person and the firm
 had been appointed secretary.
 
-**279** **Particulars of secretaries to be registered: power to make regulations**
+**279****Particulars of secretaries to be registered: power to make regulations**
 
 (1) The Secretary of State may make provision by regulations amending—
 section 277 (particulars of secretaries to be registered: individuals), or
@@ -8662,26 +8662,26 @@ in a company’s register of secretaries.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 12 — Company secretaries_
 134
 
-**280** **Acts done by person in dual capacity**
+**280****Acts done by person in dual capacity**
 
 A provision requiring or authorising a thing to be done by or to a director and
 the secretary of a company is not satisfied by its being done by or to the same
 person acting both as director and as, or in place of, the secretary.
 
-**P** **ART** **13**
+**PART 13**
 
 R ESOLUTIONS  AND  MEETINGS
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 G ENERAL  PROVISIONS  ABOUT  RESOLUTIONS
 
-**281** **Resolutions**
+**281****Resolutions**
 
 (1) A resolution of the members (or of a class of members) of a private company
 must be passed—
@@ -8707,7 +8707,7 @@ passed, or
 (c) cases in which a person is precluded from alleging that a resolution has
 not been duly passed.
 
-**282** **Ordinary resolutions**
+**282****Ordinary resolutions**
 
 (1) An ordinary resolution of the members (or of a class of members) of a company
 means a resolution that is passed by a simple majority.
@@ -8730,7 +8730,7 @@ members entitled to vote on it.
 
 135
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 1 — General provisions about resolutions_
 
@@ -8742,7 +8742,7 @@ the resolution.
 (5) Anything that may be done by ordinary resolution may also be done by special
 resolution.
 
-**283** **Special resolutions**
+**283****Special resolutions**
 
 (1) A special resolution of the members (or of a class of members) of a company
 means a resolution passed by a majority of not less than 75%.
@@ -8775,7 +8775,7 @@ propose the resolution as a special resolution, and
 (b) if the notice of the meeting so specified, the resolution may only be
 passed as a special resolution.
 
-**284** **Votes: general rules**
+**284****Votes: general rules**
 
 (1) On a vote on a written resolution—
 (a) in the case of a company having a share capital, every member has one
@@ -8798,7 +8798,7 @@ vote in respect of each share or each £10 of stock held by him, and
 
 136
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 1 — General provisions about resolutions_
@@ -8808,7 +8808,7 @@ _Chapter 1 — General provisions about resolutions_
 (4) The provisions of this section have effect subject to any provision of the
 company’s articles.
 
-**285** **Votes: specific requirements**
+**285****Votes: specific requirements**
 
 (1) Where a member entitled to vote on a resolution has appointed one proxy only,
 and the company’s articles provide that the proxy has fewer votes in a vote on
@@ -8834,7 +8834,7 @@ resolution passed on a poll is void, and
 when it is passed on a poll as he has when it is passed as a written
 resolution.
 
-**286** **Votes of joint holders of shares**
+**286****Votes of joint holders of shares**
 
 (1) In the case of joint holders of shares of a company, only the vote of the senior
 holder who votes (and any proxies duly authorised by him) may be counted by
@@ -8847,7 +8847,7 @@ members.
 (3) Subsections (1) and (2) have effect subject to any provision of the company’s
 articles.
 
-**287** **Saving for provisions of articles as to determination of entitlement to vote**
+**287****Saving for provisions of articles as to determination of entitlement to vote**
 
 Nothing in this Chapter affects—
 (a) any provision of a company’s articles—
@@ -8865,17 +8865,17 @@ proceedings.
 
 137
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 2 — Written resolutions_
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 W RITTEN  RESOLUTIONS
 
 _General provisions about written resolutions_
 
-**288** **Written resolutions of private companies**
+**288****Written resolutions of private companies**
 
 (1) In the Companies Acts a “written resolution” means a resolution of a private
 company proposed and passed in accordance with this Chapter.
@@ -8905,7 +8905,7 @@ and references in enactments passed or made before this section comes into
 force to a meeting at which a resolution is passed or to members voting in
 favour of a resolution shall be construed accordingly.
 
-**289** **Eligible members**
+**289****Eligible members**
 
 (1) In relation to a resolution proposed as a written resolution of a private
 company, the eligible members are the members who would have been
@@ -8919,7 +8919,7 @@ the resolution is sent or submitted to a member for his agreement.
 
 _Circulation of written resolutions_
 
-**290** **Circulation date**
+**290****Circulation date**
 
 References in this Part to the circulation date of a written resolution are to the
 date on which copies of it are sent or submitted to members in accordance with
@@ -8931,7 +8931,7 @@ date on which copies of it are sent or submitted to members in accordance with
 
 138
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 2 — Written resolutions_
@@ -8939,7 +8939,7 @@ _Chapter 2 — Written resolutions_
 this Chapter (or if copies are sent or submitted to members on different days,
 to the first of those days).
 
-**291** **Circulation of written resolutions proposed by directors**
+**291****Circulation of written resolutions proposed by directors**
 
 (1) This section applies to a resolution proposed as a written resolution by the
 directors of the company.
@@ -8975,7 +8975,7 @@ maximum.
 (7) The validity of the resolution, if passed, is not affected by a failure to comply
 with this section.
 
-**292** **Members’ power to require circulation of written resolution**
+**292****Members’ power to require circulation of written resolution**
 
 (1) The members of a private company may require the company to circulate a
 resolution that may properly be moved and is proposed to be moved as a
@@ -8998,7 +8998,7 @@ words on the subject matter of the resolution.
 
 139
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 2 — Written resolutions_
 
@@ -9015,7 +9015,7 @@ this purpose in the company’s articles.
 (b) must identify the resolution and any accompanying statement, and
 (c) must be authenticated by the person or persons making it.
 
-**293** **Circulation of written resolution proposed by members**
+**293****Circulation of written resolution proposed by members**
 
 (1) A company that is required under section 292 to circulate a resolution must
 send or submit to every eligible member—
@@ -9064,12 +9064,12 @@ with this section.
 
 140
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 2 — Written resolutions_
 
-**294** **Expenses of circulation**
+**294****Expenses of circulation**
 
 (1) The expenses of the company in complying with section 293 must be paid by
 the members who requested the circulation of the resolution unless the
@@ -9079,7 +9079,7 @@ company resolves otherwise.
 that section unless there is deposited with or tendered to it a sum reasonably
 sufficient to meet its expenses in doing so.
 
-**295** **Application not to circulate members’ statement**
+**295****Application not to circulate members’ statement**
 
 (1) A company is not required to circulate a members’ statement under section 293
 if, on an application by the company or another person who claims to be
@@ -9092,7 +9092,7 @@ expenses) on such an application, even if they are not parties to the applicatio
 
 _Agreeing to written resolutions_
 
-**296** **Procedure for signifying agreement to written resolution**
+**296****Procedure for signifying agreement to written resolution**
 
 (1) A member signifies his agreement to a proposed written resolution when the
 company receives from him (or from someone acting on his behalf) an
@@ -9109,7 +9109,7 @@ revoked.
 (4) A written resolution is passed when the required majority of eligible members
 have signified their agreement to it.
 
-**297** **Period for agreeing to written resolution**
+**297****Period for agreeing to written resolution**
 
 (1) A proposed written resolution lapses if it is not passed before the end of—
 (a) the period specified for this purpose in the company’s articles, or
@@ -9126,13 +9126,13 @@ after the expiry of that period.
 
 141
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 2 — Written resolutions_
 
 _Supplementary_
 
-**298** **Sending documents relating to written resolutions by electronic means**
+**298****Sending documents relating to written resolutions by electronic means**
 
 (1) Where a company has given an electronic address in any document containing
 or accompanying a proposed written resolution, it is deemed to have agreed
@@ -9144,7 +9144,7 @@ specified in the document).
 purposes of sending or receiving documents or information by electronic
 means.
 
-**299** **Publication of written resolution on website**
+**299****Publication of written resolution on website**
 
 (1) This section applies where a company sends—
 (a) a written resolution, or
@@ -9156,19 +9156,19 @@ unless the resolution is available on the website throughout the period
 beginning with the circulation date and ending on the date on which the
 resolution lapses under section 297.
 
-**300** **Relationship between this Chapter and provisions of company’s articles**
+**300****Relationship between this Chapter and provisions of company’s articles**
 
 A provision of the articles of a private company is void in so far as it would
 have the effect that a resolution that is required by or otherwise provided for
 in an enactment could not be proposed and passed as a written resolution.
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 R ESOLUTIONS  AT  MEETINGS
 
 _General provisions about resolutions at meetings_
 
-**301** **Resolutions at general meetings**
+**301****Resolutions at general meetings**
 
 A resolution of the members of a company is validly passed at a general
 meeting if—
@@ -9179,7 +9179,7 @@ Chapter 4) and the company’s articles.
 
 _Calling meetings_
 
-**302** **Directors’ power to call general meetings**
+**302****Directors’ power to call general meetings**
 
 The directors of a company may call a general meeting of the company.
 
@@ -9190,12 +9190,12 @@ The directors of a company may call a general meeting of the company.
 
 142
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 3 — Resolutions at meetings_
 
-**303** **Members’ power to require directors to call general meeting**
+**303****Members’ power to require directors to call general meeting**
 
 (1) The members of a company may require the directors to call a general meeting
 of the company.
@@ -9235,7 +9235,7 @@ with any enactment or the company’s constitution or otherwise),
 (a) may be in hard copy form or in electronic form, and
 (b) must be authenticated by the person or persons making it.
 
-**304** **Directors’ duty to call meetings required by members**
+**304****Directors’ duty to call meetings required by members**
 
 (1) Directors required under section 303 to call a general meeting of the company
 must call a meeting—
@@ -9258,7 +9258,7 @@ which notice is given in accordance with this section.
 
 143
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 3 — Resolutions at meetings_
 
@@ -9266,7 +9266,7 @@ _Chapter 3 — Resolutions at meetings_
 treated as not having duly called the meeting if they do not give the required
 notice of the resolution in accordance with section 283.
 
-**305** **Power of members to call meeting at company’s expense**
+**305****Power of members to call meeting at company’s expense**
 
 (1) If the directors—
 (a) are required under section 303 to call a meeting, and
@@ -9296,7 +9296,7 @@ by the company.
 or to become due from the company by way of fees or other remuneration in
 respect of the services of such of the directors as were in default.
 
-**306** **Power of court to order meeting**
+**306****Power of court to order meeting**
 
 (1) This section applies if for any reason it is impracticable—
 (a) to call a meeting of a company in any manner in which meetings of that
@@ -9324,7 +9324,7 @@ present at the meeting be deemed to constitute a quorum.
 
 144
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 3 — Resolutions at meetings_
@@ -9335,7 +9335,7 @@ held and conducted.
 
 _Notice of meetings_
 
-**307** **Notice required of general meeting**
+**307****Notice required of general meeting**
 
 (1) A general meeting of a private company (other than an adjourned meeting)
 must be called by notice of at least 14 days.
@@ -9368,7 +9368,7 @@ exceeding 95%) as may be specified in the company’s articles;
 (7) Subsections (5) and (6) do not apply to an annual general meeting of a public
 company (see instead section 337(2)).
 
-**308** **Manner in which notice to be given**
+**308****Manner in which notice to be given**
 
 Notice of a general meeting of a company must be given—
 (a) in hard copy form,
@@ -9376,7 +9376,7 @@ Notice of a general meeting of a company must be given—
 (c) by means of a website (see section 309),
 or partly by one such means and partly by another.
 
-**309** **Publication of notice of meeting on website**
+**309****Publication of notice of meeting on website**
 
 (1) Notice of a meeting is not validly given by a company by means of a website
 unless it is given in accordance with this section.
@@ -9392,7 +9392,7 @@ website the notification must—
 
 145
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 3 — Resolutions at meetings_
 
@@ -9404,7 +9404,7 @@ annual general meeting.
 with the date of that notification and ending with the conclusion of the
 meeting.
 
-**310** **Persons entitled to receive notice of meetings**
+**310****Persons entitled to receive notice of meetings**
 
 (1) Notice of a general meeting of a company must be sent to—
 (a) every member of the company, and
@@ -9423,7 +9423,7 @@ meaning of the Bankruptcy (Scotland) Act 1985 (c. 66)).
 (a) any enactment, and
 (b) any provision of the company’s articles.
 
-**311** **Contents of notices of meetings**
+**311****Contents of notices of meetings**
 
 (1) Notice of a general meeting of a company must state—
 (a) the time and date of the meeting, and
@@ -9433,7 +9433,7 @@ meaning of the Bankruptcy (Scotland) Act 1985 (c. 66)).
 business to be dealt with at the meeting.
 This subsection has effect subject to any provision of the company’s articles.
 
-**312** **Resolution requiring special notice**
+**312****Resolution requiring special notice**
 
 (1) Where by any provision of the Companies Acts special notice is required of a
 resolution, the resolution is not effective unless notice of the intention to move
@@ -9459,7 +9459,7 @@ company, a meeting is called for a date 28 days or less after the notice has bee
 
 146
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 3 — Resolutions at meetings_
@@ -9467,7 +9467,7 @@ _Chapter 3 — Resolutions at meetings_
 given, the notice is deemed to have been properly given, though not given
 within the time required.
 
-**313** **Accidental failure to give notice of resolution or meeting**
+**313****Accidental failure to give notice of resolution or meeting**
 
 (1) Where a company gives notice of—
 (a) a general meeting, or
@@ -9484,7 +9484,7 @@ subsection (1) has effect subject to any provision of the company’s articles.
 
 _Members’ statements_
 
-**314** **Members’ power to require circulation of statements**
+**314****Members’ power to require circulation of statements**
 
 (1) The members of a company may require the company to circulate, to members
 of the company entitled to receive notice of a general meeting, a statement of
@@ -9524,11 +9524,11 @@ to which it relates.
 
 147
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 3 — Resolutions at meetings_
 
-**315** **Company’s duty to circulate members’ statement**
+**315****Company’s duty to circulate members’ statement**
 
 (1) A company that is required under section 314, to circulate a statement must
 send a copy of it to each member of the company entitled to receive notice of
@@ -9549,7 +9549,7 @@ by every officer of the company who is in default.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**316** **Expenses of circulating members’ statement**
+**316****Expenses of circulating members’ statement**
 
 (1) The expenses of the company in complying with section 315 need not be paid
 by the members who requested the circulation of the statement if—
@@ -9567,7 +9567,7 @@ comply with that section unless there is deposited with or tendered to
 it, not later than one week before the meeting, a sum reasonably
 sufficient to meet its expenses in doing so.
 
-**317** **Application not to circulate members’ statement**
+**317****Application not to circulate members’ statement**
 
 (1) A company is not required to circulate a members’ statement under section 315
 if, on an application by the company or another person who claims to be
@@ -9585,14 +9585,14 @@ expenses) on such an application, even if they are not parties to the applicatio
 
 148
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 3 — Resolutions at meetings_
 
 _Procedure at meetings_
 
-**318** **Quorum at meetings**
+**318****Quorum at meetings**
 
 (1) In the case of a company limited by shares or guarantee and having only one
 member, one qualifying person present at a meeting is a quorum.
@@ -9613,7 +9613,7 @@ at meetings) to act as the representative of a corporation in relation to
 the meeting, or
 (c) a person appointed as proxy of a member in relation to the meeting.
 
-**319** **Chairman of meeting**
+**319****Chairman of meeting**
 
 (1) A member may be elected to be the chairman of a general meeting by a
 resolution of the company passed at the meeting.
@@ -9621,7 +9621,7 @@ resolution of the company passed at the meeting.
 (2) Subsection (1) is subject to any provision of the company’s articles that states
 who may or may not be chairman.
 
-**320** **Declaration by chairman on a show of hands**
+**320****Declaration by chairman on a show of hands**
 
 (1) On a vote on a resolution at a meeting on a show of hands, a declaration by the
 chairman that the resolution—
@@ -9637,7 +9637,7 @@ such proof.
 (3) This section does not have effect if a poll is demanded in respect of the
 resolution (and the demand is not subsequently withdrawn).
 
-**321** **Right to demand a poll**
+**321****Right to demand a poll**
 
 (1) A provision of a company’s articles is void in so far as it would have the effect
 of excluding the right to demand a poll at a general meeting on any question
@@ -9652,7 +9652,7 @@ other than—
 
 149
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 3 — Resolutions at meetings_
 
@@ -9671,13 +9671,13 @@ all the shares conferring that right (excluding shares in the company
 conferring a right to vote on the resolution which are held as treasury
 shares).
 
-**322** **Voting on a poll**
+**322****Voting on a poll**
 
 On a poll taken at a general meeting of a company, a member entitled to more
 than one vote need not, if he votes, use all his votes or cast all the votes he uses
 in the same way.
 
-**323** **Representation of corporations at meetings**
+**323****Representation of corporations at meetings**
 
 (1) If a corporation (whether or not a company within the meaning of this Act) is
 a member of a company, it may by resolution of its directors or other governing
@@ -9701,7 +9701,7 @@ is treated as not exercised.
 
 _Proxies_
 
-**324** **Rights to appoint proxies**
+**324****Rights to appoint proxies**
 
 (1) A member of a company is entitled to appoint another person as his proxy to
 exercise all or any of his rights to attend and to speak and vote at a meeting of
@@ -9719,12 +9719,12 @@ the case may be) to a different £10, or multiple of £10, of stock held by him.
 
 150
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 3 — Resolutions at meetings_
 
-**325** **Notice of meeting to contain statement of rights**
+**325****Notice of meeting to contain statement of rights**
 
 (1) In every notice calling a meeting of a company there must appear, with
 reasonable prominence, a statement informing the member of—
@@ -9741,7 +9741,7 @@ committed by every officer of the company who is in default.
 (4) A person guilty of an offence under this section is liable on summary
 conviction to a fine not exceeding level 3 on the standard scale.
 
-**326** **Company-sponsored invitations to appoint proxies**
+**326****Company-sponsored invitations to appoint proxies**
 
 (1) If for the purposes of a meeting there are issued at the company’s expense
 invitations to members to appoint as proxy a specified person or a number of
@@ -9760,7 +9760,7 @@ by every officer of the company who is in default.
 (4) A person guilty of an offence under this section is liable on summary
 conviction to a fine not exceeding level 3 on the standard scale.
 
-**327** **Notice required of appointment of proxy etc**
+**327****Notice required of appointment of proxy etc**
 
 (1) This section applies to—
 (a) the appointment of a proxy, and
@@ -9787,11 +9787,11 @@ of any part of a day that is not a working day.
 
 151
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 3 — Resolutions at meetings_
 
-**328** **Chairing meetings**
+**328****Chairing meetings**
 
 (1) A proxy may be elected to be the chairman of a general meeting by a resolution
 of the company passed at the meeting.
@@ -9799,7 +9799,7 @@ of the company passed at the meeting.
 (2) Subsection (1) is subject to any provision of the company’s articles that states
 who may or who may not be chairman.
 
-**329** **Right of proxy to demand a poll**
+**329****Right of proxy to demand a poll**
 
 (1) The appointment of a proxy to vote on a matter at a meeting of a company
 authorises the proxy to demand, or join in demanding, a poll on that matter.
@@ -9812,7 +9812,7 @@ representing the voting rights that the proxy is authorised to exercise;
 (c) for the purposes of paragraph (c), as a demand by a member holding
 the shares to which those rights are attached.
 
-**330** **Notice required of termination of proxy’s authority**
+**330****Notice required of termination of proxy’s authority**
 
 (1) This section applies to notice that the authority of a person to act as proxy is
 terminated (“notice of termination”).
@@ -9854,7 +9854,7 @@ another person earlier than the following time—
 
 152
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 3 — Resolutions at meetings_
@@ -9869,7 +9869,7 @@ demanded, the time at which it was demanded.
 (7) In calculating the periods mentioned in subsections (3)(b) and (6) no account
 shall be taken of any part of a day that is not a working day.
 
-**331** **Saving for more extensive rights conferred by articles**
+**331****Saving for more extensive rights conferred by articles**
 
 Nothing in sections 324 to 330 (proxies) prevents a company’s articles from
 conferring more extensive rights on members or proxies than are conferred by
@@ -9877,7 +9877,7 @@ those sections.
 
 _Adjourned meetings_
 
-**332** **Resolution passed at adjourned meeting**
+**332****Resolution passed at adjourned meeting**
 
 Where a resolution is passed at an adjourned meeting of a company, the
 resolution is for all purposes to be treated as having been passed on the date on
@@ -9885,7 +9885,7 @@ which it was in fact passed, and is not to be deemed passed on any earlier date.
 
 _Electronic communications_
 
-**333** **Sending documents relating to meetings etc in electronic form**
+**333****Sending documents relating to meetings etc in electronic form**
 
 (1) Where a company has given an electronic address in a notice calling a meeting,
 it is deemed to have agreed that any document or information relating to
@@ -9918,13 +9918,13 @@ means.
 
 153
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 3 — Resolutions at meetings_
 
 _Application to class meetings_
 
-**334** **Application to class meetings**
+**334****Application to class meetings**
 
 (1) The provisions of this Chapter apply (with necessary modifications) in relation
 to a meeting of holders of a class of shares as they apply in relation to a general
@@ -9966,7 +9966,7 @@ of those rights, and
 (b) references to the variation of rights attached to a class of shares include
 references to their abrogation.
 
-**335** **Application to class meetings: companies without a share capital**
+**335****Application to class meetings: companies without a share capital**
 
 (1) The provisions of this Chapter apply (with necessary modifications) in relation
 to a meeting of a class of members of a company without a share capital as they
@@ -9985,7 +9985,7 @@ meeting), and
 
 154
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 3 — Resolutions at meetings_
@@ -10016,11 +10016,11 @@ rights, and
 (b) references to the variation of rights of a class of members include
 references to their abrogation.
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
-P UBLIC  COMPANIES : ADDITIONAL  REQUIREMENTS  FOR AGM S
+P UBLIC  COMPANIES: ADDITIONAL  REQUIREMENTS  FOR AGM S
 
-**336** **Public companies: annual general meeting**
+**336****Public companies: annual general meeting**
 
 (1) Every public company must hold a general meeting as its annual general
 meeting in each period of 6 months beginning with the day following its
@@ -10050,11 +10050,11 @@ maximum.
 
 155
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 4 — Public companies: additional requirements for AGMs_
 
-**337** **Public companies: notice of AGM**
+**337****Public companies: notice of AGM**
 
 (1) A notice calling an annual general meeting of a public company must state that
 the meeting is an annual general meeting.
@@ -10063,7 +10063,7 @@ the meeting is an annual general meeting.
 by section 307(2) or by the company’s articles (as the case may be), if all the
 members entitled to attend and vote at the meeting agree to the shorter notice.
 
-**338** **Public companies: members’ power to require circulation of resolutions for**
+**338****Public companies: members’ power to require circulation of resolutions for **
 **AGMs**
 
 (1) The members of a public company may require the company to give, to
@@ -10099,7 +10099,7 @@ See also section 153 (exercise of rights where shares held on behalf of others).
 requests relate, or
 (ii) if later, the time at which notice is given of that meeting.
 
-**339** **Public companies: company’s duty to circulate members’ resolutions for**
+**339****Public companies: company’s duty to circulate members’ resolutions for **
 **AGMs**
 
 (1) A company that is required under section 338 to give notice of a resolution
@@ -10116,7 +10116,7 @@ notice of the meeting.
 
 156
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 4 — Public companies: additional requirements for AGMs_
@@ -10135,7 +10135,7 @@ by every officer of the company who is in default.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**340** **Public companies: expenses of circulating members’ resolutions for AGM**
+**340****Public companies: expenses of circulating members’ resolutions for AGM**
 
 (1) The expenses of the company in complying with section 339 need not be paid
 by the members who requested the circulation of the resolution if requests
@@ -10155,13 +10155,13 @@ requests relate, or
 a sum reasonably sufficient to meet its expenses in complying with that
 section.
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
 A DDITIONAL  REQUIREMENTS  FOR  QUOTED  COMPANIES
 
 _Website publication of poll results_
 
-**341** **Results of poll to be made available on website**
+**341****Results of poll to be made available on website**
 
 (1) Where a poll is taken at a general meeting of a quoted company, the company
 must ensure that the following information is made available on a website—
@@ -10180,7 +10180,7 @@ subject matter of the poll,
 
 157
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 5 — Additional requirements for quoted companies_
 
@@ -10201,7 +10201,7 @@ poll relates.
 
 _Independent report on poll_
 
-**342** **Members’ power to require independent report on poll**
+**342****Members’ power to require independent report on poll**
 
 (1) The members of a quoted company may require the directors to obtain an
 independent report on any poll taken, or to be taken, at a general meeting of
@@ -10228,7 +10228,7 @@ satisfied in relation to each of them.
 (d) must be received by the company not later than one week after the date
 on which the poll is taken.
 
-**343** **Appointment of independent assessor**
+**343****Appointment of independent assessor**
 
 (1) Directors who are required under section 342 to obtain an independent report
 on a poll or polls must appoint a person they consider to be appropriate (an
@@ -10247,7 +10247,7 @@ required to obtain the report.
 
 158
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 5 — Additional requirements for quoted companies_
@@ -10268,7 +10268,7 @@ assessor, and
 (b) his appointment ceases (but without prejudice to any right to be paid
 for work done before the appointment ceased).
 
-**344** **Independence requirement**
+**344****Independence requirement**
 
 (1) A person may not be appointed as an independent assessor—
 (a) if he is—
@@ -10299,7 +10299,7 @@ company; and
 
 (4) Regulations under this section are subject to negative resolution procedure.
 
-**345** **Meaning of “associate”**
+**345****Meaning of “associate”**
 
 (1) This section defines “associate” for the purposes of section 344 (independence
 requirement).
@@ -10314,7 +10314,7 @@ requirement).
 
 159
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 5 — Additional requirements for quoted companies_
 
@@ -10340,7 +10340,7 @@ partners.
 (6) In this section, in relation to a limited liability partnership, for “director” read
 “member”.
 
-**346** **Effect of appointment of a partnership**
+**346****Effect of appointment of a partnership**
 
 (1) This section applies where a partnership that is not a legal person under the
 law by which it is governed is appointed as an independent assessor.
@@ -10370,7 +10370,7 @@ a partnership, or other person, who succeeds to—
 (b) such part of it as is agreed by the company is to be treated as comprising
 the appointment.
 
-**347** **The independent assessor’s report**
+**347****The independent assessor’s report**
 
 (1) The report of the independent assessor must state his opinion whether—
 
@@ -10381,7 +10381,7 @@ the appointment.
 
 160
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 5 — Additional requirements for quoted companies_
@@ -10403,7 +10403,7 @@ record that fact and state the reasons for it.
 
 (4) The report must state the name of the independent assessor.
 
-**348** **Rights of independent assessor: right to attend meeting etc**
+**348****Rights of independent assessor: right to attend meeting etc**
 
 (1) Where an independent assessor has been appointed to report on a poll, he is
 entitled to attend—
@@ -10424,7 +10424,7 @@ the meeting and any subsequent proceedings in connection with the poll is
 exercisable by an individual authorised by the firm in writing to act as its
 representative for that purpose.
 
-**349** **Rights of independent assessor: right to information**
+**349****Rights of independent assessor: right to information**
 
 (1) The independent assessor is entitled to access to the company’s records
 relating to—
@@ -10447,7 +10447,7 @@ his report.
 
 161
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 5 — Additional requirements for quoted companies_
 
@@ -10463,7 +10463,7 @@ information).
 which a claim to legal professional privilege (in Scotland, to confidentiality of
 communications) could be maintained in legal proceedings.
 
-**350** **Offences relating to provision of information**
+**350****Offences relating to provision of information**
 
 (1) A person who fails to comply with a requirement under section 349 without
 delay commits an offence unless it was not reasonably practicable for him to
@@ -10494,7 +10494,7 @@ maximum (or both).
 an injunction (in Scotland, an interdict or an order for specific performance) to
 enforce any of his rights under section 348 or 349.
 
-**351** **Information to be made available on website**
+**351****Information to be made available on website**
 
 (1) Where an independent assessor has been appointed to report on a poll, the
 company must ensure that the following information is made available on a
@@ -10514,7 +10514,7 @@ subject matter of the poll to which his appointment relates, and
 
 162
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 5 — Additional requirements for quoted companies_
@@ -10534,7 +10534,7 @@ poll relates.
 
 _Supplementary_
 
-**352** **Application of provisions to class meetings**
+**352****Application of provisions to class meetings**
 
 (1) The provisions of—
 section 341 (results of poll to be made available on website), and
@@ -10552,7 +10552,7 @@ of those rights, and
 (b) references to the variation of rights attached to a class of shares include
 references to their abrogation.
 
-**353** **Requirements as to website availability**
+**353****Requirements as to website availability**
 
 (1) The following provisions apply for the purposes of—
 section 341 (results of poll to be made available on website), and
@@ -10580,7 +10580,7 @@ accordance with this section.
 
 163
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 5 — Additional requirements for quoted companies_
 
@@ -10591,7 +10591,7 @@ and
 (b) the failure is wholly attributable to circumstances that it would not be
 reasonable to have expected the company to prevent or avoid.
 
-**354** **Power to limit or extend the types of company to which provisions of this**
+**354****Power to limit or extend the types of company to which provisions of this **
 **Chapter apply**
 
 (1) The Secretary of State may by regulations—
@@ -10614,11 +10614,11 @@ form or arrangement, whether or not they are modified in substance;
 (including provisions amending, repealing or revoking enactments) as
 the Secretary of State thinks fit.
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
 R ECORDS  OF  RESOLUTIONS  AND  MEETINGS
 
-**355** **Records of resolutions and meetings etc**
+**355****Records of resolutions and meetings etc**
 
 (1) Every company must keep records comprising—
 (a) copies of all resolutions of members passed otherwise than at general
@@ -10645,12 +10645,12 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 164
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 6 — Records of resolutions and meetings_
 
-**356** **Records as evidence of resolutions etc**
+**356****Records as evidence of resolutions etc**
 
 (1) This section applies to the records kept in accordance with section 355.
 
@@ -10675,7 +10675,7 @@ then, until the contrary is proved—
 and
 (c) all appointments at the meeting are deemed valid.
 
-**357** **Records of decisions by sole member**
+**357****Records of decisions by sole member**
 
 (1) This section applies to a company limited by shares or by guarantee that has
 only one member.
@@ -10694,7 +10694,7 @@ conviction to a fine not exceeding level 2 on the standard scale.
 (5) Failure to comply with this section does not affect the validity of any decision
 referred to in subsection (2).
 
-**358** **Inspection of records of resolutions and meetings**
+**358****Inspection of records of resolutions and meetings**
 
 (1) The records referred to in section 355 (records of resolutions etc) relating to the
 previous ten years must be kept available for inspection—
@@ -10713,7 +10713,7 @@ unless they have at all times been kept at the company’s registered office.
 
 165
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 _Chapter 6 — Records of resolutions and meetings_
 
@@ -10738,7 +10738,7 @@ copy requested under subsection (4) is not sent, the court may by order compel
 an immediate inspection of the records or direct that the copies required be
 sent to the persons who requested them.
 
-**359** **Records of resolutions and meetings of class of members**
+**359****Records of resolutions and meetings of class of members**
 
 The provisions of this Chapter apply (with necessary modifications) in relation
 to resolutions and meetings of—
@@ -10747,11 +10747,11 @@ to resolutions and meetings of—
 as they apply in relation to resolutions of members generally and to general
 meetings.
 
-**C** **HAPTER** **7**
+**CHAPTER 7**
 
 S UPPLEMENTARY  PROVISIONS
 
-**360** **Computation of periods of notice etc: clear day rule**
+**360****Computation of periods of notice etc: clear day rule**
 
 (1) This section applies for the purposes of the following provisions of this Part—
 section 307(1) and (2) (notice required of general meeting),
@@ -10778,22 +10778,22 @@ deposited or tendered.
 
 166
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 13 — Resolutions and meetings_
 
 _Chapter 7 — Supplementary provisions_
 
-**361** **Meaning of “quoted company”**
+**361****Meaning of “quoted company”**
 
 In this Part “quoted company” has the same meaning as in Part 15 of this Act.
 
-**P** **ART** **14**
+**PART 14**
 
 C ONTROL  OF  POLITICAL  DONATIONS  AND  EXPENDITURE
 
 _Introductory_
 
-**362** **Introductory**
+**362****Introductory**
 
 This Part has effect for controlling—
 (a) political donations made by companies to political parties, to other
@@ -10802,7 +10802,7 @@ political organisations and to independent election candidates, and
 
 _Donations and expenditure to which this Part applies_
 
-**363** **Political parties, organisations etc to which this Part applies**
+**363****Political parties, organisations etc to which this Part applies**
 
 (1) This Part applies to a political party if—
 (a) it is registered under Part 2 of the Political Parties, Elections and
@@ -10828,7 +10828,7 @@ political organisation or independent election candidate, or to political
 expenditure, is to a party, organisation, independent candidate or expenditure
 to which this Part applies.
 
-**364** **Meaning of “political donation”**
+**364****Meaning of “political donation”**
 
 (1) The following provisions have effect for the purposes of this Part as regards the
 meaning of “political donation”.
@@ -10842,7 +10842,7 @@ to 52 of the Political Parties, Elections and Referendums Act 2000—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 14 — Control of political donations and expenditure_
 167
 
@@ -10872,7 +10872,7 @@ the Electoral Administration Act 2006 (which remove from the definition of
 “donation” loans made otherwise than on commercial terms) had not been
 made.
 
-**365** **Meaning of “political expenditure”**
+**365****Meaning of “political expenditure”**
 
 (1) In this Part “political expenditure”, in relation to a company, means
 expenditure incurred by the company on—
@@ -10896,7 +10896,7 @@ expenditure.
 
 _Authorisation required for donations or expenditure_
 
-**366** **Authorisation required for donations or expenditure**
+**366****Authorisation required for donations or expenditure**
 
 (1) A company must not—
 
@@ -10905,7 +10905,7 @@ _Authorisation required for donations or expenditure_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 14 — Control of political donations and expenditure_
 168
@@ -10942,7 +10942,7 @@ incurred.
 (6) Nothing in this section enables a company to be authorised to do anything that
 it could not lawfully do apart from this section.
 
-**367** **Form of authorising resolution**
+**367****Form of authorising resolution**
 
 (1) A resolution conferring authorisation for the purposes of this Part may relate
 to—
@@ -10970,7 +10970,7 @@ the following heads—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 14 — Control of political donations and expenditure_
 169
 
@@ -10990,7 +10990,7 @@ the resolution has effect (see section 368).
 to which it relates taken together;
 (b) in the case of any other resolution, for each company to which it relates.
 
-**368** **Period for which resolution has effect**
+**368****Period for which resolution has effect**
 
 (1) A resolution conferring authorisation for the purposes of this Part has effect for
 a period of four years beginning with the date on which it is passed unless the
@@ -11002,7 +11002,7 @@ to any provision of the articles that operates to prevent them from doing so.
 
 _Remedies in case of unauthorised donations or expenditure_
 
-**369** **Liability of directors in case of unauthorised donation or expenditure**
+**369****Liability of directors in case of unauthorised donation or expenditure**
 
 (1) This section applies where a company has made a political donation or
 incurred political expenditure without the authorisation required by this Part.
@@ -11034,7 +11034,7 @@ incurred—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 14 — Control of political donations and expenditure_
 170
@@ -11056,7 +11056,7 @@ expenditure incurred) does not apply for the purposes of this subsection.
 (6) Where only part of a donation or expenditure was unauthorised, this section
 applies only to so much of it as was unauthorised.
 
-**370** **Enforcement of directors’ liabilities by shareholder action**
+**370****Enforcement of directors’ liabilities by shareholder action**
 
 (1) Any liability of a director under section 369 is enforceable—
 (a) in the case of a liability of a director of a company to that company, by
@@ -11084,7 +11084,7 @@ section 371.
 (5) Nothing in this section affects any right of a member of a company to bring or
 continue proceedings under Part 11 (derivative claims or proceedings).
 
-**371** **Enforcement of directors’ liabilities by shareholder action: supplementary**
+**371****Enforcement of directors’ liabilities by shareholder action: supplementary**
 
 (1) A group of members may not bring proceedings under section 370 in the name
 of a company unless—
@@ -11099,7 +11099,7 @@ and
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 14 — Control of political donations and expenditure_
 171
 
@@ -11139,7 +11139,7 @@ only with the permission of the court.
 the group except with the permission of the court, which may be given on such
 terms as the court thinks fit.
 
-**372** **Costs of shareholder action**
+**372****Costs of shareholder action**
 
 (1) This section applies in relation to proceedings brought under section 370 in the
 name of a company (“the company”) by an authorised group (“the group”).
@@ -11163,7 +11163,7 @@ the group; and
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 14 — Control of political donations and expenditure_
 172
@@ -11176,7 +11176,7 @@ group.
 (5) In the application of this section to Scotland for “costs” read “expenses” and for
 “defendant” read “defender”.
 
-**373** **Information for purposes of shareholder action**
+**373****Information for purposes of shareholder action**
 
 (1) Where proceedings have been brought under section 370 in the name of a
 company by an authorised group, the group is entitled to require the company
@@ -11194,7 +11194,7 @@ means as the court may direct.
 
 _Exemptions_
 
-**374** **Trade unions**
+**374****Trade unions**
 
 (1) A donation to a trade union, other than a contribution to the union’s political
 fund, is not a political donation for the purposes of this Part.
@@ -11211,7 +11211,7 @@ Industrial Relations (Northern Ireland) Order 1992 (S.I. 1992/807 (N.I.
 the furtherance of political objects are required to be made by virtue of
 section 82(1)(a) of that Act or Article 57(2)(a) of that Order.
 
-**375** **Subscription for membership of trade association**
+**375****Subscription for membership of trade association**
 
 (1) A subscription paid to a trade association for membership of the association is
 not a political donation for the purposes of this Part.
@@ -11229,11 +11229,11 @@ association.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 14 — Control of political donations and expenditure_
 173
 
-**376** **All-party parliamentary groups**
+**376****All-party parliamentary groups**
 
 (1) An all-party parliamentary group is not a political organisation for the
 purposes of this Part.
@@ -11242,7 +11242,7 @@ purposes of this Part.
 members of one or both of the Houses of Parliament (or of such members and
 other persons).
 
-**377** **Political expenditure exempted by order**
+**377****Political expenditure exempted by order**
 
 (1) Authorisation under this Part is not needed for political expenditure that is
 exempt by virtue of an order of the Secretary of State under this section.
@@ -11261,7 +11261,7 @@ resolution of the company passed for the purposes of this Part.
 
 (4) An order under this section is subject to affirmative resolution procedure.
 
-**378** **Donations not amounting to more than £5,000 in any twelve month period**
+**378****Donations not amounting to more than £5,000 in any twelve month period**
 
 (1) Authorisation under this Part is not needed for a donation except to the extent
 that the total amount of—
@@ -11292,14 +11292,14 @@ purposes of this Part.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 14 — Control of political donations and expenditure_
 174
 
 _Supplementary provisions_
 
-**379** **Minor definitions**
+**379****Minor definitions**
 
 (1) In this Part—
 “director” includes shadow director; and
@@ -11311,17 +11311,17 @@ donation is made or expenditure is incurred is, in a case where the donation is
 made or expenditure incurred in pursuance of a contract, any earlier time at
 which that contract is entered into by the company.
 
-**P** **ART** **15**
+**PART 15**
 
 A CCOUNTS  AND  REPORTS
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 I NTRODUCTION
 
 _General_
 
-**380** **Scheme of this Part**
+**380****Scheme of this Part**
 
 (1) The requirements of this Part as to accounts and reports apply in relation to
 each financial year of a company.
@@ -11344,7 +11344,7 @@ applying to other companies.
 
 _Companies subject to the small companies regime_
 
-**381** **Companies subject to the small companies regime**
+**381****Companies subject to the small companies regime**
 
 The small companies regime for accounts and reports applies to a company for
 a financial year in relation to which the company—
@@ -11358,11 +11358,11 @@ a financial year in relation to which the company—
 
 175
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 1 — Introduction_
 
-**382** **Companies qualifying as small: general**
+**382****Companies qualifying as small: general**
 
 (1) A company qualifies as small in relation to its first financial year if the
 qualifying conditions are met in that year.
@@ -11401,7 +11401,7 @@ employed under contracts of service by the company in that month
 (7) This section is subject to section 383 (companies qualifying as small: parent
 companies).
 
-**383** **Companies qualifying as small: parent companies**
+**383****Companies qualifying as small: parent companies**
 
 (1) A parent company qualifies as a small company in relation to a financial year
 only if the group headed by it qualifies as a small group.
@@ -11425,7 +11425,7 @@ and the group qualified as small in relation to that year.
 
 176
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 1 — Introduction_
@@ -11464,7 +11464,7 @@ of the parent company.
 If those figures cannot be obtained without disproportionate expense or undue
 delay, the latest available figures shall be taken.
 
-**384** **Companies excluded from the small companies regime**
+**384****Companies excluded from the small companies regime**
 
 (1) The small companies regime does not apply to a company that is, or was at any
 time within the financial year to which the accounts relate—
@@ -11491,7 +11491,7 @@ regulated activity,
 
 177
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 1 — Introduction_
 
@@ -11506,7 +11506,7 @@ financial year to which the accounts relate.
 
 _Quoted and unquoted companies_
 
-**385** **Quoted and unquoted companies**
+**385****Quoted and unquoted companies**
 
 (1) For the purposes of this Part a company is a quoted company in relation to a
 financial year if it is a quoted company immediately before the end of the
@@ -11534,11 +11534,11 @@ of this Part are subject to affirmative resolution procedure.
 (6) Any other regulations under this section are subject to negative resolution
 procedure.
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 A CCOUNTING  RECORDS
 
-**386** **Duty to keep accounting records**
+**386****Duty to keep accounting records**
 
 (1) Every company must keep adequate accounting records.
 
@@ -11557,7 +11557,7 @@ applicable, of Article 4 of the IAS Regulation).
 
 178
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 2 — Accounting records_
@@ -11585,7 +11585,7 @@ parent company to ensure that any accounts required to be prepared under this
 Part comply with the requirements of this Act (and, where applicable, of
 Article 4 of the IAS Regulation).
 
-**387** **Duty to keep accounting records: offence**
+**387****Duty to keep accounting records: offence**
 
 (1) If a company fails to comply with any provision of section 386 (duty to keep
 accounting records), an offence is committed by every officer of the company
@@ -11606,7 +11606,7 @@ statutory maximum (or both);
 exceeding six months, or to a fine not exceeding the statutory
 maximum (or both).
 
-**388** **Where and for how long records to be kept**
+**388****Where and for how long records to be kept**
 
 (1) A company’s accounting records—
 (a) must be kept at its registered office or such other place as the directors
@@ -11625,7 +11625,7 @@ all times be open to such inspection.
 
 179
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 2 — Accounting records_
 
@@ -11648,7 +11648,7 @@ they are made.
 411 of the Insolvency Act 1986 (c. 45) (company insolvency rules) or Article 359
 of the Insolvency (Northern Ireland) Order 1989 (S.I. 1989/2405 (N.I. 19)).
 
-**389** **Where and for how long records to be kept: offences**
+**389****Where and for how long records to be kept: offences**
 
 (1) If a company fails to comply with any provision of subsections (1) to (3) of
 section 388 (requirements as to keeping of accounting records), an offence is
@@ -11675,11 +11675,11 @@ statutory maximum (or both);
 exceeding six months, or to a fine not exceeding the statutory
 maximum (or both).
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 A COMPANY ’ S  FINANCIAL  YEAR
 
-**390** **A company’s financial year**
+**390****A company’s financial year**
 
 (1) A company’s financial year is determined as follows.
 
@@ -11692,7 +11692,7 @@ A COMPANY ’ S  FINANCIAL  YEAR
 
 180
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 3 — A company’s financial year_
@@ -11718,7 +11718,7 @@ under which it is established), whether that period is a year or not.
 opinion there are good reasons against it, the financial year of each of its
 subsidiary undertakings coincides with the company’s own financial year.
 
-**391** **Accounting reference periods and accounting reference date**
+**391****Accounting reference periods and accounting reference date**
 
 (1) A company’s accounting reference periods are determined according to its
 accounting reference date in each calendar year.
@@ -11760,7 +11760,7 @@ commencement of this Act,
 
 181
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 3 — A company’s financial year_
 
@@ -11780,7 +11780,7 @@ reference period and ending with its accounting reference date.
 (7) This section has effect subject to the provisions of section 392 (alteration of
 accounting reference date).
 
-**392** **Alteration of accounting reference date**
+**392****Alteration of accounting reference date**
 
 (1) A company may by notice given to the registrar specify a new accounting
 reference date having effect in relation to—
@@ -11826,7 +11826,7 @@ accounting reference period if the period for filing accounts and reports for th
 
 182
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 3 — A company’s financial year_
@@ -11845,13 +11845,13 @@ Insolvency Act 1986 (c. 45) or Part 3 of the Insolvency (Northern Ireland) Order
 (6) In this section “EEA undertaking” means an undertaking established under the
 law of any part of the United Kingdom or the law of any other EEA State.
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 A NNUAL  ACCOUNTS
 
 _General_
 
-**393** **Accounts to give true and fair view**
+**393****Accounts to give true and fair view**
 
 (1) The directors of a company must not approve accounts for the purposes of this
 Chapter unless they are satisfied that they give a true and fair view of the
@@ -11867,13 +11867,13 @@ duty under subsection (1).
 
 _Individual accounts_
 
-**394** **Duty to prepare individual accounts**
+**394****Duty to prepare individual accounts**
 
 The directors of every company must prepare accounts for the company for
 each of its financial years.
 Those accounts are referred to as the company’s “individual accounts”.
 
-**395** **Individual accounts: applicable accounting framework**
+**395****Individual accounts: applicable accounting framework**
 
 (1) A company’s individual accounts may be prepared—
 (a) in accordance with section 396 (“Companies Act individual accounts”),
@@ -11890,7 +11890,7 @@ This is subject to the following provisions of this section and to section 407
 
 183
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 4 — Annual accounts_
 
@@ -11917,7 +11917,7 @@ accounts for the company, subsections (3) and (4) apply again as if the first
 financial year for which such accounts are again prepared were the first IAS
 year.
 
-**396** **Companies Act individual accounts**
+**396****Companies Act individual accounts**
 
 (1) Companies Act individual accounts must comprise—
 (a) a balance sheet as at the last day of the financial year, and
@@ -11955,12 +11955,12 @@ in a note to the accounts.
 
 184
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 4 — Annual accounts_
 
-**397** **IAS individual accounts**
+**397****IAS individual accounts**
 
 Where the directors of a company prepare IAS individual accounts, they must
 state in the notes to the accounts that the accounts have been prepared in
@@ -11968,7 +11968,7 @@ accordance with international accounting standards.
 
 _Group accounts: small companies_
 
-**398** **Option to prepare group accounts**
+**398****Option to prepare group accounts**
 
 If at the end of a financial year a company subject to the small companies
 regime is a parent company the directors, as well as preparing individual
@@ -11976,7 +11976,7 @@ accounts for the year, may prepare group accounts for the year.
 
 _Group accounts: other companies_
 
-**399** **Duty to prepare group accounts**
+**399****Duty to prepare group accounts**
 
 (1) This section applies to companies that are not subject to the small companies
 regime.
@@ -11994,7 +11994,7 @@ included in the consolidation).
 (4) A company to which this section applies but which is exempt from the
 requirement to prepare group accounts, may do so.
 
-**400** **Exemption for company included in EEA group accounts of larger group**
+**400****Exemption for company included in EEA group accounts of larger group**
 
 (1) A company is exempt from the requirement to prepare group accounts if it is
 itself a subsidiary undertaking and its immediate parent undertaking is
@@ -12021,7 +12021,7 @@ conditions—
 
 185
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 4 — Annual accounts_
 
@@ -12086,7 +12086,7 @@ securities falling within paragraph (a) or (b), and
 
 186
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 4 — Annual accounts_
@@ -12098,7 +12098,7 @@ instrument relates, or
 (iii) a contractual right (other than an option) to acquire any such
 security otherwise than by subscription.
 
-**401** **Exemption for company included in non-EEA group accounts of larger group**
+**401****Exemption for company included in non-EEA group accounts of larger group**
 
 (1) A company is exempt from the requirement to prepare group accounts if it is
 itself a subsidiary undertaking and its parent undertaking is not established
@@ -12151,7 +12151,7 @@ its accounts and reports for the financial year in question, copies of—
 
 187
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 4 — Annual accounts_
 
@@ -12191,7 +12191,7 @@ instrument relates, or
 (iii) a contractual right (other than an option) to acquire any such
 security otherwise than by subscription.
 
-**402** **Exemption if no subsidiary undertakings need be included in the**
+**402****Exemption if no subsidiary undertakings need be included in the **
 **consolidation**
 
 A parent company is exempt from the requirement to prepare group accounts
@@ -12200,7 +12200,7 @@ consolidation in Companies Act group accounts.
 
 _Group accounts: general_
 
-**403** **Group accounts: applicable accounting framework**
+**403****Group accounts: applicable accounting framework**
 
 (1) The group accounts of certain parent companies are required by Article 4 of the
 IAS Regulation to be prepared in accordance with international accounting
@@ -12216,7 +12216,7 @@ standards (“IAS group accounts”).
 
 188
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 4 — Annual accounts_
@@ -12248,7 +12248,7 @@ accounts for the company, subsections (4) and (5) apply again as if the first
 financial year for which such accounts are again prepared were the first IAS
 year.
 
-**404** **Companies Act group accounts**
+**404****Companies Act group accounts**
 
 (1) Companies Act group accounts must comprise—
 (a) a consolidated balance sheet dealing with the state of affairs of the
@@ -12285,14 +12285,14 @@ view.
 
 189
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 4 — Annual accounts_
 
 Particulars of any such departure, the reasons for it and its effect must be given
 in a note to the accounts.
 
-**405** **Companies Act group accounts: subsidiary undertakings included in the**
+**405****Companies Act group accounts: subsidiary undertakings included in the **
 **consolidation**
 
 (1) Where a parent company prepares Companies Act group accounts, all the
@@ -12318,13 +12318,13 @@ respectively, to rights and interests held by or attributed to the company for t
 purposes of the definition of “parent undertaking” (see section 1162) in the
 absence of which it would not be the parent company.
 
-**406** **IAS group accounts**
+**406****IAS group accounts**
 
 Where the directors of a company prepare IAS group accounts, they must state
 in the notes to those accounts that the accounts have been prepared in
 accordance with international accounting standards.
 
-**407** **Consistency of financial reporting within group**
+**407****Consistency of financial reporting within group**
 
 (1) The directors of a parent company must secure that the individual accounts
 of—
@@ -12353,12 +12353,12 @@ prepare IAS group accounts and IAS individual accounts.
 
 190
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 4 — Annual accounts_
 
-**408** **Individual profit and loss account where group accounts prepared**
+**408****Individual profit and loss account where group accounts prepared**
 
 (1) This section applies where—
 (a) a company prepares group accounts in accordance with this Act, and
@@ -12379,7 +12379,7 @@ in the company’s annual accounts that the exemption applies.
 
 _Information to be given in notes to the accounts_
 
-**409** **Information about related undertakings**
+**409****Information about related undertakings**
 
 (1) The Secretary of State may make provision by regulations requiring
 information about related undertakings to be given in notes to a company’s
@@ -12419,11 +12419,11 @@ note to the company’s annual accounts.
 
 191
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 4 — Annual accounts_
 
-**410** **Information about related undertakings: alternative compliance**
+**410****Information about related undertakings: alternative compliance**
 
 (1) This section applies where the directors of a company are of the opinion that
 the number of undertakings in respect of which the company is required to
@@ -12460,7 +12460,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**411** **Information about employee numbers and costs**
+**411****Information about employee numbers and costs**
 
 (1) In the case of a company not subject to the small companies regime, the
 following information with respect to the employees of the company must be
@@ -12485,7 +12485,7 @@ year.
 
 192
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 4 — Annual accounts_
@@ -12526,7 +12526,7 @@ state social security or pension scheme, fund or arrangement.
 (7) Where the company prepares group accounts, this section applies as if the
 undertakings included in the consolidation were a single company.
 
-**412** **Information about directors’ benefits: remuneration**
+**412****Information about directors’ benefits: remuneration**
 
 (1) The Secretary of State may make provision by regulations requiring
 information to be given in notes to a company’s annual accounts about
@@ -12551,7 +12551,7 @@ director.
 
 193
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 4 — Annual accounts_
 
@@ -12579,7 +12579,7 @@ necessary for the purposes of regulations under this section.
 offence and is liable on summary conviction to a fine not exceeding level 3 on
 the standard scale.
 
-**413** **Information about directors’ benefits: advances, credit and guarantees**
+**413****Information about directors’ benefits: advances, credit and guarantees**
 
 (1) In the case of a company that does not prepare group accounts, details of—
 (a) advances and credits granted by the company to its directors, and
@@ -12616,7 +12616,7 @@ loss incurred by reason of enforcement of the guarantee).
 
 194
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 4 — Annual accounts_
@@ -12645,7 +12645,7 @@ state the details required by subsections (3)(a) and (4)(b).
 
 _Approval and signing of accounts_
 
-**414** **Approval and signing of accounts**
+**414****Approval and signing of accounts**
 
 (1) A company’s annual accounts must be approved by the board of directors and
 signed on behalf of the board by a director of the company.
@@ -12678,17 +12678,17 @@ maximum.
 
 195
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 5 — Directors’ report_
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
 D IRECTORS ’ REPORT
 
 _Directors’ report_
 
-**415** **Duty to prepare directors’ report**
+**415****Duty to prepare directors’ report**
 
 (1) The directors of a company must prepare a directors’ report for each financial
 year of the company.
@@ -12715,7 +12715,7 @@ requirement.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**416** **Contents of directors’ report: general**
+**416****Contents of directors’ report: general **
 
 (1) The directors’ report for a financial year must state—
 (a) the names of the persons who, at any time during the financial year,
@@ -12743,12 +12743,12 @@ any such provision as was formerly made by Schedule 7 to the Companies Act
 
 196
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 5 — Directors’ report_
 
-**417** **Contents of directors’ report: business review**
+**417****Contents of directors’ report: business review**
 
 (1) Unless the company is subject to the small companies’ regime, the directors’
 report must contain a business review.
@@ -12809,7 +12809,7 @@ information.
 
 197
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 5 — Directors’ report_
 
@@ -12829,7 +12829,7 @@ company.
 person if the disclosure would, in the opinion of the directors, be seriously
 prejudicial to that person and contrary to the public interest.
 
-**418** **Contents of directors’ report: statement as to disclosure to auditors**
+**418****Contents of directors’ report: statement as to disclosure to auditors**
 
 (1) This section applies to a company unless—
 (a) it is exempt for the financial year in question from the requirements of
@@ -12875,7 +12875,7 @@ two years or a fine (or both);
 
 198
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 5 — Directors’ report_
@@ -12887,7 +12887,7 @@ statutory maximum (or both);
 exceeding six months, or to a fine not exceeding the statutory
 maximum (or both).
 
-**419** **Approval and signing of directors’ report**
+**419****Approval and signing of directors’ report**
 
 (1) The directors’ report must be approved by the board of directors and signed
 on behalf of the board by a director or the secretary of the company.
@@ -12910,11 +12910,11 @@ commits an offence.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
-Q UOTED  COMPANIES : DIRECTORS ’ REMUNERATION  REPORT
+Q UOTED  COMPANIES: DIRECTORS ’ REMUNERATION  REPORT
 
-**420** **Duty to prepare directors’ remuneration report**
+**420****Duty to prepare directors’ remuneration report**
 
 (1) The directors of a quoted company must prepare a directors’ remuneration
 report for each financial year of the company.
@@ -12939,11 +12939,11 @@ maximum.
 
 199
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 6 — Quoted companies: directors’ remuneration report_
 
-**421** **Contents of directors’ remuneration report**
+**421****Contents of directors’ remuneration report**
 
 (1) The Secretary of State may make provision by regulations as to—
 (a) the information that must be contained in a directors’ remuneration
@@ -12966,7 +12966,7 @@ necessary for the purposes of regulations under this section.
 offence and is liable on summary conviction to a fine not exceeding level 3 on
 the standard scale.
 
-**422** **Approval and signing of directors’ remuneration report**
+**422****Approval and signing of directors’ remuneration report**
 
 (1) The directors’ remuneration report must be approved by the board of directors
 and signed on behalf of the board by a director or the secretary of the company.
@@ -12985,13 +12985,13 @@ commits an offence.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**C** **HAPTER** **7**
+**CHAPTER 7**
 
 P UBLICATION  OF  ACCOUNTS  AND  REPORTS
 
 _Duty to circulate copies of accounts and reports_
 
-**423** **Duty to circulate copies of annual accounts and reports**
+**423****Duty to circulate copies of annual accounts and reports**
 
 (1) Every company must send a copy of its annual accounts and reports for each
 financial year to—
@@ -13005,7 +13005,7 @@ financial year to—
 
 200
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 7 — Publication of accounts and reports_
@@ -13032,7 +13032,7 @@ last day of that period.
 (6) This section has effect subject to section 426 (option to provide summary
 financial statement).
 
-**424** **Time allowed for sending out copies of accounts and reports**
+**424****Time allowed for sending out copies of accounts and reports**
 
 (1) The time allowed for sending out copies of the company’s annual accounts and
 reports is as follows.
@@ -13058,7 +13058,7 @@ the accounts in question was determined.
 (6) In this section the “relevant accounts meeting” means the accounts meeting of
 the company at which the accounts and reports in question are to be laid.
 
-**425** **Default in sending out copies of accounts and reports: offences**
+**425****Default in sending out copies of accounts and reports: offences**
 
 (1) If default is made in complying with section 423 or 424, an offence is committed
 by—
@@ -13075,7 +13075,7 @@ by—
 
 201
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 7 — Publication of accounts and reports_
 
@@ -13084,7 +13084,7 @@ maximum.
 
 _Option to provide summary financial statement_
 
-**426** **Option to provide summary financial statement**
+**426****Option to provide summary financial statement**
 
 (1) A company may—
 (a) in such cases as may be specified by regulations made by the Secretary
@@ -13115,7 +13115,7 @@ with section 423 to a member of the company.
 
 (6) Regulations under this section are subject to negative resolution procedure.
 
-**427** **Form and contents of summary financial statement: unquoted companies**
+**427****Form and contents of summary financial statement: unquoted companies**
 
 (1) A summary financial statement by a company that is not a quoted company
 must—
@@ -13141,7 +13141,7 @@ from the company’s annual accounts or the directors’ report.
 
 202
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 7 — Publication of accounts and reports_
@@ -13183,7 +13183,7 @@ separately at the same time as the statement.
 
 (6) Regulations under this section are subject to negative resolution procedure.
 
-**428** **Form and contents of summary financial statement: quoted companies**
+**428****Form and contents of summary financial statement: quoted companies**
 
 (1) A summary financial statement by a quoted company must—
 (a) be derived from the company’s annual accounts and the directors’
@@ -13208,7 +13208,7 @@ directors’ report.
 
 203
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 7 — Publication of accounts and reports_
 
@@ -13252,7 +13252,7 @@ separately at the same time as the statement.
 
 (6) Regulations under this section are subject to negative resolution procedure.
 
-**429** **Summary financial statements: offences**
+**429****Summary financial statements: offences**
 
 (1) If default is made in complying with any provision of section 426, 427 or 428,
 or of regulations under any of those sections, an offence is committed by—
@@ -13269,14 +13269,14 @@ conviction to a fine not exceeding level 3 on the standard scale.
 
 204
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 7 — Publication of accounts and reports_
 
 _Quoted companies: requirements as to website publication_
 
-**430** **Quoted companies: annual accounts and reports to be made available on**
+**430****Quoted companies: annual accounts and reports to be made available on **
 **website**
 
 (1) A quoted company must ensure that its annual accounts and reports—
@@ -13317,7 +13317,7 @@ conviction to a fine not exceeding level 3 on the standard scale.
 
 _Right of member or debenture holder to demand copies of accounts and reports_
 
-**431** **Right of member or debenture holder to copies of accounts and reports:**
+**431****Right of member or debenture holder to copies of accounts and reports: **
 **unquoted companies**
 
 (1) A member of, or holder of debentures of, an unquoted company is entitled to
@@ -13334,7 +13334,7 @@ report).
 
 205
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 7 — Publication of accounts and reports_
 
@@ -13352,7 +13352,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**432** **Right of member or debenture holder to copies of accounts and reports:**
+**432****Right of member or debenture holder to copies of accounts and reports: **
 **quoted companies**
 
 (1) A member of, or holder of debentures of, a quoted company is entitled to be
@@ -13379,7 +13379,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 _Requirements in connection with publication of accounts and reports_
 
-**433** **Name of signatory to be stated in published copies of accounts and reports**
+**433****Name of signatory to be stated in published copies of accounts and reports**
 
 (1) Every copy of a document to which this section applies that is published by or
 on behalf of the company must state the name of the person who signed it on
@@ -13400,7 +13400,7 @@ behalf of the board.
 
 206
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 7 — Publication of accounts and reports_
@@ -13415,7 +13415,7 @@ an offence is committed by—
 (5) A person guilty of an offence under this section is liable on summary
 conviction to a fine not exceeding level 3 on the standard scale.
 
-**434** **Requirements in connection with publication of statutory accounts**
+**434****Requirements in connection with publication of statutory accounts**
 
 (1) If a company publishes any of its statutory accounts, they must be
 accompanied by the auditor’s report on those accounts (unless the company is
@@ -13439,7 +13439,7 @@ conviction to a fine not exceeding level 3 on the standard scale.
 (6) This section does not apply in relation to the provision by a company of a
 summary financial statement (see section 426).
 
-**435** **Requirements in connection with publication of non-statutory accounts**
+**435****Requirements in connection with publication of non-statutory accounts**
 
 (1) If a company publishes non-statutory accounts, it must publish with them a
 statement indicating—
@@ -13467,7 +13467,7 @@ report on the company’s statutory accounts.
 
 207
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 7 — Publication of accounts and reports_
 
@@ -13496,7 +13496,7 @@ conviction to a fine not exceeding level 3 on the standard scale.
 (7) This section does not apply in relation to the provision by a company of a
 summary financial statement (see section 426).
 
-**436** **Meaning of “publication” in relation to accounts and reports**
+**436****Meaning of “publication” in relation to accounts and reports**
 
 (1) This section has effect for the purposes of—
 section 433 (name of signatory to be stated in published copies of accounts
@@ -13511,11 +13511,11 @@ document if it publishes, issues or circulates it or otherwise makes it availabl
 for public inspection in a manner calculated to invite members of the public
 generally, or any class of members of the public, to read it.
 
-**C** **HAPTER** **8**
+**CHAPTER 8**
 
-P UBLIC  COMPANIES : LAYING  OF  ACCOUNTS  AND  REPORTS  BEFORE  GENERAL  MEETING
+P UBLIC  COMPANIES: LAYING  OF  ACCOUNTS  AND  REPORTS  BEFORE  GENERAL  MEETING
 
-**437** **Public companies: laying of accounts and reports before general meeting**
+**437****Public companies: laying of accounts and reports before general meeting**
 
 (1) The directors of a public company must lay before the company in general
 meeting copies of its annual accounts and reports.
@@ -13534,12 +13534,12 @@ accounts and reports are (or are to be) laid in accordance with this section.
 
 208
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 8 — Public companies: laying of accounts and reports before general meeting_
 
-**438** **Public companies: offence of failure to lay accounts and reports**
+**438****Public companies: offence of failure to lay accounts and reports**
 
 (1) If the requirements of section 437 (public companies: laying of accounts and
 reports before general meeting) are not complied with before the end of the
@@ -13558,11 +13558,11 @@ conviction to a fine not exceeding level 5 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 5 on the standard scale.
 
-**C** **HAPTER** **9**
+**CHAPTER 9**
 
-Q UOTED  COMPANIES : MEMBERS ’ APPROVAL  OF  DIRECTORS ’ REMUNERATION  REPORT
+Q UOTED  COMPANIES: MEMBERS ’ APPROVAL  OF  DIRECTORS ’ REMUNERATION  REPORT
 
-**439** **Quoted companies: members’ approval of directors’ remuneration report**
+**439****Quoted companies: members’ approval of directors’ remuneration report**
 
 (1) A quoted company must, prior to the accounts meeting, give to the members
 of the company entitled to be sent notice of the meeting notice of the intention
@@ -13589,7 +13589,7 @@ laid; and
 “existing director” means a person who is a director of the company
 immediately before that meeting.
 
-**440** **Quoted companies: offences in connection with procedure for approval**
+**440****Quoted companies: offences in connection with procedure for approval**
 
 (1) In the event of default in complying with section 439(1) (notice to be given of
 resolution for approval of directors’ remuneration report), an offence is
@@ -13602,7 +13602,7 @@ committed by every officer of the company who is in default.
 
 209
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 9 — Quoted companies: members’ approval of directors’ remuneration report_
 
@@ -13623,13 +13623,13 @@ laid; and
 “existing director” means a person who is a director of the company
 immediately before that meeting.
 
-**C** **HAPTER** **10**
+**CHAPTER 10**
 
 F ILING  OF  ACCOUNTS  AND  REPORTS
 
 _Duty to file accounts and reports_
 
-**441** **Duty to file accounts and reports with the registrar**
+**441****Duty to file accounts and reports with the registrar**
 
 (1) The directors of a company must deliver to the registrar for each financial year
 the accounts and reports required by—
@@ -13642,7 +13642,7 @@ section 447 (filing obligations of quoted companies).
 (2) This is subject to section 448 (unlimited companies exempt from filing
 obligations).
 
-**442** **Period allowed for filing accounts**
+**442****Period allowed for filing accounts**
 
 (1) This section specifies the period allowed for the directors of a company to
 comply with their obligation under section 441 to deliver accounts and reports
@@ -13668,7 +13668,7 @@ anniversary of the incorporation of the company, or
 
 210
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 10 — Filing of accounts and reports_
@@ -13696,7 +13696,7 @@ of the relevant accounting reference period.
 reference period by reference to which the financial year for the accounts in
 question was determined.
 
-**443** **Calculation of period allowed**
+**443****Calculation of period allowed**
 
 (1) This section applies for the purposes of calculating the period for filing a
 company’s accounts and reports which is expressed as a specified number of
@@ -13722,7 +13722,7 @@ previous period, falls.
 
 _Filing obligations of different descriptions of company_
 
-**444** **Filing obligations of companies subject to small companies regime**
+**444****Filing obligations of companies subject to small companies regime**
 
 (1) The directors of a company subject to the small companies regime—
 (a) must deliver to the registrar for each financial year a copy of a balance
@@ -13736,7 +13736,7 @@ sheet drawn up as at the last day of that year, and
 
 211
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 10 — Filing of accounts and reports_
 
@@ -13786,7 +13786,7 @@ of the person who signed it as senior statutory auditor, or
 omitted) are met, state that a resolution has been passed and notified to
 the Secretary of State in accordance with that section.
 
-**445** **Filing obligations of medium-sized companies**
+**445****Filing obligations of medium-sized companies**
 
 (1) The directors of a company that qualifies as a medium-sized company in
 relation to a financial year (see sections 465 to 467) must deliver to the registrar
@@ -13801,7 +13801,7 @@ a copy of—
 
 212
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 10 — Filing of accounts and reports_
@@ -13839,7 +13839,7 @@ the Secretary of State in accordance with that section.
 (7) This section does not apply to companies within section 444 (filing obligations
 of companies subject to the small companies regime).
 
-**446** **Filing obligations of unquoted companies**
+**446****Filing obligations of unquoted companies**
 
 (1) The directors of an unquoted company must deliver to the registrar for each
 financial year of the company a copy of—
@@ -13870,7 +13870,7 @@ the Secretary of State in accordance with that section.
 
 213
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 10 — Filing of accounts and reports_
 
@@ -13879,7 +13879,7 @@ _Chapter 10 — Filing of accounts and reports_
 companies regime), or
 (b) section 445 (filing obligations of medium-sized companies).
 
-**447** **Filing obligations of quoted companies**
+**447****Filing obligations of quoted companies**
 
 (1) The directors of a quoted company must deliver to the registrar for each
 financial year of the company a copy of—
@@ -13902,7 +13902,7 @@ of the person who signed it as senior statutory auditor, or
 omitted) are met, state that a resolution has been passed and notified to
 the Secretary of State in accordance with that section.
 
-**448** **Unlimited companies exempt from obligation to file accounts**
+**448****Unlimited companies exempt from obligation to file accounts**
 
 (1) The directors of an unlimited company are not required to deliver accounts
 and reports to the registrar in respect of a financial year if the following
@@ -13936,7 +13936,7 @@ Partnerships and Unlimited Companies (Accounts) Regulations 1993
 
 214
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 10 — Filing of accounts and reports_
@@ -13961,7 +13961,7 @@ that financial year was determined.
 
 _Requirements where abbreviated accounts delivered_
 
-**449** **Special auditor’s report where abbreviated accounts delivered**
+**449****Special auditor’s report where abbreviated accounts delivered**
 
 (1) This section applies where—
 (a) the directors of a company deliver abbreviated accounts to the
@@ -14001,7 +14001,7 @@ on the company’s annual accounts prepared under Part 16.
 
 215
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 10 — Filing of accounts and reports_
 
@@ -14010,7 +14010,7 @@ _Chapter 10 — Filing of accounts and reports_
 auditor’s report on the company’s annual accounts shall be read as references
 to the special auditor’s report required by this section.
 
-**450** **Approval and signing of abbreviated accounts**
+**450****Approval and signing of abbreviated accounts**
 
 (1) Abbreviated accounts must be approved by the board of directors and signed
 on behalf of the board by a director of the company.
@@ -14037,7 +14037,7 @@ maximum.
 
 _Failure to file accounts and reports_
 
-**451** **Default in filing accounts and reports: offences**
+**451****Default in filing accounts and reports: offences**
 
 (1) If the requirements of section 441 (duty to file accounts and reports) are not
 complied with in relation to a company’s accounts and reports for a financial
@@ -14057,7 +14057,7 @@ conviction to a fine not exceeding level 5 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 5 on the standard scale.
 
-**452** **Default in filing accounts and reports: court order**
+**452****Default in filing accounts and reports: court order**
 
 (1) If—
 
@@ -14068,7 +14068,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 216
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 10 — Filing of accounts and reports_
@@ -14086,7 +14086,7 @@ good the default within such time as may be specified in the order.
 (2) The court’s order may provide that all costs (in Scotland, expenses) of and
 incidental to the application are to be borne by the directors.
 
-**453** **Civil penalty for failure to file accounts and reports**
+**453****Civil penalty for failure to file accounts and reports**
 
 (1) Where the requirements of section 441 are not complied with in relation to a
 company’s accounts and reports for a financial year before the end of the
@@ -14111,13 +14111,13 @@ documents in question were not in fact prepared as required by this Part.
 payable in any case are subject to affirmative resolution procedure.
 Otherwise, the regulations are subject to negative resolution procedure.
 
-**C** **HAPTER** **11**
+**CHAPTER 11**
 
 R EVISION  OF  DEFECTIVE  ACCOUNTS  AND  REPORTS
 
 _Voluntary revision_
 
-**454** **Voluntary revision of accounts etc**
+**454****Voluntary revision of accounts etc**
 
 (1) If it appears to the directors of a company that—
 (a) the company’s annual accounts,
@@ -14134,7 +14134,7 @@ report or statement.
 
 217
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 11 — Revision of defective accounts and reports_
 
@@ -14174,7 +14174,7 @@ specified in the regulations.
 
 _Secretary of State’s notice_
 
-**455** **Secretary of State’s notice in respect of accounts or reports**
+**455****Secretary of State’s notice in respect of accounts or reports**
 
 (1) This section applies where—
 (a) copies of a company’s annual accounts or directors’ report have been
@@ -14197,7 +14197,7 @@ arise.
 
 218
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 11 — Revision of defective accounts and reports_
@@ -14221,7 +14221,7 @@ reports.
 
 _Application to court_
 
-**456** **Application to court in respect of defective accounts or reports**
+**456****Application to court in respect of defective accounts or reports**
 
 (1) An application may be made to the court—
 (a) by the Secretary of State, after having complied with section 455, or
@@ -14261,7 +14261,7 @@ the notice of persons likely to rely on the previous report, and
 
 219
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 11 — Revision of defective accounts and reports_
 
@@ -14296,7 +14296,7 @@ revised directors’ reports, in which case they have effect as if the reference
 revised accounts or reports were references to further revised accounts or
 reports.
 
-**457** **Other persons authorised to apply to the court**
+**457****Other persons authorised to apply to the court**
 
 (1) The Secretary of State may by order (an “authorisation order”) authorise for the
 purposes of section 456 any person appearing to him—
@@ -14329,7 +14329,7 @@ association.
 
 220
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 11 — Revision of defective accounts and reports_
@@ -14346,7 +14346,7 @@ as the Secretary of State thinks fit with respect to pending proceedings.
 
 (7) An order under this section is subject to negative resolution procedure.
 
-**458** **Disclosure of information by tax authorities**
+**458****Disclosure of information by tax authorities**
 
 (1) The Commissioners for Her Majesty’s Revenue and Customs may disclose
 information to a person authorised under section 457 for the purpose of
@@ -14395,7 +14395,7 @@ statutory maximum (or both);
 
 221
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 11 — Revision of defective accounts and reports_
 
@@ -14405,7 +14405,7 @@ maximum (or both).
 
 _Power of authorised person to require documents etc_
 
-**459** **Power of authorised person to require documents, information and**
+**459****Power of authorised person to require documents, information and **
 **explanations**
 
 (1) This section applies where it appears to a person who is authorised under
@@ -14445,7 +14445,7 @@ proceedings.
 
 (8) In this section “document” includes information recorded in any form.
 
-**460** **Restrictions on disclosure of information obtained under compulsory powers**
+**460****Restrictions on disclosure of information obtained under compulsory powers**
 
 (1) This section applies to information (in whatever form) obtained in pursuance
 of a requirement or order under section 459 (power of authorised person to
@@ -14463,7 +14463,7 @@ that individual or the person for the time being carrying on that business.
 
 222
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 11 — Revision of defective accounts and reports_
@@ -14492,7 +14492,7 @@ statutory maximum (or both);
 exceeding six months, or to a fine not exceeding the statutory
 maximum (or both).
 
-**461** **Permitted disclosure of information obtained under compulsory powers**
+**461****Permitted disclosure of information obtained under compulsory powers**
 
 (1) The prohibition in section 460 of the disclosure of information obtained in
 pursuance of a requirement or order under section 459 (power of authorised
@@ -14530,7 +14530,7 @@ Treasury to exercise any of their functions under any of the following—
 
 223
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 11 — Revision of defective accounts and reports_
 
@@ -14579,7 +14579,7 @@ further disclosed.
 (7) Nothing in this section authorises the making of a disclosure in contravention
 of the Data Protection Act 1998 (c. 29).
 
-**462** **Power to amend categories of permitted disclosure**
+**462****Power to amend categories of permitted disclosure**
 
 (1) The Secretary of State may by order amend section 461(3), (4) and (5).
 
@@ -14595,7 +14595,7 @@ nature (whether or not he exercises any other function);
 
 224
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 11 — Revision of defective accounts and reports_
@@ -14611,13 +14611,13 @@ or territory outside the United Kingdom.
 
 (3) An order under this section is subject to negative resolution procedure.
 
-**C** **HAPTER** **12**
+**CHAPTER 12**
 
 S UPPLEMENTARY  PROVISIONS
 
 _Liability for false or misleading statements in reports_
 
-**463** **Liability for false or misleading statements in reports**
+**463****Liability for false or misleading statements in reports**
 
 (1) The reports to which this section applies are—
 (a) the directors’ report,
@@ -14656,13 +14656,13 @@ civil remedy or to rescind or repudiate an agreement.
 
 225
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 12 — Supplementary provisions_
 
 _Accounting and reporting standards_
 
-**464** **Accounting standards**
+**464****Accounting standards**
 
 (1) In this Part “accounting standards” means statements of standard accounting
 practice issued by such body or bodies as may be prescribed by regulations.
@@ -14677,7 +14677,7 @@ be appropriate.
 
 _Companies qualifying as medium-sized_
 
-**465** **Companies qualifying as medium-sized: general**
+**465****Companies qualifying as medium-sized: general**
 
 (1) A company qualifies as medium-sized in relation to its first financial year if the
 qualifying conditions are met in that year.
@@ -14721,7 +14721,7 @@ employed under contracts of service by the company in that month
 
 226
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 12 — Supplementary provisions_
@@ -14729,7 +14729,7 @@ _Chapter 12 — Supplementary provisions_
 (7) This section is subject to section 466 (companies qualifying as medium-sized:
 parent companies).
 
-**466** **Companies qualifying as medium-sized: parent companies**
+**466****Companies qualifying as medium-sized: parent companies**
 
 (1) A parent company qualifies as a medium-sized company in relation to a
 financial year only if the group headed by it qualifies as a medium-sized group.
@@ -14787,11 +14787,11 @@ delay, the latest available figures shall be taken.
 
 227
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 12 — Supplementary provisions_
 
-**467** **Companies excluded from being treated as medium-sized**
+**467****Companies excluded from being treated as medium-sized**
 
 (1) A company is not entitled to take advantage of any of the provisions of this Part
 relating to companies qualifying as medium-sized if it was at any time within
@@ -14821,7 +14821,7 @@ financial year in question.
 
 _General power to make further provision about accounts and reports_
 
-**468** **General power to make further provision about accounts and reports**
+**468****General power to make further provision about accounts and reports**
 
 (1) The Secretary of State may make provision by regulations about—
 (a) the accounts and reports that companies are required to prepare;
@@ -14851,7 +14851,7 @@ provisions.
 
 228
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 12 — Supplementary provisions_
@@ -14871,7 +14871,7 @@ The provisions of section 453(2) to (5) apply in relation to any such penalty.
 
 _Other supplementary provisions_
 
-**469** **Preparation and filing of accounts in euros**
+**469****Preparation and filing of accounts in euros**
 
 (1) The amounts set out in the annual accounts of a company may also be shown
 in the same accounts translated into euros.
@@ -14894,7 +14894,7 @@ In the case of such a copy, references in those sections to the auditor’s repo
 on the company’s annual accounts shall be read as references to the auditor’s
 report on the annual accounts of which it is a copy.
 
-**470** **Power to apply provisions to banking partnerships**
+**470****Power to apply provisions to banking partnerships**
 
 (1) The Secretary of State may by regulations apply to banking partnerships,
 subject to such exceptions, adaptations and modifications as he considers
@@ -14918,7 +14918,7 @@ meaning here as they do in those provisions.
 
 229
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 12 — Supplementary provisions_
 
@@ -14927,7 +14927,7 @@ that Act.
 
 (4) Regulations under this section are subject to affirmative resolution procedure.
 
-**471** **Meaning of “annual accounts” and related expressions**
+**471****Meaning of “annual accounts” and related expressions**
 
 (1) In this Part a company’s “annual accounts”, in relation to a financial year,
 means—
@@ -14952,7 +14952,7 @@ financial year are—
 (d) the auditor’s report on those accounts, on the auditable part of the
 directors’ remuneration report and on the directors’ report.
 
-**472** **Notes to the accounts**
+**472****Notes to the accounts**
 
 (1) Information required by this Part to be given in notes to a company’s annual
 accounts may be contained in the accounts or in a separate document annexed
@@ -14964,7 +14964,7 @@ is required by any provision of this Act or international accounting standards,
 and required or allowed by any such provision to be given in a note to
 company accounts.
 
-**473** **Parliamentary procedure for certain regulations under this Part**
+**473****Parliamentary procedure for certain regulations under this Part**
 
 (1) This section applies to regulations under the following provisions of this
 Part—
@@ -14983,7 +14983,7 @@ section 421 (contents of directors’ remuneration report),
 
 230
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 
 _Chapter 12 — Supplementary provisions_
@@ -15006,7 +15006,7 @@ are subject to affirmative resolution procedure.
 
 (4) Otherwise, the regulations are subject to negative resolution procedure.
 
-**474** **Minor definitions**
+**474****Minor definitions**
 
 (1) In this Part—
 “e-money issuer” means a person who has permission under Part 4 of the
@@ -15049,7 +15049,7 @@ Services and Markets Act 2000 (Regulated Activities) Order 2001 (S.I.
 
 231
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 15 — Accounts and reports_
 _Chapter 12 — Supplementary provisions_
 
@@ -15081,17 +15081,17 @@ to a profit and loss account is to an income and expenditure account.
 References to profit and loss and, in relation to group accounts, to a
 consolidated profit and loss account shall be construed accordingly.
 
-**P** **ART** **16**
+**PART 16**
 
 A UDIT
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 R EQUIREMENT  FOR  AUDITED  ACCOUNTS
 
 _Requirement for audited accounts_
 
-**475** **Requirement for audited accounts**
+**475****Requirement for audited accounts**
 
 (1) A company’s annual accounts for a financial year must be audited in
 accordance with this Part unless the company—
@@ -15112,7 +15112,7 @@ contains a statement by the directors to that effect.
 
 232
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 1 — Requirement for audited accounts_
@@ -15129,7 +15129,7 @@ preparation of accounts.
 (4) The statement required by subsection (2) or (3) must appear on the balance
 sheet above the signature required by section 414.
 
-**476** **Right of members to require audit**
+**476****Right of members to require audit**
 
 (1) The members of a company that would otherwise be entitled to exemption
 from audit under any of the provisions mentioned in section 475(1)(a) may by
@@ -15147,7 +15147,7 @@ must be given not later than one month before the end of that year.
 
 _Exemption from audit: small companies_
 
-**477** **Small companies: conditions for exemption from audit**
+**477****Small companies: conditions for exemption from audit**
 
 (1) A company that meets the following conditions in respect of a financial year is
 exempt from the requirements of this Act relating to the audit of accounts for
@@ -15179,14 +15179,14 @@ section 478 (companies excluded from small companies exemption), and
 
 233
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 1 — Requirement for audited accounts_
 
 section 479 (availability of small companies exemption in case of group
 company).
 
-**478** **Companies excluded from small companies exemption**
+**478****Companies excluded from small companies exemption**
 
 A company is not entitled to the exemption conferred by section 477 (small
 companies) if it was at any time within the financial year in question—
@@ -15202,7 +15202,7 @@ association as defined in section 122 of that Act or Article 4 of the
 Industrial Relations (Northern Ireland) Order 1992 (S.I. 1992/807 (N.I.
 5)).
 
-**479** **Availability of small companies exemption in case of group company**
+**479****Availability of small companies exemption in case of group company**
 
 (1) A company is not entitled to the exemption conferred by section 477 (small
 companies) in respect of a financial year during any part of which it was a
@@ -15243,7 +15243,7 @@ with section 383 (companies qualifying as small: parent companies);
 
 234
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 1 — Requirement for audited accounts_
@@ -15259,7 +15259,7 @@ section as if all the bodies corporate in the group were companies.
 
 _Exemption from audit: dormant companies_
 
-**480** **Dormant companies: conditions for exemption from audit**
+**480****Dormant companies: conditions for exemption from audit**
 
 (1) A company is exempt from the requirements of this Act relating to the audit of
 accounts in respect of a financial year if—
@@ -15281,7 +15281,7 @@ balance sheet),
 section 476 (right of members to require audit), and
 section 481 (companies excluded from dormant companies exemption).
 
-**481** **Companies excluded from dormant companies exemption**
+**481****Companies excluded from dormant companies exemption**
 
 A company is not entitled to the exemption conferred by section 480 (dormant
 companies) if it was at any time within the financial year in question a
@@ -15292,7 +15292,7 @@ issuer, an ISD investment firm or a UCITS management company, or
 
 _Companies subject to public sector audit_
 
-**482** **Non-profit-making companies subject to public sector audit**
+**482****Non-profit-making companies subject to public sector audit**
 
 (1) The requirements of this Part as to audit of accounts do not apply to a company
 for a financial year if it is non-profit-making and its accounts—
@@ -15308,7 +15308,7 @@ Act 2000 (c. 20), or
 
 235
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 1 — Requirement for audited accounts_
 
@@ -15336,7 +15336,7 @@ Treaty establishing the European Community.
 (4) This section has effect subject to section 475(2) (balance sheet to contain
 statement that company entitled to exemption under this section).
 
-**483** **Scottish public sector companies: audit by Auditor General for Scotland**
+**483****Scottish public sector companies: audit by Auditor General for Scotland**
 
 (1) The Scottish Ministers may by order provide for the accounts of a company
 having its registered office in Scotland to be audited by the Auditor General for
@@ -15372,14 +15372,14 @@ the Scottish Parliament.
 
 236
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 1 — Requirement for audited accounts_
 
 _General power of amendment by regulations_
 
-**484** **General power of amendment by regulations**
+**484****General power of amendment by regulations**
 
 (1) The Secretary of State may by regulations amend this Chapter or section 539
 (minor definitions) so far as applying to this Chapter by adding, altering or
@@ -15395,13 +15395,13 @@ procedure.
 (4) Other regulations under this section are subject to negative resolution
 procedure.
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 A PPOINTMENT  OF  AUDITORS
 
 _Private companies_
 
-**485** **Appointment of auditors of private company: general**
+**485****Appointment of auditors of private company: general**
 
 (1) An auditor or auditors of a private company must be appointed for each
 financial year of the company, unless the directors reasonably resolve
@@ -15439,7 +15439,7 @@ failed to make an appointment.
 
 237
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 2 — Appointment of auditors_
 
@@ -15448,7 +15448,7 @@ _Chapter 2 — Appointment of auditors_
 (b) in accordance with section 486 (default power of Secretary of State).
 This is without prejudice to any deemed re-appointment under section 487.
 
-**486** **Appointment of auditors of private company: default power of Secretary of**
+**486****Appointment of auditors of private company: default power of Secretary of **
 **State**
 
 (1) If a private company fails to appoint an auditor or auditors in accordance with
@@ -15470,7 +15470,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**487** **Term of office of auditors of private company**
+**487****Term of office of auditors of private company**
 
 (1) An auditor or auditors of a private company hold office in accordance with the
 terms of their appointment, subject to the requirements that—
@@ -15505,12 +15505,12 @@ for any reason.
 
 238
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 2 — Appointment of auditors_
 
-**488** **Prevention by members of deemed re-appointment of auditor**
+**488****Prevention by members of deemed re-appointment of auditor**
 
 (1) An auditor of a private company is not deemed to be re-appointed under
 section 487(2) if the company has received notices under this section from
@@ -15530,7 +15530,7 @@ appointment would have effect.
 
 _Public companies_
 
-**489** **Appointment of auditors of public company: general**
+**489****Appointment of auditors of public company: general**
 
 (1) An auditor or auditors of a public company must be appointed for each
 financial year of the company, unless the directors reasonably resolve
@@ -15567,11 +15567,11 @@ failed to make an appointment.
 
 239
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 2 — Appointment of auditors_
 
-**490** **Appointment of auditors of public company: default power of Secretary of**
+**490****Appointment of auditors of public company: default power of Secretary of **
 **State**
 
 (1) If a public company fails to appoint an auditor or auditors in accordance with
@@ -15593,7 +15593,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**491** **Term of office of auditors of public company**
+**491****Term of office of auditors of public company**
 
 (1) The auditor or auditors of a public company hold office in accordance with the
 terms of their appointment, subject to the requirements that—
@@ -15607,7 +15607,7 @@ resignation of auditors.
 
 _General provisions_
 
-**492** **Fixing of auditor’s remuneration**
+**492****Fixing of auditor’s remuneration**
 
 (1) The remuneration of an auditor appointed by the members of a company must
 be fixed by the members by ordinary resolution or in such manner as the
@@ -15631,12 +15631,12 @@ of expenses.
 
 240
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 2 — Appointment of auditors_
 
-**493** **Disclosure of terms of audit appointment**
+**493****Disclosure of terms of audit appointment**
 
 (1) The Secretary of State may make provision by regulations for securing the
 disclosure of the terms on which a company’s auditor is appointed,
@@ -15663,7 +15663,7 @@ subsection (1) as they apply to the original terms.
 
 (4) Regulations under this section are subject to affirmative resolution procedure.
 
-**494** **Disclosure of services provided by auditor or associates and related**
+**494****Disclosure of services provided by auditor or associates and related **
 **remuneration**
 
 (1) The Secretary of State may make provision by regulations for securing the
@@ -15697,7 +15697,7 @@ received or receivable by all or any of those persons.
 
 241
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 2 — Appointment of auditors_
 
@@ -15723,13 +15723,13 @@ disclosure to be made.
 
 (6) Regulations under this section are subject to negative resolution procedure.
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 F UNCTIONS  OF  AUDITOR
 
 _Auditor’s report_
 
-**495** **Auditor’s report on company’s annual accounts**
+**495****Auditor’s report on company’s annual accounts**
 
 (1) A company’s auditor must make a report to the company’s members on all
 annual accounts of the company of which copies are, during his tenure of
@@ -15761,7 +15761,7 @@ or loss of the company for the financial year,
 
 242
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 3 — Functions of auditor_
@@ -15782,13 +15782,13 @@ Expressions used in this subsection that are defined for the purposes of Part 15
 (b) must include a reference to any matters to which the auditor wishes to
 draw attention by way of emphasis without qualifying the report.
 
-**496** **Auditor’s report on directors’ report**
+**496****Auditor’s report on directors’ report**
 
 The auditor must state in his report on the company’s annual accounts whether
 in his opinion the information given in the directors’ report for the financial
 year for which the accounts are prepared is consistent with those accounts.
 
-**497** **Auditor’s report on auditable part of directors’ remuneration report**
+**497****Auditor’s report on auditable part of directors’ remuneration report**
 
 (1) If the company is a quoted company, the auditor, in his report on the
 company’s annual accounts for the financial year, must—
@@ -15802,7 +15802,7 @@ report is the part identified as such by regulations under section 421.
 
 _Duties and rights of auditors_
 
-**498** **Duties of auditor**
+**498****Duties of auditor**
 
 (1) A company’s auditor, in preparing his report, must carry out such
 investigations as will enable him to form an opinion as to—
@@ -15827,7 +15827,7 @@ visited by him, or
 
 243
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 3 — Functions of auditor_
 
@@ -15856,7 +15856,7 @@ a statement giving the required particulars.
 accordance with the small companies regime and in the auditor’s opinion they
 were not entitled so to do, the auditor shall state that fact in his report.
 
-**499** **Auditor’s general right to information**
+**499****Auditor’s general right to information**
 
 (1) An auditor of a company—
 (a) has a right of access at all times to the company’s books, accounts and
@@ -15893,12 +15893,12 @@ communications) could be maintained in legal proceedings.
 
 244
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 3 — Functions of auditor_
 
-**500** **Auditor’s right to information from overseas subsidiaries**
+**500****Auditor’s right to information from overseas subsidiaries**
 
 (1) Where a parent company has a subsidiary undertaking that is not a body
 corporate incorporated in the United Kingdom, the auditor of the parent
@@ -15925,7 +15925,7 @@ proceedings for an offence under section 501.
 which a claim to legal professional privilege (in Scotland, to confidentiality of
 communications) could be maintained in legal proceedings.
 
-**501** **Auditor’s rights to information: offences**
+**501****Auditor’s rights to information: offences**
 
 (1) A person commits an offence who knowingly or recklessly makes to an auditor
 of a company a statement (oral or written) that—
@@ -15960,7 +15960,7 @@ by—
 
 245
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 3 — Functions of auditor_
 
@@ -15971,7 +15971,7 @@ conviction to a fine not exceeding level 3 on the standard scale.
 (in Scotland, an interdict or an order for specific performance) to enforce any
 of his rights under section 499 or 500.
 
-**502** **Auditor’s rights in relation to resolutions and meetings**
+**502****Auditor’s rights in relation to resolutions and meetings**
 
 (1) In relation to a written resolution proposed to be agreed to by a private
 company, the company’s auditor is entitled to receive all such communications
@@ -15991,7 +15991,7 @@ representative at the meeting.
 
 _Signature of auditor’s report_
 
-**503** **Signature of auditor’s report**
+**503****Signature of auditor’s report**
 
 (1) The auditor’s report must state the name of the auditor and be signed and
 dated.
@@ -16001,7 +16001,7 @@ dated.
 (3) Where the auditor is a firm, the report must be signed by the senior statutory
 auditor in his own name, for and on behalf of the auditor.
 
-**504** **Senior statutory auditor**
+**504****Senior statutory auditor**
 
 (1) The senior statutory auditor means the individual identified by the firm as
 senior statutory auditor in relation to the audit in accordance with—
@@ -16026,7 +16026,7 @@ subject to any civil liability to which he would not otherwise be subject.
 
 246
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 3 — Functions of auditor_
@@ -16034,7 +16034,7 @@ _Chapter 3 — Functions of auditor_
 (4) An order appointing a body for the purpose of subsection (1)(b)(ii) is subject to
 negative resolution procedure.
 
-**505** **Names to be stated in published copies of auditor’s report**
+**505****Names to be stated in published copies of auditor’s report**
 
 (1) Every copy of the auditor’s report that is published by or on behalf of the
 company must—
@@ -16057,7 +16057,7 @@ this section, an offence is committed by—
 (4) A person guilty of an offence under this section is liable on summary
 conviction to a fine not exceeding level 3 on the standard scale.
 
-**506** **Circumstances in which names may be omitted**
+**506****Circumstances in which names may be omitted**
 
 (1) The auditor’s name and, where the auditor is a firm, the name of the person
 who signed the report as senior statutory auditor, may be omitted from—
@@ -16086,13 +16086,13 @@ auditor.
 
 247
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 3 — Functions of auditor_
 
 _Offences in connection with auditor’s report_
 
-**507** **Offences in connection with auditor’s report**
+**507****Offences in connection with auditor’s report**
 
 (1) A person to whom this section applies commits an offence if he knowingly or
 recklessly causes a report under section 495 (auditor’s report on company’s
@@ -16120,7 +16120,7 @@ the firm who is eligible for appointment as auditor of the company.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**508** **Guidance for regulatory and prosecuting authorities: England, Wales and**
+**508****Guidance for regulatory and prosecuting authorities: England, Wales and **
 **Northern Ireland**
 
 (1) The Secretary of State may issue guidance for the purpose of helping relevant
@@ -16152,7 +16152,7 @@ standards etc),
 
 248
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 3 — Functions of auditor_
@@ -16164,7 +16164,7 @@ Prosecutions for Northern Ireland, and
 
 (4) This section does not apply to Scotland.
 
-**509** **Guidance for regulatory authorities: Scotland**
+**509****Guidance for regulatory authorities: Scotland**
 
 (1) The Lord Advocate may issue guidance for the purpose of helping relevant
 regulatory authorities to determine how they should carry out their functions
@@ -16191,13 +16191,13 @@ standards etc), and
 
 (4) This section applies only to Scotland.
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 R EMOVAL , RESIGNATION , ETC  OF  AUDITORS
 
 _Removal of auditor_
 
-**510** **Resolution removing auditor from office**
+**510****Resolution removing auditor from office**
 
 (1) The members of a company may remove an auditor from office at any time.
 
@@ -16218,14 +16218,14 @@ compensation or damages payable to him in respect of the termination—
 
 249
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 4 — Removal, resignation, etc of auditors_
 
 (4) An auditor may not be removed from office before the expiration of his term of
 office except by resolution under this section.
 
-**511** **Special notice required for resolution removing auditor from office**
+**511****Special notice required for resolution removing auditor from office**
 
 (1) Special notice is required for a resolution at a general meeting of a company
 removing an auditor from office.
@@ -16258,7 +16258,7 @@ The court may order the company’s costs (in Scotland, expenses) on the
 application to be paid in whole or in part by the auditor, notwithstanding that
 he is not a party to the application.
 
-**512** **Notice to registrar of resolution removing auditor from office**
+**512****Notice to registrar of resolution removing auditor from office**
 
 (1) Where a resolution is passed under section 510 (resolution removing auditor
 from office), the company must give notice of that fact to the registrar within
@@ -16281,12 +16281,12 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 250
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 4 — Removal, resignation, etc of auditors_
 
-**513** **Rights of auditor who has been removed from office**
+**513****Rights of auditor who has been removed from office**
 
 (1) An auditor who has been removed by resolution under section 510 has,
 notwithstanding his removal, the rights conferred by section 502(2) in relation
@@ -16300,7 +16300,7 @@ former auditor.
 
 _Failure to re-appoint auditor_
 
-**514** **Failure to re-appoint auditor: special procedure required for written**
+**514****Failure to re-appoint auditor: special procedure required for written **
 **resolution**
 
 (1) This section applies where a resolution is proposed as a written resolution of a
@@ -16348,14 +16348,14 @@ he is not a party to the application.
 
 251
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 4 — Removal, resignation, etc of auditors_
 
 (8) If any requirement of this section is not complied with, the resolution is
 ineffective.
 
-**515** **Failure to re-appoint auditor: special notice required for resolution at general**
+**515****Failure to re-appoint auditor: special notice required for resolution at general **
 **meeting**
 
 (1) This section applies to a resolution at a general meeting of a company whose
@@ -16413,14 +16413,14 @@ notwithstanding that he is not a party to the application.
 
 252
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 4 — Removal, resignation, etc of auditors_
 
 _Resignation of auditor_
 
-**516** **Resignation of auditor**
+**516****Resignation of auditor**
 
 (1) An auditor of a company may resign his office by depositing a notice in writing
 to that effect at the company’s registered office.
@@ -16432,7 +16432,7 @@ by section 519.
 to an end as of the date on which the notice is deposited or on such later date
 as may be specified in it.
 
-**517** **Notice to registrar of resignation of auditor**
+**517****Notice to registrar of resignation of auditor**
 
 (1) Where an auditor resigns the company must within 14 days of the deposit of a
 notice of resignation send a copy of the notice to the registrar of companies.
@@ -16447,7 +16447,7 @@ notice of resignation send a copy of the notice to the registrar of companies.
 and, for continued contravention, a daily default fine not exceeding
 one-tenth of the statutory maximum.
 
-**518** **Rights of resigning auditor**
+**518****Rights of resigning auditor**
 
 (1) This section applies where an auditor’s notice of resignation is accompanied by
 a statement of the circumstances connected with his resignation (see section
@@ -16480,7 +16480,7 @@ notice of the meeting is or has been sent.
 
 253
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 4 — Removal, resignation, etc of auditors_
 
@@ -16519,7 +16519,7 @@ former auditor.
 
 _Statement by auditor on ceasing to hold office_
 
-**519** **Statement by auditor to be deposited with company**
+**519****Statement by auditor to be deposited with company**
 
 (1) Where an auditor of an unquoted company ceases for any reason to hold office,
 he must deposit at the company’s registered office a statement of the
@@ -16547,7 +16547,7 @@ circumstances connected with his ceasing to hold office.
 
 254
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 4 — Removal, resignation, etc of auditors_
@@ -16569,7 +16569,7 @@ the commission of the offence.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**520** **Company’s duties in relation to statement**
+**520****Company’s duties in relation to statement**
 
 (1) This section applies where the statement deposited under section 519 states the
 circumstances connected with the auditor’s ceasing to hold office.
@@ -16614,11 +16614,11 @@ maximum.
 
 255
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 4 — Removal, resignation, etc of auditors_
 
-**521** **Copy of statement to be sent to registrar**
+**521****Copy of statement to be sent to registrar**
 
 (1) Unless within 21 days beginning with the day on which he deposited the
 statement under section 519 the auditor receives notice of an application to the
@@ -16641,7 +16641,7 @@ the commission of the offence.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**522** **Duty of auditor to notify appropriate audit authority**
+**522****Duty of auditor to notify appropriate audit authority**
 
 (1) Where—
 (a) in the case of a major audit, an auditor ceases for any reason to hold
@@ -16682,7 +16682,7 @@ commits an offence.
 
 256
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 4 — Removal, resignation, etc of auditors_
@@ -16698,7 +16698,7 @@ diligence to avoid the commission of the offence.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**523** **Duty of company to notify appropriate audit authority**
+**523****Duty of company to notify appropriate audit authority**
 
 (1) Where an auditor ceases to hold office before the end of his term of office, the
 company must notify the appropriate audit authority.
@@ -16732,7 +16732,7 @@ the commission of the offence.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**524** **Information to be given to accounting authorities**
+**524****Information to be given to accounting authorities**
 
 (1) The appropriate audit authority on receiving notice under section 522 or 523 of
 an auditor’s ceasing to hold office—
@@ -16750,7 +16750,7 @@ or statements accompanying the notice.
 
 257
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 4 — Removal, resignation, etc of auditors_
 
@@ -16768,7 +16768,7 @@ statement need not be sent out by the company, sections 460 and 461
 accounting authorities as they apply to information obtained under section 459
 (power to require documents etc).
 
-**525** **Meaning of “appropriate audit authority” and “major audit”**
+**525****Meaning of “appropriate audit authority” and “major audit”**
 
 (1) In sections 522, 523 and 524 “appropriate audit authority” means—
 (a) in the case of a major audit—
@@ -16795,7 +16795,7 @@ in subsection (1).
 
 _Supplementary_
 
-**526** **Effect of casual vacancies**
+**526****Effect of casual vacancies**
 
 If an auditor ceases to hold office for any reason, any surviving or continuing
 auditor or auditors may continue to act.
@@ -16807,17 +16807,17 @@ auditor or auditors may continue to act.
 
 258
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 5 — Quoted companies: right of members to raise audit concerns at accounts meeting_
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
-Q UOTED  COMPANIES : RIGHT  OF  MEMBERS  TO  RAISE  AUDIT  CONCERNS  AT  ACCOUNTS 
+Q UOTED  COMPANIES: RIGHT  OF  MEMBERS  TO  RAISE  AUDIT  CONCERNS  AT  ACCOUNTS 
 MEETING
 
-**527** **Members’ power to require website publication of audit concerns**
+**527****Members’ power to require website publication of audit concerns **
 
 (1) The members of a quoted company may require the company to publish on a
 website a statement setting out any matter relating to—
@@ -16858,7 +16858,7 @@ being abused.
 whole or part of the company’s costs (in Scotland, expenses) on such an
 application, even if they are not parties to the application.
 
-**528** **Requirements as to website availability**
+**528****Requirements as to website availability**
 
 (1) The following provisions apply for the purposes of section 527 (website
 publication of members’ statement of audit concerns).
@@ -16874,7 +16874,7 @@ publication of members’ statement of audit concerns).
 
 259
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 5 — Quoted companies: right of members to raise audit concerns at accounts meeting_
 
@@ -16894,7 +16894,7 @@ and
 (b) the failure is wholly attributable to circumstances that it would not be
 reasonable to have expected the company to prevent or avoid.
 
-**529** **Website publication: company’s supplementary duties**
+**529****Website publication: company’s supplementary duties **
 
 (1) A quoted company must in the notice it gives of the accounts meeting draw
 attention to—
@@ -16914,7 +16914,7 @@ time when it makes the statement available on the website.
 statement that the company has been required under section 527 to publish on
 a website.
 
-**530** **Website publication: offences**
+**530****Website publication: offences **
 
 (1) In the event of default in complying with
 (a) section 528 (requirements as to website publication), or
@@ -16927,7 +16927,7 @@ an offence is committed by every officer of the company who is in default.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**531** **Meaning of “quoted company”**
+**531****Meaning of “quoted company”**
 
 (1) For the purposes of this Chapter a company is a quoted company if it is a
 quoted company in accordance with section 385 (quoted and unquoted
@@ -16941,7 +16941,7 @@ the accounts to be laid at the next accounts meeting relate.
 
 260
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 5 — Quoted companies: right of members to raise audit concerns at accounts meeting_
@@ -16950,13 +16950,13 @@ _Chapter 5 — Quoted companies: right of members to raise audit concerns at acc
 definition by regulations) apply in relation to the provisions of this Chapter as
 in relation to the provisions of that Part.
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
 A UDITORS ’ LIABILITY
 
 _Voidness of provisions protecting auditors from liability_
 
-**532** **Voidness of provisions protecting auditors from liability**
+**532****Voidness of provisions protecting auditors from liability**
 
 (1) This section applies to any provision—
 (a) for exempting an auditor of a company (to any extent) from any
@@ -16983,7 +16983,7 @@ of the other or both are subsidiaries of the same body corporate.
 
 _Indemnity for costs of defending proceedings_
 
-**533** **Indemnity for costs of successfully defending proceedings**
+**533****Indemnity for costs of successfully defending proceedings**
 
 Section 532 (general voidness of provisions protecting auditors from liability)
 does not prevent a company from indemnifying an auditor against any liability
@@ -17001,13 +17001,13 @@ granted to him by the court.
 
 261
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 6 — Auditors’ liability_
 
 _Liability limitation agreements_
 
-**534** **Liability limitation agreements**
+**534****Liability limitation agreements**
 
 (1) A “liability limitation agreement” is an agreement that purports to limit the
 amount of a liability owed to a company by its auditor in respect of any
@@ -17028,7 +17028,7 @@ of any regulations under that section, and
 3(2)(a) of the Unfair Contract Terms Act 1977 (c. 50);
 (ii) in Scotland, to section 16(1)(b) or 17(1)(a) of that Act.
 
-**535** **Terms of liability limitation agreement**
+**535****Terms of liability limitation agreement**
 
 (1) A liability limitation agreement—
 (a) must not apply in respect of acts or omissions occurring in the course
@@ -17053,7 +17053,7 @@ sum of money, or a formula, specified in the agreement.
 
 (5) Regulations under this section are subject to negative resolution procedure.
 
-**536** **Authorisation of agreement by members of the company**
+**536****Authorisation of agreement by members of the company**
 
 (1) A liability limitation agreement is authorised by the members of the company
 if it has been authorised under this section and that authorisation has not been
@@ -17066,7 +17066,7 @@ withdrawn.
 
 262
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 
 _Chapter 6 — Auditors’ liability_
@@ -17100,7 +17100,7 @@ an ordinary resolution to that effect—
 beginning of the financial year to which the agreement relates.
 Paragraph (b) has effect notwithstanding anything in the agreement.
 
-**537** **Effect of liability limitation agreement**
+**537****Effect of liability limitation agreement**
 
 (1) A liability limitation agreement is not effective to limit the auditor’s liability to
 less than such amount as is fair and reasonable in all the circumstances of the
@@ -17129,11 +17129,11 @@ damage.
 
 263
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 16 — Audit_
 _Chapter 6 — Auditors’ liability_
 
-**538** **Disclosure of agreement by company**
+**538****Disclosure of agreement by company**
 
 (1) A company which has entered into a liability limitation agreement must make
 such disclosure in connection with the agreement as the Secretary of State may
@@ -17148,11 +17148,11 @@ case of group accounts), or
 
 (3) Regulations under this section are subject to negative resolution procedure.
 
-**C** **HAPTER** **7**
+**CHAPTER 7**
 
 S UPPLEMENTARY  PROVISIONS
 
-**539** **Minor definitions**
+**539****Minor definitions**
 
 In this Part—
 “e-money issuer” means a person who has permission under Part 4 of the
@@ -17187,22 +17187,22 @@ Authority under the Financial Services and Markets Act 2000.
 
 264
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 1 — Shares and share capital of a company_
 
-**P** **ART** **17**
+**PART 17**
 
 A COMPANY ’ S  SHARE  CAPITAL
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 S HARES  AND  SHARE  CAPITAL  OF  A  COMPANY
 
 _Shares_
 
-**540** **Shares**
+**540****Shares**
 
 (1) In the Companies Acts “share”, in relation to a company, means share in the
 company’s share capital.
@@ -17218,13 +17218,13 @@ share and stock is express or implied, and
 (b) references to a number of shares include an amount of stock where the
 context admits of the reference to shares being read as including stock.
 
-**541** **Nature of shares**
+**541****Nature of shares**
 
 The shares or other interest of a member in a company are personal property
 (or, in Scotland, moveable property) and are not in the nature of real estate (or
 heritage).
 
-**542** **Nominal value of shares**
+**542****Nominal value of shares**
 
 (1) Shares in a limited company having a share capital must each have a fixed
 nominal value.
@@ -17253,11 +17253,11 @@ maximum.
 
 265
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 1 — Shares and share capital of a company_
 
-**543** **Numbering of shares**
+**543****Numbering of shares**
 
 (1) Each share in a company having a share capital must be distinguished by its
 appropriate number, except in the following circumstances.
@@ -17266,12 +17266,12 @@ appropriate number, except in the following circumstances.
 (a) all the issued shares in a company are fully paid up and rank _pari passu_
 for all purposes, or
 (b) all the issued shares of a particular class in a company are fully paid up
-and rank _pari passu_ for all purposes,
+and rank _pari passu_for all purposes,
 none of those shares need thereafter have a distinguishing number so long as
-it remains fully paid up and ranks _pari passu_ for all purposes with all shares of
+it remains fully paid up and ranks _pari passu_for all purposes with all shares of
 the same class for the time being issued and fully paid up.
 
-**544** **Transferability of shares**
+**544****Transferability of shares**
 
 (1) The shares or other interest of any member in a company are transferable in
 accordance with the company’s articles.
@@ -17286,12 +17286,12 @@ instrument).
 
 (3) See Part 21 of this Act generally as regards share transfers.
 
-**545** **Companies having a share capital**
+**545****Companies having a share capital**
 
 References in the Companies Acts to a company having a share capital are to a
 company that has power under its constitution to issue shares.
 
-**546** **Issued and allotted share capital**
+**546****Issued and allotted share capital**
 
 (1) References in the Companies Acts—
 (a) to “issued share capital” are to shares of a company that have been
@@ -17305,7 +17305,7 @@ the subscribers to the company’s memorandum.
 
 _Share capital_
 
-**547** **Called-up share capital**
+**547****Called-up share capital**
 
 In the Companies Acts—
 “called-up share capital”, in relation to a company, means so much of its
@@ -17319,7 +17319,7 @@ shares (whether or not those calls have been paid), together with—
 
 266
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 1 — Shares and share capital of a company_
@@ -17330,20 +17330,20 @@ articles, the terms of allotment of the relevant shares or any
 other arrangements for payment of those shares; and
 “uncalled share capital” is to be construed accordingly.
 
-**548** **Equity share capital**
+**548****Equity share capital**
 
 In the Companies Acts “equity share capital”, in relation to a company, means
 its issued share capital excluding any part of that capital that, neither as
 respects dividends nor as respects capital, carries any right to participate
 beyond a specified amount in a distribution.
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
-A LLOTMENT  OF  SHARES : GENERAL  PROVISIONS
+A LLOTMENT  OF  SHARES: GENERAL  PROVISIONS
 
 _Power of directors to allot shares_
 
-**549** **Exercise by directors of power to allot shares etc**
+**549****Exercise by directors of power to allot shares etc**
 
 (1) The directors of a company must not exercise any power of the company—
 (a) to allot shares in the company, or
@@ -17372,7 +17372,7 @@ maximum.
 
 (6) Nothing in this section affects the validity of an allotment or other transaction.
 
-**550** **Power of directors to allot shares etc: private company with only one class of**
+**550****Power of directors to allot shares etc: private company with only one class of **
 **shares**
 
 Where a private company has only one class of shares, the directors may
@@ -17386,7 +17386,7 @@ exercise any power of the company—
 
 267
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 2 — Allotment of shares: general provisions_
 
@@ -17395,7 +17395,7 @@ shares,
 except to the extent that they are prohibited from doing so by the company’s
 articles.
 
-**551** **Power of directors to allot shares etc: authorisation by company**
+**551****Power of directors to allot shares etc: authorisation by company**
 
 (1) The directors of a company may exercise a power of the company—
 (a) to allot shares in the company, or
@@ -17453,7 +17453,7 @@ company’s articles.
 
 268
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 2 — Allotment of shares: general provisions_
@@ -17463,7 +17463,7 @@ a resolution under this section.
 
 _Prohibition of commissions, discounts and allowances_
 
-**552** **General prohibition of commissions, discounts and allowances**
+**552****General prohibition of commissions, discounts and allowances**
 
 (1) Except as permitted by section 553 (permitted commission), a company must
 not apply any of its shares or capital money, either directly or indirectly, in
@@ -17482,7 +17482,7 @@ nominal purchase money or contract price, or otherwise.
 (3) Nothing in this section affects the payment of such brokerage as has previously
 been lawful.
 
-**553** **Permitted commission**
+**553****Permitted commission**
 
 (1) A company may, if the following conditions are satisfied, pay a commission to
 a person in consideration of his subscribing or agreeing to subscribe (whether
@@ -17505,7 +17505,7 @@ company would be permitted by this section.
 
 _Registration of allotment_
 
-**554** **Registration of allotment**
+**554****Registration of allotment**
 
 (1) A company must register an allotment of shares as soon as practicable and in
 any event within two months after the date of the allotment.
@@ -17520,7 +17520,7 @@ shares (see section 779).
 
 269
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 2 — Allotment of shares: general provisions_
 
@@ -17538,7 +17538,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 _Return of allotment_
 
-**555** **Return of allotment by limited company**
+**555****Return of allotment by limited company**
 
 (1) This section applies to a company limited by shares and to a company limited
 by guarantee and having a share capital.
@@ -17562,7 +17562,7 @@ at the date to which the return is made up—
 (whether on account of the nominal value of the share or by way of
 premium).
 
-**556** **Return of allotment by unlimited company allotting new class of shares**
+**556****Return of allotment by unlimited company allotting new class of shares**
 
 (1) This section applies to an unlimited company that allots shares of a class with
 rights that are not in all respects uniform with shares previously allotted.
@@ -17585,12 +17585,12 @@ following the former’s allotment.
 
 270
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 2 — Allotment of shares: general provisions_
 
-**557** **Offence of failure to make return**
+**557****Offence of failure to make return**
 
 (1) If a company makes default in complying with—
 section 555 (return of allotment of shares by limited company), or
@@ -17616,25 +17616,25 @@ such period as the court thinks proper.
 
 _Supplementary provisions_
 
-**558** **When shares are allotted**
+**558****When shares are allotted**
 
 For the purposes of the Companies Acts shares in a company are taken to be
 allotted when a person acquires the unconditional right to be included in the
 company’s register of members in respect of the shares.
 
-**559** **Provisions about allotment not applicable to shares taken on formation**
+**559****Provisions about allotment not applicable to shares taken on formation**
 
 The provisions of this Chapter have no application in relation to the taking of
 shares by the subscribers to the memorandum on the formation of the
 company.
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
-A LLOTMENT  OF  EQUITY  SECURITIES : EXISTING  SHAREHOLDERS ’ RIGHT  OF  PRE - EMPTION
+A LLOTMENT  OF  EQUITY  SECURITIES: EXISTING  SHAREHOLDERS ’ RIGHT  OF  PRE - EMPTION
 
 _Introductory_
 
-**560** **Meaning of “equity securities” and related expressions**
+**560****Meaning of “equity securities” and related expressions**
 
 (1) In this Chapter—
 “equity securities” means—
@@ -17649,7 +17649,7 @@ shares in the company;
 
 271
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 3 — Allotment of equity securities: existing shareholders’ right of pre-emption_
 
@@ -17665,7 +17665,7 @@ sale are held by the company as treasury shares.
 
 _Existing shareholders’ right of pre-emption_
 
-**561** **Existing shareholders’ right of pre-emption**
+**561****Existing shareholders’ right of pre-emption**
 
 (1) A company must not allot equity securities to a person on any terms unless—
 (a) it has made an offer to each person who holds ordinary shares in the
@@ -17696,7 +17696,7 @@ of the company.
 (c) sections 569 to 573 (disapplication of pre-emption rights), and
 (d) section 576 (saving for certain older pre-emption procedures).
 
-**562** **Communication of pre-emption offers to shareholders**
+**562****Communication of pre-emption offers to shareholders**
 
 (1) This section has effect as to the manner in which offers required by section 561
 are to be made to holders of a company’s shares.
@@ -17716,7 +17716,7 @@ or
 
 272
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 3 — Allotment of equity securities: existing shareholders’ right of pre-emption_
@@ -17743,7 +17743,7 @@ days), or
 (7) A statutory instrument containing regulations made under subsection (6) is
 subject to affirmative resolution procedure.
 
-**563** **Liability of company and officers in case of contravention**
+**563****Liability of company and officers in case of contravention**
 
 (1) This section applies where there is a contravention of—
 section 561 (existing shareholders’ right of pre-emption), or
@@ -17764,12 +17764,12 @@ the grant.
 
 _Exceptions to right of pre-emption_
 
-**564** **Exception to pre-emption right: bonus shares**
+**564****Exception to pre-emption right: bonus shares**
 
 Section 561(1) (existing shareholders’ right of pre-emption) does not apply in
 relation to the allotment of bonus shares.
 
-**565** **Exception to pre-emption right: issue for non-cash consideration**
+**565****Exception to pre-emption right: issue for non-cash consideration**
 
 Section 561(1) (existing shareholders’ right of pre-emption) does not apply to a
 particular allotment of equity securities if these are, or are to be, wholly or
@@ -17782,11 +17782,11 @@ partly paid up otherwise than in cash.
 
 273
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 3 — Allotment of equity securities: existing shareholders’ right of pre-emption_
 
-**566** **Exception to pre-emption right: securities held under employees’ share**
+**566****Exception to pre-emption right: securities held under employees’ share **
 **scheme**
 
 Section 561 (existing shareholders’ right of pre-emption) does not apply to the
@@ -17795,7 +17795,7 @@ of the right to their allotment, be held under an employees’ share scheme.
 
 _Exclusion of right of pre-emption_
 
-**567** **Exclusion of requirements by private companies**
+**567****Exclusion of requirements by private companies**
 
 (1) All or any of the requirements of—
 (a) section 561 (existing shareholders’ right of pre-emption), or
@@ -17815,7 +17815,7 @@ purposes of this section as a provision excluding that section.
 corresponding right conferred by articles) is not to be treated as inconsistent
 with section 561.
 
-**568** **Exclusion of pre-emption right: articles conferring corresponding right**
+**568****Exclusion of pre-emption right: articles conferring corresponding right**
 
 (1) The provisions of this section apply where, in a case in which section 561
 (existing shareholders’ right of pre-emption) would otherwise apply—
@@ -17848,7 +17848,7 @@ person to whom an offer should have been made under the provision for any
 
 274
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 3 — Allotment of equity securities: existing shareholders’ right of pre-emption_
@@ -17865,7 +17865,7 @@ the grant.
 
 _Disapplication of pre-emption rights_
 
-**569** **Disapplication of pre-emption rights: private company with only one class of**
+**569****Disapplication of pre-emption rights: private company with only one class of **
 **shares**
 
 (1) The directors of a private company that has only one class of shares may be
@@ -17879,7 +17879,7 @@ determine.
 (2) Where the directors make an allotment under this section, the provisions of this
 Chapter have effect accordingly.
 
-**570** **Disapplication of pre-emption rights: directors acting under general**
+**570****Disapplication of pre-emption rights: directors acting under general **
 **authorisation**
 
 (1) Where the directors of a company are generally authorised for the purposes of
@@ -17915,11 +17915,11 @@ allotted after it expired.
 
 275
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 3 — Allotment of equity securities: existing shareholders’ right of pre-emption_
 
-**571** **Disapplication of pre-emption rights by special resolution**
+**571****Disapplication of pre-emption rights by special resolution**
 
 (1) Where the directors of a company are authorised for the purposes of section
 551 (power of directors to allot shares etc: authorisation by company), whether
@@ -17965,7 +17965,7 @@ proposed resolution is sent or submitted to him;
 (b) if the resolution is proposed at a general meeting, be circulated to the
 members entitled to notice of the meeting with that notice.
 
-**572** **Liability for false statement in directors’ statement**
+**572****Liability for false statement in directors’ statement**
 
 (1) This section applies in relation to a directors’ statement under section 571
 (special resolution disapplying pre-emption rights) that is sent, submitted or
@@ -17982,7 +17982,7 @@ a statement commits an offence.
 
 276
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 3 — Allotment of equity securities: existing shareholders’ right of pre-emption_
@@ -17998,7 +17998,7 @@ statutory maximum (or both);
 exceeding six months, or to a fine not exceeding the statutory
 maximum (or both).
 
-**573** **Disapplication of pre-emption rights: sale of treasury shares**
+**573****Disapplication of pre-emption rights: sale of treasury shares**
 
 (1) This section applies in relation to a sale of shares that is an allotment of equity
 securities by virtue of section 560(2)(b) (sale of shares held by company as
@@ -18024,7 +18024,7 @@ to a case within subsection (1) of that section.
 
 _Supplementary_
 
-**574** **References to holder of shares in relation to offer**
+**574****References to holder of shares in relation to offer**
 
 (1) In this Chapter, in relation to an offer to allot securities required by—
 (a) section 561 (existing shareholders’ right of pre-emption), or
@@ -18044,11 +18044,11 @@ the date of the offer.
 
 277
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 3 — Allotment of equity securities: existing shareholders’ right of pre-emption_
 
-**575** **Saving for other restrictions on offer or allotment**
+**575****Saving for other restrictions on offer or allotment**
 
 (1) The provisions of this Chapter are without prejudice to any other enactment by
 virtue of which a company is prohibited (whether generally or in specified
@@ -18062,7 +18062,7 @@ emption), so that—
 (b) the shares are not treated as forming part of the ordinary share capital
 of the company.
 
-**576** **Saving for certain older pre-emption requirements**
+**576****Saving for certain older pre-emption requirements**
 
 (1) In the case of a public company the provisions of this Chapter do not apply to
 an allotment of equity securities that are subject to a pre-emption requirement
@@ -18081,17 +18081,17 @@ or Article 106(4) of the Companies (Northern Ireland) Order 1986 applied
 immediately before the commencement of this section shall be treated for the
 purposes of this Chapter as if it were contained in the company’s articles.
 
-**577** **Provisions about pre-emption not applicable to shares taken on formation**
+**577****Provisions about pre-emption not applicable to shares taken on formation**
 
 The provisions of this Chapter have no application in relation to the taking of
 shares by the subscribers to the memorandum on the formation of the
 company.
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
-P UBLIC  COMPANIES : ALLOTMENT  WHERE  ISSUE  NOT  FULLY  SUBSCRIBED
+P UBLIC  COMPANIES: ALLOTMENT  WHERE  ISSUE  NOT  FULLY  SUBSCRIBED
 
-**578** **Public companies: allotment where issue not fully subscribed**
+**578****Public companies: allotment where issue not fully subscribed**
 
 (1) No allotment shall be made of shares of a public company offered for
 subscription unless—
@@ -18108,7 +18108,7 @@ allotted—
 
 278
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 4 — Public companies: allotment where issue not fully subscribed_
@@ -18144,7 +18144,7 @@ received;
 (6) Any condition requiring or binding an applicant for shares to waive
 compliance with any requirement of this section is void.
 
-**579** **Public companies: effect of irregular allotment where issue not fully**
+**579****Public companies: effect of irregular allotment where issue not fully **
 **subscribed**
 
 (1) An allotment made by a public company to an applicant in contravention of
@@ -18170,17 +18170,17 @@ brought more than two years after the date of the allotment.
 
 279
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 5 — Payment for shares_
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
 P AYMENT  FOR  SHARES
 
 _General rules_
 
-**580** **Shares not to be allotted at a discount**
+**580****Shares not to be allotted at a discount**
 
 (1) A company’s shares must not be allotted at a discount.
 
@@ -18188,7 +18188,7 @@ _General rules_
 the company an amount equal to the amount of the discount, with interest at
 the appropriate rate.
 
-**581** **Provision for different amounts to be paid on shares**
+**581****Provision for different amounts to be paid on shares**
 
 A company, if so authorised by its articles, may—
 (a) make arrangements on the issue of shares for a difference between the
@@ -18200,7 +18200,7 @@ been called up;
 (c) pay a dividend in proportion to the amount paid up on each share
 where a larger amount is paid up on some shares than on others.
 
-**582** **General rule as to means of payment**
+**582****General rule as to means of payment**
 
 (1) Shares allotted by a company, and any premium on them, may be paid up in
 money or money’s worth (including goodwill and know-how).
@@ -18214,7 +18214,7 @@ nominal value of the shares or by way of premium).
 (3) This section has effect subject to the following provisions of this Chapter
 (additional rules for public companies).
 
-**583** **Meaning of payment in cash**
+**583****Meaning of payment in cash**
 
 (1) The following provisions have effect for the purposes of the Companies Acts.
 
@@ -18236,7 +18236,7 @@ no reason for suspecting will not be paid,
 
 280
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 5 — Payment for shares_
@@ -18262,13 +18262,13 @@ or paid up in cash, “cash” includes foreign currency.
 
 _Additional rules for public companies_
 
-**584** **Public companies: shares taken by subscribers of memorandum**
+**584****Public companies: shares taken by subscribers of memorandum**
 
 Shares taken by a subscriber to the memorandum of a public company in
 pursuance of an undertaking of his in the memorandum, and any premium on
 the shares, must be paid up in cash.
 
-**585** **Public companies: must not accept undertaking to do work or perform**
+**585****Public companies: must not accept undertaking to do work or perform **
 **services**
 
 (1) A public company must not accept at any time, in payment up of its shares or
@@ -18291,7 +18291,7 @@ has an unconditional right—
 shares, or
 (b) to have an instrument of transfer of them executed in his favour.
 
-**586** **Public companies: shares must be at least one-quarter paid up**
+**586****Public companies: shares must be at least one-quarter paid up**
 
 (1) A public company must not allot a share except as paid up at least as to one-
 quarter of its nominal value and the whole of any premium on it.
@@ -18303,7 +18303,7 @@ quarter of its nominal value and the whole of any premium on it.
 
 281
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 5 — Payment for shares_
 
@@ -18323,7 +18323,7 @@ appropriate rate.
 allottee knew or ought to have known the shares were allotted in contravention
 of this section.
 
-**587** **Public companies: payment by long-term undertaking**
+**587****Public companies: payment by long-term undertaking**
 
 (1) A public company must not allot shares as fully or partly paid up (as to their
 nominal value or any premium on them) otherwise than in cash if the
@@ -18359,7 +18359,7 @@ ancillary contract relating to payment in respect of them.
 
 _Supplementary provisions_
 
-**588** **Liability of subsequent holders of shares**
+**588****Liability of subsequent holders of shares**
 
 (1) If a person becomes a holder of shares in respect of which—
 
@@ -18370,7 +18370,7 @@ _Supplementary provisions_
 
 282
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 5 — Payment for shares_
@@ -18400,7 +18400,7 @@ mentioned in section 587(4) (public companies: payment by long-term
 undertaking) as it applies in relation to a contravention of a provision of this
 Chapter.
 
-**589** **Power of court to grant relief**
+**589****Power of court to grant relief **
 
 (1) This section applies in relation to liability under—
 section 585(2) (liability of allottee in case of breach by public company of
@@ -18437,7 +18437,7 @@ amount;
 
 283
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 5 — Payment for shares_
 
@@ -18481,7 +18481,7 @@ such a contribution, or
 (b) order the contributor to make a larger contribution than, but for this
 subsection, he would be liable to make.
 
-**590** **Penalty for contravention of this Chapter**
+**590****Penalty for contravention of this Chapter**
 
 (1) If a company contravenes any of the provisions of this Chapter, an offence is
 committed by—
@@ -18500,12 +18500,12 @@ maximum.
 
 284
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 5 — Payment for shares_
 
-**591** **Enforceability of undertakings to do work etc**
+**591****Enforceability of undertakings to do work etc**
 
 (1) An undertaking given by any person, in or in connection with payment for
 shares in a company, to do work or perform services or to do any other thing,
@@ -18516,7 +18516,7 @@ provision of this Chapter or Chapter 6.
 (2) This is without prejudice to section 589 (power of court to grant relief etc in
 respect of liabilities).
 
-**592** **The appropriate rate of interest**
+**592****The appropriate rate of interest**
 
 (1) For the purposes of this Chapter the “appropriate rate” of interest is 5% per
 annum or such other rate as may be specified by order made by the Secretary
@@ -18524,13 +18524,13 @@ of State.
 
 (2) An order under this section is subject to negative resolution procedure.
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
-P UBLIC  COMPANIES : INDEPENDENT  VALUATION  OF  NON - CASH  CONSIDERATION
+P UBLIC  COMPANIES: INDEPENDENT  VALUATION  OF  NON - CASH  CONSIDERATION
 
 _Non-cash consideration for shares_
 
-**593** **Public company: valuation of non-cash consideration for shares**
+**593****Public company: valuation of non-cash consideration for shares**
 
 (1) A public company must not allot shares as fully or partly paid up (as to their
 nominal value or any premium on them) otherwise than in cash unless—
@@ -18566,7 +18566,7 @@ consideration), with interest at the appropriate rate.
 
 285
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 6 — Public companies: independent valuation of non-cash consideration_
 
@@ -18575,7 +18575,7 @@ section 594 (exception to valuation requirement: arrangement with
 another company), and
 section 595 (exception to valuation requirement: merger).
 
-**594** **Exception to valuation requirement: arrangement with another company**
+**594****Exception to valuation requirement: arrangement with another company**
 
 (1) Section 593 (valuation of non-cash consideration) does not apply to the
 allotment of shares by a company (“company A”) in connection with an
@@ -18615,7 +18615,7 @@ consideration for sale of company property)), and
 (b) “company”, except in reference to company A, includes any body
 corporate.
 
-**595** **Exception to valuation requirement: merger**
+**595****Exception to valuation requirement: merger**
 
 (1) Section 593 (valuation of non-cash consideration) does not apply to the
 allotment of shares by a company in connection with a proposed merger with
@@ -18631,7 +18631,7 @@ assets and liabilities of the other in exchange for the issue of shares or other
 
 286
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 6 — Public companies: independent valuation of non-cash consideration_
@@ -18642,7 +18642,7 @@ payment to shareholders.
 (3) In this section “company”, in reference to the other company, includes any
 body corporate.
 
-**596** **Non-cash consideration for shares: requirements as to valuation and report**
+**596****Non-cash consideration for shares: requirements as to valuation and report**
 
 (1) The provisions of sections 1150 to 1153 (general provisions as to independent
 valuation and report) apply to the valuation and report required by section 593
@@ -18696,11 +18696,11 @@ determination.
 
 287
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 6 — Public companies: independent valuation of non-cash consideration_
 
-**597** **Copy of report to be delivered to registrar**
+**597****Copy of report to be delivered to registrar**
 
 (1) A company to which a report is made under section 593 as to the value of any
 consideration for which, or partly for which, it proposes to allot shares must
@@ -18731,7 +18731,7 @@ period as the court thinks proper.
 
 _Transfer of non-cash asset in initial period_
 
-**598** **Public company: agreement for transfer of non-cash asset in initial period**
+**598****Public company: agreement for transfer of non-cash asset in initial period**
 
 (1) A public company formed as such must not enter into an agreement—
 (a) with a person who is a subscriber to the company’s memorandum,
@@ -18763,7 +18763,7 @@ that business.
 
 288
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 6 — Public companies: independent valuation of non-cash consideration_
@@ -18772,7 +18772,7 @@ _Chapter 6 — Public companies: independent valuation of non-cash consideration
 under the supervision of the court or of an officer authorised by the court for
 the purpose.
 
-**599** **Agreement for transfer of non-cash asset: requirement of independent**
+**599****Agreement for transfer of non-cash asset: requirement of independent **
 **valuation**
 
 (1) The following conditions must have been complied with—
@@ -18799,8 +18799,8 @@ section.
 (4) This section does not affect any requirement to value any consideration for
 purposes of section 593 (valuation of non-cash consideration for shares).
 
-**600** **Agreement for transfer of non-cash asset: requirements as to valuation and**
-**report**
+**600****Agreement for transfer of non-cash asset: requirements as to valuation and **
+**report **
 
 (1) The provisions of sections 1150 to 1153 (general provisions as to independent
 valuation and report) apply to the valuation and report required by section 599
@@ -18829,7 +18829,7 @@ the value of the consideration in question since the valuation, and
 
 289
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 6 — Public companies: independent valuation of non-cash consideration_
 
@@ -18849,7 +18849,7 @@ else as will enable him to determine that proportion, and
 and also the reason for and method and date of any such valuation and
 any other matters which may be relevant to that determination.
 
-**601** **Agreement for transfer of non-cash asset: requirement of approval by**
+**601****Agreement for transfer of non-cash asset: requirement of approval by **
 **members**
 
 (1) The following conditions must have been complied with—
@@ -18874,7 +18874,7 @@ to him;
 report must be circulated to the members entitled to notice of the
 meeting not later than the date on which notice of the meeting is given.
 
-**602** **Copy of resolution to be delivered to registrar**
+**602****Copy of resolution to be delivered to registrar**
 
 (1) A company that has passed a resolution under section 601 with respect to the
 transfer of an asset must, within 15 days of doing so, deliver to the registrar a
@@ -18895,7 +18895,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 
 290
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 6 — Public companies: independent valuation of non-cash consideration_
@@ -18903,7 +18903,7 @@ _Chapter 6 — Public companies: independent valuation of non-cash consideration
 continued contravention, to a daily default fine not exceeding one-tenth of
 level 3 on the standard scale.
 
-**603** **Adaptation of provisions in relation to company re-registering as public**
+**603****Adaptation of provisions in relation to company re-registering as public**
 
 The provisions of sections 598 to 602 (public companies: transfer of non-cash
 assets) apply with the following adaptations in relation to a company re-
@@ -18915,7 +18915,7 @@ is a member of the company on the date of re-registration;
 with a certificate under section 761 (trading certificate) shall be read as
 a reference to the date of re-registration.
 
-**604** **Agreement for transfer of non-cash asset: effect of contravention**
+**604****Agreement for transfer of non-cash asset: effect of contravention**
 
 (1) This section applies where a public company enters into an agreement in
 contravention of section 598 and either—
@@ -18944,7 +18944,7 @@ appropriate rate.
 
 _Supplementary provisions_
 
-**605** **Liability of subsequent holders of shares**
+**605****Liability of subsequent holders of shares**
 
 (1) If a person becomes a holder of shares in respect of which—
 (a) there has been a contravention of section 593 (public company:
@@ -18959,7 +18959,7 @@ under the provision contravened,
 
 291
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 6 — Public companies: independent valuation of non-cash consideration_
 
@@ -18993,7 +18993,7 @@ include any person who has an unconditional right—
 shares, or
 (b) to have an instrument of transfer of the shares executed in his favour.
 
-**606** **Power of court to grant relief**
+**606****Power of court to grant relief **
 
 (1) A person who—
 (a) is liable to a company under any provision of this Chapter in relation to
@@ -19023,7 +19023,7 @@ amount;
 
 292
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 6 — Public companies: independent valuation of non-cash consideration_
@@ -19074,7 +19074,7 @@ extent that it appears to the court to be just and equitable to do so having
 regard to any benefit accruing to the company by virtue of anything done by
 him towards the carrying out of the agreement mentioned in that subsection.
 
-**607** **Penalty for contravention of this Chapter**
+**607****Penalty for contravention of this Chapter**
 
 (1) This section applies where a company contravenes—
 section 593 (public company allotting shares for non-cash consideration),
@@ -19091,7 +19091,7 @@ cash asset).
 
 293
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 6 — Public companies: independent valuation of non-cash consideration_
 
@@ -19103,7 +19103,7 @@ _Chapter 6 — Public companies: independent valuation of non-cash consideration
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**608** **Enforceability of undertakings to do work etc**
+**608****Enforceability of undertakings to do work etc**
 
 (1) An undertaking given by any person, in or in connection with payment for
 shares in a company, to do work or perform services or to do any other thing,
@@ -19114,7 +19114,7 @@ provision of this Chapter or Chapter 5.
 (2) This is without prejudice to section 606 (power of court to grant relief etc in
 respect of liabilities).
 
-**609** **The appropriate rate of interest**
+**609****The appropriate rate of interest**
 
 (1) For the purposes of this Chapter the “appropriate rate” of interest is 5% per
 annum or such other rate as may be specified by order made by the Secretary
@@ -19122,13 +19122,13 @@ of State.
 
 (2) An order under this section is subject to negative resolution procedure.
 
-**C** **HAPTER** **7**
+**CHAPTER 7**
 
 S HARE  PREMIUMS
 
 _The share premium account_
 
-**610** **Application of share premiums**
+**610****Application of share premiums**
 
 (1) If a company issues shares at a premium, whether for cash or otherwise, a sum
 equal to the aggregate amount or value of the premiums on those shares must
@@ -19158,7 +19158,7 @@ section 614 (power to make further provisions by regulations).
 
 294
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 7 — Share premiums_
@@ -19168,7 +19168,7 @@ mentioned in subsection (1) above.
 
 _Relief from requirements as to share premiums_
 
-**611** **Group reconstruction relief**
+**611****Group reconstruction relief**
 
 (1) This section applies where the issuing company—
 (a) is a wholly-owned subsidiary of another company (“the holding
@@ -19205,7 +19205,7 @@ the transfer;
 they are stated in the transferor company’s accounting records
 immediately before the transfer.
 
-**612** **Merger relief**
+**612****Merger relief**
 
 (1) This section applies where the issuing company has secured at least a 90%
 equity holding in another company in pursuance of an arrangement providing
@@ -19225,7 +19225,7 @@ arrangement in consideration for the acquisition or cancellation of equity
 
 295
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 7 — Share premiums_
 
@@ -19245,7 +19245,7 @@ allotted on those terms in pursuance of the arrangement.
 (4) This section does not apply in a case falling within section 611 (group
 reconstruction relief).
 
-**613** **Merger relief: meaning of 90% equity holding**
+**613****Merger relief: meaning of 90% equity holding**
 
 (1) The following provisions have effect to determine for the purposes of section
 612 (merger relief) whether a company (“company A”) has secured at least a
@@ -19276,7 +19276,7 @@ relation to each of those classes of shares taken separately.
 (c) its or their nominees,
 are treated as held by company A.
 
-**614** **Power to make further provision by regulations**
+**614****Power to make further provision by regulations**
 
 (1) The Secretary of State may by regulations make such provision as he thinks
 appropriate—
@@ -19291,7 +19291,7 @@ cash premiums;
 
 296
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 7 — Share premiums_
@@ -19301,7 +19301,7 @@ requirements provided by this Chapter.
 
 (2) Regulations under this section are subject to affirmative resolution procedure.
 
-**615** **Relief may be reflected in company’s balance sheet**
+**615****Relief may be reflected in company’s balance sheet**
 
 An amount corresponding to the amount representing the premiums, or part
 of the premiums, on shares issued by a company that by virtue of any relief
@@ -19312,7 +19312,7 @@ company’s balance sheet.
 
 _Supplementary provisions_
 
-**616** **Interpretation of this Chapter**
+**616****Interpretation of this Chapter**
 
 (1) In this Chapter—
 “arrangement” means any agreement, scheme or arrangement (including
@@ -19349,17 +19349,17 @@ respect of those shares.
 
 297
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 8 — Alteration of share capital_
 
-**C** **HAPTER** **8**
+**CHAPTER 8**
 
 A LTERATION  OF  SHARE  CAPITAL
 
 _How share capital may be altered_
 
-**617** **Alteration of share capital of limited company**
+**617****Alteration of share capital of limited company**
 
 (1) A limited company having a share capital may not alter its share capital except
 in the following ways.
@@ -19403,7 +19403,7 @@ an application under that Part.
 
 _Subdivision or consolidation of shares_
 
-**618** **Sub-division or consolidation of shares**
+**618****Sub-division or consolidation of shares**
 
 (1) A limited company having a share capital may—
 
@@ -19414,7 +19414,7 @@ _Subdivision or consolidation of shares_
 
 298
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 8 — Alteration of share capital_
@@ -19440,7 +19440,7 @@ have passed a resolution authorising it to do so.
 (5) The company’s articles may exclude or restrict the exercise of any power
 conferred by this section.
 
-**619** **Notice to registrar of sub-division or consolidation**
+**619****Notice to registrar of sub-division or consolidation**
 
 (1) If a company exercises the power conferred by section 618 (sub-division or
 consolidation of shares) it must within one month after doing so give notice to
@@ -19476,13 +19476,13 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 299
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 8 — Alteration of share capital_
 
 _Reconversion of stock into shares_
 
-**620** **Reconversion of stock into shares**
+**620****Reconversion of stock into shares**
 
 (1) A limited company that has converted paid-up shares into stock (before the
 repeal by this Act of the power to do so) may reconvert that stock into paid-up
@@ -19496,7 +19496,7 @@ power conferred by this section—
 (a) on more than one occasion;
 (b) at a specified time or in specified circumstances.
 
-**621** **Notice to registrar of reconversion of stock into shares**
+**621****Notice to registrar of reconversion of stock into shares**
 
 (1) If a company exercises a power conferred by section 620 (reconversion of stock
 into shares) it must within one month after doing so give notice to the registrar,
@@ -19527,7 +19527,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 _Redenomination of share capital_
 
-**622** **Redenomination of share capital**
+**622****Redenomination of share capital**
 
 (1) A limited company having a share capital may by resolution redenominate its
 share capital or any class of its share capital.
@@ -19541,7 +19541,7 @@ one currency to having a fixed nominal value in another currency.
 
 300
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 8 — Alteration of share capital_
@@ -19575,7 +19575,7 @@ conferred by this section.
 (8) Chapter 3 of Part 3 (resolutions affecting a company’s constitution) applies to
 a resolution under this section.
 
-**623** **Calculation of new nominal values**
+**623****Calculation of new nominal values**
 
 For each class of share the new nominal value of each share is calculated as
 follows:
@@ -19587,7 +19587,7 @@ in the resolution.
 _Step Three_
 Divide that amount by the number of shares in the class.
 
-**624** **Effect of redenomination**
+**624****Effect of redenomination**
 
 (1) The redenomination of shares does not affect any rights or obligations of
 members under the company’s constitution, or any restrictions affecting
@@ -19609,14 +19609,14 @@ any agreement or statement, or in any deed, instrument or document, shall
 
 301
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 8 — Alteration of share capital_
 
 (unless the context otherwise requires) be read after the resolution takes effect
 as references to the new nominal value of the shares.
 
-**625** **Notice to registrar of redenomination**
+**625****Notice to registrar of redenomination**
 
 (1) If a limited company having a share capital redenominates any of its share
 capital, it must within one month after doing so give notice to the registrar,
@@ -19647,7 +19647,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**626** **Reduction of capital in connection with redenomination**
+**626****Reduction of capital in connection with redenomination**
 
 (1) A limited company that passes a resolution redenominating some or all of its
 shares may, for the purpose of adjusting the nominal values of the
@@ -19676,12 +19676,12 @@ liability in respect of share capital not paid up.
 
 302
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 8 — Alteration of share capital_
 
-**627** **Notice to registrar of reduction of capital in connection with redenomination**
+**627****Notice to registrar of reduction of capital in connection with redenomination**
 
 (1) A company that passes a resolution under section 626 (reduction of capital in
 connection with redenomination) must within 15 days after the resolution is
@@ -19723,7 +19723,7 @@ exceed 10% of nominal value of allotted shares immediately after reduction).
 (a) on conviction on indictment to a fine, and
 (b) on summary conviction to a fine not exceeding the statutory maximum.
 
-**628** **Redenomination reserve**
+**628****Redenomination reserve**
 
 (1) The amount by which a company’s share capital is reduced under section 626
 (reduction of capital in connection with redenomination) must be transferred
@@ -19743,17 +19743,17 @@ up share capital of the company.
 
 303
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 9 — Classes of share and class rights_
 
-**C** **HAPTER** **9**
+**CHAPTER 9**
 
 C LASSES  OF  SHARE  AND  CLASS  RIGHTS
 
 _Introductory_
 
-**629** **Classes of shares**
+**629****Classes of shares**
 
 (1) For the purposes of the Companies Acts shares are of one class if the rights
 attached to them are in all respects uniform.
@@ -19765,7 +19765,7 @@ allotment.
 
 _Variation of class rights_
 
-**630** **Variation of class rights: companies having a share capital**
+**630****Variation of class rights: companies having a share capital**
 
 (1) This section is concerned with the variation of the rights attached to a class of
 shares in a company having a share capital.
@@ -19796,7 +19796,7 @@ provision in a company’s articles for the variation of the rights attached to 
 class of shares, references to the variation of those rights include references to
 their abrogation.
 
-**631** **Variation of class rights: companies without a share capital**
+**631****Variation of class rights: companies without a share capital**
 
 (1) This section is concerned with the variation of the rights of a class of members
 of a company where the company does not have a share capital.
@@ -19810,7 +19810,7 @@ of a company where the company does not have a share capital.
 
 304
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 9 — Classes of share and class rights_
@@ -19838,7 +19838,7 @@ provision in a company’s articles for the variation of the rights of a class o
 members, references to the variation of those rights include references to their
 abrogation.
 
-**632** **Variation of class rights: saving for court’s powers under other provisions**
+**632****Variation of class rights: saving for court’s powers under other provisions**
 
 Nothing in section 630 or 631 (variation of class rights) affects the power of the
 court under—
@@ -19847,7 +19847,7 @@ registered as private),
 Part 26 (arrangements and reconstructions), or
 Part 30 (protection of members against unfair prejudice).
 
-**633** **Right to object to variation: companies having a share capital**
+**633****Right to object to variation: companies having a share capital**
 
 (1) This section applies where the rights attached to any class of shares in a
 company are varied under section 630 (variation of class rights: companies
@@ -19877,7 +19877,7 @@ in writing for the purpose.
 
 305
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 9 — Classes of share and class rights_
 
@@ -19891,7 +19891,7 @@ The decision of the court on any such application is final.
 (6) References in this section to the variation of the rights of holders of a class of
 shares include references to their abrogation.
 
-**634** **Right to object to variation: companies without a share capital**
+**634****Right to object to variation: companies without a share capital**
 
 (1) This section applies where the rights of any class of members of a company are
 varied under section 631 (variation of class rights: companies without a share
@@ -19921,7 +19921,7 @@ The decision of the court on any such application is final.
 (6) References in this section to the variation of the rights of a class of members
 include references to their abrogation.
 
-**635** **Copy of court order to be forwarded to the registrar**
+**635****Copy of court order to be forwarded to the registrar**
 
 (1) The company must within 15 days after the making of an order by the court on
 an application under section 633 or 634 (objection to variation of class rights)
@@ -19943,14 +19943,14 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 306
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 9 — Classes of share and class rights_
 
 _Matters to be notified to the registrar_
 
-**636** **Notice of name or other designation of class of shares**
+**636****Notice of name or other designation of class of shares**
 
 (1) Where a company assigns a name or other designation, or a new name or other
 designation, to any class or description of its shares, it must within one month
@@ -19966,7 +19966,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**637** **Notice of particulars of variation of rights attached to shares**
+**637****Notice of particulars of variation of rights attached to shares**
 
 (1) Where the rights attached to any shares of a company are varied, the company
 must within one month from the date on which the variation is made deliver
@@ -19981,7 +19981,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**638** **Notice of new class of members**
+**638****Notice of new class of members**
 
 (1) If a company not having a share capital creates a new class of members, the
 company must within one month from the date on which the new class is
@@ -19997,7 +19997,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**639** **Notice of name or other designation of class of members**
+**639****Notice of name or other designation of class of members**
 
 (1) Where a company not having a share capital assigns a name or other
 designation, or a new name or other designation, to any class of its members,
@@ -20011,7 +20011,7 @@ particulars of the name or designation so assigned.
 
 307
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 9 — Classes of share and class rights_
 
@@ -20024,7 +20024,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**640** **Notice of particulars of variation of class rights**
+**640****Notice of particulars of variation of class rights**
 
 (1) If the rights of any class of members of a company not having a share capital
 are varied, the company must within one month from the date on which the
@@ -20040,13 +20040,13 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**C** **HAPTER** **10**
+**CHAPTER 10**
 
 R EDUCTION  OF  SHARE  CAPITAL
 
 _Introductory_
 
-**641** **Circumstances in which a company may reduce its share capital**
+**641****Circumstances in which a company may reduce its share capital**
 
 (1) A limited company having a share capital may reduce its share capital—
 (a) in the case of a private company limited by shares, by special resolution
@@ -20076,7 +20076,7 @@ available assets, or
 
 308
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 10 — Reduction of share capital_
@@ -20094,7 +20094,7 @@ the company’s share capital.
 
 _Private companies: reduction of capital supported by solvency statement_
 
-**642** **Reduction of capital supported by solvency statement**
+**642****Reduction of capital supported by solvency statement**
 
 (1) A resolution for reducing share capital of a private company limited by shares
 is supported by a solvency statement if—
@@ -20116,7 +20116,7 @@ throughout that meeting.
 (4) The validity of a resolution is not affected by a failure to comply with
 subsection (2) or (3).
 
-**643** **Solvency statement**
+**643****Solvency statement**
 
 (1) A solvency statement is a statement that each of the directors—
 (a) has formed the opinion, as regards the company’s situation at the date
@@ -20144,7 +20144,7 @@ company’s liabilities (including any contingent or prospective liabilities).
 
 309
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 10 — Reduction of share capital_
 
@@ -20166,7 +20166,7 @@ statutory maximum (or both);
 exceeding six months, or to a fine not exceeding the statutory
 maximum (or both).
 
-**644** **Registration of resolution and supporting documents**
+**644****Registration of resolution and supporting documents**
 
 (1) Within 15 days after the resolution for reducing share capital is passed the
 company must deliver to the registrar—
@@ -20208,7 +20208,7 @@ was passed, and
 
 310
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 10 — Reduction of share capital_
@@ -20233,7 +20233,7 @@ maximum.
 
 _Reduction of capital confirmed by the court_
 
-**645** **Application to court for order of confirmation**
+**645****Application to court for order of confirmation**
 
 (1) Where a company has passed a resolution for reducing share capital, it may
 apply to the court for an order confirming the reduction.
@@ -20250,7 +20250,7 @@ class or classes of creditors.
 
 (4) The court may direct that section 646 is to apply in any other case.
 
-**646** **Creditors entitled to object to reduction**
+**646****Creditors entitled to object to reduction**
 
 (1) Where this section applies (see section 645(2) and (4)), every creditor of the
 company who at the date fixed by the court is entitled to any debt or claim that,
@@ -20275,7 +20275,7 @@ from the right of objecting to the reduction of capital.
 
 311
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 10 — Reduction of share capital_
 
@@ -20294,7 +20294,7 @@ amount of the debt or claim, or if the amount is contingent or not
 ascertained, an amount fixed by the court after the like enquiry and
 adjudication as if the company were being wound up by the court.
 
-**647** **Offences in connection with list of creditors**
+**647****Offences in connection with list of creditors**
 
 (1) If an officer of the company—
 (a) intentionally or recklessly—
@@ -20310,7 +20310,7 @@ he commits an offence.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**648** **Court order confirming reduction**
+**648****Court order confirming reduction**
 
 (1) The court may make an order confirming the reduction of capital on such terms
 and conditions as it thinks fit.
@@ -20340,7 +20340,7 @@ as its last words the words “and reduced”.
 
 312
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 10 — Reduction of share capital_
@@ -20348,7 +20348,7 @@ _Chapter 10 — Reduction of share capital_
 If such an order is made, those words are, until the end of the period specified
 in the order, deemed to be part of the company’s name.
 
-**649** **Registration of order and statement of capital**
+**649****Registration of order and statement of capital**
 
 (1) The registrar, on production of an order of the court confirming the reduction
 of a company’s share capital and the delivery of a copy of the order and of a
@@ -20402,13 +20402,13 @@ capital.
 
 313
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 10 — Reduction of share capital_
 
 _Public company reducing capital below authorised minimum_
 
-**650** **Public company reducing capital below authorised minimum**
+**650****Public company reducing capital below authorised minimum**
 
 (1) This section applies where the court makes an order confirming a reduction of
 a public company’s capital that has the effect of bringing the nominal value of
@@ -20421,7 +20421,7 @@ its allotted share capital below the authorised minimum.
 (3) Section 651 provides an expedited procedure for re-registration in these
 circumstances.
 
-**651** **Expedited procedure for re-registration as a private company**
+**651****Expedited procedure for re-registration as a private company**
 
 (1) The court may authorise the company to be re-registered as a private company
 without its having passed the special resolution required by section 97.
@@ -20451,7 +20451,7 @@ registration have been complied with.
 
 _Effect of reduction of capital_
 
-**652** **Liability of members following reduction of capital**
+**652****Liability of members following reduction of capital**
 
 (1) Where a company’s share capital is reduced a member of the company (past or
 present) is not liable in respect of any share to any call or contribution
@@ -20470,7 +20470,7 @@ deemed to have been paid on it, as the case may be.
 
 314
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 
 _Chapter 10 — Reduction of share capital_
@@ -20478,7 +20478,7 @@ _Chapter 10 — Reduction of share capital_
 (3) Nothing in this section affects the rights of the contributories among
 themselves.
 
-**653** **Liability to creditor in case of omission from list of creditors**
+**653****Liability to creditor in case of omission from list of creditors**
 
 (1) This section applies where, in the case of a reduction of capital confirmed by
 the court—
@@ -20509,11 +20509,11 @@ amount of a debt or claim has the same meaning as in section 123 of the
 Insolvency Act 1986 (c. 45) or Article 103 of the Insolvency (Northern Ireland)
 Order 1989 (S.I. 1989/2405 (N.I. 19)).
 
-**C** **HAPTER** **11**
+**CHAPTER 11**
 
 M ISCELLANEOUS  AND  SUPPLEMENTARY  PROVISIONS
 
-**654** **Treatment of reserve arising from reduction of capital**
+**654****Treatment of reserve arising from reduction of capital**
 
 (1) A reserve arising from the reduction of a company’s share capital is not
 distributable, subject to any provision made by order under this section.
@@ -20525,7 +20525,7 @@ a realised profit.
 
 (3) An order under this section is subject to affirmative resolution procedure.
 
-**655** **Shares no bar to damages against company**
+**655****Shares no bar to damages against company**
 
 A person is not debarred from obtaining damages or other compensation from
 a company by reason only of his holding or having held shares in the company
@@ -20537,14 +20537,14 @@ a company by reason only of his holding or having held shares in the company
 
 315
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 17 — A company’s share capital_
 _Chapter 11 — Miscellaneous and supplementary provisions_
 
 or any right to apply or subscribe for shares or to be included in the company’s
 register of members in respect of shares.
 
-**656** **Public companies: duty of directors to call meeting on serious loss of capital**
+**656****Public companies: duty of directors to call meeting on serious loss of capital**
 
 (1) Where the net assets of a public company are half or less of its called-up share
 capital, the directors must call a general meeting of the company to consider
@@ -20571,7 +20571,7 @@ maximum.
 pursuance of subsection (1) of any matter that could not have been considered
 at that meeting apart from this section.
 
-**657** **General power to make further provision by regulations**
+**657****General power to make further provision by regulations**
 
 (1) The Secretary of State may by regulations modify the following provisions of
 this Part—
@@ -20602,22 +20602,22 @@ repeals in other provisions of this Act, or in other enactments.
 
 316
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 1 — General provisions_
 
-**P** **ART** **18**
+**PART 18**
 
 A CQUISITION  BY  LIMITED  COMPANY  OF  ITS  OWN  SHARES
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 G ENERAL  PROVISIONS
 
 _Introductory_
 
-**658** **General rule against limited company acquiring its own shares**
+**658****General rule against limited company acquiring its own shares**
 
 (1) A limited company must not acquire its own shares, whether by purchase,
 subscription or otherwise, except in accordance with the provisions of this
@@ -20640,7 +20640,7 @@ maximum (or both);
 exceeding six months or a fine not exceeding the statutory
 maximum (or both).
 
-**659** **Exceptions to general rule**
+**659****Exceptions to general rule**
 
 (1) A limited company may acquire any of its own fully paid shares otherwise
 than for valuable consideration.
@@ -20666,13 +20666,13 @@ payable in respect of the shares.
 
 317
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 1 — General provisions_
 
 _Shares held by company’s nominee_
 
-**660** **Treatment of shares held by nominee**
+**660****Treatment of shares held by nominee**
 
 (1) This section applies where shares in a limited company—
 (a) are taken by a subscriber to the memorandum as nominee of the
@@ -20696,7 +20696,7 @@ for the purpose of or in connection with the acquisition, and
 (b) to shares acquired by a nominee of the company when the company has
 no beneficial interest in the shares.
 
-**661** **Liability of others where nominee fails to make payment in respect of shares**
+**661****Liability of others where nominee fails to make payment in respect of shares**
 
 (1) This section applies where shares in a limited company—
 (a) are taken by a subscriber to the memorandum as nominee of the
@@ -20729,7 +20729,7 @@ terms as the court thinks fit.
 
 318
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 1 — General provisions_
@@ -20746,7 +20746,7 @@ when the company has no beneficial interest in the shares.
 
 _Shares held by or for public company_
 
-**662** **Duty to cancel shares in public company held by or for the company**
+**662****Duty to cancel shares in public company held by or for the company**
 
 (1) This section applies in the case of a public company—
 (a) where shares in the company are forfeited, or surrendered to the
@@ -20795,7 +20795,7 @@ the provisions of Chapter 10 of Part 17 (reduction of capital).
 
 319
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 1 — General provisions_
 
@@ -20807,7 +20807,7 @@ or other shareholder may exercise any voting rights in respect of the shares.
 
 (6) Any purported exercise of those rights is void.
 
-**663** **Notice of cancellation of shares**
+**663****Notice of cancellation of shares**
 
 (1) Where a company cancels shares in order to comply with section 662, it must
 within one month after the shares are cancelled give notice to the registrar,
@@ -20836,7 +20836,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**664** **Re-registration as private company in consequence of cancellation**
+**664****Re-registration as private company in consequence of cancellation**
 
 (1) Where a company is obliged to re-register as a private company to comply with
 section 662, the directors may resolve that the company should be so re-
@@ -20861,7 +20861,7 @@ proposed name on re-registration.
 
 320
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 1 — General provisions_
@@ -20878,7 +20878,7 @@ with.
 (6) The registrar may accept the statement of compliance as sufficient evidence
 that the company is entitled to be re-registered as a private company.
 
-**665** **Issue of certificate of incorporation on re-registration**
+**665****Issue of certificate of incorporation on re-registration**
 
 (1) If on an application under section 664 the registrar is satisfied that the company
 is entitled to be re-registered as a private company, the company shall be re-
@@ -20898,7 +20898,7 @@ company, and
 (5) The certificate is conclusive evidence that the requirements of this Act as to re-
 registration have been complied with.
 
-**666** **Effect of failure to re-register**
+**666****Effect of failure to re-register**
 
 (1) If a public company that is required by section 662 to apply to be re-registered
 as a private company fails to do so before the end of the period specified in
@@ -20908,7 +20908,7 @@ by private company) applies to it as if it were a private company.
 (2) Subject to that, the company continues to be treated as a public company until
 it is so re-registered.
 
-**667** **Offence in case of failure to cancel shares or re-register**
+**667****Offence in case of failure to cancel shares or re-register**
 
 (1) This section applies where a company, when required to do by section 662—
 (a) fails to cancel any shares, or
@@ -20929,14 +20929,14 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 
 321
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 1 — General provisions_
 
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**668** **Application of provisions to company re-registering as public company**
+**668****Application of provisions to company re-registering as public company**
 
 (1) This section applies where, after shares in a private company—
 (a) are forfeited in pursuance of the company’s articles or are surrendered
@@ -20960,7 +20960,7 @@ acquisition, subject to the following modification.
 (period for complying with obligations under that section) runs from the date
 of the re-registration of the company as a public company.
 
-**669** **Transfer to reserve on acquisition of shares by public company or nominee**
+**669****Transfer to reserve on acquisition of shares by public company or nominee**
 
 (1) Where—
 (a) a public company, or a nominee of a public company, acquires shares
@@ -20976,7 +20976,7 @@ reference to the value to the company of its interest in the shares.
 
 _Charges of public company on own shares_
 
-**670** **Public companies: general rule against lien or charge on own shares**
+**670****Public companies: general rule against lien or charge on own shares**
 
 (1) A lien or other charge of a public company on its own shares (whether taken
 expressly or otherwise) is void, except as permitted by this section.
@@ -20995,7 +20995,7 @@ shares.
 
 322
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 1 — General provisions_
@@ -21012,7 +21012,7 @@ re-registration.
 
 _Supplementary provisions_
 
-**671** **Interests to be disregarded in determining whether company has beneficial**
+**671****Interests to be disregarded in determining whether company has beneficial **
 **interest**
 
 In determining for the purposes of this Chapter whether a company has a
@@ -21023,7 +21023,7 @@ scheme),
 section 673 (employer’s charges and other rights of recovery), or
 section 674 (rights as personal representative or trustee).
 
-**672** **Residual interest under pension scheme or employees’ share scheme**
+**672****Residual interest under pension scheme or employees’ share scheme**
 
 (1) Where the shares are held on trust for the purposes of a pension scheme or
 employees’ share scheme, there shall be disregarded any residual interest of
@@ -21062,7 +21062,7 @@ receivable pursuant to that right.
 
 323
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 1 — General provisions_
 
@@ -21077,7 +21077,7 @@ residual interest in question vests in possession before they are disposed of,
 those sections apply to the shares as if they had been acquired on the date on
 which the interest vests in possession.
 
-**673** **Employer’s charges and other rights of recovery**
+**673****Employer’s charges and other rights of recovery**
 
 (1) Where the shares are held on trust for the purposes of a pension scheme there
 shall be disregarded—
@@ -21102,7 +21102,7 @@ benefit or other right or interest under the scheme for the purpose of enabling
 the employer or former employer of a member of the scheme to obtain the
 discharge of a monetary obligation due to him from the member.
 
-**674** **Rights as personal representative or trustee**
+**674****Rights as personal representative or trustee**
 
 Where the company is a personal representative or trustee, there shall be
 disregarded any rights that the company has in that capacity including, in
@@ -21113,7 +21113,7 @@ trust property, and
 incurred by reason of any act or omission of the company in the
 performance of its duties as personal representative or trustee.
 
-**675** **Meaning of “pension scheme”**
+**675****Meaning of “pension scheme”**
 
 (1) In this Chapter “pension scheme” means a scheme for the provision of benefits
 consisting of or including relevant benefits for or in respect of employees or
@@ -21129,7 +21129,7 @@ other like benefit given or to be given on retirement or on death or in
 
 324
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 1 — General provisions_
@@ -21137,19 +21137,19 @@ _Chapter 1 — General provisions_
 anticipation of retirement or, in connection with past service, after retirement
 or death.
 
-**676** **Application of provisions to directors**
+**676****Application of provisions to directors**
 
 For the purposes of this Chapter references to “employer” and “employee”, in
 the context of a pension scheme or employees’ share scheme, shall be read as
 if a director of a company were employed by it.
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 F INANCIAL  ASSISTANCE  FOR  PURCHASE  OF  OWN  SHARES
 
 _Introductory_
 
-**677** **Meaning of “financial assistance”**
+**677****Meaning of “financial assistance”**
 
 (1) In this Chapter “financial assistance” means—
 (a) financial assistance given by way of gift,
@@ -21188,13 +21188,13 @@ made in those accounts.
 
 325
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 2 — Financial assistance for purchase of own shares_
 
 _Circumstances in which financial assistance prohibited_
 
-**678** **Assistance for acquisition of shares in public company**
+**678****Assistance for acquisition of shares in public company**
 
 (1) Where a person is acquiring or proposing to acquire shares in a public
 company, it is not lawful for that company, or a company that is a subsidiary
@@ -21231,7 +21231,7 @@ and the assistance is given in good faith in the interests of the company.
 (5) This section has effect subject to sections 681 and 682 (unconditional and
 conditional exceptions to prohibition).
 
-**679** **Assistance by public company for acquisition of shares in its private holding**
+**679****Assistance by public company for acquisition of shares in its private holding **
 **company**
 
 (1) Where a person is acquiring or proposing to acquire shares in a private
@@ -21254,7 +21254,7 @@ and the assistance is given in good faith in the interests of the company.
 
 326
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 2 — Financial assistance for purchase of own shares_
@@ -21279,7 +21279,7 @@ and the assistance is given in good faith in the interests of the company.
 (5) This section has effect subject to sections 681 and 682 (unconditional and
 conditional exceptions to prohibition).
 
-**680** **Prohibited financial assistance an offence**
+**680****Prohibited financial assistance an offence**
 
 (1) If a company contravenes section 678(1) or (3) or section 679(1) or (3)
 (prohibited financial assistance) an offence is committed by—
@@ -21299,7 +21299,7 @@ maximum (or both).
 
 _Exceptions from prohibition_
 
-**681** **Unconditional exceptions**
+**681****Unconditional exceptions**
 
 (1) Neither section 678 nor section 679 prohibits a transaction to which this section
 applies.
@@ -21320,7 +21320,7 @@ Chapter 4 of this Part;
 
 327
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 2 — Financial assistance for purchase of own shares_
 
@@ -21337,7 +21337,7 @@ creditors that is binding on the creditors by virtue of Part 1 of the
 Insolvency Act 1986 or Part 2 of the Insolvency (Northern Ireland)
 Order 1989 (S.I. 1989/2405 (N.I. 19)).
 
-**682** **Conditional exceptions**
+**682****Conditional exceptions**
 
 (1) Neither section 678 nor section 679 prohibits a transaction to which this section
 applies—
@@ -21386,7 +21386,7 @@ assistance is given, and
 
 328
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 2 — Financial assistance for purchase of own shares_
@@ -21402,7 +21402,7 @@ subsidiary of a holding company of that company.
 
 _Supplementary_
 
-**683** **Definitions for this Chapter**
+**683****Definitions for this Chapter**
 
 (1) In this Chapter—
 “distributable profits”, in relation to the giving of any financial
@@ -21428,11 +21428,11 @@ of the acquisition of shares includes its giving such assistance for the
 purpose of wholly or partly restoring his financial position to what it
 was before the acquisition took place.
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 R EDEEMABLE  SHARES
 
-**684** **Power of limited company to issue redeemable shares**
+**684****Power of limited company to issue redeemable shares**
 
 (1) A limited company having a share capital may issue shares that are to be
 redeemed or are liable to be redeemed at the option of the company or the
@@ -21451,14 +21451,14 @@ to do so by its articles.
 
 329
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 3 — Redeemable shares_
 
 (4) No redeemable shares may be issued at a time when there are no issued shares
 of the company that are not redeemable.
 
-**685** **Terms and manner of redemption**
+**685****Terms and manner of redemption**
 
 (1) The directors of a limited company may determine the terms, conditions and
 manner of redemption of shares if they are authorised to do so—
@@ -21478,7 +21478,7 @@ manner of redemption.
 (4) Where the directors are not so authorised, the terms, conditions and manner of
 redemption of any redeemable shares must be stated in the company’s articles.
 
-**686** **Payment for redeemable shares**
+**686****Payment for redeemable shares**
 
 (1) Redeemable shares in a limited company may not be redeemed unless they are
 fully paid.
@@ -21490,7 +21490,7 @@ the holder of the shares, be paid on a date later than the redemption date.
 (3) Unless redeemed in accordance with a provision authorised by subsection (2),
 the shares must be paid for on redemption.
 
-**687** **Financing of redemption**
+**687****Financing of redemption**
 
 (1) A private limited company may redeem redeemable shares out of capital in
 accordance with Chapter 5.
@@ -21518,7 +21518,7 @@ the shares redeemed, or
 
 330
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 3 — Redeemable shares_
@@ -21535,14 +21535,14 @@ any payment made under subsection (4).
 (6) This section is subject to section 735(4) (terms of redemption enforceable in a
 winding up).
 
-**688** **Redeemed shares treated as cancelled**
+**688****Redeemed shares treated as cancelled**
 
 Where shares in a limited company are redeemed—
 (a) the shares are treated as cancelled, and
 (b) the amount of the company’s issued share capital is diminished
 accordingly by the nominal value of the shares redeemed.
 
-**689** **Notice to registrar of redemption**
+**689****Notice to registrar of redemption**
 
 (1) If a limited company redeems any redeemable shares it must within one month
 after doing so give notice to the registrar, specifying the shares redeemed.
@@ -21577,17 +21577,17 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 331
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 4 — Purchase of own shares_
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 P URCHASE  OF  OWN  SHARES
 
 _General provisions_
 
-**690** **Power of limited company to purchase own shares**
+**690****Power of limited company to purchase own shares**
 
 (1) A limited company having a share capital may purchase its own shares
 (including any redeemable shares), subject to—
@@ -21598,14 +21598,14 @@ _General provisions_
 purchase there would no longer be any issued shares of the company other
 than redeemable shares or shares held as treasury shares.
 
-**691** **Payment for purchase of own shares**
+**691****Payment for purchase of own shares**
 
 (1) A limited company may not purchase its own shares unless they are fully paid.
 
 (2) Where a limited company purchases its own shares, the shares must be paid
 for on purchase.
 
-**692** **Financing of purchase of own shares**
+**692****Financing of purchase of own shares**
 
 (1) A private limited company may purchase its own shares out of capital in
 accordance with Chapter 5.
@@ -21644,14 +21644,14 @@ in a winding up).
 
 332
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 4 — Purchase of own shares_
 
 _Authority for purchase of own shares_
 
-**693** **Authority for purchase of own shares**
+**693****Authority for purchase of own shares**
 
 (1) A limited company may only purchase its own shares—
 (a) by an off-market purchase, in pursuance of a contract approved in
@@ -21684,7 +21684,7 @@ that Part).
 
 _Authority for off-market purchase_
 
-**694** **Authority for off-market purchase**
+**694****Authority for off-market purchase**
 
 (1) A company may only make an off-market purchase of its own shares in
 pursuance of a contract approved prior to the purchase in accordance with this
@@ -21712,7 +21712,7 @@ revoked or from time to time renewed by a special resolution of the company.
 
 333
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 4 — Purchase of own shares_
 
@@ -21725,7 +21725,7 @@ section is subject to—
 section 695 (exercise of voting rights), and
 section 696 (disclosure of details of contract).
 
-**695** **Resolution authorising off-market purchase: exercise of voting rights**
+**695****Resolution authorising off-market purchase: exercise of voting rights**
 
 (1) This section applies to a resolution to confer, vary, revoke or renew authority
 for the purposes of section 694 (authority for off-market purchase of own
@@ -21751,7 +21751,7 @@ otherwise than on a poll;
 (c) a vote and a demand for a poll by a person as proxy for a member are
 the same respectively as a vote and a demand by the member.
 
-**696** **Resolution authorising off-market purchase: disclosure of details of contract**
+**696****Resolution authorising off-market purchase: disclosure of details of contract**
 
 (1) This section applies in relation to a resolution to confer, vary, revoke or renew
 authority for the purposes of section 694 (authority for off-market purchase of
@@ -21778,7 +21778,7 @@ of the members holding shares to which the contract relates.
 
 334
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 4 — Purchase of own shares_
@@ -21790,7 +21790,7 @@ itself.
 (5) The resolution is not validly passed if the requirements of this section are not
 complied with
 
-**697** **Variation of contract for off-market purchase**
+**697****Variation of contract for off-market purchase**
 
 (1) A company may only agree to a variation of a contract authorised under
 section 694 (authority for off-market purchase) if the variation is approved in
@@ -21811,7 +21811,7 @@ section is subject to—
 section 698 (exercise of voting rights), and
 section 699 (disclosure of details of variation).
 
-**698** **Resolution authorising variation: exercise of voting rights**
+**698****Resolution authorising variation: exercise of voting rights**
 
 (1) This section applies to a resolution to confer, vary, revoke or renew authority
 for the purposes of section 697 (variation of contract for off-market purchase of
@@ -21844,11 +21844,11 @@ the same respectively as a vote and a demand by the member.
 
 335
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 4 — Purchase of own shares_
 
-**699** **Resolution authorising variation: disclosure of details of variation**
+**699****Resolution authorising variation: disclosure of details of variation**
 
 (1) This section applies in relation to a resolution under section 697 (variation of
 contract for off-market purchase of own shares).
@@ -21879,7 +21879,7 @@ variation itself.
 (6) The resolution is not validly passed if the requirements of this section are not
 complied with.
 
-**700** **Release of company’s rights under contract for off-market purchase**
+**700****Release of company’s rights under contract for off-market purchase**
 
 (1) An agreement by a company to release its rights under a contract approved
 under section 694 (authorisation of off-market purchase) is void unless the
@@ -21909,14 +21909,14 @@ to a resolution authorising a proposed variation.
 
 336
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 4 — Purchase of own shares_
 
 _Authority for market purchase_
 
-**701** **Authority for market purchase**
+**701****Authority for market purchase**
 
 (1) A company may only make a market purchase of its own shares if the purchase
 has first been authorised by a resolution of the company.
@@ -21957,7 +21957,7 @@ a resolution under this section.
 
 _Supplementary provisions_
 
-**702** **Copy of contract or memorandum to be available for inspection**
+**702****Copy of contract or memorandum to be available for inspection**
 
 (1) This section applies where a company has entered into—
 (a) a contract approved under section 694 (authorisation of contract for off-
@@ -21977,7 +21977,7 @@ terms.
 
 337
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 4 — Purchase of own shares_
 
@@ -22006,7 +22006,7 @@ kept open to inspection without charge—
 (7) The provisions of this section apply to a variation of a contract as they apply to
 the original contract.
 
-**703** **Enforcement of right to inspect copy or memorandum**
+**703****Enforcement of right to inspect copy or memorandum**
 
 (1) If default is made in complying with section 702(2), (3) or (4) or default is made
 for 14 days in complying with section 702(5), or an inspection required under
@@ -22022,14 +22022,14 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 (3) In the case of refusal of an inspection required under section 702(6) the court
 may by order compel an immediate inspection.
 
-**704** **No assignment of company’s right to purchase own shares**
+**704****No assignment of company’s right to purchase own shares**
 
 The rights of a company under a contract authorised under—
 (a) section 694 (authority for off-market purchase), or
 (b) section 701 (authority for market purchase)
 are not capable of being assigned.
 
-**705** **Payments apart from purchase price to be made out of distributable profits**
+**705****Payments apart from purchase price to be made out of distributable profits**
 
 (1) A payment made by a company in consideration of—
 (a) acquiring any right with respect to the purchase of its own shares in
@@ -22043,7 +22043,7 @@ pursuance of a contingent purchase contract approved under section
 
 338
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 4 — Purchase of own shares_
@@ -22064,7 +22064,7 @@ Chapter;
 variation may be made under this Chapter;
 (c) in a case within subsection (1)(c), the purported release is void.
 
-**706** **Treatment of shares purchased**
+**706****Treatment of shares purchased**
 
 Where a limited company makes a purchase of its own shares in accordance
 with this Chapter, then—
@@ -22075,7 +22075,7 @@ with in accordance with Chapter 6;
 (ii) the amount of the company’s issued share capital is diminished
 accordingly by the nominal value of the shares cancelled.
 
-**707** **Return to registrar of purchase of own shares**
+**707****Return to registrar of purchase of own shares**
 
 (1) Where a company purchases shares under this Chapter, it must deliver a
 return to the registrar within the period of 28 days beginning with the date on
@@ -22108,7 +22108,7 @@ different contracts may be included in a single return.
 
 339
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 4 — Purchase of own shares_
 
@@ -22125,7 +22125,7 @@ every officer of the company who is in default.
 and, for continued contravention, a daily default fine not exceeding
 one-tenth of the statutory maximum.
 
-**708** **Notice to registrar of cancellation of shares**
+**708****Notice to registrar of cancellation of shares**
 
 (1) If on the purchase by a company of any of its own shares in accordance with
 this Part—
@@ -22167,18 +22167,18 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 340
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 5 — Redemption or purchase by private company out of capital_
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
 R EDEMPTION  OR  PURCHASE  BY  PRIVATE  COMPANY  OUT  OF  CAPITAL
 
 _Introductory_
 
-**709** **Power of private limited company to redeem or purchase own shares out of**
+**709****Power of private limited company to redeem or purchase own shares out of **
 **capital**
 
 (1) A private limited company may in accordance with this Chapter, but subject to
@@ -22192,7 +22192,7 @@ payment out of capital.
 
 _The permissible capital payment_
 
-**710** **The permissible capital payment**
+**710****The permissible capital payment**
 
 (1) The payment that may, in accordance with this Chapter, be made by a
 company out of capital in respect of the redemption or purchase of its own
@@ -22205,7 +22205,7 @@ is required to meet the price of redemption or purchase.
 (2) That is referred to below in this Chapter as “the permissible capital payment”
 for the shares.
 
-**711** **Available profits**
+**711****Available profits**
 
 (1) For the purposes of this Chapter the available profits of the company, in
 relation to the redemption or purchase of any shares, are the profits of the
@@ -22215,7 +22215,7 @@ company that are available for distribution (within the meaning of Part 23).
 amount of any such profits, shall be determined in accordance with section 712
 instead of in accordance with sections 836 to 842 in that Part.
 
-**712** **Determination of available profits**
+**712****Determination of available profits**
 
 (1) The available profits of the company are determined as follows.
 
@@ -22234,7 +22234,7 @@ by regulations under section 396;
 
 341
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 5 — Redemption or purchase by private company out of capital_
 
@@ -22270,7 +22270,7 @@ section 714.
 
 _Requirements for payment out of capital_
 
-**713** **Requirements for payment out of capital**
+**713****Requirements for payment out of capital**
 
 (1) A payment out of capital by a private company for the redemption or purchase
 of its own shares is not lawful unless the requirements of the following sections
@@ -22284,7 +22284,7 @@ inspection).
 (2) This is subject to any order of the court under section 721 (power of court to
 extend period for compliance on application by persons objecting to payment).
 
-**714** **Directors’ statement and auditor’s report**
+**714****Directors’ statement and auditor’s report**
 
 (1) The company’s directors must make a statement in accordance with this
 section.
@@ -22299,7 +22299,7 @@ the shares in question.
 
 342
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 5 — Redemption or purchase by private company out of capital_
@@ -22338,7 +22338,7 @@ in accordance with sections 710 to 712, and
 directors in their statement as to any of the matters mentioned in
 subsection (3) above is unreasonable in all the circumstances.
 
-**715** **Directors’ statement: offence if no reasonable grounds for opinion**
+**715****Directors’ statement: offence if no reasonable grounds for opinion**
 
 (1) If the directors make a statement under section 714 without having reasonable
 grounds for the opinion expressed in it, an offence is committed by every
@@ -22362,11 +22362,11 @@ maximum (or both).
 
 343
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 5 — Redemption or purchase by private company out of capital_
 
-**716** **Payment to be approved by special resolution**
+**716****Payment to be approved by special resolution**
 
 (1) The payment out of capital must be approved by a special resolution of the
 company.
@@ -22378,7 +22378,7 @@ the date on which the directors make the statement required by section 714.
 section 717 (exercise of voting rights), and
 section 718 (disclosure of directors’ statement and auditors’ report).
 
-**717** **Resolution authorising payment: exercise of voting rights**
+**717****Resolution authorising payment: exercise of voting rights**
 
 (1) This section applies to a resolution under section 716 (authority for payment
 out of capital for redemption or purchase of own shares).
@@ -22403,7 +22403,7 @@ otherwise than on a poll;
 (c) a vote and a demand for a poll by a person as proxy for a member are
 the same respectively as a vote and a demand by the member.
 
-**718** **Resolution authorising payment: disclosure of directors’ statement and**
+**718****Resolution authorising payment: disclosure of directors’ statement and **
 **auditor’s report**
 
 (1) This section applies to a resolution under section 716 (resolution authorising
@@ -22426,12 +22426,12 @@ inspection by members of the company at the meeting.
 
 344
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 5 — Redemption or purchase by private company out of capital_
 
-**719** **Public notice of proposed payment**
+**719****Public notice of proposed payment**
 
 (1) Within the week immediately following the date of the resolution under
 section 716 the company must cause to be published in the Gazette a notice—
@@ -22464,7 +22464,7 @@ registered.
 the company must deliver to the registrar a copy of the directors’ statement
 and auditor’s report required by section 714.
 
-**720** **Directors’ statement and auditor’s report to be available for inspection**
+**720**** Directors’ statement and auditor’s report to be available for inspection**
 
 (1) The directors’ statement and auditor’s report must be kept available for
 inspection throughout the period—
@@ -22492,7 +22492,7 @@ unless they have at all times been kept at the company’s registered office.
 
 345
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 5 — Redemption or purchase by private company out of capital_
 
@@ -22514,7 +22514,7 @@ may by order compel an immediate inspection.
 
 _Objection to payment by members or creditors_
 
-**721** **Application to court to cancel resolution**
+**721****Application to court to cancel resolution**
 
 (1) Where a private company passes a special resolution approving a payment out
 of capital for the redemption or purchase of any of its shares—
@@ -22559,7 +22559,7 @@ consequence of that provision.
 
 346
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 5 — Redemption or purchase by private company out of capital_
@@ -22567,7 +22567,7 @@ _Chapter 5 — Redemption or purchase by private company out of capital_
 (7) The court’s order may, if the court thinks fit, require the company not to make
 any, or any specified, amendments of its articles without the leave of the court.
 
-**722** **Notice to registrar of court application or order**
+**722****Notice to registrar of court application or order**
 
 (1) On making an application under section 721 (application to court to cancel
 resolution) the applicants, or the person making the application on their behalf,
@@ -22594,7 +22594,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 _Supplementary provisions_
 
-**723** **When payment out of capital to be made**
+**723****When payment out of capital to be made**
 
 (1) The payment out of capital must be made—
 (a) no earlier than five weeks after the date on which the resolution under
@@ -22604,11 +22604,11 @@ section 716 is passed, and
 (2) This is subject to any exercise of the court’s powers under section 721(5) (power
 to alter or extend time where resolution confirmed after objection).
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
 T REASURY  SHARES
 
-**724** **Treasury shares**
+**724****Treasury shares**
 
 (1) This section applies where—
 (a) a limited company makes a purchase of its own shares in accordance
@@ -22625,7 +22625,7 @@ with Chapter 4,
 
 347
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 6 — Treasury shares_
 
@@ -22653,7 +22653,7 @@ in which this section applies, and
 (b) have been held by the company continuously since they were so
 purchased (or treated as purchased).
 
-**725** **Treasury shares: maximum holdings**
+**725****Treasury shares: maximum holdings**
 
 (1) Where a company has shares of only one class, the aggregate nominal value of
 shares held as treasury shares must not at any time exceed 10% of the nominal
@@ -22676,7 +22676,7 @@ accordance with section 724, a contravention by the company of subsection (1)
 or (2) above does not render the acquisition void under section 658 (general
 rule against limited company acquiring its own shares).
 
-**726** **Treasury shares: exercise of rights**
+**726****Treasury shares: exercise of rights**
 
 (1) This section applies where shares are held by a company as treasury shares.
 
@@ -22691,7 +22691,7 @@ This applies, in particular, to any right to attend or vote at meetings.
 
 348
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 6 — Treasury shares_
@@ -22711,7 +22711,7 @@ shares (if they are redeemable shares).
 treated as if purchased by the company, at the time they were allotted, in
 circumstances in which section 724(1) (treasury shares) applied.
 
-**727** **Treasury shares: disposal**
+**727****Treasury shares: disposal**
 
 (1) Where shares are held as treasury shares, the company may at any time—
 (a) sell the shares (or any of them) for a cash consideration, or
@@ -22741,7 +22741,7 @@ transfer the shares to which the notice relates except to that person.
 
 (5) An order under this section is subject to negative resolution procedure.
 
-**728** **Treasury shares: notice of disposal**
+**728****Treasury shares: notice of disposal**
 
 (1) Where shares held by a company as treasury shares—
 (a) are sold, or
@@ -22759,7 +22759,7 @@ the shares are disposed of.
 
 349
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 6 — Treasury shares_
 
@@ -22777,7 +22777,7 @@ every officer of the company who is in default.
 and, for continued contravention, a daily default fine not exceeding
 one-tenth of the statutory maximum.
 
-**729** **Treasury shares: cancellation**
+**729****Treasury shares: cancellation**
 
 (1) Where shares are held as treasury shares, the company may at any time cancel
 the shares (or any of them).
@@ -22804,7 +22804,7 @@ shares cancelled.
 shares under this section without complying with the provisions of Chapter 10
 of Part 17 (reduction of share capital).
 
-**730** **Treasury shares: notice of cancellation**
+**730****Treasury shares: notice of cancellation**
 
 (1) Where shares held by a company as treasury shares are cancelled, the company
 must deliver a return to the registrar not later than 28 days after the shares are
@@ -22828,7 +22828,7 @@ return.
 
 350
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 6 — Treasury shares_
@@ -22854,7 +22854,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**731** **Treasury shares: treatment of proceeds of sale**
+**731****Treasury shares: treatment of proceeds of sale**
 
 (1) Where shares held as treasury shares are sold, the proceeds of sale must be
 dealt with in accordance with this section.
@@ -22875,7 +22875,7 @@ application of a weighted average price method, and
 (b) if the shares were allotted to the company as fully paid bonus shares,
 the purchase price paid for them is treated as nil.
 
-**732** **Treasury shares: offences**
+**732****Treasury shares: offences**
 
 (1) If a company contravenes any of the provisions of this Chapter (except section
 730 (notice of cancellation)), an offence is committed by—
@@ -22893,15 +22893,15 @@ the purchase price paid for them is treated as nil.
 
 351
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 7 — Supplementary provisions_
 
-**C** **HAPTER** **7**
+**CHAPTER 7**
 
 S UPPLEMENTARY  PROVISIONS
 
-**733** **The capital redemption reserve**
+**733****The capital redemption reserve**
 
 (1) In the following circumstances a company must transfer amounts to a reserve,
 called the “capital redemption reserve”.
@@ -22935,7 +22935,7 @@ be allotted to members as fully paid bonus shares.
 of a company’s share capital apply as if the capital redemption reserve were
 part of its paid up share capital.
 
-**734** **Accounting consequences of payment out of capital**
+**734****Accounting consequences of payment out of capital**
 
 (1) This section applies where a payment out of capital is made in accordance with
 Chapter 5 (redemption or purchase of own shares by private company out of
@@ -22960,7 +22960,7 @@ by the company,
 
 352
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 
 _Chapter 7 — Supplementary provisions_
@@ -22975,7 +22975,7 @@ capital under this Chapter, the references in subsections (2) and (3) to the
 permissible capital payment are to be read as referring to the aggregate of that
 payment and those proceeds.
 
-**735** **Effect of company’s failure to redeem or purchase**
+**735****Effect of company’s failure to redeem or purchase**
 
 (1) This section applies where a company—
 (a) issues shares on terms that they are or are liable to be redeemed, or
@@ -23025,18 +23025,18 @@ members.
 
 353
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 18 — Acquisition by limited company of its own shares_
 _Chapter 7 — Supplementary provisions_
 
-**736** **Meaning of “distributable profits”**
+**736****Meaning of “distributable profits”**
 
 In this Part (except in Chapter 2 (financial assistance): see section 683)
 “distributable profits”, in relation to the making of any payment by a company,
 means profits out of which the company could lawfully make a distribution
 (within the meaning given by section 830) equal in value to the payment.
 
-**737** **General power to make further provision by regulations**
+**737****General power to make further provision by regulations**
 
 (1) The Secretary of State may by regulations modify the provisions of this Part.
 
@@ -23050,19 +23050,19 @@ repeals in other provisions of this Act, or in other enactments.
 
 (4) Regulations under this section are subject to affirmative resolution procedure.
 
-**P** **ART** **19**
+**PART 19**
 
 D EBENTURES
 
 _General provisions_
 
-**738** **Meaning of “debenture”**
+**738****Meaning of “debenture”**
 
 In the Companies Acts “debenture” includes debenture stock, bonds and any
 other securities of a company, whether or not constituting a charge on the
 assets of the company.
 
-**739** **Perpetual debentures**
+**739****Perpetual debentures**
 
 (1) A condition contained in debentures, or in a deed for securing debentures, is
 not invalid by reason only that the debentures are made—
@@ -23075,7 +23075,7 @@ any rule of equity to the contrary notwithstanding.
 (2) Subsection (1) applies to debentures whenever issued and to deeds whenever
 executed.
 
-**740** **Enforcement of contract to subscribe for debentures**
+**740****Enforcement of contract to subscribe for debentures**
 
 A contract with a company to take up and pay for debentures of the company
 may be enforced by an order for specific performance.
@@ -23085,12 +23085,12 @@ may be enforced by an order for specific performance.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 19 — Debentures_
 354
 
-**741** **Registration of allotment of debentures**
+**741****Registration of allotment of debentures**
 
 (1) A company must register an allotment of debentures as soon as practicable and
 in any event within two months after the date of the allotment.
@@ -23107,7 +23107,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 (4) For the duties of the company as to the issue of the debentures, or certificates
 of debenture stock, see Part 21 (certification and transfer of securities)
 
-**742** **Debentures to bearer (Scotland)**
+**742****Debentures to bearer (Scotland)**
 
 Notwithstanding anything in the statute of the Scots Parliament of 1696,
 chapter 25, debentures to bearer issued in Scotland are valid and binding
@@ -23115,7 +23115,7 @@ according to their terms.
 
 _Register of debenture holders_
 
-**743** **Register of debenture holders**
+**743****Register of debenture holders**
 
 (1) Any register of debenture holders of a company that is kept by the company
 must be kept available for inspection—
@@ -23149,11 +23149,11 @@ Kingdom, or
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 19 — Debentures_
 355
 
-**744** **Register of debenture holders: right to inspect and require copy**
+**744****Register of debenture holders: right to inspect and require copy**
 
 (1) Every register of debenture holders of a company must, except when duly
 closed, be open to the inspection—
@@ -23196,7 +23196,7 @@ duplicate—
 Kingdom, or
 (b) of any part of such a register.
 
-**745** **Register of debenture holders: response to request for inspection or copy**
+**745****Register of debenture holders: response to request for inspection or copy**
 
 (1) Where a company receives a request under section 744 (register of debenture
 holders: right to inspect and require copy), it must within five working days
@@ -23214,7 +23214,7 @@ or copy is not sought for a proper purpose—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 19 — Debentures_
 356
@@ -23236,7 +23236,7 @@ not to comply with the request, the company must comply with the request
 immediately upon the court giving its decision or, as the case may be, the
 proceedings being discontinued.
 
-**746** **Register of debenture holders: refusal of inspection or default in providing**
+**746****Register of debenture holders: refusal of inspection or default in providing **
 **copy**
 
 (1) If an inspection required under section 744 (register of debenture holders: right
@@ -23255,7 +23255,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 immediate inspection or, as the case may be, direct that the copy required be
 sent to the person requesting it.
 
-**747** **Register of debenture holders: offences in connection with request for or**
+**747****Register of debenture holders: offences in connection with request for or **
 **disclosure of information**
 
 (1) It is an offence for a person knowingly or recklessly to make in a request under
@@ -23280,7 +23280,7 @@ two years or a fine (or both);
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 19 — Debentures_
 357
 
@@ -23292,7 +23292,7 @@ statutory maximum (or both);
 exceeding six months, or to a fine not exceeding the statutory
 maximum (or both).
 
-**748** **Time limit for claims arising from entry in register**
+**748****Time limit for claims arising from entry in register**
 
 (1) Liability incurred by a company—
 (a) from the making or deletion of an entry in the register of debenture
@@ -23307,7 +23307,7 @@ expiry of that period).
 
 _Supplementary provisions_
 
-**749** **Right of debenture holder to copy of deed**
+**749****Right of debenture holder to copy of deed**
 
 (1) Any holder of debentures of a company is entitled, on request and on payment
 of such fee as may be prescribed, to be provided with a copy of any trust deed
@@ -23324,7 +23324,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 (4) In the case of any such default the court may direct that the copy required be
 sent to the person requiring it.
 
-**750** **Liability of trustees of debentures**
+**750****Liability of trustees of debentures**
 
 (1) Any provision contained in—
 (a) a trust deed for securing an issue of debentures, or
@@ -23344,7 +23344,7 @@ to be done by a trustee before the giving of the release;
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 19 — Debentures_
 358
@@ -23359,7 +23359,7 @@ dying or ceasing to act.
 
 (3) This section is subject to section 751 (saving for certain older provisions).
 
-**751** **Liability of trustees of debentures: saving for certain older provisions**
+**751****Liability of trustees of debentures: saving for certain older provisions**
 
 (1) Section 750 (liability of trustees of debentures) does not operate—
 (a) to invalidate any provision in force on the relevant date so long as any
@@ -23391,7 +23391,7 @@ at a meeting summoned for the purpose.
 provisions of the deed or, if the deed makes no provision for summoning
 meetings, in a manner approved by the court.
 
-**752** **Power to re-issue redeemed debentures**
+**752****Power to re-issue redeemed debentures**
 
 (1) Where a company has redeemed debentures previously issued, then unless—
 (a) provision to the contrary (express or implied) is contained in the
@@ -23407,7 +23407,7 @@ This subsection is deemed always to have had effect.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 19 — Debentures_
 359
 
@@ -23428,14 +23428,14 @@ duty or any penalty in respect of it, unless he had notice (or, but for his
 negligence, might have discovered) that the debenture was not duly stamped.
 In that case the company is liable to pay the proper stamp duty and penalty.
 
-**753** **Deposit of debentures to secure advances**
+**753****Deposit of debentures to secure advances**
 
 Where a company has deposited any of its debentures to secure advances from
 time to time on current account or otherwise, the debentures are not treated as
 redeemed by reason only of the company’s account having ceased to be in
 debit while the debentures remained so deposited.
 
-**754** **Priorities where debentures secured by floating charge**
+**754****Priorities where debentures secured by floating charge**
 
 (1) This section applies where debentures of a company registered in England and
 Wales or Northern Ireland are secured by a charge that, as created, was a
@@ -23463,20 +23463,20 @@ assets of the company available for payment of general creditors.
 
 360
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 20 — Private and public companies_
 
 _Chapter 1 — Prohibition of public offers by private companies_
 
-**P** **ART** **20**
+**PART 20**
 
 P RIVATE  AND  PUBLIC  COMPANIES
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 P ROHIBITION  OF  PUBLIC  OFFERS  BY  PRIVATE  COMPANIES
 
-**755** **Prohibition of public offers by private company**
+**755****Prohibition of public offers by private company**
 
 (1) A private company limited by shares or limited by guarantee and having a
 share capital must not—
@@ -23504,7 +23504,7 @@ in the case of an offer made on different days, first made).
 
 (5) In this Chapter “securities” means shares or debentures.
 
-**756** **Meaning of “offer to the public”**
+**756****Meaning of “offer to the public”**
 
 (1) This section explains what is meant in this Chapter by an offer of securities to
 the public.
@@ -23532,7 +23532,7 @@ it is made on terms allowing that person to renounce his rights, the
 
 361
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 20 — Private and public companies_
 _Chapter 1 — Prohibition of public offers by private companies_
 
@@ -23559,7 +23559,7 @@ beneficiary is a person within any of paragraphs (a) to (d).
 person’s spouse or civil partner and children (including step-children) and
 their descendants.
 
-**757** **Enforcement of prohibition: order restraining proposed contravention**
+**757****Enforcement of prohibition: order restraining proposed contravention**
 
 (1) If it appears to the court—
 (a) on an application under this section, or
@@ -23576,7 +23576,7 @@ contravening that section.
 (a) a member or creditor of the company, or
 (b) the Secretary of State.
 
-**758** **Enforcement of prohibition: orders available to the court after contravention**
+**758****Enforcement of prohibition: orders available to the court after contravention**
 
 (1) This section applies if it appears to the court—
 (a) on an application under this section, or
@@ -23597,7 +23597,7 @@ a public company, and
 
 362
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 20 — Private and public companies_
 
 _Chapter 1 — Prohibition of public offers by private companies_
@@ -23619,7 +23619,7 @@ made (or, if the offer was made over a period, at any time during that
 period), or
 (c) the Secretary of State.
 
-**759** **Enforcement of prohibition: remedial order**
+**759****Enforcement of prohibition: remedial order**
 
 (1) A “remedial order” is an order for the purpose of putting a person affected by
 anything done in contravention of section 755 (prohibition of public offers by
@@ -23648,7 +23648,7 @@ person to whom the company allotted or agreed to allot them.
 (5) Where a remedial order is made against the company itself, the court may
 provide for the reduction of the company’s capital accordingly.
 
-**760** **Validity of allotment etc not affected**
+**760****Validity of allotment etc not affected**
 
 Nothing in this Chapter affects the validity of any allotment or sale of securities
 or of any agreement to allot or sell securities.
@@ -23660,15 +23660,15 @@ or of any agreement to allot or sell securities.
 
 363
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 20 — Private and public companies_
 _Chapter 2 — Minimum share capital requirement for public companies_
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 M INIMUM  SHARE  CAPITAL  REQUIREMENT  FOR  PUBLIC  COMPANIES
 
-**761** **Public company: requirement as to minimum share capital**
+**761****Public company: requirement as to minimum share capital**
 
 (1) A company that is a public company (otherwise than by virtue of re-
 registration as a public company) must not do business or exercise any
@@ -23688,7 +23688,7 @@ shall not be taken into account unless paid up as to—
 conclusive evidence that the company is entitled to do business and exercise
 any borrowing powers.
 
-**762** **Procedure for obtaining certificate**
+**762****Procedure for obtaining certificate**
 
 (1) An application for a certificate under section 761 must—
 (a) state that the nominal value of the company’s allotted share capital is
@@ -23706,7 +23706,7 @@ requirements for the issue of a certificate under section 761.
 (3) The registrar may accept the statement of compliance as sufficient evidence of
 the matters stated in it.
 
-**763** **The authorised minimum**
+**763****The authorised minimum**
 
 (1) “The authorised minimum”, in relation to the nominal value of a public
 company’s allotted share capital is—
@@ -23727,7 +23727,7 @@ State to be appropriate.
 
 364
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 20 — Private and public companies_
 
 _Chapter 2 — Minimum share capital requirement for public companies_
@@ -23740,7 +23740,7 @@ rate of exchange to the sterling amount and rounding to the nearest 100 euros.
 (6) This section has effect subject to any exercise of the power conferred by section
 764 (power to alter authorised minimum).
 
-**764** **Power to alter authorised minimum**
+**764****Power to alter authorised minimum**
 
 (1) The Secretary of State may by order—
 (a) alter the sterling amount of the authorised minimum, and
@@ -23768,7 +23768,7 @@ days for different purposes.
 
 (4) An order under this section is subject to affirmative resolution procedure.
 
-**765** **Authorised minimum: application of initial requirement**
+**765****Authorised minimum: application of initial requirement**
 
 (1) The initial requirement for a public company to have allotted share capital of a
 nominal value not less than the authorised minimum, that is—
@@ -23793,7 +23793,7 @@ denominated in a currency other than sterling or, as the case may be, euros.
 
 365
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 20 — Private and public companies_
 _Chapter 2 — Minimum share capital requirement for public companies_
 
@@ -23803,7 +23803,7 @@ it must elect in its application for a trading certificate or, as the case may b
 re-registration as a public company which is to be the currency by reference to
 which the matter is determined.
 
-**766** **Authorised minimum: application where shares denominated in different**
+**766****Authorised minimum: application where shares denominated in different **
 **currencies etc**
 
 (1) The Secretary of State may make provision by regulations as to the application
@@ -23832,7 +23832,7 @@ consequence of cancellation of shares).
 
 (6) Regulations under this section are subject to negative resolution procedure.
 
-**767** **Consequences of doing business etc without a trading certificate**
+**767****Consequences of doing business etc without a trading certificate**
 
 (1) If a company does business or exercises any borrowing powers in
 contravention of section 761, an offence is committed by—
@@ -23860,7 +23860,7 @@ by reason of the company’s failure to comply with its obligations.
 
 366
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 20 — Private and public companies_
 
 _Chapter 2 — Minimum share capital requirement for public companies_
@@ -23868,17 +23868,17 @@ _Chapter 2 — Minimum share capital requirement for public companies_
 (4) The directors who are so liable are those who were directors at the time the
 company entered into the transaction.
 
-**P** **ART** **21**
+**PART 21**
 
 C ERTIFICATION  AND  TRANSFER  OF  SECURITIES
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
-C ERTIFICATION  AND  TRANSFER  OF  SECURITIES : GENERAL
+C ERTIFICATION  AND  TRANSFER  OF  SECURITIES: GENERAL
 
 _Share certificates_
 
-**768** **Share certificate to be evidence of title**
+**768****Share certificate to be evidence of title**
 
 (1) In the case of a company registered in England and Wales or Northern Ireland,
 a certificate under the common seal of the company specifying any shares held
@@ -23894,7 +23894,7 @@ is sufficient evidence, unless the contrary is shown, of his title to the shares
 
 _Issue of certificates etc on allotment_
 
-**769** **Duty of company as to issue of certificates etc on allotment**
+**769****Duty of company as to issue of certificates etc on allotment**
 
 (1) A company must, within two months after the allotment of any of its shares,
 debentures or debenture stock, complete and have ready for delivery—
@@ -23925,13 +23925,13 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 367
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 21 — Certification and transfer of securities_
 _Chapter 1 — Certification and transfer of securities: general_
 
 _Transfer of securities_
 
-**770** **Registration of transfer**
+**770****Registration of transfer**
 
 (1) A company may not register a transfer of shares in or debentures of the
 company unless—
@@ -23945,7 +23945,7 @@ or
 shareholder or debenture holder a person to whom the right to any shares in
 or debentures of the company has been transmitted by operation of law.
 
-**771** **Procedure on transfer being lodged**
+**771****Procedure on transfer being lodged**
 
 (1) When a transfer of shares in or debentures of a company has been lodged with
 the company, the company must either—
@@ -23975,7 +23975,7 @@ warrant in respect of the shares (see section 779);
 (b) in relation to the transmission of shares or debentures by operation of
 law.
 
-**772** **Transfer of shares on application of transferor**
+**772****Transfer of shares on application of transferor**
 
 On the application of the transferor of any share or interest in a company, the
 company shall enter in its register of members the name of the transferee in the
@@ -23989,12 +23989,12 @@ entry were made by the transferee.
 
 368
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 21 — Certification and transfer of securities_
 
 _Chapter 1 — Certification and transfer of securities: general_
 
-**773** **Execution of share transfer by personal representative**
+**773****Execution of share transfer by personal representative**
 
 An instrument of transfer of the share or other interest of a deceased member
 of a company—
@@ -24003,7 +24003,7 @@ representative is not himself a member of the company, and
 (b) is as effective as if the personal representative had been such a member
 at the time of the execution of the instrument.
 
-**774** **Evidence of grant of probate etc**
+**774****Evidence of grant of probate etc**
 
 The production to a company of any document that is by law sufficient
 evidence of the grant of—
@@ -24012,7 +24012,7 @@ evidence of the grant of—
 (c) confirmation as executor of a deceased person,
 shall be accepted by the company as sufficient evidence of the grant.
 
-**775** **Certification of instrument of transfer**
+**775****Certification of instrument of transfer**
 
 (1) The certification by a company of an instrument of transfer of any shares in, or
 debentures of, the company is to be taken as a representation by the company
@@ -24052,13 +24052,13 @@ the company’s behalf.
 
 369
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 21 — Certification and transfer of securities_
 _Chapter 1 — Certification and transfer of securities: general_
 
 _Issue of certificates etc on transfer_
 
-**776** **Duty of company as to issue of certificates etc on transfer**
+**776****Duty of company as to issue of certificates etc on transfer**
 
 (1) A company must, within two months after the date on which a transfer of any
 of its shares, debentures or debenture stock is lodged with the company,
@@ -24091,7 +24091,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**777** **Issue of certificates etc: cases within the Stock Transfer Act 1982**
+**777****Issue of certificates etc: cases within the Stock Transfer Act 1982**
 
 (1) Section 776(1) (duty of company as to issue of certificates etc on transfer) does
 not apply in the case of a transfer to a person where, by virtue of regulations
@@ -24113,14 +24113,14 @@ transfer were a reference to the date of the notice.
 
 370
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 21 — Certification and transfer of securities_
 
 _Chapter 1 — Certification and transfer of securities: general_
 
 _Issue of certificates etc on allotment or transfer to financial institution_
 
-**778** **Issue of certificates etc: allotment or transfer to financial institution**
+**778****Issue of certificates etc: allotment or transfer to financial institution**
 
 (1) A company—
 (a) of which shares or debentures are allotted to a financial institution,
@@ -24144,7 +24144,7 @@ Financial Services and Markets Act 2000 (c. 8).
 
 _Share warrants_
 
-**779** **Issue and effect of share warrant to bearer**
+**779****Issue and effect of share warrant to bearer**
 
 (1) A company limited by shares may, if so authorised by its articles, issue with
 respect to any fully paid shares a warrant (a “share warrant”) stating that the
@@ -24160,7 +24160,7 @@ warrant.
 provide (by coupons or otherwise) for the payment of the future dividends on
 the shares included in the warrant.
 
-**780** **Duty of company as to issue of certificates on surrender of share warrant**
+**780****Duty of company as to issue of certificates on surrender of share warrant**
 
 (1) A company must, within two months of the surrender of a share warrant for
 cancellation, complete and have ready for delivery the certificates of the shares
@@ -24181,14 +24181,14 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 
 371
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 21 — Certification and transfer of securities_
 _Chapter 1 — Certification and transfer of securities: general_
 
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**781** **Offences in connection with share warrants (Scotland)**
+**781****Offences in connection with share warrants (Scotland)**
 
 (1) If in Scotland a person—
 (a) with intent to defraud, forges or alters, or offers, utters, disposes of, or
@@ -24232,7 +24232,7 @@ months or a fine not exceeding the statutory maximum (or both).
 
 _Supplementary provisions_
 
-**782** **Issue of certificates etc: court order to make good default**
+**782****Issue of certificates etc: court order to make good default**
 
 (1) If a company on which a notice has been served requiring it to make good any
 default in complying with—
@@ -24246,7 +24246,7 @@ allotment),
 
 372
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 21 — Certification and transfer of securities_
 
 _Chapter 1 — Certification and transfer of securities: general_
@@ -24267,13 +24267,13 @@ specified in the order.
 to the application are to be borne by the company or by an officer of it
 responsible for the default.
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 E VIDENCING  AND  TRANSFER  OF  TITLE  TO  SECURITIES  WITHOUT  WRITTEN  INSTRUMENT
 
 _Introductory_
 
-**783** **Scope of this Chapter**
+**783****Scope of this Chapter**
 
 In this Chapter—
 (a) “securities” means shares, debentures, debenture stock, loan stock,
@@ -24286,7 +24286,7 @@ securities;
 (d) references to transfer without a written instrument include, in relation
 to bearer securities, transfer without delivery.
 
-**784** **Power to make regulations**
+**784****Power to make regulations**
 
 (1) The power to make regulations under this Chapter is exercisable by the
 Treasury and the Secretary of State, either jointly or concurrently.
@@ -24299,7 +24299,7 @@ may require.
 
 _Powers exercisable_
 
-**785** **Provision enabling procedures for evidencing and transferring title**
+**785****Provision enabling procedures for evidencing and transferring title**
 
 (1) Provision may be made by regulations for enabling title to securities to be
 evidenced and transferred without a written instrument.
@@ -24313,7 +24313,7 @@ evidenced and transferred without a written instrument.
 
 373
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 21 — Certification and transfer of securities_
 _Chapter 2 — Evidencing and transfer of title to securities without written instrument_
 
@@ -24344,7 +24344,7 @@ for the operation of the procedures provided for by the regulations—
 (b) as to the transfer from them to other persons of their functions in
 relation to those procedures.
 
-**786** **Provision enabling or requiring arrangements to be adopted**
+**786****Provision enabling or requiring arrangements to be adopted**
 
 (1) Regulations under this Chapter may make provision—
 (a) enabling the members of a company or of any designated class of
@@ -24378,7 +24378,7 @@ issue or transfer of securities,
 
 374
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 21 — Certification and transfer of securities_
 
 _Chapter 2 — Evidencing and transfer of title to securities without written instrument_
@@ -24394,7 +24394,7 @@ statement is, or is not, evidence.
 in the regulations or by order under section 787; and
 (b) “specified” means specified in the regulations.
 
-**787** **Provision enabling or requiring arrangements to be adopted: order-making**
+**787****Provision enabling or requiring arrangements to be adopted: order-making **
 **powers**
 
 (1) The authority having power to make regulations under this Chapter may by
@@ -24414,7 +24414,7 @@ modifications.
 
 _Supplementary_
 
-**788** **Provision that may be included in regulations**
+**788****Provision that may be included in regulations**
 
 Regulations under this Chapter may—
 (a) modify or exclude any provision of any enactment or instrument, or
@@ -24429,7 +24429,7 @@ determined in accordance with them;
 person willing and able to discharge them any functions of the
 authority under the regulations.
 
-**789** **Duty to consult**
+**789****Duty to consult**
 
 Before making—
 (a) regulations under this Chapter, or
@@ -24444,26 +24444,26 @@ out such consultation as appears to it to be appropriate.
 
 375
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 21 — Certification and transfer of securities_
 _Chapter 2 — Evidencing and transfer of title to securities without written instrument_
 
-**790** **Resolutions to be forwarded to registrar**
+**790****Resolutions to be forwarded to registrar**
 
 Chapter 3 of Part 3 (resolutions affecting a company’s constitution) applies to
 a resolution passed by virtue of regulations under this Chapter.
 
-**P** **ART** **22**
+**PART 22**
 
 I NFORMATION  ABOUT  INTERESTS  IN  A  COMPANY ’ S  SHARES
 
 _Introductory_
 
-**791** **Companies to which this Part applies**
+**791****Companies to which this Part applies**
 
 This Part applies only to public companies.
 
-**792** **Shares to which this Part applies**
+**792****Shares to which this Part applies**
 
 (1) References in this Part to a company’s shares are to the company’s issued
 shares of a class carrying rights to vote in all circumstances at general meetings
@@ -24475,7 +24475,7 @@ shares.
 
 _Notice requiring information about interests in shares_
 
-**793** **Notice by company requiring information about interests in its shares**
+**793****Notice by company requiring information about interests in its shares**
 
 (1) A public company may give notice under this section to any person whom the
 company knows or has reasonable cause to believe—
@@ -24507,7 +24507,7 @@ other interest as may be required by the notice.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 22 — Information about interests in a company’s shares_
 376
@@ -24528,7 +24528,7 @@ hold it.
 (7) The information required by the notice must be given within such reasonable
 time as may be specified in the notice.
 
-**794** **Notice requiring information: order imposing restrictions on shares**
+**794****Notice requiring information: order imposing restrictions on shares**
 
 (1) Where—
 (a) a notice under section 793 (notice requiring information about interests
@@ -24552,7 +24552,7 @@ thinks fit.
 
 (4) Sections 798 to 802 make further provision about orders under this section.
 
-**795** **Notice requiring information: offences**
+**795****Notice requiring information: offences**
 
 (1) A person who—
 (a) fails to comply with a notice under section 793 (notice requiring
@@ -24572,7 +24572,7 @@ the requirement to give information was frivolous or vexatious.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 22 — Information about interests in a company’s shares_
 377
 
@@ -24587,7 +24587,7 @@ statutory maximum (or both);
 exceeding six months, or to a fine not exceeding the statutory
 maximum (or both).
 
-**796** **Notice requiring information: persons exempted from obligation to comply**
+**796****Notice requiring information: persons exempted from obligation to comply**
 
 (1) A person is not obliged to comply with a notice under section 793 (notice
 requiring information about interests in company’s shares) if he is for the time
@@ -24603,7 +24603,7 @@ imposed by that section.
 
 _Orders imposing restrictions on shares_
 
-**797** **Consequences of order imposing restrictions**
+**797****Consequences of order imposing restrictions**
 
 (1) The effect of an order under section 794 that shares are subject to restrictions is
 as follows—
@@ -24635,7 +24635,7 @@ restrictions in case of court-approved transfer).
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 22 — Information about interests in a company’s shares_
 378
@@ -24645,7 +24645,7 @@ protection of third parties), and
 (b) in the case of an interim order under section 794(3), to the terms of the
 order.
 
-**798** **Penalty for attempted evasion of restrictions**
+**798****Penalty for attempted evasion of restrictions**
 
 (1) This section applies where shares are subject to restrictions by virtue of an
 order under section 794.
@@ -24683,7 +24683,7 @@ section 799 or 800 (relaxation or removal of restrictions), and
 (b) in the case of an interim order under section 794(3), to the terms of the
 order.
 
-**799** **Relaxation of restrictions**
+**799****Relaxation of restrictions**
 
 (1) An application may be made to the court on the ground that an order directing
 that shares shall be subject to restrictions unfairly affects the rights of third
@@ -24700,7 +24700,7 @@ purpose of protecting the rights of third parties in respect of the shares, and
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 22 — Information about interests in a company’s shares_
 379
 
@@ -24708,7 +24708,7 @@ subject to such terms as it thinks fit, direct that such acts by such persons or
 descriptions of persons and for such purposes as may be set out in the order do
 not constitute a breach of the restrictions.
 
-**800** **Removal of restrictions**
+**800****Removal of restrictions**
 
 (1) An application may be made to the court for an order directing that the shares
 shall cease to be subject to restrictions.
@@ -24733,7 +24733,7 @@ relate to a right acquired or offer made before the transfer.
 that the shares shall cease to be subject to those restrictions, and
 (b) subsection (3) does not apply in relation to the making of such an order.
 
-**801** **Order for sale of shares**
+**801****Order for sale of shares**
 
 (1) The court may order that the shares subject to restrictions be sold, subject to the
 court’s approval as to the sale.
@@ -24753,7 +24753,7 @@ sale, or
 (5) On making an order under subsection (1) or (3) the court may order that the
 applicant’s costs (in Scotland, expenses) be paid out of the proceeds of sale.
 
-**802** **Application of proceeds of sale under court order**
+**802****Application of proceeds of sale under court order**
 
 (1) Where shares are sold in pursuance of an order of the court under section 801,
 the proceeds of the sale, less the costs of the sale, must be paid into court for the
@@ -24764,7 +24764,7 @@ benefit of the persons who are beneficially interested in the shares.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 22 — Information about interests in a company’s shares_
 380
@@ -24788,7 +24788,7 @@ those proceeds.
 
 _Power of members to require company to act_
 
-**803** **Power of members to require company to act**
+**803****Power of members to require company to act**
 
 (1) The members of a company may require it to exercise its powers under section
 793 (notice requiring information about interests in shares).
@@ -24810,7 +24810,7 @@ and
 those powers in the manner specified, and
 (c) must be authenticated by the person or persons making it.
 
-**804** **Duty of company to comply with requirement**
+**804****Duty of company to comply with requirement**
 
 (1) A company that is required under section 803 to exercise its powers under
 section 793 (notice requiring information about interests in company’s shares)
@@ -24829,11 +24829,11 @@ maximum.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 22 — Information about interests in a company’s shares_
 381
 
-**805** **Report to members on outcome of investigation**
+**805****Report to members on outcome of investigation**
 
 (1) On the conclusion of an investigation carried out by a company in pursuance
 of a requirement under section 803 the company must cause a report of the
@@ -24877,7 +24877,7 @@ for the purposes of the requirement, and
 (i) a response has been received by the company, or
 (ii) the time allowed for a response has elapsed.
 
-**806** **Report to members: offences**
+**806****Report to members: offences**
 
 (1) If default is made for 14 days in complying with section 805(5) (notice to
 registrar of place at which reports made available for inspection) an offence is
@@ -24893,7 +24893,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 22 — Information about interests in a company’s shares_
 382
@@ -24910,7 +24910,7 @@ officer of the company who is in default.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**807** **Right to inspect and request copy of reports**
+**807****Right to inspect and request copy of reports**
 
 (1) Any report prepared under section 805 must be open to inspection by any
 person without charge.
@@ -24936,7 +24936,7 @@ sent to the person requiring it.
 
 _Register of interests disclosed_
 
-**808** **Register of interests disclosed**
+**808****Register of interests disclosed**
 
 (1) The company must keep a register of information received by it in pursuance
 of a requirement imposed under section 793 (notice requiring information
@@ -24960,7 +24960,7 @@ it appear in chronological order.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 22 — Information about interests in a company’s shares_
 383
 
@@ -24977,7 +24977,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 affected with notice of, or put upon inquiry as to, the rights of any person in
 relation to any shares.
 
-**809** **Register to be kept available for inspection**
+**809****Register to be kept available for inspection**
 
 (1) The register kept under section 808 (register of interests disclosed) must be
 kept available for inspection—
@@ -25001,7 +25001,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**810** **Associated index**
+**810****Associated index**
 
 (1) Unless the register kept under section 808 (register of interests disclosed) is
 kept in such a form as itself to constitute an index, the company must keep an
@@ -25025,7 +25025,7 @@ the register.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 22 — Information about interests in a company’s shares_
 384
@@ -25035,7 +25035,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**811** **Rights to inspect and require copy of entries**
+**811****Rights to inspect and require copy of entries**
 
 (1) The register required to be kept under section 808 (register of interests
 disclosed), and any associated index, must be open to inspection by any person
@@ -25061,7 +25061,7 @@ behalf, and
 (iii) the purpose for which the information is to be used by that
 person.
 
-**812** **Court supervision of purpose for which rights may be exercised**
+**812****Court supervision of purpose for which rights may be exercised**
 
 (1) Where a company receives a request under section 811 (register of interests
 disclosed: right to inspect and require copy), it must—
@@ -25091,7 +25091,7 @@ is or may be subject to other requests made for a similar purpose (whether
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 22 — Information about interests in a company’s shares_
 385
 
@@ -25104,7 +25104,7 @@ identify the requests to which it applies.
 company must comply with the request immediately upon the court giving its
 decision or, as the case may be, the proceedings being discontinued.
 
-**813** **Register of interests disclosed: refusal of inspection or default in providing**
+**813****Register of interests disclosed: refusal of inspection or default in providing **
 **copy**
 
 (1) If an inspection required under section 811 (register of interests disclosed: right
@@ -25123,7 +25123,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 immediate inspection or, as the case may be, direct that the copy required be
 sent to the person requesting it.
 
-**814** **Register of interests disclosed: offences in connection with request for or**
+**814****Register of interests disclosed: offences in connection with request for or **
 **disclosure of information**
 
 (1) It is an offence for a person knowingly or recklessly to make in a request under
@@ -25155,12 +25155,12 @@ maximum (or both).
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 22 — Information about interests in a company’s shares_
 386
 
-**815** **Entries not to be removed from register**
+**815****Entries not to be removed from register**
 
 (1) Entries in the register kept under section 808 (register of interests disclosed)
 must not be deleted except in accordance with—
@@ -25180,13 +25180,13 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention of subsection (2), a daily default fine not exceeding
 one-tenth of level 3 on the standard scale.
 
-**816** **Removal of entries from register: old entries**
+**816****Removal of entries from register: old entries**
 
 A company may remove an entry from the register kept under section 808
 (register of interests disclosed) if more than six years have elapsed since the
 entry was made.
 
-**817** **Removal of entries from register: incorrect entry relating to third party**
+**817****Removal of entries from register: incorrect entry relating to third party**
 
 (1) This section applies where in pursuance of an obligation imposed by a notice
 under section 793 (notice requiring information about interests in company’s
@@ -25204,7 +25204,7 @@ court for an order directing the company to remove the entry in question from
 the register.
 The court may make such an order if it thinks fit.
 
-**818** **Adjustment of entry relating to share acquisition agreement**
+**818****Adjustment of entry relating to share acquisition agreement**
 
 (1) If a person who is identified in the register kept by a company under section
 808 (register of interests disclosed) as being a party to an agreement to which
@@ -25221,7 +25221,7 @@ name appears in the register as a party to the agreement.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 22 — Information about interests in a company’s shares_
 387
 
@@ -25231,7 +25231,7 @@ court for an order directing the company to include the information in question
 in the register.
 The court may make such an order if it thinks fit.
 
-**819** **Duty of company ceasing to be public company**
+**819****Duty of company ceasing to be public company**
 
 (1) If a company ceases to be a public company, it must continue to keep any
 register kept under section 808 (register of interests disclosed), and any
@@ -25249,7 +25249,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 _Meaning of interest in shares_
 
-**820** **Interest in shares: general**
+**820****Interest in shares: general**
 
 (1) This section applies to determine for the purposes of this Part whether a person
 has an interest in shares.
@@ -25285,7 +25285,7 @@ or
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 22 — Information about interests in a company’s shares_
 388
@@ -25298,7 +25298,7 @@ This applies whether the right or obligation is conditional or absolute.
 
 (8) It is immaterial that shares in which a person has an interest are unidentifiable.
 
-**821** **Interest in shares: right to subscribe for shares**
+**821****Interest in shares: right to subscribe for shares**
 
 (1) Section 793 (notice by company requiring information about interests in its
 shares) applies in relation to a person who has, or previously had, or is or was
@@ -25307,7 +25307,7 @@ in relation to a person who is or was interested in shares in that company.
 
 (2) References in that section to an interest in shares shall be read accordingly.
 
-**822** **Interest in shares: family interests**
+**822****Interest in shares: family interests**
 
 (1) For the purposes of this Part a person is taken to be interested in shares in
 which—
@@ -25317,7 +25317,7 @@ is interested.
 
 (2) In relation to Scotland “infant” means a person under the age of 18 years.
 
-**823** **Interest in shares: corporate interests**
+**823****Interest in shares: corporate interests**
 
 (1) For the purposes of this Part a person is taken to be interested in shares if a
 body corporate is interested in them and—
@@ -25340,7 +25340,7 @@ which would make him so entitled, or
 (b) he is under an obligation (whether or not subject to conditions) the
 fulfilment of which would make him so entitled.
 
-**824** **Interest in shares: agreement to acquire interests in a particular company**
+**824****Interest in shares: agreement to acquire interests in a particular company**
 
 (1) For the purposes of this Part an interest in shares may arise from an agreement
 between two or more persons that includes provision for the acquisition by any
@@ -25350,7 +25350,7 @@ between two or more persons that includes provision for the acquisition by any
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 22 — Information about interests in a company’s shares_
 389
 
@@ -25403,7 +25403,7 @@ or
 a company, provided the agreement is confined to that purpose and
 any matters incidental to it.
 
-**825** **Extent of obligation in case of share acquisition agreement**
+**825****Extent of obligation in case of share acquisition agreement**
 
 (1) For the purposes of this Part each party to an agreement to which section 824
 applies is treated as interested in all shares in the target company in which any
@@ -25414,7 +25414,7 @@ other party to the agreement is interested apart from the agreement (whether
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 22 — Information about interests in a company’s shares_
 390
@@ -25446,7 +25446,7 @@ section) and, if so, the number of those shares.
 
 _Other supplementary provisions_
 
-**826** **Information protected from wider disclosure**
+**826****Information protected from wider disclosure**
 
 (1) Information in respect of which a company is for the time being entitled to any
 exemption conferred by regulations under section 409(3) (information about
@@ -25460,13 +25460,13 @@ request copy of entries).
 (2) Where any such information is omitted from a report under section 805, that
 fact must be stated in the report.
 
-**827** **Reckoning of periods for fulfilling obligations**
+**827****Reckoning of periods for fulfilling obligations**
 
 Where the period allowed by any provision of this Part for fulfilling an
 obligation is expressed as a number of days, any day that is not a working day
 shall be disregarded in reckoning that period.
 
-**828** **Power to make further provision by regulations**
+**828****Power to make further provision by regulations**
 
 (1) The Secretary of State may by regulations amend—
 (a) the definition of shares to which this Part applies (section 792),
@@ -25478,7 +25478,7 @@ interests in its shares (section 793), and
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 22 — Information about interests in a company’s shares_
 391
 
@@ -25491,17 +25491,17 @@ to the Secretary of State to be appropriate.
 
 (3) Regulations under this section are subject to affirmative resolution procedure.
 
-**P** **ART** **23**
+**PART 23**
 
 D ISTRIBUTIONS
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 R ESTRICTIONS  ON  WHEN  DISTRIBUTIONS  MAY  BE  MADE
 
 _Introductory_
 
-**829** **Meaning of “distribution”**
+**829****Meaning of “distribution”**
 
 (1) In this Part “distribution” means every description of distribution of a
 company’s assets to its members, whether in cash or otherwise, subject to the
@@ -25521,7 +25521,7 @@ unrealised profits in accordance with Chapter 3, 4 or 5 of Part 18;
 
 _General rules_
 
-**830** **Distributions to be made only out of profits available for the purpose**
+**830****Distributions to be made only out of profits available for the purpose**
 
 (1) A company may only make a distribution out of profits available for the
 purpose.
@@ -25541,12 +25541,12 @@ etc: distributions out of accumulated revenue profits).
 
 392
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 23 — Distributions_
 
 _Chapter 1 — Restrictions on when distributions may be made_
 
-**831** **Net asset restriction on distributions by public companies**
+**831****Net asset restriction on distributions by public companies**
 
 (1) A public company may only make a distribution—
 (a) if the amount of its net assets is not less than the aggregate of its called-
@@ -25584,7 +25584,7 @@ etc: distributions out of accumulated revenue profits).
 
 _Distributions by investment companies_
 
-**832** **Distributions by investment companies out of accumulated revenue profits**
+**832****Distributions by investment companies out of accumulated revenue profits**
 
 (1) An investment company may make a distribution out of its accumulated,
 realised revenue profits if the following conditions are met.
@@ -25608,7 +25608,7 @@ to less than one and a half times that aggregate.
 
 393
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 23 — Distributions_
 _Chapter 1 — Restrictions on when distributions may be made_
 
@@ -25649,7 +25649,7 @@ and ending with the date of the distribution.
 (7) The company must not include any uncalled share capital as an asset in any
 accounts relevant for purposes of this section.
 
-**833** **Meaning of “investment company”**
+**833****Meaning of “investment company”**
 
 (1) In this Part an “investment company” means a public company that—
 (a) has given notice (which has not been revoked) to the registrar of its
@@ -25672,7 +25672,7 @@ companies;
 
 394
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 23 — Distributions_
 
 _Chapter 1 — Restrictions on when distributions may be made_
@@ -25693,7 +25693,7 @@ investment company within the meaning of this section.
 
 (5) On giving such a notice, the company ceases to be such a company.
 
-**834** **Investment company: condition as to holdings in other companies**
+**834****Investment company: condition as to holdings in other companies**
 
 (1) The condition referred to in section 833(2)(b) (requirements to be complied
 with by investment company) is that none of the company’s holdings in
@@ -25740,7 +25740,7 @@ shares or securities to persons holding shares or securities in a second
 
 395
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 23 — Distributions_
 _Chapter 1 — Restrictions on when distributions may be made_
 
@@ -25760,7 +25760,7 @@ Taxes Act 1988 (c. 1)); and
 “scheme of reconstruction” has the same meaning as in section 136 of the
 Taxation of Chargeable Gains Act 1992.
 
-**835** **Power to extend provisions relating to investment companies**
+**835****Power to extend provisions relating to investment companies**
 
 (1) The Secretary of State may by regulations extend the provisions of sections 832
 to 834 (distributions by investment companies out of accumulated profits),
@@ -25771,13 +25771,13 @@ results of the management of the assets.
 
 (2) Regulations under this section are subject to affirmative resolution procedure.
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 J USTIFICATION  OF  DISTRIBUTION  BY  REFERENCE  TO  ACCOUNTS
 
 _Justification of distribution by reference to accounts_
 
-**836** **Justification of distribution by reference to relevant accounts**
+**836****Justification of distribution by reference to relevant accounts**
 
 (1) Whether a distribution may be made by a company without contravening this
 Part is determined by reference to the following items as stated in the relevant
@@ -25805,7 +25805,7 @@ company’s first accounting reference period, or before any accounts
 
 396
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 23 — Distributions_
 
 _Chapter 2 — Justification of distribution by reference to accounts_
@@ -25825,7 +25825,7 @@ is accordingly treated as contravening this Part.
 
 _Requirements applicable in relation to relevant accounts_
 
-**837** **Requirements where last annual accounts used**
+**837****Requirements where last annual accounts used**
 
 (1) The company’s last annual accounts means the company’s individual
 accounts—
@@ -25857,7 +25857,7 @@ company in general meeting.
 relates to distributions of a description that includes the distribution in
 question, even if at the time of the statement it had not been proposed.
 
-**838** **Requirements where interim accounts used**
+**838****Requirements where interim accounts used**
 
 (1) Interim accounts must be accounts that enable a reasonable judgment to be
 made as to the amounts of the items mentioned in section 836(1).
@@ -25872,7 +25872,7 @@ company, the following requirements apply.
 
 397
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 23 — Distributions_
 _Chapter 2 — Justification of distribution by reference to accounts_
 
@@ -25894,7 +25894,7 @@ Any requirement of Part 35 of this Act as to the delivery of a certified
 translation into English of any document forming part of the accounts must
 also have been met.
 
-**839** **Requirements where initial accounts used**
+**839****Requirements where initial accounts used**
 
 (1) Initial accounts must be accounts that enable a reasonable judgment to be made
 as to the amounts of the items mentioned in section 836(1).
@@ -25938,14 +25938,14 @@ translation into English of any of those documents must also have been met.
 
 398
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 23 — Distributions_
 
 _Chapter 2 — Justification of distribution by reference to accounts_
 
 _Application of provisions to successive distributions etc_
 
-**840** **Successive distributions etc by reference to the same accounts**
+**840****Successive distributions etc by reference to the same accounts**
 
 (1) In determining whether a proposed distribution may be made by a company
 in a case where—
@@ -25996,17 +25996,17 @@ uncertain as to amount or as to the date on which it will arise.
 
 399
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 23 — Distributions_
 _Chapter 3 — Supplementary provisions_
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 S UPPLEMENTARY  PROVISIONS
 
 _Accounting matters_
 
-**841** **Realised losses and profits and revaluation of fixed assets**
+**841****Realised losses and profits and revaluation of fixed assets**
 
 (1) The following provisions have effect for the purposes of this Part.
 
@@ -26050,7 +26050,7 @@ would have been so written off or retained for the depreciation of that asset
 over that period, if that profit had not been made, is treated as a realised profit
 made over that period.
 
-**842** **Determination of profit or loss in respect of asset where records incomplete**
+**842****Determination of profit or loss in respect of asset where records incomplete**
 
 In determining for the purposes of this Part whether a company has made a
 profit or loss in respect of an asset where—
@@ -26062,7 +26062,7 @@ profit or loss in respect of an asset where—
 
 400
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 23 — Distributions_
 
 _Chapter 3 — Supplementary provisions_
@@ -26072,7 +26072,7 @@ _Chapter 3 — Supplementary provisions_
 its cost is taken to be the value ascribed to it in the earliest available record of
 its value made on or after its acquisition by the company.
 
-**843** **Realised profits and losses of long-term insurance business**
+**843****Realised profits and losses of long-term insurance business**
 
 (1) The provisions of this section have effect for the purposes of this Part as it
 applies in relation to an authorised insurance company carrying on long-term
@@ -26127,11 +26127,11 @@ Act.
 
 401
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 23 — Distributions_
 _Chapter 3 — Supplementary provisions_
 
-**844** **Treatment of development costs**
+**844****Treatment of development costs**
 
 (1) Where development costs are shown or included as an asset in a company’s
 accounts, any amount shown or included in respect of those costs is treated—
@@ -26159,7 +26159,7 @@ of the directors to that effect.
 
 _Distributions in kind_
 
-**845** **Distributions in kind: determination of amount**
+**845****Distributions in kind: determination of amount **
 
 (1) This section applies for determining the amount of a distribution consisting of
 or including, or treated as arising in consequence of, the sale, transfer or other
@@ -26192,7 +26192,7 @@ value of the asset.
 
 402
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 23 — Distributions_
 
 _Chapter 3 — Supplementary provisions_
@@ -26200,7 +26200,7 @@ _Chapter 3 — Supplementary provisions_
 (5) The provisions of Chapter 2 (justification of distribution by reference to
 accounts) have effect subject to this section.
 
-**846** **Distributions in kind: treatment of unrealised profits**
+**846****Distributions in kind: treatment of unrealised profits**
 
 (1) This section applies where—
 (a) a company makes a distribution consisting of or including, or treated as
@@ -26220,7 +26220,7 @@ profits are to be included in or transferred to the profit and loss account.
 
 _Consequences of unlawful distribution_
 
-**847** **Consequences of unlawful distribution**
+**847****Consequences of unlawful distribution**
 
 (1) This section applies where a distribution, or part of one, made by a company
 to one of its members is made in contravention of this Part.
@@ -26243,7 +26243,7 @@ purchase by the company of shares in itself.
 
 _Other matters_
 
-**848** **Saving for certain older provisions in articles**
+**848****Saving for certain older provisions in articles**
 
 (1) Where immediately before the relevant date a company was authorised by a
 provision of its articles to apply its unrealised profits in paying up in full or in
@@ -26258,7 +26258,7 @@ the articles) as authority for those profits to be so applied after that date.
 
 403
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 23 — Distributions_
 _Chapter 3 — Supplementary provisions_
 
@@ -26266,12 +26266,12 @@ _Chapter 3 — Supplementary provisions_
 (a) for companies registered in Great Britain, 22nd December 1980;
 (b) for companies registered in Northern Ireland, 1st July 1983.
 
-**849** **Restriction on application of unrealised profits**
+**849****Restriction on application of unrealised profits**
 
 A company must not apply an unrealised profit in paying up debentures or
 any amounts unpaid on its issued shares.
 
-**850** **Treatment of certain older profits or losses**
+**850****Treatment of certain older profits or losses**
 
 (1) Where the directors of a company are, after making all reasonable enquiries,
 unable to determine whether a particular profit made before the relevant date
@@ -26285,7 +26285,7 @@ realised or unrealised, they may treat the loss as unrealised.
 (a) for companies registered in Great Britain, 22nd December 1980;
 (b) for companies registered in Northern Ireland, 1st July 1983.
 
-**851** **Application of rules of law restricting distributions**
+**851****Application of rules of law restricting distributions**
 
 (1) Except as provided in this section, the provisions of this Part are without
 prejudice to any rule of law restricting the sums out of which, or the cases in
@@ -26304,13 +26304,13 @@ applies as it applies for the purposes of this Part.
 distributions for the purposes of any such rule of law as is referred to in
 subsection (1).
 
-**852** **Saving for other restrictions on distributions**
+**852****Saving for other restrictions on distributions**
 
 The provisions of this Part are without prejudice to any enactment, or any
 provision of a company’s articles, restricting the sums out of which, or the
 cases in which, a distribution may be made.
 
-**853** **Minor definitions**
+**853****Minor definitions**
 
 (1) The following provisions apply for the purposes of this Part.
 
@@ -26324,7 +26324,7 @@ cases in which, a distribution may be made.
 
 404
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 23 — Distributions_
 
 _Chapter 3 — Supplementary provisions_
@@ -26354,11 +26354,11 @@ description as realised.
 (6) “Fixed assets” means assets of a company which are intended for use on a
 continuing basis in the company’s activities.
 
-**P** **ART** **24**
+**PART 24**
 
 A COMPANY ’ S  ANNUAL  RETURN
 
-**854** **Duty to deliver annual returns**
+**854****Duty to deliver annual returns**
 
 (1) Every company must deliver to the registrar successive annual returns each of
 which is made up to a date not later than the date that is from time to time the
@@ -26375,7 +26375,7 @@ of this Part, and
 (b) be delivered to the registrar within 28 days after the date to which it is
 made up.
 
-**855** **Contents of annual return: general**
+**855****Contents of annual return: general**
 
 (1) Every annual return must state the date to which it is made up and contain the
 following information—
@@ -26389,7 +26389,7 @@ following information—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 24 — A company’s annual return_
 405
 
@@ -26410,7 +26410,7 @@ classification scheme prescribed for the purposes of this section.
 by reference to one or more categories of any prescribed system of classifying
 business activities.
 
-**856** **Contents of annual return: information about share capital and shareholders**
+**856****Contents of annual return: information about share capital and shareholders**
 
 (1) The annual return of a company having a share capital must also contain—
 (a) a statement of capital, and
@@ -26452,7 +26452,7 @@ by each member or person who has ceased to be a member, and
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 24 — A company’s annual return_
 406
@@ -26470,7 +26470,7 @@ return, and
 give the corresponding information in relation to that stock, stating the amount
 of stock instead of the number or nominal value of shares.
 
-**857** **Contents of annual return: power to make further provision by regulations**
+**857****Contents of annual return: power to make further provision by regulations**
 
 (1) The Secretary of State may by regulations make further provision as to the
 information to be given in a company’s annual return.
@@ -26482,7 +26482,7 @@ have effect from time to time.
 
 (3) Regulations under this section are subject to negative resolution procedure.
 
-**858** **Failure to deliver annual return**
+**858****Failure to deliver annual return**
 
 (1) If a company fails to deliver an annual return before the end of the period of 28
 days after a return date, an offence is committed by—
@@ -26518,25 +26518,25 @@ each day on which the contravention continues and he is in default.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 24 — A company’s annual return_
 407
 
-**859** **Application of provisions to shadow directors**
+**859****Application of provisions to shadow directors**
 
 For the purposes of this Part a shadow director is treated as a director.
 
-**P** **ART** **25**
+**PART 25**
 
 C OMPANY  CHARGES
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 C OMPANIES  REGISTERED  IN E NGLAND  AND W ALES  OR  IN N ORTHERN I RELAND
 
 _Requirement to register company charges_
 
-**860** **Charges created by a company**
+**860****Charges created by a company**
 
 (1) A company that creates a charge to which this section applies must deliver the
 prescribed particulars of the charge, together with the instrument (if any) by
@@ -26582,12 +26582,12 @@ an individual, would require registration as a bill of sale,
 
 408
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 
 _Chapter 1 — Companies registered in England and Wales or in Northern Ireland_
 
-**861** **Charges which have to be registered: supplementary**
+**861****Charges which have to be registered: supplementary**
 
 (1) The holding of debentures entitling the holder to a charge on land is not, for
 the purposes of section 860(7)(a), an interest in the land.
@@ -26608,7 +26608,7 @@ those book debts.
 “company” means a company registered in England and Wales or in
 Northern Ireland.
 
-**862** **Charges existing on property acquired**
+**862****Charges existing on property acquired**
 
 (1) This section applies where a company acquires property which is subject to a
 charge of a kind which would, if it had been created by the company after the
@@ -26633,11 +26633,11 @@ maximum.
 
 _Special rules about debentures_
 
-**863** **Charge in series of debentures**
+**863****Charge in series of debentures**
 
 (1) Where a series of debentures containing, or giving by reference to another
 instrument, any charge to the benefit of which debenture holders of that series
-are entitled _pari passu_ is created by a company, it is for the purposes of section
+are entitled _pari passu_is created by a company, it is for the purposes of section
 860(1) sufficient if the required particulars, together with the deed containing
 the charge (or, if there is no such deed, one of the debentures of the series), are
 delivered to the registrar before the end of the period allowed for registration.
@@ -26651,7 +26651,7 @@ delivered to the registrar before the end of the period allowed for registration
 
 409
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 _Chapter 1 — Companies registered in England and Wales or in Northern Ireland_
 
@@ -26674,7 +26674,7 @@ they apply for the purposes of that section, but as if references to the
 registration of a charge were references to the registration of a series of
 debentures.
 
-**864** **Additional registration requirement for commission etc in relation to**
+**864****Additional registration requirement for commission etc in relation to **
 **debentures**
 
 (1) Where any commission, allowance or discount has been paid or made either
@@ -26693,7 +26693,7 @@ purposes of this section, treated as the issue of debentures at a discount.
 (3) Failure to comply with this section does not affect the validity of the
 debentures issued.
 
-**865** **Endorsement of certificate on debentures**
+**865****Endorsement of certificate on debentures**
 
 (1) The company shall cause a copy of every certificate of registration given under
 section 869 to be endorsed on every debenture or certificate of debenture stock
@@ -26719,14 +26719,14 @@ conviction to a fine not exceeding level 3 on the standard scale.
 
 410
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 
 _Chapter 1 — Companies registered in England and Wales or in Northern Ireland_
 
 _Charges in other jurisdictions_
 
-**866** **Charges created in, or over property in, jurisdictions outside the United**
+**866****Charges created in, or over property in, jurisdictions outside the United **
 **Kingdom**
 
 (1) Where a charge is created outside the United Kingdom comprising property
@@ -26741,7 +26741,7 @@ the charge may be sent for registration under section 860 even if further
 proceedings may be necessary to make the charge valid or effectual according
 to the law of the country in which the property is situated.
 
-**867** **Charges created in, or over property in, another United Kingdom jurisdiction**
+**867****Charges created in, or over property in, another United Kingdom jurisdiction**
 
 (1) Subsection (2) applies where—
 (a) a charge comprises property situated in a part of the United Kingdom
@@ -26757,7 +26757,7 @@ the same effect as the delivery of the instrument itself.
 
 _Orders charging land: Northern Ireland_
 
-**868** **Northern Ireland: registration of certain charges etc. affecting land**
+**868****Northern Ireland: registration of certain charges etc. affecting land**
 
 (1) Where a charge imposed by an order under Article 46 of the 1981 Order or
 notice of such a charge is registered in the Land Registry against registered
@@ -26787,7 +26787,7 @@ of Titles or, as the case may be, the Registrar of Deeds shall cause a certified
 
 411
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 _Chapter 1 — Companies registered in England and Wales or in Northern Ireland_
 
@@ -26815,7 +26815,7 @@ Part 3 of the Land Registration Act (Northern Ireland) 1970.
 
 _The register of charges_
 
-**869** **Register of charges to be kept by registrar**
+**869****Register of charges to be kept by registrar**
 
 (1) The registrar shall keep, with respect to each company, a register of all the
 charges requiring registration under this Chapter.
@@ -26852,7 +26852,7 @@ official seal, and
 
 412
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 
 _Chapter 1 — Companies registered in England and Wales or in Northern Ireland_
@@ -26863,7 +26863,7 @@ registration have been satisfied.
 (7) The register kept in pursuance of this section shall be open to inspection by any
 person.
 
-**870** **The period allowed for registration**
+**870****The period allowed for registration**
 
 (1) The period allowed for registration of a charge created by a company is—
 (a) 21 days beginning with the day after the day on which the charge is
@@ -26892,7 +26892,7 @@ executed, or
 (b) if there is no such deed, 21 days beginning with the day after the day
 on which the first debenture of the series is executed.
 
-**871** **Registration of enforcement of security**
+**871****Registration of enforcement of security**
 
 (1) If a person obtains an order for the appointment of a receiver or manager of a
 company’s property, or appoints such a receiver or manager under powers
@@ -26921,11 +26921,11 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 413
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 _Chapter 1 — Companies registered in England and Wales or in Northern Ireland_
 
-**872** **Entries of satisfaction and release**
+**872****Entries of satisfaction and release**
 
 (1) Subsection (2) applies if a statement is delivered to the registrar verifying with
 respect to a registered charge—
@@ -26943,7 +26943,7 @@ undertaking (as the case may be).
 (3) Where the registrar enters a memorandum of satisfaction in whole, the
 registrar shall if required send the company a copy of it.
 
-**873** **Rectification of register of charges**
+**873****Rectification of register of charges**
 
 (1) Subsection (2) applies if the court is satisfied—
 (a) that the failure to register a charge before the end of the period allowed
@@ -26962,7 +26962,7 @@ be, that the omission or mis-statement shall be rectified.
 
 _Avoidance of certain charges_
 
-**874** **Consequence of failure to register charges created by a company**
+**874****Consequence of failure to register charges created by a company**
 
 (1) If a company creates a charge to which section 860 applies, the charge is void
 (so far as any security on the company’s property or undertaking is conferred
@@ -26985,14 +26985,14 @@ this section, the money secured by it immediately becomes payable.
 
 414
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 
 _Chapter 1 — Companies registered in England and Wales or in Northern Ireland_
 
 _Companies’ records and registers_
 
-**875** **Companies to keep copies of instruments creating charges**
+**875****Companies to keep copies of instruments creating charges**
 
 (1) A company must keep available for inspection a copy of every instrument
 creating a charge requiring registration under this Chapter, including any
@@ -27002,7 +27002,7 @@ orders imposing charges affecting land).
 (2) In the case of a series of uniform debentures, a copy of one of the debentures of
 the series is sufficient.
 
-**876** **Company’s register of charges**
+**876****Company’s register of charges**
 
 (1) Every limited company shall keep available for inspection a register of charges
 and enter in it—
@@ -27023,7 +27023,7 @@ commits an offence.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**877** **Instruments creating charges and register of charges to be available for**
+**877****Instruments creating charges and register of charges to be available for **
 **inspection**
 
 (1) This section applies to—
@@ -27052,7 +27052,7 @@ unless they have at all times been kept at the company’s registered office.
 
 415
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 _Chapter 1 — Companies registered in England and Wales or in Northern Ireland_
 
@@ -27069,13 +27069,13 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 (7) If an inspection required under subsection (4) is refused the court may by order
 compel an immediate inspection.
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 C OMPANIES  REGISTERED  IN S COTLAND
 
 _Charges requiring registration_
 
-**878** **Charges created by a company**
+**878****Charges created by a company**
 
 (1) A company that creates a charge to which this section applies must deliver the
 prescribed particulars of the charge, together with a copy certified as a correct
@@ -27119,7 +27119,7 @@ categories—
 
 416
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 
 _Chapter 2 — Companies registered in Scotland_
@@ -27133,7 +27133,7 @@ paid,
 (c) a security over a ship or aircraft or any share in a ship,
 (d) a floating charge.
 
-**879** **Charges which have to be registered: supplementary**
+**879****Charges which have to be registered: supplementary**
 
 (1) A charge on land, for the purposes of section 878(7)(a), includes a charge
 created by a heritable security within the meaning of section 9(8) of the
@@ -27159,7 +27159,7 @@ the benefit of the charge was constituted as a real right.
 (6) In this Chapter “company” means an incorporated company registered in
 Scotland.
 
-**880** **Duty to register charges existing on property acquired**
+**880****Duty to register charges existing on property acquired**
 
 (1) Subsection (2) applies where a company acquires any property which is subject
 to a charge of any kind as would, if it had been created by the company after
@@ -27187,21 +27187,21 @@ maximum.
 
 417
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 _Chapter 2 — Companies registered in Scotland_
 
-**881** **Charge by way of ex facie absolute disposition, etc**
+**881****Charge by way of ex facie absolute disposition, etc**
 
 (1) For the avoidance of doubt, it is hereby declared that, in the case of a charge
-created by way of an _ex facie_ absolute disposition or assignation qualified by a
+created by way of an _ex facie_absolute disposition or assignation qualified by a
 back letter or other agreement, or by a standard security qualified by an
 agreement, compliance with section 878(1) does not of itself render the charge
 unavailable as security for indebtedness incurred after the date of compliance.
 
 (2) Where the amount secured by a charge so created is purported to be increased
 by a further back letter or agreement, a further charge is held to have been
-created by the _ex facie_ absolute disposition or assignation or (as the case may
+created by the _ex facie_absolute disposition or assignation or (as the case may
 be) by the standard security, as qualified by the further back letter or
 agreement.
 
@@ -27213,11 +27213,11 @@ date on which the further back letter or agreement was executed.
 
 _Special rules about debentures_
 
-**882** **Charge in series of debentures**
+**882****Charge in series of debentures**
 
 (1) Where a series of debentures containing, or giving by reference to any other
 instrument, any charge to the benefit of which the debenture-holders of that
-series are entitled _pari passu_ , is created by a company, it is sufficient for
+series are entitled _pari passu_, is created by a company, it is sufficient for
 purposes of section 878 if the required particulars, together with a copy of the
 deed containing the charge (or, if there is no such deed, of one of the
 debentures of the series) are delivered to the registrar before the end of the
@@ -27233,7 +27233,7 @@ defined,
 (e) in the case of a floating charge, a statement of any provisions of the
 charge and of any instrument relating to it which prohibit or restrict or
 regulate the power of the company to grant further securities ranking
-in priority to, or _pari passu_ with, the floating charge, or which vary or
+in priority to, or _pari passu_with, the floating charge, or which vary or
 otherwise regulate the order of ranking of the floating charge in
 relation to subsisting securities.
 
@@ -27254,7 +27254,7 @@ they apply for the purposes of that section but as if for the reference to the
 
 418
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 
 _Chapter 2 — Companies registered in Scotland_
@@ -27262,7 +27262,7 @@ _Chapter 2 — Companies registered in Scotland_
 registration of the charge there was substituted a reference to the registration
 of the series of debentures.
 
-**883** **Additional registration requirement for commission etc in relation to**
+**883****Additional registration requirement for commission etc in relation to **
 **debentures**
 
 (1) Where any commission, allowance or discount has been paid or made either
@@ -27283,7 +27283,7 @@ debentures issued.
 
 _Charges on property outside the United Kingdom_
 
-**884** **Charges on property outside United Kingdom**
+**884****Charges on property outside United Kingdom**
 
 Where a charge is created in the United Kingdom but comprises property
 outside the United Kingdom, the copy of the instrument creating or purporting
@@ -27293,7 +27293,7 @@ according to the law of the country in which the property is situated.
 
 _The register of charges_
 
-**885** **Register of charges to be kept by registrar**
+**885****Register of charges to be kept by registrar**
 
 (1) The registrar shall keep, with respect to each company, a register of all the
 charges requiring registration under this Chapter.
@@ -27321,11 +27321,11 @@ or regulate the company’s power to grant further securities ranking in
 
 419
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 _Chapter 2 — Companies registered in Scotland_
 
-priority to, or _pari passu_ with, the floating charge, or which vary or
+priority to, or _pari passu_with, the floating charge, or which vary or
 otherwise regulate the order of ranking of the floating charge in
 relation to subsisting securities.
 
@@ -27346,7 +27346,7 @@ registration have been satisfied.
 (6) The register kept in pursuance of this section shall be open to inspection by any
 person.
 
-**886** **The period allowed for registration**
+**886****The period allowed for registration**
 
 (1) The period allowed for registration of a charge created by a company is—
 (a) 21 days beginning with the day after the day on which the charge is
@@ -27375,7 +27375,7 @@ executed, or
 (b) if there is no such deed, 21 days beginning with the day after the day
 on which the first debenture of the series is executed.
 
-**887** **Entries of satisfaction and relief**
+**887****Entries of satisfaction and relief**
 
 (1) Subsection (2) applies if a statement is delivered to the registrar verifying with
 respect to any registered charge—
@@ -27387,7 +27387,7 @@ respect to any registered charge—
 
 420
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 
 _Chapter 2 — Companies registered in Scotland_
@@ -27418,7 +27418,7 @@ to the entry in the register of a memorandum of satisfaction where the
 company, having created a floating charge over all or any part of its property,
 disposes of part of the property subject to the floating charge.
 
-**888** **Rectification of register of charges**
+**888****Rectification of register of charges**
 
 (1) Subsection (2) applies if the court is satisfied—
 (a) that the failure to register a charge before the end of the period allowed
@@ -27437,7 +27437,7 @@ be, that the omission or mis-statement shall be rectified.
 
 _Avoidance of certain charges_
 
-**889** **Charges void unless registered**
+**889****Charges void unless registered**
 
 (1) If a company creates a charge to which section 878 applies, the charge is void
 (so far as any security on the company’s property or any part of it is conferred
@@ -27454,7 +27454,7 @@ unless that section is complied with.
 
 421
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 _Chapter 2 — Companies registered in Scotland_
 
@@ -27464,7 +27464,7 @@ this section the money secured by it immediately becomes payable.
 
 _Companies’ records and registers_
 
-**890** **Copies of instruments creating charges to be kept by company**
+**890****Copies of instruments creating charges to be kept by company**
 
 (1) Every company shall cause a copy of every instrument creating a charge
 requiring registration under this Chapter to be kept available for inspection.
@@ -27472,7 +27472,7 @@ requiring registration under this Chapter to be kept available for inspection.
 (2) In the case of a series of uniform debentures, a copy of one debenture of the
 series is sufficient.
 
-**891** **Company’s register of charges**
+**891****Company’s register of charges**
 
 (1) Every company shall keep available for inspection a register of charges and
 enter in it all charges specifically affecting property of the company, and all
@@ -27491,7 +27491,7 @@ commits an offence.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**892** **Instruments creating charges and register of charges to be available for**
+**892****Instruments creating charges and register of charges to be available for **
 **inspection**
 
 (1) This section applies to—
@@ -27520,7 +27520,7 @@ unless they have at all times been kept at the company’s registered office.
 
 422
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 
 _Chapter 2 — Companies registered in Scotland_
@@ -27538,11 +27538,11 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 (7) If an inspection required under subsection (4) is refused the court may by order
 compel an immediate inspection.
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 P OWERS  OF  THE S ECRETARY  OF S TATE
 
-**893** **Power to make provision for effect of registration in special register**
+**893****Power to make provision for effect of registration in special register**
 
 (1) In this section a “special register” means a register, other than the register of
 charges kept under this Part, in which a charge to which Chapter 1 or Chapter
@@ -27587,7 +27587,7 @@ information-sharing arrangements,
 
 423
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 25 — Company charges_
 _Chapter 3 — Powers of the Secretary of State_
 
@@ -27619,7 +27619,7 @@ under the law of a country or territory outside the United Kingdom.
 
 (9) An order under this section is subject to negative resolution procedure.
 
-**894** **General power to make amendments to this Part**
+**894****General power to make amendments to this Part**
 
 (1) The Secretary of State may by regulations under this section—
 (a) amend this Part by altering, adding or repealing provisions,
@@ -27628,13 +27628,13 @@ enactment (whether passed or made before or after this Act).
 
 (2) Regulations under this section are subject to affirmative resolution procedure.
 
-**P** **ART** **26**
+**PART 26**
 
 A RRANGEMENTS  AND  RECONSTRUCTIONS
 
 _Application of this Part_
 
-**895** **Application of this Part**
+**895****Application of this Part**
 
 (1) The provisions of this Part apply where a compromise or arrangement is
 proposed between a company and—
@@ -27651,7 +27651,7 @@ shares into shares of different classes, or by both of those methods; and
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 26 — Arrangements and reconstructions_
 424
@@ -27669,7 +27669,7 @@ of public companies) where that Part applies (see sections 902 and 903).
 
 _Meeting of creditors or members_
 
-**896** **Court order for holding of meeting**
+**896****Court order for holding of meeting**
 
 (1) The court may, on an application under this section, order a meeting of the
 creditors or class of creditors, or of the members of the company or class of
@@ -27682,7 +27682,7 @@ directs.
 (c) if the company is being wound up or an administration order is in force
 in relation to it, the liquidator or administrator.
 
-**897** **Statement to be circulated or made available**
+**897****Statement to be circulated or made available**
 
 (1) Where a meeting is summoned under section 896—
 (a) every notice summoning the meeting that is sent to a creditor or
@@ -27714,7 +27714,7 @@ give as respects the company’s directors.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 26 — Arrangements and reconstructions_
 425
 
@@ -27743,7 +27743,7 @@ supply the necessary particulars of his interests.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**898** **Duty of directors and trustees to provide information**
+**898****Duty of directors and trustees to provide information**
 
 (1) It is the duty of—
 (a) any director of the company, and
@@ -27760,7 +27760,7 @@ conviction to a fine not exceeding level 3 on the standard scale.
 
 _Court sanction for compromise or arrangement_
 
-**899** **Court sanction for compromise or arrangement**
+**899****Court sanction for compromise or arrangement**
 
 (1) If a majority in number representing 75% in value of the creditors or class of
 creditors or members or class of members (as the case may be), present and
@@ -27777,7 +27777,7 @@ under this section, sanction the compromise or arrangement.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 26 — Arrangements and reconstructions_
 426
@@ -27796,7 +27796,7 @@ registrar.
 
 _Reconstructions and amalgamations_
 
-**900** **Powers of court to facilitate reconstruction or amalgamation**
+**900****Powers of court to facilitate reconstruction or amalgamation**
 
 (1) This section applies where application is made to the court under section 899
 to sanction a compromise or arrangement and it is shown that—
@@ -27840,7 +27840,7 @@ liabilities of that company.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 26 — Arrangements and reconstructions_
 427
 
@@ -27867,7 +27867,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 _Obligations of company with respect to articles etc_
 
-**901** **Obligations of company with respect to articles etc**
+**901****Obligations of company with respect to articles etc**
 
 (1) This section applies—
 (a) to any order under section 899 (order sanctioning compromise or
@@ -27904,7 +27904,7 @@ committed by—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 26 — Arrangements and reconstructions_
 428
@@ -27912,15 +27912,15 @@ _Part 26 — Arrangements and reconstructions_
 (6) A person guilty of an offence under this section is liable on summary
 conviction to a fine not exceeding level 3 on the standard scale.
 
-**P** **ART** **27**
+**PART 27**
 
 M ERGERS  AND  DIVISIONS  OF  PUBLIC  COMPANIES
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 I NTRODUCTORY
 
-**902** **Application of this Part**
+**902****Application of this Part**
 
 (1) This Part applies where—
 (a) a compromise or arrangement is proposed between a public company
@@ -27947,7 +27947,7 @@ purposes of, or in connection with, the scheme.
 (3) This Part does not apply where the company in respect of which the
 compromise or arrangement is proposed is being wound up.
 
-**903** **Relationship of this Part to Part 26**
+**903****Relationship of this Part to Part 26**
 
 (1) The court must not sanction the compromise or arrangement under Part 26
 (arrangements and reconstructions) unless the relevant requirements of this
@@ -27968,17 +27968,17 @@ modified or excluded by the provisions of sections 931 to 934.
 
 429
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 _Chapter 2 — Merger_
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 M ERGER
 
 _Introductory_
 
-**904** **Mergers and merging companies**
+**904****Mergers and merging companies**
 
 (1) The scheme involves a merger where under the scheme—
 (a) the undertaking, property and liabilities of one or more public
@@ -27999,7 +27999,7 @@ companies.
 
 _Requirements applicable to merger_
 
-**905** **Draft terms of scheme (merger)**
+**905****Draft terms of scheme (merger)**
 
 (1) A draft of the proposed terms of the scheme must be drawn up and adopted
 by the directors of the merging companies.
@@ -28031,7 +28031,7 @@ shares or other securities in a transferor company to which any special
 
 430
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 
 _Chapter 2 — Merger_
@@ -28047,7 +28047,7 @@ and the consideration for the payment of benefit.
 (3) The requirements in subsection (2)(b), (c) and (d) are subject to section 915
 (circumstances in which certain particulars not required).
 
-**906** **Publication of draft terms (merger)**
+**906****Publication of draft terms (merger)**
 
 (1) The directors of each of the merging companies must deliver a copy of the draft
 terms to the registrar.
@@ -28058,7 +28058,7 @@ company of a copy of the draft terms.
 (3) That notice must be published at least one month before the date of any
 meeting of that company summoned for the purpose of approving the scheme.
 
-**907** **Approval of members of merging companies**
+**907****Approval of members of merging companies**
 
 (1) The scheme must be approved by a majority in number, representing 75% in
 value, of each class of members of each of the merging companies, present and
@@ -28067,7 +28067,7 @@ voting either in person or by proxy at a meeting.
 (2) This requirement is subject to sections 916, 917 and 918 (circumstances in
 which meetings of members not required).
 
-**908** **Directors’ explanatory report (merger)**
+**908****Directors’ explanatory report (merger)**
 
 (1) The directors of each of the merging companies must draw up and adopt a
 report.
@@ -28084,7 +28084,7 @@ and in particular for the share exchange ratio, and
 (3) The requirement in this section is subject to section 915 (circumstances in which
 reports not required).
 
-**909** **Expert’s report (merger)**
+**909****Expert’s report (merger)**
 
 (1) An expert’s report must be drawn up on behalf of each of the merging
 companies.
@@ -28099,7 +28099,7 @@ company.
 
 431
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 _Chapter 2 — Merger_
 
@@ -28138,7 +28138,7 @@ as he thinks necessary for the purposes of making his report.
 (7) The requirement in this section is subject to section 915 (circumstances in which
 reports not required).
 
-**910** **Supplementary accounting statement (merger)**
+**910****Supplementary accounting statement (merger)**
 
 (1) If the last annual accounts of any of the merging companies relate to a financial
 year ending more than seven months before the first meeting of the company
@@ -28166,7 +28166,7 @@ accounts, and the matters to be included in notes to it, apply to the balance
 
 432
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 
 _Chapter 2 — Merger_
@@ -28178,7 +28178,7 @@ as at the last day of a financial year.
 (4) The provisions of section 414 as to the approval and signing of accounts apply
 to the balance sheet required for an accounting statement under this section.
 
-**911** **Inspection of documents (merger)**
+**911****Inspection of documents (merger)**
 
 (1) The members of each of the merging companies must be able, during the
 period specified below—
@@ -28207,14 +28207,14 @@ the scheme; and
 (4) The requirements of subsection (3)(b) and (c) are subject to section 915
 (circumstances in which reports not required).
 
-**912** **Approval of articles of new transferee company (merger)**
+**912****Approval of articles of new transferee company (merger)**
 
 In the case of a merger by formation of a new company, the articles of the
 transferee company, or a draft of them, must be approved by ordinary
 resolution of the transferor company or, as the case may be, each of the
 transferor companies.
 
-**913** **Protection of holders of securities to which special rights attached (merger)**
+**913****Protection of holders of securities to which special rights attached (merger)**
 
 (1) The scheme must provide that where any securities of a transferor company
 (other than shares) to which special rights are attached are held by a person
@@ -28231,7 +28231,7 @@ receive rights in the transferee company of equivalent value.
 
 433
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 _Chapter 2 — Merger_
 
@@ -28239,7 +28239,7 @@ _Chapter 2 — Merger_
 purchased by the transferee company on terms that the court considers
 reasonable.
 
-**914** **No allotment of shares to transferor company or its nominee (merger)**
+**914****No allotment of shares to transferor company or its nominee (merger)**
 
 The scheme must not provide for shares in the transferee company to be
 allotted to a transferor company (or its nominee) in respect of shares in the
@@ -28247,7 +28247,7 @@ transferor company held by it (or its nominee).
 
 _Exceptions where shares of transferor company held by transferee company_
 
-**915** **Circumstances in which certain particulars and reports not required (merger)**
+**915****Circumstances in which certain particulars and reports not required (merger)**
 
 (1) This section applies in the case of a merger by absorption where all of the
 relevant securities of the transferor company (or, if there is more than one
@@ -28272,7 +28272,7 @@ subsection (3) above do not apply.
 (6) In this section “relevant securities”, in relation to a company, means shares or
 other securities carrying the right to vote at general meetings of the company.
 
-**916** **Circumstances in which meeting of members of transferee company not**
+**916****Circumstances in which meeting of members of transferee company not **
 **required (merger)**
 
 (1) This section applies in the case of a merger by absorption where 90% or more
@@ -28299,7 +28299,7 @@ during the period beginning one month before, and ending on, that date—
 
 434
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 
 _Chapter 2 — Merger_
@@ -28323,7 +28323,7 @@ for the purpose of deciding whether or not to agree to the scheme, and
 (6) In this section “relevant securities”, in relation to a company, means shares or
 other securities carrying the right to vote at general meetings of the company.
 
-**917** **Circumstances in which no meetings required (merger)**
+**917****Circumstances in which no meetings required (merger)**
 
 (1) This section applies in the case of a merger by absorption where all of the
 relevant securities of the transferor company (or, if there is more than one
@@ -28366,13 +28366,13 @@ other securities carrying the right to vote at general meetings of the company.
 
 435
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 _Chapter 2 — Merger_
 
 _Other exceptions_
 
-**918** **Other circumstances in which meeting of members of transferee company not**
+**918****Other circumstances in which meeting of members of transferee company not **
 **required (merger)**
 
 (1) In the case of any merger by absorption, it is not necessary for the scheme to be
@@ -28404,13 +28404,13 @@ period, to require a meeting of each class of members to be called for
 the purpose of deciding whether or not to agree to the scheme, and
 (b) no such requirement was made.
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 D IVISION
 
 _Introductory_
 
-**919** **Divisions and companies involved in a division**
+**919****Divisions and companies involved in a division**
 
 (1) The scheme involves a division where under the scheme the undertaking,
 property and liabilities of the company in respect of which the compromise or
@@ -28429,14 +28429,14 @@ transferor company and any existing transferee companies.
 
 436
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 
 _Chapter 3 — Division_
 
 _Requirements to be complied with in case of division_
 
-**920** **Draft terms of scheme (division)**
+**920****Draft terms of scheme (division)**
 
 (1) A draft of the proposed terms of the scheme must be drawn up and adopted
 by the directors of each of the companies involved in the division.
@@ -28479,7 +28479,7 @@ company has acquired or may subsequently acquire; and
 in the transferee companies and the criteria upon which that allocation
 is based.
 
-**921** **Publication of draft terms (division)**
+**921****Publication of draft terms (division)**
 
 (1) The directors of each company involved in the division must deliver a copy of
 the draft terms to the registrar.
@@ -28494,7 +28494,7 @@ company of a copy of the draft terms.
 
 437
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 _Chapter 3 — Division_
 
@@ -28505,7 +28505,7 @@ scheme.
 (4) The requirements in this section are subject to section 934 (power of court to
 exclude certain requirements).
 
-**922** **Approval of members of companies involved in the division**
+**922****Approval of members of companies involved in the division**
 
 (1) The compromise or arrangement must be approved by a majority in number,
 representing 75% in value, of each class of members of each of the companies
@@ -28515,7 +28515,7 @@ meeting.
 (2) This requirement is subject to sections 931 and 932 (circumstances in which
 meeting of members not required).
 
-**923** **Directors’ explanatory report (division)**
+**923****Directors’ explanatory report (division)**
 
 (1) The directors of the transferor and each existing transferee company must
 draw up and adopt a report.
@@ -28540,7 +28540,7 @@ companies.
 (4) The requirement in this section is subject to section 933 (agreement to dispense
 with reports etc).
 
-**924** **Expert’s report (division)**
+**924****Expert’s report (division)**
 
 (1) An expert’s report must be drawn up on behalf of each company involved in
 the division.
@@ -28562,7 +28562,7 @@ expert appointed on behalf of that company.
 
 438
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 
 _Chapter 3 — Division_
@@ -28595,7 +28595,7 @@ as he thinks necessary for the purposes of making his report.
 (7) The requirement in this section is subject to section 933 (agreement to dispense
 with reports etc).
 
-**925** **Supplementary accounting statement (division)**
+**925****Supplementary accounting statement (division)**
 
 (1) If the last annual accounts of a company involved in the division relate to a
 financial year ending more than seven months before the first meeting of the
@@ -28629,14 +28629,14 @@ to the balance sheet required for an accounting statement under this section.
 
 439
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 _Chapter 3 — Division_
 
 (5) The requirement in this section is subject to section 933 (agreement to dispense
 with reports etc).
 
-**926** **Inspection of documents (division)**
+**926****Inspection of documents (division)**
 
 (1) The members of each company involved in the division must be able, during
 the period specified below—
@@ -28666,7 +28666,7 @@ the scheme; and
 (agreement to dispense with reports etc) and section 934 (power of court to
 exclude certain requirements).
 
-**927** **Report on material changes of assets of transferor company (division)**
+**927****Report on material changes of assets of transferor company (division)**
 
 (1) The directors of the transferor company must report—
 (a) to every meeting of the members, or any class of members, of that
@@ -28693,17 +28693,17 @@ with reports etc).
 
 440
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 
 _Chapter 3 — Division_
 
-**928** **Approval of articles of new transferee company (division)**
+**928****Approval of articles of new transferee company (division)**
 
 The articles of every new transferee company, or a draft of them, must be
 approved by ordinary resolution of the transferor company.
 
-**929** **Protection of holders of securities to which special rights attached (division)**
+**929****Protection of holders of securities to which special rights attached (division)**
 
 (1) The scheme must provide that where any securities of the transferor company
 (other than shares) to which special rights are attached are held by a person
@@ -28716,7 +28716,7 @@ receive rights in a transferee company of equivalent value.
 purchased by a transferee company on terms that the court considers
 reasonable.
 
-**930** **No allotment of shares to transferor company or its nominee (division)**
+**930****No allotment of shares to transferor company or its nominee (division)**
 
 The scheme must not provide for shares in a transferee company to be allotted
 to the transferor company (or its nominee) in respect of shares in the transferor
@@ -28724,7 +28724,7 @@ company held by it (or its nominee).
 
 _Exceptions where shares of transferor company held by transferee company_
 
-**931** **Circumstances in which meeting of members of transferor company not**
+**931****Circumstances in which meeting of members of transferor company not **
 **required (division)**
 
 (1) This section applies in the case of a division where all of the shares or other
@@ -28761,7 +28761,7 @@ shares in the company held as treasury shares) would have been able,
 
 441
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 _Chapter 3 — Division_
 
@@ -28780,7 +28780,7 @@ the date one month before the date of the court’s order.
 
 _Other exceptions_
 
-**932** **Circumstances in which meeting of members of transferee company not**
+**932****Circumstances in which meeting of members of transferee company not **
 **required (division)**
 
 (1) In the case of a division, it is not necessary for the scheme to be approved by
@@ -28812,7 +28812,7 @@ the purpose of deciding whether or not to agree to the scheme, and
 (5) The first and second conditions above are subject to section 934 (power of court
 to exclude certain requirements).
 
-**933** **Agreement to dispense with reports etc (division)**
+**933****Agreement to dispense with reports etc (division)**
 
 (1) If all members holding shares in, and all persons holding other securities of, the
 companies involved in the division, being shares or securities that carry a right
@@ -28828,7 +28828,7 @@ requirements do not apply.
 
 442
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 
 _Chapter 3 — Division_
@@ -28849,7 +28849,7 @@ mentioned in paragraph (a)(i), (ii) or (iii) above.
 meetings of the company,
 are determined as at the date of the application to the court under section 896.
 
-**934** **Power of court to exclude certain requirements (division)**
+**934****Power of court to exclude certain requirements (division)**
 
 (1) In the case of a division, the court may by order direct that—
 (a) in relation to any company involved in the division, the requirements
@@ -28894,17 +28894,17 @@ order in question.
 
 443
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 _Chapter 4 — Supplementary provisions_
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 S UPPLEMENTARY  PROVISIONS
 
 _Expert’s report and related matters_
 
-**935** **Expert’s report: valuation by another person**
+**935****Expert’s report: valuation by another person**
 
 (1) Where it appears to an expert—
 (a) that a valuation is reasonably necessary to enable him to draw up his
@@ -28925,7 +28925,7 @@ carry out the valuation, and
 valued by the other person, and the method used to value them, and
 specify the date of the valuation.
 
-**936** **Experts and valuers: independence requirement**
+**936****Experts and valuers: independence requirement**
 
 (1) A person meets the independence requirement for the purposes of section 909
 or 924 (expert’s report) or section 935 (valuation by another person) only if—
@@ -28958,7 +28958,7 @@ company for this purpose.
 
 444
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 
 _Chapter 4 — Supplementary provisions_
@@ -28974,7 +28974,7 @@ company; and
 
 (4) Regulations under this section are subject to negative resolution procedure.
 
-**937** **Experts and valuers: meaning of “associate”**
+**937****Experts and valuers: meaning of “associate”**
 
 (1) This section defines “associate” for the purposes of section 936 (experts and
 valuers: independence requirement).
@@ -29005,7 +29005,7 @@ partners.
 
 _Powers of the court_
 
-**938** **Power of court to summon meeting of members or creditors of existing**
+**938****Power of court to summon meeting of members or creditors of existing **
 **transferee company**
 
 (1) The court may order a meeting of—
@@ -29024,14 +29024,14 @@ to be summoned in such manner as the court directs.
 
 445
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 _Chapter 4 — Supplementary provisions_
 
 (c) if an administration order is in force in relation to the company, the
 administrator.
 
-**939** **Court to fix date for transfer of undertaking etc of transferor company**
+**939****Court to fix date for transfer of undertaking etc of transferor company**
 
 (1) Where the court sanctions the compromise or arrangement, it must—
 (a) in the order sanctioning the compromise or arrangement, or
@@ -29058,7 +29058,7 @@ latest date) fixed under that subsection.
 
 _Liability of transferee companies_
 
-**940** **Liability of transferee companies for each other’s defaults**
+**940****Liability of transferee companies for each other’s defaults**
 
 (1) In the case of a division, each transferee company is jointly and severally liable
 for any liability transferred to any other transferee company under the scheme
@@ -29080,7 +29080,7 @@ liabilities so transferred.
 
 _Interpretation_
 
-**941** **Meaning of “liabilities” and “property”**
+**941****Meaning of “liabilities” and “property”**
 
 In this Part—
 
@@ -29091,7 +29091,7 @@ In this Part—
 
 446
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 27 — Mergers and divisions of public companies_
 
 _Chapter 4 — Supplementary provisions_
@@ -29099,17 +29099,17 @@ _Chapter 4 — Supplementary provisions_
 “liabilities” includes duties;
 “property” includes property, rights and powers of every description.
 
-**P** **ART** **28**
+**PART 28**
 
 T AKEOVERS  ETC
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 T HE T AKEOVER P ANEL
 
 _The Panel and its rules_
 
-**942** **The Panel**
+**942****The Panel**
 
 (1) The body known as the Panel on Takeovers and Mergers (“the Panel”) is to
 have the functions conferred on it by or under this Chapter.
@@ -29123,7 +29123,7 @@ by—
 (b) an officer or member of staff of the Panel, or a person acting as such.
 This is subject to section 943(4) and (5).
 
-**943** **Rules**
+**943****Rules**
 
 (1) The Panel must make rules giving effect to Articles 3.1, 4.2, 5, 6.1 to 6.3, 7 to 9
 and 13 of the Takeovers Directive.
@@ -29155,7 +29155,7 @@ the passing of this Act.
 
 447
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 1 — The Takeover Panel_
 
@@ -29178,7 +29178,7 @@ European Parliament and of the Council.
 (9) A reference to rules in the following provisions of this Chapter is to rules under
 this section.
 
-**944** **Further provisions about rules**
+**944****Further provisions about rules**
 
 (1) Rules may—
 (a) make different provision for different purposes;
@@ -29224,19 +29224,19 @@ instrument with a certificate of the kind mentioned in subsection (5).
 
 448
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 1 — The Takeover Panel_
 
-**945** **Rulings**
+**945****Rulings**
 
 (1) The Panel may give rulings on the interpretation, application or effect of rules.
 
 (2) To the extent and in the circumstances specified in rules, and subject to any
 review or appeal, a ruling has binding effect.
 
-**946** **Directions**
+**946****Directions**
 
 Rules may contain provision conferring power on the Panel to give any
 direction that appears to the Panel to be necessary in order—
@@ -29248,7 +29248,7 @@ would be a breach of rules;
 
 _Information_
 
-**947** **Power to require documents and information**
+**947****Power to require documents and information**
 
 (1) The Panel may by notice in writing require a person—
 (a) to produce any documents that are specified or described in the notice;
@@ -29293,7 +29293,7 @@ or
 
 449
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 1 — The Takeover Panel_
 
@@ -29301,7 +29301,7 @@ _Chapter 1 — The Takeover Panel_
 in respect of which a claim to legal professional privilege (in Scotland, to
 confidentiality of communications) could be maintained in legal proceedings.
 
-**948** **Restrictions on disclosure**
+**948****Restrictions on disclosure**
 
 (1) This section applies to information (in whatever form)—
 (a) relating to the private affairs of an individual, or
@@ -29359,7 +29359,7 @@ is or has been available to the public from any other source.
 
 450
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 1 — The Takeover Panel_
@@ -29367,7 +29367,7 @@ _Chapter 1 — The Takeover Panel_
 (9) Nothing in this section authorises the making of a disclosure in contravention
 of the Data Protection Act 1998 (c. 29).
 
-**949** **Offence of disclosure in contravention of section 948**
+**949****Offence of disclosure in contravention of section 948**
 
 (1) A person who discloses information in contravention of section 948 is guilty of
 an offence, unless—
@@ -29393,7 +29393,7 @@ body corporate who is in default.
 
 _Co-operation_
 
-**950** **Panel’s duty of co-operation**
+**950****Panel’s duty of co-operation**
 
 (1) The Panel must take such steps as it considers appropriate to co-operate with—
 (a) the Financial Services Authority;
@@ -29409,7 +29409,7 @@ prevented from disclosing.
 
 _Hearings and appeals_
 
-**951** **Hearings and appeals**
+**951****Hearings and appeals**
 
 (1) Rules must provide for a decision of the Panel to be subject to review by a
 committee of the Panel (the “Hearings Committee”) at the instance of such
@@ -29424,7 +29424,7 @@ persons affected by the decision as are specified in the rules.
 
 451
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 1 — The Takeover Panel_
 
@@ -29455,7 +29455,7 @@ Board from acting as mentioned in paragraph (a).
 
 _Contravention of rules etc_
 
-**952** **Sanctions**
+**952****Sanctions**
 
 (1) Rules may contain provision conferring power on the Panel to impose
 sanctions on a person who has—
@@ -29489,7 +29489,7 @@ individual.
 
 452
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 1 — The Takeover Panel_
@@ -29508,7 +29508,7 @@ within subsection (2) in the case of any particular breach or failure, the Panel
 must have regard to any relevant policy statement published and in force at the
 time when the breach or failure occurred.
 
-**953** **Failure to comply with rules about bid documentation**
+**953****Failure to comply with rules about bid documentation**
 
 (1) This section applies where a takeover bid is made for a company that has
 securities carrying voting rights admitted to trading on a regulated market in
@@ -29557,7 +29557,7 @@ enforcement of its rules.
 
 453
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 1 — The Takeover Panel_
 
@@ -29579,7 +29579,7 @@ effect to the first sentence of Article 9.5 of that Directive;
 “voting rights” means rights to vote at general meetings of the company
 in question, including rights that arise only in certain circumstances.
 
-**954** **Compensation**
+**954****Compensation**
 
 (1) Rules may confer power on the Panel to order a person to pay such
 compensation as it thinks just and reasonable if he is in breach of a rule the
@@ -29588,7 +29588,7 @@ effect of which is to require the payment of money.
 (2) Rules made by virtue of this section may include provision for the payment of
 interest (including compound interest).
 
-**955** **Enforcement by the court**
+**955****Enforcement by the court**
 
 (1) If, on the application of the Panel, the court is satisfied—
 (a) that there is a reasonable likelihood that a person will contravene a
@@ -29622,12 +29622,12 @@ rules.
 
 454
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 1 — The Takeover Panel_
 
-**956** **No action for breach of statutory duty etc**
+**956****No action for breach of statutory duty etc**
 
 (1) Contravention of a rule-based requirement or a disclosure requirement does
 not give rise to any right of action for breach of statutory duty.
@@ -29643,7 +29643,7 @@ meaning as in section 955.
 
 _Funding_
 
-**957** **Fees and charges**
+**957****Fees and charges**
 
 (1) Rules may provide for fees or charges to be payable to the Panel for the
 purpose of meeting any part of its expenses.
@@ -29656,7 +29656,7 @@ with, the discharge of its functions, including in particular—
 money borrowed by the Panel;
 (c) the cost of maintaining adequate reserves.
 
-**958** **Levy**
+**958****Levy**
 
 (1) For the purpose of meeting any part of the expenses of the Panel, the Secretary
 of State may by regulations provide for a levy to be payable to the Panel—
@@ -29690,7 +29690,7 @@ Secretary of State—
 
 455
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 1 — The Takeover Panel_
 
@@ -29724,20 +29724,20 @@ apart from this subsection, be treated for the purposes of the Standing Orders
 of either House of Parliament as a hybrid instrument, it is to proceed in that
 House as if it were not such an instrument.
 
-**959** **Recovery of fees, charges or levy**
+**959****Recovery of fees, charges or levy**
 
 An amount payable by any person or body by virtue of section 957 or 958 is a
 debt due from that person or body to the Panel, and is recoverable accordingly.
 
 _Miscellaneous and supplementary_
 
-**960** **Panel as party to proceedings**
+**960****Panel as party to proceedings**
 
 The Panel is capable (despite being an unincorporated body) of—
 (a) bringing proceedings under this Chapter in its own name;
 (b) bringing or defending any other proceedings in its own name.
 
-**961** **Exemption from liability in damages**
+**961****Exemption from liability in damages**
 
 (1) Neither the Panel, nor any person within subsection (2), is to be liable in
 damages for anything done (or omitted to be done) in, or in connection with,
@@ -29755,7 +29755,7 @@ or
 
 456
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 1 — The Takeover Panel_
@@ -29767,7 +29767,7 @@ on the ground that it was unlawful as a result of section 6(1) of the
 Human Rights Act 1998 (c. 42) (acts of public authorities incompatible
 with Convention rights).
 
-**962** **Privilege against self-incrimination**
+**962****Privilege against self-incrimination**
 
 (1) A statement made by a person in response to—
 (a) a requirement under section 947(1), or
@@ -29785,7 +29785,7 @@ oath)—
 (c) Article 10 of the Perjury (Northern Ireland) Order 1979 (S.I. 1979/1714
 (N.I. 19)).
 
-**963** **Annual reports**
+**963****Annual reports**
 
 (1) After the end of each financial year the Panel must publish a report.
 
@@ -29796,7 +29796,7 @@ question;
 (c) mention any matters the Panel considers to be of relevance to the
 discharge of its functions.
 
-**964** **Amendments to Financial Services and Markets Act 2000**
+**964****Amendments to Financial Services and Markets Act 2000**
 
 (1) The Financial Services and Markets Act 2000 (c. 8) is amended as follows.
 
@@ -29823,7 +29823,7 @@ information), after subsection (3) insert—
 
 457
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 1 — The Takeover Panel_
 
@@ -29860,19 +29860,19 @@ those of the Panel on Takeovers and Mergers.”.
 ““Takeovers Directive” means Directive 2004/25/EC of the
 European Parliament and of the Council;”.
 
-**965** **Power to extend to Isle of Man and Channel Islands**
+**965****Power to extend to Isle of Man and Channel Islands**
 
 Her Majesty may by Order in Council direct that any of the provisions of this
 Chapter extend, with such modifications as may be specified in the Order, to
 the Isle of Man or any of the Channel Islands.
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 I MPEDIMENTS  TO  TAKEOVERS
 
 _Opting in and opting out_
 
-**966** **Opting in and opting out**
+**966****Opting in and opting out**
 
 (1) A company may by special resolution (an “opting-in resolution”) opt in for the
 purposes of this Chapter if the following three conditions are met in relation to
@@ -29888,7 +29888,7 @@ on a regulated market.
 
 458
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 2 — Impediments to takeovers_
@@ -29935,7 +29935,7 @@ provide that subsection (4) applies in relation to a specified person or body th
 exercises functions of a public nature as it applies in relation to a minister.
 “Specified” means specified in the order.
 
-**967** **Further provision about opting-in and opting-out resolutions**
+**967****Further provision about opting-in and opting-out resolutions**
 
 (1) An opting-in resolution or an opting-out resolution must specify the date from
 which it is to have effect (the “effective date”).
@@ -29954,7 +29954,7 @@ the effective date.
 
 459
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 2 — Impediments to takeovers_
 
@@ -29979,7 +29979,7 @@ passed by the company.
 
 _Consequences of opting in_
 
-**968** **Effect on contractual restrictions**
+**968****Effect on contractual restrictions**
 
 (1) The following provisions have effect where a takeover bid is made for an
 opted-in company.
@@ -30019,7 +30019,7 @@ resolution concerned with that question.
 
 460
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 2 — Impediments to takeovers_
@@ -30044,7 +30044,7 @@ normally carry rights to vote at its general meetings (for example,
 shares carrying rights to vote that, under those articles, arise only
 where specified pecuniary advantages are not provided).
 
-**969** **Power of offeror to require general meeting to be called**
+**969****Power of offeror to require general meeting to be called**
 
 (1) Where a takeover bid is made for an opted-in company, the offeror may by
 making a request to the directors of the company require them to call a general
@@ -30066,7 +30066,7 @@ apply as they would do if subsection (1) above were substituted for subsections
 
 _Supplementary_
 
-**970** **Communication of decisions**
+**970****Communication of decisions**
 
 (1) A company that has passed an opting-in resolution or an opting-out resolution
 must notify—
@@ -30085,7 +30085,7 @@ the purposes of Article 4.1 of the Takeovers Directive.
 
 461
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 2 — Impediments to takeovers_
 
@@ -30102,7 +30102,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**971** **Interpretation of this Chapter**
+**971****Interpretation of this Chapter**
 
 (1) In this Chapter—
 “offeror” and “takeover bid” have the same meaning as in the Takeovers
@@ -30131,7 +30131,7 @@ convertible into or entitle the holder to subscribe for such shares;
 (b) debentures issued by a company are treated as shares in the company
 if they carry voting rights.
 
-**972** **Transitory provision**
+**972****Transitory provision**
 
 (1) Where a takeover bid is made for an opted-in company, section 368 of the
 Companies Act 1985 (c. 6) (extraordinary general meeting on members’
@@ -30149,7 +30149,7 @@ person who—
 
 462
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 2 — Impediments to takeovers_
@@ -30171,19 +30171,19 @@ normally carry rights to vote at its general meetings (for example,
 shares carrying rights to vote that, under those articles, arise only
 where specified pecuniary advantages are not provided).
 
-**973** **Power to extend to Isle of Man and Channel Islands**
+**973****Power to extend to Isle of Man and Channel Islands**
 
 Her Majesty may by Order in Council direct that any of the provisions of this
 Chapter extend, with such modifications as may be specified in the Order, to
 the Isle of Man or any of the Channel Islands.
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 “S QUEEZE - OUT ” AND “S ELL - OUT ”
 
 _Takeover offers_
 
-**974** **Meaning of “takeover offer”**
+**974****Meaning of “takeover offer”**
 
 (1) For the purposes of this Chapter an offer to acquire shares in a company is a
 “takeover offer” if the following two conditions are satisfied in relation to the
@@ -30215,7 +30215,7 @@ shares, that have been allotted on the date of the offer (but see subsection (5)
 
 463
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 3 — “Squeeze-out” and “Sell-out”_
 
@@ -30243,7 +30243,7 @@ making of a fresh offer, and
 (b) references in this Chapter to the date of the offer are accordingly to be
 read as references to the date of the original offer.
 
-**975** **Shares already held by the offeror etc**
+**975****Shares already held by the offeror etc**
 
 (1) The reference in section 974(2) to shares already held by the offeror includes a
 reference to shares that he has contracted to acquire, whether unconditionally
@@ -30277,12 +30277,12 @@ conditions being met), and
 
 464
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 3 — “Squeeze-out” and “Sell-out”_
 
-**976** **Cases where offer treated as being on same terms**
+**976****Cases where offer treated as being on same terms**
 
 (1) The condition in section 974(3) (terms of offer to be the same for all shares or
 all shares of particular classes) is treated as satisfied where subsection (2) or (3)
@@ -30312,7 +30312,7 @@ substantially equivalent value, and
 offer of consideration in the specified form to those persons is
 precluded.
 
-**977** **Shares to which an offer relates**
+**977****Shares to which an offer relates**
 
 (1) Where a takeover offer is made and, during the period beginning with the date
 of the offer and ending when the offer can no longer be accepted, the offeror—
@@ -30331,7 +30331,7 @@ conditions being met.
 
 (3) This section is subject to section 979(8) and (9).
 
-**978** **Effect of impossibility etc of communicating or accepting offer**
+**978****Effect of impossibility etc of communicating or accepting offer**
 
 (1) Where there are holders of shares in a company to whom an offer to acquire
 shares in the company is not communicated, that does not prevent the offer
@@ -30344,7 +30344,7 @@ from being a takeover offer for the purposes of this Chapter if—
 
 465
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 3 — “Squeeze-out” and “Sell-out”_
 
@@ -30376,7 +30376,7 @@ subsection (2).
 
 _“Squeeze-out”_
 
-**979** **Right of offeror to buy out minority shareholder**
+**979****Right of offeror to buy out minority shareholder**
 
 (1) Subsection (2) applies in a case where a takeover offer does not relate to shares
 of different classes.
@@ -30410,7 +30410,7 @@ acquire that he desires to acquire those shares.
 
 466
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 3 — “Squeeze-out” and “Sell-out”_
@@ -30477,14 +30477,14 @@ announced the value of the acquisition consideration, at the time
 
 467
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 3 — “Squeeze-out” and “Sell-out”_
 
 mentioned in paragraph (a), no longer exceeds the value of the
 consideration specified in those terms.
 
-**980** **Further provision about notices given under section 979**
+**980****Further provision about notices given under section 979**
 
 (1) A notice under section 979 must be given in the prescribed manner.
 
@@ -30543,12 +30543,12 @@ maximum.
 
 468
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 3 — “Squeeze-out” and “Sell-out”_
 
-**981** **Effect of notice under section 979**
+**981****Effect of notice under section 979**
 
 (1) Subject to section 986 (applications to the court), this section applies where the
 offeror gives a shareholder a notice under section 979.
@@ -30612,7 +30612,7 @@ under subsection (6)(b) on trust for the person who, before the offeror acquired
 
 469
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 3 — “Squeeze-out” and “Sell-out”_
 
@@ -30621,7 +30621,7 @@ consideration was received.
 Section 982 contains further provision about how the company should deal
 with such money or other consideration.
 
-**982** **Further provision about consideration held on trust under section 981(9)**
+**982****Further provision about consideration held on trust under section 981(9)**
 
 (1) This section applies where an offeror pays or transfers consideration to the
 company under section 981(6).
@@ -30677,7 +30677,7 @@ with this Act) applies (with any necessary modifications) to sums deposited
 
 470
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 3 — “Squeeze-out” and “Sell-out”_
@@ -30691,7 +30691,7 @@ the enquiry relates.
 
 _“Sell-out”_
 
-**983** **Right of minority shareholder to be bought out by offeror**
+**983****Right of minority shareholder to be bought out by offeror**
 
 (1) Subsections (2) and (3) apply in a case where a takeover offer relates to all the
 shares in a company.
@@ -30744,7 +30744,7 @@ that class,
 
 471
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 3 — “Squeeze-out” and “Sell-out”_
 
@@ -30780,7 +30780,7 @@ be accepted were a reference to the period referred to in section 984(2).
 offeror has acquired or contracted to acquire includes a reference to shares
 which an associate of his has acquired or contracted to acquire.
 
-**984** **Further provision about rights conferred by section 983**
+**984****Further provision about rights conferred by section 983**
 
 (1) Rights conferred on a shareholder by subsection (2), (3) or (4) of section 983 are
 exercisable by a written communication addressed to the offeror.
@@ -30812,7 +30812,7 @@ in respect of the shares in question under section 979.
 
 472
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 3 — “Squeeze-out” and “Sell-out”_
@@ -30830,7 +30830,7 @@ reasonable steps for securing compliance with that subsection.
 and, for continued contravention, a daily default fine not exceeding
 one-fiftieth of the statutory maximum.
 
-**985** **Effect of requirement under section 983**
+**985****Effect of requirement under section 983**
 
 (1) Subject to section 986, this section applies where a shareholder exercises his
 rights under section 983 in respect of any shares held by him.
@@ -30865,7 +30865,7 @@ chosen.
 
 _Supplementary_
 
-**986** **Applications to the court**
+**986****Applications to the court**
 
 (1) Where a notice is given under section 979 to a shareholder the court may, on an
 application made by him, order—
@@ -30879,7 +30879,7 @@ the notice relates, or
 
 473
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 3 — “Squeeze-out” and “Sell-out”_
 
@@ -30945,7 +30945,7 @@ This is subject to subsection (10).
 
 474
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 3 — “Squeeze-out” and “Sell-out”_
@@ -30954,7 +30954,7 @@ _Chapter 3 — “Squeeze-out” and “Sell-out”_
 it is just and equitable to do so having regard, in particular, to the number of
 shareholders who have been traced but who have not accepted the offer.
 
-**987** **Joint offers**
+**987****Joint offers**
 
 (1) In the case of a takeover offer made by two or more persons jointly, this
 Chapter has effect as follows.
@@ -31013,13 +31013,13 @@ reference to none of the offerors having been able to do so.
 
 475
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 3 — “Squeeze-out” and “Sell-out”_
 
 _Interpretation_
 
-**988** **Associates**
+**988****Associates**
 
 (1) In this Chapter “associate”, in relation to an offeror, means—
 (a) a nominee of the offeror,
@@ -31080,7 +31080,7 @@ the exercise, of any of those rights by another person).
 
 476
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 3 — “Squeeze-out” and “Sell-out”_
@@ -31091,7 +31091,7 @@ an arrangement, and
 (ii) any provision whether express or implied and whether
 absolute or not.
 
-**989** **Convertible securities**
+**989****Convertible securities**
 
 (1) For the purposes of this Chapter securities of a company are treated as shares
 in the company if they are convertible into or entitle the holder to subscribe for
@@ -31105,7 +31105,7 @@ for which the holder is entitled to subscribe, or
 shares into which they are convertible or for which the holder is
 entitled to subscribe are of the same class.
 
-**990** **Debentures carrying voting rights**
+**990****Debentures carrying voting rights**
 
 (1) For the purposes of this Chapter debentures issued by a company to which
 subsection (2) applies are treated as shares in the company if they carry voting
@@ -31121,7 +31121,7 @@ accordingly;
 (b) references to shares being allotted are to be read as references to
 debentures being issued.
 
-**991** **Interpretation**
+**991****Interpretation**
 
 (1) In this Chapter—
 “the company” means the company whose shares are the subject of a
@@ -31146,7 +31146,7 @@ including rights that arise only in certain circumstances;
 
 477
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 3 — “Squeeze-out” and “Sell-out”_
 
@@ -31158,11 +31158,11 @@ longer) subject to conditions or if all conditions to which it was subject have
 been met.
 A reference to a contract becoming unconditional is to be read accordingly.
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 A MENDMENTS  TO P ART 7 OF  THE C OMPANIES A CT 1985
 
-**992** **Matters to be dealt with in directors’ report**
+**992****Matters to be dealt with in directors’ report**
 
 (1) Part 7 of the Companies Act 1985 (c. 6) (accounts and audit) is amended as
 follows.
@@ -31211,7 +31211,7 @@ special rights with regard to control of the company—
 
 478
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 
 _Chapter 4 — Amendments to Part 7 of the Companies Act 1985_
@@ -31276,7 +31276,7 @@ Directive;
 
 479
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 28 — Takeovers etc_
 _Chapter 4 — Amendments to Part 7 of the Companies Act 1985_
 
@@ -31312,11 +31312,11 @@ relation to a summary financial statement.”.
 (6) The amendments made by this section apply in relation to directors’ reports for
 financial years beginning on or after 20th May 2006.
 
-**P** **ART** **29**
+**PART 29**
 
 F RAUDULENT  TRADING
 
-**993** **Offence of fraudulent trading**
+**993****Offence of fraudulent trading**
 
 (1) If any business of a company is carried on with intent to defraud creditors of
 the company or creditors of any other person, or for any fraudulent purpose,
@@ -31342,18 +31342,18 @@ maximum (or both).
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 30 — Protection of members against unfair prejudice_
 480
 
-**P** **ART** **30**
+**PART 30**
 
 P ROTECTION  OF  MEMBERS  AGAINST  UNFAIR  PREJUDICE
 
 _Main provisions_
 
-**994** **Petition by company member**
+**994****Petition by company member**
 
 (1) A member of a company may apply to the court by petition for an order under
 this Part on the ground—
@@ -31373,7 +31373,7 @@ other provisions of this Part, “company” means—
 (b) a company that is not such a company but is a statutory water company
 within the meaning of the Statutory Water Companies Act 1991 (c. 58).
 
-**995** **Petition by Secretary of State**
+**995****Petition by Secretary of State**
 
 (1) This section applies to a company in respect of which—
 (a) the Secretary of State has received a report under section 437 of the
@@ -31406,14 +31406,14 @@ other provisions of this Part, “company” means any body corporate that is
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 30 — Protection of members against unfair prejudice_
 481
 
 liable to be wound up under the Insolvency Act 1986 (c. 45) or the Insolvency
 (Northern Ireland) Order 1989 (S.I. 1989/2405 (N.I. 19)).
 
-**996** **Powers of the court under this Part**
+**996****Powers of the court under this Part**
 
 (1) If the court is satisfied that a petition under this Part is well founded, it may
 make such order as it thinks fit for giving relief in respect of the matters
@@ -31437,14 +31437,14 @@ accordingly.
 
 _Supplementary provisions_
 
-**997** **Application of general rule-making powers**
+**997****Application of general rule-making powers**
 
 The power to make rules under section 411 of the Insolvency Act 1986 (c. 45) or
 Article 359 of the Insolvency (Northern Ireland) Order 1989 (S.I. 1989/2405
 (N.I. 19)), so far as relating to a winding-up petition, applies for the purposes
 of a petition under this Part.
 
-**998** **Copy of order affecting company’s constitution to be delivered to registrar**
+**998****Copy of order affecting company’s constitution to be delivered to registrar**
 
 (1) Where an order of the court under this Part—
 (a) alters the company’s constitution, or
@@ -31468,7 +31468,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 30 — Protection of members against unfair prejudice_
 482
@@ -31476,7 +31476,7 @@ _Part 30 — Protection of members against unfair prejudice_
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**999** **Supplementary provisions where company’s constitution altered**
+**999****Supplementary provisions where company’s constitution altered**
 
 (1) This section applies where an order under this Part alters a company’s
 constitution.
@@ -31501,11 +31501,11 @@ committed by—
 (5) A person guilty of an offence under this section is liable on summary
 conviction to a fine not exceeding level 3 on the standard scale.
 
-**P** **ART** **31**
+**PART 31**
 
 D ISSOLUTION  AND  RESTORATION  TO  THE  REGISTER
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 S TRIKING  OFF
 
@@ -31535,7 +31535,7 @@ striking the company’s name off the register.
 
 483
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 _Chapter 1 — Striking off_
 
@@ -31601,7 +31601,7 @@ company the name of which has been struck off the register.
 
 484
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 
 _Chapter 1 — Striking off_
@@ -31669,7 +31669,7 @@ carrying on business, or
 
 485
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 _Chapter 1 — Striking off_
 
@@ -31706,7 +31706,7 @@ facts that led to the contravention.
 (b) on summary conviction, to a fine not exceeding the statutory
 maximum.
 
-**1005 Circumstances in which application not to be made: other proceedings not**
+**1005 Circumstances in which application not to be made: other proceedings not **
 **concluded**
 
 (1) An application under section 1003 (application for voluntary striking off) on
@@ -31736,7 +31736,7 @@ finally dealt with or withdrawn;
 
 486
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 
 _Chapter 1 — Striking off_
@@ -31803,7 +31803,7 @@ Regulations under paragraph (f) are subject to negative resolution procedure.
 
 487
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 _Chapter 1 — Striking off_
 
@@ -31870,7 +31870,7 @@ application.
 
 488
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 
 _Chapter 1 — Striking off_
@@ -31936,7 +31936,7 @@ registered or principal office;
 
 489
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 _Chapter 1 — Striking off_
 
@@ -32001,7 +32001,7 @@ carrying on business.
 
 490
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 
 _Chapter 1 — Striking off_
@@ -32038,7 +32038,7 @@ An application under section 1003 is withdrawn by notice to the registrar.
 
 In this Chapter “creditor” includes a contingent or prospective creditor.
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 P ROPERTY  OF  DISSOLVED  COMPANY
 
@@ -32049,7 +32049,7 @@ _Property vesting as bona vacantia_
 (1) When a company is dissolved, all property and rights whatsoever vested in or
 held on trust for the company immediately before its dissolution (including
 leasehold property, but not including property held by the company on trust
-for another person) are deemed to be _bona vacantia_ and—
+for another person) are deemed to be _bona vacantia_and—
 (a) accordingly belong to the Crown, or to the Duchy of Lancaster or to the
 Duke of Cornwall for the time being (as the case may be), and
 (b) vest and may be dealt with in the same manner as other _bona vacantia_
@@ -32066,7 +32066,7 @@ the register under Chapter 3 (see section 1034).
 
 491
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 _Chapter 2 — Property of dissolved company_
 
@@ -32129,7 +32129,7 @@ sections 1020 to 1022 apply in relation to property in Scotland.
 
 492
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 
 _Chapter 2 — Property of dissolved company_
@@ -32145,7 +32145,7 @@ the property disclaimed.
 (2) It does not, except so far as is necessary for the purpose of releasing the
 company from any liability, affect the rights or liabilities of any other person.
 
-**1016 Disclaimer of leaseholds**
+**1016 Disclaimer of leaseholds **
 
 (1) The disclaimer of any property of a leasehold character does not take effect
 unless a copy of the disclaimer has been served (so far as the Crown
@@ -32193,7 +32193,7 @@ property in, or its delivery to—
 
 493
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 _Chapter 2 — Property of dissolved company_
 
@@ -32259,7 +32259,7 @@ of the company, in or in respect of the property disclaimed.
 
 494
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 
 _Chapter 2 — Property of dissolved company_
@@ -32327,7 +32327,7 @@ the lease or in relation to the lease.
 
 495
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 _Chapter 2 — Property of dissolved company_
 
@@ -32347,7 +32347,7 @@ of it.
 
 (3) In this section “company” includes any body corporate.
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 R ESTORATION  TO  THE  REGISTER
 
@@ -32378,7 +32378,7 @@ the register if, and only if, the following conditions are met.
 operation at the time of its striking off.
 
 (3) The second condition is that, if any property or right previously vested in or
-held on trust for the company has vested as _bona vacantia_ , the Crown
+held on trust for the company has vested as _bona vacantia_, the Crown
 representative has signified to the registrar in writing consent to the
 company’s restoration to the register.
 
@@ -32395,7 +32395,7 @@ that may be demanded as a condition of giving consent.
 
 496
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 
 _Chapter 3 — Restoration to the register_
@@ -32458,7 +32458,7 @@ takes effect.
 
 497
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 _Chapter 3 — Restoration to the register_
 
@@ -32523,7 +32523,7 @@ such a person),
 
 498
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 
 _Chapter 3 — Restoration to the register_
@@ -32591,7 +32591,7 @@ company to the register—
 
 499
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 _Chapter 3 — Restoration to the register_
 
@@ -32639,7 +32639,7 @@ as are necessary to bring up to date the records kept by the registrar,
 connection with the proceedings for the restoration of the company to
 the register,
 (c) where any property or right previously vested in or held on trust for the
-company has vested as _bona vacantia_ , the payment of the costs (in
+company has vested as _bona vacantia_, the payment of the costs (in
 Scotland, expenses) of the Crown representative—
 (i) in dealing with the property during the period of dissolution, or
 (ii) in connection with the proceedings on the application.
@@ -32657,7 +32657,7 @@ the Duchy of Cornwall;
 
 500
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 
 _Chapter 3 — Restoration to the register_
@@ -32723,7 +32723,7 @@ committed by—
 
 501
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 31 — Dissolution and restoration to the register_
 _Chapter 3 — Restoration to the register_
 
@@ -32737,7 +32737,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 **1034 Effect of restoration to the register where property has vested as bona vacantia**
 
 (1) The person in whom any property or right is vested by section 1012 (property
-of dissolved company to be _bona vacantia_ ) may dispose of, or of an interest in,
+of dissolved company to be _bona vacantia_) may dispose of, or of an interest in,
 that property or right despite the fact that the company may be restored to the
 register under this Chapter.
 
@@ -32761,13 +32761,13 @@ administrative restoration or pursuant to a court order for restoration).
 
 (4) Where a liability accrues under subsection (2) in respect of any property or
 right which before the restoration of the company to the register had accrued
-as _bona vacantia_ to the Duchy of Lancaster, the Attorney General of that Duchy
+as _bona vacantia_to the Duchy of Lancaster, the Attorney General of that Duchy
 shall represent Her Majesty in any proceedings arising in connection with that
 liability.
 
 (5) Where a liability accrues under subsection (2) in respect of any property or
 right which before the restoration of the company to the register had accrued
-as _bona vacantia_ to the Duchy of Cornwall, such persons as the Duke of
+as _bona vacantia_to the Duchy of Cornwall, such persons as the Duke of
 Cornwall (or other possessor for the time being of the Duchy) may appoint
 shall represent the Duke (or other possessor) in any proceedings arising out of
 that liability.
@@ -32786,14 +32786,14 @@ Remembrancer;
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 32 — Company investigations: amendments_
 502
 
-**P** **ART** **32**
+**PART 32**
 
-C OMPANY  INVESTIGATIONS : AMENDMENTS
+C OMPANY  INVESTIGATIONS: AMENDMENTS
 
 **1035 Powers of Secretary of State to give directions to inspectors**
 
@@ -32852,7 +32852,7 @@ committed, and
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 32 — Company investigations: amendments_
 503
 
@@ -32920,7 +32920,7 @@ notice in writing to the inspector.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 32 — Company investigations: amendments_
 504
@@ -32986,7 +32986,7 @@ a result of his investigation.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 32 — Company investigations: amendments_
 505
 
@@ -33046,16 +33046,16 @@ In section 8(1A)(b)(i) of the Company Directors Disqualification Act 1986
 
 506
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 33 — UK companies not formed under companies legislation_
 
 _Chapter 1 — Companies not formed under companies legislation but authorised to register_
 
-**P** **ART** **33**
+**PART 33**
 
 UK COMPANIES  NOT  FORMED  UNDER  COMPANIES  LEGISLATION
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 C OMPANIES  NOT  FORMED  UNDER  COMPANIES  LEGISLATION  BUT  AUTHORISED  TO  REGISTER
 
@@ -33114,7 +33114,7 @@ deemed a company limited by shares.
 
 507
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 33 — UK companies not formed under companies legislation_
 _Chapter 1 — Companies not formed under companies legislation but authorised to register_
 
@@ -33129,7 +33129,7 @@ Chapter 2 of Part 22 of the Companies Act 1985 (c. 6).
 
 (3) Regulations under this section are subject to negative resolution procedure.
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 U NREGISTERED  COMPANIES
 
@@ -33173,12 +33173,12 @@ provisions as they apply for the time being to that body.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 34 — Overseas companies_
 508
 
-**P** **ART** **34**
+**PART 34**
 
 O VERSEAS  COMPANIES
 
@@ -33237,7 +33237,7 @@ specified particulars of the alteration.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 34 — Overseas companies_
 509
 
@@ -33302,7 +33302,7 @@ substitution for the name previously registered.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 34 — Overseas companies_
 510
@@ -33367,7 +33367,7 @@ institution to which this section applies—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 34 — Overseas companies_
 511
 
@@ -33431,7 +33431,7 @@ Kingdom;
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 34 — Overseas companies_
 512
@@ -33492,7 +33492,7 @@ by section 1154 of this Act (duty to notify registrar of certain appointments).
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 34 — Overseas companies_
 513
 
@@ -33555,7 +33555,7 @@ specified in or determined in accordance with the regulations.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 34 — Overseas companies_
 514
@@ -33588,7 +33588,7 @@ another counts as the closing of one branch and the opening of another;
 (b) the relocation of a branch within the same part of the United Kingdom
 does not.
 
-**P** **ART** **35**
+**PART 35**
 
 T HE  REGISTRAR  OF  COMPANIES
 
@@ -33621,7 +33621,7 @@ Kingdom.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 35 — The registrar of companies_
 515
 
@@ -33683,7 +33683,7 @@ registrar.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 35 — The registrar of companies_
 516
@@ -33745,7 +33745,7 @@ as well as to the certificate issued on a company’s formation.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 35 — The registrar of companies_
 517
 
@@ -33805,7 +33805,7 @@ new.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 35 — The registrar of companies_
 518
@@ -33870,7 +33870,7 @@ requirements for such delivery.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 35 — The registrar of companies_
 519
 
@@ -33933,7 +33933,7 @@ provision requiring or authorising it to be delivered as not having been
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 35 — The registrar of companies_
 520
@@ -34000,7 +34000,7 @@ delivery.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 35 — The registrar of companies_
 521
 
@@ -34064,7 +34064,7 @@ that it is delivered by—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 35 — The registrar of companies_
 522
@@ -34127,7 +34127,7 @@ _Accounts, reports and returns_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 35 — The registrar of companies_
 523
 
@@ -34189,7 +34189,7 @@ Secretary of State by regulations.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 35 — The registrar of companies_
 524
@@ -34253,7 +34253,7 @@ Acts as “the register”.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 35 — The registrar of companies_
 525
 
@@ -34315,7 +34315,7 @@ the Companies Acts.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 35 — The registrar of companies_
 526
@@ -34379,7 +34379,7 @@ into force as well as to documents subsequently received.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 35 — The registrar of companies_
 527
 
@@ -34444,7 +34444,7 @@ inspection—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 35 — The registrar of companies_
 528
@@ -34504,7 +34504,7 @@ which the material was delivered to the registrar.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 35 — The registrar of companies_
 529
 
@@ -34568,7 +34568,7 @@ form of a document that was delivered to the registrar in hard copy form if—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 35 — The registrar of companies_
 530
@@ -34634,7 +34634,7 @@ inconsistent with other information on the register, and
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 35 — The registrar of companies_
 531
 
@@ -34695,7 +34695,7 @@ and on what grounds, and
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 35 — The registrar of companies_
 532
@@ -34761,7 +34761,7 @@ cause, damage to the company, and
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 35 — The registrar of companies_
 533
 
@@ -34825,7 +34825,7 @@ description of document and the date of receipt.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 35 — The registrar of companies_
 534
@@ -34889,7 +34889,7 @@ case of similarity to existing name).
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 35 — The registrar of companies_
 535
 
@@ -34953,7 +34953,7 @@ been delivered to the registrar.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 35 — The registrar of companies_
 536
@@ -35020,7 +35020,7 @@ document and a certified translation—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 35 — The registrar of companies_
 537
 
@@ -35047,7 +35047,7 @@ addresses have not been transliterated into a permitted form.
 
 (3) Regulations under this section are subject to negative resolution procedure.
 
-**1109 Transliteration of names and addresses: voluntary transliteration into Roman**
+**1109 Transliteration of names and addresses: voluntary transliteration into Roman **
 **characters**
 
 (1) Where a name or address is or has been delivered to the registrar in a permitted
@@ -35083,7 +35083,7 @@ under any enactment is required—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 35 — The registrar of companies_
 538
@@ -35149,7 +35149,7 @@ offence, or imposing a civil penalty, for the default.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 35 — The registrar of companies_
 539
 
@@ -35215,7 +35215,7 @@ such requirements by other means.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 35 — The registrar of companies_
 540
@@ -35259,7 +35259,7 @@ contracting out).
 Unless the context otherwise requires, the provisions of this Part apply to an
 overseas company as they apply to a company as defined in section 1.
 
-**P** **ART** **36**
+**PART 36**
 
 O FFENCES  UNDER  THE C OMPANIES A CTS
 
@@ -35280,7 +35280,7 @@ default.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 36 — Offences under the Companies Acts_
 541
 
@@ -35291,7 +35291,7 @@ purposes of the provision in question.
 permits, participates in, or fails to take all reasonable steps to prevent, the
 contravention.
 
-**1122 Liability of company as officer in default**
+**1122 Liability of company as officer in default **
 
 (1) Where a company is an officer of another company, it does not commit an
 offence as an officer in default unless one of its officers is in default.
@@ -35342,7 +35342,7 @@ offences.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 36 — Offences under the Companies Acts_
 542
@@ -35405,7 +35405,7 @@ taken—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 36 — Offences under the Companies Acts_
 543
 
@@ -35465,7 +35465,7 @@ professional privilege (in Scotland, confidentiality of communications).
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 36 — Offences under the Companies Acts_
 544
@@ -35494,7 +35494,7 @@ Schedule 4 to the Magistrates’ Courts (Northern Ireland) Order
 (3) A fine imposed on an unincorporated body on its conviction of an offence
 under the Companies Acts must be paid out of the funds of the body.
 
-**1131 Imprisonment on summary conviction in England and Wales: transitory**
+**1131 Imprisonment on summary conviction in England and Wales: transitory **
 **provision**
 
 (1) This section applies to any provision of the Companies Acts that provides that
@@ -35530,7 +35530,7 @@ and
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 36 — Offences under the Companies Acts_
 545
 
@@ -35564,9 +35564,9 @@ _Supplementary_
 The provisions of this Part except section 1132 do not apply to offences
 committed before the commencement of the relevant provision.
 
-**P** **ART** **37**
+**PART 37**
 
-C OMPANIES : SUPPLEMENTARY  PROVISIONS
+C OMPANIES: SUPPLEMENTARY  PROVISIONS
 
 _Company records_
 
@@ -35592,7 +35592,7 @@ reference.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 37 — Companies: supplementary provisions_
 546
@@ -35613,7 +35613,7 @@ that requires a register of holders of the company’s debentures to be kept in
 hard copy form is to be read as requiring it to be kept in hard copy or electronic
 form.
 
-**1136 Regulations about where certain company records to be kept available for**
+**1136 Regulations about where certain company records to be kept available for **
 **inspection**
 
 (1) The Secretary of State may make provision by regulations specifying places
@@ -35658,7 +35658,7 @@ met.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 37 — Companies: supplementary provisions_
 547
 
@@ -35725,7 +35725,7 @@ terms); or
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 37 — Companies: supplementary provisions_
 548
@@ -35791,7 +35791,7 @@ Charities Act 1993 (c. 10), or
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 37 — Companies: supplementary provisions_
 549
 
@@ -35857,7 +35857,7 @@ enactment.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 37 — Companies: supplementary provisions_
 550
@@ -35924,7 +35924,7 @@ communication contains or is accompanied by a statement of the
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 37 — Companies: supplementary provisions_
 551
 
@@ -35989,7 +35989,7 @@ or receiving documents or information by electronic means;
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 37 — Companies: supplementary provisions_
 552
@@ -36053,7 +36053,7 @@ carry out the valuation, and
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 37 — Companies: supplementary provisions_
 553
 
@@ -36114,7 +36114,7 @@ same group.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 37 — Companies: supplementary provisions_
 554
@@ -36179,7 +36179,7 @@ company of—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 37 — Companies: supplementary provisions_
 555
 
@@ -36241,7 +36241,7 @@ part of it, to another county court.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 37 — Companies: supplementary provisions_
 556
@@ -36280,9 +36280,9 @@ be entered for the defendant (in Scotland, grant decree of absolvitor) on such
 terms as to costs (in Scotland, expenses) or otherwise as the judge may think
 proper.
 
-**P** **ART** **38**
+**PART 38**
 
-C OMPANIES : INTERPRETATION
+C OMPANIES: INTERPRETATION
 
 _Meaning of "UK-registered company"_
 
@@ -36305,7 +36305,7 @@ that other company—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 38 — Companies: interpretation_
 557
 
@@ -36370,7 +36370,7 @@ an undertaking which is not a company, as references to the corresponding
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 38 — Companies: interpretation_
 558
@@ -36435,7 +36435,7 @@ otherwise supplementing this section.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 38 — Companies: interpretation_
 559
 
@@ -36499,7 +36499,7 @@ Companies Acts.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 38 — Companies: interpretation_
 560
@@ -36563,7 +36563,7 @@ employees.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 38 — Companies: interpretation_
 561
 
@@ -36628,7 +36628,7 @@ disregarded—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 38 — Companies: interpretation_
 562
@@ -36689,7 +36689,7 @@ this Act include the requirements of regulations and orders made under it.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 38 — Companies: interpretation_
 563
 
@@ -36750,7 +36750,7 @@ of that in subsection (1)—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 38 — Companies: interpretation_
 564
@@ -36760,11 +36760,11 @@ _Part 38 — Companies: interpretation_
 Schedule 8 contains an index of provisions defining or otherwise explaining
 expressions used in the Companies Acts.
 
-**P** **ART** **39**
+**PART 39**
 
-C OMPANIES : MINOR  AMENDMENTS
+C OMPANIES: MINOR  AMENDMENTS
 
-**1175 Removal of special provisions about accounts and audit of charitable**
+**1175 Removal of special provisions about accounts and audit of charitable **
 **companies**
 
 (1) Part 7 of the Companies Act 1985 (c. 6) and Part 8 of the Companies (Northern
@@ -36799,7 +36799,7 @@ not applicable), omit paragraph (b) (which relates to section 438).
 (4) Nothing in this section affects proceedings brought under section 438 before
 the commencement of this section.
 
-**1177 Repeal of certain provisions about company directors**
+**1177 Repeal of certain provisions about company directors **
 
 The following provisions of Part 10 of the Companies Act 1985 shall cease to
 have effect—
@@ -36814,11 +36814,11 @@ sections 343 and 344 (special procedure for disclosure by banks).
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 39 — Companies: minor amendments_
 565
 
-**1178 Repeal of requirement that certain companies publish periodical statement**
+**1178 Repeal of requirement that certain companies publish periodical statement **
 
 The following provisions shall cease to have effect—
 section 720 of the Companies Act 1985 (c. 6) (certain companies to publish
@@ -36860,9 +36860,9 @@ Leasehold Reform, Housing and Urban Development Act 1993;
 “RTM companies” has the same meaning as in Chapter 1 of Part 2 of the
 Commonhold and Leasehold Reform Act 2002.
 
-**P** **ART** **40**
+**PART 40**
 
-C OMPANY  DIRECTORS : FOREIGN  DISQUALIFICATION  ETC
+C OMPANY  DIRECTORS: FOREIGN  DISQUALIFICATION  ETC
 
 _Introductory_
 
@@ -36879,7 +36879,7 @@ territory outside the United Kingdom—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 40 — Company directors: foreign disqualification etc_
 566
@@ -36941,7 +36941,7 @@ part in the promotion, formation or management of a UK company.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 40 — Company directors: foreign disqualification etc_
 567
 
@@ -37005,7 +37005,7 @@ he became subject to foreign restrictions;
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 40 — Company directors: foreign disqualification etc_
 568
@@ -37070,7 +37070,7 @@ is so liable.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 40 — Company directors: foreign disqualification etc_
 569
 
@@ -37117,7 +37117,7 @@ imposed.
 
 (5) Regulations under this section are subject to affirmative resolution procedure.
 
-**1189 Statements from persons disqualified**
+**1189 Statements from persons disqualified **
 
 (1) The Secretary of State may make provision by regulations requiring a
 statement or notice sent to the registrar of companies under any of the
@@ -37134,7 +37134,7 @@ to be accompanied by an additional statement.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 40 — Company directors: foreign disqualification etc_
 570
@@ -37198,7 +37198,7 @@ two years or a fine (or both);
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 40 — Company directors: foreign disqualification etc_
 571
 
@@ -37213,11 +37213,11 @@ maximum (or both).
 of the Criminal Justice Act 2003 (c. 44), for “twelve months” in subsection
 (2)(b)(i) substitute “six months”.
 
-**P** **ART** **41**
+**PART 41**
 
 B USINESS  NAMES
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 R ESTRICTED  OR  PROHIBITED  NAMES
 
@@ -37263,7 +37263,7 @@ Her Majesty’s Government in Northern Ireland,
 
 572
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 41 — Business names_
 
 _Chapter 1 — Restricted or prohibited names_
@@ -37313,7 +37313,7 @@ conviction to a fine not exceeding level 3 on the standard scale and, for
 continued contravention, a daily default fine not exceeding one-tenth of level
 3 on the standard scale.
 
-**1195 Requirement to seek comments of government department or other relevant**
+**1195 Requirement to seek comments of government department or other relevant **
 **body**
 
 (1) The Secretary of State may by regulations under—
@@ -37331,7 +37331,7 @@ Government department or other body.
 
 573
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 41 — Business names_
 _Chapter 1 — Restricted or prohibited names_
 
@@ -37400,7 +37400,7 @@ continued contravention, a daily default fine not exceeding one-tenth of level
 
 574
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 41 — Business names_
 
 _Chapter 1 — Restricted or prohibited names_
@@ -37458,11 +37458,11 @@ or
 
 575
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 41 — Business names_
 _Chapter 2 — Disclosure required in case of individual or partnership_
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 D ISCLOSURE  REQUIRED  IN  CASE  OF  INDIVIDUAL  OR  PARTNERSHIP
 
@@ -37520,7 +37520,7 @@ this Chapter, in legible characters, on all—
 
 576
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 41 — Business names_
 
 _Chapter 2 — Disclosure required in case of individual or partnership_
@@ -37589,7 +37589,7 @@ displayed in a specified form.
 
 577
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 41 — Business names_
 _Chapter 2 — Disclosure required in case of individual or partnership_
 
@@ -37638,7 +37638,7 @@ requirements of regulations under this Chapter.
 (4) This section does not affect the right of any person to enforce such rights as he
 may have against another person in any proceedings brought by that person.
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 S UPPLEMENTARY
 
@@ -37655,7 +37655,7 @@ this Part as in relation to offences under the Companies Acts.
 
 578
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 41 — Business names_
 
 _Chapter 3 — Supplementary_
@@ -37674,11 +37674,11 @@ country or territory outside the United Kingdom;
 “surname”, in relation to a peer or person usually known by a British title
 different from his surname, means the title by which he is known.
 
-**P** **ART** **42**
+**PART 42**
 
 S TATUTORY A UDITORS
 
-**C** **HAPTER** **1**
+**CHAPTER 1**
 
 I NTRODUCTORY
 
@@ -37718,7 +37718,7 @@ Insurance Undertakings) Regulations 1993 (S.I. 1993/3245),
 
 579
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 1 — Introductory_
 
@@ -37773,12 +37773,12 @@ so eligible—
 
 580
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 
 _Chapter 2 — Individuals and firms_
 
-**C** **HAPTER** **2**
+**CHAPTER 2**
 
 I NDIVIDUALS  AND  FIRMS
 
@@ -37838,7 +37838,7 @@ subsection (2)(b).
 
 581
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 2 — Individuals and firms_
 
@@ -37904,7 +37904,7 @@ reason of his lack of independence.
 
 582
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 
 _Chapter 2 — Individuals and firms_
@@ -37971,7 +37971,7 @@ previously carried it on in partnership.
 
 583
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 2 — Individuals and firms_
 
@@ -38037,7 +38037,7 @@ subsection applies.
 
 584
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 
 _Chapter 2 — Individuals and firms_
@@ -38102,7 +38102,7 @@ purposes by virtue of Article 34(2), (3) or (4) of that Order,
 
 585
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 2 — Individuals and firms_
 
@@ -38167,7 +38167,7 @@ obtained in a specified foreign country.
 
 586
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 
 _Chapter 2 — Individuals and firms_
@@ -38236,7 +38236,7 @@ appointment as auditor of an unquoted company.
 
 587
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 2 — Individuals and firms_
 
@@ -38302,7 +38302,7 @@ Schedule 10 is not satisfied,
 
 588
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 
 _Chapter 2 — Individuals and firms_
@@ -38324,7 +38324,7 @@ the obligation is complied with.
 (3) In this section “the court” means the High Court or, in Scotland, the Court of
 Session.
 
-**C** **HAPTER** **3**
+**CHAPTER 3**
 
 A UDITORS G ENERAL
 
@@ -38368,7 +38368,7 @@ function”).
 
 589
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 3 — Auditors General_
 
@@ -38432,7 +38432,7 @@ against an Auditor General to whom such a hearing related.
 
 590
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 
 _Chapter 3 — Auditors General_
@@ -38499,7 +38499,7 @@ subsection (1) to—
 
 591
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 3 — Auditors General_
 
@@ -38566,7 +38566,7 @@ by or by virtue of this Part, and
 
 592
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 
 _Chapter 3 — Auditors General_
@@ -38635,7 +38635,7 @@ suspension notice issued to him in respect of the audited person has effect.
 
 593
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 3 — Auditors General_
 
@@ -38698,12 +38698,12 @@ under Chapter 3 of Part 42 of the Companies Act 2006;”.
 
 594
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 
 _Chapter 4 — The register of auditors etc_
 
-**C** **HAPTER** **4**
+**CHAPTER 4**
 
 T HE  REGISTER  OF  AUDITORS  ETC
 
@@ -38764,7 +38764,7 @@ under section 1252, with respect to the keeping of the register, or
 
 595
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 4 — The register of auditors etc_
 
@@ -38824,12 +38824,12 @@ manner.
 
 596
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 
 _Chapter 5 — Registered third country auditors_
 
-**C** **HAPTER** **5**
+**CHAPTER 5**
 
 R EGISTERED  THIRD  COUNTRY  AUDITORS
 
@@ -38889,7 +38889,7 @@ subsection (1)(a), and
 
 597
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 5 — Registered third country auditors_
 
@@ -38955,7 +38955,7 @@ with.
 
 598
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 
 _Chapter 5 — Registered third country auditors_
@@ -38989,7 +38989,7 @@ standards etc), after subsection (2)(ka) (inserted by section 1238) insert—
 “(kb) establishing, maintaining or carrying out arrangements within
 paragraph 1 or 2 of Schedule 12 to the Companies Act 2006;”.
 
-**C** **HAPTER** **6**
+**CHAPTER 6**
 
 S UPPLEMENTARY  AND  GENERAL
 
@@ -39021,7 +39021,7 @@ acting as statutory auditor of the company.
 
 599
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 6 — Supplementary and general_
 
@@ -39085,7 +39085,7 @@ Court of Session Act 1988 (c. 36).
 
 600
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 
 _Chapter 6 — Supplementary and general_
@@ -39151,7 +39151,7 @@ months”.
 
 601
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 6 — Supplementary and general_
 
@@ -39217,7 +39217,7 @@ order, and
 
 602
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 
 _Chapter 6 — Supplementary and general_
@@ -39286,7 +39286,7 @@ transferred by the order, and
 
 603
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 6 — Supplementary and general_
 
@@ -39351,7 +39351,7 @@ and liable to be proceeded against and punished accordingly.
 
 604
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 
 _Chapter 6 — Supplementary and general_
@@ -39421,7 +39421,7 @@ for criminal proceedings).
 
 605
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 6 — Supplementary and general_
 
@@ -39488,7 +39488,7 @@ association.
 
 606
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 
 _Chapter 6 — Supplementary and general_
@@ -39554,7 +39554,7 @@ _Interpretation_
 
 607
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 6 — Supplementary and general_
 
@@ -39619,7 +39619,7 @@ United Kingdom” if and only if—
 
 608
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 
 _Chapter 6 — Supplementary and general_
@@ -39644,7 +39644,7 @@ The following Table shows provisions defining or otherwise explaining
 expressions used in this Part (other than provisions defining or explaining an
 expression used only in the same section)—
 
-_Expression_ _Provision_
+_Expression__Provision_
 
 address section 1261(1)
 
@@ -39689,11 +39689,11 @@ parent undertaking section 1261(1)
 
 609
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 42 — Statutory Auditors_
 _Chapter 6 — Supplementary and general_
 
-_Expression_ _Provision_
+_Expression__Provision_
 
 qualifying body section 1220(1)
 
@@ -39734,7 +39734,7 @@ section 1241(1)
 
 _Miscellaneous and general_
 
-**1263 Power to make provision in consequence of changes affecting accountancy**
+**1263 Power to make provision in consequence of changes affecting accountancy **
 **bodies**
 
 (1) The Secretary of State may by regulations make such amendments of
@@ -39755,12 +39755,12 @@ Schedule 14 contains consequential amendments relating to this Part.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 43 — Transparency obligations and related matters_
 610
 
-**P** **ART** **43**
+**PART 43**
 
 T RANSPARENCY  OBLIGATIONS  AND  RELATED  MATTERS
 
@@ -39786,7 +39786,7 @@ _Transparency obligations_
 
 _“Transparency obligations_
 
-**89A** **Transparency rules**
+**89A****Transparency rules**
 
 (1) The competent authority may make rules for the purposes of the
 transparency obligations directive.
@@ -39820,7 +39820,7 @@ respect of voting shares in an issuer, any voting rights held, or
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 43 — Transparency obligations and related matters_
 611
 
@@ -39842,7 +39842,7 @@ rules”.
 (6) Nothing in sections 89B to 89G affects the generality of the power to
 make rules under this section.
 
-**89B** **Provision of voteholder information**
+**89B****Provision of voteholder information**
 
 (1) Transparency rules may make provision for voteholder information in
 respect of voting shares to be notified, in circumstances specified in the
@@ -39886,7 +39886,7 @@ proportion greater or less than that designated proportion, or
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 43 — Transparency obligations and related matters_
 612
@@ -39896,7 +39896,7 @@ a proportion equal to or less than that designated proportion.
 
 (7) In subsection (6) “designated” means designated by the rules.
 
-**89C** **Provision of information by issuers of transferable securities**
+**89C****Provision of information by issuers of transferable securities**
 
 (1) Transparency rules may make provision requiring the issuer of
 transferable securities, in circumstances specified in the rules—
@@ -39931,7 +39931,7 @@ issuer in respect of shares in the issuer;
 (e) information relating to the total number of voting rights in
 respect of shares or shares of a particular class.
 
-**89D** **Notification of voting rights held by issuer**
+**89D****Notification of voting rights held by issuer**
 
 (1) Transparency rules may require notification of voteholder information
 relating to the proportion of voting rights held by an issuer in respect
@@ -39952,7 +39952,7 @@ a notifiable change in the proportion of—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 43 — Transparency obligations and related matters_
 613
 
@@ -39971,7 +39971,7 @@ a proportion equal to or less than that designated proportion.
 
 (4) In subsection (3) “designated” means designated by the rules.
 
-**89E** **Notification of proposed amendment of issuer’s constitution**
+**89E****Notification of proposed amendment of issuer’s constitution**
 
 Transparency rules may make provision requiring an issuer of
 transferable securities that are admitted to trading on a regulated
@@ -39980,7 +39980,7 @@ market to notify a proposed amendment to its constitution—
 (b) to the market on which the issuer’s securities are admitted,
 at times and in circumstances specified in the rules.
 
-**89F** **Transparency rules: interpretation etc**
+**89F****Transparency rules: interpretation etc**
 
 (1) For the purposes of sections 89A to 89G—
 (a) the voting rights in respect of any voting shares are the voting
@@ -40016,7 +40016,7 @@ the same time, each be regarded as holding the same voting rights.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 43 — Transparency obligations and related matters_
 614
@@ -40029,7 +40029,7 @@ United Kingdom;
 “voting shares” means shares of an issuer to which voting rights
 are attached.
 
-**89G** **Transparency rules: other supplementary provisions**
+**89G****Transparency rules: other supplementary provisions**
 
 (1) Transparency rules may impose the same obligations on a person who
 has applied for the admission of transferable securities to trading on a
@@ -40064,7 +40064,7 @@ inserted by section 1266 above insert—
 
 _“Power of competent authority to call for information_
 
-**89H** **Competent authority’s power to call for information**
+**89H****Competent authority’s power to call for information**
 
 (1) The competent authority may by notice in writing given to a person to
 whom this section applies require him—
@@ -40084,7 +40084,7 @@ description.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 43 — Transparency obligations and related matters_
 615
 
@@ -40111,7 +40111,7 @@ and
 (5) If a person claims a lien on a document, its production under this
 section does not affect the lien.
 
-**89I** **Requirements in connection with call for information**
+**89I****Requirements in connection with call for information**
 
 (1) The competent authority may require any information provided under
 section 89H to be provided in such form as it may reasonably require.
@@ -40140,7 +40140,7 @@ instructed by that person; or
 fails to do so, the competent authority may require him to state, to the
 best of his knowledge and belief, where the document is.
 
-**89J** **Power to call for information: supplementary provisions**
+**89J****Power to call for information: supplementary provisions**
 
 (1) The competent authority may require an issuer to make public any
 information provided to the authority under section 89H.
@@ -40150,7 +40150,7 @@ information provided to the authority under section 89H.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 43 — Transparency obligations and related matters_
 616
@@ -40196,7 +40196,7 @@ inserted by section 1267 above insert—
 
 _“Powers exercisable in case of infringement of transparency obligation_
 
-**89K** **Public censure of issuer**
+**89K****Public censure of issuer**
 
 (1) If the competent authority finds that an issuer of securities admitted to
 trading on a regulated market is failing or has failed to comply with an
@@ -40215,7 +40215,7 @@ warning notice, the competent authority decides to make the proposed
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 43 — Transparency obligations and related matters_
 617
 
@@ -40235,7 +40235,7 @@ obligations directive.
 the United Kingdom, any reference to an applicable transparency
 obligation must be read subject to section 100A(2).
 
-**89L** **Power to suspend or prohibit trading of securities**
+**89L****Power to suspend or prohibit trading of securities**
 
 (1) This section applies to securities admitted to trading on a regulated
 market.
@@ -40282,7 +40282,7 @@ obligation must be read subject to section 100A(2).
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 43 — Transparency obligations and related matters_
 618
@@ -40322,7 +40322,7 @@ authority decides to maintain, vary or revoke its earlier decision, it
 must give written notice to that effect to the person mentioned in
 subsection (2).
 
-**89N** **Right to refer matters to the Tribunal**
+**89N****Right to refer matters to the Tribunal**
 
 A person—
 (a) to whom a decision notice is given under section 89K (public
@@ -40342,7 +40342,7 @@ In Part 6 of the Financial Services and Markets Act 2000 (c. 8), after the secti
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 43 — Transparency obligations and related matters_
 619
 
@@ -40350,7 +40350,7 @@ inserted by section 1268 above insert—
 
 _“Corporate governance_
 
-**89O** **Corporate governance rules**
+**89O****Corporate governance rules**
 
 (1) The competent authority may make rules (“corporate governance
 rules”)—
@@ -40406,7 +40406,7 @@ or 6 of the transparency obligations directive, and
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 43 — Transparency obligations and related matters_
 620
@@ -40469,7 +40469,7 @@ than to the issuer, in respect of any such loss.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 43 — Transparency obligations and related matters_
 621
 
@@ -40497,7 +40497,7 @@ having responsibilities in relation to the publication;
 (b) references to the acquisition by a person of securities include his
 contracting to acquire them or any interest in them.
 
-**90B** **Power to make further provision about liability for published**
+**90B****Power to make further provision about liability for published **
 **information**
 
 (1) The Treasury may by regulations make provision about the liability of
@@ -40534,7 +40534,7 @@ obligation shall be read accordingly.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 43 — Transparency obligations and related matters_
 622
@@ -40564,7 +40564,7 @@ protect investors.
 (6) In such a case the authority must inform the Commission of the
 measures at the earliest opportunity.”.
 
-**1272 Transparency obligations and related matters: minor and consequential**
+**1272 Transparency obligations and related matters: minor and consequential **
 **amendments**
 
 (1) Schedule 15 to this Act makes minor and consequential amendments in
@@ -40599,7 +40599,7 @@ any Community obligation.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 43 — Transparency obligations and related matters_
 623
 
@@ -40626,7 +40626,7 @@ penalty than—
 (6) In this section “issuer”, “securities” and “regulated market” have the same
 meaning as in Part 6 of the Financial Services and Markets Act 2000 (c. 8).
 
-**P** **ART** **44**
+**PART 44**
 
 M ISCELLANEOUS  PROVISIONS
 
@@ -40661,7 +40661,7 @@ investigations within paragraph (p);
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 44 — Miscellaneous provisions_
 624
@@ -40727,7 +40727,7 @@ make regulations under section 17 of the Companies (Audit, Investigations
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 44 — Miscellaneous provisions_
 625
 
@@ -40792,7 +40792,7 @@ section 1280 (obligations with respect to provision of information).
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 44 — Miscellaneous provisions_
 626
@@ -40856,7 +40856,7 @@ shares of a specified description.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 44 — Miscellaneous provisions_
 627
 
@@ -40918,7 +40918,7 @@ rights on behalf of more than one institution, or
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 44 — Miscellaneous provisions_
 628
@@ -40984,7 +40984,7 @@ pursuance of a resolution of either House of Parliament.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 44 — Miscellaneous provisions_
 629
 
@@ -40998,7 +40998,7 @@ _Expenses of winding up_
 
 (1) In Chapter 8 of Part 4 of the Insolvency Act 1986 (c. 45) (winding up of
 companies: provisions of general application), before section 176A (under the
-heading “ _Property subject to floating charge_ ”) insert—
+heading “ _Property subject to floating charge_”) insert—
 
 **“176ZA Payment of expenses of winding up (England and Wales)**
 
@@ -41034,7 +41034,7 @@ remuneration of the liquidator.”.
 (2) In Chapter 8 of Part 5 of the Insolvency (Northern Ireland) Order 1989 (S.I.
 1989/2405 (N.I. 19)) (winding up of companies: provisions of general
 application), before Article 150A (under the heading “ _Property subject to floating_
-_charge_ ”) insert—
+_charge_”) insert—
 
 **“150ZA Payment of expenses of winding up**
 
@@ -41049,7 +41049,7 @@ such property accordingly.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 44 — Miscellaneous provisions_
 630
@@ -41088,7 +41088,7 @@ alteration of the memorandum or articles of association” substitute “Where a
 commonhold association alters its memorandum or articles at a time when the
 land specified in its memorandum is commonhold land, the alteration”.
 
-**P** **ART** **45**
+**PART 45**
 
 N ORTHERN I RELAND
 
@@ -41113,7 +41113,7 @@ Ireland.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 45 — Northern Ireland_
 631
 
@@ -41127,7 +41127,7 @@ _Part 45 — Northern Ireland_
 Societas Europaea) within the meaning of Council Regulation 2157/2001/EC
 of 8 October 2001 on the Statute for a European Company.
 
-**1286 Extension of GB enactments relating to certain other forms of business**
+**1286 Extension of GB enactments relating to certain other forms of business **
 **organisation**
 
 (1) The enactments in force in Great Britain relating to—
@@ -41155,7 +41155,7 @@ Ireland.
 (2) The Business Names (Northern Ireland) Order 1986 (S.I. 1986/1033 (N.I. 7))
 shall cease to have effect accordingly.
 
-**P** **ART** **46**
+**PART 46**
 
 G ENERAL  SUPPLEMENTARY  PROVISIONS
 
@@ -41176,7 +41176,7 @@ procedure” the statutory instrument containing the regulations or order shall
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 46 — General supplementary provisions_
 632
@@ -41240,7 +41240,7 @@ of the Interpretation Act 1978 (c. 30),
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 46 — General supplementary provisions_
 633
 
@@ -41303,7 +41303,7 @@ of this Act not yet having come into force.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Part 46 — General supplementary provisions_
 634
@@ -41348,7 +41348,7 @@ under this Act.
 (8) In this section “subordinate legislation” has the same meaning as in the
 Interpretation Act 1978 (c. 30).
 
-**P** **ART** **47**
+**PART 47**
 
 F INAL  PROVISIONS
 
@@ -41370,7 +41370,7 @@ provisions of this Act extend to the whole of the United Kingdom.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Part 47 — Final provisions_
 635
 
@@ -41395,7 +41395,7 @@ appointed by order of the Secretary of State or the Treasury.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 1 — Connected persons: references to an interest in shares or debentures_
 636
@@ -41404,7 +41404,7 @@ _Schedule 1 — Connected persons: references to an interest in shares or debent
 
 SCHEDULE 1 Sections 254 and 255
 
-C ONNECTED  PERSONS : REFERENCES  TO  AN  INTEREST  IN  SHARES  OR  DEBENTURES
+C ONNECTED  PERSONS: REFERENCES  TO  AN  INTEREST  IN  SHARES  OR  DEBENTURES
 
 _Introduction_
 
@@ -41455,7 +41455,7 @@ an interest in shares.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 1 — Connected persons: references to an interest in shares or debentures_
 637
 
@@ -41519,7 +41519,7 @@ disregarded.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 1 — Connected persons: references to an interest in shares or debentures_
 638
@@ -41587,7 +41587,7 @@ S PECIFIED  PERSONS
 
 639
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 2 — Specified persons, descriptions of disclosures etc for the purposes of section 948_
 _Part 1 — Specified persons_
 
@@ -41658,7 +41658,7 @@ appointed under paragraph 7 of Schedule 1 to the Financial Services and
 
 640
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 2 — Specified persons, descriptions of disclosures etc for the purposes of section 948_
 
 _Part 2 — Specified descriptions of disclosures_
@@ -41726,7 +41726,7 @@ to exercise its functions.
 
 641
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 2 — Specified persons, descriptions of disclosures etc for the purposes of section 948_
 _Part 2 — Specified descriptions of disclosures_
 
@@ -41791,7 +41791,7 @@ functions under sections 5 to 10 of the National Lottery etc. Act 1993.
 
 642
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 2 — Specified persons, descriptions of disclosures etc for the purposes of section 948_
 
 _Part 2 — Specified descriptions of disclosures_
@@ -41862,7 +41862,7 @@ State) to exercise its functions under Part 42 of this Act (statutory auditors).
 
 643
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 2 — Specified persons, descriptions of disclosures etc for the purposes of section 948_
 _Part 2 — Specified descriptions of disclosures_
 
@@ -41932,7 +41932,7 @@ Enterprise) Act 2004 (supervision of periodic accounts and reports of issuers
 
 644
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 2 — Specified persons, descriptions of disclosures etc for the purposes of section 948_
 
 _Part 2 — Specified descriptions of disclosures_
@@ -41993,7 +41993,7 @@ disclosed.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 3 — Amendments of remaining provisions of the Companies Act 1985 relating to offences_
 645
 
@@ -42026,7 +42026,7 @@ exceeding the statutory maximum (or both) and, for
 continued contravention, a daily default fine not
 exceeding one-fiftieth of the statutory maximum.”.
 
-_Obstruction of rights conferred by a warrant or failure to comply with requirement under_
+_Obstruction of rights conferred by a warrant or failure to comply with requirement under _
 _section 448_
 
 2 (1) In section 448(7) of the Companies Act 1985 (obstruction of rights conferred
@@ -42059,7 +42059,7 @@ exceeding two years or a fine (or both);
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 3 — Amendments of remaining provisions of the Companies Act 1985 relating to offences_
 646
@@ -42126,7 +42126,7 @@ exercising power to enter and remain on premises) is amended as follows.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 3 — Amendments of remaining provisions of the Companies Act 1985 relating to offences_
 647
 
@@ -42192,7 +42192,7 @@ hand or by post to an address (in accordance with paragraph 4).
 
 648
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 4 — Documents and information sent or supplied to a company_
 
 _Part 2 — Communications in hard copy form_
@@ -42257,7 +42257,7 @@ sent or supplied in a form or manner that has been agreed by the company.
 
 649
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 5 — Communications by a company_
 _Part 1 — Introduction_
 
@@ -42319,7 +42319,7 @@ intended recipient’s last address known to the company.
 
 650
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 5 — Communications by a company_
 
 _Part 3 — Communications in electronic form_
@@ -42385,7 +42385,7 @@ and has not revoked that agreement.
 
 651
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 5 — Communications by a company_
 _Part 4 — Communications by means of a website_
 
@@ -42452,7 +42452,7 @@ information to him in that manner.
 
 652
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 5 — Communications by a company_
 
 _Part 4 — Communications by means of a website_
@@ -42474,7 +42474,7 @@ similar class of documents or information.
 
 (5) For the purposes of this paragraph—
 (a) the relevant debenture holders are the holders of debentures of the
-company ranking _pari passu_ for all purposes with the intended
+company ranking _pari passu_for all purposes with the intended
 recipient, and
 (b) a resolution of the relevant debenture holders is duly passed if they
 agree in accordance with the provisions of the instruments creating
@@ -42519,7 +42519,7 @@ website throughout—
 
 653
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 5 — Communications by a company_
 _Part 4 — Communications by means of a website_
 
@@ -42585,7 +42585,7 @@ bankrupt, or by any like description,
 
 654
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 5 — Communications by a company_
 
 _Part 6 — Supplementary provisions_
@@ -42610,7 +42610,7 @@ trustee under the protected deed.
 
 SCHEDULE 6 Section 1159
 
-M EANING  OF “ SUBSIDIARY ” ETC : SUPPLEMENTARY  PROVISIONS
+M EANING  OF “ SUBSIDIARY ” ETC: SUPPLEMENTARY  PROVISIONS
 
 _Introduction_
 
@@ -42648,7 +42648,7 @@ directorship.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 6 — Meaning of “subsidiary” etc: supplementary provisions_
 655
 
@@ -42712,7 +42712,7 @@ company itself.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 6 — Meaning of “subsidiary” etc: supplementary provisions_
 656
@@ -42726,7 +42726,7 @@ provision are to be treated as not held by him.
 
 SCHEDULE 7 Section 1162
 
-P ARENT  AND  SUBSIDIARY  UNDERTAKINGS : SUPPLEMENTARY  PROVISIONS
+P ARENT  AND  SUBSIDIARY  UNDERTAKINGS: SUPPLEMENTARY  PROVISIONS
 
 _Introduction_
 
@@ -42777,7 +42777,7 @@ as having the right to exercise a dominant influence over another
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 7 — Parent and subsidiary undertakings: supplementary provisions_
 657
 
@@ -42840,7 +42840,7 @@ any of its subsidiary undertakings.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 7 — Parent and subsidiary undertakings: supplementary provisions_
 658
@@ -42909,7 +42909,7 @@ annual accounts (in Part 15) section 471
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 8 — Index of defined expressions_
 659
 
@@ -42988,7 +42988,7 @@ section 265(7)
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 8 — Index of defined expressions_
 660
@@ -43064,7 +43064,7 @@ credit institution section 1173(1)
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 8 — Index of defined expressions_
 661
 
@@ -43138,7 +43138,7 @@ means
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 8 — Index of defined expressions_
 662
@@ -43214,7 +43214,7 @@ Part 2 of Schedule 4
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 8 — Index of defined expressions_
 663
 
@@ -43291,7 +43291,7 @@ limited by shares section 3(2)
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 8 — Index of defined expressions_
 664
@@ -43367,7 +43367,7 @@ official seal, of registrar section 1062
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 8 — Index of defined expressions_
 665
 
@@ -43446,7 +43446,7 @@ property (in Part 27) section 941
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 8 — Index of defined expressions_
 666
@@ -43526,7 +43526,7 @@ registered number, of a company section 1066
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 8 — Index of defined expressions_
 667
 
@@ -43601,7 +43601,7 @@ share premium account section 610(1)
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 8 — Index of defined expressions_
 668
@@ -43676,7 +43676,7 @@ unique identifier section 1082
 
 669
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 9 — Removal of special provisions about accounts and audit of charitable companies_
 _Part 1 — The Companies Act 1985 (c. 6)_
 
@@ -43720,7 +43720,7 @@ COMPANIES
 
 P ART 1
 
-T HE C OMPANIES A CT 1985 ( C . 6)
+T HE C OMPANIES A CT 1985 (C . 6)
 
 1 In section 240 (requirements in connection with publication of accounts)—
 (a) in subsection (1) omit from “or, as the case may be,” to “section
@@ -43745,7 +43745,7 @@ subsection (4)(b) omit “or reporting accountant”.
 
 670
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 9 — Removal of special provisions about accounts and audit of charitable companies_
 
 _Part 1 — The Companies Act 1985 (c. 6)_
@@ -43775,7 +43775,7 @@ accountant”.
 
 P ART 2
 
-T HE C OMPANIES (N ORTHERN I RELAND ) O RDER 1986 (S.I. 1986/1032 (N.I. 6)
+T HE C OMPANIES (N ORTHERN I RELAND) O RDER 1986 (S.I. 1986/1032 (N.I. 6)
 
 9 In Article 248 (requirements in connection with publication of accounts)—
 (a) in paragraph (1) omit from “or, as the case may be,” to “Article
@@ -43813,7 +43813,7 @@ omit “or (2)”.
 
 671
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 9 — Removal of special provisions about accounts and audit of charitable companies_
 _Part 2 — The Companies (Northern Ireland) Order 1986 (S.I. 1986/1032 (N.I. 6)_
 
@@ -43877,7 +43877,7 @@ Part.
 
 672
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 10 — Recognised supervisory bodies_
 
 _Part 1 — Grant and revocation of recognition of a supervisory body_
@@ -43945,7 +43945,7 @@ opinion likely to be affected.
 
 673
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 10 — Recognised supervisory bodies_
 _Part 1 — Grant and revocation of recognition of a supervisory body_
 
@@ -44010,7 +44010,7 @@ under paragraph 2(1) of this Schedule.
 
 674
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 10 — Recognised supervisory bodies_
 
 _Part 1 — Grant and revocation of recognition of a supervisory body_
@@ -44077,7 +44077,7 @@ vote on all, or substantially all, matters;
 
 675
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 10 — Recognised supervisory bodies_
 _Part 2 — Requirements for recognition of a supervisory body_
 
@@ -44142,7 +44142,7 @@ of the audit.
 
 676
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 10 — Recognised supervisory bodies_
 
 _Part 2 — Requirements for recognition of a supervisory body_
@@ -44211,7 +44211,7 @@ inspections carried out under the arrangements.
 
 677
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 10 — Recognised supervisory bodies_
 _Part 2 — Requirements for recognition of a supervisory body_
 
@@ -44273,7 +44273,7 @@ the light of an investigation carried out under the arrangements.
 
 678
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 10 — Recognised supervisory bodies_
 
 _Part 2 — Requirements for recognition of a supervisory body_
@@ -44336,7 +44336,7 @@ independently of the body.
 
 679
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 10 — Recognised supervisory bodies_
 _Part 3 — Arrangements in which recognised supervisory bodies are required to participate_
 
@@ -44401,7 +44401,7 @@ _Supplementary: arrangements to operate independently of body_
 
 680
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 10 — Recognised supervisory bodies_
 
 _Part 3 — Arrangements in which recognised supervisory bodies are required to participate_
@@ -44467,7 +44467,7 @@ information.
 
 681
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 11 — Recognised professional qualifications_
 _Part 1 — Grant and revocation of recognition of a professional qualification_
 
@@ -44533,7 +44533,7 @@ relation to the qualification to which the recognition order relates, or
 
 682
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 11 — Recognised professional qualifications_
 
 _Part 1 — Grant and revocation of recognition of a professional qualification_
@@ -44601,7 +44601,7 @@ must—
 
 683
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 11 — Recognised professional qualifications_
 _Part 1 — Grant and revocation of recognition of a professional qualification_
 
@@ -44665,7 +44665,7 @@ him to be considered for such admission.
 
 684
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 11 — Recognised professional qualifications_
 
 _Part 2 — Requirements for recognition of a professional qualification_
@@ -44732,7 +44732,7 @@ accounts is similar to that in the United Kingdom.
 
 685
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 11 — Recognised professional qualifications_
 _Part 2 — Requirements for recognition of a professional qualification_
 
@@ -44795,7 +44795,7 @@ arrangements—
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 12 — Arrangements in which registered third country auditors are required to participate_
 686
@@ -44856,7 +44856,7 @@ the arrangements to be regarded as appropriate for the purpose in question.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 12 — Arrangements in which registered third country auditors are required to participate_
 687
 
@@ -44920,7 +44920,7 @@ members, officers and employees are not to be regarded as Crown servants.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 13 — Supplementary provisions with respect to delegation order_
 688
@@ -44983,7 +44983,7 @@ any defect in the appointment of any member.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 13 — Supplementary provisions with respect to delegation order_
 689
 
@@ -45049,7 +45049,7 @@ certificate.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 13 — Supplementary provisions with respect to delegation order_
 690
@@ -45118,7 +45118,7 @@ application to the function transferred;
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 13 — Supplementary provisions with respect to delegation order_
 691
 
@@ -45166,7 +45166,7 @@ the appropriate modifications.
 
 SCHEDULE 14 Section 1264
 
-S TATUTORY  AUDITORS : CONSEQUENTIAL  AMENDMENTS
+S TATUTORY  AUDITORS: CONSEQUENTIAL  AMENDMENTS
 
 _Companies (Audit, Investigations and Community Enterprise) Act 2004 (c. 27)_
 
@@ -45181,7 +45181,7 @@ standards etc) is amended as follows.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 14 — Statutory auditors: consequential amendments_
 692
@@ -45198,7 +45198,7 @@ substitute “Part 42 of the Companies Act 2006”, and
 
 SCHEDULE 15 Section 1272
 
-T RANSPARENCY  OBLIGATIONS  AND  RELATED  MATTERS : MINOR  AND  CONSEQUENTIAL 
+T RANSPARENCY  OBLIGATIONS  AND  RELATED  MATTERS: MINOR  AND  CONSEQUENTIAL 
 AMENDMENTS
 
 P ART 1
@@ -45221,10 +45221,10 @@ if the references to a regulated market were references to a market.”
 rules, disclosure rules or prospectus rules, but are Part 6 rules.”
 
 4 For the cross-heading before section 90 substitute “ _Compensation for false or_
-_misleading statements etc_ ”.
+_misleading statements etc_”.
 
 5 For the heading to section 90 substitute “ **Compensation for statements in**
-**listing particulars or prospectus** ”.
+**listing particulars or prospectus**”.
 
 6 (1) Section 91 (penalties for breach of Part 6 rules) is amended as follows.
 
@@ -45249,7 +45249,7 @@ an issuer, or
 
 693
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 15 — Transparency obligations and related matters: minor and consequential amendments_
 _Part 1 — Amendments of the Financial Services and Markets Act 2000_
 
@@ -45279,7 +45279,7 @@ appropriate.”.
 7 In section 96B (persons discharging managerial responsibilities and
 connected persons)—
 (a) for the heading substitute “ **Disclosure rules: persons responsible**
-**for compliance** ”;
+**for compliance**”;
 (b) in subsection (1) for “For the purposes of this Part” substitute “for the
 purposes of the provisions of this Part relating to disclosure rules”.
 
@@ -45313,7 +45313,7 @@ financial instruments to trading on a regulated market.”.
 
 694
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 15 — Transparency obligations and related matters: minor and consequential amendments_
 
 _Part 1 — Amendments of the Financial Services and Markets Act 2000_
@@ -45354,7 +45354,7 @@ procedure) of the Financial Services and Markets Act 2000 (c. 8) after
 P ART 2
 
 A MENDMENTS  OF  THE C OMPANIES (A UDIT , I NVESTIGATIONS  AND C OMMUNITY 
-E NTERPRISE ) A CT 2004
+E NTERPRISE) A CT 2004
 
 13 Chapter 2 of Part 1 of the Companies (Audit, Investigations and Community
 Enterprise) Act 2004 (accounts and reports) is amended as follows.
@@ -45383,7 +45383,7 @@ rules” has”;
 
 695
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 15 — Transparency obligations and related matters: minor and consequential amendments_
 _Part 2 — Amendments of the Companies (Audit, Investigations and Community Enterprise) Act 2004_
 
@@ -45414,7 +45414,7 @@ rules” and “transferable securities””.
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 16 — Repeals_
 696
@@ -45425,7 +45425,7 @@ R EPEALS
 
 Company law repeals (Great Britain)
 
-_Short title and chapter_ _Extent of repeal_
+_Short title and chapter__Extent of repeal_
 
 
 |Companies Act 1985 (c. 6) Insolvency Act 1985 (c. 65)|Sections 1 to 430F. In section 437— (a) in subsection (1), the second sentence, and (b) subsections (1B) and (1C). Section 438. In section 439— (a) in subsection (2), “, or is ordered to pay the whole or any part of the costs of proceedings brought under section 438”, (b) subsections (3) and (7), and (c) in subsection (8), “; and any such liability imposed by subsection (2) is (subject as mentioned above) a liability also to indemnify all persons against liability under subsection (3)”. Section 442(2). Section 446. In section 448(7), the words “and liable to a fine.” to the end. Section 449(7). Section 450(4). Section 451(3). In section 453(1A)— (a) paragraph (b), and (b) paragraph (d) and the word “and” preceding it. Section 453A(6). Sections 458 to 461. Sections 651 to 746. Schedules 1 to 15B. Schedules 20 to 25. Schedule 6.|
@@ -45436,11 +45436,11 @@ _Short title and chapter_ _Extent of repeal_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 16 — Repeals_
 697
 
-_Short title and chapter_ _Extent of repeal_
+_Short title and chapter__Extent of repeal_
 
 
 |Insolvency Act 1986 (c. 45) Building Societies Act 1986 (c. 53) Finance Act 1988 (c. 39) Water Act 1989 (c. 15) Companies Act 1989 (c. 40) Age of Legal Capacity (Scotland) Act 1991 (c. 50) Water Consolidation (Consequential Provisions) Act 1991 (c. 60) Charities Act 1992 (c. 41)|In Schedule 13, in Part 1, the entries relating to the following provisions of the Companies Act 1985— (a) section 13(4), (b) section 44(7), (c) section 103(7), (d) section 131(7), (e) section 140(2), (f) section 156(3), (g) section 173(4), (h) section 196, (i) section 380(4), (j) section 461(6), (k) section 462(5), (l) section 463(2), (m) section 463(3), (n) section 464(6), (o) section 657(2), (p) section 658(1), and (q) section 711(2). Section 102C(5). In section 117(3), from the beginning to “that section”;”. In section 117(4), the words “and (3)”. In Schedule 25, paragraph 71(3). Sections 1 to 22. Section 56(5). Sections 57 and 58. Section 64(2). Section 66(3). Section 71. Sections 92 to 110. Sections 113 to 138. Section 139(1) to (3). Sections 141 to 143. Section 144(1) to (3) and (6). Section 207. Schedules 1 to 9. In Schedule 10, paragraphs 1 to 24. Schedules 15 to 17. In Schedule 18, paragraphs 32 to 38. In Schedule 19, paragraphs 1 to 9 and 11 to 21. In Schedule 1, paragraph 39. In Schedule 1, paragraph 40(2). In Schedule 6, paragraph 11.|
@@ -45451,12 +45451,12 @@ _Short title and chapter_ _Extent of repeal_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 16 — Repeals_
 698
 
-_Short title and chapter_ _Extent of repeal_
+_Short title and chapter__Extent of repeal_
 
 
 |Charities Act 1993 (c. 10) Criminal Justice Act 1993 (c. 36) Welsh Language Act 1993 (c. 38) Pension Schemes Act 1993 (c. 48) Trade Marks Act 1994 (c. 26) Deregulation and Contracting Out Act 1994 (c. 40) Requirements of Writing (Scotland) Act 1995 (c. 7) Criminal Procedure (Consequential Provisions) (Scotland) Act 1995 (c. 40) Disability Discrimination Act 1995 (c. 50) Financial Services and Markets Act 2000 (c. 8) Limited Liability Partnerships Act 2000 (c. 12) Political Parties, Elections and Referendums Act 2000 (c. 41) Criminal Justice and Police Act 2001 (c. 16) Enterprise Act 2002 (c. 40) Companies (Audit, Investigations and Community Enterprise) Act 2004 (c. 27) Civil Partnership Act 2004 (c. 33) Constitutional Reform Act 2005 (c. 4)|In Schedule 6, paragraph 20. In Schedule 5, paragraph 4. Section 30. In Schedule 8, paragraph 16. In Schedule 4, in paragraph 1(2), the reference to the Companies Act 1985. Section 13(1). Schedule 5. In Schedule 16, paragraphs 8 to 10. In Schedule 4, paragraphs 51 to 56. In Schedule 4, paragraph 56(3) and (4). In Schedule 6, paragraph 4. Section 143. Section 263. In the Schedule, paragraph 1. Sections 139 and 140. Schedule 19. In Schedule 23, paragraphs 12 and 13. Section 45. In Schedule 2, paragraph 17. In Schedule 17, paragraphs 3 to 8. Sections 7 to 10. Section 11(1). Sections 12 and 13. Sections 19 and 20. Schedule 1. In Schedule 2, paragraphs 5 to 10, 22 to 24 and 26. In Schedule 6, paragraphs 1 to 9. In Schedule 27, paragraphs 99 to 105. In Schedule 11, in paragraph 4(3), the reference to the Companies Act 1985.|
@@ -45467,13 +45467,13 @@ _Short title and chapter_ _Extent of repeal_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 16 — Repeals_
 699
 
 Repeals and revocations relating to Northern Ireland
 
-_Short title and chapter_ _Extent of repeal or revocation_
+_Short title and chapter__Extent of repeal or revocation_
 
 
 |Companies (Northern Ireland) Order 1986 (S.I. 1986/1032 (N.I. 6)) Companies Consolidation (Consequential Provisions) (Northern Ireland) Order 1986 (S.I. 1986/1035 (N.I. 9)) Business Names (Northern Ireland) Order 1986 (S.I. 1986/1033 (N.I. 7)) Industrial Relations (Northern Ireland) Order 1987 (S.I. 1987/936 N.I. 9)) Finance Act 1988 (c. 39) Companies (Northern Ireland) Order 1989 (S.I. 1989/2404 (N.I. 18)) Insolvency (Northern Ireland) Order 1989 (S.I. 1989/2405 (N.I. 19)) European Economic Interest Groupings Regulations (Northern Ireland) 1989 (S.R. 1989/216) Companies (Northern Ireland) Order 1990 (S.I. 1990/593 (N.I. 5)) Companies (No. 2) (Northern Ireland) Order 1990 (S.I. 1990/1504 (N.I. 10)) Criminal Justice Act 1993 (c. 36) Financial Provisions (Northern Ireland) Order 1993 (S.I. 1993/1252 (N.I. 5)) Deregulation and Contracting Out Act 1994 (c. 40) Pensions (Northern Ireland) Order 1995 (S.I. 1995/3213 (N.I. 22)) Deregulation and Contracting Out (Northern Ireland) Order 1996 (S.I. 1996/1632 (N.I. 11))|The whole Order. The whole Order. The whole Order. Article 3. In section 117(3), the words from “and for” to the end. The whole Order. In Schedule 7, in the entry relating to Article 166(4), the word “office”. In Schedule 9, Part I. The whole Regulations. The whole Order. Parts II to IV. Part VI. Schedules 1 to 6. In Schedule 5, Part 2. Schedule 6. Article 15. Section 13(2). Schedule 6. In Schedule 3, paragraph 7. Article 11. Schedule 2. In Schedule 5, paragraph 4.|
@@ -45484,12 +45484,12 @@ _Short title and chapter_ _Extent of repeal or revocation_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 
 _Schedule 16 — Repeals_
 700
 
-_Short title and chapter_ _Extent of repeal or revocation_
+_Short title and chapter__Extent of repeal or revocation_
 
 
 |Youth Justice and Criminal Evidence Act 1999 (c. 23) Limited Liability Partnerships Act (Northern Ireland) 2002 (c. 12 (N.I.)) Open-Ended Investment Companies Act (Northern Ireland) 2002 (c. 13) Company Directors Disqualification (Northern Ireland) Order 2002 (S.I. 2002/3150 (N.I. 4)) Companies (Audit, Investigations and Community Enterprise) Act 2004 (c. 27) Law Reform (Miscellaneous Provisions) (Northern Ireland) Order 2005 (S.I. 2005/1452 (N.I. 7)) Companies (Audit, Investigations and Community Enterprise) (Northern Ireland) Order 2005 (S.I. 2005/1967 (N.I. 17))|In Schedule 4, paragraph 18. The whole Act. The whole Act. In Schedule 3, paragraphs 3 to 5. Section 11(2). In Schedule 2, paragraphs 11 to 15. Article 4(2). The whole Order.|
@@ -45498,7 +45498,7 @@ _Short title and chapter_ _Extent of repeal or revocation_
 
 Other repeals
 
-_Short title and chapter_ _Extent of repeal or revocation_
+_Short title and chapter__Extent of repeal or revocation_
 
 
 |Limited Partnerships Act 1907 (c. 24) Business Names Act 1985 (c. 7) Companies Act 1989 (c. 40) Criminal Procedure (Consequential Provisions) (Scotland) Act 1995 (c. 40)|In section 16(1)— (a) the words “, and there shall be paid for such inspection such fees as may be appointed by the Board of Trade, not exceeding 5p for each inspection”, and (b) the words from “and there shall be paid for such certificate” to the end. In section 17— (a) the words “(but as to fees with the concurrence of the Treasury)”, and (b) paragraph (a). The whole Act. Sections 24 to 54. Schedules 11 to 13. In Schedule 4, paragraph 74(2).|
@@ -45509,11 +45509,11 @@ _Short title and chapter_ _Extent of repeal or revocation_
 -----
 
 
-_Companies Act 2006 (c._ **_46_** _)_
+_Companies Act 2006 (c. _**46**_46)_
 _Schedule 16 — Repeals_
 701
 
-_Short title and chapter_ _Extent of repeal or revocation_
+_Short title and chapter__Extent of repeal or revocation_
 
 
 |Companies (Audit, Investigations and Community Enterprise) Act 2004 (c. 27) Civil Partnership Act 2004 (c. 33)|Sections 1 to 6. In Schedule 2, Part 1. In Schedule 27, paragraph 128.|
