@@ -40,7 +40,7 @@ Please create a JSON dictionary that maps each unique hierarchical section type 
 
 {toc_md_string}
 """
-TOC_HIERARCHY_USER_PROMPT_V1SION_PR3 = """I will provide you with the first 2 pages of a Table of Contents (ToC) in both Markdown format and as images. I need you to determine how many levels of section hierarchy are present in the ToC based on the markdown and visual formatting. I need you to return this determination as a JSON object, following this structure:
+TOC_HIERARCHY_USER_PROMPT_VISION = """I will provide you with the first 2 pages of a Table of Contents (ToC) in both Markdown format and as images. I need you to determine how many levels of section hierarchy are present in the ToC based on the markdown and visual formatting. I need you to return this determination as a JSON object, following this structure:
 
       {{
             "<Level 1 Section Type>": {{
@@ -71,7 +71,7 @@ Please format the JSON object as described above, based on the hierarchy levels 
 
 {toc_md_string}
 """
-TOC_HIERARCHY_USER_PROMPT_V1SION_PR32 = """I will provide you with 2 pages of a Table of Contents (ToC) in both Markdown format and as images. I need you to determine how many of each level of section hierarchy are present in the ToC based on the markdown and visual formatting. I need you to return this determination as a JSON object, following this structure:
+TOC_HIERARCHY_USER_PROMPT_VISION_PLUS = """I will provide you with 2 pages of a Table of Contents (ToC) in both Markdown format and as images. I need you to determine how many of each level of section hierarchy are present in the ToC based on the markdown and visual formatting. I need you to return this determination as a JSON object, following this structure:
 
       {{
             "#": {{
@@ -180,7 +180,7 @@ Please create a JSON object that maps each hierarchical section to a correspondi
 
 {toc_md_string}
 """
-TOC_HIERARCHY_USER_PROMPT_VISION = """I will provide you with 2 Table of Contents (ToC) pages in both Markdown formatting and as an image. You need to create a JSON object that maps each hierarchical section type to a corresponding number of '#' characters used to denote its level in the ToC. It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes.
+TOC_HIERARCHY_USER_PROMPT_VISION_OG = """I will provide you with 2 Table of Contents (ToC) pages in both Markdown formatting and as an image. You need to create a JSON object that maps each hierarchical section type to a corresponding number of '#' characters used to denote its level in the ToC. It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes.
 
 ## INSTRUCTIONS
    - You must return each section type from the ToC and map it to it's appropriate level of hierarchy. For example:
@@ -338,6 +338,36 @@ Please create a JSON object from the following ToC Markdown lines:
 
 {content}
 """
+TOC_SCHEMA_USER_PROMPT_PLUS_NOMD = """I will provide a semi-structured Table of Contents (ToC) JSON, please structure it as a JSON object. It is extremely important that you follow the instructions and guidelines below to ensure the output is accurate and well-structured. There can be no mistakes.
+
+## INSTRUCTIONS
+   - I have split the ToC into multiple parts, you will be working {level_title_str}. You must include this level in the JSON object.
+   - This part has section types that could include: {section_types}. You need to independently verify this and any other section types that may be present.
+   - If these section types do not explicitly have a number associated with them, set the "number" value to an empty string ("").
+   - The 'content' provided for each section will include the children of that section. It may also include the section 'title' (if not present in the section key).
+   - Some titles may span multiple lines, you must include all lines in the 'title' key. 
+   - A section must NEVER contain an empty "children" list.
+   - The lowest level in the JSON hierarchy must ONLY contain the "number" and "title" keys.
+
+The JSON object must be structured according to the following schema:
+
+{TOC_SCHEMA}
+
+
+## IMPORTANT NOTES
+   - A section must NEVER contain an empty "children" list.
+   - The lowest level in the JSON hierarchy must ONLY contain the "number" and "title" keys.
+   - The section keys given must be followed closely, do not add "section", "number" or "title" values if the they are not present, unless there is a "title" value in the first line of the 'content'.
+   - If "section", "number" or "title" are not present, set the value to an empty string ("").
+   - Some sections might have the same "title" as a child item, in this case, do not add the child "number" to the parent.
+   - Exclude dots, page numbers, and any text not explicitly listed as a ToC item (page numbers are usually at the end of the line).
+
+It is of the upmost importance that the structure is correct and accurate. Failure to do so will result in a loss of trust and confidence in our services. Please do not let this happen.
+
+Please create a complete JSON object from the following:
+
+{level_content}
+"""
 TOC_SECTION_TEMPLATE = {
     "section": "string (section type, e.g., 'Chapter', 'Part', 'Section')",
     "number": "string (numeric or textual identifier of the section, e.g., '1', '2-5', 'A', '27B')",
@@ -350,8 +380,11 @@ TOC_SECTION_USER_PROMPT = """Please format the Table of Contents (ToC) line into
 ## IMPORTANT NOTES
 - Do not include the '#' characters in the JSON object.
 - It is EXTREMELY important to not include the page numbers in the "title" field (most likely at the end of the line).
+- If "section", "number" or "title" are not present in the line, set the value to an empty string ("").
+- Do not include any additional information or make any assumptions about the section type, number or title - only use the information provided in the ToC line.
 
 Here is the ToC line you need to format:
 
 {toc_line}
 """
+CONTINUE_JSON_PROMPT = """Please continue from EXACTLY where you left off so that the two responses can be concatenated and form a complete JSON object. Make sure to include the closing brackets, quotation marks and commas. Do NOT add any additional text, such as '```json' or '```'."""

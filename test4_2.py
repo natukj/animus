@@ -40,9 +40,9 @@ async def main_run():
     async def process_page(page_nums: List[int], prior_schema: str = None):
         toc_md_toc_section_str = base_parser.to_markdown(doc, page_nums)
         if not prior_schema:
-            USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_V1SION_PR3.format(toc_md_string=toc_md_toc_section_str)
+            USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_VISION.format(toc_md_string=toc_md_toc_section_str)
         else:
-            USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_V1SION_PR32.format(toc_md_string=toc_md_toc_section_str, guide_str=prior_schema)
+            USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_VISION_PLUS.format(toc_md_string=toc_md_toc_section_str, guide_str=prior_schema)
         page = doc[page_nums[0]]
         messages = [
             {

@@ -53,9 +53,9 @@ class TableOfContents(BaseModel):
 
 
 class Contents(BaseModel):
-    level: JSONstr
-    sublevel: JSONstr | str
-    subsublevel: JSONstr | str
+    level: JSONstr | None
+    sublevel: JSONstr | str | None
+    subsublevel: JSONstr | str | None
     toc: List[Union[TableOfContents, TableOfContentsChild]]
 
 
@@ -110,7 +110,7 @@ class PDFParser(BaseParser):
             self.document = fitz.open(file)
         else:
             raise ValueError("file must be an instance of UploadFile or str.")
-        self.toc_md_string, self.content_md_string = await self.generate_md_string()
+        #self.toc_md_string, self.content_md_string = await self.generate_md_string()
         # self.toc_md_string_lines = self.toc_md_string.split("\n").lower()
         # self.content_md_string_lines = self.content_md_string.split("\n").lower()
         #self.toc_hierarchy_schema = await self.generate_toc_hierarchy_schema()
@@ -119,334 +119,12 @@ class PDFParser(BaseParser):
         # with open("zzcontent_md_string.md", "w") as f:
         #     f.write(self.content_md_string)
         self.no_md_flag = True
-        self.toc_hierarchy_schema = {
-            "Part": "#",
-            "Schedule": "#",
-            "Chapter": "##",
-            "General supplementary provisions": "##",
-            "Final provisions": "##",
-            "Northern ireland": "##",
-            "General": "###",
-            "Companies and Companies Acts": "###",
-            "Types of company": "###",
-            "Requirements for registration": "###",
-            "Registration and its effect": "###",
-            "Introductory": "###",
-            "Articles of association": "###",
-            "Alteration of articles": "###",
-            "Supplementary": "###",
-            "Resolutions and agreements affecting a company\u2019s constitution": "###",
-            "Miscellaneous and supplementary provisions": "###",
-            "Companies and companies acts": "###",
-            "Other provisions with respect to a company\u2019s constitution": "###",
-            "Supplementary provisions": "###",
-            "Capacity of company and power of directors to bind it": "###",
-            "Formalities of doing business under the law of england and wales or northern ireland": "###",
-            "Formalities of doing business under the law of scotland": "###",
-            "Other matters": "###",
-            "Prohibited names": "###",
-            "Sensitive words and expressions": "###",
-            "Permitted characters etc": "###",
-            "Indications of company type or legal form": "###",
-            "Similarity to other names": "###",
-            "Other powers of the secretary of state": "###",
-            "Welsh companies": "###",
-            "Private company becoming public": "###",
-            "Public company becoming private": "###",
-            "Special cases": "###",
-            "General prohibition": "###",
-            "Subsidiary acting as personal representative or trustee": "###",
-            "Subsidiary acting as dealer in securities": "###",
-            "Exercise of members\u2019 rights": "###",
-            "A company\u2019s directors": "###",
-            "Removal": "###",
-            "The general duties": "###",
-            "Declaration of interest in existing transaction or arrangement": "###",
-            "Transactions with directors requiring approval of members": "###",
-            "Loans, quasi-loans and credit transactions": "###",
-            "Payments for loss of office": "###",
-            "Provision protecting directors from liability": "###",
-            "Ratification of acts giving rise to liability": "###",
-            "Provision for employees on cessation or transfer of business": "###",
-            "Records of meetings of directors": "###",
-            "Meaning of \"director\" and \"shadow director\"": "###",
-            "Other definitions": "###",
-            "Private companies": "###",
-            "Public companies": "###",
-            "Provisions applying to private companies with a secretary and to public companies": "###",
-            "General provisions about written resolutions": "###",
-            "Circulation of written resolutions": "###",
-            "Agreeing to written resolutions": "###",
-            "Resolutions at meetings": "###",
-            "Adjourned meetings": "###",
-            "Electronic communications": "###",
-            "Application to class meetings": "###",
-            "Public companies: additional requirements for agms": "###",
-            "Additional requirements for quoted companies": "###",
-            "Website publication of poll results": "###",
-            "Independent report on poll": "###",
-            "Donations and expenditure to which this part applies": "###",
-            "Authorisation required for donations or expenditure": "###",
-            "Remedies in case of unauthorised donations or expenditure": "###",
-            "Exemptions": "###",
-            "Companies subject to the small companies regime": "###",
-            "Quoted and unquoted companies": "###",
-            "Individual accounts": "###",
-            "Group accounts: small companies": "###",
-            "Group accounts: other companies": "###",
-            "Group accounts: general": "###",
-            "Information to be given in notes to the accounts": "###",
-            "Approval and signing of accounts": "###",
-            "Directors\u2019 report": "###",
-            "Quoted companies: directors\u2019 remuneration report": "###",
-            "Duty to circulate copies of accounts and reports": "###",
-            "Option to provide summary financial statement": "###",
-            "Quoted companies: requirements as to website publication": "###",
-            "Right of member or debenture holder to demand copies of accounts and reports": "###",
-            "Requirements in connection with publication of accounts and reports": "###",
-            "Public companies: laying of accounts and reports before general meeting": "###",
-            "Duty to file accounts and reports": "###",
-            "Filing obligations of different descriptions of company": "###",
-            "Requirements where abbreviated accounts delivered": "###",
-            "Failure to file accounts and reports": "###",
-            "Voluntary revision": "###",
-            "Secretary of state\u2019s notice": "###",
-            "Application to court": "###",
-            "Power of authorised person to require documents etc": "###",
-            "Liability for false or misleading statements in reports": "###",
-            "Accounting and reporting standards": "###",
-            "Companies qualifying as medium-sized": "###",
-            "General power to make further provision about accounts and reports": "###",
-            "Other supplementary provisions": "###",
-            "Requirement for audited accounts": "###",
-            "Exemption from audit: small companies": "###",
-            "Exemption from audit: dormant companies": "###",
-            "Companies subject to public sector audit": "###",
-            "General power of amendment by regulations": "###",
-            "General provisions": "###",
-            "Auditor\u2019s report": "###",
-            "Duties and rights of auditors": "###",
-            "Signature of auditor\u2019s report": "###",
-            "Offences in connection with auditor\u2019s report": "###",
-            "Removal of auditor": "###",
-            "Failure to re-appoint auditor": "###",
-            "Resignation of auditor": "###",
-            "Statement by auditor on ceasing to hold office": "###",
-            "Voidness of provisions protecting auditors from liability": "###",
-            "Indemnity for costs of defending proceedings": "###",
-            "Liability limitation agreements": "###",
-            "Shares": "###",
-            "Share capital": "###",
-            "Power of directors to allot shares": "###",
-            "Prohibition of commissions, discounts and allowances": "###",
-            "Registration of allotment": "###",
-            "Return of allotment": "###",
-            "Existing shareholders\u2019 right of pre-emption": "###",
-            "Exceptions to right of pre-emption": "###",
-            "Exclusion of right of pre-emption": "###",
-            "Disapplication of pre-emption rights": "###",
-            "General rules": "###",
-            "Additional rules for public companies": "###",
-            "Non-cash consideration for shares": "###",
-            "Transfer of non-cash asset in initial period": "###",
-            "The share premium account": "###",
-            "Relief from requirements as to share premiums": "###",
-            "How share capital may be altered": "###",
-            "Subdivision or consolidation of shares": "###",
-            "Reconversion of stock into shares": "###",
-            "Redenomination of share capital": "###",
-            "Variation of class rights": "###",
-            "Matters to be notified to the registrar": "###",
-            "Private companies: reduction of capital supported by solvency statement": "###",
-            "Reduction of capital confirmed by the court": "###",
-            "Public company reducing capital below authorised minimum": "###",
-            "Effect of reduction of capital": "###",
-            "Exceptions from prohibition": "###",
-            "Authority for purchase of own shares": "###",
-            "Authority for off-market purchase": "###",
-            "Authority for market purchase": "###",
-            "The permissible capital payment": "###",
-            "Requirements for payment out of capital": "###",
-            "Objection to payment by members or creditors": "###",
-            "Treasury shares": "###",
-            "Register of debenture holders": "###",
-            "Share certificates": "###",
-            "Issue of certificates etc on allotment": "###",
-            "Transfer of securities": "###",
-            "Issue of certificates etc on transfer": "###",
-            "Issue of certificates etc on allotment or transfer to financial institution": "###",
-            "Share warrants": "###",
-            "Powers exercisable": "###",
-            "Notice requiring information about interests in shares": "###",
-            "Orders imposing restrictions on shares": "###",
-            "Power of members to require company to act": "###",
-            "Register of interests disclosed": "###",
-            "Meaning of interest in shares": "###",
-            "Distributions by investment companies": "###",
-            "Justification of distribution by reference to accounts": "###",
-            "Requirements applicable in relation to relevant accounts": "###",
-            "Application of provisions to successive distributions etc": "###",
-            "Accounting matters": "###",
-            "Distributions in kind": "###",
-            "Consequences of unlawful distribution": "###",
-            "Requirement to register company charges": "###",
-            "Special rules about debentures": "###",
-            "Charges in other jurisdictions": "###",
-            "Orders charging land: northern ireland": "###",
-            "The register of charges": "###",
-            "Avoidance of certain charges": "###",
-            "Companies\u2019 records and registers": "###",
-            "Charges requiring registration": "###",
-            "Charges on property outside the united kingdom": "###",
-            "Powers of the secretary of state": "###",
-            "Arrangements and reconstructions": "###",
-            "Mergers and divisions of public companies": "###",
-            "Requirements applicable to merger": "###",
-            "Exceptions where shares of transferor company held by transferee company": "###",
-            "Other exceptions": "###",
-            "Requirements to be complied with in case of division": "###",
-            "Expert\u2019s report and related matters": "###",
-            "Powers of the court": "###",
-            "Liability of transferee companies": "###",
-            "Interpretation": "###",
-            "The panel and its rules": "###",
-            "Information": "###",
-            "Co-operation": "###",
-            "Hearings and appeals": "###",
-            "Contravention of rules etc": "###",
-            "Funding": "###",
-            "Miscellaneous and supplementary": "###",
-            "Opting in and opting out": "###",
-            "Consequences of opting in": "###",
-            "Takeover offers": "###",
-            "Squeeze-out": "###",
-            "Sell-out": "###",
-            "Main provisions": "###",
-            "Registrar\u2019s power to strike off defunct company": "###",
-            "Voluntary striking off": "###",
-            "Property vesting as bona vacantia": "###",
-            "General effect of disclaimer": "###",
-            "Disclaimer of leaseholds": "###",
-            "Power of court to make vesting order": "###",
-            "Protection of persons holding under a lease": "###",
-            "Land subject to rentcharge": "###",
-            "Effect of crown disclaimer: england and wales and northern ireland": "###",
-            "Effect of crown disclaimer: scotland": "###",
-            "Liability for rentcharge on company\u2019s land after dissolution": "###",
-            "Administrative restoration to the register": "###",
-            "Restoration to the register by the court": "###",
-            "Powers of secretary of state to give directions to inspectors": "###",
-            "Resignation, removal and replacement of inspectors": "###",
-            "Power to obtain information from former inspectors etc": "###",
-            "Power to require production of documents": "###",
-            "Disqualification orders: consequential amendments": "###",
-            "Registration of particulars": "###",
-            "Other requirements": "###",
-            "The registrar": "###",
-            "Certificates of incorporation": "###",
-            "Registered numbers": "###",
-            "Delivery of documents to the registrar": "###",
-            "Requirements for proper delivery": "###",
-            "Public notice of receipt of certain documents": "###",
-            "The register": "###",
-            "Inspection etc of the register": "###",
-            "Correction or removal of material on the register": "###",
-            "The registrar\u2019s index of company names": "###",
-            "Language requirements: translation": "###",
-            "Language requirements: transliteration": "###",
-            "Offences under the companies act": "###",
-            "Production and inspection of documents": "###",
-            "Company records": "###",
-            "Service addresses": "###",
-            "Sending or supplying documents or information": "###",
-            "Requirements as to independent valuation": "###",
-            "Notice of appointment of certain officers": "###",
-            "Courts and legal proceedings": "###",
-            "Meaning of \"uk-registered company\"": "###",
-            "Meaning of \"subsidiary\" and related expressions": "###",
-            "Meaning of \"undertaking\" and related expressions": "###",
-            "Power to disqualify": "###",
-            "Power to make persons liable for company\u2019s debts": "###",
-            "Power to require statements to be sent to the registrar of companies": "###",
-            "Sensitive words or expressions": "###",
-            "Misleading names": "###",
-            "Disclosure requirements": "###",
-            "Consequences of failure to make required disclosure": "###",
-            "Individuals and firms": "###",
-            "Auditors general": "###",
-            "The register of auditors": "###",
-            "Information to be made available to public": "###",
-            "Duties": "###",
-            "Power to require second company audit": "###",
-            "False and misleading statements": "###",
-            "Fees": "###",
-            "Delegation of secretary of state\u2019s functions": "###",
-            "International obligations": "###",
-            "General provision relating to offences": "###",
-            "Notices etc": "###",
-            "Miscellaneous and general": "###",
-            "Transparency obligations": "###",
-            "Regulation of actuaries etc": "###",
-            "Information as to exercise of voting rights by institutional investors": "###",
-            "Regulations and orders": "###",
-            "Meaning of \"enactment\"": "###",
-            "Consequential and transitional provisions": "###",
-            "Disclosure of information under the enterprise act": "###",
-            "Expenses of winding up": "###",
-            "Commonhold associations": "###",
-            "Statement of company\u2019s objects": "####",
-            "Required indications for limited companies": "####",
-            "Inappropriate use of indications of company type or legal form": "####",
-            "Similarity to other name on registrar\u2019s index": "####",
-            "Similarity to other name in which person has goodwill": "####",
-            "Effect of provisions in company\u2019s articles": "####",
-            "Information rights": "####",
-            "Exercise of rights where shares held on behalf of others": "####",
-            "Appointment and removal of directors": "####",
-            "Service contracts": "####",
-            "Substantial property transactions": "####",
-            "General provisions about resolutions at meetings": "####",
-            "Calling meetings": "####",
-            "Notice of meetings": "####",
-            "Members\u2019 statements": "####",
-            "Procedure at meetings": "####",
-            "Proxies": "####",
-            "Shares held by company\u2019s nominee": "####",
-            "Shares held by or for public company": "####",
-            "Charges of public company on own shares": "####",
-            "Circumstances in which financial assistance prohibited": "####",
-            "Application of this part": "####",
-            "Meeting of creditors or members": "####",
-            "Court sanction for compromise or arrangement": "####",
-            "Reconstructions and amalgamations": "####",
-            "Obligations of company with respect to articles etc": "####",
-            "Application for administrative restoration to the register": "####",
-            "Requirements for administrative restoration": "####",
-            "Application to be accompanied by statement of compliance": "####",
-            "Registrar\u2019s decision on application for administrative restoration": "####",
-            "Effect of administrative restoration": "####",
-            "Application to court for restoration to the register": "####",
-            "When application to the court may be made": "####",
-            "Decision on application for restoration by the court": "####",
-            "Effect of court order for restoration to the register": "####",
-            "Company\u2019s name on restoration": "####",
-            "Effect of restoration to the register where property has vested as bona vacantia": "####",
-            "Eligibility for appointment": "####",
-            "Independence requirement": "####",
-            "Effect of appointment of a partnership": "####",
-            "Supervisory bodies": "####",
-            "Professional qualifications": "####",
-            "Enforcement": "####",
-            "Conduct of audits": "####",
-            "The independent supervisor": "####",
-            "Supervision of auditors general": "####",
-            "Reporting requirement": "####",
-            "Proceedings": "####",
-            "Grants": "####",
-            "Requirement to have directors": "#####",
-            "Appointment": "#####",
-            "Register of directors, etc": "#####"
-        }
+        with open ("toc_hierarchy_schema.json", "r") as f:
+            self.toc_hierarchy_schema = json.load(f)
+        with open("zztoc_md_string.md", "r") as f:
+            self.toc_md_string = f.read()
+        with open("zzcontent_md_string.md", "r") as f:
+            self.content_md_string = f.read()
 
     def encode_page_as_base64(self, page: fitz.Page):
         pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
@@ -621,6 +299,8 @@ class PDFParser(BaseParser):
             'Subdivision': '####'
         }
         """
+        combined_toc_hierarchy_schema = {}
+
         async def split_lines(lines: List[str], num_parts: int) -> List[List[str]]:
             length = len(lines)
             part_size = length // num_parts
@@ -631,19 +311,7 @@ class PDFParser(BaseParser):
                 parts.append(lines[start:end])
             return parts
         
-        async def create_hierarchy_schema_subset(schema: str):
-            result = {}
-            levels = {}
-            for key, value in schema.items():
-                if value not in levels:
-                    levels[value] = 1
-                    result[key] = value
-                elif levels[value] < 2:
-                    levels[value] += 1
-                    result[key] = value
-            return result
-        
-        async def process_function(toc_md_section_joined_lines: str):
+        async def process_function(toc_md_section_joined_lines: str) -> Dict[str, str]:
             if self.no_md_flag:
                 USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_NOMD.format(TOC_HIERARCHY_SCHEMA_TEMPLATE=prompts.TOC_HIERARCHY_SCHEMA_TEMPLATE, toc_md_string=toc_md_section_joined_lines)
             else:
@@ -675,16 +343,13 @@ class PDFParser(BaseParser):
                     print("Error decoding JSON for ToC Hierarchy Schema")
                     raise
 
-        async def process_page(page_num: int, prior_schema: str = None):
-            nonlocal unique_schema_str
-            nonlocal unique_schema
-            if not prior_schema:
-                toc_md_toc_section_str = self.to_markdown(self.document, [page_num, page_num + 1])
-                USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_V1SION.format(TOC_HIERARCHY_SCHEMA_TEMPLATE=prompts.TOC_HIERARCHY_SCHEMA_TEMPLATE, toc_md_string=toc_md_toc_section_str)
+        async def process_pages(page_nums: List[int], guide_schema: str = None) -> Dict[str, str]:
+            toc_md_toc_section_str = self.to_markdown(self.document, page_nums)
+            if not guide_schema:
+                USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_VISION.format(toc_md_string=toc_md_toc_section_str)
             else:
-                toc_md_toc_section_str = self.to_markdown(self.document, [page_num])
-                USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_VISION.format(unique_schema_str=unique_schema_str, page_num=page_num, TOC_HIERARCHY_SCHEMA_TEMPLATE=unique_schema, toc_md_string=toc_md_toc_section_str)
-            page = self.document[page_num]
+                USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_VISION_PLUS.format(toc_md_string=toc_md_toc_section_str, guide_str=guide_schema)
+            page = self.document[page_nums[0]]
             messages = [
                 {
                     "role": "user",
@@ -699,37 +364,33 @@ class PDFParser(BaseParser):
                     ]
                 }
             ]
-            if not prior_schema:
-                next_page = self.document[page_num + 1]
-                messages[0]["content"].append(
-                    {
-                        "type": "image_url",
-                        "image_url": {
-                            "url": f"data:image/jpeg;base64,{self.encode_page_as_base64(next_page)}",
-                        },
-                    }
-                )
+            if len(page_nums) > 1:
+                for next_page_num in page_nums[1:]:
+                    next_page = self.document[next_page_num]
+                    messages[0]["content"].append(
+                        {
+                            "type": "image_url",
+                            "image_url": {
+                                "url": f"data:image/jpeg;base64,{self.encode_page_as_base64(next_page)}",
+                            },
+                        }
+                    )
             while True:
                 response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o")
                 try:
                     message_content = response.choices[0].message.content
                     toc_hierarchy_schema = json.loads(message_content)
-                    if not prior_schema:
-                        ordered_items = sorted(toc_hierarchy_schema.items(), key=lambda x: x[1].count('#'))
-                        ordered_dict = dict(ordered_items)
-                        utils.print_coloured(f"Schema {page_num}: {json.dumps(ordered_dict, indent=2)}", "magenta")
+                    # TODO: add logic to check if the lines are in the content
                     return toc_hierarchy_schema
                 except json.JSONDecodeError as e:
                     print(f"JSONDecodeError: {e}")
                     print(f"Message content: {message_content}")
-                    print("Retrying...")
-                    continue
+                    raise
                 except Exception as e:
                     print(f"Error: {e}")
-                    print("Retrying...")
-                    continue
+
         
-        # TODO: must be a better way to determine this
+        # TODO: must be a better way to determine no md flag
         toc_md_lines = self.toc_md_string.split("\n")
         toc_md_section_lines = [line for line in toc_md_lines if line.startswith('#')]
         utils.print_coloured(f"Number of ToC lines: {len(toc_md_section_lines)} out of {len(toc_md_lines)} with a ratio of {len(toc_md_section_lines) / len(toc_md_lines)}", "yellow")
@@ -738,38 +399,42 @@ class PDFParser(BaseParser):
         else:
             self.no_md_flag = True
             utils.print_coloured("No ToC Flag Set", "yellow")
-            # TODO: make toc_md_toc_section_str global
-            toc_md_toc_section_str = self.to_markdown(self.document, [self.toc_pages[0], self.toc_pages[0] + 1])
-            prior_schema = await process_page(self.toc_pages[0])
-            unique_schema = await create_hierarchy_schema_subset(prior_schema)
-            toc_md_toc_section_lines = toc_md_toc_section_str.split("\n")
-            toc_md_toc_section_lines = [line for line in toc_md_toc_section_lines if line.strip()] 
-            unique_schema_str = ""
-            utils.print_coloured(f"Unique Schema: {json.dumps(unique_schema, indent=4)}", "cyan")
-            for key, value in unique_schema.items():
-                match = process.extractOne(key, [line for line in toc_md_toc_section_lines])[0]
-                unique_schema_str += f"{match} -> {key}: {value}\n"
-            utils.print_coloured(unique_schema_str, "magenta")
+            grouped_toc_pages = [self.toc_pages[i:i+2] for i in range(0, len(self.toc_pages), 2)]
+            guide_schema_dict = await self.rate_limited_process(process_pages, grouped_toc_pages[0])
+            guide_schema_list = [f"There are only {len(guide_schema_dict)} levels in the Table of Contents. The levels are as follows:\n"]
+            for key, value in guide_schema_dict.items():
+                guide_schema_list.append(
+                    f"{key}:\n"
+                    f"  Level: {value['level']}\n"
+                    f"  Description: {value['description']}\n"
+                    f"  Example(s): {value['lines']}\n"
+                )
+            guide_schema_str = "\n".join(guide_schema_list)
+            utils.print_coloured(guide_schema_str, "green")
+            for key, value in guide_schema_dict.items():
+                for line in value["lines"]:
+                    if line not in combined_toc_hierarchy_schema:
+                        combined_toc_hierarchy_schema[line] = value["level"]
 
         if not self.no_md_flag:
-            combined_schema = {}
             schemas = await asyncio.gather(*[self.rate_limited_process(process_function, section) for section in toc_md_sections])
+            for schema in schemas:
+                for key, value in schema.items():
+                    capitalised_key = re.sub(r'\s*\d+$', '', key.capitalize())
+                    if capitalised_key not in combined_toc_hierarchy_schema: 
+                        combined_toc_hierarchy_schema[capitalised_key] = value
         else:
-            combined_schema = {re.sub(r'\s*\d+$', '', k.capitalize()): v for k, v in prior_schema.items()}
-            schemas = await asyncio.gather(*[self.rate_limited_process(process_page, page_num, prior_schema=prior_schema) for page_num in self.toc_pages[2:]])
-        
-        # combine unique values from all schemas
-        # split this up as llm was missing some values in long tocs
-        #combined_schema = {}
-        for schema in schemas:
-            for key, value in schema.items():
-                capitalised_key = re.sub(r'\s*\d+$', '', key.capitalize())
-                if capitalised_key not in combined_schema: 
-                    combined_schema[capitalised_key] = value
+            schemas = await asyncio.gather(*[self.rate_limited_process(process_pages, page_nums, guide_schema=guide_schema_str) for page_nums in grouped_toc_pages[1:]])
+            for schema in schemas:
+                for level, content in schema.items():
+                    for line in content["lines"]:
+                        if line not in combined_toc_hierarchy_schema:
+                            combined_toc_hierarchy_schema[line] = level
+        ordered_items = sorted(combined_toc_hierarchy_schema.items(), key=lambda x: x[1].count('#'))
+        ordered_dict = dict(ordered_items)
+        utils.print_coloured(f"{json.dumps(ordered_dict, indent=4)}", "green")
 
-        utils.print_coloured(f"{json.dumps(combined_schema, indent=4)}", "green")
-
-        return combined_schema
+        return combined_toc_hierarchy_schema
 
     
     async def filter_schema(self, toc_hierarchy_schema: Dict[str, str], content: str, num_sections: int = 5) -> Dict[str, str]:
@@ -851,6 +516,41 @@ class PDFParser(BaseParser):
             } for level_name in current_depth_levels
         ]
         return toc_schema, levels
+    
+    async def generate_toc_schema_no_md(self, levels: Dict[str, Dict[str, str]], depth: int = 0, max_depth: int = None, limit: int = None) -> List[Dict[str, Any]]:
+        """
+        Generate a custom schema for the ToC based on the hierarchy schema (no md).
+        """
+        if max_depth is None:
+            max_depth = max(marker['level'].count('#') for marker in levels.values())
+            
+        if depth >= max_depth:
+            return []
+
+        current_depth_levels = [name for name, marker in levels.items() if marker['level'].count('#') == depth + 1]
+
+        if limit is not None and depth + 1 == max_depth:
+            current_depth_levels = current_depth_levels[:limit]
+        
+        children = await self.generate_toc_schema_no_md(levels, depth + 1, max_depth, limit)
+
+        return [
+            {
+                "section": f"string (type of the section, e.g., {level_name})" if levels[level_name]['added_from'] == 'section' else "string (type of the section)",
+                "number": "string (numeric or textual identifier of the section)",
+                "title": "string (title of the section)" if levels[level_name]['added_from'] == 'section' else f"string (title of the section, e.g., {level_name})", 
+                "children": children if children else [
+                    {
+                        "number": "string (numeric or textual identifier of the section)",
+                        "title": "string (title of the section)"
+                    },
+                    {
+                        "number": "string (numeric or textual identifier of the section)",
+                        "title": "string (title of the section)"
+                    }
+                ]
+            } for level_name in current_depth_levels
+        ]
 
     async def process_heading(self, heading: str) -> Dict[str, str]:
         messages = [
@@ -940,7 +640,7 @@ class PDFParser(BaseParser):
             replace_heading(parts)
         return parts
     
-    async def split_no_md_toc_parts_into_parts(self, lines: List[str], level_types: List[str]) -> Dict[str, Union[str, Dict]]:
+    async def split_no_md_toc_parts_into_parts(self, lines: List[str], level_types: List[str, str]) -> Dict[str, Union[str, Dict]]:
         parts = {}
         stack = []
         i = 0
@@ -953,8 +653,7 @@ class PDFParser(BaseParser):
             line = lines[i].strip()
             level = None
             for level_type, level_num in level_types:
-                # if level_type in line:
-                if line.lower().startswith(f"**{level_type.lower()}"):
+                if level_type in line:
                     level = level_num
                     break
             if level is not None:
@@ -1022,8 +721,8 @@ class PDFParser(BaseParser):
         
         if self.no_md_flag:
             sorted_headings = sorted(self.toc_hierarchy_schema.items(), key=lambda x: x[1].count('#'))
-            level_types = [(heading, level.count('#')) for heading, level in sorted_headings[:3]]
-            print(level_types)
+            # level_types = [(heading, level.count('#')) for heading, level in sorted_headings[:3]]
+            level_types = [(heading, level.count('#')) for heading, level in sorted_headings]
             #level_types = [('SCHEDULES', 1), ('APPENDICES', 1), ('PART', 1)] #RAMSAY NURSES ALWAYS WRONG
             return await self.split_no_md_toc_parts_into_parts(lines, level_types)
         else:
@@ -1089,7 +788,7 @@ class PDFParser(BaseParser):
                     remaining_content = ''
                 additional_messages = [
                     {"role": "assistant", "content": inital_message_content},
-                    {"role": "user", "content": "Please continue from EXACTLY where you left off so that the two responses can be concatenated and form a complete JSON object. Make sure to include the closing brackets, quotation marks and commas. Do NOT add any additional text, such as '```json' or '```'."},
+                    {"role": "user", "content": prompts.CONTINUE_JSON_PROMPT},
                     {"role": "assistant", "content": remaining_content}]
                 combined_messages = messages + additional_messages
                 retries = 0
@@ -1128,19 +827,73 @@ class PDFParser(BaseParser):
 
         return await self.rate_limited_process(process_function)
     
+    async def generate_formatted_toc_no_md(self, level_title_str: str, level_content: Dict[str, Any], sublevels: Dict[str, Dict[str, str]]) -> Tuple[Tuple[None, None, None], Dict[str, Any]]:
+        async def format_toc_no_md():
+            custom_schema = await self.generate_toc_schema_no_md(sublevels, limit=3)
+            TOC_SCHEMA = {"contents": [json.dumps(custom_schema, indent=4)]}
+            section_types = ", ".join(sublevels.keys())
+            messages = [
+                {"role": "system", "content": prompts.TOC_SCHEMA_SYS_PROMPT_PLUS},
+                {"role": "user", "content": prompts.TOC_SCHEMA_USER_PROMPT_PLUS_NOMD.format(level_title_str=level_title_str, section_types=section_types, TOC_SCHEMA=TOC_SCHEMA, level_content=json.dumps(level_content, indent=4))}
+            ]
+            response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o")
+            if not response.choices or not response.choices[0].message:
+                print("Unexpected response structure:", response)
+                raise Exception("Unexpected response structure")
+            if response.choices[0].finish_reason == "length":
+                utils.print_coloured(f"{level_title_str} too long...", "red")
+                inital_message_content = response.choices[0].message.content
+                split_content = inital_message_content.rsplit('},', 1)
+                if len(split_content) == 2:
+                    inital_message_content, remaining_content = split_content
+                    remaining_content = '},' + remaining_content.strip()
+                else:
+                    remaining_content = ''
+                additional_messages = [
+                    {"role": "assistant", "content": inital_message_content},
+                    {"role": "user", "content": prompts.CONTINUE_JSON_PROMPT},
+                    {"role": "assistant", "content": remaining_content}]
+                combined_messages = messages + additional_messages
+                retries = 0
+                max_retries = 5
+                while retries < max_retries:
+                    response2 = await llm.openai_client_chat_completion_request(combined_messages, model="gpt-4o", response_format="text")
+                    try:
+                        message_content2 = response2.choices[0].message.content
+                        if message_content2.startswith(remaining_content) == False:
+                            message_content2 = remaining_content + message_content2
+                        total_message_content = inital_message_content + message_content2
+                        toc_schema = json.loads(total_message_content)
+                        utils.print_coloured(f"{level_title_str}", "green")
+                        return (None, None, None, toc_schema)
+                    except json.JSONDecodeError:
+                        retries += 1
+                        utils.print_coloured(f"Error decoding JSON for {level_title_str}, attempt {retries}", "red")
+                        if retries >= max_retries:
+                            raise Exception("Max retries reached, unable to complete JSON")
+            try:
+                message_content = response.choices[0].message.content
+                toc_schema = json.loads(message_content)
+                utils.print_coloured(f"{level_title_str}", "green")
+                return (None, None, None, toc_schema)
+            except json.JSONDecodeError:
+                print(f"Error decoding JSON for {level_title_str}")
+                raise
+        return await self.rate_limited_process(format_toc_no_md)
+    
     async def extract_toc(self) -> TableOfContentsDict:
         """
         Extract and format the ToC.
         """
-        levels = await self.split_toc_into_parts()
-        # with open("levels.json", "r") as f:
-        #     levels = json.load(f)
+        #levels = await self.split_toc_into_parts()
+        with open("levels.json", "r") as f:
+            levels = json.load(f)
         tasks = []
         all_level_schemas = {"contents": []}
-        with open("levels.json", "w") as f:
-            json.dump(levels, f, indent=4)
+        # with open("levels.json", "w") as f:
+        #     json.dump(levels, f, indent=4)
 
-        async def process_level(level_title, level_content, sublevel_title=None, subsublevel_title=None):
+        async def process_level(level_title: JSONstr, level_content: Dict[str, Any], sublevel_title=None, subsublevel_title=None) -> None:
             if "content" in level_content:
                 # if there is content, generate the formatted ToC request
                 task = asyncio.create_task(self.generate_formatted_toc(level_title, sublevel_title, subsublevel_title, level_content["content"]))
@@ -1156,27 +909,37 @@ class PDFParser(BaseParser):
                     else:
                         await process_level(level_title, child_content, child_title)
         
-        async def process_level_no_md(level_title, level_content, sublevel_title=None, subsublevel_title=None):
-            if "content" in level_content:
-                if level_content["content"].count('\n') == 1:
-                    level_title_dict = json.loads(level_title)
-                    if not level_title_dict["title"]:
-                        level_title_dict["title"] = level_content["content"]
-                        level_title = json.dumps(level_title_dict)
-                else:
-                    # if there is content, generate the formatted ToC request
-                    task = asyncio.create_task(self.generate_formatted_toc(level_title, sublevel_title, subsublevel_title, level_content["content"]))
-                    tasks.append(task)
-
-            if "children" in level_content:
-                # process each child level recursively
-                for child_title, child_content in level_content["children"].items():
-                    if "children" in child_content:
-                        # process further children, process them as subsublevels
-                        for subchild_title, subchild_content in child_content["children"].items():
-                            await process_level_no_md(level_title, subchild_content, child_title, subchild_title)
+        async def process_level_no_md(level_json_str: str, level_content: Dict[str, Any], depth: int = 1) -> None:
+            sublevels = {}
+            level_json = json.loads(level_json_str)
+            level_section, level_number, level_title = level_json["section"], level_json["number"], level_json["title"]
+            level_title_str = f"{level_section} {level_number} " + (level_title if level_title else "")
+            if level_content.get("content", "") and not level_title:
+                level_title_str += "(the title of this section should be available in the content)"
+            sublevels[level_section] = {'level': '#' * depth, 'added_from': 'section'}
+            async def process_children(children: Dict[str, Any], current_depth: int) -> None:
+                for child_json_str, child_content in children.items():
+                    child_json = json.loads(child_json_str)
+                    child_section, child_number, child_title = child_json["section"], child_json["number"], child_json["title"]
+                    if child_number:
+                        child_level = child_section
+                        added_from = 'section'
                     else:
-                        await process_level_no_md(level_title, child_content, child_title)
+                        child_level = child_title
+                        added_from = 'title'
+                    if child_level == "":
+                        child_level = child_section
+                    if child_level not in sublevels:
+                        sublevels[child_level] = {'level': '#' * (current_depth + 1), 'added_from': added_from}
+                    if "children" in child_content:
+                        await process_children(child_content["children"], current_depth + 1)
+            if "children" in level_content:
+                await process_children(level_content["children"], depth)
+            task = asyncio.create_task(self.generate_formatted_toc_no_md(level_title_str, level_content, sublevels))
+            tasks.append(task) 
+            # utils.print_coloured(f"Level: {json.dumps(sublevels, indent=2)}", "cyan")  
+            # custom_schema = await self.generate_toc_schema_no_md(sublevels, limit=3)
+            # utils.print_coloured(f"Schema: {json.dumps(custom_schema, indent=2)}", "magenta")      
 
         if not self.no_md_flag:
             for level_title, level_content in levels.items():
@@ -1209,6 +972,27 @@ class PDFParser(BaseParser):
     
     async def nest_toc(self, content: Contents) -> TableOfContents:
         """builds a nested table of contents based on content levels"""
+        if not content.level:
+            if not content.toc:
+                raise ValueError("TOC is empty")
+            
+            def create_table_of_contents(item: Union[TableOfContents, TableOfContentsChild]) -> TableOfContents:
+                if isinstance(item, TableOfContents):
+                    return TableOfContents(
+                        section=item.section,
+                        number=item.number,
+                        title=item.title,
+                        children=[create_table_of_contents(child) for child in item.children] if item.children else None
+                    )
+                elif isinstance(item, TableOfContentsChild):
+                    return TableOfContentsChild(
+                        number=item.number,
+                        title=item.title,
+                    )
+                else:
+                    raise ValueError(f"Invalid TOC item type: {type(item)}")
+            return create_table_of_contents(content.toc[0])
+        
         def parse_level(level_json: JSONstr):
             level_dict = json.loads(level_json)
             return level_dict['section'], level_dict['number'], level_dict['title']
@@ -1319,18 +1103,41 @@ class PDFParser(BaseParser):
         md_levels = self.adjusted_toc_hierarchy_schema if self.adjusted_toc_hierarchy_schema else self.toc_hierarchy_schema
 
         def format_section_name(section: str, number: str, title: str) -> str:
-            section_match = process.extractOne(section, md_levels.keys(), score_cutoff=98) if section else None
-            md_level = md_levels.get(section_match[0], max(md_levels.values(), key=len) + "#") if section_match else max(md_levels.values(), key=len) + "#"
+            if not self.no_md_flag:
+                section_match = process.extractOne(section, md_levels.keys(), score_cutoff=98) if section else None
+                md_level = md_levels.get(section_match[0], max(md_levels.values(), key=len) + "#") if section_match else max(md_levels.values(), key=len) + "#"
 
-            formatted_parts = []
-            if section and not section in title:
-                formatted_parts.append(section)
-            if number and not number in title:
-                formatted_parts.append(number)
-            if title:
-                formatted_parts.append(title)
+                formatted_parts = []
+                if section and not section in title:
+                    formatted_parts.append(section)
+                if number and not number in title:
+                    formatted_parts.append(number)
+                if title:
+                    formatted_parts.append(title)
 
-            return f'{md_level} {" ".join(formatted_parts)}'
+                return f'{md_level} {" ".join(formatted_parts)}'
+            else:
+                full_section_name = f"{section} {number} {title}".strip()
+                section_match = process.extractOne(full_section_name, md_levels.keys(), score_cutoff=98)
+                if section_match:
+                    utils.print_coloured(f"{full_section_name} -> {section_match[0]} [{section_match[1]}]", "green")
+                    return section_match[0]
+                variations = [
+                    f"{section} {number}".strip(),
+                    f"{section} {title}".strip(),
+                    f"{number} {title}".strip(),
+                    section.strip(),
+                    title.strip()
+                ]
+                for variation in variations:
+                    if variation:
+                        section_match = process.extractOne(variation, md_levels.keys(), score_cutoff=98)
+                        if section_match:
+                            utils.print_coloured(f"{variation} -> {section_match[0]} [{section_match[1]}]", "green")
+                            return section_match[0]
+                utils.print_coloured(f"Could not match: {full_section_name}", "red")
+                return full_section_name
+
             
         def traverse_and_update_toc(master_toc: List[Dict[str, Any]]):
             levels_dict = {"contents": []}
@@ -1354,7 +1161,6 @@ class PDFParser(BaseParser):
                 return flattened
             
             remaining_content_md_section_lines = content_md_section_lines.copy()
-            #def get_section_content(next_formatted_section_name: str, formatted_section_name: str = None) -> Tuple[str, int]:
             def get_section_content(next_section: Tuple[str, str, str], section: Tuple[str, str, str] = None) -> Tuple[str, int]:
                 nonlocal remaining_content_md_section_lines
                 if section:
@@ -1365,6 +1171,7 @@ class PDFParser(BaseParser):
                         start_highest_score_matches = [match for match in start_matches if match[1] == start_highest_score]
                         start_matched_line = min(start_highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0]))[0]
                         start_line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == start_matched_line)
+                        utils.print_coloured(f"Start Match: {formatted_section_name}: {start_matched_line} [{start_line_idx}]", "cyan")
                     else:
                         print(f"Could not match start: {formatted_section_name}")
                         start_line_idx = remaining_content_md_section_lines[0][1]
@@ -1381,13 +1188,32 @@ class PDFParser(BaseParser):
                         matches = process.extractBests(next_formatted_section_name, [line for line, _ in remaining_content_md_section_lines], score_cutoff=80, limit=10)
                     if matches:
                         highest_score = max(matches, key=lambda x: x[1])[1]
+                        unique_scores = sorted(set([match[1] for match in matches]))
+                        if len(unique_scores) > 1:
+                            second_highest_score = sorted(set([match[1] for match in matches]))[-2]
+                            if highest_score - second_highest_score <= 5 and second_highest_score >= 95:
+                                #Match: 160 Appointment of directors of public company to be voted on individually: 160 (appointment of directors of public company to be voted on individually). [4746]
+                                # from: [('160 (appointment of directors of public company to be voted on individually).', 99), ('**160****Appointment of directors of public company to be voted on individually**', 98), ('**1160 Meaning of “subsidiary” etc: power to amend**', 86)]
+                                highest_score_matches = [match for match in matches if match[1] == highest_score]
+                                second_highest_score_matches = [match for match in matches if match[1] == second_highest_score]
+                                formatted_highest_matches = [match for match in highest_score_matches if match[0].lstrip().startswith(('#', '*', '_'))]
+                                formatted_second_highest_matches = [match for match in second_highest_score_matches if match[0].lstrip().startswith(('#', '*', '_'))]
+                                if formatted_second_highest_matches and not formatted_highest_matches:
+                                    highest_score = second_highest_score
                         highest_score_matches = [match for match in matches if match[1] == highest_score]
                         matched_line = min(highest_score_matches, key=lambda x: next(idx for line, idx in remaining_content_md_section_lines if line == x[0]))[0]
                         line_idx = next(idx for line, idx in remaining_content_md_section_lines if line == matched_line)
-                        print(f"Match: {next_formatted_section_name}: {matched_line} [{line_idx}]")
+                        utils.print_coloured(f"Match: {next_formatted_section_name}: {matched_line} [{line_idx}]", "yellow")
+                        if "172 Duty to promote the success of the company" in next_formatted_section_name:
+                            print(f"Match: {next_formatted_section_name}: {matched_line} [{line_idx}]")
+                            print("from:", matches)
                     else:
+                        i = 0
                         for line, idx in remaining_content_md_section_lines:
                             print(f"Line: {line} [{idx}]")
+                            i += 1
+                            if i > 10:
+                                break
                         raise ValueError(f"Could not match end: {next_formatted_section_name}")
                 else:
                     line_idx = len(content_md_lines)
@@ -1401,7 +1227,7 @@ class PDFParser(BaseParser):
             def traverse_sections(sections: List[Union[TableOfContents, TableOfContentsChild]], parent_dict: Dict[str, Any], flattened_toc: List[Union[TableOfContents, TableOfContentsChild]]):
                 for section in sections:
                     if isinstance(section, TableOfContents):
-                        formatted_section_name = format_section_name(section.section, section.number, section.title)
+                        #formatted_section_name = format_section_name(section.section, section.number, section.title)
                         section_dict = {
                             "section": section.section,
                             "number": section.number,
@@ -1415,20 +1241,16 @@ class PDFParser(BaseParser):
                         current_index = flattened_toc.index(section)
                         if current_index + 1 < len(flattened_toc):
                             next_item = flattened_toc[current_index + 1]
-                            #next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else format_section_name("", next_item.number, next_item.title)
-
-                            # section_content, section_tokens = get_section_content(next_formatted_section_name=next_formatted_section_name)
                             section_content, section_tokens = get_section_content(next_section=(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else ("", next_item.number, next_item.title))
-                            if len(section_content) > len(formatted_section_name)*1.3:
-                                section_dict["content"] = section_content
-                                section_dict["tokens"] = section_tokens
+                            # if len(section_content) > len(formatted_section_name)*1.3:
+                            #     section_dict["content"] = section_content
+                            #     section_dict["tokens"] = section_tokens
 
 
                         if section.children:
                             traverse_sections(section.children, section_dict, flattened_toc)
                     
                     elif isinstance(section, TableOfContentsChild):
-                        #formatted_section_name = format_section_name("", section.number, section.title)
                         child_dict = {
                             "number": section.number,
                             "title": section.title,
@@ -1440,9 +1262,6 @@ class PDFParser(BaseParser):
                         current_index = flattened_toc.index(section)
                         if current_index + 1 < len(flattened_toc):
                             next_item = flattened_toc[current_index + 1]
-                            # next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else format_section_name("", next_item.number, next_item.title)
-
-                            # section_content, section_tokens = get_section_content(next_formatted_section_name=next_formatted_section_name)
                             section_content, section_tokens = get_section_content(next_section=(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else ("", next_item.number, next_item.title))
                             child_dict["content"] = section_content
                             child_dict["tokens"] = section_tokens
@@ -1469,12 +1288,6 @@ class PDFParser(BaseParser):
                 current_index = flattened_toc.index(item)
                 if current_index + 1 < len(flattened_toc):
                     next_item = flattened_toc[current_index + 1]
-                    # if isinstance(next_item, TableOfContents):
-                    #     next_formatted_section_name = format_section_name(next_item.section, next_item.number, next_item.title)
-                    # elif isinstance(next_item, TableOfContentsChild):
-                    #     next_formatted_section_name = format_section_name("", next_item.number, next_item.title)
-                    
-                    # section_content, section_tokens = get_section_content(formatted_section_name=formatted_section_name, next_formatted_section_name=next_formatted_section_name)
                     section_content, section_tokens = get_section_content(section=(item.section, item.number, item.title), next_section=(next_item.section, next_item.number, next_item.title) if isinstance(next_item, TableOfContents) else ("", next_item.number, next_item.title))
                     if len(section_content) > len(formatted_section_name)*1.3:
                         section_dict["content"] = section_content
@@ -1493,10 +1306,12 @@ class PDFParser(BaseParser):
         Main method to parse the PDF content.
         """
         await self.load_document(file)
-        toc = await self.extract_toc()
-        with open("toc.json", "w") as f:
-            json.dump(toc, f, indent=4)
-        data = TableOfContentsDict(**toc)
-        await self.build_master_toc(data)
+        # toc = await self.extract_toc()
+        # with open("toc.json", "w") as f:
+        #     json.dump(toc, f, indent=4)
+        # data = TableOfContentsDict(**toc)
+        # await self.build_master_toc(data)
+        with open("master_toc.json", "r") as f:
+            self.master_toc = json.load(f)
         content_dict = await self.generate_master_toc_content()
         return content_dict

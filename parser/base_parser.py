@@ -13,7 +13,7 @@ class BaseParser:
             raise NotImplementedError("PyMuPDF version 1.24.0 or later is needed.")
         self.semaphore = asyncio.Semaphore(rate_limit)
 
-    def count_tokens(self, text: str, encoding_name: str = "cl100k_base") -> int:
+    def count_tokens(self, text: str, encoding_name: str = "o200k_base") -> int:
         """
         count the number of tokens in the given text using the specified encoding.
         """
@@ -53,7 +53,7 @@ class BaseParser:
                     return await process_function(*args, **kwargs)
                 except Exception as e:
                     print(f"Error during rate_limited_process: {e}")
-                    print(f"Retrying... Attempt {attempts + 1} from args: {args} and kwargs: {kwargs}")
+                    print(f"Retrying... Attempt {attempts + 1}\nargs: {args} and kwargs: {kwargs}")
                     attempts += 1
                     if attempts >= max_attempts:
                         print(f"Failed after {max_attempts} attempts")
