@@ -170,7 +170,7 @@ async def build_master_toc(data: TableOfContentsDict) -> List[TableOfContents]:
 
 
 async def main():
-    with open("toc.json", "r") as file:
+    with open("toc_breaks.json", "r") as file:
         data = json.load(file)
     try:
         toc_dict = TableOfContentsDict(**data)

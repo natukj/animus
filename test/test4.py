@@ -45,7 +45,7 @@ async def main_run():
         nonlocal unique_schema
         if not prior_schema:
             toc_md_toc_section_str = base_parser.to_markdown(doc, page_nums)
-            if not guide_flag:
+            if guide_flag:
                 USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_V1SION_PRE.format(toc_md_string=toc_md_toc_section_str)
             else:
                 USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_V1SION.format(TOC_HIERARCHY_SCHEMA_TEMPLATE=prompts.TOC_HIERARCHY_SCHEMA_TEMPLATE, toc_md_string=toc_md_toc_section_str)
@@ -117,7 +117,16 @@ async def main_run():
                 print("Retrying...")
                 continue
     #pages = [17]
-    schema_guide = await process_page(grouped_pages[0])
+    schema_guide = await process_page(grouped_pages[0], guide_flag=True)
+    guide_list = [f"There are {len(schema_guide)} levels in the Table of Contents. The levels are as follows:\n"]
+    for key, value in prior_schema.items():
+        guide_list.append(
+            f"{key}:\n"
+            f"  Level: {value['level']}\n"
+            f"  Description: {value['description']}\n"
+            f"  Example(s):\n{value['example']}\n"
+        )
+    guide_str = "\n".join(guide_list)
     prior_schema = await process_page(grouped_pages[0])
     #unique_schema = await create_unique_hierarchy(prior_schema)
     unique_schema = prior_schema

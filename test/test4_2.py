@@ -17,7 +17,7 @@ def encode_page_as_base64(page: fitz.Page):
     return base64.b64encode(pix.tobytes()).decode('utf-8')
 
 
-pages = list(range(0, 59))
+pages = list(range(0, 32))
 # grouped_pages = pages[2::2]
 # if pages[-1] != grouped_pages[-1]:
 #     grouped_pages.append(pages[-1])
@@ -32,7 +32,8 @@ grouped_pages = [pages[i:i+2] for i in range(0, len(pages), 2)]
 # print(grouped_pages[0])
 # print(grouped_pages[0][0])
 # exit()
-doc = fitz.open("/Users/jamesqxd/Documents/norgai-docs/ACTS/ukCOMPANIESACT2006.pdf")
+vol_num=9
+doc = fitz.open(f"/Users/jamesqxd/Documents/norgai-docs/TAX/C2024C00046VOL0{vol_num}.pdf")
 
 
 async def main_run():
