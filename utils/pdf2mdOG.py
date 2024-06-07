@@ -328,9 +328,9 @@ def to_markdownOG(
             # if hdr_string:
             #     print(span0)
             # intercept if header text has been broken in multiple lines
-            # added span0['line'] == 1 for consecutive headers
+            # added span0['line'] >= 1 for consecutive headers
             if hdr_string and hdr_string == prev_hdr_string:
-                if span0['line'] == 1:
+                if span0['line'] >= 1:
                     out_string = out_string[:-1] + " " + text + "\n"
                     continue
 

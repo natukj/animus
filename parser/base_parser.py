@@ -2,6 +2,7 @@ from typing import Union, Any, Callable, List, Dict, Tuple, Awaitable
 from abc import ABC, abstractmethod
 from fastapi import UploadFile
 import asyncio
+import base64
 import fitz  
 import tiktoken
 import utils
@@ -21,23 +22,29 @@ class BaseParser:
         num_tokens = len(encoding.encode(text))
         return num_tokens
     
-    def to_markdown(self, doc: fitz.Document, pages: List[int] = None) -> str:
-        """
-        Convert the given text to Markdown format.
-        """
-        return utils.to_markdown(doc, pages)
-    
-    def to_markdownOG(self, doc: fitz.Document, pages: List[int] = None, page_chunks: bool = False) -> str | List[str]:
+    def to_markdown(self, doc: fitz.Document, pages: List[int] = None, page_chunks: bool = False) -> str | List[str]:
         """
         Convert the given text to Markdown format.
         """
         return utils.to_markdownOG(doc, pages=pages, page_chunks=page_chunks)
     
-    def to_markdownOOG(self, doc: fitz.Document, pages: List[int] = None) -> str:
-        """
-        Convert the given text to Markdown format.
-        """
-        return utils.to_markdownOOG(doc, pages)
+    def encode_page_as_base64(self, page: fitz.Page) -> str:
+        pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+        return base64.b64encode(pix.tobytes()).decode('utf-8')
+    
+    def message_template_vision(self, user_prompt: str, *images: str) -> Dict[str, Any]:
+        message_template = [
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": user_prompt}
+                    ] + [
+                        {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image}"}}
+                        for image in images[:30]  # limit to the first 30 images think gpt4o will only take 39
+                    ]
+                }
+            ]
+        return message_template
     
     async def rate_limited_process(
         self, 
@@ -70,5 +77,52 @@ class BaseParser:
                     if attempts >= max_attempts:
                         print(f"Failed after {max_attempts} attempts")
                         return None
-
+        
     
+
+# class PDFParserRouter:
+#     """Routes PDFs to appropriate parsers based on complexity."""
+
+#     def __init__(self):
+#         self.simple_parser = SimplePDFParser()
+#         self.complex_parser = ComplexPDFParser()
+
+#     def parse(self, pdf_path: str) -> str: 
+#         """Parses a PDF using the appropriate parser."""
+#         if self._is_complex(pdf_path):
+#             print("Using ComplexPDFParser")
+#             return self.complex_parser.parse(pdf_path)  # Assuming you define a 'parse' method
+#         else:
+#             print("Using SimplePDFParser")
+#             return self.simple_parser.parse(pdf_path)  # Assuming you define a 'parse' method
+
+#     def _is_complex(self, pdf_path: str) -> bool:
+#         """
+#         Determine if a PDF is complex. 
+
+#         This is a placeholder - replace with your actual complexity detection logic.
+#         """
+#         # Example (replace with your logic):
+#         doc = fitz.open(pdf_path)
+#         if doc.page_count > 50: 
+#             return True
+#         # Add more conditions based on your needs
+#         return False
+    
+#     def to_markdown(self, doc: fitz.Document, pages: List[int] = None) -> str:
+#         """
+#         Convert the given text to Markdown format.
+#         """
+#         return utils.to_markdown(doc, pages)
+    
+#     def to_markdownOG(self, doc: fitz.Document, pages: List[int] = None, page_chunks: bool = False) -> str | List[str]:
+#         """
+#         Convert the given text to Markdown format.
+#         """
+#         return utils.to_markdownOG(doc, pages=pages, page_chunks=page_chunks)
+    
+#     def to_markdownOOG(self, doc: fitz.Document, pages: List[int] = None) -> str:
+#         """
+#         Convert the given text to Markdown format.
+#         """
+#         return utils.to_markdownOOG(doc, pages)

@@ -388,3 +388,18 @@ Here is the ToC line you need to format:
 {toc_line}
 """
 CONTINUE_JSON_PROMPT = """Please continue from EXACTLY where you left off so that the two responses can be concatenated and form a complete JSON object. Make sure to include the closing brackets, quotation marks and commas. Do NOT add any additional text, such as '```json' or '```'."""
+VERIFY_TOC_PAGES_PROMPT = """Please tell me if the PDF pages provided are part of a Table of Contents (ToC) or not. You have you be certain that the pages are part of the ToC - pages that have different formatting (for example a page without pages numbers on the side) are not part of the ToC if the other ToC page does.
+
+You must respond with a JSON object structured as follows:
+
+{{
+      "top_page": "boolean (True if the top page is part of the ToC, False otherwise)",
+      "bottom_page": "boolean (True if the bottom page is part of the ToC, False otherwise)"
+}}
+"""
+VERIFY_TOC_PAGE_PROMPT = """Please tell me if the PDF page provided is part of a Table of Contents (ToC) or not. You must respond with a JSON object structured as follows:
+
+{{
+      "top_page": "boolean (True if the page is part of the ToC, False otherwise)"
+}}
+"""
