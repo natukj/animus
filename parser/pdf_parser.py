@@ -110,21 +110,21 @@ class PDFParser(BaseParser):
             self.document = fitz.open(file)
         else:
             raise ValueError("file must be an instance of UploadFile or str.")
-        #self.toc_md_string, self.content_md_string = await self.generate_md_string()
-        # self.toc_md_string_lines = self.toc_md_string.split("\n").lower()
-        # self.content_md_string_lines = self.content_md_string.split("\n").lower()
-        #self.toc_hierarchy_schema = await self.generate_toc_hierarchy_schema()
-        # with open("zztoc_md_string.md", "w") as f:
-        #     f.write(self.toc_md_string) 
-        # with open("zzcontent_md_string.md", "w") as f:
-        #     f.write(self.content_md_string)
-        self.no_md_flag = True
-        with open ("toc_hierarchy_schema.json", "r") as f:
-            self.toc_hierarchy_schema = json.load(f)
-        with open("zztoc_md_string.md", "r") as f:
-            self.toc_md_string = f.read()
-        with open("zzcontent_md_string.md", "r") as f:
-            self.content_md_string = f.read()
+        self.toc_md_string, self.content_md_string = await self.generate_md_string()
+        self.toc_md_string_lines = self.toc_md_string.split("\n").lower()
+        self.content_md_string_lines = self.content_md_string.split("\n").lower()
+        self.toc_hierarchy_schema = await self.generate_toc_hierarchy_schema()
+        with open("zztoc_md_string.md", "w") as f:
+            f.write(self.toc_md_string) 
+        with open("zzcontent_md_string.md", "w") as f:
+            f.write(self.content_md_string)
+        # self.no_md_flag = True
+        # with open ("toc_hierarchy_schema.json", "r") as f:
+        #     self.toc_hierarchy_schema = json.load(f)
+        # with open("zztoc_md_string.md", "r") as f:
+        #     self.toc_md_string = f.read()
+        # with open("zzcontent_md_string.md", "r") as f:
+        #     self.content_md_string = f.read()
 
     def encode_page_as_base64(self, page: fitz.Page):
         pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
@@ -137,10 +137,7 @@ class PDFParser(BaseParser):
         # vol9
         #return [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
         # uk companies act
-        return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58]
-        def encode_page_as_base64(page: fitz.Page):
-            pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
-            return base64.b64encode(pix.tobytes()).decode('utf-8')
+        #return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58]
         
         async def verify_toc_page(page: fitz.Page) -> bool:
             nonlocal checked_pages
@@ -156,7 +153,7 @@ class PDFParser(BaseParser):
                         {
                         "type": "image_url",
                         "image_url": {
-                            "url": f"data:image/jpeg;base64,{encode_page_as_base64(page)}",
+                            "url": f"data:image/jpeg;base64,{self.encode_page_as_base64(page)}",
                         },
                         },
                     ],
@@ -191,7 +188,7 @@ class PDFParser(BaseParser):
             i += 1
             if percentage > 0.4:
                 toc_pages.append(i)
-            # logic for silly LHS page numbers
+            # logic if there are not toc page nums
             if i == 30 and check_right:
                 if not toc_pages:
                     check_right = False
@@ -483,10 +480,10 @@ class PDFParser(BaseParser):
                 adjust_count = top_level_count - 1
                 levels_unfiltered = {k: v[adjust_count:] for k, v in self.toc_hierarchy_schema.items()}
                 self.adjusted_toc_hierarchy_schema = levels_unfiltered
-                levels = await self.filter_schema(levels_unfiltered, content, 2) # added 2 uk companies act
+                levels = await self.filter_schema(levels_unfiltered, content)
                 #print(f"Adjusted ToC Hierarchy Schema: {json.dumps(levels, indent=4)}")
             else:    
-                levels = await self.filter_schema(self.toc_hierarchy_schema, content, 2) # added 2 uk companies act
+                levels = await self.filter_schema(self.toc_hierarchy_schema, content)
                 #print(f"UNadjusted ToC Hierarchy Schema: {json.dumps(levels, indent=4)}")
 
         if max_depth is None:

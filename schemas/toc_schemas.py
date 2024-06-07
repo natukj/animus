@@ -1,11 +1,12 @@
 from __future__ import annotations
-from pydantic import BaseModel, ValidationError
-from typing import List, Optional, Union
+from pydantic import BaseModel
+from typing import Union, Optional, List, NewType
+
+JSONstr = NewType('JSONstr', str)
 
 class TableOfContentsChild(BaseModel):
     number: str
     title: str
-
 
 class TableOfContents(BaseModel):
     section: Optional[str]
@@ -41,12 +42,13 @@ class TableOfContents(BaseModel):
 
 
 class Contents(BaseModel):
-    chapter: str
-    part: str
-    toc: List[TableOfContents]
+    level: JSONstr | None
+    sublevel: JSONstr | str | None
+    subsublevel: JSONstr | str | None
+    toc: List[Union[TableOfContents, TableOfContentsChild]]
 
 
-class Data(BaseModel):
+class TableOfContentsDict(BaseModel):
     contents: List[Contents]
 
 def merge_children(existing_children: Optional[List[Union[TableOfContents, TableOfContentsChild]]], new_children: List[Union[TableOfContents, TableOfContentsChild]]) -> List[Union[TableOfContents, TableOfContentsChild]]:
@@ -68,85 +70,3 @@ def merge_children(existing_children: Optional[List[Union[TableOfContents, Table
                 existing_children.append(new_child)
 
     return existing_children
-
-def find_existing_section(parent_children: List[TableOfContents], section: str, number: str) -> Optional[TableOfContents]:
-    """find an existing section by section type and number."""
-    for child in parent_children:
-        if child.section == section and child.number == number:
-            return child
-    return None
-
-
-def nest_toc(content: Contents) -> TableOfContents:
-    chapter_info = content.chapter.split("\u2014")
-    chapter_number = chapter_info[0].strip().split(" ")[-1]
-    chapter_title = chapter_info[1].strip().rsplit(" ", 1)[0]
-
-    if content.part == "Full Chapter" or content.toc[0].section == "Chapter":
-        return TableOfContents(
-            section="Chapter",
-            number=chapter_number,
-            title=chapter_title,
-            children=content.toc[0].children
-        )
-    else:
-        part_info = content.part.split("\u2014")
-        part_number = part_info[0].strip().split(" ")[-1]
-        part_title = part_info[1].strip().split(" - ")[0].rsplit(" ", 1)[0]
-
-        return TableOfContents(
-            section="Chapter",
-            number=chapter_number,
-            title=chapter_title,
-            children=[
-                TableOfContents(
-                    section="Part",
-                    number=part_number,
-                    title=part_title,
-                    children=content.toc[0].children
-                )
-            ]
-        )
-
-
-def merge_toc(master_toc: List[TableOfContents], new_toc: TableOfContents):
-    """merge a new TOC into the master TOC."""
-    existing_chapter = find_existing_section(master_toc, "Chapter", new_toc.number)
-    if existing_chapter:
-        existing_chapter.children = merge_children(existing_chapter.children, new_toc.children or [])
-    else:
-        master_toc.append(new_toc)
-
-
-def build_master_toc(data: Data) -> List[TableOfContents]:
-    master_toc: List[TableOfContents] = []
-
-    for content in data.contents:
-        nested_toc = nest_toc(content)
-        merge_toc(master_toc, nested_toc)
-
-    return master_toc
-
-
-def main():
-    # Load the JSON data from a file
-    with open(toc_path.format(vol=3), "r") as f:
-        json_data = json.load(f)
-
-    try:
-        # Validate the JSON data using Pydantic
-        data = Data(**json_data)
-
-        # Build the master Table of Contents
-        master_toc = build_master_toc(data)
-
-        # Save to a single file
-        save_toc_to_file(master_toc, "toc3.json")
-        print("Saved master_toc.json")
-
-    except ValidationError as e:
-        print(f"Validation error: {e}")
-
-
-if __name__ == "__main__":
-    main()

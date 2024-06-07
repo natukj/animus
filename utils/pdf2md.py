@@ -46,7 +46,8 @@ def to_markdown(doc: fitz.Document, pages: list = None) -> str:
                     key=lambda i: i[1],
                     reverse=True,
                 )[0][0]
-
+            print(fontsizes)
+            print(f"Body text limit: {body_limit}")
             sizes = sorted(
                 [f for f in fontsizes.keys() if f > body_limit], reverse=True
             )

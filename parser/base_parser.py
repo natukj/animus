@@ -27,6 +27,18 @@ class BaseParser:
         """
         return utils.to_markdown(doc, pages)
     
+    def to_markdownOG(self, doc: fitz.Document, pages: List[int] = None, page_chunks: bool = False) -> str | List[str]:
+        """
+        Convert the given text to Markdown format.
+        """
+        return utils.to_markdownOG(doc, pages=pages, page_chunks=page_chunks)
+    
+    def to_markdownOOG(self, doc: fitz.Document, pages: List[int] = None) -> str:
+        """
+        Convert the given text to Markdown format.
+        """
+        return utils.to_markdownOOG(doc, pages)
+    
     async def rate_limited_process(
         self, 
         process_function: Callable[..., Awaitable[Any]],

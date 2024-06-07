@@ -7,39 +7,53 @@ from fastapi import UploadFile
 import fitz
 import re
 import uuid
+import pathlib
 from collections import Counter, defaultdict
 from thefuzz import process  
 import llm, prompts, utils
 from parser.base_parser import BaseParser
 
+"""COMPLEX ATYPICAL"""
+
 def encode_page_as_base64(page: fitz.Page):
     pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
     return base64.b64encode(pix.tobytes()).decode('utf-8')
 
-
-pages = list(range(0, 32))
-# grouped_pages = pages[2::2]
-# if pages[-1] != grouped_pages[-1]:
-#     grouped_pages.append(pages[-1])
-# last_page = grouped_pages[-1]
+#pages = list(range(0, 59))
+pages = list(range(2, 32))
 grouped_pages = [pages[i:i+2] for i in range(0, len(pages), 2)]
-# if len(grouped_pages[-1]) < 2:
-#     grouped_pages[-1].append(grouped_pages[0])
-
 # for group in grouped_pages:
 #     print(group)
+# grouped_pages_text = { (2, 3): "Example text for pages 2 and 3", (4, 5): "Example text for pages 4 and 5" }
 
-# print(grouped_pages[0])
-# print(grouped_pages[0][0])
-# exit()
+
+# for item in list(grouped_pages_text.items())[1:]:
+#     print(item)
+
 vol_num=9
 doc = fitz.open(f"/Users/jamesqxd/Documents/norgai-docs/TAX/C2024C00046VOL0{vol_num}.pdf")
-
-
+#doc = fitz.open("/Users/jamesqxd/Documents/norgai-docs/ACTS/ukCOMPANIESACT2006.pdf")
 async def main_run():
     base_parser = BaseParser()
-    async def process_page(page_nums: List[int], prior_schema: str = None):
-        toc_md_toc_section_str = base_parser.to_markdown(doc, page_nums)
+    toc_section_list = base_parser.to_markdownOG(doc=doc, pages=pages, page_chunks=True)
+    grouped_pages_text = {}
+    for group in grouped_pages:
+        total_text = ""
+        for page in group:
+            page_index = pages.index(page)
+            total_text += toc_section_list[page_index].get("text", "")
+        grouped_pages_text[tuple(group)] = total_text
+    # for k in grouped_pages_text.keys():
+    #     if len(k) == 2:
+    #         a,b = k
+    #     else:
+    #         a = k[0]
+    #         b = ""
+    #     print(f"Pages {a} to {b}:\n{len(grouped_pages_text[k])}")
+    #     pathlib.Path(f"vol9({k}).md").write_bytes(grouped_pages_text[k].encode())
+
+    async def process_page(page_nums_and_text: tuple, prior_schema: str = None):
+        page_nums, toc_md_toc_section_str = page_nums_and_text
         if not prior_schema:
             USER_PROMPT = prompts.TOC_HIERARCHY_USER_PROMPT_VISION.format(toc_md_string=toc_md_toc_section_str)
         else:
@@ -90,8 +104,9 @@ async def main_run():
                 print(f"Error: {e}")
                 print("Retrying...")
                 continue
-
-    prior_schema = await process_page(grouped_pages[0])
+    # for group, text in grouped_pages_text.items():
+    #     print(f"Pages {group}: {len(text)}")
+    prior_schema = await process_page(next(iter(grouped_pages_text.items())))
     guide_list = [f"There are only {len(prior_schema)} levels in the Table of Contents. The levels are as follows:\n"]
     for key, value in prior_schema.items():
         guide_list.append(
@@ -106,7 +121,7 @@ async def main_run():
     toc_hierarchy_schemas = await asyncio.gather(
         *[
             process_page(page_nums, prior_schema=prior_schema)
-            for page_nums in grouped_pages[1:]
+            for page_nums in list(grouped_pages_text.items())[1:]
         ]
     )
     combined_toc_hierarchy_schema = {}
