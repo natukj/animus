@@ -1,6 +1,7 @@
 from __future__ import annotations
-from pydantic import BaseModel
-from typing import Union, Optional, List, NewType
+from pydantic import BaseModel, create_model
+from typing import Union, Optional, List, Dict, NewType, Any, Type
+import json
 
 JSONstr = NewType('JSONstr', str)
 
@@ -9,13 +10,13 @@ class TableOfContentsChild(BaseModel):
     title: str
 
 class TableOfContents(BaseModel):
-    section: Optional[str]
+    section: str
     number: str
     title: str
     children: Optional[List[Union[TableOfContents, TableOfContentsChild]]]
 
     def find_child(self, section: Optional[str], number: str) -> Optional[Union[TableOfContents, TableOfContentsChild]]:
-        """find an existing child by section and number."""
+        """Find an existing child by section and number."""
         if not self.children:
             return None
         for child in self.children:
@@ -26,7 +27,7 @@ class TableOfContents(BaseModel):
         return None
 
     def add_child(self, child: Union[TableOfContents, TableOfContentsChild]):
-        """add a new child or merge with an existing one."""
+        """Add a new child or merge with an existing one."""
         if not self.children:
             self.children = []
 
@@ -40,19 +41,149 @@ class TableOfContents(BaseModel):
             if not any(isinstance(existing, TableOfContentsChild) and existing.number == child.number for existing in self.children):
                 self.children.append(child)
 
+def preprocess_levels_dict(levels_dict: Dict[str, Any]) -> Dict[str, Any]:
+    """sections that don't have a size hierarchy but are nested in the ToC are represented as empty dictionaries, eg:
+    {\"section\": \"Subdivision\", \"number\": \"842-B\", \"title\": \"Some items of Australian source income of foreign residents that are exempt from income tax\"}": {},
+    This function processes these empty dictionaries and their children into a proper hierarchy
+    NOTE currently this add proceeding sections to {} section until the next {} section is found, this may not be the desired behaviour and will need to be improved
+    """
+    # if the top level of data has only one key (ToC header), skip it and start from its children
+    if len(levels_dict) == 1 and 'children' in next(iter(levels_dict.values())):
+        levels_dict = next(iter(levels_dict.values()))['children']
+    def process_level(level_data: Dict[str, Any]) -> Dict[str, Any]:
+        keys = list(level_data.keys())
+        processed_data = {}
+        i = 0
+
+        while i < len(keys):
+            key = keys[i]
+            value = level_data[key]
+
+            if value == {}:
+                # Start a new section for the empty value
+                processed_data[key] = {"children": {}}
+                i += 1
+                while i < len(keys) and level_data[keys[i]] != {}:
+                    # Collect subsequent keys and values into the current empty dictionary's children
+                    processed_data[key]["children"][keys[i]] = level_data[keys[i]]
+                    i += 1
+            else:
+                if "children" in value:
+                    # Recursively process nested children
+                    value["children"] = process_level(value["children"])
+                processed_data[key] = value
+                i += 1
+
+        return processed_data
+
+    return process_level(levels_dict)
+
+def parse_toc_dict(data: Dict[str, Any]) -> List[TableOfContents]:
+    def create_toc(item: Dict[str, Any], key: Optional[str] = None, parent_toc: Optional[TableOfContents] = None) -> Union[TableOfContents, TableOfContentsChild, None]:
+        if 'children' in item:
+            key_split = key.rsplit('}', 1)
+            if len(key_split) == 2:
+                key = key_split[0] + '}'
+            details = json.loads(key)
+            toc = TableOfContents(
+                section=details.get('section'),
+                number=details.get('number'),
+                title=details.get('title'),
+                children=[]
+            )
+            for child_key, child_value in item['children'].items():
+                child_toc = create_toc(child_value, child_key, toc)
+                if child_toc:
+                    toc.children.append(child_toc)
+            return toc
+        elif 'contents' in item and isinstance(item['contents'], list):
+            children = [TableOfContentsChild(number=content['number'], title=content['title']) for content in
+                        item['contents']]
+            if key:
+                key_split = key.rsplit('}', 1)
+                if len(key_split) == 2:
+                    key = key_split[0] + '}'
+                details = json.loads(key)
+                return TableOfContents(
+                    section=details.get('section'),
+                    number=details.get('number'),
+                    title=details.get('title'),
+                    children=children
+                )
+            else:
+                # If no key, append to parent's children
+                parent_toc.children.extend(children)
+        else:
+            # Empty dictionary: implicit children indicator
+            if key:
+                print(f"Empty dictionary: {key}")
+                key_split = key.rsplit('}', 1)
+                if len(key_split) == 2:
+                    key = key_split[0] + '}'
+                details = json.loads(key)
+                toc = TableOfContents(
+                    section=details.get('section'),
+                    number=details.get('number'),
+                    title=details.get('title'),
+                    children=[]
+                )
+                # Only append to parent here, no return needed
+                if parent_toc:
+                    parent_toc.children.append(toc)
+
+    root_toc = TableOfContents(
+        section="",
+        number="",
+        title="Root",
+        children=[]
+    )
+    preprocessed_data = preprocess_levels_dict(data)
+    for top_level_key, top_level_value in preprocessed_data.items():
+        top_level_toc = create_toc(top_level_value, top_level_key, root_toc)
+        if top_level_toc:
+            root_toc.children.append(top_level_toc)
+
+    
+    return root_toc.children
 
 class Contents(BaseModel):
-    level: JSONstr | None
-    sublevel: JSONstr | str | None
-    subsublevel: JSONstr | str | None
+    levels: Dict[str, JSONstr] = {}
     toc: List[Union[TableOfContents, TableOfContentsChild]]
+
+    @classmethod
+    def from_dict(cls, levels: Dict[str, JSONstr], toc: List[Union[TableOfContents, TableOfContentsChild]]) -> Contents:
+        return cls(levels=levels, toc=toc)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {"levels": self.levels, "toc": self.toc}
+
+    def add_level(self, level_name: str, level_value: JSONstr) -> None:
+        self.levels[level_name] = level_value
+
+def generate_contents_class(max_depth: int) -> Type[BaseModel]:
+    """
+    Dynamically generate the Contents class with the given number of sublevels.
+    
+    :param max_depth: The maximum depth for sublevels.
+    :return: A dynamically created Contents class.
+    """
+    fields = {
+        'level': (Optional[JSONstr], None),
+        'toc': (List[Union[TableOfContents, TableOfContentsChild]], ...)
+    }
+
+    for i in range(1, max_depth):
+        sublevel_name = 'sub' * i + 'level'
+        fields[sublevel_name] = (Optional[JSONstr], None)
+
+    return create_model('Contents', **fields)
 
 
 class TableOfContentsDict(BaseModel):
     contents: List[Contents]
 
 def merge_children(existing_children: Optional[List[Union[TableOfContents, TableOfContentsChild]]], new_children: List[Union[TableOfContents, TableOfContentsChild]]) -> List[Union[TableOfContents, TableOfContentsChild]]:
-    """merge a list of new children into existing children."""
+    """Merge a list of new children into existing children."""
     if existing_children is None:
         existing_children = []
 

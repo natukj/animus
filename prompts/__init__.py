@@ -20,3 +20,8 @@ from .parse_prompts import (
 from .check_prompts import (
     IS_THIS_JSON_CORRECT,
 )
+from .pdf_prompts import (
+    TOC_SCHEMA_SYS,
+    TOC_SCHEMA_USER,
+    TOC_ITEMS_USER,
+)
