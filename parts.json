@@ -1,136 +1,137 @@
 {
-  "{\"section\": \"Chapter\", \"number\": \"3\", \"title\": \"Specialist liability rules\"}": {
+  "{\"section\": \"\", \"number\": \"\", \"title\": \"Contents\"}": {
     "children": {
-      "{\"section\": \"Part\", \"number\": \"3-95\", \"title\": \"Value shifting\"}": {
+      "{\"section\": \"Chapter\", \"number\": \"3\", \"title\": \"Specialist liability rules\"}": {
         "children": {
-          "{\"section\": \"Division\", \"number\": \"723\", \"title\": \"Direct value shifting by creating right over non-depreciating asset\"}": {
+          "{\"section\": \"Part\", \"number\": \"3-95\", \"title\": \"Value shifting\"}": {
             "children": {
-              "{\"section\": \"Subdivision\", \"number\": \"723-A\", \"title\": \"Reduction in loss from realising non-depreciating asset\"}": {
-                "contents": [
-                  {
-                    "number": "723-1",
-                    "title": "Object"
-                  },
-                  {
-                    "number": "723-10",
-                    "title": "Reduction in loss from realising non-depreciating asset over which right has been created"
-                  },
-                  {
-                    "number": "723-15",
-                    "title": "Reduction in loss from realising non-depreciating asset at the same time as right is created over it"
-                  },
-                  {
-                    "number": "723-20",
-                    "title": "Exceptions"
-                  },
-                  {
-                    "number": "723-25",
-                    "title": "Realisation event that is only a partial realisation"
-                  },
-                  {
-                    "number": "723-35",
-                    "title": "Multiple rights created to take advantage of the $50,000 threshold"
-                  },
-                  {
-                    "number": "723-40",
-                    "title": "Application to CGT asset that is also trading stock or revenue asset"
-                  },
-                  {
-                    "number": "723-50",
-                    "title": "Effects if right created over underlying asset is also trading stock or a revenue asset"
-                  }
-                ]
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"723-B\", \"title\": \"Reducing reduced cost base of interests in entity that acquires non-depreciating asset under roll-over\"}": {
-                "contents": [
-                  {
-                    "number": "723-105",
-                    "title": "Reduced cost base of interest reduced when interest realised at a loss"
-                  },
-                  {
-                    "number": "723-110",
-                    "title": "Direct and indirect roll-over replacement for underlying asset"
-                  }
-                ]
-              }
-            }
-          },
-          "{\"section\": \"Division\", \"number\": \"725\", \"title\": \"Direct value shifting affecting interests in companies and trusts\"}": {
-            "children": {
-              "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
-                "contents": [
-                  {
-                    "number": "725-1",
-                    "title": "What this Division is about"
-                  }
-                ]
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"725-A\", \"title\": \"Scope of the direct value shifting rules\"}": {
-                "contents": [
-                  {
-                    "number": "725-45",
-                    "title": "Main object"
-                  },
-                  {
-                    "number": "725-50",
-                    "title": "When a direct value shift has consequences under this Division"
-                  },
-                  {
-                    "number": "725-55",
-                    "title": "Controlling entity test"
-                  },
-                  {
-                    "number": "725-65",
-                    "title": "Cause of the value shift"
-                  },
-                  {
-                    "number": "725-70",
-                    "title": "Consequences for down interest only if there is a material decrease in its market value"
-                  },
-                  {
-                    "number": "725-80",
-                    "title": "Who is an affected owner of a down interest?"
-                  },
-                  {
-                    "number": "725-85",
-                    "title": "Who is an affected owner of an up interest?"
-                  },
-                  {
-                    "number": "725-90",
-                    "title": "Direct value shift that will be reversed"
-                  },
-                  {
-                    "number": "725-95",
-                    "title": "Direct value shift resulting from reversal"
-                  }
-                ]
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"725-B\", \"title\": \"What is a direct value shift\"}": {
-                "contents": [
-                  {
-                    "number": "725-145",
-                    "title": "When there is a direct value shift"
-                  },
-                  {
-                    "number": "725-150",
-                    "title": "Issue of equity or loan interests at a discount"
-                  },
-                  {
-                    "number": "725-155",
-                    "title": "Meaning of down interests, decrease time, up interests and increase time"
-                  },
-                  {
-                    "number": "725-160",
-                    "title": "What is the nature of a direct value shift?"
-                  },
-                  {
-                    "number": "725-165",
-                    "title": "If market value decrease or increase is only partly attributable to the scheme"
-                  }
-                ]
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"725-C\", \"title\": \"Consequences of a direct value shift\"}": {
+              "{\"section\": \"Division\", \"number\": \"723\", \"title\": \"Direct value shifting by creating right over non-depreciating asset\"}": {
                 "children": {
+                  "{\"section\": \"Subdivision\", \"number\": \"723-A\", \"title\": \"Reduction in loss from realising non-depreciating asset\"}": {
+                    "contents": [
+                      {
+                        "number": "723-1",
+                        "title": "Object"
+                      },
+                      {
+                        "number": "723-10",
+                        "title": "Reduction in loss from realising non-depreciating asset over which right has been created"
+                      },
+                      {
+                        "number": "723-15",
+                        "title": "Reduction in loss from realising non-depreciating asset at the same time as right is created over it"
+                      },
+                      {
+                        "number": "723-20",
+                        "title": "Exceptions"
+                      },
+                      {
+                        "number": "723-25",
+                        "title": "Realisation event that is only a partial realisation"
+                      },
+                      {
+                        "number": "723-35",
+                        "title": "Multiple rights created to take advantage of the $50,000 threshold"
+                      },
+                      {
+                        "number": "723-40",
+                        "title": "Application to CGT asset that is also trading stock or revenue asset"
+                      },
+                      {
+                        "number": "723-50",
+                        "title": "Effects if right created over underlying asset is also trading stock or a revenue asset"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"723-B\", \"title\": \"Reducing reduced cost base of interests in entity that acquires non-depreciating asset under roll-over\"}": {
+                    "contents": [
+                      {
+                        "number": "723-105",
+                        "title": "Reduced cost base of interest reduced when interest realised at a loss"
+                      },
+                      {
+                        "number": "723-110",
+                        "title": "Direct and indirect roll-over replacement for underlying asset"
+                      }
+                    ]
+                  }
+                }
+              },
+              "{\"section\": \"Division\", \"number\": \"725\", \"title\": \"Direct value shifting affecting interests in companies and trusts\"}": {
+                "children": {
+                  "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
+                    "contents": [
+                      {
+                        "number": "725-1",
+                        "title": "What this Division is about"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"725-A\", \"title\": \"Scope of the direct value shifting rules\"}": {
+                    "contents": [
+                      {
+                        "number": "725-45",
+                        "title": "Main object"
+                      },
+                      {
+                        "number": "725-50",
+                        "title": "When a direct value shift has consequences under this Division"
+                      },
+                      {
+                        "number": "725-55",
+                        "title": "Controlling entity test"
+                      },
+                      {
+                        "number": "725-65",
+                        "title": "Cause of the value shift"
+                      },
+                      {
+                        "number": "725-70",
+                        "title": "Consequences for down interest only if there is a material decrease in its market value"
+                      },
+                      {
+                        "number": "725-80",
+                        "title": "Who is an affected owner of a down interest?"
+                      },
+                      {
+                        "number": "725-85",
+                        "title": "Who is an affected owner of an up interest?"
+                      },
+                      {
+                        "number": "725-90",
+                        "title": "Direct value shift that will be reversed"
+                      },
+                      {
+                        "number": "725-95",
+                        "title": "Direct value shift resulting from reversal"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"725-B\", \"title\": \"What is a direct value shift\"}": {
+                    "contents": [
+                      {
+                        "number": "725-145",
+                        "title": "When there is a direct value shift"
+                      },
+                      {
+                        "number": "725-150",
+                        "title": "Issue of equity or loan interests at a discount"
+                      },
+                      {
+                        "number": "725-155",
+                        "title": "Meaning of down interests, decrease time, up interests and increase time"
+                      },
+                      {
+                        "number": "725-160",
+                        "title": "What is the nature of a direct value shift?"
+                      },
+                      {
+                        "number": "725-165",
+                        "title": "If market value decrease or increase is only partly attributable to the scheme"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"725-C\", \"title\": \"Consequences of a direct value shift\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"General\"}": {
                     "contents": [
                       {
@@ -228,81 +229,78 @@
                     ]
                   }
                 }
-              }
-            }
-          },
-          "{\"section\": \"Division\", \"number\": \"727\", \"title\": \"Indirect value shifting affecting interests in companies and trusts, and arising from non-arm\\u2019s length dealings\"}": {
-            "children": {
-              "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
-                "contents": [
-                  {
-                    "number": "727-1",
-                    "title": "What this Division is about"
-                  },
-                  {
-                    "number": "727-5",
-                    "title": "What is an indirect value shift?"
-                  },
-                  {
-                    "number": "727-10",
-                    "title": "How does this Division deal with indirect value shifts?"
-                  },
-                  {
-                    "number": "727-15",
-                    "title": "When does an indirect value shift have consequences under this Division?"
-                  },
-                  {
-                    "number": "727-25",
-                    "title": "Effect of this Division on realisations at a loss that occur before the nature or extent of an indirect value shift can be fully determined"
-                  }
-                ]
               },
-              "{\"section\": \"Subdivision\", \"number\": \"727-A\", \"title\": \"Scope of the indirect value shifting rules\"}": {
-                "contents": [
-                  {
-                    "number": "727-95",
-                    "title": "Main object"
-                  },
-                  {
-                    "number": "727-100",
-                    "title": "When an indirect value shift has consequences under this Division"
-                  },
-                  {
-                    "number": "727-105",
-                    "title": "Ultimate controller test"
-                  },
-                  {
-                    "number": "727-110",
-                    "title": "Common-ownership nexus test (if both losing and gaining entities are closely held)"
-                  },
-                  {
-                    "number": "727-125",
-                    "title": "No consequences if losing entity is a complying superannuation entity etc"
-                  }
-                ]
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"727-B\", \"title\": \"What is an indirect value shift\"}": {
-                "contents": [
-                  {
-                    "number": "727-150",
-                    "title": "How to determine whether a scheme results in an indirect value shift"
-                  },
-                  {
-                    "number": "727-155",
-                    "title": "Providing economic benefits"
-                  },
-                  {
-                    "number": "727-160",
-                    "title": "When an economic benefit is provided in connection with a scheme"
-                  },
-                  {
-                    "number": "727-165",
-                    "title": "Preventing double-counting of economic benefits"
-                  }
-                ]
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"727-C\", \"title\": \"Exclusions\"}": {
+              "{\"section\": \"Division\", \"number\": \"727\", \"title\": \"Indirect value shifting affecting interests in companies and trusts, and arising from non-arm\\u2019s length dealings\"}": {
                 "children": {
+                  "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
+                    "contents": [
+                      {
+                        "number": "727-1",
+                        "title": "What this Division is about"
+                      },
+                      {
+                        "number": "727-5",
+                        "title": "What is an indirect value shift?"
+                      },
+                      {
+                        "number": "727-10",
+                        "title": "How does this Division deal with indirect value shifts?"
+                      },
+                      {
+                        "number": "727-15",
+                        "title": "When does an indirect value shift have consequences under this Division?"
+                      },
+                      {
+                        "number": "727-25",
+                        "title": "Effect of this Division on realisations at a loss that occur before the nature or extent of an indirect value shift can be fully determined"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"727-A\", \"title\": \"Scope of the indirect value shifting rules\"}": {
+                    "contents": [
+                      {
+                        "number": "727-95",
+                        "title": "Main object"
+                      },
+                      {
+                        "number": "727-100",
+                        "title": "When an indirect value shift has consequences under this Division"
+                      },
+                      {
+                        "number": "727-105",
+                        "title": "Ultimate controller test"
+                      },
+                      {
+                        "number": "727-110",
+                        "title": "Common-ownership nexus test (if both losing and gaining entities are closely held)"
+                      },
+                      {
+                        "number": "727-125",
+                        "title": "No consequences if losing entity is a complying superannuation entity etc"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"727-B\", \"title\": \"What is an indirect value shift\"}": {
+                    "contents": [
+                      {
+                        "number": "727-150",
+                        "title": "How to determine whether a scheme results in an indirect value shift"
+                      },
+                      {
+                        "number": "727-155",
+                        "title": "Providing economic benefits"
+                      },
+                      {
+                        "number": "727-160",
+                        "title": "When an economic benefit is provided in connection with a scheme"
+                      },
+                      {
+                        "number": "727-165",
+                        "title": "Preventing double-counting of economic benefits"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"727-C\", \"title\": \"Exclusions\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 727-C\"}": {
                     "contents": [
                       {
@@ -370,11 +368,8 @@
                         "title": "Transfer, for its adjustable value, of depreciating asset acquired for less than $1,500,000"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"727-E\", \"title\": \"Key concepts\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"727-E\", \"title\": \"Key concepts\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Ultimate controller\"}": {
                     "contents": [
                       {
@@ -422,11 +417,8 @@
                         "title": "Rules for tracing"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"727-F\", \"title\": \"Consequences of an indirect value shift\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"727-F\", \"title\": \"Consequences of an indirect value shift\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 727-F\"}": {
                     "contents": [
                       {
@@ -562,11 +554,8 @@
                         "title": "Meaning of predominantly-services indirect value shift"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"727-H\", \"title\": \"The adjustable value method\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"727-H\", \"title\": \"The adjustable value method\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 727-H\"}": {
                     "contents": [
                       {
@@ -672,37 +661,34 @@
             }
           }
         }
-      }
-    }
-  },
-  "{\"section\": \"Chapter\", \"number\": \"4\", \"title\": \"International aspects of income tax\"}": {
-    "children": {
-      "{\"section\": \"Part\", \"number\": \"4-5\", \"title\": \"General\"}": {
+      },
+      "{\"section\": \"Chapter\", \"number\": \"4\", \"title\": \"International aspects of income tax\"}": {
         "children": {
-          "{\"section\": \"Division\", \"number\": \"764\", \"title\": \"Source rules\"}": {
+          "{\"section\": \"Part\", \"number\": \"4-5\", \"title\": \"General\"}": {
             "children": {
-              "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
-                "contents": [
-                  {
-                    "number": "764-1",
-                    "title": "What this Division is about"
-                  }
-                ]
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"764-A\", \"title\": \"Source rules\"}": {
-                "contents": [
-                  {
-                    "number": "764-5",
-                    "title": "Source rule for international tax agreements"
-                  }
-                ]
-              }
-            }
-          },
-          "{\"section\": \"Division\", \"number\": \"768\", \"title\": \"Foreign non-assessable income and gains\"}": {
-            "children": {
-              "{\"section\": \"Subdivision\", \"number\": \"768-A\", \"title\": \"Returns on foreign investment\"}": {
+              "{\"section\": \"Division\", \"number\": \"764\", \"title\": \"Source rules\"}": {
                 "children": {
+                  "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
+                    "contents": [
+                      {
+                        "number": "764-1",
+                        "title": "What this Division is about"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"764-A\", \"title\": \"Source rules\"}": {
+                    "contents": [
+                      {
+                        "number": "764-5",
+                        "title": "Source rule for international tax agreements"
+                      }
+                    ]
+                  }
+                }
+              },
+              "{\"section\": \"Division\", \"number\": \"768\", \"title\": \"Foreign non-assessable income and gains\"}": {
+                "children": {
+                  "{\"section\": \"Subdivision\", \"number\": \"768-A\", \"title\": \"Returns on foreign investment\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 768-A\"}": {
                     "contents": [
                       {
@@ -746,11 +732,8 @@
                         "title": "Foreign residents deriving income from certain activities in Australia\u2019s exclusive economic zone or on or above Australia\u2019s continental shelf"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"768-G\", \"title\": \"Reduction in capital gains and losses arising from CGT events in relation to certain voting interests in active foreign companies\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"768-G\", \"title\": \"Reduction in capital gains and losses arising from CGT events in relation to certain voting interests in active foreign companies\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 768-G\"}": {
                     "contents": [
                       {
@@ -826,11 +809,8 @@
                         "title": "Total voting percentage in a company"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"768-R\", \"title\": \"Temporary residents\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"768-R\", \"title\": \"Temporary residents\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 768-R\"}": {
                     "contents": [
                       {
@@ -876,25 +856,22 @@
                     ]
                   }
                 }
-              }
-            }
-          },
-          "{\"section\": \"Division\", \"number\": \"770\", \"title\": \"Foreign income tax offsets\"}": {
-            "children": {
-              "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
-                "contents": [
-                  {
-                    "number": "770-1",
-                    "title": "What this Division is about"
-                  },
-                  {
-                    "number": "770-5",
-                    "title": "Object"
-                  }
-                ]
               },
-              "{\"section\": \"Subdivision\", \"number\": \"770-A\", \"title\": \"Entitlement rules for foreign income tax offsets\"}": {
+              "{\"section\": \"Division\", \"number\": \"770\", \"title\": \"Foreign income tax offsets\"}": {
                 "children": {
+                  "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
+                    "contents": [
+                      {
+                        "number": "770-1",
+                        "title": "What this Division is about"
+                      },
+                      {
+                        "number": "770-5",
+                        "title": "Object"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"770-A\", \"title\": \"Entitlement rules for foreign income tax offsets\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Basic entitlement rule for foreign income tax offset\"}": {
                     "contents": [
                       {
@@ -906,11 +883,8 @@
                         "title": "Meaning of foreign income tax, credit absorption tax and unitary tax"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"770-B\", \"title\": \"Amount of foreign income tax offset\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"770-B\", \"title\": \"Amount of foreign income tax offset\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 770-B\"}": {
                     "contents": [
                       {
@@ -934,11 +908,8 @@
                         "title": "Increase in offset limit for tax paid on amounts to which section 23AI or 23AK of the Income Tax Assessment Act 1936 apply"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"770-C\", \"title\": \"Rules about payment of foreign income tax\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"770-C\", \"title\": \"Rules about payment of foreign income tax\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Rules about when foreign tax is paid\"}": {
                     "contents": [
                       {
@@ -968,169 +939,166 @@
                     ]
                   }
                 }
-              }
-            }
-          },
-          "{\"section\": \"Division\", \"number\": \"775\", \"title\": \"Foreign currency gains and losses\"}": {
-            "children": {
-              "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
-                "contents": [
-                  {
-                    "number": "775-5",
-                    "title": "What this Division is about"
-                  }
-                ]
               },
-              "{\"section\": \"Subdivision\", \"number\": \"775-A\", \"title\": \"Objects of this Division\"}": {
-                "contents": [
-                  {
-                    "number": "775-10",
-                    "title": "Objects of this Division"
-                  }
-                ]
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"775-B\", \"title\": \"Realisation of forex gains or losses\"}": {
-                "contents": [
-                  {
-                    "number": "775-15",
-                    "title": "Forex realisation gains are assessable"
-                  },
-                  {
-                    "number": "775-20",
-                    "title": "Certain forex realisation gains are exempt income"
-                  },
-                  {
-                    "number": "775-25",
-                    "title": "Certain forex realisation gains are non-assessable non-exempt income"
-                  },
-                  {
-                    "number": "775-27",
-                    "title": "Certain forex realisation gains are non-assessable non-exempt income"
-                  },
-                  {
-                    "number": "775-30",
-                    "title": "Forex realisation losses are deductible"
-                  },
-                  {
-                    "number": "775-35",
-                    "title": "Certain forex realisation losses are disregarded"
-                  },
-                  {
-                    "number": "775-40",
-                    "title": "Disposal of foreign currency or right to receive foreign currency\u2014forex realisation event 1"
-                  },
-                  {
-                    "number": "775-45",
-                    "title": "Ceasing to have a right to receive foreign currency\u2014forex realisation event 2"
-                  },
-                  {
-                    "number": "775-50",
-                    "title": "Ceasing to have an obligation to receive foreign currency\u2014forex realisation event 3"
-                  },
-                  {
-                    "number": "775-55",
-                    "title": "Ceasing to have an obligation to pay foreign currency\u2014forex realisation event 4"
-                  },
-                  {
-                    "number": "775-60",
-                    "title": "Ceasing to have a right to pay foreign currency\u2014forex realisation event 5"
-                  },
-                  {
-                    "number": "775-65",
-                    "title": "Only one forex realisation event to be counted"
-                  },
-                  {
-                    "number": "775-70",
-                    "title": "Tax consequences of certain short-term forex realisation gains"
-                  },
-                  {
-                    "number": "775-75",
-                    "title": "Tax consequences of certain short-term forex realisation losses"
-                  },
-                  {
-                    "number": "775-80",
-                    "title": "You may choose not to have sections 775-70 and 775-75 apply to you"
-                  },
-                  {
-                    "number": "775-85",
-                    "title": "Forex cost base of a right to receive foreign currency"
-                  },
-                  {
-                    "number": "775-90",
-                    "title": "Forex entitlement base of a right to pay foreign currency"
-                  },
-                  {
-                    "number": "775-95",
-                    "title": "Proceeds of assuming an obligation to pay foreign currency"
-                  },
-                  {
-                    "number": "775-100",
-                    "title": "Net costs of assuming an obligation to receive foreign currency"
-                  },
-                  {
-                    "number": "775-105",
-                    "title": "Currency exchange rate effect"
-                  },
-                  {
-                    "number": "775-110",
-                    "title": "Constructive receipts and payments"
-                  },
-                  {
-                    "number": "775-115",
-                    "title": "Economic set-off to be treated as legal set-off"
-                  },
-                  {
-                    "number": "775-120",
-                    "title": "Non-arm\u2019s length transactions"
-                  },
-                  {
-                    "number": "775-125",
-                    "title": "CGT consequences of the acquisition of foreign currency as a result of forex realisation event 2 or 3"
-                  },
-                  {
-                    "number": "775-130",
-                    "title": "Certain deductions not allowable"
-                  },
-                  {
-                    "number": "775-135",
-                    "title": "Right to receive or pay foreign currency"
-                  },
-                  {
-                    "number": "775-140",
-                    "title": "Obligation to pay or receive foreign currency"
-                  },
-                  {
-                    "number": "775-145",
-                    "title": "Application of forex realisation events to currency and fungible rights and obligations"
-                  },
-                  {
-                    "number": "775-150",
-                    "title": "Transitional election"
-                  },
-                  {
-                    "number": "775-155",
-                    "title": "Applicable commencement date"
-                  },
-                  {
-                    "number": "775-160",
-                    "title": "Exception\u2014event happens before the applicable commencement date"
-                  },
-                  {
-                    "number": "775-165",
-                    "title": "Exception\u2014currency or right acquired, or obligation incurred, before the applicable commencement date"
-                  },
-                  {
-                    "number": "775-168",
-                    "title": "Exception\u2014disposal or redemption of traditional securities"
-                  },
-                  {
-                    "number": "775-175",
-                    "title": "Application to things happening before commencement"
-                  }
-                ]
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"775-C\", \"title\": \"Roll-over relief for facility agreements\"}": {
+              "{\"section\": \"Division\", \"number\": \"775\", \"title\": \"Foreign currency gains and losses\"}": {
                 "children": {
+                  "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
+                    "contents": [
+                      {
+                        "number": "775-5",
+                        "title": "What this Division is about"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"775-A\", \"title\": \"Objects of this Division\"}": {
+                    "contents": [
+                      {
+                        "number": "775-10",
+                        "title": "Objects of this Division"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"775-B\", \"title\": \"Realisation of forex gains or losses\"}": {
+                    "contents": [
+                      {
+                        "number": "775-15",
+                        "title": "Forex realisation gains are assessable"
+                      },
+                      {
+                        "number": "775-20",
+                        "title": "Certain forex realisation gains are exempt income"
+                      },
+                      {
+                        "number": "775-25",
+                        "title": "Certain forex realisation gains are non-assessable non-exempt income"
+                      },
+                      {
+                        "number": "775-27",
+                        "title": "Certain forex realisation gains are non-assessable non-exempt income"
+                      },
+                      {
+                        "number": "775-30",
+                        "title": "Forex realisation losses are deductible"
+                      },
+                      {
+                        "number": "775-35",
+                        "title": "Certain forex realisation losses are disregarded"
+                      },
+                      {
+                        "number": "775-40",
+                        "title": "Disposal of foreign currency or right to receive foreign currency\u2014forex realisation event 1"
+                      },
+                      {
+                        "number": "775-45",
+                        "title": "Ceasing to have a right to receive foreign currency\u2014forex realisation event 2"
+                      },
+                      {
+                        "number": "775-50",
+                        "title": "Ceasing to have an obligation to receive foreign currency\u2014forex realisation event 3"
+                      },
+                      {
+                        "number": "775-55",
+                        "title": "Ceasing to have an obligation to pay foreign currency\u2014forex realisation event 4"
+                      },
+                      {
+                        "number": "775-60",
+                        "title": "Ceasing to have a right to pay foreign currency\u2014forex realisation event 5"
+                      },
+                      {
+                        "number": "775-65",
+                        "title": "Only one forex realisation event to be counted"
+                      },
+                      {
+                        "number": "775-70",
+                        "title": "Tax consequences of certain short-term forex realisation gains"
+                      },
+                      {
+                        "number": "775-75",
+                        "title": "Tax consequences of certain short-term forex realisation losses"
+                      },
+                      {
+                        "number": "775-80",
+                        "title": "You may choose not to have sections 775-70 and 775-75 apply to you"
+                      },
+                      {
+                        "number": "775-85",
+                        "title": "Forex cost base of a right to receive foreign currency"
+                      },
+                      {
+                        "number": "775-90",
+                        "title": "Forex entitlement base of a right to pay foreign currency"
+                      },
+                      {
+                        "number": "775-95",
+                        "title": "Proceeds of assuming an obligation to pay foreign currency"
+                      },
+                      {
+                        "number": "775-100",
+                        "title": "Net costs of assuming an obligation to receive foreign currency"
+                      },
+                      {
+                        "number": "775-105",
+                        "title": "Currency exchange rate effect"
+                      },
+                      {
+                        "number": "775-110",
+                        "title": "Constructive receipts and payments"
+                      },
+                      {
+                        "number": "775-115",
+                        "title": "Economic set-off to be treated as legal set-off"
+                      },
+                      {
+                        "number": "775-120",
+                        "title": "Non-arm\u2019s length transactions"
+                      },
+                      {
+                        "number": "775-125",
+                        "title": "CGT consequences of the acquisition of foreign currency as a result of forex realisation event 2 or 3"
+                      },
+                      {
+                        "number": "775-130",
+                        "title": "Certain deductions not allowable"
+                      },
+                      {
+                        "number": "775-135",
+                        "title": "Right to receive or pay foreign currency"
+                      },
+                      {
+                        "number": "775-140",
+                        "title": "Obligation to pay or receive foreign currency"
+                      },
+                      {
+                        "number": "775-145",
+                        "title": "Application of forex realisation events to currency and fungible rights and obligations"
+                      },
+                      {
+                        "number": "775-150",
+                        "title": "Transitional election"
+                      },
+                      {
+                        "number": "775-155",
+                        "title": "Applicable commencement date"
+                      },
+                      {
+                        "number": "775-160",
+                        "title": "Exception\u2014event happens before the applicable commencement date"
+                      },
+                      {
+                        "number": "775-165",
+                        "title": "Exception\u2014currency or right acquired, or obligation incurred, before the applicable commencement date"
+                      },
+                      {
+                        "number": "775-168",
+                        "title": "Exception\u2014disposal or redemption of traditional securities"
+                      },
+                      {
+                        "number": "775-175",
+                        "title": "Application to things happening before commencement"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"775-C\", \"title\": \"Roll-over relief for facility agreements\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 775-C\"}": {
                     "contents": [
                       {
@@ -1174,11 +1142,8 @@
                         "title": "Material variation of a facility agreement\u2014forex realisation event 7"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"775-D\", \"title\": \"Qualifying forex accounts that pass the limited balance test\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"775-D\", \"title\": \"Qualifying forex accounts that pass the limited balance test\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 775-D\"}": {
                     "contents": [
                       {
@@ -1218,11 +1183,8 @@
                         "title": "Modification of tax recognition time"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"775-E\", \"title\": \"Retranslation for qualifying forex accounts\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"775-E\", \"title\": \"Retranslation for qualifying forex accounts\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 775-E\"}": {
                     "contents": [
                       {
@@ -1250,11 +1212,8 @@
                         "title": "Retranslation of gains and losses relating to a qualifying forex account\u2014forex realisation event 8"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"775-F\", \"title\": \"Retranslation under foreign exchange retranslation election under Subdivision 230-D\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"775-F\", \"title\": \"Retranslation under foreign exchange retranslation election under Subdivision 230-D\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 775-F\"}": {
                     "contents": [
                       {
@@ -1284,13 +1243,10 @@
                     ]
                   }
                 }
-              }
-            }
-          },
-          "{\"section\": \"Division\", \"number\": \"802\", \"title\": \"Foreign residents\\u2019 income with an underlying foreign source\"}": {
-            "children": {
-              "{\"section\": \"Subdivision\", \"number\": \"802-A\", \"title\": \"Conduit foreign income\"}": {
+              },
+              "{\"section\": \"Division\", \"number\": \"802\", \"title\": \"Foreign residents\\u2019 income with an underlying foreign source\"}": {
                 "children": {
+                  "{\"section\": \"\", \"number\": \"802-A\", \"title\": \"Conduit foreign income\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 802-A\"}": {
                     "contents": [
                       {
@@ -1352,13 +1308,10 @@
                     ]
                   }
                 }
-              }
-            }
-          },
-          "{\"section\": \"Division\", \"number\": \"815\", \"title\": \"Cross-border transfer pricing\"}": {
-            "children": {
-              "{\"section\": \"Subdivision\", \"number\": \"815-A\", \"title\": \"Treaty-equivalent cross-border transfer pricing rules\"}": {
+              },
+              "{\"section\": \"Division\", \"number\": \"815\", \"title\": \"Cross-border transfer pricing\"}": {
                 "children": {
+                  "{\"section\": \"Subdivision\", \"number\": \"815-A\", \"title\": \"Treaty-equivalent cross-border transfer pricing rules\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 815-A\"}": {
                     "contents": [
                       {
@@ -1402,11 +1355,8 @@
                         "title": "No double taxation"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"815-B\", \"title\": \"Arm\\u2019s length principle for cross-border conditions between entities\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"815-B\", \"title\": \"Arm\\u2019s length principle for cross-border conditions between entities\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 815-B\"}": {
                     "contents": [
                       {
@@ -1458,11 +1408,8 @@
                         "title": "Amendment of assessments"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"815-C\", \"title\": \"Arm\\u2019s length principle for permanent establishments\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"815-C\", \"title\": \"Arm\\u2019s length principle for permanent establishments\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 815-C\"}": {
                     "contents": [
                       {
@@ -1506,11 +1453,8 @@
                         "title": "Amendment of assessments"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"815-D\", \"title\": \"Special rules for trusts and partnerships\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"815-D\", \"title\": \"Special rules for trusts and partnerships\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 815-D\"}": {
                     "contents": [
                       {
@@ -1530,11 +1474,8 @@
                         "title": "Special rules for partnerships"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"815-E\", \"title\": \"Reporting obligations for country by country reporting entities\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"815-E\", \"title\": \"Reporting obligations for country by country reporting entities\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 815-E\"}": {
                     "contents": [
                       {
@@ -1572,57 +1513,54 @@
                     ]
                   }
                 }
-              }
-            }
-          },
-          "{\"section\": \"Division\", \"number\": \"820\", \"title\": \"Thin capitalisation rules\"}": {
-            "children": {
-              "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division 820\"}": {
-                "contents": [
-                  {
-                    "number": "820-1",
-                    "title": "What this Division is about"
-                  },
-                  {
-                    "number": "820-5",
-                    "title": "Does this Division apply to an entity?"
-                  },
-                  {
-                    "number": "820-10",
-                    "title": "Map of Division"
-                  }
-                ]
               },
-              "{\"section\": \"Subdivision\", \"number\": \"820-A\", \"title\": \"Preliminary\"}": {
-                "contents": [
-                  {
-                    "number": "820-30",
-                    "title": "Object of Division"
-                  },
-                  {
-                    "number": "820-32",
-                    "title": "Exemption for private or domestic assets and non-debt liabilities"
-                  },
-                  {
-                    "number": "820-35",
-                    "title": "Application\u2014$2 million threshold"
-                  },
-                  {
-                    "number": "820-37",
-                    "title": "Application\u2014assets threshold"
-                  },
-                  {
-                    "number": "820-39",
-                    "title": "Exemption of certain special purpose entities"
-                  },
-                  {
-                    "number": "820-40",
-                    "title": "Meaning of debt deduction"
-                  }
-                ]
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"820-B\", \"title\": \"Thin capitalisation rules for outward investing entities (non-ADI)\"}": {
+              "{\"section\": \"Division\", \"number\": \"820\", \"title\": \"Thin capitalisation rules\"}": {
                 "children": {
+                  "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division 820\"}": {
+                    "contents": [
+                      {
+                        "number": "820-1",
+                        "title": "What this Division is about"
+                      },
+                      {
+                        "number": "820-5",
+                        "title": "Does this Division apply to an entity?"
+                      },
+                      {
+                        "number": "820-10",
+                        "title": "Map of Division"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-A\", \"title\": \"Preliminary\"}": {
+                    "contents": [
+                      {
+                        "number": "820-30",
+                        "title": "Object of Division"
+                      },
+                      {
+                        "number": "820-32",
+                        "title": "Exemption for private or domestic assets and non-debt liabilities"
+                      },
+                      {
+                        "number": "820-35",
+                        "title": "Application\u2014$2 million threshold"
+                      },
+                      {
+                        "number": "820-37",
+                        "title": "Application\u2014assets threshold"
+                      },
+                      {
+                        "number": "820-39",
+                        "title": "Exemption of certain special purpose entities"
+                      },
+                      {
+                        "number": "820-40",
+                        "title": "Meaning of debt deduction"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-B\", \"title\": \"Thin capitalisation rules for outward investing entities (non-ADI)\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 820-B\"}": {
                     "contents": [
                       {
@@ -1670,11 +1608,8 @@
                         "title": "Application to part year periods"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"820-C\", \"title\": \"Thin capitalisation rules for inward investing entities (non-ADI)\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-C\", \"title\": \"Thin capitalisation rules for inward investing entities (non-ADI)\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 820-C\"}": {
                     "contents": [
                       {
@@ -1738,11 +1673,8 @@
                         "title": "Application to part year periods"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"820-D\", \"title\": \"Thin capitalisation rules for outward investing entities (ADI)\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-D\", \"title\": \"Thin capitalisation rules for outward investing entities (ADI)\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 820-D\"}": {
                     "contents": [
                       {
@@ -1782,11 +1714,8 @@
                         "title": "Application to part year periods"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"820-E\", \"title\": \"Thin capitalisation rules for inward investing entities (ADI)\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-E\", \"title\": \"Thin capitalisation rules for inward investing entities (ADI)\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 820-E\"}": {
                     "contents": [
                       {
@@ -1842,11 +1771,8 @@
                         "title": "How this Subdivision interacts with Subdivision 820-FA"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"820-FA\", \"title\": \"How the thin capitalisation rules apply to consolidated groups and MEC groups\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-FA\", \"title\": \"How the thin capitalisation rules apply to consolidated groups and MEC groups\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 820-FA\"}": {
                     "contents": [
                       {
@@ -1886,11 +1812,8 @@
                         "title": "How Subdivision 820-D applies to a MEC group"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"820-FB\", \"title\": \"Grouping branches of foreign banks and foreign financial entities with a consolidated group, MEC group or single Australian resident company\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-FB\", \"title\": \"Grouping branches of foreign banks and foreign financial entities with a consolidated group, MEC group or single Australian resident company\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 820-FB\"}": {
                     "contents": [
                       {
@@ -1950,11 +1873,8 @@
                         "title": "How Subdivision 820-E applies"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"820-G\", \"title\": \"Calculating the average values\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-G\", \"title\": \"Calculating the average values\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 820-G\"}": {
                     "contents": [
                       {
@@ -2006,11 +1926,8 @@
                         "title": "Commissioner\u2019s power"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"820-H\", \"title\": \"Control of entities\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-H\", \"title\": \"Control of entities\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 820-H\"}": {
                     "contents": [
                       {
@@ -2106,11 +2023,8 @@
                         "title": "TC control tracing interest in a company, trust or partnership"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"820-HA\", \"title\": \"Controlled foreign entity debt and controlled foreign entity equity\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-HA\", \"title\": \"Controlled foreign entity debt and controlled foreign entity equity\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 820-HA\"}": {
                     "contents": [
                       {
@@ -2130,11 +2044,8 @@
                         "title": "What is controlled foreign entity equity?"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"820-I\", \"title\": \"Associate entities\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-I\", \"title\": \"Associate entities\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 820-I\"}": {
                     "contents": [
                       {
@@ -2158,11 +2069,8 @@
                         "title": "Associate entity excess amount"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"820-J\", \"title\": \"Equity interest in a trust or partnership\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-J\", \"title\": \"Equity interest in a trust or partnership\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 820-J\"}": {
                     "contents": [
                       {
@@ -2174,11 +2082,8 @@
                         "title": "Equity interest in a trust or partnership"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"820-JA\", \"title\": \"Worldwide debt and equity concepts\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-JA\", \"title\": \"Worldwide debt and equity concepts\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 820-JA\"}": {
                     "contents": [
                       {
@@ -2202,11 +2107,8 @@
                         "title": "Meaning of audited consolidated financial statements"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"820-K\", \"title\": \"Zero-capital amount\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-K\", \"title\": \"Zero-capital amount\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 820-K\"}": {
                     "contents": [
                       {
@@ -2218,11 +2120,8 @@
                         "title": "How to work out the zero-capital amount"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"820-KA\", \"title\": \"Cost-free debt capital and excluded equity interests\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-KA\", \"title\": \"Cost-free debt capital and excluded equity interests\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 820-KA\"}": {
                     "contents": [
                       {
@@ -2234,11 +2133,8 @@
                         "title": "Cost-free debt capital and excluded equity interest"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"820-L\", \"title\": \"Record keeping requirements\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"820-L\", \"title\": \"Record keeping requirements\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 820-L\"}": {
                     "contents": [
                       {
@@ -2284,149 +2180,146 @@
                     ]
                   }
                 }
-              }
-            }
-          },
-          "{\"section\": \"Division\", \"number\": \"830\", \"title\": \"Foreign hybrids\"}": {
-            "children": {
-              "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division 830\"}": {
-                "contents": [
-                  {
-                    "number": "830-1",
-                    "title": "What this Division is about"
-                  }
-                ]
               },
-              "{\"section\": \"Subdivision\", \"number\": \"830-A\", \"title\": \"Meaning of \\u201cforeign hybrid\\u201d\"}": {
-                "contents": [
-                  {
-                    "number": "830-5",
-                    "title": "Foreign hybrid"
-                  },
-                  {
-                    "number": "830-10",
-                    "title": "Foreign hybrid limited partnership"
-                  },
-                  {
-                    "number": "830-15",
-                    "title": "Foreign hybrid company"
-                  }
-                ]
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"830-B\", \"title\": \"Extension of normal partnership provisions to foreign hybrid companies\"}": {
-                "contents": [
-                  {
-                    "number": "830-20",
-                    "title": "Treatment of company as a partnership"
-                  },
-                  {
-                    "number": "830-25",
-                    "title": "Partners are the shareholders in the company"
-                  },
-                  {
-                    "number": "830-30",
-                    "title": "Individual interest of a partner in net income etc. equals percentage of notional distribution of company\u2019s profits"
-                  },
-                  {
-                    "number": "830-35",
-                    "title": "Partner\u2019s interest in assets"
-                  },
-                  {
-                    "number": "830-40",
-                    "title": "Control and disposal of share in partnership income"
-                  }
-                ]
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"830-C\", \"title\": \"Special rules applicable while an entity is a foreign hybrid\"}": {
-                "contents": [
-                  {
-                    "number": "830-45",
-                    "title": "Partner\u2019s revenue and net capital losses from foreign hybrid not to exceed partner\u2019s loss exposure amount"
-                  },
-                  {
-                    "number": "830-50",
-                    "title": "Deduction etc. where partner\u2019s foreign hybrid revenue loss amount and foreign hybrid net capital loss amount are less than partner\u2019s loss exposure amount"
-                  },
-                  {
-                    "number": "830-55",
-                    "title": "Meaning of foreign hybrid net capital loss amount"
-                  },
-                  {
-                    "number": "830-60",
-                    "title": "Meaning of loss exposure amount"
-                  },
-                  {
-                    "number": "830-65",
-                    "title": "Meaning of outstanding foreign hybrid revenue loss amount"
-                  },
-                  {
-                    "number": "830-70",
-                    "title": "Meaning of outstanding foreign hybrid net capital loss amount"
-                  },
-                  {
-                    "number": "830-75",
-                    "title": "Extended meaning of subject to foreign tax"
-                  }
-                ]
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"830-D\", \"title\": \"Special rules applicable when an entity becomes or ceases to be a foreign hybrid\"}": {
-                "contents": [
-                  {
-                    "number": "830-80",
-                    "title": "Setting the tax cost of partners\u2019 interests in the assets of an entity that becomes a foreign hybrid"
-                  },
-                  {
-                    "number": "830-85",
-                    "title": "Setting the tax cost of assets of an entity when it ceases to be a foreign hybrid"
-                  },
-                  {
-                    "number": "830-90",
-                    "title": "What the expression tax cost is set means"
-                  },
-                  {
-                    "number": "830-95",
-                    "title": "What the expression tax cost setting amount means"
-                  },
-                  {
-                    "number": "830-100",
-                    "title": "What the expression tax cost means"
-                  },
-                  {
-                    "number": "830-105",
-                    "title": "What the expression asset-based income tax regime means"
-                  },
-                  {
-                    "number": "830-110",
-                    "title": "No disposal of assets etc. on entity becoming or ceasing to be a foreign hybrid"
-                  },
-                  {
-                    "number": "830-115",
-                    "title": "Tax losses cannot be transferred to a foreign hybrid"
-                  },
-                  {
-                    "number": "830-120",
-                    "title": "End of CFC\u2019s last statutory accounting period"
-                  },
-                  {
-                    "number": "830-125",
-                    "title": "How long interest in asset, or asset, held"
-                  }
-                ]
-              }
-            }
-          },
-          "{\"section\": \"Division\", \"number\": \"832\", \"title\": \"Hybrid mismatch rules\"}": {
-            "children": {
-              "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
-                "contents": [
-                  {
-                    "number": "832-1",
-                    "title": "What this Division is about"
-                  }
-                ]
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"832-A\", \"title\": \"Preliminary\"}": {
+              "{\"section\": \"Division\", \"number\": \"830\", \"title\": \"Foreign hybrids\"}": {
                 "children": {
+                  "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
+                    "contents": [
+                      {
+                        "number": "830-1",
+                        "title": "What this Division is about"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"830-A\", \"title\": \"Meaning of \\u201cforeign hybrid\\u201d\"}": {
+                    "contents": [
+                      {
+                        "number": "830-5",
+                        "title": "Foreign hybrid"
+                      },
+                      {
+                        "number": "830-10",
+                        "title": "Foreign hybrid limited partnership"
+                      },
+                      {
+                        "number": "830-15",
+                        "title": "Foreign hybrid company"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"830-B\", \"title\": \"Extension of normal partnership provisions to foreign hybrid companies\"}": {
+                    "contents": [
+                      {
+                        "number": "830-20",
+                        "title": "Treatment of company as a partnership"
+                      },
+                      {
+                        "number": "830-25",
+                        "title": "Partners are the shareholders in the company"
+                      },
+                      {
+                        "number": "830-30",
+                        "title": "Individual interest of a partner in net income etc. equals percentage of notional distribution of company\u2019s profits"
+                      },
+                      {
+                        "number": "830-35",
+                        "title": "Partner\u2019s interest in assets"
+                      },
+                      {
+                        "number": "830-40",
+                        "title": "Control and disposal of share in partnership income"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"830-C\", \"title\": \"Special rules applicable while an entity is a foreign hybrid\"}": {
+                    "contents": [
+                      {
+                        "number": "830-45",
+                        "title": "Partner\u2019s revenue and net capital losses from foreign hybrid not to exceed partner\u2019s loss exposure amount"
+                      },
+                      {
+                        "number": "830-50",
+                        "title": "Deduction etc. where partner\u2019s foreign hybrid revenue loss amount and foreign hybrid net capital loss amount are less than partner\u2019s loss exposure amount"
+                      },
+                      {
+                        "number": "830-55",
+                        "title": "Meaning of foreign hybrid net capital loss amount"
+                      },
+                      {
+                        "number": "830-60",
+                        "title": "Meaning of loss exposure amount"
+                      },
+                      {
+                        "number": "830-65",
+                        "title": "Meaning of outstanding foreign hybrid revenue loss amount"
+                      },
+                      {
+                        "number": "830-70",
+                        "title": "Meaning of outstanding foreign hybrid net capital loss amount"
+                      },
+                      {
+                        "number": "830-75",
+                        "title": "Extended meaning of subject to foreign tax"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"830-D\", \"title\": \"Special rules applicable when an entity becomes or ceases to be a foreign hybrid\"}": {
+                    "contents": [
+                      {
+                        "number": "830-80",
+                        "title": "Setting the tax cost of partners\u2019 interests in the assets of an entity that becomes a foreign hybrid"
+                      },
+                      {
+                        "number": "830-85",
+                        "title": "Setting the tax cost of assets of an entity when it ceases to be a foreign hybrid"
+                      },
+                      {
+                        "number": "830-90",
+                        "title": "What the expression tax cost is set means"
+                      },
+                      {
+                        "number": "830-95",
+                        "title": "What the expression tax cost setting amount means"
+                      },
+                      {
+                        "number": "830-100",
+                        "title": "What the expression tax cost means"
+                      },
+                      {
+                        "number": "830-105",
+                        "title": "What the expression asset-based income tax regime means"
+                      },
+                      {
+                        "number": "830-110",
+                        "title": "No disposal of assets etc. on entity becoming or ceasing to be a foreign hybrid"
+                      },
+                      {
+                        "number": "830-115",
+                        "title": "Tax losses cannot be transferred to a foreign hybrid"
+                      },
+                      {
+                        "number": "830-120",
+                        "title": "End of CFC\u2019s last statutory accounting period"
+                      },
+                      {
+                        "number": "830-125",
+                        "title": "How long interest in asset, or asset, held"
+                      }
+                    ]
+                  }
+                }
+              },
+              "{\"section\": \"Division\", \"number\": \"832\", \"title\": \"Hybrid mismatch rules\"}": {
+                "children": {
+                  "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
+                    "contents": [
+                      {
+                        "number": "832-1",
+                        "title": "What this Division is about"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"832-A\", \"title\": \"Preliminary\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 832-A\"}": {
                     "contents": [
                       {
@@ -2482,11 +2375,8 @@
                         "title": "Valuation of trading stock affected by hybrid mismatch rules"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"832-B\", \"title\": \"Concepts relating to mismatches\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"832-B\", \"title\": \"Concepts relating to mismatches\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 832-B\"}": {
                     "contents": [
                       {
@@ -2526,11 +2416,8 @@
                         "title": "Safe harbour for translation rates"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"832-C\", \"title\": \"Hybrid financial instrument mismatch\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"832-C\", \"title\": \"Hybrid financial instrument mismatch\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 832-C\"}": {
                     "contents": [
                       {
@@ -2594,11 +2481,8 @@
                         "title": "Adjustment if hybrid financial instrument payment is income in a later year"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"832-D\", \"title\": \"Hybrid payer mismatch\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"832-D\", \"title\": \"Hybrid payer mismatch\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 832-D\"}": {
                     "contents": [
                       {
@@ -2654,11 +2538,8 @@
                         "title": "Adjustment if hybrid payer has dual inclusion income in a later year"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"832-E\", \"title\": \"Reverse hybrid mismatch\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"832-E\", \"title\": \"Reverse hybrid mismatch\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 832-E\"}": {
                     "contents": [
                       {
@@ -2698,11 +2579,8 @@
                         "title": "Reverse hybrid"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"832-F\", \"title\": \"Branch hybrid mismatch\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"832-F\", \"title\": \"Branch hybrid mismatch\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 832-F\"}": {
                     "contents": [
                       {
@@ -2742,11 +2620,8 @@
                         "title": "Branch hybrid"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"832-G\", \"title\": \"Deducting hybrid mismatch\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"832-G\", \"title\": \"Deducting hybrid mismatch\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 832-G\"}": {
                     "contents": [
                       {
@@ -2790,11 +2665,8 @@
                         "title": "Adjustment if deducting hybrid has dual inclusion income in a later year"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"832-H\", \"title\": \"Imported hybrid mismatch\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"832-H\", \"title\": \"Imported hybrid mismatch\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 832-H\"}": {
                     "contents": [
                       {
@@ -2830,11 +2702,8 @@
                         "title": "Carry forward of residual offshore hybrid mismatches"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"832-I\", \"title\": \"Dual inclusion income\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"832-I\", \"title\": \"Dual inclusion income\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 832-I\"}": {
                     "contents": [
                       {
@@ -2874,11 +2743,8 @@
                         "title": "Determination may specify kinds of scheme and circumstances where no denial of deduction"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"832-K\", \"title\": \"Modifications for Division 230 (about taxation of financial arrangements)\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"832-K\", \"title\": \"Modifications for Division 230 (about taxation of financial arrangements)\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 832-K\"}": {
                     "contents": [
                       {
@@ -2904,21 +2770,18 @@
                     ]
                   }
                 }
-              }
-            }
-          },
-          "{\"section\": \"Division\", \"number\": \"840\", \"title\": \"Withholding taxes\"}": {
-            "children": {
-              "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
-                "contents": [
-                  {
-                    "number": "840-1",
-                    "title": "What this Division is about"
-                  }
-                ]
               },
-              "{\"section\": \"Subdivision\", \"number\": \"840-M\", \"title\": \"Managed investment trust withholding tax\"}": {
+              "{\"section\": \"Division\", \"number\": \"840\", \"title\": \"Withholding taxes\"}": {
                 "children": {
+                  "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
+                    "contents": [
+                      {
+                        "number": "840-1",
+                        "title": "What this Division is about"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"840-M\", \"title\": \"Managed investment trust withholding tax\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 840-M\"}": {
                     "contents": [
                       {
@@ -2946,11 +2809,8 @@
                         "title": "Agency rules"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"840-S\", \"title\": \"Labour mobility program withholding tax\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"840-S\", \"title\": \"Labour mobility program withholding tax\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 840-S\"}": {
                     "contents": [
                       {
@@ -2984,13 +2844,10 @@
                     ]
                   }
                 }
-              }
-            }
-          },
-          "{\"section\": \"Division\", \"number\": \"842\", \"title\": \"Exempt Australian source income and gains of foreign residents\"}": {
-            "children": {
-              "{\"section\": \"Subdivision\", \"number\": \"842-B\", \"title\": \"Some items of Australian source income of foreign residents that are exempt from income tax\"}": {
+              },
+              "{\"section\": \"Division\", \"number\": \"842\", \"title\": \"Exempt Australian source income and gains of foreign residents\"}": {
                 "children": {
+                  "{\"section\": \"Subdivision\", \"number\": \"842-B\", \"title\": \"Some items of Australian source income of foreign residents that are exempt from income tax\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 842-B\"}": {
                     "contents": [
                       {
@@ -3002,11 +2859,8 @@
                         "title": "Amounts of Australian source ordinary income and statutory income that are exempt"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"842-I\", \"title\": \"Investment manager regime\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"842-I\", \"title\": \"Investment manager regime\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 842-I\"}": {
                     "contents": [
                       {
@@ -3072,85 +2926,84 @@
                     ]
                   }
                 }
-              }
-            }
-          },
-          "{\"section\": \"Division\", \"number\": \"855\", \"title\": \"Capital gains and foreign residents\"}": {
-            "children": {
-              "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
-                "contents": [
-                  {
-                    "number": "855-1",
-                    "title": "What this Division is about"
-                  }
-                ]
               },
-              "{\"section\": \"Subdivision\", \"number\": \"855-A\", \"title\": \"Disregarding a capital gain or loss by foreign residents\"}": {
-                "contents": [
-                  {
-                    "number": "855-5",
-                    "title": "Objects of this Subdivision"
-                  },
-                  {
-                    "number": "855-10",
-                    "title": "Disregarding a capital gain or loss from CGT events"
-                  },
-                  {
-                    "number": "855-15",
-                    "title": "When an asset is taxable Australian property"
-                  },
-                  {
-                    "number": "855-16",
-                    "title": "Meaning of permanent establishment article"
-                  },
-                  {
-                    "number": "855-20",
-                    "title": "Taxable Australian real property"
-                  },
-                  {
-                    "number": "855-25",
-                    "title": "Indirect Australian real property interests"
-                  },
-                  {
-                    "number": "855-30",
-                    "title": "Principal asset test"
-                  },
-                  {
-                    "number": "855-32",
-                    "title": "Disregard market value of duplicated non-TARP assets"
-                  },
-                  {
-                    "number": "855-35",
-                    "title": "Reducing a capital gain or loss from a business asset\u2014Australian permanent establishments"
-                  },
-                  {
-                    "number": "855-40",
-                    "title": "Capital gains and losses of foreign residents through fixed trusts"
-                  }
-                ]
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"855-B\", \"title\": \"Becoming an Australian resident\"}": {
-                "contents": [
-                  {
-                    "number": "855-45",
-                    "title": "Individual or company becomes an Australian resident"
-                  },
-                  {
-                    "number": "855-50",
-                    "title": "Trust becomes a resident trust"
-                  },
-                  {
-                    "number": "855-55",
-                    "title": "CFC becomes an Australian resident"
-                  }
-                ]
-              }
-            }
-          },
-          "{\"section\": \"Division\", \"number\": \"880\", \"title\": \"Sovereign entities and activities\"}": {
-            "children": {
-              "{\"section\": \"Subdivision\", \"number\": \"880-A\", \"title\": \"Basic concepts\"}": {
+              "{\"section\": \"Division\", \"number\": \"855\", \"title\": \"Capital gains and foreign residents\"}": {
                 "children": {
+                  "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Division\"}": {
+                    "contents": [
+                      {
+                        "number": "855-1",
+                        "title": "What this Division is about"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"855-A\", \"title\": \"Disregarding a capital gain or loss by foreign residents\"}": {
+                    "contents": [
+                      {
+                        "number": "855-5",
+                        "title": "Objects of this Subdivision"
+                      },
+                      {
+                        "number": "855-10",
+                        "title": "Disregarding a capital gain or loss from CGT events"
+                      },
+                      {
+                        "number": "855-15",
+                        "title": "When an asset is taxable Australian property"
+                      },
+                      {
+                        "number": "855-16",
+                        "title": "Meaning of permanent establishment article"
+                      },
+                      {
+                        "number": "855-20",
+                        "title": "Taxable Australian real property"
+                      },
+                      {
+                        "number": "855-25",
+                        "title": "Indirect Australian real property interests"
+                      },
+                      {
+                        "number": "855-30",
+                        "title": "Principal asset test"
+                      },
+                      {
+                        "number": "855-32",
+                        "title": "Disregard market value of duplicated non-TARP assets"
+                      },
+                      {
+                        "number": "855-35",
+                        "title": "Reducing a capital gain or loss from a business asset\u2014Australian permanent establishments"
+                      },
+                      {
+                        "number": "855-40",
+                        "title": "Capital gains and losses of foreign residents through fixed trusts"
+                      }
+                    ]
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"855-B\", \"title\": \"Becoming an Australian resident\"}": {
+                    "contents": [
+                      {
+                        "number": "855-45",
+                        "title": "Individual or company becomes an Australian resident"
+                      },
+                      {
+                        "number": "855-50",
+                        "title": "Trust becomes a resident trust"
+                      },
+                      {
+                        "number": "855-55",
+                        "title": "CFC becomes an Australian resident"
+                      }
+                    ]
+                  }
+                }
+              },
+              "{\"section\": \"Division\", \"number\": \"880\", \"title\": \"Sovereign entities and activities\"}": {
+                "children": {
+                  "{\"section\": \"Subdivision\", \"number\": \"880-A\", \"title\": \"Basic concepts\"}": {
+                    "contents": []
+                  },
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 880-A\"}": {
                     "contents": [
                       {
@@ -3170,11 +3023,8 @@
                         "title": "Meaning of sovereign entity group"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"880-B\", \"title\": \"Basic tax treatment of sovereign entities\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"880-B\", \"title\": \"Basic tax treatment of sovereign entities\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 880-B\"}": {
                     "contents": [
                       {
@@ -3194,11 +3044,8 @@
                         "title": "Bodies politic of foreign countries and foreign government agencies treated as foreign residents"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"880-C\", \"title\": \"Sovereign immunity\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"880-C\", \"title\": \"Sovereign immunity\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 880-C\"}": {
                     "contents": [
                       {
@@ -3234,11 +3081,8 @@
                         "title": "Meaning of public non-financial entity and public financial entity"
                       }
                     ]
-                  }
-                }
-              },
-              "{\"section\": \"Subdivision\", \"number\": \"880-D\", \"title\": \"Consular activities\"}": {
-                "children": {
+                  },
+                  "{\"section\": \"Subdivision\", \"number\": \"880-D\", \"title\": \"Consular activities\"}": {},
                   "{\"section\": \"\", \"number\": \"\", \"title\": \"Guide to Subdivision 880-D\"}": {
                     "contents": [
                       {

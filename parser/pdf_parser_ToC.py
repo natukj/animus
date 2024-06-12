@@ -10,11 +10,9 @@ import pathlib
 from collections import Counter, defaultdict
 from thefuzz import process  
 import llm, prompts, utils
-from parser.base_parser import BaseParser
 
-class PDFToCParser(BaseParser):
-    def __init__(self, file: Union[UploadFile, str], rate_limit: int = 50) -> None:
-        super().__init__(rate_limit)
+class PDFToCParser:
+    def __init__(self, file: Union[UploadFile, str]) -> None:
         if isinstance(file, UploadFile):
             file_content = file.read()
             self.document = fitz.open(stream=file_content, filetype="pdf")
@@ -22,15 +20,44 @@ class PDFToCParser(BaseParser):
             self.document = fitz.open(file)
         else:
             raise ValueError("file must be an instance of UploadFile or str.")
-        self.toc_pages: List[int] = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
-        self.toc_md_str: str = None
-        self.toc_md_lines: List[str] = None
-        self.content_md_str: str = None
-        self.content_md_lines: List[str] = None
+        self.toc_pages: List[int] = list(range(2, 32))
+        with open("toc.md", "r") as f:
+            self.toc_md_str = f.read()
+        self.toc_md_lines = self.toc_md_str.split("\n")
+        with open("content.md", "r") as f:
+            self.content_md_str = f.read()
+        self.content_md_lines = self.content_md_str.split("\n")
+        #self.toc_md_str: str = None
+        # self.toc_md_lines: List[str] = None
+        # self.content_md_str: str = None
+        # self.content_md_lines: List[str] = None
         self.toc_hierarchy_schema: Dict[str, str] = None
         self.adjusted_toc_hierarchy_schema: Dict[str, str] = None
         self.master_toc: List[Dict[str, Any]] = None
-        self.no_md_flag: bool = False
+
+    def to_markdown(self, doc: fitz.Document, pages: List[int] = None, page_chunks: bool = False) -> str | List[str]:
+        """
+        Convert the given text to Markdown format.
+        """
+        return utils.to_markdownOG(doc, pages=pages, page_chunks=page_chunks)
+    
+    def encode_page_as_base64(self, page: fitz.Page) -> str:
+        pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+        return base64.b64encode(pix.tobytes()).decode('utf-8')
+    
+    def message_template_vision(self, user_prompt: str, *images: str) -> Dict[str, Any]:
+        message_template = [
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": user_prompt}
+                    ] + [
+                        {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image}"}}
+                        for image in images[:30]  # limit to the first 30 images think gpt4o will only take 39
+                    ]
+                }
+            ]
+        return message_template
     
     async def find_toc_pages(self) -> List[int]:
         """

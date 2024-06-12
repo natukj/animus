@@ -8,43 +8,37 @@ import tiktoken
 import utils
 
 
-class BaseParser:
+class BaseParser(ABC):
     def __init__(self, rate_limit: int = 50):
-        if fitz.pymupdf_version_tuple < (1, 24, 0):
-            raise NotImplementedError("PyMuPDF version 1.24.0 or later is needed.")
         self.semaphore = asyncio.Semaphore(rate_limit)
 
-    def count_tokens(self, text: str, encoding_name: str = "o200k_base") -> int:
+    @abstractmethod
+    def format_section_name(self, section: str, number: str, title: str) -> str:
         """
-        count the number of tokens in the given text using the specified encoding.
+        Format the section name. To be implemented by subclasses.
         """
-        encoding = tiktoken.get_encoding(encoding_name)
-        num_tokens = len(encoding.encode(text))
-        return num_tokens
+        pass
     
-    def to_markdown(self, doc: fitz.Document, pages: List[int] = None, page_chunks: bool = False) -> str | List[str]:
+    @abstractmethod
+    async def create_master_toc(self) -> None:
         """
-        Convert the given text to Markdown format.
+        Split the Table of Contents into its constituent parts and create a master Table of Contents. 
         """
-        return utils.to_markdownOG(doc, pages=pages, page_chunks=page_chunks)
-    
-    def encode_page_as_base64(self, page: fitz.Page) -> str:
-        pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
-        return base64.b64encode(pix.tobytes()).decode('utf-8')
-    
-    def message_template_vision(self, user_prompt: str, *images: str) -> Dict[str, Any]:
-        message_template = [
-                {
-                    "role": "user",
-                    "content": [
-                        {"type": "text", "text": user_prompt}
-                    ] + [
-                        {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image}"}}
-                        for image in images[:30]  # limit to the first 30 images think gpt4o will only take 39
-                    ]
-                }
-            ]
-        return message_template
+        pass
+
+    @abstractmethod
+    def add_content_to_master_toc(self) -> Dict[str, Dict[str, Any]]:
+        """
+        Add content to the master Table of Contents.
+        """
+        pass
+
+    @abstractmethod
+    def parse(self) -> Dict[str, Dict[str, Any]]:
+        """
+        Parse the PDF document.
+        """
+        pass
     
     async def rate_limited_process(
         self, 

@@ -146,6 +146,25 @@ def parse_toc_dict(data: Dict[str, Any]) -> List[TableOfContents]:
     
     return root_toc.children
 
+def convert_to_model(data: Dict[str, Any]) -> Union[TableOfContents, TableOfContentsChild]:
+    if 'children' in data:
+        data['children'] = [convert_to_model(child) for child in data['children']]
+        return TableOfContents(**data)
+    else:
+        return TableOfContentsChild(**data)
+
+def flatten_toc(toc_models: List[Union[TableOfContents, TableOfContentsChild]]) -> List[Union[TableOfContents, TableOfContentsChild]]:
+    flattened = []
+    for model in toc_models:
+        if isinstance(model, TableOfContents):
+            flattened.append(model)
+            if model.children:
+                flattened.extend(flatten_toc(model.children))
+        elif isinstance(model, TableOfContentsChild):
+            flattened.append(model)
+    return flattened
+
+## NOTE don't know if i need below code
 class Contents(BaseModel):
     levels: Dict[str, JSONstr] = {}
     toc: List[Union[TableOfContents, TableOfContentsChild]]

@@ -1566,7 +1566,7 @@
             "title": "Foreign residents\u2019 income with an underlying foreign source",
             "children": [
               {
-                "section": "Subdivision",
+                "section": "",
                 "number": "802-A",
                 "title": "Conduit foreign income",
                 "children": [
@@ -2781,7 +2781,7 @@
               {
                 "section": "",
                 "number": "",
-                "title": "Guide to Division 830",
+                "title": "Guide to Division",
                 "children": [
                   {
                     "number": "830-1",
@@ -3825,32 +3825,31 @@
                 "section": "Subdivision",
                 "number": "880-A",
                 "title": "Basic concepts",
+                "children": []
+              },
+              {
+                "section": "",
+                "number": "",
+                "title": "Guide to Subdivision 880-A",
                 "children": [
                   {
-                    "section": "",
-                    "number": "",
-                    "title": "Guide to Subdivision 880-A",
-                    "children": [
-                      {
-                        "number": "880-10",
-                        "title": "What this Subdivision is about"
-                      }
-                    ]
+                    "number": "880-10",
+                    "title": "What this Subdivision is about"
+                  }
+                ]
+              },
+              {
+                "section": "",
+                "number": "",
+                "title": "Operative provisions",
+                "children": [
+                  {
+                    "number": "880-15",
+                    "title": "Meaning of sovereign entity"
                   },
                   {
-                    "section": "",
-                    "number": "",
-                    "title": "Operative provisions",
-                    "children": [
-                      {
-                        "number": "880-15",
-                        "title": "Meaning of sovereign entity"
-                      },
-                      {
-                        "number": "880-20",
-                        "title": "Meaning of sovereign entity group"
-                      }
-                    ]
+                    "number": "880-20",
+                    "title": "Meaning of sovereign entity group"
                   }
                 ]
               },

@@ -6,4 +6,6 @@ from .toc_schemas import (
     TableOfContentsDict,
     merge_children,
     parse_toc_dict,
+    convert_to_model,
+    flatten_toc,
 )
