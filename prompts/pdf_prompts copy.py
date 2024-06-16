@@ -52,11 +52,10 @@ Please create a JSON object from the following ToC Markdown lines:
 
 {content}
 """
-TOC_HIERARCHY_USER_VISION_FUCKKKK = """You will be given the first 2 Table of Contents (ToC) pages in both Markdown format and as images. I need you to determine how many levels of section hierarchy are present in the ToC based on the markdown and visual formatting. This needs to be on a line-by-line basis, where each line is separated by '\\n' characters (in the Markdown text). 
+TOC_HIERARCHY_USER_VISION = """You will be given the first 2 Table of Contents (ToC) pages in both Markdown format and as images. I need you to determine how many levels of section hierarchy are present in the ToC based on the markdown and visual formatting. This needs to be on a line-by-line basis, where each line is separated by '\\n' characters (in the Markdown text). 
 
 ## INSTRUCTIONS
    - The JSON object must be extremely descriptive and comprehensive, as you will be using it to determine the hierarchy levels present in the rest of the ToC. Assume that the beginning of the ToC will be an section enumerated with '1' or 'I', e.g. 'Part 1' or 'Chapter 1', and this is the top level of the hierarchy (nothing before this is part of the ToC).
-   - If a section type has the section title on a proceeding line, add an additional entry to the JSON object with the same 'level' as the section type and use "<Level N Section Type> Titles" as the key.
    - Only sections are to be added to the JSON object, not items. The lowest level of hierarchy should (i.e., the most number of '#' characters) must be the section that contains the items in the ToC. Please include this in the description of the section type.
    - If there are no items below the lowest level of hierarchy, then you have added too many levels of hierarchy.
 
@@ -64,35 +63,30 @@ The JSON object should be structured as follows:
 
       {{
             "<Level 1 Section Type>": {{
-                  "level": '#',
-                  "description": "(string, verbose description of the section type and how it can be identified in the text)",
+                  "level": "#",
+                  "description": "(string, description of the section type)",
                   "lines": "(array of strings, ALL verbatim level 1 section lines from the ToC including any enumerations and Markdown formatting)"
             }},
             "<Level 2 Section Type>": {{
-                  "level": '##',
-                  "description": "(string, verbose description of the section type and how it can be identified in the text)",
+                  "level": "##",
+                  "description": "(string, description of the section type)",
                   "lines": "(array of strings, ALL verbatim level 2 section lines from the ToC including any enumerations and Markdown formatting)"
             }},
             "<Level 3 Section Type>": {{
-                  "level": '###',
-                  "description": "(string, verbose description of the section type and how it can be identified in the text)",
+                  "level": "###",
+                  "description": "(string, description of the section type)",
                   "lines": "(array of strings, ALL verbatim level 3 section lines from the ToC including any enumerations and Markdown formatting)"
             }}
             # Add more levels as needed
       }}
 
 ## IMPORTANT NOTES
-   - Ignore ALL text before the first section enumerated with '1' or 'I'.
    - The section type should be a descriptive name of the section, e.g., 'Part', 'Chapter', 'Section', 'Subsection', etc.
    - If a section type has the section title on a proceeding line, add an additional entry to the JSON object with the same 'level' as the section type and use "<Level N Section Type> Titles" as the key.
-   - The 'level' must always be '#' characters, e.g., '#', '##', '###', etc.
-   - The hierarchy, represented by the number of '#' characters in 'level' must be incremented by one for each level of hierarchy and MUST not skip any levels, i.e. # -> ## -> ### etc.
    - Everything in the JSON object must be verbatim from the ToC, including any enumerations and Markdown formatting.
    - The JSON object must include all levels of hierarchy present in the ToC, up to the lowest level that contains the items.
 
-Pay close attention to these specific notes: 
-- **If a section type has the section title on a proceeding line, add an additional entry to the JSON object with the same 'level' as the section type and use "<Level N Section Type> Titles" as the key.**
-- **Do NOT include any text the proceeds the beginning of the ToC.**
+Pay close attention to this specific note: **If a section type has the section title on a proceeding line, add an additional entry to the JSON object with the same 'level' as the section type and use "<Level N Section Type> Titles" as the key.**
 
 Please format the JSON object as described above, based on the (verbatim) hierarchy levels present in the ToC, here is the Markdown string of the ToC:
 
@@ -118,7 +112,7 @@ Please format the JSON object as described above, based on the hierarchy levels 
 
 {toc_md_string}
 """
-TOC_HIERARCHY_USER_PLUS_NO = """You will be given Table of Contents (ToC) text in Markdown formatting. I need you to create a JSON object to extract the hierarchy of the ToC sections. This needs to be on a line-by-line basis, where each line is separated by '\\n' characters. Your output must be a JSON object according to the following structure:
+TOC_HIERARCHY_USER_PLUS = """You will be given Table of Contents (ToC) text in Markdown formatting. I need you to create a JSON object to extract the hierarchy of the ToC sections. This needs to be on a line-by-line basis, where each line is separated by '\\n' characters. Your output must be a JSON object according to the following structure:
 
 {initial_toc_hierarchy_schema}
 
@@ -147,17 +141,17 @@ The JSON object should be structured as follows:
       {{
             "<Level 1 Section Type>": {{
                   "level": "#",
-                  "description": "(string, verbose description of the section type and how it can be identified in the text)",
+                  "description": "(string, description of the section type)",
                   "lines": "(array of strings, ALL verbatim level 1 section lines from the ToC including any enumerations and Markdown formatting)"
             }},
             "<Level 2 Section Type>": {{
                   "level": "##",
-                  "description": "(string, verbose description of the section type and how it can be identified in the text",
+                  "description": "(string, description of the section type)",
                   "lines": "(array of strings, ALL verbatim level 2 section lines from the ToC including any enumerations and Markdown formatting)"
             }},
             "<Level 3 Section Type>": {{
                   "level": "###",
-                  "description": "(string, verbose description of the section type and how it can be identified in the text)",
+                  "description": "(string, description of the section type)",
                   "lines": "(array of strings, ALL verbatim level 3 section lines from the ToC including any enumerations and Markdown formatting)"
             }}
             # Add more levels as needed
@@ -192,70 +186,3 @@ Note, there are only {num_levels} levels of hierarchy in the ToC. You must not e
 Please format the JSON object as described above, based on the hierarchy levels present in the ToC, here is the Markdown text of the ToC:
 
 {toc_md_string}"""
-TOC_HIERARCHY_USER_PLUS = """You will be given Table of Contents (ToC) text in Markdown formatting. I need you to create a JSON object to extract each section in the ToC according to their the hierarchy. This needs to be on a line-by-line basis, where each line is separated by '\\n' characters. Your output must be a JSON object according to the following structure:
-
-{prior_schema_template}
-
-Here is some example Markdown text (from this document ToC) and the desired JSON object to guide you:
-
-{example}
-
-Pay close attention to the descriptions and formatting in the examples provided. The sections that you extract from the ToC must follow this exactly. You must not exceed {num_levels} number of levels in the JSON object. Please remember to only add sections, NOT items, to the JSON object. These sections must be verbatim from the ToC Markdown text, including any enumerations and Markdown formatting.
-
-## INSTRUCTIONS
-   - Strictly follow the above guide and examples closely to determine the hierarchy levels present in the ToC pages provided.
-   - Make sure to include ALL section lines from the ToC, at the appropriate level of hierarchy, in the JSON object.
-   - Only sections are to be added to the JSON object, not items. 
-   - If there are no items below the lowest level of hierarchy, then you have added too many levels of hierarchy.
-   - You are not guaranteed to have every level present in the given text so you must use the example text formatting and example JSON to assist you in assigning the section hierarchy correctly.
-
-Please format the JSON object as described above, based on the hierarchy levels present in the ToC, from the following ToC Markdown text:
-
-{toc_md_string}
-"""
-TOC_HIERARCHY_USER_VISION = """You will be given the first 2 Table of Contents (ToC) pages in both Markdown format and as images. I need you to determine how many levels of section hierarchy are present in the ToC based on the markdown and visual formatting. This needs to be on a line-by-line basis, where each line is separated by '\\n' characters (in the Markdown text). 
-
-## INSTRUCTIONS
-   - The JSON object must be extremely descriptive and comprehensive, as you will be using it to determine the hierarchy levels present in the rest of the ToC. Assume that the beginning of the ToC will be an section enumerated with '1' or 'I', e.g. 'Part 1' or 'Chapter 1', and this is the top level of the hierarchy (nothing before this is part of the ToC).
-   - If a section type has the section title on a proceeding line, add an additional entry to the JSON object with the same 'level' as the section type and use "<Level N Section Type> Titles" as the key.
-   - The 'level' must always be '#' characters, e.g., '#', '##', '###', etc, and must be incremented by one for each level of hierarchy.
-   - Only sections are to be added to the JSON object, not items. The lowest level of hierarchy should (i.e., the most number of '#' characters) must be the section that contains the items in the ToC. Please include this in the description of the section type.
-   - The section lines MUST be verbatim from the ToC text, including any enumerations and Markdown formatting.
-   - If there are no items below the lowest level of hierarchy, then you have added too many levels of hierarchy.
-
-The JSON object should be structured as follows:
-
-      {{
-            "<Level 1 Section Type>": {{
-                  "level": '#',
-                  "description": "(string, verbose description of the section type and how it can be identified in the text)",
-                  "lines": "(array of strings, ALL verbatim level 1 section lines from the ToC including any enumerations and Markdown formatting)"
-            }},
-            "<Level 2 Section Type>": {{
-                  "level": '##',
-                  "description": "(string, verbose description of the section type and how it can be identified in the text)",
-                  "lines": "(array of strings, ALL verbatim level 2 section lines from the ToC including any enumerations and Markdown formatting)"
-            }},
-            "<Level 3 Section Type>": {{
-                  "level": '###',
-                  "description": "(string, verbose description of the section type and how it can be identified in the text)",
-                  "lines": "(array of strings, ALL verbatim level 3 section lines from the ToC including any enumerations and Markdown formatting)"
-            }}
-            # Add more levels as needed
-      }}
-
-## IMPORTANT NOTES
-   - The section type should be a descriptive name of the section, e.g., 'Part', 'Chapter', 'Section', 'Subsection', etc.
-   - If a section type has the section title on a proceeding line, add an additional entry to the JSON object with the same 'level' as the section type and use "<Level N Section Type> Titles" as the key.
-   - The hierarchy, represented by the number of '#' characters in 'level' must be incremented by one for each level of hierarchy and MUST not skip any levels, i.e. # -> ## -> ### etc.
-   - Everything in the JSON object must be verbatim from the ToC, including any enumerations and Markdown formatting.
-   - The JSON object must include all levels of hierarchy present in the ToC, up to the lowest level that contains the items.
-
-Pay close attention to these specific notes: 
-- **If a section type has the section title on a proceeding line, add an additional entry to the JSON object with the same 'level' as the section type and use "<Level N Section Type> Titles" as the key.**
-- **Do NOT include any text the proceeds the beginning of the ToC.**
-
-Please format the JSON object as described above, based on the (verbatim) hierarchy levels present in the ToC, here is the Markdown string of the ToC:
-
-{toc_md_string}
-"""

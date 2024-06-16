@@ -27,7 +27,7 @@ class PDFParserRouter:
             raise ValueError(f"Invalid parser type: {self.parser_type}")
         specific_parser_class = self.parsers[self.parser_type]
         specific_parser = specific_parser_class(self.toc_parser)
-        print(f"Using parser: {specific_parser_class.__name__}")  # Debug print
+        utils.print_coloured(f"Using parser: {specific_parser_class.__name__}", "green")
         
         return await specific_parser.parse()
     

@@ -20,17 +20,21 @@ class PDFToCParser:
             self.document = fitz.open(file)
         else:
             raise ValueError("file must be an instance of UploadFile or str.")
-        self.toc_pages: List[int] = list(range(2, 32))
-        with open("toc.md", "r") as f:
-            self.toc_md_str = f.read()
-        self.toc_md_lines = self.toc_md_str.split("\n")
-        with open("content.md", "r") as f:
-            self.content_md_str = f.read()
-        self.content_md_lines = self.content_md_str.split("\n")
-        #self.toc_md_str: str = None
-        # self.toc_md_lines: List[str] = None
-        # self.content_md_str: str = None
-        # self.content_md_lines: List[str] = None
+        self.file_name: str = file.filename if isinstance(file, UploadFile) else pathlib.Path(file).name
+        # self.toc_pages: List[int] = list(range(2, 32))
+        # with open("toc.md", "r") as f:
+        #     self.toc_md_str = f.read()
+        # self.toc_md_lines = self.toc_md_str.split("\n")
+        # with open("content.md", "r") as f:
+        #     self.content_md_str = f.read()
+        # self.content_md_lines = self.content_md_str.split("\n")
+        self.doc_title: str = None
+        self.toc_pages: List[int] = None
+        self.toc_pages_md: List[Dict[str, Any]] = None
+        self.toc_md_str: str = None
+        self.toc_md_lines: List[str] = None
+        self.content_md_str: str = None
+        self.content_md_lines: List[str] = None
         self.toc_hierarchy_schema: Dict[str, str] = None
         self.adjusted_toc_hierarchy_schema: Dict[str, str] = None
         self.master_toc: List[Dict[str, Any]] = None
@@ -41,24 +45,6 @@ class PDFToCParser:
         """
         return utils.to_markdownOG(doc, pages=pages, page_chunks=page_chunks)
     
-    def encode_page_as_base64(self, page: fitz.Page) -> str:
-        pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
-        return base64.b64encode(pix.tobytes()).decode('utf-8')
-    
-    def message_template_vision(self, user_prompt: str, *images: str) -> Dict[str, Any]:
-        message_template = [
-                {
-                    "role": "user",
-                    "content": [
-                        {"type": "text", "text": user_prompt}
-                    ] + [
-                        {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image}"}}
-                        for image in images[:30]  # limit to the first 30 images think gpt4o will only take 39
-                    ]
-                }
-            ]
-        return message_template
-    
     async def find_toc_pages(self) -> List[int]:
         """
         Find the pages that contain the Table of Contents.
@@ -66,13 +52,13 @@ class PDFToCParser:
         async def verify_toc_pages(page: int, start: bool = True) -> tuple:
             page_image = self.encode_page_as_base64(self.document[page])
             if start:
-                adjacent_page_image = self.encode_page_as_base64(self.document[page - 1]) if page > 0 else None
+                adjacent_page_image = utils.encode_page_as_base64(self.document[page - 1]) if page > 0 else None
             else:
-                adjacent_page_image = self.encode_page_as_base64(self.document[page + 1]) if page < len(self.document) - 1 else None
+                adjacent_page_image = utils.encode_page_as_base64(self.document[page + 1]) if page < len(self.document) - 1 else None
             if adjacent_page_image:
-                messages = self.message_template_vision(prompts.VERIFY_TOC_PAGES_PROMPT, page_image, adjacent_page_image)
+                messages = utils.message_template_vision(prompts.VERIFY_TOC_PAGES_PROMPT, page_image, adjacent_page_image)
             else:
-                messages = self.message_template_vision(prompts.VERIFY_TOC_PAGE_PROMPT, page_image)
+                messages = utils.message_template_vision(prompts.VERIFY_TOC_PAGE_PROMPT, page_image)
 
             response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o")
             message_content = response.choices[0].message.content
@@ -149,18 +135,24 @@ class PDFToCParser:
         """
         if not self.toc_pages:
             self.toc_pages = await self.find_toc_pages()
-        self.toc_md_str = self.to_markdown(doc=self.document, pages=self.toc_pages, page_chunks=False)
-        pathlib.Path(f"toc.md").write_bytes(self.toc_md_str.encode())
+       # self.toc_md_str = self.to_markdown(doc=self.document, pages=self.toc_pages, page_chunks=False)
+        self.toc_pages_md = self.to_markdown(doc=self.document, pages=self.toc_pages, page_chunks=True)
+        self.doc_title = self.toc_pages_md[0]['metadata'].get('title', self.file_name)
+        toc_md_str = ""
+        for page in self.toc_pages_md:
+            toc_md_str += page.get("text", "")
+        self.toc_md_str = toc_md_str
+        pathlib.Path(f"{self.doc_title}_toc.md").write_bytes(self.toc_md_str.encode())
         self.toc_md_lines = self.toc_md_str.split("\n")
         self.content_md_str = self.to_markdown(doc=self.document, pages=(list(range(self.toc_pages[-1] + 1, len(self.document)))), page_chunks=False)
-        pathlib.Path(f"content.md").write_bytes(self.content_md_str.encode())
+        pathlib.Path(f"{self.doc_title}_content.md").write_bytes(self.content_md_str.encode())
         self.content_md_lines = self.content_md_str.split("\n")
     
     async def determine_toc_structure(self):
         if not self.toc_md_lines and not self.content_md_lines:
             await self.extract_toc()
         toc_md_section_lines = [line for line in self.toc_md_lines if line.startswith("#")]
-        utils.print_coloured(f"Number of ToC lines: {len(toc_md_section_lines)} out of {len(self.toc_md_lines)} with a ratio of {len(toc_md_section_lines) / len(self.toc_md_lines)}", "yellow")
+        utils.print_coloured(f"{len(toc_md_section_lines)} / {len(self.toc_md_lines)} -> {len(toc_md_section_lines) / len(self.toc_md_lines)}", "yellow")
         if len(toc_md_section_lines) / len(self.toc_md_lines) > 0.05:
             if len(self.toc_pages) >= 3:
                 return "CT"

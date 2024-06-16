@@ -1,2115 +1,3441 @@
-# Contents
+# Companies Act 2006
 
-## Chapter 3—Specialist liability rules 1
+### CHAPTER 46
 
-### Part 3-95—Value shifting 1
+## CONTENTS
 
-#### Division 723—Direct value shifting by creating right over non-depreciating asset 1
+**PART 1**
 
-##### Subdivision 723-A—Reduction in loss from realising non-depreciating asset 1
+GENERAL INTRODUCTORY PROVISIONS
 
-723-1 Object .................................................................................1
+_Companies and Companies Acts_
 
-723-10 Reduction in loss from realising non-depreciating
-asset over which right has been created .............................2
+1 Companies
+2 The Companies Acts
 
-723-15 Reduction in loss from realising non-depreciating
-asset at the same time as right is created over it.................4
+_Types of company_
 
-723-20 Exceptions ..........................................................................5
+3 Limited and unlimited companies
+4 Private and public companies
+5 Companies limited by guarantee and having share capital
+6 Community interest companies
 
-723-25 Realisation event that is only a partial realisation..............6
+**PART 2**
 
-723-35 Multiple rights created to take advantage of the
-$50,000 threshold ...............................................................7
+COMPANY FORMATION
 
-723-40 Application to CGT asset that is also trading stock
-or revenue asset ..................................................................7
+_General_
 
-723-50 Effects if right created over underlying asset is
-also trading stock or a revenue asset ..................................7
+7 Method of forming company
+8 Memorandum of association
 
-##### Subdivision 723-B—Reducing reduced cost base of interests in entity that acquires non-depreciating asset under roll-over 8
+_Requirements for registration_
 
-723-105 Reduced cost base of interest reduced when
-interest realised at a loss.....................................................8
-
-723-110 Direct and indirect roll-over replacement for
-underlying asset................................................................10
-
-#### Division 725—Direct value shifting affecting interests in companies and trusts 11
-
-##### Guide to Division 725 11
-
-725-1 What this Division is about ..............................................11
-
-##### Subdivision 725-A—Scope of the direct value shifting rules 12
-
-725-45 Main object.......................................................................12
-
-725-50 When a direct value shift has consequences under
-this Division .....................................................................13
-
-725-55 Controlling entity test.......................................................13
-
-725-65 Cause of the value shift ....................................................13
-
-_Income Tax Assessment Act 1997_ _i_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+9 Registration documents
+10 Statement of capital and initial shareholdings
+11 Statement of guarantee
+12 Statement of proposed officers
+13 Statement of compliance
 
 
 -----
 
-725-70 Consequences for down interest only if there is a
-material decrease in its market value ...............................15
+ii _Companies Act 2006 (c. 46)_
 
-725-80 Who is an affected owner of a down interest? .................15
+_Registration and its effect_
 
-725-85 Who is an affected owner of an up interest? ....................15
+14 Registration
+15 Issue of certificate of incorporation
+16 Effect of registration
 
-725-90 Direct value shift that will be reversed.............................16
+**PART 3**
 
-725-95 Direct value shift resulting from reversal.........................17
+A COMPANY’S CONSTITUTION
 
-##### Subdivision 725-B—What is a direct value shift 17
+**CHAPTER 1**
 
-725-145 When there is a direct value shift .....................................17
+INTRODUCTORY
 
-725-150 Issue of equity or loan interests at a discount...................18
+17 A company’s constitution
 
-725-155 Meaning of down interests, decrease time, up
-_interests and increase time ...............................................20_
+**CHAPTER 2**
 
-725-160 What is the nature of a direct value shift?........................20
+ARTICLES OF ASSOCIATION
 
-725-165 If market value decrease or increase is only partly
-attributable to the scheme.................................................20
+_General_
 
-##### Subdivision 725-C—Consequences of a direct value shift 21
+18 Articles of association
+19 Power of Secretary of State to prescribe model articles
+20 Default application of model articles
 
-##### General 21
+_Alteration of articles_
 
-725-205 Consequences depend on character of down
-interests and up interests...................................................21
+21 Amendment of articles
+22 Entrenched provisions of the articles
+23 Notice to registrar of existence of restriction on amendment of articles
+24 Statement of compliance where amendment of articles restricted
+25 Effect of alteration of articles on company’s members
+26 Registrar to be sent copy of amended articles
+27 Registrar’s notice to comply in case of failure with respect to amended articles
 
-725-210 Consequences for down interests depend on
-pre-shift gains and losses..................................................22
+_Supplementary_
 
-##### Special cases 22
+28 Existing companies: provisions of memorandum treated as provisions of
+articles
 
-725-220 Neutral direct value shifts.................................................22
+**CHAPTER 3**
 
-725-225 Issue of bonus shares or units...........................................23
+RESOLUTIONS AND AGREEMENTS AFFECTING A COMPANY’S CONSTITUTION
 
-725-230 Off-market buy-backs.......................................................24
+29 Resolutions and agreements affecting a company’s constitution
+30 Copies of resolutions or agreements to be forwarded to registrar
 
-##### Subdivision 725-D—Consequences for down interest or up interest as CGT asset 25
+**CHAPTER 4**
 
-725-240 CGT consequences; meaning of adjustable value ...........25
+MISCELLANEOUS AND SUPPLEMENTARY PROVISIONS
 
-725-245 Table of taxing events generating a gain for
-interests as CGT assets.....................................................27
+_Statement of company’s objects_
 
-725-250 Table of consequences for adjustable values of
-interests as CGT assets.....................................................28
-
-725-255 Multiple CGT consequences for the same down
-interest or up interest ........................................................31
-
-##### Subdivision 725-E—Consequences for down interest or up interest as trading stock or a revenue asset 32
-
-725-310 Consequences for down interest or up interest as
-trading stock .....................................................................32
-
-725-315 _Adjustable value of trading stock .....................................33_
-
-_ii_ _Income Tax Assessment Act 1997_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+31 Statement of company’s objects
 
 
 -----
 
-725-320 Consequences for down interest or up interest as a
-revenue asset.....................................................................34
+_Companies Act 2006 (c. 46)_ iii
 
-725-325 _Adjustable value of revenue asset ....................................35_
+_Other provisions with respect to a company’s constitution_
 
-725-335 How to work out those consequences ..............................36
+32 Constitutional documents to be provided to members
+33 Effect of company’s constitution
+34 Notice to registrar where company’s constitution altered by enactment
+35 Notice to registrar where company’s constitution altered by order
+36 Documents to be incorporated in or accompany copies of articles issued by
+company
 
-725-340 Multiple trading stock or revenue asset
-consequences for the same down interest or up
-interest ..............................................................................39
+_Supplementary provisions_
 
-##### Subdivision 725-F—Value adjustments and taxed gains 40
+37 Right to participate in profits otherwise than as member void
+38 Application to single member companies of enactments and rules of law
 
-725-365 Decreases in adjustable values of down interests
-(with pre-shift gains), and taxing events generating
-a gain ................................................................................40
+**PART 4**
 
-725-370 Uplifts in adjustable values of up interests under
-certain table items.............................................................42
+A COMPANY’S CAPACITY AND RELATED MATTERS
 
-725-375 Uplifts in adjustable values of up interests under
-other table items ...............................................................43
+_Capacity of company and power of directors to bind it_
 
-725-380 Decreases in adjustable value of down interests
-(with pre-shift losses) .......................................................45
+39 A company’s capacity
+40 Power of directors to bind the company
+41 Constitutional limitations: transactions involving directors or their associates
+42 Constitutional limitations: companies that are charities
 
-#### Division 727—Indirect value shifting affecting interests in companies and trusts, and arising from non-arm’s length dealings 47
+_Formalities of doing business under the law of England and Wales or Northern Ireland_
 
-##### Guide to Division 727 47
+43 Company contracts
+44 Execution of documents
+45 Common seal
+46 Execution of deeds
+47 Execution of deeds or other documents by attorney
 
-727-1 What this Division is about ..............................................47
+_Formalities of doing business under the law of Scotland_
 
-727-5 What is an indirect value shift? ........................................48
+48 Execution of documents by companies
 
-727-10 How does this Division deal with indirect value
-shifts?................................................................................50
+_Other matters_
 
-727-15 When does an indirect value shift have
-consequences under this Division?...................................50
+49 Official seal for use abroad
+50 Official seal for share certificates etc
+51 Pre-incorporation contracts, deeds and obligations
+52 Bills of exchange and promissory notes
 
-727-25 Effect of this Division on realisations at a loss that
-occur before the nature or extent of an indirect
-value shift can be fully determined ..................................51
+**PART 5**
 
-##### Subdivision 727-A—Scope of the indirect value shifting rules 51
+A COMPANY’S NAME
 
-727-95 Main object.......................................................................52
+**CHAPTER 1**
 
-727-100 When an indirect value shift has consequences
-under this Division ...........................................................52
+GENERAL REQUIREMENTS
 
-727-105 Ultimate controller test.....................................................53
+_Prohibited names_
 
-727-110 Common-ownership nexus test (if both losing and
-gaining entities are closely held)......................................53
-
-727-125 No consequences if losing entity is a complying
-superannuation entity etc..................................................54
-
-_Income Tax Assessment Act 1997_ _iii_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+53 Prohibited names
 
 
 -----
 
-##### Subdivision 727-B—What is an indirect value shift 54
+iv _Companies Act 2006 (c. 46)_
 
-727-150 How to determine whether a scheme results in an
-indirect value shift............................................................54
+_Sensitive words and expressions_
 
-727-155 Providing economic benefits............................................56
+54 Names suggesting connection with government or public authority
+55 Other sensitive words or expressions
+56 Duty to seek comments of government department or other specified body
 
-727-160 When an economic benefit is provided in
-_connection with a scheme.................................................57_
+_Permitted characters etc_
 
-727-165 Preventing double-counting of economic benefits...........58
+57 Permitted characters etc
 
-##### Subdivision 727-C—Exclusions 59
+**CHAPTER 2**
 
-##### Guide to Subdivision 727-C 59
+INDICATIONS OF COMPANY TYPE OR LEGAL FORM
 
-727-200 What this Subdivision is about.........................................59
+_Required indications for limited companies_
 
-##### General 60
+58 Public limited companies
+59 Private limited companies
+60 Exemption from requirement as to use of “limited”
+61 Continuation of existing exemption: companies limited by shares
+62 Continuation of existing exemption: companies limited by guarantee
+63 Exempt company: restriction on amendment of articles
+64 Power to direct change of name in case of company ceasing to be entitled to
+exemption
 
-727-215 Amount does not exceed $50,000 ....................................60
+_Inappropriate use of indications of company type or legal form_
 
-727-220 Disposal of asset at cost, or at undervalue if full
-value is not reflected in adjustable values of equity
-or loan interests in the losing entity..................................60
+65 Inappropriate use of indications of company type or legal form
 
-##### Indirect value shifts involving services 61
+**CHAPTER 3**
 
-727-230 Services provided by losing entity to gaining entity
-for at least their direct cost ...............................................61
+SIMILARITY TO OTHER NAMES
 
-727-235 Services provided by gaining entity to losing entity
-for no more than a commercially realistic price...............62
+_Similarity to other name on registrar’s index_
 
-727-240 What services certain provisions apply to........................63
+66 Name not to be the same as another in the index
+67 Power to direct change of name in case of similarity to existing name
+68 Direction to change name: supplementary provisions
 
-727-245 How to work out certain amounts for the purposes
-of sections 727-230 and 727-235 .....................................64
+_Similarity to other name in which person has goodwill_
 
-##### Anti-overlap provisions 65
+69 Objection to company’s registered name
+70 Company names adjudicators
+71 Procedural rules
+72 Decision of adjudicator to be made available to public
+73 Order requiring name to be changed
+74 Appeal from adjudicator’s decision
 
-727-250 Distribution by an entity to a member or
-beneficiary........................................................................65
+**CHAPTER 4**
 
-##### Miscellaneous 66
+OTHER POWERS OF THE SECRETARY OF STATE
 
-727-260 Shift down a wholly-owned chain of entities...................66
-
-##### Subdivision 727-D—Working out the market value of economic benefits 67
-
-727-300 What the rules in this Subdivision are for ........................67
-
-727-315 Transfer, for its adjustable value, of depreciating
-asset acquired for less than $1,500,000............................67
-
-##### Subdivision 727-E—Key concepts 68
-
-##### Ultimate controller 69
-
-727-350 _Ultimate controller...........................................................69_
-
-727-355 _Control (for value shifting purposes) of a company ........69_
-
-_iv_ _Income Tax Assessment Act 1997_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+75 Provision of misleading information etc
+76 Misleading indication of activities
 
 
 -----
 
-727-360 _Control (for value shifting purposes) of a fixed_
-trust...................................................................................70
+_Companies Act 2006 (c. 46)_ v
 
-727-365 _Control (for value shifting purposes) of a_
-non-fixed trust ..................................................................71
+**CHAPTER 5**
 
-727-370 Preventing double counting for percentage stake
-tests...................................................................................72
+CHANGE OF NAME
 
-727-375 Tests in this Subdivision are exhaustive...........................72
+77 Change of name
+78 Change of name by special resolution
+79 Change of name by means provided for in company’s articles
+80 Change of name: registration and issue of new certificate of incorporation
+81 Change of name: effect
 
-##### Common-ownership nexus and ultimate stake of a particular percentage 73
+**CHAPTER 6**
 
-727-400 When 2 entities have a common-ownership nexus
-within a period..................................................................73
+TRADING DISCLOSURES
 
-727-405 _Ultimate stake of a particular percentage in a_
-company ...........................................................................75
+82 Requirement to disclose company name etc
+83 Civil consequences of failure to make required disclosure
+84 Criminal consequences of failure to make required disclosures
+85 Minor variations in form of name to be left out of account
 
-727-410 _Ultimate stake of a particular percentage in a fixed_
-trust...................................................................................76
+**PART 6**
 
-727-415 Rules for tracing ...............................................................76
+A COMPANY’S REGISTERED OFFICE
 
-##### Subdivision 727-F—Consequences of an indirect value shift 78
+_General_
 
-##### Guide to Subdivision 727-F 78
+86 A company’s registered office
+87 Change of address of registered office
 
-727-450 What this Subdivision is about.........................................78
+_Welsh companies_
 
-##### Operative provisions 79
+88 Welsh companies
 
-727-455 Consequences of the indirect value shift..........................79
+**PART 7**
 
-##### Affected interests 79
+RE-REGISTRATION AS A MEANS OF ALTERING A COMPANY’S STATUS
 
-727-460 _Affected interests in the losing entity ...............................79_
+_Introductory_
 
-727-465 _Affected interests in the gaining entity .............................79_
+89 Alteration of status by re-registration
 
-727-470 Exceptions ........................................................................80
+_Private company becoming public_
 
-727-520 _Equity or loan interest and related terms .........................81_
+90 Re-registration of private company as public
+91 Requirements as to share capital
+92 Requirements as to net assets
+93 Recent allotment of shares for non-cash consideration
+94 Application and accompanying documents
+95 Statement of proposed secretary
+96 Issue of certificate of incorporation on re-registration
 
-727-525 _Indirect equity or loan interest.........................................82_
+_Public company becoming private_
 
-##### Affected owners 82
-
-727-530 Who are the affected owners ............................................82
-
-##### Choices about method to be used 84
-
-727-550 Choosing the adjustable value method.............................84
-
-727-555 Giving other affected owners information about
-the choice..........................................................................86
-
-##### Subdivision 727-G—The realisation time method 87
-
-727-600 What this Subdivision is about.........................................87
-
-##### Operative provisions 88
-
-727-610 Consequences of indirect value shift................................88
-
-_Income Tax Assessment Act 1997_ _v_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+97 Re-registration of public company as private limited company
+98 Application to court to cancel resolution
 
 
 -----
 
-727-615 Reduction of loss on realisation event for affected
-interest in losing entity .....................................................89
+vi _Companies Act 2006 (c. 46)_
 
-727-620 Reduction of gain on realisation event for affected
-interest in gaining entity...................................................90
+99 Notice to registrar of court application or order
+100 Application and accompanying documents
+101 Issue of certificate of incorporation on re-registration
 
-727-625 Total gain reductions not to exceed total loss
-reductions .........................................................................90
+_Private limited company becoming unlimited_
 
-727-630 How cap in section 727-625 applies if affected
-interest is also trading stock or a revenue asset................91
+102 Re-registration of private limited company as unlimited
+103 Application and accompanying documents
+104 Issue of certificate of incorporation on re-registration
 
-727-635 Splitting an equity or loan interest ...................................93
+_Unlimited private company becoming limited_
 
-727-640 Merging equity or loan interests.......................................93
+105 Re-registration of unlimited company as limited
+106 Application and accompanying documents
+107 Issue of certificate of incorporation on re-registration
+108 Statement of capital required where company already has share capital
 
-727-645 Effect of CGT roll-over....................................................94
+_Public company becoming private and unlimited_
 
-##### Further exclusion for certain 95% services indirect value shifts if realisation time method must be used 95
+109 Re-registration of public company as private and unlimited
+110 Application and accompanying documents
+111 Issue of certificate of incorporation on re-registration
 
-727-700 When 95% services indirect value shift is excluded ........95
+**PART 8**
 
-##### 95% services indirect value shifts that are not excluded 96
+A COMPANY’S MEMBERS
 
-727-705 Another provision of the income tax law affects
-amount related to services by at least $100,000...............96
+**CHAPTER 1**
 
-727-710 Ongoing or recent service arrangement reduces
-value of losing entity by at least $100,000.......................97
+THE MEMBERS OF A COMPANY
 
-727-715 Service arrangements reduce value of losing entity
-that is a group service provider by at least
-$500,000...........................................................................98
+112 The members of a company
 
-727-720 Abnormal service arrangement reduces value of
-losing entity that is not a group service provider by
-at least $500,000.............................................................100
+**CHAPTER 2**
 
-727-725 Meaning of predominantly-services indirect value
-_shift .................................................................................102_
+REGISTER OF MEMBERS
 
-##### Subdivision 727-H—The adjustable value method 102
+_General_
 
-##### Guide to Subdivision 727-H 102
+113 Register of members
+114 Register to be kept available for inspection
+115 Index of members
+116 Rights to inspect and require copies
+117 Register of members: response to request for inspection or copy
+118 Register of members: refusal of inspection or default in providing copy
+119 Register of members: offences in connection with request for or disclosure of
+information
+120 Information as to state of register and index
+121 Removal of entries relating to former members
 
-727-750 What this Subdivision is about.......................................102
+_Special cases_
 
-727-755 Consequences of indirect value shift..............................103
-
-##### Reductions of adjustable value 104
-
-727-770 Reduction under the adjustable value method................104
-
-727-775 Has there been a disaggregated attributable
-decrease? ........................................................................104
-
-727-780 Working out the reduction on a loss-focussed basis ......105
-
-##### Uplifts of adjustable value 106
-
-727-800 Uplift under the attributable increase method ................106
-
-727-805 Has there been a disaggregated attributable
-increase? .........................................................................109
-
-_vi_ _Income Tax Assessment Act 1997_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+122 Share warrants
+123 Single member companies
 
 
 -----
 
-727-810 Scaling-down formula ....................................................110
+_Companies Act 2006 (c. 46)_ vii
 
-##### Consequences of the method for various kinds of assets 111
+124 Company holding its own shares as treasury shares
 
-727-830 CGT assets......................................................................111
+_Supplementary_
 
-727-835 Trading stock..................................................................112
+125 Power of court to rectify register
+126 Trusts not to be entered on register
+127 Register to be evidence
+128 Time limit for claims arising from entry in register
 
-727-840 Revenue assets................................................................114
+**CHAPTER 3**
 
-##### Subdivision 727-K—Reduction of loss on equity or loan interests realised before the IVS time 115
+OVERSEAS BRANCH REGISTERS
 
-727-850 Consequences of scheme under this Subdivision...........115
+129 Overseas branch registers
+130 Notice of opening of overseas branch register
+131 Keeping of overseas branch register
+132 Register or duplicate to be kept available for inspection in UK
+133 Transactions in shares registered in overseas branch register
+134 Jurisdiction of local courts
+135 Discontinuance of overseas branch register
 
-727-855 Presumed indirect value shift .........................................117
+**CHAPTER 4**
 
-727-860 Conditions about the prospective gaining entity ............118
+PROHIBITION ON SUBSIDIARY BEING MEMBER OF ITS HOLDING COMPANY
 
-727-865 How other provisions of this Division apply to
-support this Subdivision .................................................119
+_General prohibition_
 
-727-870 Effect of CGT roll-over..................................................121
+136 Prohibition on subsidiary being a member of its holding company
+137 Shares acquired before prohibition became applicable
 
-727-875 Application to CGT asset that is also trading stock
-or revenue asset ..............................................................122
+_Subsidiary acting as personal representative or trustee_
 
-##### Subdivision 727-L—Indirect value shift resulting from a direct value shift 122
+138 Subsidiary acting as personal representative or trustee
+139 Interests to be disregarded: residual interest under pension scheme or
+employees’ share scheme
+140 Interests to be disregarded: employer’s rights of recovery under pension
+scheme or employees’ share scheme
 
-727-905 How this Subdivision affects the rest of this
-Division ..........................................................................122
+_Subsidiary acting as dealer in securities_
 
-727-910 Treatment of value shifted under the direct value
-shift.................................................................................123
+141 Subsidiary acting as authorised dealer in securities
+142 Protection of third parties in other cases where subsidiary acting as dealer in
+securities
 
-## Chapter 4—International aspects of income tax 126
+_Supplementary_
 
-### Part 4-5—General 126
-
-#### Division 764—Source rules 126
-
-##### Guide to Division 764 126
-
-764-1 What this Division is about ............................................126
-
-##### Subdivision 764-A—Source rules 126
-
-764-5 Source rule for international tax agreements..................126
-
-#### Division 768—Foreign non-assessable income and gains 128
-
-##### Subdivision 768-A—Returns on foreign investment 128
-
-##### Guide to Subdivision 768-A 128
-
-768-1 What this Subdivision is about.......................................128
-
-##### Foreign equity distributions on participation interests 129
-
-768-5 Foreign equity distributions on participation
-interests...........................................................................129
-
-_Income Tax Assessment Act 1997_ _vii_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+143 Application of provisions to companies not limited by shares
+144 Application of provisions to nominees
 
 
 -----
 
-768-7 Foreign equity distributions entitled to a foreign
-income tax deduction......................................................130
+viii _Companies Act 2006 (c. 46)_
 
-768-10 Meaning of foreign equity distribution ..........................131
+**PART 9**
 
-768-15 Participation test—minimum 10% participation............131
+EXERCISE OF MEMBERS’ RIGHTS
 
-##### Subdivision 768-B—Some items of income that are exempt from income tax 131
+_Effect of provisions in company’s articles_
 
-768-100 Foreign government officials in Australia......................132
+145 Effect of provisions of articles as to enjoyment or exercise of members’ rights
 
-768-105 Compensation arising out of Second World War...........134
+_Information rights_
 
-768-110 Foreign residents deriving income from certain
-activities in Australia’s exclusive economic zone
-or on or above Australia’s continental shelf...................135
+146 Traded companies: nomination of persons to enjoy information rights
+147 Information rights: form in which copies to be provided
+148 Termination or suspension of nomination
+149 Information as to possible rights in relation to voting
+150 Information rights: status of rights
+151 Information rights: power to amend
 
-##### Subdivision 768-G—Reduction in capital gains and losses arising from CGT events in relation to certain voting interests in active foreign companies 136
+_Exercise of rights where shares held on behalf of others_
 
-##### Guide to Subdivision 768-G 136
+152 Exercise of rights where shares held on behalf of others: exercise in different
+ways
+153 Exercise of rights where shares held on behalf of others: members’ requests
 
-768-500 What this Subdivision is about.......................................136
+**PART 10**
 
-##### Operative provisions 137
+A COMPANY’S DIRECTORS
 
-768-505 Reducing a capital gain or loss from certain CGT
-events in relation to certain voting interests...................137
+**CHAPTER 1**
 
-##### Active foreign business asset percentage 138
+APPOINTMENT AND REMOVAL OF DIRECTORS
 
-768-510 Active foreign business asset percentage .......................138
+_Requirement to have directors_
 
-768-515 Choices to apply market value method or book
-value method ..................................................................139
+154 Companies required to have directors
+155 Companies required to have at least one director who is a natural person
+156 Direction requiring company to make appointment
 
-768-520 Market value method—choice made under
-subsection 768-515(1) ....................................................140
+_Appointment_
 
-768-525 Book value method—choice made under
-subsection 768-515(2) ....................................................142
+157 Minimum age for appointment as director
+158 Power to provide for exceptions from minimum age requirement
+159 Existing under-age directors
+160 Appointment of directors of public company to be voted on individually
+161 Validity of acts of directors
 
-768-530 Active foreign business asset percentage—
-modifications for foreign life insurance companies
-and foreign general insurance companies ......................146
+_Register of directors, etc_
 
-768-533 Foreign company that is a FIF using CFC
-calculation method—treatment as AFI subsidiary
-under this Subdivision....................................................149
-
-768-535 Modified rules for foreign wholly-owned groups ..........149
-
-##### Types of assets of a foreign company 151
-
-768-540 Active foreign business assets of a foreign
-company .........................................................................151
-
-768-545 Assets included in the total assets of a foreign
-company .........................................................................153
-
-_viii_ _Income Tax Assessment Act 1997_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+162 Register of directors
+163 Particulars of directors to be registered: individuals
+164 Particulars of directors to be registered: corporate directors and firms
+165 Register of directors’ residential addresses
+166 Particulars of directors to be registered: power to make regulations
+167 Duty to notify registrar of changes
 
 
 -----
 
-##### Voting percentages in a company 155
+_Companies Act 2006 (c. 46)_ ix
 
-768-550 Direct voting percentage in a company..........................155
+_Removal_
 
-768-555 Indirect voting percentage in a company .......................155
+168 Resolution to remove director
+169 Director’s right to protest against removal
 
-768-560 Total voting percentage in a company ...........................156
+**CHAPTER 2**
 
-##### Subdivision 768-R—Temporary residents 156
+GENERAL DUTIES OF DIRECTORS
 
-##### Guide to Subdivision 768-R 156
+_Introductory_
 
-768-900 What this Subdivision is about.......................................156
+170 Scope and nature of general duties
 
-##### Operative provisions 157
+_The general duties_
 
-768-905 Objects............................................................................157
+171 Duty to act within powers
+172 Duty to promote the success of the company
+173 Duty to exercise independent judgment
+174 Duty to exercise reasonable care, skill and diligence
+175 Duty to avoid conflicts of interest
+176 Duty not to accept benefits from third parties
+177 Duty to declare interest in proposed transaction or arrangement
 
-768-910 Income derived by temporary resident...........................157
+_Supplementary provisions_
 
-768-915 Certain capital gains and capital losses of
-temporary resident to be disregarded .............................159
+178 Civil consequences of breach of general duties
+179 Cases within more than one of the general duties
+180 Consent, approval or authorisation by members
+181 Modification of provisions in relation to charitable companies
 
-768-950 Individual becoming an Australian resident...................159
+**CHAPTER 3**
 
-768-955 Temporary resident who ceases to be temporary
-resident but remains an Australian resident ...................159
+DECLARATION OF INTEREST IN EXISTING TRANSACTION OR ARRANGEMENT
 
-768-960 Temporary resident not attributable taxpayer for
-purposes of controlled foreign companies rules.............160
+182 Declaration of interest in existing transaction or arrangement
+183 Offence of failure to declare interest
+184 Declaration made by notice in writing
+185 General notice treated as sufficient declaration
+186 Declaration of interest in case of company with sole director
+187 Declaration of interest in existing transaction by shadow director
 
-768-970 Modification of rules for accruals system of
-taxation of certain non-resident trust estates ..................160
+**CHAPTER 4**
 
-768-980 Interest paid by temporary resident................................160
+TRANSACTIONS WITH DIRECTORS REQUIRING APPROVAL OF MEMBERS
 
-#### Division 770—Foreign income tax offsets 162
+_Service contracts_
 
-##### Guide to Division 770 162
+188 Directors’ long-term service contracts: requirement of members’ approval
+189 Directors’ long-term service contracts: civil consequences of contravention
 
-770-1 What this Division is about ............................................162
+_Substantial property transactions_
 
-770-5 Object .............................................................................162
-
-##### Subdivision 770-A—Entitlement rules for foreign income tax offsets 163
-
-##### Basic entitlement rule for foreign income tax offset 163
-
-770-10 Entitlement to foreign income tax offset........................163
-
-770-15 Meaning of foreign income tax, credit absorption
-_tax and unitary tax..........................................................165_
-
-##### Subdivision 770-B—Amount of foreign income tax offset 166
-
-##### Guide to Subdivision 770-B 166
-
-770-65 What this Subdivision is about.......................................166
-
-##### Operative provisions 167
-
-770-70 Amount of foreign income tax offset .............................167
-
-770-75 Foreign income tax offset limit ......................................167
-
-_Income Tax Assessment Act 1997_ _ix_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+190 Substantial property transactions: requirement of members’ approval
+191 Meaning of “substantial”
+192 Exception for transactions with members or other group companies
 
 
 -----
 
-770-80 Increase in offset limit for tax paid on amounts to
-which section 23AI or 23AK of the Income Tax
-_Assessment Act 1936 apply.............................................168_
+_Companies Act 2006 (c. 46)_
 
-##### Subdivision 770-C—Rules about payment of foreign income tax 169
+193 Exception in case of company in winding up or administration
+194 Exception for transactions on recognised investment exchange
+195 Property transactions: civil consequences of contravention
+196 Property transactions: effect of subsequent affirmation
 
-##### Rules about when foreign tax is paid 169
+_Loans, quasi-loans and credit transactions_
 
-770-130 When foreign income tax is considered paid—
-taxes paid by someone else ............................................169
+197 Loans to directors: requirement of members’ approval
+198 Quasi-loans to directors: requirement of members’ approval
+199 Meaning of “quasi-loan” and related expressions
+200 Loans or quasi-loans to persons connected with directors: requirement of
+members’ approval
+201 Credit transactions: requirement of members’ approval
+202 Meaning of “credit transaction”
+203 Related arrangements: requirement of members’ approval
+204 Exception for expenditure on company business
+205 Exception for expenditure on defending proceedings etc
+206 Exception for expenditure in connection with regulatory action or
+investigation
+207 Exceptions for minor and business transactions
+208 Exceptions for intra-group transactions
+209 Exceptions for money-lending companies
+210 Other relevant transactions or arrangements
+211 The value of transactions and arrangements
+212 The person for whom a transaction or arrangement is entered into
+213 Loans etc: civil consequences of contravention
+214 Loans etc: effect of subsequent affirmation
 
-770-135 Foreign income tax paid by CFCs on attributed
-amounts ..........................................................................170
+_Payments for loss of office_
 
-##### Rules about when foreign tax is considered not paid 172
+215 Payments for loss of office
+216 Amounts taken to be payments for loss of office
+217 Payment by company: requirement of members’ approval
+218 Payment in connection with transfer of undertaking etc: requirement of
+members’ approval
+219 Payment in connection with share transfer: requirement of members’
+approval
+220 Exception for payments in discharge of legal obligations etc
+221 Exception for small payments
+222 Payments made without approval: civil consequences
 
-770-140 When foreign income tax is considered not paid—
-anti-avoidance rule .........................................................172
+_Supplementary_
 
-##### Subdivision 770-D—Administration 172
+223 Transactions requiring members’ approval: application of provisions to
+shadow directors
+224 Approval by written resolution: accidental failure to send memorandum
+225 Cases where approval is required under more than one provision
+226 Requirement of consent of Charity Commission: companies that are charities
 
-770-190 Amendment of assessments............................................172
+**CHAPTER 5**
 
-#### Division 775—Foreign currency gains and losses 174
+DIRECTORS’ SERVICE CONTRACTS
 
-##### Guide to Division 775 174
-
-775-5 What this Division is about ............................................174
-
-##### Subdivision 775-A—Objects of this Division 175
-
-775-10 Objects of this Division..................................................175
-
-##### Subdivision 775-B—Realisation of forex gains or losses 176
-
-775-15 Forex realisation gains are assessable ............................177
-
-775-20 Certain forex realisation gains are exempt income ........179
-
-775-25 Certain forex realisation gains are non-assessable
-non-exempt income ........................................................179
-
-775-27 Certain forex realisation gains are non-assessable
-non-exempt income ........................................................179
-
-775-30 Forex realisation losses are deductible...........................179
-
-775-35 Certain forex realisation losses are disregarded.............181
-
-775-40 Disposal of foreign currency or right to receive
-foreign currency—forex realisation event 1...................181
-
-775-45 Ceasing to have a right to receive foreign
-currency—forex realisation event 2 ...............................183
-
-775-50 Ceasing to have an obligation to receive foreign
-currency—forex realisation event 3 ...............................187
-
-775-55 Ceasing to have an obligation to pay foreign
-currency—forex realisation event 4 ...............................189
-
-775-60 Ceasing to have a right to pay foreign currency—
-forex realisation event 5 .................................................195
-
-775-65 Only one forex realisation event to be counted..............197
-
-_x_ _Income Tax Assessment Act 1997_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+227 Directors’ service contracts
 
 
 -----
 
-775-70 Tax consequences of certain short-term forex
-realisation gains..............................................................199
+_Companies Act 2006 (c. 46)_ xi
 
-775-75 Tax consequences of certain short-term forex
-realisation losses.............................................................204
+228 Copy of contract or memorandum of terms to be available for inspection
+229 Right of member to inspect and request copy
+230 Directors’ service contracts: application of provisions to shadow directors
 
-775-80 You may choose not to have sections 775-70 and
-775-75 apply to you........................................................207
+**CHAPTER 6**
 
-775-85 Forex cost base of a right to receive foreign
-currency..........................................................................208
+CONTRACTS WITH SOLE MEMBERS WHO ARE DIRECTORS
 
-775-90 Forex entitlement base of a right to pay foreign
-currency..........................................................................208
+231 Contract with sole member who is also a director
 
-775-95 Proceeds of assuming an obligation to pay foreign
-currency..........................................................................209
+**CHAPTER 7**
 
-775-100 Net costs of assuming an obligation to receive
-foreign currency .............................................................210
+DIRECTORS’ LIABILITIES
 
-775-105 Currency exchange rate effect........................................211
+_Provision protecting directors from liability_
 
-775-110 Constructive receipts and payments...............................211
+232 Provisions protecting directors from liability
+233 Provision of insurance
+234 Qualifying third party indemnity provision
+235 Qualifying pension scheme indemnity provision
+236 Qualifying indemnity provision to be disclosed in directors’ report
+237 Copy of qualifying indemnity provision to be available for inspection
+238 Right of member to inspect and request copy
 
-775-115 Economic set-off to be treated as legal set-off...............212
+_Ratification of acts giving rise to liability_
 
-775-120 Non-arm’s length transactions........................................212
+239 Ratification of acts of directors
 
-775-125 CGT consequences of the acquisition of foreign
-currency as a result of forex realisation event 2 or
-3......................................................................................213
+**CHAPTER 8**
 
-775-130 Certain deductions not allowable ...................................213
+DIRECTORS’ RESIDENTIAL ADDRESSES: PROTECTION FROM DISCLOSURE
 
-775-135 Right to receive or pay foreign currency........................213
+240 Protected information
+241 Protected information: restriction on use or disclosure by company
+242 Protected information: restriction on use or disclosure by registrar
+243 Permitted use or disclosure by the registrar
+244 Disclosure under court order
+245 Circumstances in which registrar may put address on the public record
+246 Putting the address on the public record
 
-775-140 Obligation to pay or receive foreign currency................214
+**CHAPTER 9**
 
-775-145 Application of forex realisation events to currency
-and fungible rights and obligations ................................215
+SUPPLEMENTARY PROVISIONS
 
-775-150 Transitional election.......................................................215
+_Provision for employees on cessation or transfer of business_
 
-775-155 Applicable commencement date ....................................216
+247 Power to make provision for employees on cessation or transfer of business
 
-775-160 Exception—event happens before the applicable
-commencement date.......................................................216
+_Records of meetings of directors_
 
-775-165 Exception—currency or right acquired, or
-obligation incurred, before the applicable
-commencement date.......................................................216
-
-775-168 Exception—disposal or redemption of traditional
-securities.........................................................................219
-
-775-175 Application to things happening before
-commencement...............................................................219
-
-##### Subdivision 775-C—Roll-over relief for facility agreements 219
-
-##### Guide to Subdivision 775-C 219
-
-775-180 What this Subdivision is about.......................................219
-
-_Income Tax Assessment Act 1997_ _xi_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+248 Minutes of directors’ meetings
+249 Minutes as evidence
 
 
 -----
 
-##### Operative provisions 221
+xii _Companies Act 2006 (c. 46)_
 
-775-185 What is a facility agreement? .........................................221
+_Meaning of "director" and "shadow director"_
 
-775-190 What is an eligible security? ..........................................221
+250 “Director”
+251 “Shadow director”
 
-775-195 You may choose roll-over relief for a facility
-agreement .......................................................................221
+_Other definitions_
 
-775-200 Forex realisation event 4 does not apply........................223
+252 Persons connected with a director
+253 Members of a director’s family
+254 Director “connected with” a body corporate
+255 Director “controlling” a body corporate
+256 Associated bodies corporate
+257 References to company’s constitution
 
-775-205 What is a roll-over?........................................................223
+_General_
 
-775-210 Notional loan ..................................................................224
+258 Power to increase financial limits
+259 Transactions under foreign law
 
-775-215 Discharge of obligation to pay the principal
-amount of a notional loan under a facility
-agreement—forex realisation event 6.............................228
+**PART 11**
 
-775-220 Material variation of a facility agreement—forex
-realisation event 7...........................................................230
+DERIVATIVE CLAIMS AND PROCEEDINGS BY MEMBERS
 
-##### Subdivision 775-D—Qualifying forex accounts that pass the limited balance test 233
+**CHAPTER 1**
 
-##### Guide to Subdivision 775-D 233
+DERIVATIVE CLAIMS IN ENGLAND AND WALES OR NORTHERN IRELAND
 
-775-225 What this Subdivision is about.......................................233
+260 Derivative claims
+261 Application for permission to continue derivative claim
+262 Application for permission to continue claim as a derivative claim
+263 Whether permission to be given
+264 Application for permission to continue derivative claim brought by another
+member
 
-##### Operative provisions 234
+**CHAPTER 2**
 
-775-230 Election to have this Subdivision apply to one or
-more qualifying forex accounts......................................234
+DERIVATIVE PROCEEDINGS IN SCOTLAND
 
-775-235 Variation of election.......................................................235
+265 Derivative proceedings
+266 Requirement for leave and notice
+267 Application to continue proceedings as derivative proceedings
+268 Granting of leave
+269 Application by member to be substituted for member pursuing derivative
+proceedings
 
-775-240 Withdrawal of election ...................................................235
+**PART 12**
 
-775-245 When does a qualifying forex account pass the
-_limited balance test?.......................................................235_
+COMPANY SECRETARIES
 
-775-250 Tax consequences of passing the limited balance
-test ..................................................................................240
+_Private companies_
 
-775-255 Notional realisation when qualifying forex account
-starts to pass the limited balance test..............................240
-
-775-260 Modification of tax recognition time..............................241
-
-##### Subdivision 775-E—Retranslation for qualifying forex accounts 242
-
-##### Guide to Subdivision 775-E 242
-
-775-265 What this Subdivision is about.......................................242
-
-##### Operative provisions 243
-
-775-270 You may choose retranslation for a qualifying
-forex account ..................................................................243
-
-775-275 Withdrawal of choice .....................................................244
-
-775-280 Tax consequences of choosing retranslation for an
-account............................................................................244
-
-_xii_ _Income Tax Assessment Act 1997_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+270 Private company not required to have secretary
 
 
 -----
 
-775-285 Retranslation of gains and losses relating to a
-qualifying forex account—forex realisation event
-8......................................................................................245
+_Companies Act 2006 (c. 46)_ xiii
 
-##### Subdivision 775-F—Retranslation under foreign exchange retranslation election under Subdivision 230-D 247
+_Public companies_
 
-##### Guide to Subdivision 775-F 247
+271 Public company required to have secretary
+272 Direction requiring public company to appoint secretary
+273 Qualifications of secretaries of public companies
 
-775-290 What this Subdivision is about.......................................247
+_Provisions applying to private companies with a secretary and to public companies_
 
-775-295 When this Subdivision applies .......................................248
+274 Discharge of functions where office vacant or secretary unable to act
+275 Duty to keep register of secretaries
+276 Duty to notify registrar of changes
+277 Particulars of secretaries to be registered: individuals
+278 Particulars of secretaries to be registered: corporate secretaries and firms
+279 Particulars of secretaries to be registered: power to make regulations
+280 Acts done by person in dual capacity
 
-775-300 Tax consequences of choosing retranslation for
-arrangement....................................................................249
+**PART 13**
 
-775-305 Retranslation of gains and losses relating to
-arrangement to which foreign exchange
-retranslation election applies—forex realisation
-event 9 ............................................................................250
+RESOLUTIONS AND MEETINGS
 
-775-310 When election ceases to apply to arrangement ..............251
+**CHAPTER 1**
 
-775-315 Balancing adjustment when election ceases to
-apply to arrangement......................................................251
+GENERAL PROVISIONS ABOUT RESOLUTIONS
 
-#### Division 802—Foreign residents’ income with an underlying foreign source 253
+281 Resolutions
+282 Ordinary resolutions
+283 Special resolutions
+284 Votes: general rules
+285 Votes: specific requirements
+286 Votes of joint holders of shares
+287 Saving for provisions of articles as to determination of entitlement to vote
 
-##### Subdivision 802-A—Conduit foreign income 253
+**CHAPTER 2**
 
-##### Guide to Subdivision 802-A 253
+WRITTEN RESOLUTIONS
 
-802-5 What this Subdivision is about.......................................253
+_General provisions about written resolutions_
 
-##### Operative provisions 254
+288 Written resolutions of private companies
+289 Eligible members
 
-802-10 Objects............................................................................254
+_Circulation of written resolutions_
 
-802-15 Foreign residents—exempting CFI from
-Australian tax .................................................................254
+290 Circulation date
+291 Circulation of written resolutions proposed by directors
+292 Members’ power to require circulation of written resolution
+293 Circulation of written resolution proposed by members
+294 Expenses of circulation
+295 Application not to circulate members’ statement
 
-802-17 Trust estates and foreign resident beneficiaries—
-exempting CFI from Australian tax................................255
+_Agreeing to written resolutions_
 
-802-20 Distributions between Australian corporate tax
-entities—non-assessable non-exempt income................256
-
-802-25 Conduit foreign income of an Australian corporate
-tax entity.........................................................................258
-
-802-30 Foreign source income amounts.....................................258
-
-802-35 Capital gains and losses..................................................260
-
-802-40 Effect of foreign income tax offset on conduit
-foreign income................................................................260
-
-802-45 Previous declarations of conduit foreign income...........261
-
-802-50 Receipt of an unfranked distribution from another
-Australian corporate tax entity .......................................261
-
-802-55 No double benefits..........................................................261
-
-_Income Tax Assessment Act 1997_ _xiii_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+296 Procedure for signifying agreement to written resolution
+297 Period for agreeing to written resolution
 
 
 -----
 
-802-60 No streaming of distributions.........................................262
+xiv _Companies Act 2006 (c. 46)_
 
-#### Division 815—Cross-border transfer pricing 264
+_Supplementary_
 
-##### Subdivision 815-A—Treaty-equivalent cross-border transfer pricing rules 264
+298 Sending documents relating to written resolutions by electronic means
+299 Publication of written resolution on website
+300 Relationship between this Chapter and provisions of company’s articles
 
-##### Guide to Subdivision 815-A 264
+**CHAPTER 3**
 
-815-1 What this Subdivision is about.......................................264
+RESOLUTIONS AT MEETINGS
 
-##### Operative provisions 265
+_General provisions about resolutions at meetings_
 
-815-5 Object .............................................................................265
+301 Resolutions at general meetings
 
-815-10 Transfer pricing benefit may be negated........................265
+_Calling meetings_
 
-815-15 When an entity gets a transfer pricing benefit ...............266
+302 Directors’ power to call general meetings
+303 Members’ power to require directors to call general meeting
+304 Directors’ duty to call meetings required by members
+305 Power of members to call meeting at company’s expense
+306 Power of court to order meeting
 
-815-20 Cross-border transfer pricing guidance ..........................268
+_Notice of meetings_
 
-815-25 Modified transfer pricing benefit for thin
-capitalisation...................................................................269
+307 Notice required of general meeting
+308 Manner in which notice to be given
+309 Publication of notice of meeting on website
+310 Persons entitled to receive notice of meetings
+311 Contents of notices of meetings
+312 Resolution requiring special notice
+313 Accidental failure to give notice of resolution or meeting
 
-815-30 Determinations negating transfer pricing benefit...........269
+_Members’ statements_
 
-815-35 Consequential adjustments.............................................270
+314 Members’ power to require circulation of statements
+315 Company’s duty to circulate members’ statement
+316 Expenses of circulating members’ statement
+317 Application not to circulate members’ statement
 
-815-40 No double taxation .........................................................273
+_Procedure at meetings_
 
-##### Subdivision 815-B—Arm’s length principle for cross-border conditions between entities 273
+318 Quorum at meetings
+319 Chairman of meeting
+320 Declaration by chairman on a show of hands
+321 Right to demand a poll
+322 Voting on a poll
+323 Representation of corporations at meetings
 
-##### Guide to Subdivision 815-B 273
+_Proxies_
 
-815-101 What this Subdivision is about.......................................273
-
-##### Operative provisions 274
-
-815-105 Object .............................................................................274
-
-815-110 Operation of Subdivision................................................275
-
-815-115 Substitution of arm’s length conditions..........................275
-
-815-120 When an entity gets a transfer pricing benefit ...............276
-
-815-125 Meaning of arm’s length conditions ..............................278
-
-815-130 Relevance of actual commercial or financial
-relations ..........................................................................279
-
-815-135 Guidance.........................................................................280
-
-815-140 Modification for thin capitalisation................................281
-
-815-145 Consequential adjustments.............................................281
-
-815-150 Amendment of assessments............................................283
-
-##### Subdivision 815-C—Arm’s length principle for permanent establishments 283
-
-##### Guide to Subdivision 815-C 283
-
-815-201 What this Subdivision is about.......................................283
-
-_xiv_ _Income Tax Assessment Act 1997_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+324 Rights to appoint proxies
+325 Notice of meeting to contain statement of rights
+326 Company-sponsored invitations to appoint proxies
+327 Notice required of appointment of proxy etc
+328 Chairing meetings
 
 
 -----
 
-##### Operative provisions 284
+_Companies Act 2006 (c. 46)_ xv
 
-815-205 Object .............................................................................284
+329 Right of proxy to demand a poll
+330 Notice required of termination of proxy’s authority
+331 Saving for more extensive rights conferred by articles
 
-815-210 Operation of Subdivision................................................284
+_Adjourned meetings_
 
-815-215 Substitution of arm’s length profits................................285
+332 Resolution passed at adjourned meeting
 
-815-220 When an entity gets a transfer pricing benefit ...............285
+_Electronic communications_
 
-815-225 Meaning of arm’s length profits.....................................286
+333 Sending documents relating to meetings etc in electronic form
 
-815-230 Source rules for certain arm’s length profits..................287
+_Application to class meetings_
 
-815-235 Guidance.........................................................................287
+334 Application to class meetings
+335 Application to class meetings: companies without a share capital
 
-815-240 Amendment of assessments............................................288
+**CHAPTER 4**
 
-##### Subdivision 815-D—Special rules for trusts and partnerships 288
+PUBLIC COMPANIES: ADDITIONAL REQUIREMENTS FOR AGMS
 
-##### Guide to Subdivision 815-D 288
+336 Public companies: annual general meeting
+337 Public companies: notice of AGM
+338 Public companies: members’ power to require circulation of resolutions for
+AGMs
+339 Public companies: company’s duty to circulate members’ resolutions for
+AGMs
+340 Public companies: expenses of circulating members’ resolutions for AGM
 
-815-301 What this Subdivision is about.......................................288
+**CHAPTER 5**
 
-##### Operative provisions 289
+ADDITIONAL REQUIREMENTS FOR QUOTED COMPANIES
 
-815-305 Special rule for trusts......................................................289
+_Website publication of poll results_
 
-815-310 Special rules for partnerships .........................................289
+341 Results of poll to be made available on website
 
-##### Subdivision 815-E—Reporting obligations for country by country reporting entities 289
+_Independent report on poll_
 
-##### Guide to Subdivision 815-E 289
+342 Members’ power to require independent report on poll
+343 Appointment of independent assessor
+344 Independence requirement
+345 Meaning of “associate”
+346 Effect of appointment of a partnership
+347 The independent assessor’s report
+348 Rights of independent assessor: right to attend meeting etc
+349 Rights of independent assessor: right to information
+350 Offences relating to provision of information
+351 Information to be made available on website
 
-815-350 What this Subdivision is about.......................................289
+_Supplementary_
 
-##### Operative provisions 290
-
-815-355 Requirement to give statements .....................................290
-
-815-360 Replacement reporting periods.......................................292
-
-815-365 Exemptions.....................................................................292
-
-815-370 Meaning of country by country reporting entity (or
-_CBC reporting entity).....................................................292_
-
-815-375 Meaning of country by country reporting parent
-(or CBC reporting parent)..............................................293
-
-815-380 Meaning of country by country reporting group
-(or CBC reporting group)...............................................293
-
-#### Division 820—Thin capitalisation rules 295
-
-##### Guide to Division 820 296
-
-820-1 What this Division is about ............................................296
-
-820-5 Does this Division apply to an entity?............................296
-
-820-10 Map of Division..............................................................298
-
-##### Subdivision 820-A—Preliminary 299
-
-820-30 Object of Division ..........................................................300
-
-_Income Tax Assessment Act 1997_ _xv_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+352 Application of provisions to class meetings
+353 Requirements as to website availability
 
 
 -----
 
-820-32 Exemption for private or domestic assets and
-non-debt liabilities..........................................................300
+xvi _Companies Act 2006 (c. 46)_
 
-820-35 Application—$2 million threshold.................................300
+354 Power to limit or extend the types of company to which provisions of this
+Chapter apply
 
-820-37 Application—assets threshold........................................300
+**CHAPTER 6**
 
-820-39 Exemption of certain special purpose entities................303
+RECORDS OF RESOLUTIONS AND MEETINGS
 
-820-40 Meaning of debt deduction.............................................304
+355 Records of resolutions and meetings etc
+356 Records as evidence of resolutions etc
+357 Records of decisions by sole member
+358 Inspection of records of resolutions and meetings
+359 Records of resolutions and meetings of class of members
 
-##### Subdivision 820-B—Thin capitalisation rules for outward investing entities (non-ADI) 306
+**CHAPTER 7**
 
-##### Guide to Subdivision 820-B 306
+SUPPLEMENTARY PROVISIONS
 
-820-65 What this Subdivision is about.......................................306
+360 Computation of periods of notice etc: clear day rule
+361 Meaning of “quoted company”
 
-##### Operative provisions 307
+**PART 14**
 
-820-85 Thin capitalisation rule for outward investing
-entities (non-ADI) ..........................................................307
+CONTROL OF POLITICAL DONATIONS AND EXPENDITURE
 
-820-90 Maximum allowable debt...............................................310
+_Introductory_
 
-820-95 Safe harbour debt amount—outward investor
-(general)..........................................................................312
+362 Introductory
 
-820-100 Safe harbour debt amount—outward investor
-(financial) .......................................................................314
+_Donations and expenditure to which this Part applies_
 
-820-105 Arm’s length debt amount..............................................317
+363 Political parties, organisations etc to which this Part applies
+364 Meaning of “political donation”
+365 Meaning of “political expenditure”
 
-820-110 Worldwide gearing debt amount—outward
-investor that is not also an inward investment
-vehicle ............................................................................321
+_Authorisation required for donations or expenditure_
 
-820-111 Worldwide gearing debt amount—outward
-investor that is also an inward investment vehicle.........323
+366 Authorisation required for donations or expenditure
+367 Form of authorising resolution
+368 Period for which resolution has effect
 
-820-115 Amount of debt deduction disallowed............................325
+_Remedies in case of unauthorised donations or expenditure_
 
-820-120 Application to part year periods .....................................325
+369 Liability of directors in case of unauthorised donation or expenditure
+370 Enforcement of directors’ liabilities by shareholder action
+371 Enforcement of directors’ liabilities by shareholder action: supplementary
+372 Costs of shareholder action
+373 Information for purposes of shareholder action
 
-##### Subdivision 820-C—Thin capitalisation rules for inward investing entities (non-ADI) 328
+_Exemptions_
 
-##### Guide to Subdivision 820-C 328
-
-820-180 What this Subdivision is about.......................................328
-
-##### Operative provisions 329
-
-820-185 Thin capitalisation rule for inward investing
-entities (non-ADI) ..........................................................329
-
-820-190 Maximum allowable debt...............................................332
-
-820-195 Safe harbour debt amount—inward investment
-vehicle (general).............................................................334
-
-820-200 Safe harbour debt amount—inward investment
-vehicle (financial)...........................................................335
-
-820-205 Safe harbour debt amount—inward investor
-(general)..........................................................................338
-
-_xvi_ _Income Tax Assessment Act 1997_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+374 Trade unions
+375 Subscription for membership of trade association
+376 All-party parliamentary groups
+377 Political expenditure exempted by order
 
 
 -----
 
-820-210 Safe harbour debt amount—inward investor
-(financial) .......................................................................339
+_Companies Act 2006 (c. 46)_ xvii
 
-820-215 Arm’s length debt amount..............................................342
+378 Donations not amounting to more than £5,000 in any twelve month period
 
-820-216 Worldwide gearing debt amount—inward
-investment vehicle (general) ..........................................346
+_Supplementary provisions_
 
-820-217 Worldwide gearing debt amount—inward
-investment vehicle (financial) ........................................347
+379 Minor definitions
 
-820-218 Worldwide gearing debt amount—inward investor
-(general)..........................................................................348
+**PART 15**
 
-820-219 Worldwide gearing debt amount—inward investor
-(financial) .......................................................................349
+ACCOUNTS AND REPORTS
 
-820-220 Amount of debt deduction disallowed............................350
+**CHAPTER 1**
 
-820-225 Application to part year periods .....................................350
+INTRODUCTION
 
-##### Subdivision 820-D—Thin capitalisation rules for outward investing entities (ADI) 353
+_General_
 
-##### Guide to Subdivision 820-D 353
+380 Scheme of this Part
 
-820-295 What this Subdivision is about.......................................353
+_Companies subject to the small companies regime_
 
-##### Operative provisions 354
+381 Companies subject to the small companies regime
+382 Companies qualifying as small: general
+383 Companies qualifying as small: parent companies
+384 Companies excluded from the small companies regime
 
-820-300 Thin capitalisation rule for outward investing
-entities (ADI)..................................................................354
+_Quoted and unquoted companies_
 
-820-305 Minimum capital amount ...............................................355
+385 Quoted and unquoted companies
 
-820-310 Safe harbour capital amount...........................................356
+**CHAPTER 2**
 
-820-315 Arm’s length capital amount ..........................................358
+ACCOUNTING RECORDS
 
-820-320 Worldwide capital amount .............................................360
+386 Duty to keep accounting records
+387 Duty to keep accounting records: offence
+388 Where and for how long records to be kept
+389 Where and for how long records to be kept: offences
 
-820-325 Amount of debt deduction disallowed............................362
+**CHAPTER 3**
 
-820-330 Application to part year periods .....................................363
+A COMPANY’S FINANCIAL YEAR
 
-##### Subdivision 820-E—Thin capitalisation rules for inward investing entities (ADI) 364
+390 A company’s financial year
+391 Accounting reference periods and accounting reference date
+392 Alteration of accounting reference date
 
-##### Guide to Subdivision 820-E 364
+**CHAPTER 4**
 
-820-390 What this Subdivision is about.......................................364
+ANNUAL ACCOUNTS
 
-##### Operative provisions 365
+_General_
 
-820-395 Thin capitalisation rule for inward investing
-entities (ADI)..................................................................365
-
-820-400 Minimum capital amount ...............................................366
-
-820-405 Safe harbour capital amount...........................................367
-
-820-410 Arm’s length capital amount ..........................................367
-
-820-415 Amount of debt deduction disallowed............................370
-
-820-420 Application to part year periods .....................................370
-
-_Income Tax Assessment Act 1997_ _xvii_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+393 Accounts to give true and fair view
 
 
 -----
 
-##### Subdivision 820-EA—Some financial entities may choose to be treated as ADIs 372
+xviii _Companies Act 2006 (c. 46)_
 
-820-430 When choice can be made, and what effect it has..........372
+_Individual accounts_
 
-820-435 Conditions ......................................................................374
+394 Duty to prepare individual accounts
+395 Individual accounts: applicable accounting framework
+396 Companies Act individual accounts
+397 IAS individual accounts
 
-820-440 Revocation of choice......................................................376
+_Group accounts: small companies_
 
-820-445 How this Subdivision interacts with
-Subdivision 820-FA .......................................................376
+398 Option to prepare group accounts
 
-##### Subdivision 820-FA—How the thin capitalisation rules apply to consolidated groups and MEC groups 377
+_Group accounts: other companies_
 
-##### Guide to Subdivision 820-FA 377
+399 Duty to prepare group accounts
+400 Exemption for company included in EEA group accounts of larger group
+401 Exemption for company included in non-EEA group accounts of larger group
+402 Exemption if no subsidiary undertakings need be included in the
+consolidation
 
-820-579 What this Subdivision is about.......................................377
+_Group accounts: general_
 
-##### Operative provisions 377
+403 Group accounts: applicable accounting framework
+404 Companies Act group accounts
+405 Companies Act group accounts: subsidiary undertakings included in the
+consolidation
+406 IAS group accounts
+407 Consistency of financial reporting within group
+408 Individual profit and loss account where group accounts prepared
 
-820-581 How this Division applies to head company for
-income year in which group comes into existence
-or ceases to exist.............................................................377
+_Information to be given in notes to the accounts_
 
-820-583 Classification of head company .....................................378
+409 Information about related undertakings
+410 Information about related undertakings: alternative compliance
+411 Information about employee numbers and costs
+412 Information about directors’ benefits: remuneration
+413 Information about directors’ benefits: advances, credit and guarantees
 
-820-584 Exempt special purpose entities treated as not
-being member of group ..................................................381
+_Approval and signing of accounts_
 
-820-585 Exemption for consolidated group headed by
-foreign-controlled Australian ADI or its holding
-company .........................................................................381
+414 Approval and signing of accounts
 
-820-587 Additional application of Subdivision 820-D to
-MEC group that includes foreign-controlled
-Australian ADI ...............................................................382
+**CHAPTER 5**
 
-820-588 Choice to treat specialist credit card institutions as
-being financial entities and not ADIs.............................382
+DIRECTORS’ REPORT
 
-820-589 How Subdivision 820-D applies to a MEC group..........384
+_Directors’ report_
 
-##### Subdivision 820-FB—Grouping branches of foreign banks and foreign financial entities with a consolidated group, MEC group or single Australian resident company 385
-
-##### Guide to Subdivision 820-FB 385
-
-820-595 What this Subdivision is about.......................................385
-
-##### Choice to group with branches of foreign banks and foreign financial entities 386
-
-820-597 Choice by head company of consolidated group or
-MEC group.....................................................................386
-
-820-599 Choice by Australian resident company outside
-consolidatable group and MEC group............................387
-
-_xviii_ _Income Tax Assessment Act 1997_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+415 Duty to prepare directors’ report
+416 Contents of directors’ report: general
+417 Contents of directors’ report: business review
+418 Contents of directors’ report: statement as to disclosure to auditors
+419 Approval and signing of directors’ report
 
 
 -----
 
-##### Effect of choice 388
+_Companies Act 2006 (c. 46)_ xix
 
-820-601 Application .....................................................................388
+**CHAPTER 6**
 
-820-603 General ...........................................................................388
+QUOTED COMPANIES: DIRECTORS’ REMUNERATION REPORT
 
-820-605 Effect on establishment entity if certain debt
-deductions disallowed ....................................................390
+420 Duty to prepare directors’ remuneration report
+421 Contents of directors’ remuneration report
+422 Approval and signing of directors’ remuneration report
 
-820-607 Effect on test periods under this Division ......................391
+**CHAPTER 7**
 
-820-609 Effect on classification of head company or single
-company .........................................................................391
+PUBLICATION OF ACCOUNTS AND REPORTS
 
-820-610 Choice not to be outward investing entity (ADI) or
-inward investing entity (ADI) ........................................394
+_Duty to circulate copies of accounts and reports_
 
-820-611 Values to be based on what would be in
-consolidated accounts for group.....................................395
+423 Duty to circulate copies of annual accounts and reports
+424 Time allowed for sending out copies of accounts and reports
+425 Default in sending out copies of accounts and reports: offences
 
-820-613 How Subdivision 820-D applies.....................................395
+_Option to provide summary financial statement_
 
-820-615 How Subdivision 820-E applies.....................................397
+426 Option to provide summary financial statement
+427 Form and contents of summary financial statement: unquoted companies
+428 Form and contents of summary financial statement: quoted companies
+429 Summary financial statements: offences
 
-##### Subdivision 820-G—Calculating the average values 398
+_Quoted companies: requirements as to website publication_
 
-##### Guide to Subdivision 820-G 398
+430 Quoted companies: annual accounts and reports to be made available on
+website
 
-820-625 What this Subdivision is about.......................................398
+_Right of member or debenture holder to demand copies of accounts and reports_
 
-##### How to calculate the average values 399
+431 Right of member or debenture holder to copies of accounts and reports:
+unquoted companies
+432 Right of member or debenture holder to copies of accounts and reports:
+quoted companies
 
-820-630 Methods of calculating average values ..........................399
+_Requirements in connection with publication of accounts and reports_
 
-820-635 The opening and closing balances method.....................400
+433 Name of signatory to be stated in published copies of accounts and reports
+434 Requirements in connection with publication of statutory accounts
+435 Requirements in connection with publication of non-statutory accounts
+436 Meaning of “publication” in relation to accounts and reports
 
-820-640 The 3 measurement days method ...................................401
+**CHAPTER 8**
 
-820-645 The frequent measurement method ................................402
+PUBLIC COMPANIES: LAYING OF ACCOUNTS AND REPORTS BEFORE GENERAL MEETING
 
-##### Special rules about values and valuation 405
-
-820-675 Amount to be expressed in Australian currency ............405
-
-820-680 Valuation of assets, liabilities and equity capital ...........405
-
-820-682 Recognition of assets and liabilities—modifying
-application of accounting standards ...............................406
-
-820-685 Valuation of debt capital ................................................407
-
-820-690 Commissioner’s power...................................................407
-
-##### Subdivision 820-H—Control of entities 408
-
-##### Guide to Subdivision 820-H 408
-
-820-740 What this Subdivision is about.......................................408
-
-##### Australian controller of a foreign entity 409
-
-820-745 What is an Australian controlled foreign entity?............409
-
-820-750 What is an Australian controller of a controlled
-foreign company?...........................................................410
-
-820-755 What is an Australian controller of a controlled
-foreign trust?...................................................................410
-
-_Income Tax Assessment Act 1997_ _xix_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+437 Public companies: laying of accounts and reports before general meeting
+438 Public companies: offence of failure to lay accounts and reports
 
 
 -----
 
-820-760 What is an Australian controller of a controlled
-foreign corporate limited partnership? ...........................411
+xx _Companies Act 2006 (c. 46)_
 
-##### Foreign controlled Australian entity 411
+**CHAPTER 9**
 
-820-780 What is a foreign controlled Australian entity?..............411
+QUOTED COMPANIES: MEMBERS’ APPROVAL OF DIRECTORS’ REMUNERATION REPORT
 
-820-785 What is a foreign controlled Australian company?........412
+439 Quoted companies: members’ approval of directors’ remuneration report
+440 Quoted companies: offences in connection with procedure for approval
 
-820-790 What is a foreign controlled Australian trust?................413
+**CHAPTER 10**
 
-820-795 What is a foreign controlled Australian
-partnership? ....................................................................415
+FILING OF ACCOUNTS AND REPORTS
 
-##### Thin capitalisation control interest 417
+_Duty to file accounts and reports_
 
-820-815 General rule about thin capitalisation control
-interest in a company, trust or partnership .....................417
+441 Duty to file accounts and reports with the registrar
+442 Period allowed for filing accounts
+443 Calculation of period allowed
 
-820-820 Special rules about calculating TC control interest
-held by an entity .............................................................418
+_Filing obligations of different descriptions of company_
 
-820-825 Special rules about calculating TC control interests
-held by a group of entities ..............................................419
+444 Filing obligations of companies subject to small companies regime
+445 Filing obligations of medium-sized companies
+446 Filing obligations of unquoted companies
+447 Filing obligations of quoted companies
+448 Unlimited companies exempt from obligation to file accounts
 
-820-830 Special rules about determining percentage of TC
-control interest................................................................419
+_Requirements where abbreviated accounts delivered_
 
-820-835 Commissioner’s power...................................................420
+449 Special auditor’s report where abbreviated accounts delivered
+450 Approval and signing of abbreviated accounts
 
-##### TC direct control interest, TC indirect control interest and TC control tracing interest 420
+_Failure to file accounts and reports_
 
-820-855 TC direct control interest in a company .........................420
+451 Default in filing accounts and reports: offences
+452 Default in filing accounts and reports: court order
+453 Civil penalty for failure to file accounts and reports
 
-820-860 TC direct control interest in a trust.................................421
+**CHAPTER 11**
 
-820-865 TC direct control interest in a partnership......................422
+REVISION OF DEFECTIVE ACCOUNTS AND REPORTS
 
-820-870 TC indirect control interest in a company, trust or
-partnership......................................................................423
+_Voluntary revision_
 
-820-875 TC control tracing interest in a company, trust or
-partnership......................................................................426
+454 Voluntary revision of accounts etc
 
-##### Subdivision 820-HA—Controlled foreign entity debt and controlled foreign entity equity 427
+_Secretary of State’s notice_
 
-##### Guide to Subdivision 820-HA 427
+455 Secretary of State’s notice in respect of accounts or reports
 
-820-880 What this Subdivision is about.......................................427
+_Application to court_
 
-820-881 Application .....................................................................427
-
-820-885 What is controlled foreign entity debt? ..........................428
-
-820-890 What is controlled foreign entity equity? .......................428
-
-##### Subdivision 820-I—Associate entities 429
-
-##### Guide to Subdivision 820-I 429
-
-820-900 What this Subdivision is about.......................................429
-
-820-905 Associate entity ..............................................................429
-
-820-910 Associate entity debt ......................................................435
-
-_xx_ _Income Tax Assessment Act 1997_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+456 Application to court in respect of defective accounts or reports
+457 Other persons authorised to apply to the court
+458 Disclosure of information by tax authorities
 
 
 -----
 
-820-915 Associate entity equity ...................................................437
+_Companies Act 2006 (c. 46)_ xxi
 
-820-920 Associate entity excess amount......................................438
+_Power of authorised person to require documents etc_
 
-##### Subdivision 820-J—Equity interest in a trust or partnership 443
+459 Power of authorised person to require documents, information and
+explanations
+460 Restrictions on disclosure of information obtained under compulsory powers
+461 Permitted disclosure of information obtained under compulsory powers
+462 Power to amend categories of permitted disclosure
 
-##### Guide to Subdivision 820-J 443
+**CHAPTER 12**
 
-820-925 What this Subdivision is about.......................................443
+SUPPLEMENTARY PROVISIONS
 
-820-930 _Equity interest in a trust or partnership ..........................443_
+_Liability for false or misleading statements in reports_
 
-##### Subdivision 820-JA—Worldwide debt and equity concepts 446
+463 Liability for false or misleading statements in reports
 
-##### Guide to Subdivision 820-JA 446
+_Accounting and reporting standards_
 
-820-931 What this Subdivision is about.......................................446
+464 Accounting standards
 
-##### Operative provisions 447
+_Companies qualifying as medium-sized_
 
-820-932 Worldwide debt and worldwide equity ..........................447
+465 Companies qualifying as medium-sized: general
+466 Companies qualifying as medium-sized: parent companies
+467 Companies excluded from being treated as medium-sized
 
-820-933 Statement worldwide debt, statement worldwide
-equity and statement worldwide assets ..........................448
+_General power to make further provision about accounts and reports_
 
-820-935 Meaning of audited consolidated financial
-_statements .......................................................................449_
+468 General power to make further provision about accounts and reports
 
-##### Subdivision 820-K—Zero-capital amount 451
+_Other supplementary provisions_
 
-##### Guide to Subdivision 820-K 451
+469 Preparation and filing of accounts in euros
+470 Power to apply provisions to banking partnerships
+471 Meaning of “annual accounts” and related expressions
+472 Notes to the accounts
+473 Parliamentary procedure for certain regulations under this Part
+474 Minor definitions
 
-820-940 What this Subdivision is about.......................................451
+**PART 16**
 
-820-942 How to work out the zero-capital amount......................451
+AUDIT
 
-##### Subdivision 820-KA—Cost-free debt capital and excluded equity interests 455
+**CHAPTER 1**
 
-##### Guide to Subdivision 820-KA 455
+REQUIREMENT FOR AUDITED ACCOUNTS
 
-820-945 What this Subdivision is about.......................................455
+_Requirement for audited accounts_
 
-820-946 _Cost-free debt capital and excluded equity interest .......456_
-
-##### Subdivision 820-L—Record keeping requirements 458
-
-##### Guide to Subdivision 820-L 458
-
-820-950 What this Subdivision is about.......................................458
-
-##### Records about Australian permanent establishments 459
-
-820-960 Records about Australian permanent
-establishments ................................................................459
-
-820-962 Records about Australian permanent
-establishments—exemptions from Australian
-accounting standards ......................................................462
-
-820-965 Review of Commissioner’s decision..............................463
-
-##### Records about arm’s length amounts 463
-
-820-980 Records about arm’s length debt amount and arm’s
-length capital amount .....................................................463
-
-_Income Tax Assessment Act 1997_ _xxi_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+475 Requirement for audited accounts
+476 Right of members to require audit
 
 
 -----
 
-##### Offences committed by certain entities 464
+xxii _Companies Act 2006 (c. 46)_
 
-820-990 Offences—treatment of partnerships..............................464
+_Exemption from audit: small companies_
 
-820-995 Offences—treatment of unincorporated companies.......465
+477 Small companies: conditions for exemption from audit
+478 Companies excluded from small companies exemption
+479 Availability of small companies exemption in case of group company
 
-#### Division 830—Foreign hybrids 467
+_Exemption from audit: dormant companies_
 
-##### Guide to Division 830 467
+480 Dormant companies: conditions for exemption from audit
+481 Companies excluded from dormant companies exemption
 
-830-1 What this Division is about ............................................467
+_Companies subject to public sector audit_
 
-##### Subdivision 830-A—Meaning of “foreign hybrid” 467
+482 Non-profit-making companies subject to public sector audit
+483 Scottish public sector companies: audit by Auditor General for Scotland
 
-830-5 Foreign hybrid ................................................................468
+_General power of amendment by regulations_
 
-830-10 Foreign hybrid limited partnership.................................468
+484 General power of amendment by regulations
 
-830-15 Foreign hybrid company ................................................469
+**CHAPTER 2**
 
-##### Subdivision 830-B—Extension of normal partnership provisions to foreign hybrid companies 472
+APPOINTMENT OF AUDITORS
 
-830-20 Treatment of company as a partnership .........................472
+_Private companies_
 
-830-25 Partners are the shareholders in the company ................473
+485 Appointment of auditors of private company: general
+486 Appointment of auditors of private company: default power of Secretary of
+State
+487 Term of office of auditors of private company
+488 Prevention by members of deemed re-appointment of auditor
 
-830-30 Individual interest of a partner in net income etc.
-equals percentage of notional distribution of
-company’s profits...........................................................473
+_Public companies_
 
-830-35 Partner’s interest in assets ..............................................473
+489 Appointment of auditors of public company: general
+490 Appointment of auditors of public company: default power of Secretary of
+State
+491 Term of office of auditors of public company
 
-830-40 Control and disposal of share in partnership
-income ............................................................................473
+_General provisions_
 
-##### Subdivision 830-C—Special rules applicable while an entity is a foreign hybrid 474
+492 Fixing of auditor’s remuneration
+493 Disclosure of terms of audit appointment
+494 Disclosure of services provided by auditor or associates and related
+remuneration
 
-830-45 Partner’s revenue and net capital losses from
-foreign hybrid not to exceed partner’s loss
-exposure amount.............................................................474
+**CHAPTER 3**
 
-830-50 Deduction etc. where partner’s foreign hybrid
-revenue loss amount and foreign hybrid net capital
-loss amount are less than partner’s loss exposure
-amount............................................................................475
+FUNCTIONS OF AUDITOR
 
-830-55 Meaning of foreign hybrid net capital loss amount .......477
+_Auditor’s report_
 
-830-60 Meaning of loss exposure amount..................................477
-
-830-65 Meaning of outstanding foreign hybrid revenue
-_loss amount.....................................................................479_
-
-830-70 Meaning of outstanding foreign hybrid net capital
-_loss amount.....................................................................480_
-
-830-75 Extended meaning of subject to foreign tax...................480
-
-_xxii_ _Income Tax Assessment Act 1997_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+495 Auditor’s report on company’s annual accounts
+496 Auditor’s report on directors’ report
+497 Auditor’s report on auditable part of directors’ remuneration report
 
 
 -----
 
-##### Subdivision 830-D—Special rules applicable when an entity becomes or ceases to be a foreign hybrid 483
+_Companies Act 2006 (c. 46)_ xxiii
 
-830-80 Setting the tax cost of partners’ interests in the
-assets of an entity that becomes a foreign hybrid...........483
+_Duties and rights of auditors_
 
-830-85 Setting the tax cost of assets of an entity when it
-ceases to be a foreign hybrid ..........................................484
+498 Duties of auditor
+499 Auditor’s general right to information
+500 Auditor’s right to information from overseas subsidiaries
+501 Auditor’s rights to information: offences
+502 Auditor’s rights in relation to resolutions and meetings
 
-830-90 What the expression tax cost is set means......................484
+_Signature of auditor’s report_
 
-830-95 What the expression tax cost setting amount means ......486
+503 Signature of auditor’s report
+504 Senior statutory auditor
+505 Names to be stated in published copies of auditor’s report
+506 Circumstances in which names may be omitted
 
-830-100 What the expression tax cost means...............................489
+_Offences in connection with auditor’s report_
 
-830-105 What the expression asset-based income tax
-_regime means..................................................................490_
+507 Offences in connection with auditor’s report
+508 Guidance for regulatory and prosecuting authorities: England, Wales and
+Northern Ireland
+509 Guidance for regulatory authorities: Scotland
 
-830-110 No disposal of assets etc. on entity becoming or
-ceasing to be a foreign hybrid ........................................490
+**CHAPTER 4**
 
-830-115 Tax losses cannot be transferred to a foreign
-hybrid..............................................................................491
+REMOVAL, RESIGNATION, ETC OF AUDITORS
 
-830-120 End of CFC’s last statutory accounting period ..............491
+_Removal of auditor_
 
-830-125 How long interest in asset, or asset, held .......................492
+510 Resolution removing auditor from office
+511 Special notice required for resolution removing auditor from office
+512 Notice to registrar of resolution removing auditor from office
+513 Rights of auditor who has been removed from office
 
-#### Division 832—Hybrid mismatch rules 493
+_Failure to re-appoint auditor_
 
-##### Guide to Division 832 493
+514 Failure to re-appoint auditor: special procedure required for written
+resolution
+515 Failure to re-appoint auditor: special notice required for resolution at general
+meeting
 
-832-1 What this Division is about ............................................493
+_Resignation of auditor_
 
-##### Subdivision 832-A—Preliminary 494
+516 Resignation of auditor
+517 Notice to registrar of resignation of auditor
+518 Rights of resigning auditor
 
-##### Guide to Subdivision 832-A 494
+_Statement by auditor on ceasing to hold office_
 
-832-5 What this Subdivision is about.......................................494
-
-##### Operative provisions 494
-
-832-10 Entitlement to receive payment......................................494
-
-832-15 Entitlement to receive non-cash benefits........................495
-
-832-20 Losses that arise from payments or parts of
-payments.........................................................................495
-
-832-25 Recipients and payers of a payment...............................496
-
-832-30 How this Division applies to entities..............................497
-
-832-35 Single entity rule otherwise not disregarded ..................498
-
-832-40 Schemes outside Australia..............................................498
-
-832-45 Relationship between this Division and other
-charging provisions in this Act.......................................499
-
-832-50 Relationship between this Division and
-Division 820 ...................................................................499
-
-832-55 Division does not affect foreign residence rules ............499
-
-832-60 Valuation of trading stock affected by hybrid
-mismatch rules................................................................500
-
-_Income Tax Assessment Act 1997_ _xxiii_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+519 Statement by auditor to be deposited with company
+520 Company’s duties in relation to statement
+521 Copy of statement to be sent to registrar
+522 Duty of auditor to notify appropriate audit authority
+523 Duty of company to notify appropriate audit authority
+524 Information to be given to accounting authorities
+525 Meaning of “appropriate audit authority” and “major audit”
 
 
 -----
 
-##### Subdivision 832-B—Concepts relating to mismatches 500
+xxiv _Companies Act 2006 (c. 46)_
 
-##### Guide to Subdivision 832-B 500
+_Supplementary_
 
-832-100 What this Subdivision is about.......................................500
+526 Effect of casual vacancies
 
-##### Operative provisions 501
+**CHAPTER 5**
 
-832-105 When a payment gives rise to a
-deduction/non-inclusion mismatch.................................501
+QUOTED COMPANIES: RIGHT OF MEMBERS TO RAISE AUDIT CONCERNS AT ACCOUNTS
+MEETING
 
-832-110 When a payment gives rise to a
-deduction/deduction mismatch.......................................502
+527 Members’ power to require website publication of audit concerns
+528 Requirements as to website availability
+529 Website publication: company’s supplementary duties
+530 Website publication: offences
+531 Meaning of “quoted company”
 
-832-115 Disregard effect of Division in determining
-deductions.......................................................................504
+**CHAPTER 6**
 
-832-120 Meaning of foreign income tax deduction......................504
+AUDITORS’ LIABILITY
 
-832-125 Meaning of subject to Australian income tax.................505
+_Voidness of provisions protecting auditors from liability_
 
-832-130 Meaning of subject to foreign income tax......................505
+532 Voidness of provisions protecting auditors from liability
 
-832-135 Safe harbour for translation rates ...................................507
+_Indemnity for costs of defending proceedings_
 
-##### Subdivision 832-C—Hybrid financial instrument mismatch 508
+533 Indemnity for costs of successfully defending proceedings
 
-##### Guide to Subdivision 832-C 508
+_Liability limitation agreements_
 
-832-175 What this Subdivision is about.......................................508
+534 Liability limitation agreements
+535 Terms of liability limitation agreement
+536 Authorisation of agreement by members of the company
+537 Effect of liability limitation agreement
+538 Disclosure of agreement by company
 
-##### Operative provisions 509
+**CHAPTER 7**
 
-832-180 Deduction not allowable—Australian primary
-response..........................................................................509
+SUPPLEMENTARY PROVISIONS
 
-832-185 Inclusion in assessable income—Australian
-secondary response.........................................................510
+539 Minor definitions
 
-832-190 Exception where entity not a party to the
-structured arrangement...................................................511
+**PART 17**
 
-832-195 When a hybrid financial instrument mismatch is an
-offshore hybrid mismatch...............................................511
+A COMPANY’S SHARE CAPITAL
 
-832-200 When a payment gives rise to a hybrid financial
-instrument mismatch ......................................................512
+**CHAPTER 1**
 
-832-205 Meaning of Division 832 control group.........................513
+SHARES AND SHARE CAPITAL OF A COMPANY
 
-832-210 Meaning of structured arrangement ..............................513
+_Shares_
 
-832-215 Hybrid mismatch ............................................................514
-
-832-220 Hybrid requirement—payments under financial
-instruments .....................................................................515
-
-832-225 Hybrid requirement—payments under transfers of
-certain financial instruments ..........................................516
-
-832-230 Hybrid mismatch—integrity rule for substitute
-payments.........................................................................516
-
-832-235 Extended operation of this Subdivision in relation
-to concessional foreign taxes..........................................517
-
-_xxiv_ _Income Tax Assessment Act 1997_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+540 Shares
+541 Nature of shares
+542 Nominal value of shares
+543 Numbering of shares
 
 
 -----
 
-832-240 Adjustment if hybrid financial instrument payment
-is income in a later year..................................................518
+_Companies Act 2006 (c. 46)_ xxv
 
-##### Subdivision 832-D—Hybrid payer mismatch 519
+544 Transferability of shares
+545 Companies having a share capital
+546 Issued and allotted share capital
 
-##### Guide to Subdivision 832-D 519
+_Share capital_
 
-832-280 What this Subdivision is about.......................................519
+547 Called-up share capital
+548 Equity share capital
 
-##### Operative provisions 520
+**CHAPTER 2**
 
-832-285 Deduction not allowable—Australian primary
-response..........................................................................520
+ALLOTMENT OF SHARES: GENERAL PROVISIONS
 
-832-290 Inclusion in assessable income—Australian
-secondary response.........................................................521
+_Power of directors to allot shares_
 
-832-295 Exception where entity not a party to the
-structured arrangement...................................................522
+549 Exercise by directors of power to allot shares etc
+550 Power of directors to allot shares etc: private company with only one class of
+shares
+551 Power of directors to allot shares etc: authorisation by company
 
-832-300 When a hybrid payer mismatch is an offshore
-hybrid mismatch.............................................................522
+_Prohibition of commissions, discounts and allowances_
 
-832-305 When a payment gives rise to a hybrid payer
-mismatch ........................................................................522
+552 General prohibition of commissions, discounts and allowances
+553 Permitted commission
 
-832-310 Hybrid mismatch ............................................................523
+_Registration of allotment_
 
-832-315 Hybrid requirement—assume payment was made
-to same recipient but by an ungrouped payer.................524
+554 Registration of allotment
 
-832-320 Hybrid payer...................................................................525
+_Return of allotment_
 
-832-325 Meaning of liable entity .................................................526
+555 Return of allotment by limited company
+556 Return of allotment by unlimited company allotting new class of shares
+557 Offence of failure to make return
 
-832-330 Neutralising amount .......................................................528
+_Supplementary provisions_
 
-832-335 Adjustment if hybrid payer has dual inclusion
-income in a later year .....................................................530
+558 When shares are allotted
+559 Provisions about allotment not applicable to shares taken on formation
 
-##### Subdivision 832-E—Reverse hybrid mismatch 531
+**CHAPTER 3**
 
-##### Guide to Subdivision 832-E 531
+ALLOTMENT OF EQUITY SECURITIES: EXISTING SHAREHOLDERS’ RIGHT OF PRE-EMPTION
 
-832-375 What this Subdivision is about.......................................531
+_Introductory_
 
-##### Operative provisions 532
+560 Meaning of “equity securities” and related expressions
 
-832-380 Deduction not allowable—Australian primary
-response..........................................................................532
+_Existing shareholders’ right of pre-emption_
 
-832-385 Exception where entity not a party to the
-structured arrangement...................................................532
-
-832-390 When a reverse hybrid mismatch is an offshore
-hybrid mismatch.............................................................532
-
-832-395 When a payment gives rise to a reverse hybrid
-mismatch ........................................................................533
-
-832-400 Hybrid mismatch ............................................................534
-
-832-405 Hybrid requirement—assume payment was made
-to an investor ..................................................................534
-
-832-410 Reverse hybrid................................................................536
-
-_Income Tax Assessment Act 1997_ _xxv_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+561 Existing shareholders’ right of pre-emption
+562 Communication of pre-emption offers to shareholders
+563 Liability of company and officers in case of contravention
 
 
 -----
 
-##### Subdivision 832-F—Branch hybrid mismatch 537
+xxvi _Companies Act 2006 (c. 46)_
 
-##### Guide to Subdivision 832-F 537
+_Exceptions to right of pre-emption_
 
-832-450 What this Subdivision is about.......................................537
+564 Exception to pre-emption right: bonus shares
+565 Exception to pre-emption right: issue for non-cash consideration
+566 Exception to pre-emption right: securities held under employees’ share
+scheme
 
-##### Operative provisions 538
+_Exclusion of right of pre-emption_
 
-832-455 Deduction not allowable.................................................538
+567 Exclusion of requirements by private companies
+568 Exclusion of pre-emption right: articles conferring corresponding right
 
-832-460 Exception where entity not a party to the
-structured arrangement...................................................538
+_Disapplication of pre-emption rights_
 
-832-465 When a branch hybrid mismatch is an offshore
-hybrid mismatch.............................................................538
+569 Disapplication of pre-emption rights: private company with only one class of
+shares
+570 Disapplication of pre-emption rights: directors acting under general
+authorisation
+571 Disapplication of pre-emption rights by special resolution
+572 Liability for false statement in directors’ statement
+573 Disapplication of pre-emption rights: sale of treasury shares
 
-832-470 Branch hybrid mismatch ................................................539
+_Supplementary_
 
-832-475 Hybrid mismatch ............................................................540
+574 References to holder of shares in relation to offer
+575 Saving for other restrictions on offer or allotment
+576 Saving for certain older pre-emption requirements
+577 Provisions about pre-emption not applicable to shares taken on formation
 
-832-480 Hybrid requirement—payment made directly or
-indirectly to a branch hybrid ..........................................540
+**CHAPTER 4**
 
-832-485 Branch hybrid.................................................................542
+PUBLIC COMPANIES: ALLOTMENT WHERE ISSUE NOT FULLY SUBSCRIBED
 
-##### Subdivision 832-G—Deducting hybrid mismatch 544
+578 Public companies: allotment where issue not fully subscribed
+579 Public companies: effect of irregular allotment where issue not fully
+subscribed
 
-##### Guide to Subdivision 832-G 544
+**CHAPTER 5**
 
-832-525 What this Subdivision is about.......................................544
+PAYMENT FOR SHARES
 
-##### Operative provisions 545
+_General rules_
 
-832-530 Deduction not allowable.................................................545
+580 Shares not to be allotted at a discount
+581 Provision for different amounts to be paid on shares
+582 General rule as to means of payment
+583 Meaning of payment in cash
 
-832-535 Additional requirements for secondary response ...........545
+_Additional rules for public companies_
 
-832-540 When a deducting hybrid mismatch is an offshore
-hybrid mismatch.............................................................546
-
-832-545 When an amount gives rise to a deducting hybrid
-mismatch ........................................................................547
-
-832-550 Deducting hybrid............................................................547
-
-832-555 Identifying a secondary response country......................548
-
-832-560 Neutralising amount .......................................................551
-
-832-565 Adjustment if deducting hybrid has dual inclusion
-income in a later year .....................................................552
-
-##### Subdivision 832-H—Imported hybrid mismatch 553
-
-##### Guide to Subdivision 832-H 553
-
-832-605 What this Subdivision is about.......................................553
-
-##### Operative provisions 554
-
-832-610 Deduction not allowable.................................................554
-
-832-615 When a payment gives rise to an imported hybrid
-mismatch ........................................................................554
-
-832-620 Hybrid mismatch ............................................................556
-
-832-625 Meaning of importing payment ......................................556
-
-_xxvi_ _Income Tax Assessment Act 1997_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+584 Public companies: shares taken by subscribers of memorandum
+585 Public companies: must not accept undertaking to do work or perform
+services
+586 Public companies: shares must be at least one-quarter paid up
+587 Public companies: payment by long-term undertaking
 
 
 -----
 
-832-630 Working out the amount of the imported hybrid
-mismatch ........................................................................558
+_Companies Act 2006 (c. 46)_ xxvii
 
-832-635 Carry forward of residual offshore hybrid
-mismatches .....................................................................559
+_Supplementary provisions_
 
-##### Subdivision 832-I—Dual inclusion income 560
+588 Liability of subsequent holders of shares
+589 Power of court to grant relief
+590 Penalty for contravention of this Chapter
+591 Enforceability of undertakings to do work etc
+592 The appropriate rate of interest
 
-##### Guide to Subdivision 832-I 560
+**CHAPTER 6**
 
-832-675 What this Subdivision is about.......................................560
+PUBLIC COMPANIES: INDEPENDENT VALUATION OF NON-CASH CONSIDERATION
 
-##### Operative provisions 561
+_Non-cash consideration for shares_
 
-832-680 Dual inclusion income, and when an entity is
-eligible to apply it...........................................................561
+593 Public company: valuation of non-cash consideration for shares
+594 Exception to valuation requirement: arrangement with another company
+595 Exception to valuation requirement: merger
+596 Non-cash consideration for shares: requirements as to valuation and report
+597 Copy of report to be delivered to registrar
 
-##### Subdivision 832-J—Integrity rule 564
+_Transfer of non-cash asset in initial period_
 
-832-720 What this Subdivision is about.......................................564
+598 Public company: agreement for transfer of non-cash asset in initial period
+599 Agreement for transfer of non-cash asset: requirement of independent
+valuation
+600 Agreement for transfer of non-cash asset: requirements as to valuation and
+report
+601 Agreement for transfer of non-cash asset: requirement of approval by
+members
+602 Copy of resolution to be delivered to registrar
+603 Adaptation of provisions in relation to company re-registering as public
+604 Agreement for transfer of non-cash asset: effect of contravention
 
-##### Operative provisions 565
+_Supplementary provisions_
 
-832-725 Payments made to interposed foreign entity
-(integrity measure)—denial of deduction.......................565
+605 Liability of subsequent holders of shares
+606 Power of court to grant relief
+607 Penalty for contravention of this Chapter
+608 Enforceability of undertakings to do work etc
+609 The appropriate rate of interest
 
-832-730 Back to back arrangements, etc......................................568
+**CHAPTER 7**
 
-832-735 Determination may specify kinds of scheme and
-circumstances where no denial of deduction..................568
+SHARE PREMIUMS
 
-##### Subdivision 832-K—Modifications for Division 230 (about taxation of financial arrangements) 569
+_The share premium account_
 
-##### Guide to Subdivision 832-K 569
+610 Application of share premiums
 
-832-775 What this Subdivision is about.......................................569
+_Relief from requirements as to share premiums_
 
-##### Operative provisions 569
-
-832-780 Section 832-20 applies to Division 230 losses...............569
-
-832-785 Adjusting Division 230 loss ...........................................570
-
-832-790 Modifications relating to Division 230 gains and
-losses ..............................................................................570
-
-#### Division 840—Withholding taxes 572
-
-##### Guide to Division 840 572
-
-840-1 What this Division is about ............................................572
-
-##### Subdivision 840-M—Managed investment trust withholding tax 573
-
-##### Guide to Subdivision 840-M 573
-
-840-800 What this Subdivision is about.......................................573
-
-##### Operative provisions 573
-
-840-805 Liability for managed investment trust withholding
-tax ...................................................................................573
-
-_Income Tax Assessment Act 1997_ _xxvii_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+611 Group reconstruction relief
+612 Merger relief
+613 Merger relief: meaning of 90% equity holding
+614 Power to make further provision by regulations
 
 
 -----
 
-840-810 When managed investment trust withholding tax is
-payable............................................................................578
+xxviii _Companies Act 2006 (c. 46)_
 
-840-815 Certain income is non-assessable non-exempt
-income ............................................................................579
+615 Relief may be reflected in company’s balance sheet
 
-840-820 Agency rules...................................................................580
+_Supplementary provisions_
 
-##### Subdivision 840-S—Labour mobility program withholding tax 580
+616 Interpretation of this Chapter
 
-##### Guide to Subdivision 840-S 580
+**CHAPTER 8**
 
-840-900 What this Subdivision is about.......................................580
+ALTERATION OF SHARE CAPITAL
 
-##### Operative provisions 581
+_How share capital may be altered_
 
-840-905 Liability for labour mobility program withholding
-tax ...................................................................................581
+617 Alteration of share capital of limited company
 
-840-906 Covered labour mobility programs.................................581
+_Subdivision or consolidation of shares_
 
-840-910 When labour mobility program withholding tax is
-payable............................................................................582
+618 Sub-division or consolidation of shares
+619 Notice to registrar of sub-division or consolidation
 
-840-915 Certain income is non-assessable non-exempt
-income ............................................................................583
+_Reconversion of stock into shares_
 
-840-920 Overpayment of labour mobility program
-withholding tax...............................................................583
+620 Reconversion of stock into shares
+621 Notice to registrar of reconversion of stock into shares
 
-#### Division 842—Exempt Australian source income and gains of foreign residents 584
+_Redenomination of share capital_
 
-##### Subdivision 842-B—Some items of Australian source income of foreign residents that are exempt from income tax 584
+622 Redenomination of share capital
+623 Calculation of new nominal values
+624 Effect of redenomination
+625 Notice to registrar of redenomination
+626 Reduction of capital in connection with redenomination
+627 Notice to registrar of reduction of capital in connection with redenomination
+628 Redenomination reserve
 
-##### Guide to Subdivision 842-B 584
+**CHAPTER 9**
 
-842-100 What this Subdivision is about.......................................584
+CLASSES OF SHARE AND CLASS RIGHTS
 
-842-105 Amounts of Australian source ordinary income
-and statutory income that are exempt.............................584
+_Introductory_
 
-##### Subdivision 842-I—Investment manager regime 587
+629 Classes of shares
 
-##### Guide to Subdivision 842-I 587
+_Variation of class rights_
 
-842-200 What this Subdivision is about.......................................587
+630 Variation of class rights: companies having a share capital
+631 Variation of class rights: companies without a share capital
+632 Variation of class rights: saving for court’s powers under other provisions
+633 Right to object to variation: companies having a share capital
+634 Right to object to variation: companies without a share capital
+635 Copy of court order to be forwarded to the registrar
 
-##### Object of this Subdivision 588
+_Matters to be notified to the registrar_
 
-842-205 Object of this Subdivision ..............................................588
-
-##### IMR concessions 589
-
-842-210 IMR concessions apply only to foreign residents
-etc. ..................................................................................589
-
-842-215 IMR concessions ............................................................589
-
-842-220 Meaning of IMR entity ...................................................593
-
-842-225 Meaning of IMR financial arrangement ........................593
-
-_xxviii_ _Income Tax Assessment Act 1997_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+636 Notice of name or other designation of class of shares
 
 
 -----
 
-##### IMR widely held entities 593
+_Companies Act 2006 (c. 46)_ xxix
 
-842-230 Meaning of IMR widely held entity ................................593
+637 Notice of particulars of variation of rights attached to shares
+638 Notice of new class of members
+639 Notice of name or other designation of class of members
+640 Notice of particulars of variation of class rights
 
-842-235 Rules for determining total participation interests
-for the purposes of the widely held test..........................594
+**CHAPTER 10**
 
-842-240 Extended meaning of IMR _widely held entity—_
-temporary circumstances outside entity’s control..........596
+REDUCTION OF SHARE CAPITAL
 
-##### Independent Australian fund managers 597
+_Introductory_
 
-842-245 Meaning of independent Australian fund manager........597
+641 Circumstances in which a company may reduce its share capital
 
-842-250 Reductions in IMR concessions if independent
-Australian fund manager entitled to substantial
-share of IMR entity’s income.........................................597
+_Private companies: reduction of capital supported by solvency statement_
 
-#### Division 855—Capital gains and foreign residents 602
+642 Reduction of capital supported by solvency statement
+643 Solvency statement
+644 Registration of resolution and supporting documents
 
-##### Guide to Division 855 602
+_Reduction of capital confirmed by the court_
 
-855-1 What this Division is about ............................................602
+645 Application to court for order of confirmation
+646 Creditors entitled to object to reduction
+647 Offences in connection with list of creditors
+648 Court order confirming reduction
+649 Registration of order and statement of capital
 
-##### Subdivision 855-A—Disregarding a capital gain or loss by foreign residents 602
+_Public company reducing capital below authorised minimum_
 
-855-5 Objects of this Subdivision.............................................603
+650 Public company reducing capital below authorised minimum
+651 Expedited procedure for re-registration as a private company
 
-855-10 Disregarding a capital gain or loss from CGT
-events..............................................................................603
+_Effect of reduction of capital_
 
-855-15 When an asset is taxable Australian property ................604
+652 Liability of members following reduction of capital
+653 Liability to creditor in case of omission from list of creditors
 
-855-16 Meaning of permanent establishment article.................605
+**CHAPTER 11**
 
-855-20 Taxable Australian real property....................................605
+MISCELLANEOUS AND SUPPLEMENTARY PROVISIONS
 
-855-25 Indirect Australian real property interests......................605
-
-855-30 Principal asset test ..........................................................606
-
-855-32 Disregard market value of duplicated non-TARP
-assets...............................................................................609
-
-855-35 Reducing a capital gain or loss from a business
-asset—Australian permanent establishments .................610
-
-855-40 Capital gains and losses of foreign residents
-through fixed trusts.........................................................610
-
-##### Subdivision 855-B—Becoming an Australian resident 612
-
-855-45 Individual or company becomes an Australian
-resident ...........................................................................612
-
-855-50 Trust becomes a resident trust........................................613
-
-855-55 CFC becomes an Australian resident .............................613
-
-#### Division 880—Sovereign entities and activities 615
-
-##### Subdivision 880-A—Basic concepts 615
-
-_Income Tax Assessment Act 1997_ _xxix_
-
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+654 Treatment of reserve arising from reduction of capital
+655 Shares no bar to damages against company
+656 Public companies: duty of directors to call meeting on serious loss of capital
+657 General power to make further provision by regulations
 
 
 -----
 
-##### Guide to Subdivision 880-A 615
+xxx _Companies Act 2006 (c. 46)_
 
-880-10 What this Subdivision is about.......................................615
+**PART 18**
 
-##### Operative provisions 615
+ACQUISITION BY LIMITED COMPANY OF ITS OWN SHARES
 
-880-15 Meaning of sovereign entity...........................................615
+**CHAPTER 1**
 
-880-20 Meaning of sovereign entity group ................................616
+GENERAL PROVISIONS
 
-##### Subdivision 880-B—Basic tax treatment of sovereign entities 617
+_Introductory_
 
-##### Guide to Subdivision 880-B 617
+658 General rule against limited company acquiring its own shares
+659 Exceptions to general rule
 
-880-50 What this Subdivision is about.......................................617
+_Shares held by company’s nominee_
 
-##### Operative provisions 617
+660 Treatment of shares held by nominee
+661 Liability of others where nominee fails to make payment in respect of shares
 
-880-55 Sovereign entity liable to pay tax...................................617
+_Shares held by or for public company_
 
-880-60 Bodies politic of foreign countries and foreign
-government agencies treated as foreign residents ..........617
+662 Duty to cancel shares in public company held by or for the company
+663 Notice of cancellation of shares
+664 Re-registration as private company in consequence of cancellation
+665 Issue of certificate of incorporation on re-registration
+666 Effect of failure to re-register
+667 Offence in case of failure to cancel shares or re-register
+668 Application of provisions to company re-registering as public company
+669 Transfer to reserve on acquisition of shares by public company or nominee
 
-##### Subdivision 880-C—Sovereign immunity 618
+_Charges of public company on own shares_
 
-##### Guide to Subdivision 880-C 618
+670 Public companies: general rule against lien or charge on own shares
 
-880-100 What this Subdivision is about.......................................618
+_Supplementary provisions_
 
-##### Operative provisions 619
+671 Interests to be disregarded in determining whether company has beneficial
+interest
+672 Residual interest under pension scheme or employees’ share scheme
+673 Employer’s charges and other rights of recovery
+674 Rights as personal representative or trustee
+675 Meaning of “pension scheme”
+676 Application of provisions to directors
 
-880-105 Sovereign entity’s income from membership
-interest etc. in trust or company—non-assessable
-non-exempt income ........................................................619
+**CHAPTER 2**
 
-880-110 Sovereign entity’s deduction from membership
-interest etc.—loss not deductible....................................621
+FINANCIAL ASSISTANCE FOR PURCHASE OF OWN SHARES
 
-880-115 Sovereign entity’s capital gain from membership
-interest etc.—gain disregarded.......................................622
+_Introductory_
 
-880-120 Sovereign entity’s capital loss from membership
-interest etc. in trust or company—loss disregarded .......622
+677 Meaning of “financial assistance”
 
-880-125 Covered sovereign entities .............................................623
+_Circumstances in which financial assistance prohibited_
 
-880-130 Meaning of public non-financial entity and public
-_financial entity................................................................623_
+678 Assistance for acquisition of shares in public company
 
-##### Subdivision 880-D—Consular activities 624
 
-##### Guide to Subdivision 880-D 624
+-----
 
-880-200 What this Subdivision is about.......................................624
+_Companies Act 2006 (c. 46)_ xxxi
 
-##### Operative provisions 624
+679 Assistance by public company for acquisition of shares in its private holding
+company
+680 Prohibited financial assistance an offence
 
-880-205 Income from consular functions—non-assessable
-non-exempt income ........................................................624
+_Exceptions from prohibition_
 
-_xxx_ _Income Tax Assessment Act 1997_
+681 Unconditional exceptions
+682 Conditional exceptions
 
-Compilation No. 248 Compilation date: 01/01/2024 Registered: 15/01/2024
+_Supplementary_
+
+683 Definitions for this Chapter
+
+**CHAPTER 3**
+
+REDEEMABLE SHARES
+
+684 Power of limited company to issue redeemable shares
+685 Terms and manner of redemption
+686 Payment for redeemable shares
+687 Financing of redemption
+688 Redeemed shares treated as cancelled
+689 Notice to registrar of redemption
+
+**CHAPTER 4**
+
+PURCHASE OF OWN SHARES
+
+_General provisions_
+
+690 Power of limited company to purchase own shares
+691 Payment for purchase of own shares
+692 Financing of purchase of own shares
+
+_Authority for purchase of own shares_
+
+693 Authority for purchase of own shares
+
+_Authority for off-market purchase_
+
+694 Authority for off-market purchase
+695 Resolution authorising off-market purchase: exercise of voting rights
+696 Resolution authorising off-market purchase: disclosure of details of contract
+697 Variation of contract for off-market purchase
+698 Resolution authorising variation: exercise of voting rights
+699 Resolution authorising variation: disclosure of details of variation
+700 Release of company’s rights under contract for off-market purchase
+
+_Authority for market purchase_
+
+701 Authority for market purchase
+
+
+-----
+
+xxxii _Companies Act 2006 (c. 46)_
+
+_Supplementary provisions_
+
+702 Copy of contract or memorandum to be available for inspection
+703 Enforcement of right to inspect copy or memorandum
+704 No assignment of company’s right to purchase own shares
+705 Payments apart from purchase price to be made out of distributable profits
+706 Treatment of shares purchased
+707 Return to registrar of purchase of own shares
+708 Notice to registrar of cancellation of shares
+
+**CHAPTER 5**
+
+REDEMPTION OR PURCHASE BY PRIVATE COMPANY OUT OF CAPITAL
+
+_Introductory_
+
+709 Power of private limited company to redeem or purchase own shares out of
+capital
+
+_The permissible capital payment_
+
+710 The permissible capital payment
+711 Available profits
+712 Determination of available profits
+
+_Requirements for payment out of capital_
+
+713 Requirements for payment out of capital
+714 Directors’ statement and auditor’s report
+715 Directors’ statement: offence if no reasonable grounds for opinion
+716 Payment to be approved by special resolution
+717 Resolution authorising payment: exercise of voting rights
+718 Resolution authorising payment: disclosure of directors’ statement and
+auditor’s report
+719 Public notice of proposed payment
+720 Directors’ statement and auditor’s report to be available for inspection
+
+_Objection to payment by members or creditors_
+
+721 Application to court to cancel resolution
+722 Notice to registrar of court application or order
+
+_Supplementary provisions_
+
+723 When payment out of capital to be made
+
+**CHAPTER 6**
+
+TREASURY SHARES
+
+724 Treasury shares
+725 Treasury shares: maximum holdings
+726 Treasury shares: exercise of rights
+727 Treasury shares: disposal
+728 Treasury shares: notice of disposal
+
+
+-----
+
+_Companies Act 2006 (c. 46)_ xxxiii
+
+729 Treasury shares: cancellation
+730 Treasury shares: notice of cancellation
+731 Treasury shares: treatment of proceeds of sale
+732 Treasury shares: offences
+
+**CHAPTER 7**
+
+SUPPLEMENTARY PROVISIONS
+
+733 The capital redemption reserve
+734 Accounting consequences of payment out of capital
+735 Effect of company’s failure to redeem or purchase
+736 Meaning of “distributable profits”
+737 General power to make further provision by regulations
+
+**PART 19**
+
+DEBENTURES
+
+_General provisions_
+
+738 Meaning of “debenture”
+739 Perpetual debentures
+740 Enforcement of contract to subscribe for debentures
+741 Registration of allotment of debentures
+742 Debentures to bearer (Scotland)
+
+_Register of debenture holders_
+
+743 Register of debenture holders
+744 Register of debenture holders: right to inspect and require copy
+745 Register of debenture holders: response to request for inspection or copy
+746 Register of debenture holders: refusal of inspection or default in providing
+copy
+747 Register of debenture holders: offences in connection with request for or
+disclosure of information
+748 Time limit for claims arising from entry in register
+
+_Supplementary provisions_
+
+749 Right of debenture holder to copy of deed
+750 Liability of trustees of debentures
+751 Liability of trustees of debentures: saving for certain older provisions
+752 Power to re-issue redeemed debentures
+753 Deposit of debentures to secure advances
+754 Priorities where debentures secured by floating charge
+
+
+-----
+
+xxxiv _Companies Act 2006 (c. 46)_
+
+**PART 20**
+
+PRIVATE AND PUBLIC COMPANIES
+
+**CHAPTER 1**
+
+PROHIBITION OF PUBLIC OFFERS BY PRIVATE COMPANIES
+
+755 Prohibition of public offers by private company
+756 Meaning of “offer to the public”
+757 Enforcement of prohibition: order restraining proposed contravention
+758 Enforcement of prohibition: orders available to the court after contravention
+759 Enforcement of prohibition: remedial order
+760 Validity of allotment etc not affected
+
+**CHAPTER 2**
+
+MINIMUM SHARE CAPITAL REQUIREMENT FOR PUBLIC COMPANIES
+
+761 Public company: requirement as to minimum share capital
+762 Procedure for obtaining certificate
+763 The authorised minimum
+764 Power to alter authorised minimum
+765 Authorised minimum: application of initial requirement
+766 Authorised minimum: application where shares denominated in different
+currencies etc
+767 Consequences of doing business etc without a trading certificate
+
+**PART 21**
+
+CERTIFICATION AND TRANSFER OF SECURITIES
+
+**CHAPTER 1**
+
+CERTIFICATION AND TRANSFER OF SECURITIES: GENERAL
+
+_Share certificates_
+
+768 Share certificate to be evidence of title
+
+_Issue of certificates etc on allotment_
+
+769 Duty of company as to issue of certificates etc on allotment
+
+_Transfer of securities_
+
+770 Registration of transfer
+771 Procedure on transfer being lodged
+772 Transfer of shares on application of transferor
+773 Execution of share transfer by personal representative
+774 Evidence of grant of probate etc
+775 Certification of instrument of transfer
+
+
+-----
+
+_Companies Act 2006 (c. 46)_ xxxv
+
+_Issue of certificates etc on transfer_
+
+776 Duty of company as to issue of certificates etc on transfer
+777 Issue of certificates etc: cases within the Stock Transfer Act 1982
+
+_Issue of certificates etc on allotment or transfer to financial institution_
+
+778 Issue of certificates etc: allotment or transfer to financial institution
+
+_Share warrants_
+
+779 Issue and effect of share warrant to bearer
+780 Duty of company as to issue of certificates on surrender of share warrant
+781 Offences in connection with share warrants (Scotland)
+
+_Supplementary provisions_
+
+782 Issue of certificates etc: court order to make good default
+
+**CHAPTER 2**
+
+EVIDENCING AND TRANSFER OF TITLE TO SECURITIES WITHOUT WRITTEN INSTRUMENT
+
+_Introductory_
+
+783 Scope of this Chapter
+784 Power to make regulations
+
+_Powers exercisable_
+
+785 Provision enabling procedures for evidencing and transferring title
+786 Provision enabling or requiring arrangements to be adopted
+787 Provision enabling or requiring arrangements to be adopted: order-making
+powers
+
+_Supplementary_
+
+788 Provision that may be included in regulations
+789 Duty to consult
+790 Resolutions to be forwarded to registrar
+
+**PART 22**
+
+INFORMATION ABOUT INTERESTS IN A COMPANY’S SHARES
+
+_Introductory_
+
+791 Companies to which this Part applies
+792 Shares to which this Part applies
+
+_Notice requiring information about interests in shares_
+
+793 Notice by company requiring information about interests in its shares
+794 Notice requiring information: order imposing restrictions on shares
+795 Notice requiring information: offences
+
+
+-----
+
+xxxvi _Companies Act 2006 (c. 46)_
+
+796 Notice requiring information: persons exempted from obligation to comply
+
+_Orders imposing restrictions on shares_
+
+797 Consequences of order imposing restrictions
+798 Penalty for attempted evasion of restrictions
+799 Relaxation of restrictions
+800 Removal of restrictions
+801 Order for sale of shares
+802 Application of proceeds of sale under court order
+
+_Power of members to require company to act_
+
+803 Power of members to require company to act
+804 Duty of company to comply with requirement
+805 Report to members on outcome of investigation
+806 Report to members: offences
+807 Right to inspect and request copy of reports
+
+_Register of interests disclosed_
+
+808 Register of interests disclosed
+809 Register to be kept available for inspection
+810 Associated index
+811 Rights to inspect and require copy of entries
+812 Court supervision of purpose for which rights may be exercised
+813 Register of interests disclosed: refusal of inspection or default in providing
+copy
+814 Register of interests disclosed: offences in connection with request for or
+disclosure of information
+815 Entries not to be removed from register
+816 Removal of entries from register: old entries
+817 Removal of entries from register: incorrect entry relating to third party
+818 Adjustment of entry relating to share acquisition agreement
+819 Duty of company ceasing to be public company
+
+_Meaning of interest in shares_
+
+820 Interest in shares: general
+821 Interest in shares: right to subscribe for shares
+822 Interest in shares: family interests
+823 Interest in shares: corporate interests
+824 Interest in shares: agreement to acquire interests in a particular company
+825 Extent of obligation in case of share acquisition agreement
+
+_Other supplementary provisions_
+
+826 Information protected from wider disclosure
+827 Reckoning of periods for fulfilling obligations
+828 Power to make further provision by regulations
+
+
+-----
+
+_Companies Act 2006 (c. 46)_ xxxvii
+
+**PART 23**
+
+DISTRIBUTIONS
+
+**CHAPTER 1**
+
+RESTRICTIONS ON WHEN DISTRIBUTIONS MAY BE MADE
+
+_Introductory_
+
+829 Meaning of “distribution”
+
+_General rules_
+
+830 Distributions to be made only out of profits available for the purpose
+831 Net asset restriction on distributions by public companies
+
+_Distributions by investment companies_
+
+832 Distributions by investment companies out of accumulated revenue profits
+833 Meaning of “investment company”
+834 Investment company: condition as to holdings in other companies
+835 Power to extend provisions relating to investment companies
+
+**CHAPTER 2**
+
+JUSTIFICATION OF DISTRIBUTION BY REFERENCE TO ACCOUNTS
+
+_Justification of distribution by reference to accounts_
+
+836 Justification of distribution by reference to relevant accounts
+
+_Requirements applicable in relation to relevant accounts_
+
+837 Requirements where last annual accounts used
+838 Requirements where interim accounts used
+839 Requirements where initial accounts used
+
+_Application of provisions to successive distributions etc_
+
+840 Successive distributions etc by reference to the same accounts
+
+**CHAPTER 3**
+
+SUPPLEMENTARY PROVISIONS
+
+_Accounting matters_
+
+841 Realised losses and profits and revaluation of fixed assets
+842 Determination of profit or loss in respect of asset where records incomplete
+843 Realised profits and losses of long-term insurance business
+844 Treatment of development costs
+
+
+-----
+
+xxxviii _Companies Act 2006 (c. 46)_
+
+_Distributions in kind_
+
+845 Distributions in kind: determination of amount
+846 Distributions in kind: treatment of unrealised profits
+
+_Consequences of unlawful distribution_
+
+847 Consequences of unlawful distribution
+
+_Other matters_
+
+848 Saving for certain older provisions in articles
+849 Restriction on application of unrealised profits
+850 Treatment of certain older profits or losses
+851 Application of rules of law restricting distributions
+852 Saving for other restrictions on distributions
+853 Minor definitions
+
+**PART 24**
+
+A COMPANY’S ANNUAL RETURN
+
+854 Duty to deliver annual returns
+855 Contents of annual return: general
+856 Contents of annual return: information about share capital and shareholders
+857 Contents of annual return: power to make further provision by regulations
+858 Failure to deliver annual return
+859 Application of provisions to shadow directors
+
+**PART 25**
+
+COMPANY CHARGES
+
+**CHAPTER 1**
+
+COMPANIES REGISTERED IN ENGLAND AND WALES OR IN NORTHERN IRELAND
+
+_Requirement to register company charges_
+
+860 Charges created by a company
+861 Charges which have to be registered: supplementary
+862 Charges existing on property acquired
+
+_Special rules about debentures_
+
+863 Charge in series of debentures
+864 Additional registration requirement for commission etc in relation to
+debentures
+865 Endorsement of certificate on debentures
+
+_Charges in other jurisdictions_
+
+866 Charges created in, or over property in, jurisdictions outside the United
+Kingdom
+867 Charges created in, or over property in, another United Kingdom jurisdiction
+
+
+-----
+
+_Companies Act 2006 (c. 46)_ xxxix
+
+_Orders charging land: Northern Ireland_
+
+868 Northern Ireland: registration of certain charges etc. affecting land
+
+_The register of charges_
+
+869 Register of charges to be kept by registrar
+870 The period allowed for registration
+871 Registration of enforcement of security
+872 Entries of satisfaction and release
+873 Rectification of register of charges
+
+_Avoidance of certain charges_
+
+874 Consequence of failure to register charges created by a company
+
+_Companies’ records and registers_
+
+875 Companies to keep copies of instruments creating charges
+876 Company’s register of charges
+877 Instruments creating charges and register of charges to be available for
+inspection
+
+**CHAPTER 2**
+
+COMPANIES REGISTERED IN SCOTLAND
+
+_Charges requiring registration_
+
+878 Charges created by a company
+879 Charges which have to be registered: supplementary
+880 Duty to register charges existing on property acquired
+881 Charge by way of ex facie absolute disposition, etc
+
+_Special rules about debentures_
+
+882 Charge in series of debentures
+883 Additional registration requirement for commission etc in relation to
+debentures
+
+_Charges on property outside the United Kingdom_
+
+884 Charges on property outside United Kingdom
+
+_The register of charges_
+
+885 Register of charges to be kept by registrar
+886 The period allowed for registration
+887 Entries of satisfaction and relief
+888 Rectification of register of charges
+
+_Avoidance of certain charges_
+
+889 Charges void unless registered
+
+
+-----
+
+xl _Companies Act 2006 (c. 46)_
+
+_Companies’ records and registers_
+
+890 Copies of instruments creating charges to be kept by company
+891 Company’s register of charges
+892 Instruments creating charges and register of charges to be available for
+inspection
+
+**CHAPTER 3**
+
+POWERS OF THE SECRETARY OF STATE
+
+893 Power to make provision for effect of registration in special register
+894 General power to make amendments to this Part
+
+**PART 26**
+
+ARRANGEMENTS AND RECONSTRUCTIONS
+
+_Application of this Part_
+
+895 Application of this Part
+
+_Meeting of creditors or members_
+
+896 Court order for holding of meeting
+897 Statement to be circulated or made available
+898 Duty of directors and trustees to provide information
+
+_Court sanction for compromise or arrangement_
+
+899 Court sanction for compromise or arrangement
+
+_Reconstructions and amalgamations_
+
+900 Powers of court to facilitate reconstruction or amalgamation
+
+_Obligations of company with respect to articles etc_
+
+901 Obligations of company with respect to articles etc
+
+**PART 27**
+
+MERGERS AND DIVISIONS OF PUBLIC COMPANIES
+
+**CHAPTER 1**
+
+INTRODUCTORY
+
+902 Application of this Part
+903 Relationship of this Part to Part 26
+
+
+-----
+
+_Companies Act 2006 (c. 46)_ xli
+
+**CHAPTER 2**
+
+MERGER
+
+_Introductory_
+
+904 Mergers and merging companies
+
+_Requirements applicable to merger_
+
+905 Draft terms of scheme (merger)
+906 Publication of draft terms (merger)
+907 Approval of members of merging companies
+908 Directors’ explanatory report (merger)
+909 Expert’s report (merger)
+910 Supplementary accounting statement (merger)
+911 Inspection of documents (merger)
+912 Approval of articles of new transferee company (merger)
+913 Protection of holders of securities to which special rights attached (merger)
+914 No allotment of shares to transferor company or its nominee (merger)
+
+_Exceptions where shares of transferor company held by transferee company_
+
+915 Circumstances in which certain particulars and reports not required (merger)
+916 Circumstances in which meeting of members of transferee company not
+required (merger)
+917 Circumstances in which no meetings required (merger)
+
+_Other exceptions_
+
+918 Other circumstances in which meeting of members of transferee company not
+required (merger)
+
+**CHAPTER 3**
+
+DIVISION
+
+_Introductory_
+
+919 Divisions and companies involved in a division
+
+_Requirements to be complied with in case of division_
+
+920 Draft terms of scheme (division)
+921 Publication of draft terms (division)
+922 Approval of members of companies involved in the division
+923 Directors’ explanatory report (division)
+924 Expert’s report (division)
+925 Supplementary accounting statement (division)
+926 Inspection of documents (division)
+927 Report on material changes of assets of transferor company (division)
+928 Approval of articles of new transferee company (division)
+929 Protection of holders of securities to which special rights attached (division)
+930 No allotment of shares to transferor company or its nominee (division)
+
+
+-----
+
+xlii _Companies Act 2006 (c. 46)_
+
+_Exceptions where shares of transferor company held by transferee company_
+
+931 Circumstances in which meeting of members of transferor company not
+required (division)
+
+_Other exceptions_
+
+932 Circumstances in which meeting of members of transferee company not
+required (division)
+933 Agreement to dispense with reports etc (division)
+934 Power of court to exclude certain requirements (division)
+
+**CHAPTER 4**
+
+SUPPLEMENTARY PROVISIONS
+
+_Expert’s report and related matters_
+
+935 Expert’s report: valuation by another person
+936 Experts and valuers: independence requirement
+937 Experts and valuers: meaning of “associate”
+
+_Powers of the court_
+
+938 Power of court to summon meeting of members or creditors of existing
+transferee company
+939 Court to fix date for transfer of undertaking etc of transferor company
+
+_Liability of transferee companies_
+
+940 Liability of transferee companies for each other’s defaults
+
+_Interpretation_
+
+941 Meaning of “liabilities” and “property”
+
+**PART 28**
+
+TAKEOVERS ETC
+
+**CHAPTER 1**
+
+THE TAKEOVER PANEL
+
+_The Panel and its rules_
+
+942 The Panel
+943 Rules
+944 Further provisions about rules
+945 Rulings
+946 Directions
+
+_Information_
+
+947 Power to require documents and information
+
+
+-----
+
+_Companies Act 2006 (c. 46)_ xliii
+
+948 Restrictions on disclosure
+949 Offence of disclosure in contravention of section 948
+
+_Co-operation_
+
+950 Panel’s duty of co-operation
+
+_Hearings and appeals_
+
+951 Hearings and appeals
+
+_Contravention of rules etc_
+
+952 Sanctions
+953 Failure to comply with rules about bid documentation
+954 Compensation
+955 Enforcement by the court
+956 No action for breach of statutory duty etc
+
+_Funding_
+
+957 Fees and charges
+958 Levy
+959 Recovery of fees, charges or levy
+
+_Miscellaneous and supplementary_
+
+960 Panel as party to proceedings
+961 Exemption from liability in damages
+962 Privilege against self-incrimination
+963 Annual reports
+964 Amendments to Financial Services and Markets Act 2000
+965 Power to extend to Isle of Man and Channel Islands
+
+**CHAPTER 2**
+
+IMPEDIMENTS TO TAKEOVERS
+
+_Opting in and opting out_
+
+966 Opting in and opting out
+967 Further provision about opting-in and opting-out resolutions
+
+_Consequences of opting in_
+
+968 Effect on contractual restrictions
+969 Power of offeror to require general meeting to be called
+
+_Supplementary_
+
+970 Communication of decisions
+971 Interpretation of Chapter
+972 Transitory provision
+973 Power to extend to Isle of Man and Channel Islands
+
+
+-----
+
+xliv _Companies Act 2006 (c. 46)_
+
+**CHAPTER 3**
+
+“SQUEEZE-OUT” AND “SELL-OUT”
+
+_Takeover offers_
+
+974 Meaning of “takeover offer”
+975 Shares already held by the offeror etc
+976 Cases where offer treated as being on same terms
+977 Shares to which an offer relates
+978 Effect of impossibility etc of communicating or accepting offer
+
+_“Squeeze-out”_
+
+979 Right of offeror to buy out minority shareholder
+980 Further provision about notices given under section 979
+981 Effect of notice under section 979
+982 Further provision about consideration held on trust under section 981(9)
+
+_“Sell-out”_
+
+983 Right of minority shareholder to be bought out by offeror
+984 Further provision about rights conferred by section 983
+985 Effect of requirement under section 983
+
+_Supplementary_
+
+986 Applications to the court
+987 Joint offers
+
+_Interpretation_
+
+988 Associates
+989 Convertible securities
+990 Debentures carrying voting rights
+991 Interpretation
+
+**CHAPTER 4**
+
+AMENDMENTS TO PART 7 OF THE COMPANIES ACT 1985
+
+992 Matters to be dealt with in directors’ report
+
+**PART 29**
+
+FRAUDULENT TRADING
+
+993 Offence of fraudulent trading
+
+
+-----
+
+_Companies Act 2006 (c. 46)_ xlv
+
+**PART 30**
+
+PROTECTION OF MEMBERS AGAINST UNFAIR PREJUDICE
+
+_Main provisions_
+
+994 Petition by company member
+995 Petition by Secretary of State
+996 Powers of the court under this Part
+
+_Supplementary provisions_
+
+997 Application of general rule-making powers
+998 Copy of order affecting company’s constitution to be delivered to registrar
+999 Supplementary provisions where company’s constitution altered
+
+**PART 31**
+
+DISSOLUTION AND RESTORATION TO THE REGISTER
+
+**CHAPTER 1**
+
+STRIKING OFF
+
+_Registrar’s power to strike off defunct company_
+
+1000 Power to strike off company not carrying on business or in operation
+1001 Duty to act in case of company being wound up
+1002 Supplementary provisions as to service of letter or notice
+
+_Voluntary striking off_
+
+1003 Striking off on application by company
+1004 Circumstances in which application not to be made: activities of company
+1005 Circumstances in which application not to be made: other proceedings not
+concluded
+1006 Copy of application to be given to members, employees, etc
+1007 Copy of application to be given to new members, employees, etc
+1008 Copy of application: provisions as to service of documents
+1009 Circumstances in which application to be withdrawn
+1010 Withdrawal of application
+1011 Meaning of “creditor”
+
+**CHAPTER 2**
+
+PROPERTY OF DISSOLVED COMPANY
+
+_Property vesting as bona vacantia_
+
+1012 Property of dissolved company to be bona vacantia
+1013 Crown disclaimer of property vesting as bona vacantia
+1014 Effect of Crown disclaimer
+
+
+-----
+
+xlvi _Companies Act 2006 (c. 46)_
+
+_Effect of Crown disclaimer: England and Wales and Northern Ireland_
+
+1015 General effect of disclaimer
+1016 Disclaimer of leaseholds
+1017 Power of court to make vesting order
+1018 Protection of persons holding under a lease
+1019 Land subject to rentcharge
+
+_Effect of Crown disclaimer: Scotland_
+
+1020 General effect of disclaimer
+1021 Power of court to make vesting order
+1022 Protection of persons holding under a lease
+
+_Supplementary provisions_
+
+1023 Liability for rentcharge on company’s land after dissolution
+
+**CHAPTER 3**
+
+RESTORATION TO THE REGISTER
+
+_Administrative restoration to the register_
+
+1024 Application for administrative restoration to the register
+1025 Requirements for administrative restoration
+1026 Application to be accompanied by statement of compliance
+1027 Registrar’s decision on application for administrative restoration
+1028 Effect of administrative restoration
+
+_Restoration to the register by the court_
+
+1029 Application to court for restoration to the register
+1030 When application to the court may be made
+1031 Decision on application for restoration by the court
+1032 Effect of court order for restoration to the register
+
+_Supplementary provisions_
+
+1033 Company’s name on restoration
+1034 Effect of restoration to the register where property has vested as bona
+vacantia
+
+**PART 32**
+
+COMPANY INVESTIGATIONS: AMENDMENTS
+
+1035 Powers of Secretary of State to give directions to inspectors
+1036 Resignation, removal and replacement of inspectors
+1037 Power to obtain information from former inspectors etc
+1038 Power to require production of documents
+1039 Disqualification orders: consequential amendments
+
+
+-----
+
+_Companies Act 2006 (c. 46)_ xlvii
+
+**PART 33**
+
+UK COMPANIES NOT FORMED UNDER COMPANIES LEGISLATION
+
+**CHAPTER 1**
+
+COMPANIES NOT FORMED UNDER COMPANIES LEGISLATION BUT AUTHORISED TO REGISTER
+
+1040 Companies authorised to register under this Act
+1041 Definition of “joint stock company”
+1042 Power to make provision by regulations
+
+**CHAPTER 2**
+
+UNREGISTERED COMPANIES
+
+1043 Unregistered companies
+
+**PART 34**
+
+OVERSEAS COMPANIES
+
+_Introductory_
+
+1044 Overseas companies
+1045 Company contracts and execution of documents by companies
+
+_Registration of particulars_
+
+1046 Duty to register particulars
+1047 Registered name of overseas company
+1048 Registration under alternative name
+
+_Other requirements_
+
+1049 Accounts and reports: general
+1050 Accounts and reports: credit or financial institutions
+1051 Trading disclosures
+1052 Company charges
+1053 Other returns etc
+
+_Supplementary_
+
+1054 Offences
+1055 Disclosure of individual’s residential address: protection from disclosure
+1056 Requirement to identify persons authorised to accept service of documents
+1057 Registrar to whom returns, notices etc to be delivered
+1058 Duty to give notice of ceasing to have registrable presence
+1059 Application of provisions in case of relocation of branch
+
+
+-----
+
+xlviii _Companies Act 2006 (c. 46)_
+
+**PART 35**
+
+THE REGISTRAR OF COMPANIES
+
+_The registrar_
+
+1060 The registrar
+1061 The registrar’s functions
+1062 The registrar’s official seal
+1063 Fees payable to registrar
+
+_Certificates of incorporation_
+
+1064 Public notice of issue of certificate of incorporation
+1065 Right to certificate of incorporation
+
+_Registered numbers_
+
+1066 Company’s registered numbers
+1067 Registered numbers of branches of overseas company
+
+_Delivery of documents to the registrar_
+
+1068 Registrar’s requirements as to form, authentication and manner of delivery
+1069 Power to require delivery by electronic means
+1070 Agreement for delivery by electronic means
+1071 Document not delivered until received
+
+_Requirements for proper delivery_
+
+1072 Requirements for proper delivery
+1073 Power to accept documents not meeting requirements for proper delivery
+1074 Documents containing unnecessary material
+1075 Informal correction of document
+1076 Replacement of document not meeting requirements for proper delivery
+
+_Public notice of receipt of certain documents_
+
+1077 Public notice of receipt of certain documents
+1078 Documents subject to Directive disclosure requirements
+1079 Effect of failure to give public notice
+
+_The register_
+
+1080 The register
+1081 Annotation of the register
+1082 Allocation of unique identifiers
+1083 Preservation of original documents
+1084 Records relating to companies that have been dissolved etc
+
+_Inspection etc of the register_
+
+1085 Inspection of the register
+1086 Right to copy of material on the register
+
+
+-----
+
+_Companies Act 2006 (c. 46)_ xlix
+
+1087 Material not available for public inspection
+1088 Application to registrar to make address unavailable for public inspection
+1089 Form of application for inspection or copy
+1090 Form and manner in which copies to be provided
+1091 Certification of copies as accurate
+1092 Issue of process for production of records kept by the registrar
+
+_Correction or removal of material on the register_
+
+1093 Registrar’s notice to resolve inconsistency on the register
+1094 Administrative removal of material from the register
+1095 Rectification of register on application to registrar
+1096 Rectification of the register under court order
+1097 Powers of court on ordering removal of material from the register
+1098 Public notice of removal of certain material from the register
+
+_The registrar’s index of company names_
+
+1099 The registrar’s index of company names
+1100 Right to inspect index
+1101 Power to amend enactments relating to bodies other than companies
+
+_Language requirements: translation_
+
+1102 Application of language requirements
+1103 Documents to be drawn up and delivered in English
+1104 Documents relating to Welsh companies
+1105 Documents that may be drawn up and delivered in other languages
+1106 Voluntary filing of translations
+1107 Certified translations
+
+_Language requirements: transliteration_
+
+1108 Transliteration of names and addresses: permitted characters
+1109 Transliteration of names and addresses: voluntary transliteration into Roman
+characters
+1110 Transliteration of names and addresses: certification
+
+_Supplementary provisions_
+
+1111 Registrar’s requirements as to certification or verification
+1112 General false statement offence
+1113 Enforcement of company’s filing obligations
+1114 Application of provisions about documents and delivery
+1115 Supplementary provisions relating to electronic communications
+1116 Alternative to publication in the Gazette
+1117 Registrar’s rules
+1118 Payments into the Consolidated Fund
+1119 Contracting out of registrar’s functions
+1120 Application of Part to overseas companies
+
+
+-----
+
+_Companies Act 2006 (c. 46)_
+
+**PART 36**
+
+OFFENCES UNDER THE COMPANIES ACTS
+
+_Liability of officer in default_
+
+1121 Liability of officer in default
+1122 Liability of company as officer in default
+1123 Application to bodies other than companies
+
+_Offences under the Companies Act 1985_
+
+1124 Amendments of the Companies Act 1985
+
+_General provisions_
+
+1125 Meaning of “daily default fine”
+1126 Consents required for certain prosecutions
+1127 Summary proceedings: venue
+1128 Summary proceedings: time limit for proceedings
+1129 Legal professional privilege
+1130 Proceedings against unincorporated bodies
+1131 Imprisonment on summary conviction in England and Wales: transitory
+provision
+
+_Production and inspection of documents_
+
+1132 Production and inspection of documents where offence suspected
+
+_Supplementary_
+
+1133 Transitional provision
+
+**PART 37**
+
+COMPANIES: SUPPLEMENTARY PROVISIONS
+
+_Company records_
+
+1134 Meaning of “company records”
+1135 Form of company records
+1136 Regulations about where certain company records to be kept available for
+inspection
+1137 Regulations about inspection of records and provision of copies
+1138 Duty to take precautions against falsification
+
+_Service addresses_
+
+1139 Service of documents on company
+1140 Service of documents on directors, secretaries and others
+1141 Service addresses
+1142 Requirement to give service address
+
+
+-----
+
+_Companies Act 2006 (c. 46)_ li
+
+_Sending or supplying documents or information_
+
+1143 The company communications provisions
+1144 Sending or supplying documents or information
+1145 Right to hard copy version
+1146 Requirement of authentication
+1147 Deemed delivery of documents and information
+1148 Interpretation of company communications provisions
+
+_Requirements as to independent valuation_
+
+1149 Application of valuation requirements
+1150 Valuation by qualified independent person
+1151 The independence requirement
+1152 Meaning of “associate”
+1153 Valuer entitled to full disclosure
+
+_Notice of appointment of certain officers_
+
+1154 Duty to notify registrar of certain appointments etc
+1155 Offence of failure to give notice
+
+_Courts and legal proceedings_
+
+1156 Meaning of “the court”
+1157 Power of court to grant relief in certain cases
+
+**PART 38**
+
+COMPANIES: INTERPRETATION
+
+_Meaning of "UK-registered company"_
+
+1158 Meaning of “UK-registered company”
+
+_Meaning of "subsidiary" and related expressions_
+
+1159 Meaning of “subsidiary” etc
+1160 Meaning of “subsidiary” etc: power to amend
+
+_Meaning of "undertaking" and related expressions_
+
+1161 Meaning of “undertaking” and related expressions
+1162 Parent and subsidiary undertakings
+
+_Other definitions_
+
+1163 “Non-cash asset”
+1164 Meaning of “banking company” and “banking group”
+1165 Meaning of “insurance company” and related expressions
+1166 “Employees’ share scheme”
+1167 Meaning of “prescribed”
+1168 Hard copy and electronic form and related expressions
+1169 Dormant companies
+1170 Meaning of “EEA State” and related expressions
+
+
+-----
+
+lii _Companies Act 2006 (c. 46)_
+
+1171 The former Companies Acts
+
+_General_
+
+1172 References to requirements of this Act
+1173 Minor definitions: general
+1174 Index of defined expressions
+
+**PART 39**
+
+COMPANIES: MINOR AMENDMENTS
+
+1175 Removal of special provisions about accounts and audit of charitable
+companies
+1176 Power of Secretary of State to bring civil proceedings on company’s behalf
+1177 Repeal of certain provisions about company directors
+1178 Repeal of requirement that certain companies publish periodical statement
+1179 Repeal of requirement that Secretary of State prepare annual report
+1180 Repeal of certain provisions about company charges
+1181 Access to constitutional documents of RTE and RTM companies
+
+**PART 40**
+
+COMPANY DIRECTORS: FOREIGN DISQUALIFICATION ETC
+
+_Introductory_
+
+1182 Persons subject to foreign restrictions
+1183 Meaning of “the court” and “UK company”
+
+_Power to disqualify_
+
+1184 Disqualification of persons subject to foreign restrictions
+1185 Disqualification regulations: supplementary
+1186 Offence of breach of disqualification
+
+_Power to make persons liable for company’s debts_
+
+1187 Personal liability for debts of company
+
+_Power to require statements to be sent to the registrar of companies_
+
+1188 Statements from persons subject to foreign restrictions
+1189 Statements from persons disqualified
+1190 Statements: whether to be made public
+1191 Offences
+
+
+-----
+
+_Companies Act 2006 (c. 46)_ liii
+
+**PART 41**
+
+BUSINESS NAMES
+
+**CHAPTER 1**
+
+RESTRICTED OR PROHIBITED NAMES
+
+_Introductory_
+
+1192 Application of this Chapter
+
+_Sensitive words or expressions_
+
+1193 Name suggesting connection with government or public authority
+1194 Other sensitive words or expressions
+1195 Requirement to seek comments of government department or other relevant
+body
+1196 Withdrawal of Secretary of State’s approval
+
+_Misleading names_
+
+1197 Name containing inappropriate indication of company type or legal form
+1198 Name giving misleading indication of activities
+
+_Supplementary_
+
+1199 Savings for existing lawful business names
+
+**CHAPTER 2**
+
+DISCLOSURE REQUIRED IN CASE OF INDIVIDUAL OR PARTNERSHIP
+
+_Introductory_
+
+1200 Application of this Chapter
+1201 Information required to be disclosed
+
+_Disclosure requirements_
+
+1202 Disclosure required: business documents etc
+1203 Exemption for large partnerships if certain conditions met
+1204 Disclosure required: business premises
+
+_Consequences of failure to make required disclosure_
+
+1205 Criminal consequences of failure to make required disclosure
+1206 Civil consequences of failure to make required disclosure
+
+**CHAPTER 3**
+
+SUPPLEMENTARY
+
+1207 Application of general provisions about offences
+
+
+-----
+
+liv _Companies Act 2006 (c. 46)_
+
+1208 Interpretation
+
+**PART 42**
+
+STATUTORY AUDITORS
+
+**CHAPTER 1**
+
+INTRODUCTORY
+
+1209 Main purposes of Part
+1210 Meaning of “statutory auditor” etc
+1211 Eligibility for appointment as a statutory auditor: overview
+
+**CHAPTER 2**
+
+INDIVIDUALS AND FIRMS
+
+_Eligibility for appointment_
+
+1212 Individuals and firms: eligibility for appointment as a statutory auditor
+1213 Effect of ineligibility
+
+_Independence requirement_
+
+1214 Independence requirement
+1215 Effect of lack of independence
+
+_Effect of appointment of a partnership_
+
+1216 Effect of appointment of a partnership
+
+_Supervisory bodies_
+
+1217 Supervisory bodies
+1218 Exemption from liability for damages
+
+_Professional qualifications_
+
+1219 Appropriate qualifications
+1220 Qualifying bodies and recognised professional qualifications
+1221 Approval of overseas qualifications
+1222 Eligibility of individuals retaining only 1967 Act authorisation
+
+_Information_
+
+1223 Matters to be notified to the Secretary of State
+1224 The Secretary of State’s power to call for information
+
+_Enforcement_
+
+1225 Compliance orders
+
+
+-----
+
+_Companies Act 2006 (c. 46)_ lv
+
+**CHAPTER 3**
+
+AUDITORS GENERAL
+
+_Eligibility for appointment_
+
+1226 Auditors General: eligibility for appointment as a statutory auditor
+
+_Conduct of audits_
+
+1227 Individuals responsible for audit work on behalf of Auditors General
+
+_The Independent Supervisor_
+
+1228 Appointment of the Independent Supervisor
+
+_Supervision of Auditors General_
+
+1229 Supervision of Auditors General by the Independent Supervisor
+1230 Duties of Auditors General in relation to supervision arrangements
+
+_Reporting requirement_
+
+1231 Reports by the Independent Supervisor
+
+_Information_
+
+1232 Matters to be notified to the Independent Supervisor
+1233 The Independent Supervisor’s power to call for information
+
+_Enforcement_
+
+1234 Suspension notices
+1235 Effect of suspension notices
+1236 Compliance orders
+
+_Proceedings_
+
+1237 Proceedings involving the Independent Supervisor
+
+_Grants_
+
+1238 Grants to the Independent Supervisor
+
+**CHAPTER 4**
+
+THE REGISTER OF AUDITORS ETC
+
+1239 The register of auditors
+1240 Information to be made available to public
+
+
+-----
+
+lvi _Companies Act 2006 (c. 46)_
+
+**CHAPTER 5**
+
+REGISTERED THIRD COUNTRY AUDITORS
+
+_Introductory_
+
+1241 Meaning of “third country auditor”, “registered third country auditor” etc
+
+_Duties_
+
+1242 Duties of registered third country auditors
+
+_Information_
+
+1243 Matters to be notified to the Secretary of State
+1244 The Secretary of State’s power to call for information
+
+_Enforcement_
+
+1245 Compliance orders
+1246 Removal of third country auditors from the register of auditors
+1247 Grants to bodies concerned with arrangements under Schedule 12
+
+**CHAPTER 6**
+
+SUPPLEMENTARY AND GENERAL
+
+_Power to require second company audit_
+
+1248 Secretary of State’s power to require second audit of a company
+1249 Supplementary provision about second audits
+
+_False and misleading statements_
+
+1250 Misleading, false and deceptive statements
+
+_Fees_
+
+1251 Fees
+
+_Delegation of Secretary of State’s functions_
+
+1252 Delegation of the Secretary of State’s functions
+1253 Delegation of functions to an existing body
+
+_International obligations_
+
+1254 Directions to comply with international obligations
+
+_General provision relating to offences_
+
+1255 Offences by bodies corporate, partnerships and unincorporated associations
+1256 Time limits for prosecution of offences
+1257 Jurisdiction and procedure in respect of offences
+
+
+-----
+
+_Companies Act 2006 (c. 46)_ lvii
+
+_Notices etc_
+
+1258 Service of notices
+1259 Documents in electronic form
+
+_Interpretation_
+
+1260 Meaning of “associate”
+1261 Minor definitions
+1262 Index of defined expressions
+
+_Miscellaneous and general_
+
+1263 Power to make provision in consequence of changes affecting accountancy
+bodies
+1264 Consequential amendments
+
+**PART 43**
+
+TRANSPARENCY OBLIGATIONS AND RELATED MATTERS
+
+_Introductory_
+
+1265 The transparency obligations directive
+
+_Transparency obligations_
+
+1266 Transparency rules
+1267 Competent authority’s power to call for information
+1268 Powers exercisable in case of infringement of transparency obligation
+
+_Other matters_
+
+1269 Corporate governance rules
+1270 Liability for false or misleading statements in certain publications
+1271 Exercise of powers where UK is host member State
+1272 Transparency obligations and related matters: minor and consequential
+amendments
+1273 Corporate governance regulations
+
+**PART 44**
+
+MISCELLANEOUS PROVISIONS
+
+_Regulation of actuaries etc_
+
+1274 Grants to bodies concerned with actuarial standards etc
+1275 Levy to pay expenses of bodies concerned with actuarial standards etc
+1276 Application of provisions to Scotland and Northern Ireland
+
+_Information as to exercise of voting rights by institutional investors_
+
+1277 Power to require information about exercise of voting rights
+1278 Institutions to which information provisions apply
+1279 Shares to which information provisions apply
+
+
+-----
+
+lviii _Companies Act 2006 (c. 46)_
+
+1280 Obligations with respect to provision of information
+
+_Disclosure of information under the Enterprise Act 2002_
+
+1281 Disclosure of information under the Enterprise Act 2002
+
+_Expenses of winding up_
+
+1282 Payment of expenses of winding up
+
+_Commonhold associations_
+
+1283 Amendment of memorandum or articles of commonhold association
+
+**PART 45**
+
+NORTHERN IRELAND
+
+1284 Extension of Companies Acts to Northern Ireland
+1285 Extension of GB enactments relating to SEs
+1286 Extension of GB enactments relating to certain other forms of business
+organisation
+1287 Extension of enactments relating to business names
+
+**PART 46**
+
+GENERAL SUPPLEMENTARY PROVISIONS
+
+_Regulations and orders_
+
+1288 Regulations and orders: statutory instrument
+1289 Regulations and orders: negative resolution procedure
+1290 Regulations and orders: affirmative resolution procedure
+1291 Regulations and orders: approval after being made
+1292 Regulations and orders: supplementary
+
+_Meaning of "enactment"_
+
+1293 Meaning of “enactment”
+
+_Consequential and transitional provisions_
+
+1294 Power to make consequential amendments etc
+1295 Repeals
+1296 Power to make transitional provision and savings
+1297 Continuity of the law
+
+**PART 47**
+
+FINAL PROVISIONS
+
+1298 Short title
+1299 Extent
+1300 Commencement
+
+
+-----
+
+_Companies Act 2006 (c. 46)_ lix
+
+Schedule 1 — Connected persons: references to an interest in shares or
+debentures
+Schedule 2 — Specified persons, descriptions of disclosures etc for the
+purposes of section 948
+Part 1 — Specified persons
+Part 2 — Specified descriptions of disclosures
+Part 3 — Overseas regulatory bodies
+Schedule 3 — Amendments of remaining provisions of the Companies Act
+1985 relating to offences
+Schedule 4 — Documents and information sent or supplied to a company
+Part 1 — Introduction
+Part 2 — Communications in hard copy form
+Part 3 — Communications in electronic form
+Part 4 — Other agreed forms of communication
+Schedule 5 — Communications by a company
+Part 1 — Introduction
+Part 2 — Communications in hard copy form
+Part 3 — Communications in electronic form
+Part 4 — Communications by means of a website
+Part 5 — Other agreed forms of communication
+Part 6 — Supplementary provisions
+Schedule 6 — Meaning of “subsidiary” etc: supplementary provisions
+Schedule 7 — Parent and subsidiary undertakings: supplementary
+provisions
+Schedule 8 — Index of defined expressions
+Schedule 9 — Removal of special provisions about accounts and audit of
+charitable companies
+Part 1 — The Companies Act 1985 (c. 6)
+Part 2 — The Companies (Northern Ireland) Order 1986 (S.I. 1986/1032
+(N.I. 6)
+Schedule 10 — Recognised supervisory bodies
+Part 1 — Grant and revocation of recognition of a supervisory body
+Part 2 — Requirements for recognition of a supervisory body
+Part 3 — Arrangements in which recognised supervisory bodies are
+required to participate
+Schedule 11 — Recognised professional qualifications
+Part 1 — Grant and revocation of recognition of a professional
+qualification
+Part 2 — Requirements for recognition of a professional qualification
+Schedule 12 — Arrangements in which registered third country auditors are
+required to participate
+Schedule 13 — Supplementary provisions with respect to delegation order
+Schedule 14 — Statutory auditors: consequential amendments
+Schedule 15 — Transparency obligations and related matters: minor and
+consequential amendments
+Part 1 — Amendments of the Financial Services and Markets Act 2000
+Part 2 — Amendments of the Companies (Audit, Investigations and
+Community Enterprise) Act 2004
+Schedule 16 — Repeals
 
 
 -----

@@ -20,15 +20,13 @@ class PDFCTParser(BaseParser):
         :param toc_parser: An instance of PDFToCParser containing the parsed data.
         """
         super().__init__(rate_limit)
-        self.toc_parser = toc_parser
+        #self.toc_parser = toc_parser
+        self.doc_title = toc_parser.doc_title
         self.toc_md_lines = toc_parser.toc_md_lines
         self.content_md_lines = toc_parser.content_md_lines
         self.master_toc = toc_parser.master_toc
 
     async def create_master_toc(self) -> None:
-        """
-        Split the Table of Contents into its constituent parts.
-        """
         parts = {}
         stack = []
         heading_futures = []
@@ -47,12 +45,12 @@ class PDFCTParser(BaseParser):
                 
                 message_content = response.choices[0].message.content
                 formatted_line = json.loads(message_content)
-                #print(formatted_line)
                 current_part = {
                     "section": formatted_line.get('section', ""),
                     "number": formatted_line.get('number', ""),
                     "title": formatted_line.get('title', "")
                 }
+                utils.print_coloured(current_part, "green")
                 return current_part
             except Exception as e:
                 utils.print_coloured(f"process_heading error loading json: {e}", "red")
@@ -84,7 +82,6 @@ class PDFCTParser(BaseParser):
             if stripped_line.startswith("#"):
                 if item_buffer:
                     placeholder = str(uuid.uuid4())
-                    item_futures.append((process_items('\n'.join(item_buffer)), placeholder))
                     item_futures.append((self.rate_limited_process(process_items, '\n'.join(item_buffer)), placeholder))
                     if stack:
                         current = stack[-1][1]
@@ -114,7 +111,7 @@ class PDFCTParser(BaseParser):
 
         if item_buffer:
             placeholder = str(uuid.uuid4())
-            item_futures.append((process_items('\n'.join(item_buffer)), placeholder))
+            item_futures.append((self.rate_limited_process(process_items, '\n'.join(item_buffer)), placeholder))
             if stack:
                 current = stack[-1][1]
                 current["contents"] = placeholder
@@ -151,12 +148,12 @@ class PDFCTParser(BaseParser):
 
         replace_placeholders(parts, heading_futures, processed_headings)
         replace_placeholders(parts, item_futures, processed_items)
-        with open("parts.json", "w") as f:
+        with open(f"{self.file_name}_parts.json", "w") as f:
             json.dump(parts, f, indent=2)
         utils.print_coloured("Parts created", "green")
         master_toc = schemas.parse_toc_dict(parts)
         self.master_toc = [toc.model_dump() for toc in master_toc]
-        with open("master_toc.json", "w") as f:
+        with open(f"{self.file_name}_master_toc.json", "w") as f:
             json.dump(self.master_toc, f, indent=2, default=lambda x: x.dict())
         utils.print_coloured("Master TOC created", "green")
     

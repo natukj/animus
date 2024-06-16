@@ -45,11 +45,12 @@ def preprocess_levels_dict(levels_dict: Dict[str, Any]) -> Dict[str, Any]:
     """sections that don't have a size hierarchy but are nested in the ToC are represented as empty dictionaries, eg:
     {\"section\": \"Subdivision\", \"number\": \"842-B\", \"title\": \"Some items of Australian source income of foreign residents that are exempt from income tax\"}": {},
     This function processes these empty dictionaries and their children into a proper hierarchy
-    NOTE currently this add proceeding sections to {} section until the next {} section is found, this may not be the desired behaviour and will need to be improved
+    NOTE currently this add proceeding sections to {} section until the next {} section is found, this may not be the desired behavior and will need to be improved
     """
     # if the top level of data has only one key (ToC header), skip it and start from its children
     if len(levels_dict) == 1 and 'children' in next(iter(levels_dict.values())):
         levels_dict = next(iter(levels_dict.values()))['children']
+        print("Skipping top level")
     def process_level(level_data: Dict[str, Any]) -> Dict[str, Any]:
         keys = list(level_data.keys())
         processed_data = {}
@@ -60,16 +61,16 @@ def preprocess_levels_dict(levels_dict: Dict[str, Any]) -> Dict[str, Any]:
             value = level_data[key]
 
             if value == {}:
-                # Start a new section for the empty value
+                # start a new section for the empty value
                 processed_data[key] = {"children": {}}
                 i += 1
                 while i < len(keys) and level_data[keys[i]] != {}:
-                    # Collect subsequent keys and values into the current empty dictionary's children
+                    # collect subsequent keys and values into the current empty dictionary's children
                     processed_data[key]["children"][keys[i]] = level_data[keys[i]]
                     i += 1
             else:
                 if "children" in value:
-                    # Recursively process nested children
+                    # recursively process nested children
                     value["children"] = process_level(value["children"])
                 processed_data[key] = value
                 i += 1
@@ -78,7 +79,7 @@ def preprocess_levels_dict(levels_dict: Dict[str, Any]) -> Dict[str, Any]:
 
     return process_level(levels_dict)
 
-def parse_toc_dict(data: Dict[str, Any]) -> List[TableOfContents]:
+def parse_toc_dict(data: Dict[str, Any], pre_process: bool = True) -> List[TableOfContents]:
     def create_toc(item: Dict[str, Any], key: Optional[str] = None, parent_toc: Optional[TableOfContents] = None) -> Union[TableOfContents, TableOfContentsChild, None]:
         if 'children' in item:
             key_split = key.rsplit('}', 1)
@@ -111,10 +112,10 @@ def parse_toc_dict(data: Dict[str, Any]) -> List[TableOfContents]:
                     children=children
                 )
             else:
-                # If no key, append to parent's children
+                # if no key, append to parent's children
                 parent_toc.children.extend(children)
         else:
-            # Empty dictionary: implicit children indicator
+            # empty dictionary: implicit children indicator
             if key:
                 print(f"Empty dictionary: {key}")
                 key_split = key.rsplit('}', 1)
@@ -137,7 +138,10 @@ def parse_toc_dict(data: Dict[str, Any]) -> List[TableOfContents]:
         title="Root",
         children=[]
     )
-    preprocessed_data = preprocess_levels_dict(data)
+    if pre_process:
+        preprocessed_data = preprocess_levels_dict(data)
+    else:
+        preprocessed_data = data
     for top_level_key, top_level_value in preprocessed_data.items():
         top_level_toc = create_toc(top_level_value, top_level_key, root_toc)
         if top_level_toc:

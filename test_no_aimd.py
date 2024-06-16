@@ -35,54 +35,88 @@ async def main_run():
     item_futures = []
     item_buffer = []
 
+    semaphore = asyncio.Semaphore(50)
+
     async def process_heading(heading: str) -> Dict[str, str]:
-        messages = [
+        async with semaphore:
+            messages = [
                 {"role": "system", "content": prompts.TOC_HIERARCHY_SYS_PROMPT},
                 {"role": "user", "content": prompts.TOC_SECTION_USER_PROMPT.format(TOC_SECTION_TEMPLATE=prompts.TOC_SECTION_TEMPLATE, toc_line=heading)}
             ]
-        response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o")
-        try:
-            if not response.choices or not response.choices[0].message:
-                print("Unexpected response structure:", response)
-                raise Exception("Unexpected response structure")
-            
-            message_content = response.choices[0].message.content
-            formatted_line = json.loads(message_content)
-            #print(formatted_line)
-            current_part = {
-                "section": formatted_line['section'],
-                "number": formatted_line['number'],
-                "title": formatted_line['title']
-            }
-            return current_part
-        except Exception as e:
-            utils.print_coloured(f"process_heading error loading json: {e}", "red")
+            response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o")
+            try:
+                if not response.choices or not response.choices[0].message:
+                    print("Unexpected response structure:", response)
+                    raise Exception("Unexpected response structure")
+
+                message_content = response.choices[0].message.content
+                formatted_line = json.loads(message_content)
+                current_part = {
+                    "section": formatted_line['section'],
+                    "number": formatted_line['number'],
+                    "title": formatted_line['title']
+                }
+                utils.print_coloured(f"{current_part['section']} {current_part['number']} {current_part['title']}", "cyan")
+                return current_part
+            except Exception as e:
+                utils.print_coloured(f"process_heading error loading json: {e}", "red")
 
     async def process_items(content: str) -> Dict[str, str]:
-        messages = [
+        async with semaphore:
+            messages = [
                 {"role": "system", "content": prompts.TOC_HIERARCHY_SYS_PROMPT},
                 {"role": "user", "content": prompts.TOC_ITEMS_USER.format(content=content)}
             ]
-        response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o")
-        try:
-            if not response.choices or not response.choices[0].message:
-                print("Unexpected response structure:", response)
-                raise Exception("Unexpected response structure")
-            
-            message_content = response.choices[0].message.content
-            items_dict = json.loads(message_content)
-            items = items_dict['items']
-            utils.print_coloured(items, "cyan")
-            return items
-        except Exception as e:
-            utils.print_coloured(f"process_heading error loading json: {e}", "red")
+            response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o")
+            try:
+                if not response.choices or not response.choices[0].message:
+                    print("Unexpected response structure:", response)
+                    raise Exception("Unexpected response structure")
+
+                message_content = response.choices[0].message.content
+                items_dict = json.loads(message_content)
+                items = items_dict['items']
+                if not items or items == []:
+                    utils.print_coloured(f"Empty items: {content}", "red")
+                else:
+                    utils.print_coloured(items, "cyan")
+                return items
+            except Exception as e:
+                utils.print_coloured(f"process_heading error loading json: {e}", "red")
 
     async def process_queue(futures):
         return await asyncio.gather(*[future for future, _ in futures])
-
+    with open("uuk_toc_hierarchy_schema.json", "r") as f:
+        ordered_items = json.load(f)
+    toc_md_lines = [line for line in toc_md_lines if line.strip()]
+    toc_hierarchy_schema = [(heading, level.count('#')) for heading, level in ordered_items.items()]
+    max_line_length = max(len(line.strip()) for line in toc_md_lines)
+    skip_next_line = False
     for line in toc_md_lines:
         stripped_line = line.strip()
-        if stripped_line.startswith("#"):
+        level = None
+        match_found = False
+        for heading, level_num in toc_hierarchy_schema:
+            if len(heading) > max_line_length:
+                trimmed_heading = heading[:len(stripped_line)]
+            else:
+                trimmed_heading = heading
+            if trimmed_heading == stripped_line:
+                utils.print_coloured(f"Matched: {heading} in {stripped_line}", "green")
+                level = level_num
+                break
+            if not match_found and ' ' in trimmed_heading and len(trimmed_heading) >= max_line_length*0.8:
+                if "The Companies (Northern Ireland) Order 1986" in trimmed_heading:
+                    trimmed_heading = "Part 2 — The Companies (Northern Ireland) Order 1986 (S.I. 1986/1032"
+                else:
+                    trimmed_heading = ' '.join(trimmed_heading.split(' ')[:-1])
+                if trimmed_heading in stripped_line:
+                    utils.print_coloured(f"Matched after trim: {heading} in {stripped_line}", "yellow")
+                    match_found = True
+                    level = level_num
+                    skip_next_line = True
+                    break
+        if level is not None:
             if item_buffer:
                 placeholder = str(uuid.uuid4())
                 item_futures.append((process_items('\n'.join(item_buffer)), placeholder))
@@ -91,8 +125,7 @@ async def main_run():
                     current["contents"] = placeholder
                 item_buffer = []
 
-            level = stripped_line.count("#")
-            heading = stripped_line.lstrip('#').strip()
+            #heading = stripped_line
             placeholder = str(uuid.uuid4()) 
             
             while stack and stack[-1][0] >= level:
@@ -109,8 +142,13 @@ async def main_run():
                 stack.append((level, parts[placeholder]))
             heading_futures.append((process_heading(heading), placeholder))
         else:
-            if stripped_line:
-                item_buffer.append(stripped_line)
+            if skip_next_line:
+                utils.print_coloured(f"Skipping line: {stripped_line}", "yellow")
+                skip_next_line = False
+                continue
+            else:
+                if stripped_line:
+                    item_buffer.append(stripped_line)
 
     if item_buffer:
         placeholder = str(uuid.uuid4())
@@ -147,19 +185,49 @@ async def main_run():
                                 data[new_key] = data.pop(key)
                         else:
                             replace(data[key])
-                # elif isinstance(data, list):
-                #     for index, item in enumerate(data):
-                #         if item == original_placeholder:
-                #             data[index] = processed_data
             replace(data)
 
     replace_placeholders(parts, heading_futures, processed_headings)
     replace_placeholders(parts, item_futures, processed_items)
     
-    with open("vol9tocnew.json", "w") as f:
+    with open("UKparts.json", "w") as f:
         json.dump(parts, f, indent=4)
 
 asyncio.run(main_run())
+exit()
+async def test():
+    toc_file_path = "toc.md"
+    with open(toc_file_path, "r") as f:
+        toc_md_str = f.read()
+    with open("uuk_toc_hierarchy_schema.json", "r") as f:
+        ordered_items = json.load(f)
+    toc_md_lines = toc_md_str.split("\n")
+    toc_md_lines = [line for line in toc_md_lines if line.strip()]
+    toc_hierarchy_schema = [(heading, level.count('#')) for heading, level in ordered_items.items()]
+    max_line_length = max(len(line) for line in toc_md_lines)
+    # print the line with the longest length
+    longest_line = max(toc_md_lines, key=len)
+    print(f"Longest line: {longest_line} ({len(longest_line)} characters)")
+    for line in toc_md_lines:
+        stripped_line = line.strip()
+        match_found = False
+        for heading, level_num in toc_hierarchy_schema:
+            if len(heading) > max_line_length:
+                trimmed_heading = heading[:len(stripped_line)]
+            else:
+                trimmed_heading = heading
+            if trimmed_heading == stripped_line:
+                utils.print_coloured(f"Matched: {trimmed_heading} in {stripped_line}", "green")
+                match_found = True
+                break
+            if not match_found and ' ' in trimmed_heading and len(trimmed_heading) > max_line_length-10:
+                trimmed_heading = ' '.join(trimmed_heading.split(' ')[:-1])
+                if trimmed_heading in stripped_line:
+                    utils.print_coloured(f"Matched after trim: {trimmed_heading} in {stripped_line}", "yellow")
+                    match_found = True
+                    break
+                    
+asyncio.run(test())
 exit()
 async def main_process():
     with open("vol9toc3.json", "r") as f:
