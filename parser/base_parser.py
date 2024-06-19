@@ -86,7 +86,7 @@ class BaseParser(ABC):
             message_content = response.choices[0].message.content
             items_dict = json.loads(message_content)
             items = items_dict['items']
-            utils.print_coloured(items, "cyan")
+            #utils.print_coloured(items, "cyan")
             return items
         except Exception as e:
             utils.print_coloured(f"process_items error loading json: {e}", "red")
@@ -174,11 +174,11 @@ class BaseParser(ABC):
             next_formatted_section_name = self.child_format_section_name(*next_section)
             next_section_name = next_section[0] if next_section[0] else None
             next_number = next_section[1] if next_section[1] else None
-
+            limited_remaining_content_section_lines = self.remaining_content_section_lines[:5000]
             if next_number and next_section_name:
                 utils.print_coloured(f"FILTER NUMBER + SECTION {next_formatted_section_name}", "cyan")
                 filtered_remaining_content_section_lines = [
-                    (line, idx) for line, idx in self.remaining_content_section_lines 
+                    (line, idx) for line, idx in limited_remaining_content_section_lines
                     if f'{next_section_name.lower()} {next_number}' in line.lower()
                 ]
                 matches = process.extractBests(
@@ -189,7 +189,7 @@ class BaseParser(ABC):
                 )
             elif next_number:
                 filtered_remaining_content_section_lines = [
-                    (line, idx) for line, idx in self.remaining_content_section_lines 
+                    (line, idx) for line, idx in limited_remaining_content_section_lines
                     if re.search(r'\b' + re.escape(next_number) + r'\b', line)
                 ]
                 matches = process.extractBests(
@@ -199,6 +199,13 @@ class BaseParser(ABC):
                     limit=10
                 )
             else:
+                matches = process.extractBests(
+                    next_formatted_section_name, 
+                    [line for line, _ in limited_remaining_content_section_lines], 
+                    score_cutoff=80, 
+                    limit=10
+                )
+            if not matches:
                 matches = process.extractBests(
                     next_formatted_section_name, 
                     [line for line, _ in self.remaining_content_section_lines], 
@@ -230,7 +237,7 @@ class BaseParser(ABC):
                 line_idx = next(idx for line, idx in self.remaining_content_section_lines if line == matched_line)
                 utils.print_coloured(f"{next_formatted_section_name} -> {matched_line} [{line_idx}]", "green")
                 utils.print_coloured(f"from: {matches}", "yellow")
-                if "_Registrar’s power to strike off defunct company_" in next_formatted_section_name:
+                if "Excluded activities: property development" in next_formatted_section_name:
                     print(f"Match: {next_formatted_section_name}: {matched_line} [{line_idx}]")
                     print("from:", matches)
             else:

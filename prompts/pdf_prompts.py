@@ -44,9 +44,11 @@ TOC_ITEMS_USER = """Please format the Table of Contents (ToC) Markdown items int
 
 ## IMPORTANT NOTES
 - It is EXTREMELY important to not include the page numbers in fields (most likely at the end of the line).
-- Do not include any additional information or make any assumptions about the section type, number or title - only use the information provided.
+- Do NOT include any additional information or make any assumptions about the section type, number or title - only use the information provided.
 - Do NOT include anything other than ToC items, that include dates, page numbers, compilation numbers, etc.
 - If there are no items, please provide an empty JSON object.
+
+**Please do NOT include anything other than ToC items, that include dates, page numbers, the document name, compilation numbers, or anything that is not clearly an item in a Table of Contents.**
 
 Please create a JSON object from the following ToC Markdown lines:
 
@@ -154,11 +156,6 @@ The JSON object should be structured as follows:
                   "level": "##",
                   "description": "(string, verbose description of the section type and how it can be identified in the text",
                   "lines": "(array of strings, ALL verbatim level 2 section lines from the ToC including any enumerations and Markdown formatting)"
-            }},
-            "<Level 3 Section Type>": {{
-                  "level": "###",
-                  "description": "(string, verbose description of the section type and how it can be identified in the text)",
-                  "lines": "(array of strings, ALL verbatim level 3 section lines from the ToC including any enumerations and Markdown formatting)"
             }}
             # Add more levels as needed
       }}
@@ -166,6 +163,8 @@ The JSON object should be structured as follows:
 ## IMPORTANT NOTES
    - The section type should be a descriptive name of the section, e.g., 'Schedule', 'Appendix', 'Part', etc.
    - Everything in the JSON object must be verbatim from the ToC, including any enumerations and Markdown formatting.
+
+**Please IGNORE any text above the first Schedule or Appendix section.**
 
 Please format the JSON object as described above, based on the (verbatim) hierarchy levels present in the ToC, here is the Markdown string of the ToC:
 
@@ -210,7 +209,11 @@ Pay close attention to the descriptions and formatting in the examples provided.
    - If there are no items below the lowest level of hierarchy, then you have added too many levels of hierarchy.
    - You are not guaranteed to have every level present in the given text so you must use the example text formatting and example JSON to assist you in assigning the section hierarchy correctly.
 
-**Do NOT include any items in the JSON object, only sections.** Please format the JSON object as described above, based on the hierarchy levels present in the ToC, from the following ToC Markdown text:
+Pay close attention to these specific notes: 
+   - **Do NOT include any items in the JSON object, only sections.** 
+   - **Do NOT include ANYTHING other than the section lines from the ToC, this includes dates, page numbers, the document name, compilation numbers, or anything that is not clearly a section in a Table of Contents.**
+   
+Please format the JSON object as described above, based on the hierarchy levels present in the ToC, from the following ToC Markdown text:
 
 {toc_md_string}
 """

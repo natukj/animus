@@ -39,45 +39,34 @@ class PDFCAParser(BaseParser):
     def group_pages(self) -> None:
         grouped_pages = [self.toc_pages[:2]] + [self.toc_pages[i:i+4] for i in range(2, len(self.toc_pages), 4)]
         individual_page_texts = {page: self.toc_pages_md[self.toc_pages.index(page)].get("text", "") for page in self.toc_pages}
-        grouped_pages_text = {tuple(group): [individual_page_texts[page] for page in group] for group in grouped_pages}
+        grouped_pages_text = {tuple(group): "".join(individual_page_texts[page] for page in group) for group in grouped_pages}
         end_pages = []
         end_pages_text = ""
-        appendix_break = False
         for group in list(reversed(grouped_pages)):
-            remaining_group_pages = []
-            for page in group:
-                page_text = individual_page_texts[page]
-                if any(keyword in page_text.lower() for keyword in ['schedule', 'appendix', 'appendices']) and not appendix_break:
-                    split_index = page_text.lower().find(next(keyword for keyword in ['schedule', 'appendix', 'appendices'] if keyword in page_text.lower()))
-                    if split_index != -1:
-                        appendix_text = page_text[split_index:]
-                        non_appendix_text = page_text[:split_index]
-                        end_pages.append(page)
-                        end_pages_text += appendix_text
-                        if non_appendix_text.strip():
-                            prior_group = tuple(grouped_pages[grouped_pages.index(group) - 1]) if grouped_pages.index(group) > 0 else None
-                            if prior_group:
-                                grouped_pages_text[prior_group] += non_appendix_text
-                    else:
-                        end_pages.append(page)
-                        end_pages_text += page_text
-                    appendix_break = True
-                else:
-                    remaining_group_pages.append(page)
-            if not appendix_break:
-                remaining_group_text = "".join(individual_page_texts[page] for page in remaining_group_pages)
-                if remaining_group_pages:
-                    grouped_pages_text[tuple(remaining_group_pages)] = remaining_group_text
-                    if tuple(remaining_group_pages) != tuple(group):
-                        del grouped_pages_text[tuple(group)]
-                else:
-                    del grouped_pages_text[tuple(group)]
-        self.grouped_pages_text = grouped_pages_text
+            group_text = grouped_pages_text[tuple(group)]
+            if any(keyword in group_text.lower() for keyword in ['schedule', 'appendix', 'appendices']):
+                split_index = group_text.lower().find(next(keyword for keyword in ['schedule', 'appendix', 'appendices'] if keyword in group_text.lower()))
+                if split_index != -1:
+                    appendix_text = group_text[split_index:]
+                    non_appendix_text = group_text[:split_index]
+                    end_pages.extend(group)
+                    end_pages_text = appendix_text + end_pages_text
+                    grouped_pages_text[tuple(group)] = non_appendix_text
+                    break
+
+        self.grouped_pages_text = {group: text for group, text in grouped_pages_text.items() if text.strip()}
         self.grouped_appendix_pages_text = {tuple(end_pages): end_pages_text} if end_pages else None
         if self.grouped_appendix_pages_text:
             self.toc_md_lines = [line for group_text in grouped_pages_text.values() for line in group_text.split("\n") if line.strip()]
             self.toc_md_apx_lines = [line for line in end_pages_text.split("\n") if line.strip()]
 
+        # for i, (group, text) in enumerate(self.grouped_appendix_pages_text.items()):
+        #     print(f"Pages({i}) {group}: {text}")
+        # for i, (group, text) in enumerate(self.grouped_pages_text.items()):
+        #     print(f"Pages({i}) {group}: {len(text)}")
+        #     # if i == 11:
+        #     #     print(text)
+        # utils.is_correct()
     #def split_apx_text(self) -> None:
 
     async def gen_toc_hierarchy_schema(self) -> List[Tuple[str, int]]:
@@ -90,10 +79,18 @@ class PDFCAParser(BaseParser):
             'Subdivision': 4,
         }
         """
-        async def process_pages(page_nums_and_text: tuple, prior_schema: dict = None, example: str = None) -> None:
+        async def process_pages(
+                page_nums_and_text: tuple,
+                is_apx: bool = False, 
+                prior_schema: dict = None, 
+                example: str = None) -> None:
             page_nums, toc_md_toc_section_str = page_nums_and_text
-            if not prior_schema:
+            if not prior_schema and not is_apx:
                 USER_PROMPT = prompts.TOC_HIERARCHY_USER_VISION.format(toc_md_string=toc_md_toc_section_str)
+                pages_imgs = [utils.encode_page_as_base64(self.document[page_num]) for page_num in page_nums]
+                messages = utils.message_template_vision(USER_PROMPT, *pages_imgs)
+            elif is_apx:
+                USER_PROMPT = prompts.TOC_HIERARCHY_USER_VISION_APPENDIX.format(toc_md_string=toc_md_toc_section_str)
                 pages_imgs = [utils.encode_page_as_base64(self.document[page_num]) for page_num in page_nums]
                 messages = utils.message_template_vision(USER_PROMPT, *pages_imgs)
             else:
@@ -113,7 +110,7 @@ class PDFCAParser(BaseParser):
             self.group_pages()
         prior_schema, appendix_schema = await asyncio.gather(
             self.rate_limited_process(process_pages, (next(iter(self.grouped_pages_text.items())))),
-            self.rate_limited_process(process_pages, (next(iter(self.grouped_appendix_pages_text.items()))))
+            self.rate_limited_process(process_pages, (next(iter(self.grouped_appendix_pages_text.items()))), is_apx=True)
         )
         prior_schema_descriptions = []
         for key, value in prior_schema.items():
@@ -183,11 +180,11 @@ class PDFCAParser(BaseParser):
                     self.appendix_toc_hierarchy_schema[level].append(line)
             apx_idxs = []
             for idx, line in enumerate(reversed(self.content_md_lines)):
-                for level, headings in self.appendix_toc_hierarchy_schema.items():
-                    for heading in headings:
-                        if heading in line:
-                            apx_idxs.append(len(self.content_md_lines) - idx)
-                            break
+                for heading in self.appendix_toc_hierarchy_schema['#']:
+                    if heading in line:
+                        utils.print_coloured(f"Found {heading} in {line}", "yellow")
+                        apx_idxs.append(len(self.content_md_lines) - idx)
+                        break
             if apx_idxs:
                 split_idx = min(apx_idxs)
                 utils.print_coloured(f"Length of content_md_lines: {len(self.content_md_lines)}", "yellow")
@@ -196,6 +193,11 @@ class PDFCAParser(BaseParser):
                 self.content_md_lines = main_content
                 utils.print_coloured(f"Splitting at {split_idx}", "yellow")
                 utils.print_coloured(f"Length of content_md_lines after split: {len(self.content_md_lines)}", "yellow")
+                with open(f"z{self.doc_title}_content.md", "w") as f:
+                    f.write('\n'.join(main_content))
+                with open(f"zz{self.doc_title}_apx.md", "w") as f:
+                    f.write('\n'.join(self.appendix_md_lines))
+                utils.is_correct(prompt="Splitting content and appendix")
                 # toc_split_idx = Nones
                 # for index, line in enumerate(self.toc_md_lines):
                 #     if any(line.lower().startswith(keyword) for keyword in ['schedule', 'appendix', 'appendices']):
@@ -223,6 +225,7 @@ class PDFCAParser(BaseParser):
         #toc_hierarchy_schema_items = sorted(combined_toc_hierarchy_schema.items(), key=lambda x: x[1].count('#'))
         toc_hierarchy_schema_items = sorted(combined_toc_hierarchy_schema.items(), key=lambda x: x[0].count('#'))
         self.toc_hierarchy_schema = dict(toc_hierarchy_schema_items)
+        self.remaining_sections = [heading for headings in self.toc_hierarchy_schema.values() for heading in headings]
         utils.print_coloured(f"{json.dumps(self.appendix_toc_hierarchy_schema, indent=4)}", "green")
         utils.print_coloured(f"{json.dumps(self.toc_hierarchy_schema, indent=4)}", "green")
         with open(f"{self.doc_title}_toc_hierarchy_schema.json", "w") as f:
@@ -448,29 +451,40 @@ class PDFCAParser(BaseParser):
         return self.call_add_content_to_master_toc(master_toc)
     
     async def fake_create_master_toc(self) -> None:
-        with open(f"ukCOMPANIESACT2006_master_toc.json", "r") as f:
-            self.master_toc = json.load(f)
-        with open("ukCOMPANIESACT2006_toc_hierarchy_schema.json", "r") as f:
+        with open(f"{self.doc_title}_toc_hierarchy_schema.json", "r") as f:
             self.toc_hierarchy_schema = json.load(f)
-        remaining_sections = [heading for headings in self.toc_hierarchy_schema.values() for heading in headings]
-        chapter1_count = remaining_sections.count("**CHAPTER 1**")
-        utils.print_coloured(f"Occurrences of '**CHAPTER 1**': {chapter1_count}", "yellow")
-        unique_headings = set(remaining_sections)
-        for unique_heading in unique_headings:
-            heading_content_count = sum(unique_heading in line for line in self.content_md_lines)
-            heading_count = remaining_sections.count(unique_heading)
-            difference = heading_content_count - heading_count
-            if difference > 0:
-                remaining_sections.extend([unique_heading] * difference)
-        chapter1_count = remaining_sections.count("**CHAPTER 1**")
-        utils.print_coloured(f"Now occurrences of '**CHAPTER 1**': {chapter1_count}", "yellow")
-        utils.is_correct()
-        self.remaining_sections = remaining_sections
+        with open(f"{self.doc_title}_appendix_toc_hierarchy_schema.json", "r") as f:
+            self.appendix_toc_hierarchy_schema = json.load(f)
+        with open(f"{self.doc_title}_master_toc.json", "r") as f:
+            self.master_toc = json.load(f)
+        with open(f"{self.doc_title}_apx_master_toc.json", "r") as f:
+            self.master_apx_toc = json.load(f)
+        self.remaining_sections = [heading for headings in self.toc_hierarchy_schema.values() for heading in headings]
+        apx_idxs = []
+        for idx, line in enumerate(reversed(self.content_md_lines)):
+            for heading in self.appendix_toc_hierarchy_schema['#']:
+                if heading in line:
+                    utils.print_coloured(f"Found {heading} in {line}", "yellow")
+                    apx_idxs.append(len(self.content_md_lines) - idx)
+                    break
+
+        if apx_idxs:
+            split_idx = min(apx_idxs)
+            utils.print_coloured(f"Length of content_md_lines: {len(self.content_md_lines)}", "yellow")
+            self.appendix_md_lines = self.content_md_lines[split_idx:]
+            main_content = self.content_md_lines[:split_idx]
+            self.content_md_lines = main_content
+            utils.print_coloured(f"Splitting at {split_idx}", "yellow")
+            utils.print_coloured(f"Length of content_md_lines after split: {len(self.content_md_lines)}", "yellow")
+            with open(f"z{self.doc_title}_content.md", "w") as f:
+                f.write('\n'.join(main_content))
+            with open(f"zz{self.doc_title}_apx.md", "w") as f:
+                f.write('\n'.join(self.appendix_md_lines))
     
     async def parse(self) -> Dict[str, Dict[str, Any]]:
-        #await self.create_master_toc()
-        #await self.fake_create_master_toc()
-        await self.call_create_master_toc()
+        await self.fake_create_master_toc()
+        #await self.call_create_master_toc()
+        utils.is_correct()
         self.init_remaining_content_section_lines(self.content_md_lines, md_levels=False)
         master_toc_dict = self.add_content_to_master_toc(self.master_toc)
         if self.master_apx_toc:

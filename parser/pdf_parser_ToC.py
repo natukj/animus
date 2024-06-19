@@ -4,7 +4,7 @@ import asyncio
 from fastapi import UploadFile
 import fitz
 import pathlib
-import threading
+import concurrent.futures
 import llm, prompts, utils
 
 class PDFToCParser:
@@ -17,7 +17,7 @@ class PDFToCParser:
         else:
             raise ValueError("file must be an instance of UploadFile or str.")
         self.file_name: str = file.filename if isinstance(file, UploadFile) else pathlib.Path(file).stem
-        #self.toc_pages: List[int] = list(range(0, 59))
+        self.toc_pages: List[int] = list(range(1, 45))
         # with open("toc.md", "r") as f:
         #     self.toc_md_str = f.read()
         # self.toc_md_lines = self.toc_md_str.split("\n")
@@ -25,7 +25,7 @@ class PDFToCParser:
         #     self.content_md_str = f.read()
         # self.content_md_lines = self.content_md_str.split("\n")
         self.doc_title: str = None
-        self.toc_pages: List[int] = None
+        #self.toc_pages: List[int] = None
         self.toc_pages_md: List[Dict[str, Any]] = None
         self.toc_md_str: str = None
         self.toc_md_lines: List[str] = None
@@ -92,7 +92,7 @@ class PDFToCParser:
             i += 1
             if percentage > 0.4:
                 toc_pages.append(i)
-            if i == 30 and check_right: # logic if there are not toc page nums
+            if i == 15 and check_right: # logic if there are not toc page nums
                 if not toc_pages:
                     check_right = False
                     i = 0
@@ -134,17 +134,20 @@ class PDFToCParser:
         if not self.toc_pages:
             self.toc_pages = await self.find_toc_pages()
 
-        toc_thread = threading.Thread(target=self.to_markdown, args=(self.document,), kwargs={"pages": self.toc_pages, "page_chunks": True})
-        content_thread = threading.Thread(target=self.to_markdown, args=(self.document,), kwargs={"pages": list(range(self.toc_pages[-1] + 1, len(self.document))), "page_chunks": False})
-        content_thread.start()
-        toc_thread.start()
-        toc_thread.join()
-        content_thread.join()
-        self.toc_pages_md = toc_thread.result()
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            toc_future = executor.submit(self.to_markdown, self.document, self.toc_pages, True)
+            content_future = executor.submit(self.to_markdown, self.document, list(range(self.toc_pages[-1] + 1, len(self.document))), False)
+
+            self.toc_pages_md = toc_future.result()
+            self.content_md_str = content_future.result()
         with open(f"{self.file_name}_toc_pages.json", "w") as f:
             json.dump(self.toc_pages_md, f, indent=4)
-        self.content_md_str = content_thread.result()
         pathlib.Path(f"{self.file_name}_content.md").write_bytes(self.content_md_str.encode())
+
+        # with open(f"{self.file_name}_toc_pages.json", "r") as f:
+        #     self.toc_pages_md = json.load(f)
+        # with open(f"{self.file_name}_content.md", "r") as f:
+        #     self.content_md_str = f.read()
 
         meta_doc_title = self.toc_pages_md[0]['metadata'].get('title')
         self.doc_title = meta_doc_title if meta_doc_title else self.file_name
