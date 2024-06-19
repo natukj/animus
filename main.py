@@ -10,7 +10,8 @@ import llm, prompts
 ✔ Fair Work Act 2009
 ✔ Income Tax Assessment Act 1997
 Goods and Services Tax Act 1999
-✔ Corporations Act 2001
+✔ Corporations Act 2001 (UK)
+✔ UK Income Tax Act
 Privacy Act 1988
 Competition and Consumer Act 2010
 Work Health and Safety Act 2011
