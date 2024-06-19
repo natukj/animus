@@ -1,14 +1,10 @@
 from typing import Union, Any, Optional, Dict, Tuple, List, NewType
 import json
 import asyncio
-import base64
 from fastapi import UploadFile
 import fitz
-import re
-import uuid
 import pathlib
-from collections import Counter, defaultdict
-from thefuzz import process  
+import threading
 import llm, prompts, utils
 
 class PDFToCParser:
@@ -20,8 +16,8 @@ class PDFToCParser:
             self.document = fitz.open(file)
         else:
             raise ValueError("file must be an instance of UploadFile or str.")
-        self.file_name: str = file.filename if isinstance(file, UploadFile) else pathlib.Path(file).name
-        # self.toc_pages: List[int] = list(range(2, 32))
+        self.file_name: str = file.filename if isinstance(file, UploadFile) else pathlib.Path(file).stem
+        #self.toc_pages: List[int] = list(range(0, 59))
         # with open("toc.md", "r") as f:
         #     self.toc_md_str = f.read()
         # self.toc_md_lines = self.toc_md_str.split("\n")
@@ -33,11 +29,12 @@ class PDFToCParser:
         self.toc_pages_md: List[Dict[str, Any]] = None
         self.toc_md_str: str = None
         self.toc_md_lines: List[str] = None
+        self.toc_md_apx_lines: List[str] = None
         self.content_md_str: str = None
         self.content_md_lines: List[str] = None
         self.toc_hierarchy_schema: Dict[str, str] = None
-        self.adjusted_toc_hierarchy_schema: Dict[str, str] = None
         self.master_toc: List[Dict[str, Any]] = None
+        self.master_apx_toc: List[Dict[str, Any]] = None
 
     def to_markdown(self, doc: fitz.Document, pages: List[int] = None, page_chunks: bool = False) -> str | List[str]:
         """
@@ -50,7 +47,7 @@ class PDFToCParser:
         Find the pages that contain the Table of Contents.
         """
         async def verify_toc_pages(page: int, start: bool = True) -> tuple:
-            page_image = self.encode_page_as_base64(self.document[page])
+            page_image = utils.encode_page_as_base64(self.document[page])
             if start:
                 adjacent_page_image = utils.encode_page_as_base64(self.document[page - 1]) if page > 0 else None
             else:
@@ -127,6 +124,7 @@ class PDFToCParser:
                     end_index -= 1
         verified_toc_pages = list(range(max(0, toc_pages[start_index] - start_count), toc_pages[end_index] + end_count + 1)) 
         utils.print_coloured(f"Verified ToC pages: {verified_toc_pages}", "green")
+        utils.is_correct()
         return verified_toc_pages
     
     async def extract_toc(self) -> None:
@@ -135,18 +133,29 @@ class PDFToCParser:
         """
         if not self.toc_pages:
             self.toc_pages = await self.find_toc_pages()
-       # self.toc_md_str = self.to_markdown(doc=self.document, pages=self.toc_pages, page_chunks=False)
-        self.toc_pages_md = self.to_markdown(doc=self.document, pages=self.toc_pages, page_chunks=True)
-        self.doc_title = self.toc_pages_md[0]['metadata'].get('title', self.file_name)
+
+        toc_thread = threading.Thread(target=self.to_markdown, args=(self.document,), kwargs={"pages": self.toc_pages, "page_chunks": True})
+        content_thread = threading.Thread(target=self.to_markdown, args=(self.document,), kwargs={"pages": list(range(self.toc_pages[-1] + 1, len(self.document))), "page_chunks": False})
+        content_thread.start()
+        toc_thread.start()
+        toc_thread.join()
+        content_thread.join()
+        self.toc_pages_md = toc_thread.result()
+        with open(f"{self.file_name}_toc_pages.json", "w") as f:
+            json.dump(self.toc_pages_md, f, indent=4)
+        self.content_md_str = content_thread.result()
+        pathlib.Path(f"{self.file_name}_content.md").write_bytes(self.content_md_str.encode())
+
+        meta_doc_title = self.toc_pages_md[0]['metadata'].get('title')
+        self.doc_title = meta_doc_title if meta_doc_title else self.file_name
         toc_md_str = ""
         for page in self.toc_pages_md:
             toc_md_str += page.get("text", "")
         self.toc_md_str = toc_md_str
         pathlib.Path(f"{self.doc_title}_toc.md").write_bytes(self.toc_md_str.encode())
-        self.toc_md_lines = self.toc_md_str.split("\n")
-        self.content_md_str = self.to_markdown(doc=self.document, pages=(list(range(self.toc_pages[-1] + 1, len(self.document)))), page_chunks=False)
+        self.toc_md_lines = [line for line in self.toc_md_str.split("\n") if line.strip()]
         pathlib.Path(f"{self.doc_title}_content.md").write_bytes(self.content_md_str.encode())
-        self.content_md_lines = self.content_md_str.split("\n")
+        self.content_md_lines = [line for line in self.content_md_str.split("\n") if line.strip()]
     
     async def determine_toc_structure(self):
         if not self.toc_md_lines and not self.content_md_lines:

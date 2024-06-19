@@ -12,6 +12,7 @@ import pathlib
 from collections import OrderedDict
 from thefuzz import process  
 import llm, prompts, schemas, utils
+from parser.base_parser import BaseParser
 def find_empty_keys_with_following(data):
     empty_keys_with_following = []
     items = list(data.items()) 
@@ -95,6 +96,58 @@ async def main():
 #     with open("UKparts_updateds.json", "w") as f:
 #         json.dump(parts, f, indent=4)
 
+# doc = fitz.open("/Users/jamesqxd/Documents/norgai-docs/BND/residential-sectional-doors-pg.pdf")
+# async def okay():
+#     images = []
+#     for page in range(1, doc.page_count):
+#         page = doc[page]
+#         image = utils.encode_page_as_base64(page, xzoom=2, yzoom=2)
+#         images.append(image)
+
+#     messages = utils.message_template_vision("What are the installation requirements? Specifically the stormshield PFI... I need to know the Minimum Sideroom", *images)
+#     response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o", response_format="text")
+#     message_content = response.choices[0].message.content
+#     utils.print_coloured(message_content, "green")
+
+# asyncio.run(okay())
+# with open("zzplit_apx.md", 'r') as f:
+#     toc_md_apx_lines = f.readlines()
+        
+# formatted_section_name = "Schedule 2"
+# filtered_remaining_content_section_lines = [
+#             line for line in toc_md_apx_lines
+#             if "2" in line and "Schedule" in line
+#         ]
+# matches = process.extractBests(
+#                     formatted_section_name, 
+#                     [line for line in toc_md_apx_lines], 
+#                     score_cutoff=80, 
+#                     limit=100
+#                 )
+# for match in matches:
+#     print(match)
+
+
+# with open("ukCOMPANIESACT2006_master_toc.json", "r") as f:
+#     master_toc = json.load(f)
+# toc_models = [schemas.convert_to_model(item) for item in master_toc]
+# flattened_toc = schemas.flatten_toc(toc_models)
+# for item in toc_models:
+#     # print(item)
+#     # print("\n")
+#     current_index = flattened_toc.index(item)
+#     if current_index + 1 < len(flattened_toc):
+#         next_item = flattened_toc[current_index + 1]
+#         print(f"{item.section} {item.number} {item.title} - {next_item.section} {next_item.number} {next_item.title}")
+#         print(len(item.children))
+with open("final_apx_content_uk.json", "r") as f:
+    apx_content = json.load(f)
+with open("final_content_uk.json", "r") as f:
+    content = json.load(f)
+content["contents"].extend(apx_content["contents"])
+with open("final_combined_content_uk.json", "w") as f:
+    json.dump(content, f, indent=4)
+exit()
 with open("UKparts_updated.json", "r", encoding="utf-8") as f:
     parts = json.load(f, object_pairs_hook=OrderedDict)
 

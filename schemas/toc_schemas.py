@@ -2,6 +2,7 @@ from __future__ import annotations
 from pydantic import BaseModel, create_model
 from typing import Union, Optional, List, Dict, NewType, Any, Type
 import json
+from collections import OrderedDict
 
 JSONstr = NewType('JSONstr', str)
 
@@ -79,6 +80,33 @@ def preprocess_levels_dict(levels_dict: Dict[str, Any]) -> Dict[str, Any]:
 
     return process_level(levels_dict)
 
+def merge_keys_and_delete_next(levels_dict: Dict[str, Any]) -> Dict[str, Any]:
+    """used when ToC has section titles on separate lines, eg:
+    "{\"section\": \"PART\", \"number\": \"47\", \"title\": \"\"}": {},
+    "{\"section\": \"\", \"number\": \"\", \"title\": \"FINAL PROVISIONS\"}"
+    -> "{\"section\": \"PART\", \"number\": \"47\", \"title\": \"FINAL PROVISIONS\"}"""
+    new_levels_dict = OrderedDict()
+    items = list(levels_dict.items())
+    i = 0
+    while i < len(items):
+        key, value = items[i]
+        while value == {} and i + 1 < len(items):
+            following_key, following_value = items[i + 1]
+            details = json.loads(key)
+            next_details = json.loads(following_key)
+            if not details.get('title') and next_details.get('title'):
+                details['title'] = next_details['title']
+                key = json.dumps(details, ensure_ascii=False)
+                value = following_value
+                i += 1  # continue merging with next item
+            else:
+                break  # break if no merge is needed
+        if isinstance(value, dict):
+            value = merge_keys_and_delete_next(value)
+        new_levels_dict[key] = value
+        i += 1
+    return new_levels_dict
+
 def parse_toc_dict(data: Dict[str, Any], pre_process: bool = True) -> List[TableOfContents]:
     def create_toc(item: Dict[str, Any], key: Optional[str] = None, parent_toc: Optional[TableOfContents] = None) -> Union[TableOfContents, TableOfContentsChild, None]:
         if 'children' in item:
@@ -141,7 +169,7 @@ def parse_toc_dict(data: Dict[str, Any], pre_process: bool = True) -> List[Table
     if pre_process:
         preprocessed_data = preprocess_levels_dict(data)
     else:
-        preprocessed_data = data
+        preprocessed_data = merge_keys_and_delete_next(data)
     for top_level_key, top_level_value in preprocessed_data.items():
         top_level_toc = create_toc(top_level_value, top_level_key, root_toc)
         if top_level_toc:

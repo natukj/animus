@@ -13,6 +13,7 @@ from thefuzz import process
 import llm, prompts, utils
 from deepdiff import DeepDiff
 import copy
+import time
 
 """COMPLEX ATYPICAL"""
 def compare_schemas(original, corrected):
@@ -25,24 +26,59 @@ def encode_page_as_base64(page: fitz.Page):
     return base64.b64encode(pix.tobytes()).decode('utf-8')
 
 pages = list(range(0, 59))
-#grouped_pages = [pages[i:i+2] for i in range(0, len(pages), 2)]
 grouped_pages = [pages[:2]] + [pages[i:i+4] for i in range(2, len(pages), 4)]
 
 doc = fitz.open("/Users/jamesqxd/Documents/norgai-docs/ACTS/ukCOMPANIESACT2006.pdf")
 async def main_run():
-    # toc_file_path = "toc.md"
-    # with open(toc_file_path, "r") as f:
-    #     toc_md_str = f.read()
-    # toc_md_lines = [line.strip() for line in toc_md_str.split("\n") if line.strip()]
-    # section_lines = [line for line in toc_md_lines if not re.match(r'^\s*\d+[\s\.].*', line)]
-    # toc_md_toc_section_str = "\n".join(section_lines)
-    # with open("uk_toc_section.md", "w") as f:
-    #     f.write(toc_md_toc_section_str)
-    # exit()
-    #toc_section_list = utils.to_markdownOG(doc=doc, pages=pages, page_chunks=True)
-    with open("uk_toc_section_list.json", "r") as f:
-        toc_section_list = json.load(f)
+    
+    toc_section_list = utils.to_markdownOG(doc=doc, pages=pages, page_chunks=True)
+    time_start = time.time()
+    individual_page_texts = {page: toc_section_list[pages.index(page)].get("text", "") for page in pages}
+    grouped_pages_text = {tuple(group): "".join(individual_page_texts[page] for page in group) for group in grouped_pages}
+    end_pages = []
+    end_pages_text = ""
+    appendix_break = False
+    for group in list(reversed(grouped_pages)):
+        remaining_group_pages = []
+        for page in group:
+            page_text = individual_page_texts[page]
+            if any(keyword in page_text.lower() for keyword in ['schedule', 'appendix', 'appendices']) and not appendix_break:
+                split_index = page_text.lower().find(next(keyword for keyword in ['schedule', 'appendix', 'appendices'] if keyword in page_text.lower()))
+                if split_index != -1:
+                    appendix_text = page_text[split_index:]
+                    non_appendix_text = page_text[:split_index]
+                    end_pages.append(page)
+                    end_pages_text += appendix_text
+                    if non_appendix_text.strip():
+                        prior_group = tuple(grouped_pages[grouped_pages.index(group) - 1]) if grouped_pages.index(group) > 0 else None
+                        if prior_group:
+                            grouped_pages_text[prior_group] += non_appendix_text
+                else:
+                    end_pages.append(page)
+                    end_pages_text += page_text
+                appendix_break = True
+            else:
+                remaining_group_pages.append(page)
+        if not appendix_break:
+            remaining_group_text = "".join(individual_page_texts[page] for page in remaining_group_pages)
+            if remaining_group_pages:
+                grouped_pages_text[tuple(remaining_group_pages)] = remaining_group_text
+                if tuple(remaining_group_pages) != tuple(group):
+                    del grouped_pages_text[tuple(group)]
+            else:
+                del grouped_pages_text[tuple(group)]
+    grouped_appendix_pages_text = {tuple(end_pages): end_pages_text} if end_pages else {}
+    print(f"Time taken: {time.time() - time_start}")
+    # for i, (group, text) in enumerate(grouped_appendix_pages_text.items()):
+    #     print(f"Pages({i}) {group}: {text}")
+    # for i, (group, text) in enumerate(grouped_pages_text.items()):
+    #     print(f"Pages({i}) {group}: {len(text)}")
+    #     if i >= 14:
+    #         print(text)
 
+    
+   
+    time_start = time.time()
     individual_page_texts = {page: toc_section_list[pages.index(page)].get("text", "") for page in pages}
     grouped_pages_text = {tuple(group): [individual_page_texts[page] for page in group] for group in grouped_pages}
     end_pages = []
@@ -68,7 +104,8 @@ async def main_run():
             del grouped_pages_text[tuple(group)]
 
     grouped_end_pages_text = {tuple(end_pages): end_pages_text} if end_pages else {}
-
+    print(f"Time taken: {time.time() - time_start}")
+    exit()
     # for i, (group, text) in enumerate(grouped_pages_text.items()):
     #     print(f"Pages({i}) {group}: {len(text)}")
     # for group, text in grouped_end_pages_text.items():

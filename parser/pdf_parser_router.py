@@ -18,7 +18,8 @@ class PDFParserRouter:
         self.toc_parser = None
         self.parser_type = None
         self.parsers = {
-            "CT": PDFCTParser
+            "CT": PDFCTParser,
+            "CA": PDFCAParser
         }
     async def parse(self, file: Union[UploadFile, str]) -> Dict[str, Any]:
         if not self.parser_type:

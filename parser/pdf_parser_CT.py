@@ -32,57 +32,12 @@ class PDFCTParser(BaseParser):
         heading_futures = []
         item_futures = []
         item_buffer = []
-        async def process_heading(heading: str) -> Dict[str, str]:
-            messages = [
-                    {"role": "system", "content": prompts.TOC_HIERARCHY_SYS_PROMPT},
-                    {"role": "user", "content": prompts.TOC_SECTION_USER_PROMPT.format(TOC_SECTION_TEMPLATE=prompts.TOC_SECTION_TEMPLATE, toc_line=heading)}
-                ]
-            response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o")
-            try:
-                if not response.choices or not response.choices[0].message:
-                    print("Unexpected response structure:", response)
-                    raise Exception("Unexpected response structure")
-                
-                message_content = response.choices[0].message.content
-                formatted_line = json.loads(message_content)
-                current_part = {
-                    "section": formatted_line.get('section', ""),
-                    "number": formatted_line.get('number', ""),
-                    "title": formatted_line.get('title', "")
-                }
-                utils.print_coloured(current_part, "green")
-                return current_part
-            except Exception as e:
-                utils.print_coloured(f"process_heading error loading json: {e}", "red")
-
-        async def process_items(content: str) -> Dict[str, str]:
-            messages = [
-                    {"role": "system", "content": prompts.TOC_HIERARCHY_SYS_PROMPT},
-                    {"role": "user", "content": prompts.TOC_ITEMS_USER.format(content=content)}
-                ]
-            response = await llm.openai_client_chat_completion_request(messages, model="gpt-4o")
-            try:
-                if not response.choices or not response.choices[0].message:
-                    print("Unexpected response structure:", response)
-                    raise Exception("Unexpected response structure")
-                
-                message_content = response.choices[0].message.content
-                items_dict = json.loads(message_content)
-                items = items_dict['items']
-                utils.print_coloured(items, "cyan")
-                return items
-            except Exception as e:
-                utils.print_coloured(f"process_items error loading json: {e}", "red")
-
-        async def process_queue(futures):
-            return await asyncio.gather(*[future for future, _ in futures])
-
         for line in self.toc_md_lines:
             stripped_line = line.strip()
             if stripped_line.startswith("#"):
                 if item_buffer:
                     placeholder = str(uuid.uuid4())
-                    item_futures.append((self.rate_limited_process(process_items, '\n'.join(item_buffer)), placeholder))
+                    item_futures.append((self.rate_limited_process(self.process_items, '\n'.join(item_buffer)), placeholder))
                     if stack:
                         current = stack[-1][1]
                         current["contents"] = placeholder
@@ -104,21 +59,21 @@ class PDFCTParser(BaseParser):
                 else:
                     parts[placeholder] = {}
                     stack.append((level, parts[placeholder]))
-                heading_futures.append((self.rate_limited_process(process_heading, heading), placeholder))
+                heading_futures.append((self.rate_limited_process(self.process_heading, heading), placeholder))
             else:
                 if stripped_line:
                     item_buffer.append(stripped_line)
 
         if item_buffer:
             placeholder = str(uuid.uuid4())
-            item_futures.append((self.rate_limited_process(process_items, '\n'.join(item_buffer)), placeholder))
+            item_futures.append((self.rate_limited_process(self.process_items, '\n'.join(item_buffer)), placeholder))
             if stack:
                 current = stack[-1][1]
                 current["contents"] = placeholder
 
         processed_headings, processed_items = await asyncio.gather(
-            process_queue(heading_futures),
-            process_queue(item_futures)
+            self.process_queue(heading_futures),
+            self.process_queue(item_futures)
         )
         duplicate_headings = {}
         def replace_placeholders(data, futures, processed):

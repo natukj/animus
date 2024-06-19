@@ -198,6 +198,7 @@ def to_markdownOOG(doc: fitz.Document, pages: list = None) -> str:
             flags=fitz.TEXTFLAGS_TEXT,
             sort=True,
         )["blocks"]
+        print(f"###############{clip}##############")
 
         for block in blocks:  # iterate textblocks
             previous_y = 0
@@ -250,7 +251,7 @@ def to_markdownOOG(doc: fitz.Document, pages: list = None) -> str:
                     mono = s["flags"] & 8
                     bold = s["flags"] & 16
                     italic = s["flags"] & 2
-
+                    print(f"Span {i}: text='{s['text']}', flags={s['flags']}")
                     if mono:
                         # this is text in some monospaced font
                         out_string += f"`{s['text'].strip()}` "

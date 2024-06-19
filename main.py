@@ -25,11 +25,11 @@ Australian Securities and Investments Commission Act 2001
 
 
 async def main_run():
-    vol_num = 9
-    pdf_path = f"/Users/jamesqxd/Documents/norgai-docs/TAX/C2024C00046VOL0{vol_num}.pdf"
+    vol_num = "uk_tax"
+    pdf_path = "/Users/jamesqxd/Documents/norgai-docs/ACTS/uk_income_tax.pdf"
     router = PDFParserRouter()
     parsed_content = await router.parse(pdf_path)
-    with open(f"parsed_content_{vol_num}.json", "w") as f:
+    with open(f"final_content_{vol_num}.json", "w") as f:
         json.dump(parsed_content, f, indent=4)
 
     

@@ -245,7 +245,7 @@ def to_markdownOG(
         if clip is None:
             clip = textpage.rect
         out_string = ""
-
+        
         # This is a list of tuples (linerect, spanlist)
         nlines = get_raw_lines(textpage, clip=clip, tolerance=3)
 
@@ -346,12 +346,12 @@ def to_markdownOG(
             
             consolidated_spans = consolidate_spans(spans)
             for i, s in enumerate(consolidated_spans):  # iterate spans of the line
-            # for i, s in enumerate(spans):  # iterate spans of the line
+            #for i, s in enumerate(spans):  # iterate spans of the line
                 # decode font properties
                 mono = s["flags"] & 8
                 bold = s["flags"] & 16
                 italic = s["flags"] & 2
-
+                #print(f"Span {i}: text='{s['text']}', flags={s['flags']}")
                 if mono:
                     # this is text in some monospaced font
                     out_string += f"`{s['text'].strip()}` "

@@ -1,7 +1,22 @@
+import sys
 import base64
 import tiktoken
 import fitz
-from typing import Dict, Any
+from typing import Dict, Any, Callable
+from termcolor import colored
+
+def print_coloured(text, color, attrs=None):
+    """
+    Print text in the terminal with specified color and attributes.
+
+    Args:
+    text (str): The text to print.
+    color (str): The color to use. Options include 'grey', 'red', 'green', 'yellow', 'blue',
+                 'magenta', 'cyan', and 'white'.
+    attrs (list of str, optional): List of attributes. Options include 'bold', 'dark', 
+                                   'underline', 'blink', 'reverse', 'concealed'.
+    """
+    print(colored(text, color, attrs=attrs))
 
 def count_tokens(text: str, encoding_name: str = "o200k_base") -> int:
     """
@@ -29,3 +44,10 @@ def message_template_vision(user_prompt: str, *images: str) -> Dict[str, Any]:
             }
         ]
     return message_template
+
+def is_correct(prompt: str = "Is this correct? (Y/n): ", confirmation_value: str = 'y', error_message: str = "fml", exit_on_error: bool = True):
+    user_input = input(prompt).strip().lower()
+    if user_input != confirmation_value.lower():
+        print_coloured(error_message, "red")
+        if exit_on_error:
+            sys.exit()

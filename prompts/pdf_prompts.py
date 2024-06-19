@@ -205,11 +205,12 @@ Pay close attention to the descriptions and formatting in the examples provided.
 ## INSTRUCTIONS
    - Strictly follow the above guide and examples closely to determine the hierarchy levels present in the ToC pages provided.
    - Make sure to include ALL section lines from the ToC, at the appropriate level of hierarchy, in the JSON object.
+   - You must include ALL section lines from the ToC, even if they are repeated.
    - Only sections are to be added to the JSON object, not items. 
    - If there are no items below the lowest level of hierarchy, then you have added too many levels of hierarchy.
    - You are not guaranteed to have every level present in the given text so you must use the example text formatting and example JSON to assist you in assigning the section hierarchy correctly.
 
-Please format the JSON object as described above, based on the hierarchy levels present in the ToC, from the following ToC Markdown text:
+**Do NOT include any items in the JSON object, only sections.** Please format the JSON object as described above, based on the hierarchy levels present in the ToC, from the following ToC Markdown text:
 
 {toc_md_string}
 """
@@ -254,6 +255,7 @@ The JSON object should be structured as follows:
 Pay close attention to these specific notes: 
 - **If a section type has the section title on a proceeding line, add an additional entry to the JSON object with the same 'level' as the section type and use "<Level N Section Type> Titles" as the key.**
 - **Do NOT include any text the proceeds the beginning of the ToC.**
+- **Do NOT include any items in the JSON object, only sections.**
 
 Please format the JSON object as described above, based on the (verbatim) hierarchy levels present in the ToC, here is the Markdown string of the ToC:
 

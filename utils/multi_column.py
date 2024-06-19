@@ -67,6 +67,24 @@ try:
 except ImportError:
     import fitz
 
+def get_header_margin(page):
+    """Get the header margin based on the presence of a horizontal line at the top of the page.
+
+    Args:
+        page: (Page) the page to extract the header margin from
+    Returns:
+        The header margin value (y-coordinate of the horizontal line) or 0 if no horizontal line is found.
+    """
+    header_margin = 0
+    for item in page.get_drawings():
+        print(item)  # this func doesnt work
+        if item["type"] == "line":
+            x_start, y_start, x_end, y_end = item["points"]
+            if y_start == y_end:  # Check if the line is horizontal
+                if header_margin == 0 or y_start < header_margin:
+                    header_margin = y_start
+    return header_margin
+
 
 def column_boxes(
     page,
@@ -189,6 +207,44 @@ def column_boxes(
                 bboxes[i] = temp  # replace with enlarged bbox
 
         return [b for b in bboxes if b != None]
+    
+    def extend_left(bboxes, path_bboxes, vert_bboxes, img_bboxes):
+        """Extend a bbox to the left page border.
+
+        Whenever there is no text to the left of a bbox, enlarge it up
+        to the left page border.
+
+        Args:
+            bboxes: (list[IRect]) bboxes to check
+            path_bboxes: (list[IRect]) bboxes with a background color
+            vert_bboxes: (list[IRect]) bboxes with vertical text
+            img_bboxes: (list[IRect]) bboxes of images
+        Returns:
+            Potentially modified bboxes.
+        """
+        for i, bb in enumerate(bboxes):
+            # do not extend text with background color
+            if in_bbox(bb, path_bboxes):
+                continue
+
+            # do not extend text in images
+            if in_bbox(bb, img_bboxes):
+                continue
+
+            # temp extends bb to the left page border
+            temp = +bb
+            temp.x0 = 0
+
+            # do not cut through colored background or images
+            if intersects_bboxes(temp, path_bboxes + vert_bboxes + img_bboxes):
+                continue
+
+            # also, do not intersect other text bboxes
+            check = can_extend(temp, bb, bboxes)
+            if check:
+                bboxes[i] = temp  # replace with enlarged bbox
+
+        return [b for b in bboxes if b != None]
 
     def clean_nblocks(nblocks):
         """Do some elementary cleaning."""
@@ -270,10 +326,13 @@ def column_boxes(
     # Sort text bboxes by ascending background, top, then left coordinates
     bboxes.sort(key=lambda k: (in_bbox(k, path_bboxes), k.y0, k.x0))
 
-    # Extend bboxes to the right where possible
+    # Extend bboxes to the right and left where possible
     bboxes = extend_right(
         bboxes, int(page.rect.width), path_bboxes, vert_bboxes, img_bboxes
     )
+    bbox = extend_left(
+        bboxes, path_bboxes, vert_bboxes, img_bboxes
+        )
 
     # immediately return of no text found
     if bboxes == []:
@@ -336,7 +395,8 @@ if __name__ == "__main__":
     import sys
 
     # get the file name
-    filename = sys.argv[1]
+    #filename = sys.argv[1]
+    filename = "/Users/jamesqxd/Documents/norgai-docs/ACTS/ukCOMPANIESACT2006.pdf"
 
     # check if footer margin is given
     if len(sys.argv) > 2:
