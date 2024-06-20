@@ -11,7 +11,7 @@ import pathlib
 from collections import Counter, defaultdict
 from thefuzz import process  
 import llm, prompts, schemas, utils
-from parser.base_parser import BaseParser
+from parsers.pdf_parser import BaseParser
 
 """COMPLEX TYPICAL"""
 # pages = list(range(2, 32))

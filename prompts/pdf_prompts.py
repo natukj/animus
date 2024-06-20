@@ -46,6 +46,7 @@ TOC_ITEMS_USER = """Please format the Table of Contents (ToC) Markdown items int
 - It is EXTREMELY important to not include the page numbers in fields (most likely at the end of the line).
 - Do NOT include any additional information or make any assumptions about the section type, number or title - only use the information provided.
 - Do NOT include anything other than ToC items, that include dates, page numbers, compilation numbers, etc.
+- Some items span multiple lines, make sure to include all lines that belong to the same item as a single item in the JSON object.
 - If there are no items, please provide an empty JSON object.
 
 **Please do NOT include anything other than ToC items, that include dates, page numbers, the document name, compilation numbers, or anything that is not clearly an item in a Table of Contents.**

@@ -1,9 +1,6 @@
-from parser.pdf_parser import PDFParser
-from parser.pdf_parser_ToC import PDFToCParser
-from parser.pdf_parser_router import PDFParserRouter
 import asyncio
 import json
-import llm, prompts
+from parsers import PDFParserRouter
 
 """
 ✔ Modern Awards
@@ -20,19 +17,22 @@ Superannuation Guarantee (Administration) Act 1992
 National Employment Standards
 Australian Securities and Investments Commission Act 2001
 """
-# router = PDFParserRouter()
-# parsed_content = router.parse("path/to/your/pdf.pdf")
-# print(parsed_content) 
-
 
 async def main_run():
-    vol_num = "uk_tax"
-    pdf_path = "/Users/jamesqxd/Documents/norgai-docs/ACTS/uk_income_tax.pdf"
+    for i in range(4, 11):
+        vol_num = f"{i:02d}"
+        pdf_path = f"/Users/jamesqxd/Documents/norgai-docs/TAX/C2024C00046VOL{vol_num}.pdf"
+        print(f"Processing {pdf_path}")
+        router = PDFParserRouter()
+        parsed_content = await router.parse(pdf_path)
+        with open(f"/Users/jamesqxd/Documents/norgai-docs/TAX/parsed/final_aus_tax_{vol_num}.json", "w") as f:
+            json.dump(parsed_content, f, indent=4)
+#asyncio.run(main_run())
+
+async def main_crane():
+    pdf_path = "/Users/jamesqxd/Documents/norgai-docs/EBA/Crane/CraneEBA2022.pdf"
     router = PDFParserRouter()
     parsed_content = await router.parse(pdf_path)
-    with open(f"final_content_{vol_num}.json", "w") as f:
+    with open(f"/Users/jamesqxd/Documents/norgai-docs/EBA/Crane/final_crane_eba.json", "w") as f:
         json.dump(parsed_content, f, indent=4)
-
-    
-
-asyncio.run(main_run())
+asyncio.run(main_crane())

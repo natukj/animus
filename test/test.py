@@ -1,5 +1,5 @@
 from __future__ import annotations
-from parser.pdf_parser import PDFParser
+from parsers.pdf_parser import PDFParser
 import asyncio
 import json
 import llm, prompts

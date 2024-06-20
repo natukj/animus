@@ -12,7 +12,7 @@ import pathlib
 from collections import OrderedDict
 from thefuzz import process  
 import llm, prompts, schemas, utils
-from parser.base_parser import BaseParser
+from parsers.pdf_parser import BaseParser
 def find_empty_keys_with_following(data):
     empty_keys_with_following = []
     items = list(data.items()) 

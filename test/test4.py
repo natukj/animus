@@ -10,7 +10,7 @@ import uuid
 from collections import Counter, defaultdict
 from thefuzz import process  
 import llm, prompts, utils
-from parser.base_parser import BaseParser
+from parsers.pdf_parser import BaseParser
 
 def encode_page_as_base64(page: fitz.Page):
     pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))

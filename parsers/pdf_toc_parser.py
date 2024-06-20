@@ -1,10 +1,9 @@
-from typing import Union, Any, Optional, Dict, Tuple, List, NewType
+from typing import Union, Any, Callable, Dict, Awaitable, List
 import json
 import asyncio
 from fastapi import UploadFile
 import fitz
 import pathlib
-import concurrent.futures
 import llm, prompts, utils
 
 class PDFToCParser:
@@ -17,7 +16,7 @@ class PDFToCParser:
         else:
             raise ValueError("file must be an instance of UploadFile or str.")
         self.file_name: str = file.filename if isinstance(file, UploadFile) else pathlib.Path(file).stem
-        self.toc_pages: List[int] = list(range(1, 45))
+        #self.toc_pages: List[int] = list(range(1, 45))
         # with open("toc.md", "r") as f:
         #     self.toc_md_str = f.read()
         # self.toc_md_lines = self.toc_md_str.split("\n")
@@ -25,7 +24,7 @@ class PDFToCParser:
         #     self.content_md_str = f.read()
         # self.content_md_lines = self.content_md_str.split("\n")
         self.doc_title: str = None
-        #self.toc_pages: List[int] = None
+        self.toc_pages: List[int] = None
         self.toc_pages_md: List[Dict[str, Any]] = None
         self.toc_md_str: str = None
         self.toc_md_lines: List[str] = None
@@ -89,9 +88,9 @@ class PDFToCParser:
             words = [w for w in words if fitz.Rect(w[:4]) in rect]
             page_num_count = sum(1 for w in words if w[4].isdigit())
             percentage = page_num_count / len(words) if len(words) > 0 else 0
-            i += 1
             if percentage > 0.4:
                 toc_pages.append(i)
+            i += 1
             if i == 15 and check_right: # logic if there are not toc page nums
                 if not toc_pages:
                     check_right = False
@@ -107,7 +106,9 @@ class PDFToCParser:
             if start_found and end_found:
                 break
             if not start_found:
-                start_tp, start_bp = await verify_toc_pages(toc_pages[start_index]-start_count)
+                start_tp, start_bp = await self.rate_limited_process(
+                    verify_toc_pages, toc_pages[start_index] - start_count
+                )
                 if start_tp and not start_bp:
                     start_found = True
                 elif start_tp and start_bp:
@@ -115,7 +116,9 @@ class PDFToCParser:
                 else:
                     start_index += 1
             if not end_found:
-                end_tp, end_bp = await verify_toc_pages(toc_pages[end_index]+end_count, start=False)
+                end_tp, end_bp = await self.rate_limited_process(
+                    verify_toc_pages, toc_pages[end_index] + end_count, start=False
+                )
                 if end_tp and not end_bp:
                     end_found = True
                 elif end_tp and end_bp:
@@ -134,12 +137,14 @@ class PDFToCParser:
         if not self.toc_pages:
             self.toc_pages = await self.find_toc_pages()
 
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            toc_future = executor.submit(self.to_markdown, self.document, self.toc_pages, True)
-            content_future = executor.submit(self.to_markdown, self.document, list(range(self.toc_pages[-1] + 1, len(self.document))), False)
+        # ensure no overlap in pages (this might have been due to threading)
+        content_pages = list(range(self.toc_pages[-1] + 1, len(self.document)))
+        if set(self.toc_pages) & set(content_pages):
+            raise ValueError("ToC pages overlap with content pages")
 
-            self.toc_pages_md = toc_future.result()
-            self.content_md_str = content_future.result()
+        self.toc_pages_md = self.to_markdown(self.document, self.toc_pages, True)
+        self.content_md_str = self.to_markdown(self.document, content_pages, False)
+
         with open(f"{self.file_name}_toc_pages.json", "w") as f:
             json.dump(self.toc_pages_md, f, indent=4)
         pathlib.Path(f"{self.file_name}_content.md").write_bytes(self.content_md_str.encode())
@@ -167,11 +172,46 @@ class PDFToCParser:
         utils.print_coloured(f"{len(toc_md_section_lines)} / {len(self.toc_md_lines)} -> {len(toc_md_section_lines) / len(self.toc_md_lines)}", "yellow")
         if len(toc_md_section_lines) / len(self.toc_md_lines) > 0.05:
             if len(self.toc_pages) >= 3:
-                return "CT"
+                return "VarTextSize"
             else:
-                return "ST"
+                return "VarTextSizeSmall"
         else:
             if len(self.toc_pages) >= 3:
-                return "CA"
+                return "SameTextSize"
             else:
-                return "SA"
+                return "SameTextSizeSmall"
+            
+    async def rate_limited_process(
+        self, 
+        process_function: Callable[..., Awaitable[Any]],
+        *args: Any, 
+        max_attempts: int = 5, 
+        **kwargs: Any
+    ) -> Any:
+        """
+        rate-limited processing with retries.
+
+        Args:
+            process_function (Callable): The function to execute with rate limiting.
+            *args: Arguments to pass to the process function.
+            max_attempts (int): Maximum number of retry attempts.
+            **kwargs: Keyword arguments to pass to the process function.
+
+        Returns:
+            Any: The result of the process function or None if it fails after max attempts.
+        """
+        attempts = 0
+        semaphore = asyncio.Semaphore(50)
+        async with semaphore:
+            while attempts < max_attempts:
+                try:
+                    return await process_function(*args, **kwargs)
+                except Exception as e:
+                    function_name = process_function.__name__ if hasattr(process_function, '__name__') else 'Unknown function'
+                    utils.print_coloured(f"Error during RLP {function_name}: {e}", "red")
+                    # utils.print_coloured(f"Retrying... Attempt {attempts + 1}\nargs: {args} and kwargs: {kwargs}", "red")
+                    utils.print_coloured(f"Retrying... Attempt {attempts + 1}", "red")
+                    attempts += 1
+                    if attempts >= max_attempts:
+                        utils.print_coloured(f"Failed after {max_attempts} attempts", "red")
+                        return None

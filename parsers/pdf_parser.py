@@ -7,7 +7,7 @@ import json
 import llm, prompts, schemas, utils
 
 
-class BaseParser(ABC):
+class PDFParser(ABC):
     def __init__(self, rate_limit: int = 50):
         self.semaphore = asyncio.Semaphore(rate_limit)
         self.remaining_section_lines: List[Tuple[str, int]] = []
@@ -176,7 +176,6 @@ class BaseParser(ABC):
             next_number = next_section[1] if next_section[1] else None
             limited_remaining_content_section_lines = self.remaining_content_section_lines[:5000]
             if next_number and next_section_name:
-                utils.print_coloured(f"FILTER NUMBER + SECTION {next_formatted_section_name}", "cyan")
                 filtered_remaining_content_section_lines = [
                     (line, idx) for line, idx in limited_remaining_content_section_lines
                     if f'{next_section_name.lower()} {next_number}' in line.lower()
@@ -237,7 +236,7 @@ class BaseParser(ABC):
                 line_idx = next(idx for line, idx in self.remaining_content_section_lines if line == matched_line)
                 utils.print_coloured(f"{next_formatted_section_name} -> {matched_line} [{line_idx}]", "green")
                 utils.print_coloured(f"from: {matches}", "yellow")
-                if "Excluded activities: property development" in next_formatted_section_name:
+                if "<problematic line here>" in next_formatted_section_name:
                     print(f"Match: {next_formatted_section_name}: {matched_line} [{line_idx}]")
                     print("from:", matches)
             else:
@@ -370,52 +369,3 @@ class BaseParser(ABC):
                     if attempts >= max_attempts:
                         utils.print_coloured(f"Failed after {max_attempts} attempts", "red")
                         return None
-        
-    
-
-# class PDFParserRouter:
-#     """Routes PDFs to appropriate parsers based on complexity."""
-
-#     def __init__(self):
-#         self.simple_parser = SimplePDFParser()
-#         self.complex_parser = ComplexPDFParser()
-
-#     def parse(self, pdf_path: str) -> str: 
-#         """Parses a PDF using the appropriate parser."""
-#         if self._is_complex(pdf_path):
-#             print("Using ComplexPDFParser")
-#             return self.complex_parser.parse(pdf_path)  # Assuming you define a 'parse' method
-#         else:
-#             print("Using SimplePDFParser")
-#             return self.simple_parser.parse(pdf_path)  # Assuming you define a 'parse' method
-
-#     def _is_complex(self, pdf_path: str) -> bool:
-#         """
-#         Determine if a PDF is complex. 
-
-#         This is a placeholder - replace with your actual complexity detection logic.
-#         """
-#         # Example (replace with your logic):
-#         doc = fitz.open(pdf_path)
-#         if doc.page_count > 50: 
-#             return True
-#         # Add more conditions based on your needs
-#         return False
-    
-#     def to_markdown(self, doc: fitz.Document, pages: List[int] = None) -> str:
-#         """
-#         Convert the given text to Markdown format.
-#         """
-#         return utils.to_markdown(doc, pages)
-    
-#     def to_markdownOG(self, doc: fitz.Document, pages: List[int] = None, page_chunks: bool = False) -> str | List[str]:
-#         """
-#         Convert the given text to Markdown format.
-#         """
-#         return utils.to_markdownOG(doc, pages=pages, page_chunks=page_chunks)
-    
-#     def to_markdownOOG(self, doc: fitz.Document, pages: List[int] = None) -> str:
-#         """
-#         Convert the given text to Markdown format.
-#         """
-#         return utils.to_markdownOOG(doc, pages)

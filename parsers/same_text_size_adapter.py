@@ -1,21 +1,17 @@
-from typing import Union, Any, Optional, Dict, Tuple, List, NewType
+from typing import Any, Dict, Tuple, List
 import json
 import asyncio
 import copy
-import re
 import uuid
-from collections import Counter, defaultdict
 from thefuzz import process  
-import llm, prompts, schemas, utils
-from parser.base_parser import BaseParser
-from parser.pdf_parser_ToC import PDFToCParser
+import parsers, llm, prompts, schemas, utils
 
-class PDFCAParser(BaseParser):
-    def __init__(self, toc_parser: PDFToCParser, rate_limit: int = 50) -> None:
+class SameTextSizeAdapter(parsers.PDFParser):
+    def __init__(self, toc_parser: parsers.PDFToCParser, rate_limit: int = 50) -> None:
         """
-        Initialise the PDFCAParser with a reference to the PDFToCParser instance.
-        
-        :param toc_parser: An instance of PDFToCParser containing the parsed data. 
+        PDFParser adapter for PDFs with no variation in text size.
+
+        :param toc_parser: An instance of PDFToCParser containing the parsed data.
         """
         super().__init__(rate_limit)
         self.document = toc_parser.document
@@ -33,7 +29,6 @@ class PDFCAParser(BaseParser):
         self.grouped_pages_text: Dict[Tuple[int], List[str]] = None
         self.grouped_appendix_pages_text: Dict[Tuple[int], str] = None
         self.remaining_sections: List[str] = None
-        # self.init_remaining_content_section_lines(self.content_md_lines, md_levels=False)
         self.init_child_format_section_name(self.format_section_name)
 
     def group_pages(self) -> None:
@@ -59,7 +54,6 @@ class PDFCAParser(BaseParser):
         if self.grouped_appendix_pages_text:
             self.toc_md_lines = [line for group_text in grouped_pages_text.values() for line in group_text.split("\n") if line.strip()]
             self.toc_md_apx_lines = [line for line in end_pages_text.split("\n") if line.strip()]
-
         # for i, (group, text) in enumerate(self.grouped_appendix_pages_text.items()):
         #     print(f"Pages({i}) {group}: {text}")
         # for i, (group, text) in enumerate(self.grouped_pages_text.items()):
@@ -67,16 +61,15 @@ class PDFCAParser(BaseParser):
         #     # if i == 11:
         #     #     print(text)
         # utils.is_correct()
-    #def split_apx_text(self) -> None:
 
-    async def gen_toc_hierarchy_schema(self) -> List[Tuple[str, int]]:
+    async def gen_toc_hierarchy_schema(self) -> None:
         """
         Generate a hierarchy schema for the ToC hierarchy, eg
         {
-            'Chapter': 1,
-            'Part': 2,
-            'Division': 3,
-            'Subdivision': 4,
+            'Chapter': '#',
+            'Part': '##',
+            'Division': '###',
+            'Subdivision': '####',
         }
         """
         async def process_pages(
@@ -164,12 +157,6 @@ class PDFCAParser(BaseParser):
                 for page_nums in list(self.grouped_pages_text.items())[1:]
             ]
         )
-        # combined_toc_hierarchy_schema = {}
-        # for schema in [prior_schema, appendix_schema] + toc_hierarchy_schemas:
-        #     for details in schema.values():
-        #         for line in details["lines"]:
-        #             if line not in combined_toc_hierarchy_schema:
-        #                 combined_toc_hierarchy_schema[line] = details["level"]
         # split content/appendix
         if appendix_schema:
             for details in appendix_schema.values():
@@ -198,18 +185,6 @@ class PDFCAParser(BaseParser):
                 with open(f"zz{self.doc_title}_apx.md", "w") as f:
                     f.write('\n'.join(self.appendix_md_lines))
                 utils.is_correct(prompt="Splitting content and appendix")
-                # toc_split_idx = Nones
-                # for index, line in enumerate(self.toc_md_lines):
-                #     if any(line.lower().startswith(keyword) for keyword in ['schedule', 'appendix', 'appendices']):
-                #         toc_split_idx = index
-                #         utils.print_coloured(f"Splitting TOC at {toc_split_idx}: {line}", "yellow")
-                #         break
-                # if toc_split_idx:
-                #     toc_apx_content = self.toc_md_lines[toc_split_idx:]
-                #     toc_main_content = self.toc_md_lines[:toc_split_idx]
-                #     self.toc_md_lines = toc_main_content
-                #     self.toc_md_apx_lines = toc_apx_content 
-                # utils.is_correct()
             else:
                 utils.print_coloured("NO APX SPLIT FOUND", "red")
                             
@@ -222,7 +197,6 @@ class PDFCAParser(BaseParser):
                         combined_toc_hierarchy_schema[level] = []
                     combined_toc_hierarchy_schema[level].append(line)
 
-        #toc_hierarchy_schema_items = sorted(combined_toc_hierarchy_schema.items(), key=lambda x: x[1].count('#'))
         toc_hierarchy_schema_items = sorted(combined_toc_hierarchy_schema.items(), key=lambda x: x[0].count('#'))
         self.toc_hierarchy_schema = dict(toc_hierarchy_schema_items)
         self.remaining_sections = [heading for headings in self.toc_hierarchy_schema.values() for heading in headings]
@@ -232,18 +206,6 @@ class PDFCAParser(BaseParser):
             json.dump(self.toc_hierarchy_schema, f, indent=4)
         with open(f"{self.doc_title}_appendix_toc_hierarchy_schema.json", "w") as f:
             json.dump(self.appendix_toc_hierarchy_schema, f, indent=4)
-        #toc_hierarchy_schema = [(heading, level.count('#')) for heading, level in ordered_items]
-        # remaining_sections = [heading for headings in toc_hierarchy_schema.values() for heading in headings]
-        # unique_headings = set(remaining_sections)
-        # for unique_heading in unique_headings:
-        #     heading_content_count = sum(unique_heading in line for line in self.content_md_lines)
-        #     heading_count = remaining_sections.count(unique_heading)
-        #     difference = heading_content_count - heading_count
-        #     if difference > 0:
-        #         remaining_sections.extend([unique_heading] * difference)
-        # utils.is_correct()
-        # self.remaining_sections = remaining_sections
-        # return toc_hierarchy_schema
     
     async def create_master_toc(self, toc_hierarchy_schema_levels: Dict[str, int], is_apx: bool = False) -> None:
         if is_apx:
@@ -277,6 +239,7 @@ class PDFCAParser(BaseParser):
                         skip_next_line = True
                     break
                 if not match_found and ' ' in trimmed_heading and len(trimmed_heading) >= max_line_length*0.8:
+                    # TODO fix this (UK companies act)
                     if "The Companies (Northern Ireland) Order 1986" in trimmed_heading:
                         trimmed_heading = "Part 2 — The Companies (Northern Ireland) Order 1986 (S.I. 1986/1032"
                     else:
@@ -376,7 +339,6 @@ class PDFCAParser(BaseParser):
     async def call_create_master_toc(self) -> None:
         if not self.toc_hierarchy_schema:
             await self.gen_toc_hierarchy_schema()
-        #toc_hierarchy_schema_levels = [(heading, level.count('#')) for heading, level in self.toc_hierarchy_schema.items()]
         tasks = []
         toc_hierarchy_schema_levels = [
             (heading, level.count('#'))
@@ -417,6 +379,7 @@ class PDFCAParser(BaseParser):
     
     def format_section_name_apx(self, section: str, number: str, title: str) -> str:
         # this is not generalisable - maybe get LLM to dynamically generate the schema
+        # specific to UK legislation
         return f'{section} {number}'
     
     def format_section_name(self, section: str, number: str, title: str) -> str:
@@ -425,7 +388,6 @@ class PDFCAParser(BaseParser):
         if section_match:
             matched_heading = section_match[0]
             utils.print_coloured(f"{full_section_name} -> {matched_heading} ({section_match[1]})", "cyan")
-            #self.remaining_sections.remove(matched_heading)
             return matched_heading
 
         variations = [
@@ -440,7 +402,6 @@ class PDFCAParser(BaseParser):
                 if section_match:
                     matched_heading = section_match[0]
                     utils.print_coloured(f"{variation} -> {matched_heading} ({section_match[1]})", "yellow")
-                    #self.remaining_sections.remove(matched_heading)
                     return matched_heading
 
         if section != "":
