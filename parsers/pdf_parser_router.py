@@ -23,4 +23,4 @@ class PDFParserRouter:
     
     async def get_adapter(self, file: Union[UploadFile, str]) -> str:
         self.toc_parser = parsers.PDFToCParser(file)
-        self.parser_type = await self.toc_parser.determine_toc_structure()
+        self.adapter_type = await self.toc_parser.determine_toc_structure()

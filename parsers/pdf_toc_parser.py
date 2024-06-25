@@ -127,7 +127,7 @@ class PDFToCParser:
                     end_index -= 1
         verified_toc_pages = list(range(max(0, toc_pages[start_index] - start_count), toc_pages[end_index] + end_count + 1)) 
         utils.print_coloured(f"Verified ToC pages: {verified_toc_pages}", "green")
-        utils.is_correct()
+        #utils.is_correct()
         return verified_toc_pages
     
     async def extract_toc(self) -> None:

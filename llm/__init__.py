@@ -4,6 +4,7 @@ from .openai_api import (
 )
 from .claude_api import (
     claude_chat_completion_request,
+    claude_client_chat_completion_request,
 )
 from .check_response import (
     check_json_response,

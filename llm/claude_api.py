@@ -1,8 +1,29 @@
 from tenacity import retry, wait_random_exponential, stop_after_attempt
 import httpx
 import os
-
+from anthropic import AsyncAnthropic
+client = AsyncAnthropic()
 ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY')
+
+@retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3))
+async def claude_client_chat_completion_request(messages, tools=None, tool_choice=None, model="claude-3-5-sonnet-20240620"):
+    try:
+        response = await client.messages.create(
+            max_tokens=4096,
+            messages=messages,
+            model=model
+        )
+        return response.content[0].text
+    except Exception as e:
+        error_message = str(e)
+        print(f"Anthropic API returned an error: {error_message}")
+        
+        if "Output blocked by content filtering policy" in error_message:
+            print("Content filtering blocked the output. Returning original prompt.")
+            return messages[0]["content"]
+        # For other types of errors, we might want to re-raise the exception
+        # or handle them differently depending on your requirements
+        raise
 
 
 @retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3))

@@ -250,7 +250,7 @@ class PDFParser(ABC):
         else:
             line_idx = len(self.content_md_lines)
 
-        section_content = "\n".join(self.content_md_lines[start_line_idx:line_idx-1])
+        section_content = "\n".join(self.content_md_lines[start_line_idx:line_idx])
         num_tokens = utils.count_tokens(section_content)
         utils.print_coloured(f"num tokens {num_tokens}", "magenta")
         self.remaining_content_section_lines = [item for item in self.remaining_content_section_lines if item[1] >= line_idx]

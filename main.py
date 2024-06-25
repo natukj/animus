@@ -19,7 +19,7 @@ Australian Securities and Investments Commission Act 2001
 """
 
 async def main_run():
-    for i in range(4, 11):
+    for i in range(2, 11):
         vol_num = f"{i:02d}"
         pdf_path = f"/Users/jamesqxd/Documents/norgai-docs/TAX/C2024C00046VOL{vol_num}.pdf"
         print(f"Processing {pdf_path}")
@@ -27,7 +27,7 @@ async def main_run():
         parsed_content = await router.parse(pdf_path)
         with open(f"/Users/jamesqxd/Documents/norgai-docs/TAX/parsed/final_aus_tax_{vol_num}.json", "w") as f:
             json.dump(parsed_content, f, indent=4)
-#asyncio.run(main_run())
+asyncio.run(main_run())
 
 async def main_crane():
     pdf_path = "/Users/jamesqxd/Documents/norgai-docs/EBA/Crane/CraneEBA2022.pdf"
@@ -35,4 +35,4 @@ async def main_crane():
     parsed_content = await router.parse(pdf_path)
     with open(f"/Users/jamesqxd/Documents/norgai-docs/EBA/Crane/final_crane_eba.json", "w") as f:
         json.dump(parsed_content, f, indent=4)
-asyncio.run(main_crane())
+#asyncio.run(main_crane())
