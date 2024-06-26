@@ -15,6 +15,7 @@ from .formatting_tools import (
     split_content,
     find_references,
     process_item,
+    add_reverse_hierarchy,
 )
 from .traversal_tools import (
     get_subpaths,
@@ -22,4 +23,8 @@ from .traversal_tools import (
     get_content_and_references,
     get_content,
     find_path_by_self_ref,
+    cosine_similarity,
+    df_semantic_search,
+    filter_embedded_df_by_hierarchy,
+    df_recursive_semantic_search,
 )

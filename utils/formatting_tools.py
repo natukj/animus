@@ -2,6 +2,7 @@ import json
 import re
 import os
 import utils
+import pandas as pd
 
 def extract_between_tags(tag: str, string: str, strip: bool = False) -> str:
     ext_list = re.findall(f"<{tag}>(.+?)</{tag}>", string, re.DOTALL)
@@ -141,3 +142,47 @@ def process_item(item: dict , all_references: list):
         'self_ref': item['self_ref'],
         'references': filtered_references
     }
+# df formatting 
+def find_end_items(df: pd.DataFrame) -> pd.DataFrame:
+    end_items = []
+    all_paths = df['path'].tolist()
+    for _, row in df.iterrows():
+        current_path = row['path']
+        is_parent = any(path.startswith(current_path + '/') for path in all_paths if path != current_path)
+        
+        if not is_parent:
+            end_items.append(row)
+    return pd.DataFrame(end_items)
+def find_parents(df: pd.DataFrame) -> set:
+    all_parents = set()
+    for path in df['path']:
+        parent_path = path.rsplit('/', 1)[0]  # Split at the last '/'
+        all_parents.add(parent_path)
+    return all_parents
+def add_reverse_hierarchy(df: pd.DataFrame) -> pd.DataFrame:
+    end_items_df = find_end_items(df)
+    df['hierarchy_level'] = 0
+    current_level = 1
+    current_parents = find_parents(end_items_df)
+    while current_parents:
+        df.loc[df['path'].isin(current_parents), 'hierarchy_level'] = current_level
+        next_parents = set()
+        for path in current_parents:
+            if '/' in path:
+                next_parents.add(path.rsplit('/', 1)[0])
+        current_parents = next_parents
+        current_level += 1
+    return df
+# def add_reverse_hierarchy(df: pd.DataFrame) -> pd.DataFrame:
+#     max_depths = {}
+#     # first pass: determine the maximum depth for each path
+#     for _, row in df.iterrows():
+#         path = row['path']
+#         depth = row['depth']  
+#         while path:
+#             if path not in max_depths or depth > max_depths[path]:
+#                 max_depths[path] = depth
+#             path = path.rsplit('/', 1)[0]  # move up one level
+#     # second pass: calculate the reverse hierarchy level
+#     df['hierarchy_level'] = df.apply(lambda row: max_depths[row['path']] - row['depth'], axis=1)
+#     return df

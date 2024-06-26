@@ -89,7 +89,7 @@ You are currently at the following path: {current_path}
 
 Choose the next step in the traversal to find information to answer the user's query: "{query}"
 """
-TRAVERSAL_USER_ANSWER_CLAUDE = """Your secret agent has successfully traversed the relevant document and found the information needed to answer the user's query: "{query}"
+TRAVERSAL_USER_ANSWER_CLAUDE_AGENT = """Your secret agent has successfully traversed the relevant document and found the information needed to answer the user's query: "{query}"
 
 The information is as follows:
 
@@ -100,4 +100,29 @@ You must now use this information to answer the user's query. You must include t
 You must think step-by-step before making a decision. Your thought process should be clear and logical and encased in <thinking> XML tags.
 
 Answer the user's query: "{query}", in <answer> XML tags, with the information given.
+"""
+
+TRAVERSAL_USER_ANSWER_CLAUDE = """You are an expert at providing Tax advice based on verbatim information from the Tax Income Assesment Act 1997 (Australia). The following information has been gathered in relation to the user's query: "{query}". You will be given the path and content of the information gathered. You must extract the key information and provide a detailed and definitive answer, citing the enumeration from the information used to answer the query.
+
+<doc_content>
+{doc_content}
+</doc_content>
+
+Use the above information to answer the user's query. You must include the enumeration of the information as a citation for each piece of information you provide in your response. 
+
+You must think step-by-step before making a decision. Your thought process should be clear and logical and encased in <thinking> XML tags.
+
+Your must be verbose and extremely detailed in your response.
+
+Answer the user's query: "{query}", in <answer> XML tags, with the information given.
+"""
+REWRITE_USER_QUERY_CLAUDE = """You are an expert on the Tax Income Assesment Act 1997 (Australia). Your only task is rewrite and refine the user's query: "{query}" to improve the semantic relationship between the user's query and the information contained in the document. 
+
+You must think step-by-step before making a decision. Your thought process should be clear and logical and encased in <thinking> XML tags.
+
+If you believe you need additional information to rewrite the query, you can request this in the <additional_info> XML tags. You must specify the type of information you require and why you need it. Do not respond with <additional_info> tags if you do not require additional information.
+
+Remember, your goal is to rewrite the query to improve the semantic relationship between the user's query and the information contained in the document. You are NOT writing a question, but instead using keywords and phrases from the user's query to create a new query that is more likely to return relevant information.
+
+When you are ready to submit your rewritten query, you must output the query in <answer> XML tags.
 """

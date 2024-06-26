@@ -20,12 +20,22 @@ async def openai_client_chat_completion_request(messages, model="gpt-4o", temper
         )
         return response
     except openai.APIError as e:
-        print(f"OpenAI API returned an API Error: {e}")
-        pass
+        print(f"OpenAI API Error: {e}")
+        raise
 
-# @retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3),
-#     retry=retry_if_exception_type(ssl.SSLError))
-# async def 
+@retry(
+    wait=wait_random_exponential(multiplier=1, min=4, max=60),
+    retry=retry_if_exception_type((Exception)),
+    before_sleep=lambda retry_state: print(f"Retrying attempt {retry_state.attempt_number} for embedding request...")
+)
+async def openai_client_embedding_request(text, model="text-embedding-3-small"):
+    text = text.replace("\n", " ")
+    try:
+        response = await client.embeddings.create(input = [text], model=model)
+        return response.data[0].embedding
+    except openai.APIError as e:
+        print(f"OpenAI Embedding API Error: {e}")
+        raise
 
 
 @retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3),
@@ -63,11 +73,11 @@ async def openai_chat_completion_request(messages, model="gpt-4o", temperature=0
         except httpx.ReadTimeout as e:
             print("Request timed out")
             print(f"Exception: {e}")
-            return None
+            raise
         except httpx.HTTPStatusError as e:
             print(f"Request failed with status code: {e.response.status_code}")
             print(f"Exception: {e}")
-            return None
+            raise
         except ssl.SSLError as e:
             print("SSL Error occurred")
             print(f"Exception: {e}")
@@ -75,4 +85,4 @@ async def openai_chat_completion_request(messages, model="gpt-4o", temperature=0
         except Exception as e:
             print("Unable to generate ChatCompletion response")
             print(f"Exception: {e}")
-            return None
+            raise
