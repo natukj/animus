@@ -5,80 +5,108 @@ import formatters, utils, llm
 import pandas as pd
 from tqdm.asyncio import tqdm_asyncio
 
-def main():
-    with open("/Users/jamesqxd/Documents/norgai-docs/TAX/parsed/final_aus_tax.json", "r") as f:
-        tax_data = json.load(f)["contents"]
-    processed_df = formatters.add_refs_to_contents(tax_data)
-    output_dir = "ztest_tax_output"
-    os.makedirs(output_dir, exist_ok=True)
-    output_file = os.path.join(output_dir, "processed_tax_data.csv")
-    processed_df.to_csv(output_file, index=False)
-    
-    print(f"Processed data saved to {output_file}")
-    print(f"DataFrame shape: {processed_df.shape}")
-    print("\nFirst few rows:")
-    print(processed_df.head())
+FORMAT = False
+if FORMAT:
+    SEM_MAX = 200
+    tax_df_path = "ztest_tax_output/tax_data_with_hierarchy.csv"
+    df = pd.read_csv(tax_df_path)
+    async def format_content(sem: asyncio.Semaphore, row: pd.Series):
+        async with sem:
+            if row['hierarchy_level'] == 0:
+                if utils.count_tokens(row['content']) > 8000:
+                    print(f"Content too long for {row['path']}. Skipping formatting.")
+                    return row['content'], ""
+                else:
+                    gpt_formatted_content, gpt_summary = await formatters.format_content_plus_summary_gpt(row['content'], row['path'])
+                    return gpt_formatted_content, gpt_summary
+            else:
+                return row['content'], ""
+    async def main_format():
+        sem = asyncio.Semaphore(SEM_MAX)
+        tasks = [format_content(sem, row) for _, row in df.iterrows()]
+        results = await tqdm_asyncio.gather(*tasks, desc="Formatting...")
+        df['content'], df['summary'] = zip(*results)
+        df.to_csv("ztest_tax_output/formatted_tax_data_with_hierarchy.csv", index=False)
+    asyncio.run(main_format())
 
- 
-if __name__ == "__main__":
-    main()
+REFORMAT = True
+if REFORMAT:
+    summary_prompt = """Please return a summary of the following item content, from the Tax Income Assesment Act 1997, within the context of what user queries the content would aid in answering. This summary should only consist of questions that the content would help answer, and should be formatted as a single paragraph. Make sure to use the path as context when generating the summary and do not include any specific references or section numbers.
 
-# create end items and their parents
-tax_df_path = "ztest_tax_output/processed_tax_data.csv"
+    Item Path: {path}
 
-df = pd.read_csv(tax_df_path)
+    Item Content:
 
-df['depth'] = df['path'].str.count('/')
+    {content}
 
-def find_end_items(df):
-    end_items = []
-    all_paths = df['path'].tolist()
-    
-    for index, row in df.iterrows():
-        current_path = row['path']
-        is_parent = any(path.startswith(current_path + '/') for path in all_paths if path != current_path)
+    You must output a JSON object with the following structure:
+
+    {{
+        "summary": "string (Your summary of the item content here)"
+    }}
+
+    KEEP THE SUMMARY SHORT AND TO THE POINT.
+    """
+    tax_df_path = "ztest_tax_output/formatted_tax_data_with_hierarchy.csv"
+    df = pd.read_csv(tax_df_path)
+    async def reformat_content():
+        changes_made = False
+        for index, row in df.iterrows():
+            should_summarize = (utils.count_tokens(row['content']) > 4000 and utils.count_tokens(row['content']) < 8000) or \
+                                (row['path'] == "Chapter 3 Specialist liability rules/Part 3-3 Capital gains and losses: special topics/Division 130 Investments/Subdivision 130-A Bonus shares and units/Subdivision 130-F Exploration investments/130-110 Reducing the reduced cost base before disposal")
+            
+            if should_summarize and pd.isna(row['summary']):
+                max_retries = 3
+                for _ in range(max_retries):
+                    try:
+                        messages = [
+                            {"role": "system", "content": "You are an AI assistant skilled in formatting legal documents as a JSON object."},
+                            {"role": "user", "content": summary_prompt.format(path=row['path'], content=row['content'])}
+                        ]
+                        result = await llm.openai_client_chat_completion_request(messages)
+                        result_str = result.choices[0].message.content
+                        formatted_result = json.loads(result_str)
+                        summary = formatted_result["summary"]
+                        if summary:
+                            df.at[index, 'summary'] = summary
+                            changes_made = True
+                            utils.print_coloured(f"Added summary for: {row['path']}", "green")
+                        break
+                    except json.JSONDecodeError:
+                        utils.print_coloured(f"Error decoding JSON response: {result_str}", "red")
+                    except Exception as e:
+                        utils.print_coloured(f"Error processing row: {e}", "red")
+                else:
+                    utils.print_coloured(f"Failed to add summary after {max_retries} attempts for: {row['path']}", "red")
         
-        if not is_parent:
-            end_items.append(row)
+        if changes_made:
+            df.to_csv(tax_df_path, index=False)
+            utils.print_coloured("Changes saved to CSV file.", "green")
+        else:
+            utils.print_coloured("No changes were made to the CSV file.", "yellow")
+    asyncio.run(reformat_content())
+            
+
+CODE = False
+if CODE:
+    def main():
+        with open("/Users/jamesqxd/Documents/norgai-docs/TAX/parsed/final_aus_tax.json", "r") as f:
+            tax_data = json.load(f)["contents"]
+        processed_df = formatters.add_refs_to_contents(tax_data)
+        output_dir = "ztest_tax_output"
+        os.makedirs(output_dir, exist_ok=True)
+        output_file = os.path.join(output_dir, "processed_tax_data.csv")
+        processed_df.to_csv(output_file, index=False)
+        
+        print(f"Processed data saved to {output_file}")
+        print(f"DataFrame shape: {processed_df.shape}")
+        print("\nFirst few rows:")
+        print(processed_df.head())
+
     
-    return pd.DataFrame(end_items)
-
-def get_unique_parents(end_items_df):
-    all_parents = set()
-    for path in end_items_df['path']:
-        parent_path = path.rsplit('/', 1)[0]  # Split at the last '/'
-        all_parents.add(parent_path)
-    return all_parents
-
-async def main_trav():
-    # specific_level_paths = df[df['depth'] == 11]['path'].tolist()
-
-    # print("Top-level paths:")
-    # for path in specific_level_paths:
-    #     print(path)
-
-    # print(f"\nTotal number of top-level paths: {len(specific_level_paths)}")
-
-    depth_summary = df['depth'].value_counts().sort_index()
-    for depth, count in depth_summary.items():
-        print(f"Depth {depth}: {count} items")
-
-    end_items_df = find_end_items(df)
-    end_items_df.to_csv("ztest_tax_output/tax_end_items.csv", index=False)
-
-    end_items_depth = end_items_df['depth'].value_counts().sort_index()
-    print("\nDepth distribution of end items:")
-    for depth, count in end_items_depth.items():
-        print(f"Depth {depth}: {count} items")
-
-    unique_parents = get_unique_parents(end_items_df)
-    parents_df = df[df['path'].isin(unique_parents)]
-    parents_df.to_csv("ztest_tax_output/tax_parents.csv", index=False)
-    print("\nFirst few rows of end_items.csv:")
-    print(end_items_df.head())
-
-    print("\nFirst few rows of parent_items.csv:")
-    print(parents_df.head())
+    if __name__ == "__main__":
+        main()
+#### CRAP BELOW ####
 EMBED = False
 if EMBED:
     tax_df_path = "ztest_tax_output/processed_tax_data.csv"

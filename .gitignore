@@ -161,3 +161,4 @@ cython_debug/
 
 zdata/
 ztest_tax_output/
+.vscode/

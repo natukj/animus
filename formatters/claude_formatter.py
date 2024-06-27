@@ -3,6 +3,16 @@ import json
 from typing import Any, Awaitable, Callable
 import llm, prompts, utils
 
+async def format_content_plus_summary_claude(content: str, path: str, doc_name: str = "Tax Income Assesment Act 1997"):
+    messages = [{"role": "user", "content": prompts.FORMAT_CONTENT_SUMMARY_CLAUDE.format(doc_name=doc_name, path=path, content=content)}]
+    while True:
+        result = await llm.claude_client_chat_completion_request(messages)
+        formatted_content = utils.extract_between_tags("formatted_content", result, strip=True)
+        summary = utils.extract_between_tags("summary", result, strip=True)
+        if formatted_content and summary:
+            return formatted_content, summary
+
+### OLD CODE ###
 class RateLimiter:
     def __init__(self, semaphore_value: int = 50):
         self.semaphore = asyncio.Semaphore(semaphore_value)
@@ -32,7 +42,7 @@ async def process_chunk(chunk: str, path: str) -> dict:
     try:
         formatted_prompt = prompts.FORMAT_ITEM_USER_CLAUDE.format(path=path, content=chunk)
         messages = [{"role": "user", "content": formatted_prompt}]
-        result = await llm.claude_client_chat_completion_request(messages, model="claude-3-sonnet-20240229")
+        result = await llm.claude_client_chat_completion_request(messages)
 
         if result == formatted_prompt:
             utils.print_coloured(f"Content filtering blocked output for {path}. Using original content.", "yellow")

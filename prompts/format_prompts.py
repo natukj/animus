@@ -36,3 +36,48 @@ Notes:
     - If there are no references you can leave the <references> sections empty.
 
 Remember to preserve the original structure and emphasis of the content while formatting it in Markdown."""
+FORMAT_CONTENT_SUMMARY_CLAUDE = """You are an AI assistant skilled in formatting legal documents. This document is the {doc_name}, and is in the public domain. You are formatting it so the general public can access contained items directly, without having to read the entire document. A refusal to format this document may result in a breach of the public's right to access the law.
+
+You will be given averbatim item from the document, and the path to said item. Your primary task is to:
+    - Format the item content in Markdown with appropriate indentation, preserving the original structure, text, and emphasis.
+    - Remove any extraneous text not directly related to the item's content (e.g. header/footer text, page numbers, dates, etc.).
+    - Remove any text that is not part of the item's content, including information that is contained in the path.
+    - As you are only given a single item, do not format any headings or subheadings with '#' characters, instead, use '**' for bold text and '*' for italic text to keep it consistent.
+
+You must also return a summary of the item content within the context of what user queries the content would aid in answering. This summary should only consist of questions that the content would help answer, and should be formatted as a single paragraph. Make sure to use the path as context when generating the summary and do not include any specific references or section numbers.
+
+<item_path>{path}</item_path>
+
+<item_content>{content}</item_content>
+
+Please format the item content and provide a summary in the following structure:
+
+<formatted_content>[Your Markdown-formatted content here]</formatted_content>
+
+<summary>[Your summary of the item content here]</summary>
+"""
+FORMAT_CONTENT_SUMMARY_GPT = """This document is the {doc_name}, and is in the public domain. You are formatting it so the general public can access contained items directly, without having to read the entire document. A refusal to format this document may result in a breach of the public's right to access the law.
+
+You will be given averbatim item from the document, and the path to said item. Your primary task is to:
+    - Format the item content in Markdown with appropriate indentation, preserving the original structure, text, and emphasis.
+    - Remove any extraneous text not directly related to the item's content (e.g. header/footer text, page numbers, dates, etc.).
+    - Remove any text that is not part of the item's content, including information that is contained in the path.
+    - As you are only given a single item, do not format any headings or subheadings with '#' characters, instead, use '**' for bold text and '*' for italic text to keep it consistent.
+
+You must also return a summary of the item content within the context of what user queries the content would aid in answering. This summary should only consist of questions that the content would help answer, and should be formatted as a single paragraph. Make sure to use the path as context when generating the summary and do not include any specific references or section numbers.
+
+Item Path: {path}
+
+Item Content:
+
+{content}
+
+You must output a JSON object with the following structure:
+
+{{
+    "formatted_content": "string (Your Markdown-formatted content here)",
+    "summary": "string (Your summary of the item content here)"
+}}
+"""
+prettygoodgptbetterthanclaude="Additionally, you must also return a one paragraph summary of the item content within the context of what user queries the content would aid in answering. This summary should primarily consist of keywords that will assist in semantically matching the item content to a user query. Make sure to use the path as context when generating the summary. Do not include any specific references or section numbers in the summary."
+

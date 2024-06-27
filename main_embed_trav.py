@@ -8,10 +8,12 @@ from typing import List, Dict
 
 SEARCH = False
 RECURSIVE_SEARCH = False
-ASK_CLAUDE = True
+ASK_CLAUDE = False
 ASK_CLAUDE_Q = False
 EMBED = False
 REVERSE_HIERARCHY = False
+ASK_GROQ = False
+RERANK = True
 
 def filter_and_structure_results(results: List[Dict]) -> Dict:
     filtered_results = {}
@@ -25,6 +27,24 @@ def filter_and_structure_results(results: List[Dict]) -> Dict:
         if 'children' in item and item['children']:
             filtered_results.update(filter_and_structure_results(item['children']))
     return filtered_results
+
+if RERANK:
+    user_query = "what are my possible personal tax deductions?"
+    with open("ztest_tax_output/recursive_search_results.json",'r') as f:
+        recursive_search_results = json.load(f)
+    print(f"Loaded {len(recursive_search_results)} items")
+    documents = [value['content'] for value in recursive_search_results.values()]
+    async def main_rerank():
+        result = await llm.rerank_documents(user_query, documents, len(recursive_search_results))
+        for item in result['results']:
+            original_key = list(recursive_search_results.keys())[item['index']]
+            original_doc = recursive_search_results[original_key]
+            print(f"Title: {original_doc['title']}")
+            print(f"Similarity: {original_doc['similarities']:.4f}")
+            print(f"Relevance Score: {item['relevance_score']:.4f}")
+            print("-" * 50)
+    asyncio.run(main_rerank())
+            
 
 if ASK_CLAUDE_Q:
     user_query = "what are my possible personal tax deductions?"
@@ -157,3 +177,35 @@ if REVERSE_HIERARCHY:
         print(f"Level {level}: {count} items")
         
 
+if ASK_GROQ:
+    user_query = "what are my possible personal tax deductions?"
+    with open("ztest_tax_output/recursive_search_results.json",'r') as f:
+        recursive_search_results = json.load(f)
+    SYS_PROMPT = "You are a tax expert. You must determine whether the following information is relevant to the user's query: '{query}'. If it is relevant, output 'True'. If it is not relevant, output 'False'."
+    semaphore = asyncio.Semaphore(30)
+    async def process_item(key, value):
+        async with semaphore:
+            doc_content = f"{key}\n\n{value['content']}\n\n"
+            messages = [
+                {"role": "system", "content": SYS_PROMPT.format(query=user_query)},
+                {"role": "user", "content": doc_content}
+            ]
+            response = await llm.groq_client_chat_completion_request(messages)
+            return key, value['title'], response.choices[0].message.content
+    async def main_ask_groq():
+        trunc_items = dict(list(recursive_search_results.items())[:30]) # 30 RPM limit
+        tasks = [process_item(key, value) for key, value in trunc_items.items()]
+        #tasks = [process_item(key, value) for key, value in recursive_search_results.items()]
+        results = await asyncio.gather(*tasks)
+        
+        for key, title, api_result in results:
+            utils.print_coloured(f"{title}", "blue")
+            if "true" in api_result.lower():
+                utils.print_coloured(api_result, "green")
+            elif "false" in api_result.lower():
+                utils.print_coloured(api_result, "red")
+            else:
+                utils.print_coloured(api_result, "yellow")
+            print("-" * 50)
+
+    asyncio.run(main_ask_groq())
