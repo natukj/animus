@@ -44,7 +44,18 @@ if SEARCH:
                 original_index = item['index']
                 row = res.iloc[original_index]
                 utils.print_coloured(f"Rerank {i+1} from {original_index}", "blue")
+                utils.print_coloured(row['path'], "blue")
                 utils.print_coloured(f"Title: {row['title']}", "green")
+                refs = ast.literal_eval(row['references'])
+                item_refs = [item for item in filtered_df['self_ref'] if item in refs]
+                if item_refs:
+                    utils.print_coloured("Referenced Items:", "yellow")
+                    for ref in item_refs:
+                        ref_title = filtered_df[filtered_df['self_ref'] == ref]['title'].values
+                        if len(ref_title) > 0:
+                            print(f"- {ref_title[0]}")
+                else:
+                    utils.print_coloured("No references found", "yellow")
                 print("-" * 50)
             tasks = [process_item(docs_content[item['index']]) for item in rerank_content['results']]
             results = await asyncio.gather(*tasks)
@@ -54,13 +65,10 @@ if SEARCH:
             formatted_answer_prompt = prompts.TRAVERSAL_USER_ANSWER_CLAUDE.format(query=user_query, doc_content=filtered_content_str)
             messages = [{"role": "user", "content": formatted_answer_prompt}]
             result = await llm.claude_client_chat_completion_request(messages)
-            utils.print_coloured(result, "yellow")
+            #utils.print_coloured(result, "yellow")
             claude_thinking_answer = utils.extract_between_tags("thinking", result, strip=True)
             utils.print_coloured(claude_thinking_answer, "cyan")
             claude_answer = utils.extract_between_tags("answer", result, strip=True)
             utils.print_coloured(claude_answer, "green")
-            ## STILL NOT FUCKING GOOD
-            ## NEED TO ADD REFERENCES I GUESS AND ADDITIONNAL RERANK DOCS
-            ## 30 not bad actually
  
     asyncio.run(main_search())

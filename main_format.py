@@ -5,6 +5,32 @@ import formatters, utils, llm
 import pandas as pd
 from tqdm.asyncio import tqdm_asyncio
 
+CODE_FIX = False
+if CODE_FIX:
+    # FIX DEPTH AND HIERARCHY FUCK UP
+    def main():
+        with open("/Users/jamesqxd/Documents/norgai-docs/TAX/parsed/final_aus_tax.json", "r") as f:
+            tax_data = json.load(f)["contents"]
+        depth_hierarchy_data = utils.calculate_depths_and_hierarchy(tax_data)
+        depth_hierarchy_df = pd.DataFrame(depth_hierarchy_data)
+
+        # calculate the hierarchy_level as the maximum depth of its descendants minus its own depth
+        depth_hierarchy_df['hierarchy_level'] = depth_hierarchy_df.apply(
+            lambda row: 0 if not row['has_children'] else depth_hierarchy_df[depth_hierarchy_df['path'].str.startswith(row['path'] + '/')]['depth'].max() - row['depth'],
+            axis=1
+        )
+        existing_df = pd.read_csv("ztest_tax_output/all_formatted_tax_data_embedded.csv")
+
+        depth_dict = dict(zip(depth_hierarchy_df['path'], depth_hierarchy_df['depth']))
+        hierarchy_dict = dict(zip(depth_hierarchy_df['path'], depth_hierarchy_df['hierarchy_level']))
+        existing_df['depth'] = existing_df['path'].map(depth_dict)
+        existing_df['hierarchy_level'] = existing_df['path'].map(hierarchy_dict)
+
+        existing_df.to_csv("ztest_tax_output/all_formatted_tax_data_embedded_depth.csv", index=False)
+
+    if __name__ == "__main__":
+        main()
+
 FORMAT = False
 if FORMAT:
     SEM_MAX = 200

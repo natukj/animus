@@ -11,7 +11,37 @@ def extract_between_tags(tag: str, string: str, strip: bool = False) -> str:
         return content.strip() if strip else content
     return ""
 
+def calculate_depths_and_hierarchy(data: list, current_path: str = "", depth: int = 0):
+    results = []
+
+    for item in data:
+        path_components = []
+        if item.get('section'):
+            path_components.append(item['section'])
+        if item.get('number'):
+            path_components.append(item['number'])
+        if item.get('title'):
+            path_components.append(item['title'])
+
+        item_path = " ".join(path_components)
+        full_path = "/".join(filter(None, [current_path, item_path]))
+        
+        has_children = 'children' in item
+        
+        results.append({
+            'path': full_path,
+            'depth': depth,
+            'has_children': has_children
+        })
+        
+        if has_children:
+            children_results = calculate_depths_and_hierarchy(item['children'], full_path, depth + 1)
+            results.extend(children_results)
+
+    return results
+
 def traverse_contents(data: list, current_path: str ="", all_references: set = None):
+    # fucked up with this should have used '>' not '/' as it got all the depths wrong
     if all_references is None:
         all_references = set()
     results = []
@@ -47,6 +77,47 @@ def traverse_contents(data: list, current_path: str ="", all_references: set = N
             utils.print_coloured(f"Missing content for {full_path}", "red")    
         if 'children' in item:
             child_results, _ = traverse_contents(item['children'], full_path, all_references)
+            results.extend(child_results)
+    
+    return results, all_references
+
+def traverse_contents_depth(data: list, current_path: str ="", all_references: set = None, depth: int = 0):
+    if all_references is None:
+        all_references = set()
+    results = []
+    for item in data:
+        path_components = []
+        if item.get('section'):
+            path_components.append(item['section'])
+        if item.get('number'):
+            path_components.append(item['number'])
+        if item.get('title'):
+            path_components.append(item['title'])
+
+        item_path = " ".join(path_components)
+        full_path = "/".join(filter(None, [current_path, item_path]))
+
+        if 'content' in item:
+            if item.get('section') and item.get('number'):
+                self_ref = f"{item['section']} {item['number']}"
+                all_references.add(self_ref)
+            elif item.get('number'):
+                self_ref = item['number']
+                all_references.add(self_ref)
+            else:
+                self_ref = ""
+
+            results.append({
+                'path': full_path,
+                'title': item.get('title', ''),
+                'content': item['content'],
+                'self_ref': self_ref,
+                'depth': depth  # forgot to add depth to the results
+            })
+        else:
+            utils.print_coloured(f"Missing content for {full_path}", "red")    
+        if 'children' in item:
+            child_results, _ = traverse_contents(item['children'], full_path, all_references, depth + 1)
             results.extend(child_results)
     
     return results, all_references

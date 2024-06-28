@@ -10,6 +10,7 @@ from .tools import (
 )
 from .formatting_tools import (
     extract_between_tags,
+    calculate_depths_and_hierarchy,
     traverse_contents,
     find_item_from_path,
     split_content,
@@ -27,4 +28,5 @@ from .traversal_tools import (
     df_semantic_search,
     filter_embedded_df_by_hierarchy,
     df_recursive_semantic_search,
+    strvec_to_numpy,
 )

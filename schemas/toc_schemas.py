@@ -167,8 +167,10 @@ def parse_toc_dict(data: Dict[str, Any], pre_process: bool = True) -> List[Table
         children=[]
     )
     if pre_process:
+        # AUS legislation
         preprocessed_data = preprocess_levels_dict(data)
     else:
+        # UK legislation
         preprocessed_data = merge_keys_and_delete_next(data)
     for top_level_key, top_level_value in preprocessed_data.items():
         top_level_toc = create_toc(top_level_value, top_level_key, root_toc)

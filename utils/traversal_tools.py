@@ -111,6 +111,12 @@ async def df_recursive_semantic_search(df: pd.DataFrame, user_query: str, start_
         output.append(result_dict)
     
     return output
+def strvec_to_numpy(x: str) -> np.array:
+        try:
+            return np.array(ast.literal_eval(x))
+        except (ValueError, SyntaxError):
+            print(f"Error processing embedding: ->{x}<-")
+            return None
 # old code
 def find_section_titles(tax_data, search_title=None):
     def search_children(children, search_title):
