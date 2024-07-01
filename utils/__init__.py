@@ -10,6 +10,7 @@ from .tools import (
 )
 from .formatting_tools import (
     extract_between_tags,
+    strip_brackets,
     calculate_depths_and_hierarchy,
     traverse_contents,
     find_item_from_path,

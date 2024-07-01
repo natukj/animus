@@ -11,6 +11,10 @@ def extract_between_tags(tag: str, string: str, strip: bool = False) -> str:
         return content.strip() if strip else content
     return ""
 
+def strip_brackets(value):
+    pattern = r'\(.*?\)'
+    return re.sub(pattern, '', value)
+
 def calculate_depths_and_hierarchy(data: list, current_path: str = "", depth: int = 0):
     results = []
 

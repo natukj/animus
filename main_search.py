@@ -6,6 +6,9 @@ import numpy as np
 from tqdm.asyncio import tqdm_asyncio
 from tqdm import tqdm
 import ast
+import time
+
+LLM_CALL = 'gpt' # 'claude' or 'gpt
 
 SEARCH = True
 if SEARCH:
@@ -20,12 +23,13 @@ if SEARCH:
             user_query = input("\nEnter your query: ")
             if user_query.lower() == "q":
                 break
-            
+            start_time = time.time()
             embedding = await llm.openai_client_embedding_request(user_query)
             res = await utils.df_semantic_search(d_df, np.array(embedding), top_n=2)
             seen_clusters = set()
             seen_content_paths = set()
             content_str = ""
+            number_of_items = 0
             for _, row in res.iterrows():
                 path = row['path']
                 d_cluster = row['d_cluster']
@@ -40,6 +44,7 @@ if SEARCH:
                         cluster_rows = path_df[path_df['hl_cluster'] == hl_cluster]
                         total_tokens = 0
                         # TODO: maybe use hl_df>path_df and rerank cluster rows to limit the amount of content
+                        # could use llama3 8b groq but need to increase rate limit
                         for i, (_, cluster_row) in enumerate(cluster_rows.iterrows(), 1):
                             content_tokens = utils.count_tokens(cluster_row['content'])
                             total_tokens += content_tokens
@@ -48,6 +53,7 @@ if SEARCH:
                             content_str += cluster_row['path'] + "\n"
                             seen_content_paths.add(cluster_row['path'])
                             content_str += cluster_row['content'] + "\n\n"
+                            number_of_items += 1
                             
                             if 'references' in cluster_row and 'self_ref' in hl_df.columns:
                                 refs = ast.literal_eval(cluster_row['references'])
@@ -64,27 +70,53 @@ if SEARCH:
                                             content_str += f"- {ref_row['path']}\n"
                                             seen_content_paths.add(ref_row['path'])
                                             content_str += f"\t{ref_row['content']}\n\n"
+                                            number_of_items += 1
 
                         utils.print_coloured(f"Total Tokens for Cluster {hl_cluster}: {total_tokens}", "red")
-            formatted_answer_prompt = prompts.TRAVERSAL_USER_ANSWER_REFS_CLAUDE.format(query=user_query, doc_content=content_str)
-            utils.print_coloured(utils.count_tokens(formatted_answer_prompt), "yellow")
-            utils.is_correct()
-            messages = [{"role": "user", "content": formatted_answer_prompt}]
-            result = await llm.claude_client_chat_completion_request(messages)
-            claude_thinking_answer = utils.extract_between_tags("thinking", result, strip=True)
-            utils.print_coloured(claude_thinking_answer, "cyan")
-            claude_refs = utils.extract_between_tags("references", result, strip=True)
-            utils.print_coloured(claude_refs, "yellow")
-            claude_answer = utils.extract_between_tags("answer", result, strip=True)
-            utils.print_coloured(claude_answer, "green")
-            if claude_refs:
-                refs_dict = json.loads(claude_refs)
-                for key, ref in refs_dict.items():
-                    utils.print_coloured(f"{key} -> {ref}", "magenta")
-                    ref_row = hl_df[hl_df['self_ref'] == ref].iloc[0]
-                    utils.print_coloured(ref_row['path'], "blue")
-                    utils.print_coloured(ref_row['content'], "green")
-                    
-
-
+            if LLM_CALL == 'claude':
+                formatted_answer_prompt = prompts.TRAVERSAL_USER_ANSWER_REFS_CLAUDE.format(query=user_query, doc_content=content_str)
+                utils.print_coloured(f"{number_of_items} items -> {utils.count_tokens(formatted_answer_prompt)} tokens", "yellow")
+                if utils.count_tokens(formatted_answer_prompt) > 100000:
+                    utils.is_correct()
+                messages = [{"role": "user", "content": formatted_answer_prompt}]
+                result = await llm.claude_client_chat_completion_request(messages)
+                claude_thinking_answer = utils.extract_between_tags("thinking", result, strip=True)
+                utils.print_coloured(claude_thinking_answer, "cyan")
+                claude_refs = utils.extract_between_tags("references", result, strip=True)
+                utils.print_coloured(claude_refs, "yellow")
+                claude_answer = utils.extract_between_tags("answer", result, strip=True)
+                utils.print_coloured(claude_answer, "green")
+                print(f"Time taken: {time.time() - start_time:.2f}s")
+                if claude_refs:
+                    refs_dict = json.loads(claude_refs)
+                    stripped_refs_dict = {k: utils.strip_brackets(v) for k, v in refs_dict.items()}
+                    for key, ref in stripped_refs_dict.items():
+                        utils.print_coloured(f"{key} -> {ref}", "magenta")
+                        ref_row = hl_df[hl_df['self_ref'] == ref].iloc[0]
+                        utils.print_coloured(ref_row['path'], "blue")
+                    #utils.print_coloured(ref_row['content'], "green")
+            elif LLM_CALL == 'gpt':
+                formatted_answer_prompt = prompts.TRAVERSAL_USER_ANSWER_REFS_GPT.format(query=user_query, doc_content=content_str)
+                utils.print_coloured(f"{number_of_items} items -> {utils.count_tokens(formatted_answer_prompt)} tokens", "yellow")
+                if utils.count_tokens(formatted_answer_prompt) > 100000:
+                    utils.is_correct()
+                messages = [{"role": "system", "content": prompts.TRAVERSAL_USER_ANSWER_REFS_GPT_SYS}, 
+                            {"role": "user", "content": formatted_answer_prompt}]
+                response = await llm.openai_client_chat_completion_request(messages)
+                response_str = response.choices[0].message.content
+                print(f"Time taken: {time.time() - start_time:.2f}s")
+                try:
+                    response_dict = json.loads(response_str)
+                    response_answer = response_dict['answer']
+                    response_refs = response_dict['references']
+                    utils.print_coloured(response_answer, "green")
+                    utils.print_coloured(response_refs, "yellow")
+                    for key, ref in response_refs.items():
+                        utils.print_coloured(f"{key} -> {ref}", "magenta")
+                        ref_row = hl_df[hl_df['self_ref'] == ref].iloc[0]
+                        utils.print_coloured(ref_row['path'], "blue")
+                        #utils.print_coloured(ref_row['content'], "green")
+                except json.JSONDecodeError:
+                    utils.print_coloured(response_str, "red")
+            
     asyncio.run(main_search())
