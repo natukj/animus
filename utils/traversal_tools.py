@@ -3,7 +3,7 @@ import numpy as np
 import ast
 import asyncio
 import llm
-from typing import List, Dict
+from typing import List, Dict, Union, Tuple
 from concurrent.futures import ThreadPoolExecutor
 
 # NOTE working with dfs while testing (not GDB)
@@ -50,20 +50,25 @@ def find_path_by_self_ref(df: pd.DataFrame, self_ref: str) -> str:
 # utils for main_embed_trav.py 
 def cosine_similarity(a: np.array, b: np.array) -> float:
     return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
-async def df_semantic_search(df: pd.DataFrame, user_query: str, top_n: int = 10, return_vector: bool = False) -> pd.DataFrame:
+async def df_semantic_search(df: pd.DataFrame, query: Union[str, np.ndarray], top_n: int = 10, return_vector: bool = False) -> Union[pd.DataFrame, Tuple[pd.DataFrame, np.ndarray]]:
     df = df.copy()
-    embedding = await llm.openai_client_embedding_request(
-        user_query
-    )
+    
+    if isinstance(query, str):
+        print("Requesting embedding from OpenAI API...")
+        embedding = await llm.openai_client_embedding_request(query)
+    elif isinstance(query, np.ndarray):
+        embedding = query
+    else:
+        raise ValueError("Query must be either a string or a numpy array")
+
     df["similarities"] = df.embedding.apply(lambda x: cosine_similarity(x, embedding))
     
-    res = (
-        df.sort_values("similarities", ascending=False)
-        .head(top_n)
-    )
+    res = df.sort_values("similarities", ascending=False).head(top_n)
+    
     if return_vector:
         return res, embedding
     return res
+
 def filter_embedded_df_by_hierarchy(df: pd.DataFrame, hierarchy_level: int) -> pd.DataFrame:
     return df[df['hierarchy_level'] == hierarchy_level]
 def search_level(df: pd.DataFrame, query_embedding: np.array, level: int, parent_path: str = "", top_n: int = 7) -> List[Dict]:

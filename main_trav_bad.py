@@ -43,7 +43,6 @@ async def traverse_branch(current_path, current_depth, path_stack, memory_paths,
         claude_save = utils.extract_between_tags("save", result, strip=True)
         utils.print_coloured(claude_save, "magenta")
         
-        # Add current path to searched_paths
         searched_paths.add(current_path)
 
         if claude_action.lower() == 'traverse':

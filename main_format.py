@@ -55,7 +55,7 @@ if FORMAT:
         df.to_csv("ztest_tax_output/formatted_tax_data_with_hierarchy.csv", index=False)
     asyncio.run(main_format())
 
-REFORMAT = True
+REFORMAT = False
 if REFORMAT:
     summary_prompt = """Please return a summary of the following item content, from the Tax Income Assesment Act 1997, within the context of what user queries the content would aid in answering. This summary should only consist of questions that the content would help answer, and should be formatted as a single paragraph. Make sure to use the path as context when generating the summary and do not include any specific references or section numbers.
 

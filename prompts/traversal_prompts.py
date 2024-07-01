@@ -112,9 +112,23 @@ Use the above information to answer the user's query. You must include the enume
 
 You must think step-by-step before making a decision. Your thought process should be clear and logical and encased in <thinking> XML tags.
 
-Your must be verbose and extremely detailed in your response.
+You must be verbose and extremely detailed in your response.
 
-Answer the user's query: "{query}", in <answer> XML tags, with the information given.
+Answer the user's query: "{query}", in <answer> XML tags, referencing the information given.
+"""
+TRAVERSAL_USER_ANSWER_REFS_CLAUDE = """You are an expert at providing Tax advice based on verbatim information from the Tax Income Assesment Act 1997 (Australia). The following information has been gathered in relation to the user's query: "{query}". You will be given the path and content of the information gathered. You must extract the key information and provide a detailed and definitive answer, citing the enumeration from the information used to answer the query. 
+
+<doc_content>
+{doc_content}
+</doc_content>
+
+Use the above information to answer the user's query. You must cite the references for each piece of information you provide in your response as a react-markdown element, e.g., <sup>1</sup>. You may cite the reference as many times as required. You must also provide the reference to enumeration mapping dictionary in <references> XML tags, for example, <references>{{"1": "110-5", "2": "405-10"}}</references>.
+
+You must think step-by-step before making a decision. Your thought process should be clear and logical and encased in <thinking> XML tags.
+
+You must be verbose and extremely detailed in your response.
+
+Answer the user's query: "{query}", in <answer> XML tags, referencing the information given.
 """
 REWRITE_USER_QUERY_CLAUDE = """You are an expert on the Tax Income Assesment Act 1997 (Australia). Your only task is rewrite and refine the user's query: "{query}" to improve the semantic relationship between the user's query and the information contained in the document. 
 

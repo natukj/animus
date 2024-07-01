@@ -10,15 +10,13 @@ GET_DEPTH = False
 EMBED = False
 CLUSTER = False
 CLUSTER_ALL = False
-CHECK_CLUSTERS = True
+CHECK_CLUSTERS = False
 
 if CHECK_CLUSTERS:
     df = pd.read_csv("ztest_tax_output/final_formatted_tax_data_clustered.csv")
     def check_and_print_nan(df):
-        # Find columns that are not 'summary' or 'self_ref'
         columns_to_check = [col for col in df.columns if 'summary' not in col.lower() and 'self_ref' not in col.lower()]
-        
-        # Find rows with NaN values in the columns we're checking
+
         rows_with_nan = df[df[columns_to_check].isna().any(axis=1)]
         
         if rows_with_nan.empty:
@@ -33,7 +31,6 @@ if CHECK_CLUSTERS:
             print(f"Row index: {index}")
             print(f"Path: {row['path']}")
             
-            # Get columns with NaN for this row, excluding 'summary' and 'self_ref' columns
             nan_columns = [col for col in columns_to_check if pd.isna(row[col])]
             
             print("Columns with NaN:")
@@ -41,27 +38,47 @@ if CHECK_CLUSTERS:
                 print(f"  {col}")
             
             print("-" * 80)
-    def print_cluster_info(df, column, cluster_column):
-        print(f"\n{column.capitalize()} Clustering Information:")
-        print("-" * 40)
         
-        for level in sorted(df[column].unique()):
-            level_df = df[df[column] == level]
-            num_entries = len(level_df)
-            num_clusters = level_df[cluster_column].nunique()
-            
-            print(f"{column.capitalize()} {level}:")
-            print(f"  Number of entries: {num_entries}")
-            print(f"  Number of clusters: {num_clusters}")
-
-    #print_cluster_info(df, 'depth', 'd_cluster')
-
-    # print_cluster_info(df, 'hierarchy_level', 'hl_cluster')
-    # non_df=df[df['hierarchy_level'].isna()]
-    # for _, row in non_df.iterrows():
-    #     print(row['path'])
-    #     print(row['hierarchy_level'])
+    def find_parent_hierarchy_level(df, parent_path):
+        parent_row = df[df['path'] == parent_path]
+        if not parent_row.empty:
+            return parent_row['hierarchy_level'].values[0]
+        return None
     check_and_print_nan(df)
+    rows_to_update = [625, 1057, 1159, 2629, 2795, 3181, 3375, 3690, 3720, 3920, 4794, 5295, 6224, 6432, 6466]
+    
+    for index in rows_to_update:
+        path = df.loc[index, 'path']
+        parent_path = path.rsplit('/', 1)[0]
+        parent_hl = find_parent_hierarchy_level(df, parent_path)
+        if parent_hl is not None:
+            filtered_df = utils.filter_embedded_df_by_hierarchy(df, parent_hl - 1)
+            filtered_df = filtered_df.copy()
+            filtered_df['embedding'] = filtered_df['embedding'].apply(utils.strvec_to_numpy)
+            filtered_df = filtered_df.dropna(subset=['embedding'])
+            df.loc[index, 'hierarchy_level'] = parent_hl - 1
+            embedding = df.loc[index, 'embedding']
+            embedding = utils.strvec_to_numpy(embedding)
+            filtered_df["similarities"] = filtered_df.embedding.apply(lambda x: utils.cosine_similarity(x, embedding))
+            res = (
+                filtered_df.sort_values("similarities", ascending=False)
+                .head(1)
+            )
+            df.loc[index, 'hl_cluster'] = res.iloc[0]['hl_cluster']
+        else:
+            print(f"Warning: Parent path not found for row {index}")
+
+    #check_and_print_nan(df)
+    print("Updated rows:")
+    for index in rows_to_update:
+        print(f"Row index: {index}")
+        print(f"Path: {df.loc[index, 'path']}")
+        print(f"Parent Path: {df.loc[index, 'path'].rsplit('/', 1)[0]}")
+        print(f"Hierarchy Level: {df.loc[index, 'hierarchy_level']}")
+        print(f"Cluster: {df.loc[index, 'hl_cluster']}")
+        print("-" * 80)
+    utils.is_correct()
+    df.to_csv("ztest_tax_output/final_formatted_tax_data_clustered.csv", index=False)
 
 
 
