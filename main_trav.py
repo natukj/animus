@@ -57,6 +57,7 @@ if SEARCH:
                 else:
                     utils.print_coloured("No references found", "yellow")
                 print("-" * 50)
+            #instead of groq checking, need to add agent to check if content is relevant and the content references to return all relevant content
             tasks = [process_item(docs_content[item['index']]) for item in rerank_content['results']]
             results = await asyncio.gather(*tasks)
             filtered_content = [docs_content[item['index']] for item, result in zip(rerank_content['results'], results) if "true" in result.lower()]
