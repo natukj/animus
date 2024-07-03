@@ -1,6 +1,6 @@
 import logging
 from abc import ABC, abstractmethod
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Union
 import asyncio
 from neo4j import GraphDatabase, AsyncGraphDatabase
 from neo4j.exceptions import TransientError
@@ -13,6 +13,34 @@ class Neo4jConnectionBase(ABC):
     @abstractmethod
     def execute_query(self, query: str, parameters: Optional[Dict[str, Any]] = None):
         pass
+
+class AsyncNeo4jConnectionSimple:
+    def __init__(self, uri: str, user: str, password: str):
+        self._driver = AsyncGraphDatabase.driver(uri, auth=(user, password))
+
+    async def close(self):
+        await self._driver.close()
+
+    async def execute_query(self, query: str, parameters: Optional[Dict[str, Any]] = None) -> Union[List[Dict[str, Any]], Any]:
+        async with self._driver.session() as session:
+            result = await session.run(query, parameters)
+            
+            # Handle administrative commands
+            if query.strip().upper().startswith(("SHOW", "CREATE", "DROP")):
+                records = await result.values()
+                keys = result.keys()
+                return [dict(zip(keys, record)) for record in records]
+            
+            # For queries that return a single value (like COUNT)
+            if len(result.keys()) == 1:
+                records = await result.values()
+                if len(records) == 1:
+                    return records[0][0]
+                return records
+            
+            # For queries that return multiple columns
+            records = await result.fetch(n=-1)
+            return [record.data() for record in records]
     
 class AsyncNeo4jConnection:
     def __init__(self, uri: str, user: str, pwd: str):
