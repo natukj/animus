@@ -25,20 +25,20 @@ class AsyncNeo4jConnectionSimple:
         async with self._driver.session() as session:
             result = await session.run(query, parameters)
             
-            # Handle administrative commands
+            # handle administrative commands
             if query.strip().upper().startswith(("SHOW", "CREATE", "DROP")):
                 records = await result.values()
                 keys = result.keys()
                 return [dict(zip(keys, record)) for record in records]
             
-            # For queries that return a single value (like COUNT)
+            # for queries that return a single value (like COUNT)
             if len(result.keys()) == 1:
                 records = await result.values()
                 if len(records) == 1:
                     return records[0][0]
                 return records
             
-            # For queries that return multiple columns
+            # for queries that return multiple columns
             records = await result.fetch(n=-1)
             return [record.data() for record in records]
     

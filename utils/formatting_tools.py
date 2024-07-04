@@ -45,7 +45,6 @@ def calculate_depths_and_hierarchy(data: list, current_path: str = "", depth: in
     return results
 
 def traverse_contents(data: list, current_path: str ="", all_references: set = None):
-    # fucked up with this should have used '>' not '/' as it got all the depths wrong
     if all_references is None:
         all_references = set()
     results = []
@@ -84,6 +83,80 @@ def traverse_contents(data: list, current_path: str ="", all_references: set = N
             results.extend(child_results)
     
     return results, all_references
+
+path_corrections = {
+    "Chapter 2 Liability rules of general application/Part 2-10 Capital allowances: rules about deductibility of capital expenditure/Division 40 Capital allowances/Subdivision 40-H Capital expenditure that is immediately deductible/Subdivision 40-I Capital expenditure that is deductible over time":
+    "Chapter 2 Liability rules of general application/Part 2-10 Capital allowances: rules about deductibility of capital expenditure/Division 40 Capital allowances/Subdivision 40-I Capital expenditure that is deductible over time",
+    
+    "Chapter 3 Specialist liability rules/Part 3-6 The imputation system/Division 210 Venture capital franking/Subdivision 210-E Distribution statements/Subdivision 210-F Rules affecting the allocation of venture capital credits":
+    "Chapter 3 Specialist liability rules/Part 3-6 The imputation system/Division 210 Venture capital franking/Subdivision 210-F Rules affecting the allocation of venture capital credits",
+    
+    "Chapter 3 Specialist liability rules/Part 3-10 Financial transactions/Division 242 Leases of luxury cars/Subdivision 242-D Adjustments if total amount assessed to lessor differs from amount of interest/Subdivision 242-E Extension, renewal and final ending of the lease":
+    "Chapter 3 Specialist liability rules/Part 3-10 Financial transactions/Division 242 Leases of luxury cars/Subdivision 242-E Extension, renewal and final ending of the lease",
+    
+    "Chapter 3 Specialist liability rules/Part 3-30 Superannuation/Division 294 Transfer balance cap/Subdivision 294-A Object of this Division/Subdivision 294-B Transfer balance account":
+    "Chapter 3 Specialist liability rules/Part 3-30 Superannuation/Division 294 Transfer balance cap/Subdivision 294-B Transfer balance account",
+    
+    "Chapter 3 Specialist liability rules/Part 3-30 Superannuation/Division 294 Transfer balance cap/Subdivision 294-D Modifications for certain defined benefit income streams/Subdivision 294-E Modifications for death benefits dependants who are children":
+    "Chapter 3 Specialist liability rules/Part 3-30 Superannuation/Division 294 Transfer balance cap/Subdivision 294-E Modifications for death benefits dependants who are children",
+    
+    "Chapter 3 Specialist liability rules/Part 3-90 Consolidated groups/Division 717 International tax rules/Subdivision 717-D Transfer of certain surpluses under CFC provisions and former FIF and FLP provisions: entry rules/Subdivision 717-E Transfer of certain surpluses under CFC provisions and former FIF and FLP provisions: exit rules":
+    "Chapter 3 Specialist liability rules/Part 3-90 Consolidated groups/Division 717 International tax rules/Subdivision 717-E Transfer of certain surpluses under CFC provisions and former FIF and FLP provisions: exit rules",
+    
+    "Chapter 3 Specialist liability rules/Part 3-95 Value shifting/Division 727 Indirect value shifting affecting interests in companies and trusts, and arising from non-arm’s length dealings/Subdivision 727-F Consequences of an indirect value shift/Subdivision 727-G The realisation time method":
+    "Chapter 3 Specialist liability rules/Part 3-95 Value shifting/Division 727 Indirect value shifting affecting interests in companies and trusts, and arising from non-arm’s length dealings/Subdivision 727-G The realisation time method",
+    
+    "Chapter 4 International aspects of income tax/Part 4-5 General/Division 832 Hybrid mismatch rules/Subdivision 832-I Dual inclusion income/Subdivision 832-J Integrity rule":
+    "Chapter 4 International aspects of income tax/Part 4-5 General/Division 832 Hybrid mismatch rules/Subdivision 832-J Integrity rule"
+}
+
+def traverse_fix_paths(data: list, current_path: str = "", current_updated_path: str = ""):
+    results = []
+    path_corrected = False
+    corrected_full_path = current_path
+
+    for item in data:
+        path_components = []
+        if item.get('section'):
+            path_components.append(item['section'])
+        if item.get('number'):
+            path_components.append(item['number'])
+        if item.get('title'):
+            path_components.append(item['title'])
+
+        item_path = " ".join(path_components)
+        full_path = "/".join(filter(None, [current_path, item_path]))
+        
+        if not path_corrected:
+            for incorrect, correct in path_corrections.items():
+                if full_path.startswith(incorrect):
+                    corrected_full_path = correct + full_path[len(incorrect):]
+                    path_corrected = True
+                    break
+            if not path_corrected:
+                corrected_full_path = full_path
+
+        # ff a correction was applied, use it for all children
+        if path_corrected:
+            item_corrected_path = corrected_full_path + full_path[len(current_path):]
+        else:
+            item_corrected_path = corrected_full_path
+
+        updated_path = ">".join(item_corrected_path.split("/"))
+        
+        results.append({
+            'path': item_corrected_path,
+            'new_path': updated_path
+        }) 
+
+        if 'children' in item:
+            child_results = traverse_fix_paths(item['children'], item_corrected_path, updated_path)
+            results.extend(child_results)
+    
+    return results
+
+
+
 
 def traverse_contents_depth(data: list, current_path: str ="", all_references: set = None, depth: int = 0):
     if all_references is None:

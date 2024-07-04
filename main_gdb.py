@@ -33,7 +33,7 @@ async def process_query(user_query, doc_id, search, use_cluster=True, use_rerank
                 original_result = results_dict[original_content]
                 
                 formatted_final_result += format_result(original_result, doc_id, processed_ids)
-                if utils.count_tokens(formatted_final_result) > 80000:
+                if utils.count_tokens(formatted_final_result) > 80000 or i >= 20:
                     utils.print_coloured(f"breaking at {i+1} reranked results with token count {utils.count_tokens(formatted_final_result)}", "yellow")
                     break
             else:
@@ -42,7 +42,8 @@ async def process_query(user_query, doc_id, search, use_cluster=True, use_rerank
     else:
         for i, result in enumerate(results):
             formatted_final_result += format_result(result, doc_id, processed_ids)
-            if utils.count_tokens(formatted_final_result) > 80000:
+            if utils.count_tokens(formatted_final_result) > 80000 or i >= 20:
+                    utils.print_coloured(f"breaking at {i+1} results with token count {utils.count_tokens(formatted_final_result)}", "yellow")
                     break
     return formatted_final_result
 
@@ -102,8 +103,8 @@ def format_result(result, doc_id, processed_ids):
     if result_id not in processed_ids:
         processed_ids.add(result_id)
         stripped_id = result_id.replace(f"{doc_id}||", "")
-        print(result['title'])
-        formatted_result += f"{stripped_id}\n"
+        print(f"{result['title']} ({result['self_ref']} [{result['score']:.2f}])")
+        formatted_result += f"{stripped_id} (ref: {result['self_ref']})\n"
         formatted_result += f"{result.get('content', 'N/A')}\n"
         
         references = result.get('references', [])
@@ -114,7 +115,8 @@ def format_result(result, doc_id, processed_ids):
                 if ref_id and ref_id not in processed_ids and '995' not in ref_id:
                     processed_ids.add(ref_id)
                     ref_id = ref_id.replace(f"{doc_id}||", "")
-                    formatted_result += f"  - {ref_id}:\n"
+                    print(f"  - {ref.get('title', 'N/A')} ({ref['self_ref']})")
+                    formatted_result += f"  - {ref_id} (ref: {ref['self_ref']}):\n"
                     formatted_result += f"    {ref.get('content', 'N/A')}\n"
         
         formatted_result += "\n"
@@ -151,19 +153,17 @@ async def main():
         start_time = time.time()
 
         if args.method == "query":
-            formatted_result = await process_query(args.query, doc_id, search, llm, use_reranking=args.use_reranking)
+            formatted_result = await process_query(args.query, doc_id, search, args.use_cluster, use_reranking=args.use_reranking)
             formatted_answer_prompt = prompts.TRAVERSAL_USER_ANSWER_REFS_GPT.format(query=args.query, doc_content=formatted_result)
             utils.print_coloured(f"Token count: {utils.count_tokens(formatted_answer_prompt)}", "blue")
             
-            if utils.count_tokens(formatted_answer_prompt) > 80000:
-                utils.print_coloured("Token count exceeds 100,000. Truncating...", "yellow")
-                utils.is_correct()
+            utils.is_correct()
 
             messages = [{"role": "system", "content": prompts.TRAVERSAL_USER_ANSWER_REFS_GPT_SYS}, 
                         {"role": "user", "content": formatted_answer_prompt}]
             response = await llm.openai_client_chat_completion_request(messages)
             responses = [("main", response.choices[0].message.content)]
-        else:  # branch method
+        else:  # branch method not that good
             formatted_branches = await process_query_branch(args.query, doc_id, search, use_cluster=args.use_cluster, use_reranking=args.use_reranking)
             tasks = [process_branch(branch_id, content, args.query) for branch_id, content in formatted_branches.items()]
             responses = await asyncio.gather(*tasks)
@@ -186,40 +186,6 @@ async def main():
         print(f"An error occurred: {str(e)}")
     finally:
         search.close()
-        
-
-# async def main():
-#     uri = "neo4j://localhost:7687"
-#     user = "neo4j"
-#     password = os.environ.get("LOCAL_GDB_PW")
-#     search  = gdb.Neo4jSearch(uri, user, password)
-#     try:
-#         user_query = "How does the Act handle rental income and related deductions?"
-#         doc_id = "AUS_INCOME_TAX"
-#         start_time = time.time()
-#         formatted_result = await process_query(user_query, doc_id, search, use_cluster=False, use_reranking=True)
-#         formatted_answer_prompt = prompts.TRAVERSAL_USER_ANSWER_REFS_GPT.format(query=user_query, doc_content=formatted_result)
-#         utils.print_coloured(utils.count_tokens(formatted_answer_prompt), "blue")
-#         if utils.count_tokens(formatted_answer_prompt) > 80000:
-#             utils.is_correct()
-#         messages = [{"role": "system", "content": prompts.TRAVERSAL_USER_ANSWER_REFS_GPT_SYS}, 
-#                     {"role": "user", "content": formatted_answer_prompt}]
-#         response = await llm.openai_client_chat_completion_request(messages)
-#         response_str = response.choices[0].message.content
-#         print(f"Time taken: {time.time() - start_time:.2f}s")
-#         try:
-#             response_dict = json.loads(response_str)
-#             response_answer = response_dict['answer']
-#             response_refs = response_dict['references']
-#             utils.print_coloured(response_answer, "green")
-#             utils.print_coloured(response_refs, "yellow")
-#         except json.JSONDecodeError:
-#             utils.print_coloured(response_str, "red")
-#     except Exception as e:
-#         print(f"An error occurred: {str(e)}")
-#     finally:
-#         search.close()
-    
 
 if __name__ == "__main__":
     asyncio.run(main())

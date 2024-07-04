@@ -13,6 +13,8 @@ from .formatting_tools import (
     strip_brackets,
     calculate_depths_and_hierarchy,
     traverse_contents,
+    traverse_fix_paths,
+    traverse_contents_depth,
     find_item_from_path,
     split_content,
     find_references,

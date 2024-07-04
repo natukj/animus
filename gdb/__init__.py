@@ -4,6 +4,9 @@ from .neo4j_conn import (
     AsyncNeo4jConnectionSimple,
 )
 from .create_gdb import (
+    SyncGraphDatabaseBuilder
+)
+from .async_create_gdb import (
     AsyncGraphDatabaseBuilder
 )
 from .async_search_gdb import (

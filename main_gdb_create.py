@@ -4,7 +4,7 @@ import pandas as pd
 import gdb
 import warnings
 
-async def main_create():
+async def main_create_async():
     df = pd.read_csv("ztest_tax_output/final3_formatted_tax_data_clustered.csv")
     uri = "neo4j://localhost:7687"
     user = "neo4j"

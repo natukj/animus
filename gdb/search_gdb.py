@@ -23,6 +23,32 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
     def __init__(self, uri: str, user: str, pwd: str):
         super().__init__(uri, user, pwd)
 
+    def print_node(self, limit: int = 10000):
+        query = """
+        MATCH (c:Content)
+        RETURN c.title AS title, c.self_ref AS self_ref, c.id AS id, c.content AS content
+        LIMIT $limit
+        """
+        
+        params = {'limit': limit}
+        
+        try:
+            results = self.execute_query(query, params)
+            
+            if results:
+                for i, result in enumerate(results, 1):
+                        if result['self_ref'] == '104-5':
+                            print(f"{i}. Title: {result['title']}")
+                            print(f"   ID: {result['id']}")
+                            # print(f"   Self Ref: {result['self_ref']}")
+                            print(f"   Content Preview: {result['content']}")
+                            print()
+            else:
+                print("No nodes found")
+            
+        except Exception as e:
+            print(f"An error occurred: {str(e)}")
+
     def by_embedding(self,
                 doc_id: str, 
                 embedding: List[float], 
@@ -49,6 +75,9 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
         else:
             query += " AND node.id STARTS WITH $doc_id"
 
+        if index_name != "section_embedding":
+            query += " AND NOT toLower(node.title) CONTAINS 'division'"
+
         if return_refs:
             query += """
             WITH node, score
@@ -57,6 +86,7 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
                     THEN {
                         id: ref.id, 
                         title: ref.title, 
+                        self_ref: ref.self_ref,
                         content: ref.content, 
                         cluster: ref.cluster
                     }
@@ -69,7 +99,7 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
             """
         else:
             query += """
-            RETURN node.id AS id, node.title AS title, node.cluster as cluster, node.content AS content, score
+            RETURN node.id AS id, node.title AS title, node.self_ref as self_ref, node.cluster as cluster, node.content AS content, score
             """
 
         if return_refs:
@@ -92,16 +122,16 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
 
         return self.execute_query(query, parameters)
     
-    def sections(self, 
-                        doc_id: Optional[str] = None,
-                        title: Optional[str] = None,
-                        depth: Optional[List[int]] = None,
-                        cluster: Optional[int] = None,
-                        self_ref: Optional[str] = None,
-                        content_contains: Optional[str] = None,
-                        added_after: Optional[str] = None,
-                        added_before: Optional[str] = None,
-                        limit: int = 100) -> List[Dict[str, Any]]:
+    def section(self, 
+            doc_id: Optional[str] = None,
+            title: Optional[str] = None,
+            depth: Optional[List[int]] = None,
+            cluster: Optional[int] = None,
+            self_ref: Optional[str] = None,
+            content_contains: Optional[str] = None,
+            added_after: Optional[str] = None,
+            added_before: Optional[str] = None,
+            limit: int = 100) -> List[Dict[str, Any]]:
         
         query = "MATCH (s:Section) WHERE 1=1 "
         params = {}
@@ -150,15 +180,16 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
         return self.execute_query(query, params)
     
     def content(self, 
-                       doc_id: Optional[str] = None,
-                       title: Optional[str] = None,
-                       content_contains: Optional[str] = None,
-                       self_ref: Optional[str] = None,
-                       cluster: Optional[int] = None,
-                       summary_contains: Optional[str] = None,
-                       added_after: Optional[str] = None,
-                       added_before: Optional[str] = None,
-                       limit: int = 100) -> List[Dict[str, Any]]:
+            doc_id: Optional[str] = None,
+            title: Optional[str] = None,
+            content_contains: Optional[str] = None,
+            self_ref: Optional[str] = None,
+            cluster: Optional[int] = None,
+            summary_contains: Optional[str] = None,
+            added_after: Optional[str] = None,
+            added_before: Optional[str] = None,
+            exclude_division: bool = False, # skip: What this Division is about, Effect of this Division etc
+            limit: int = 100) -> List[Dict[str, Any]]:
         
         query = """
         MATCH (c:Content)
@@ -198,19 +229,9 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
             query += "AND c.added <= $added_before "
             params['added_before'] = added_before
 
-        # query += """
-        # WITH c
-        # OPTIONAL MATCH (c)-[r:REFERENCES]->(ref:Content)
-        # RETURN c.id AS id, c.title AS title, 
-        #         c.content AS content, c.cluster AS cluster, 
-        #        COLLECT(DISTINCT {
-        #            id: ref.id, 
-        #            title: ref.title, 
-        #            content: ref.content, 
-        #            cluster: ref.cluster
-        #        }) AS references
-        # LIMIT $limit
-        # """
+        if exclude_division:
+            query += "AND NOT toLower(c.title) CONTAINS 'division' "
+
         query += """
         WITH c ORDER BY c.added DESC
         OPTIONAL MATCH (c)-[r:REFERENCES]->(ref:Content)
@@ -218,11 +239,12 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
                         THEN {
                             id: ref.id, 
                             title: ref.title, 
+                            self_ref: ref.self_ref,
                             content: ref.content, 
                             cluster: ref.cluster
                         }
                         ELSE NULL END) AS refs
-        RETURN c.id AS id, c.title AS title, 
+        RETURN c.id AS id, c.title AS title, c.self_ref AS self_ref,
                 c.content AS content, c.cluster AS cluster, 
             [ref IN refs WHERE ref IS NOT NULL] AS references
         LIMIT $limit
@@ -246,7 +268,7 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
         for content in content_results:
             cluster = content['cluster']
             if cluster not in processed_clusters:
-                result = self.content(cluster=cluster)
+                result = self.content(cluster=cluster, exclude_division=True)
                 if result:
                     final_results.extend(result)
                     processed_clusters.add(cluster)
@@ -268,14 +290,14 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
         for content in content_results:
             cluster = content['cluster']
             if cluster not in processed_clusters:
-                result = self.content(cluster=cluster)
+                result = self.content(cluster=cluster, exclude_division=True)
                 if result:
                     cluster_results[cluster] = result
                     processed_clusters.add(cluster)
 
         return cluster_results
     
-    def tree(self,
+    def tree_section(self,
              doc_id: str, 
              embedding: List[float]) -> List[Dict[str, Any]]:
         section_results = self.by_embedding(doc_id, embedding, "section_embedding", top_k=2, depth=[0, 1])
@@ -286,29 +308,23 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
             content_results.extend(content_nodes)
 
         return content_results
+    
+    def tree(self,
+             doc_id: str, 
+             embedding: List[float]) -> List[Dict[str, Any]]:
+        # NOTE simple but probably the best
+        content_nodes = self.by_embedding(doc_id, embedding, "content_embedding", top_k=50,return_refs=True)
+        return content_nodes
+    
+    def tree_branch(self, 
+            doc_id: str, 
+            embedding: List[float]) -> Dict[str, List[Dict[str, Any]]]:
+        section_results = self.by_embedding(doc_id, embedding, "section_embedding", top_k=2, depth=[0, 1])
+        branch_results = {}
 
-        formatted_final_result = ""
-        processed_ids = set()
-        for final_result in final_results:
-            result_id = final_result['id']
-            if result_id not in processed_ids:
-                processed_ids.add(result_id)
-                stripped_id = result_id.replace(f"{doc_id}||", "")
-            
-                formatted_final_result += f"{stripped_id}\n"
-                formatted_final_result += f"{final_result.get('content', 'N/A')}\n"
-                
-                references = final_result.get('references', [])
-                if references:
-                    formatted_final_result += "References:\n"
-                    for ref in references:
-                        ref_id = ref.get('id')
-                        if ref_id and ref_id not in processed_ids and '995' not in ref_id:
-                            processed_ids.add(ref_id)
-                            ref_id = ref_id.replace(f"{doc_id}||", "")
-                            formatted_final_result += f"  - {ref_id}:\n"
-                            formatted_final_result += f"    {ref.get('content', 'N/A')}\n"
-                
-                formatted_final_result += "\n"
+        for section in section_results:
+            section_id = section['id']
+            content_nodes = self.by_embedding(doc_id, embedding, "content_embedding", top_k=50, id_startswith=section_id, return_refs=True)
+            branch_results[section_id] = content_nodes
 
-        return formatted_final_result.strip() 
+        return branch_results

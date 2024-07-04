@@ -5,6 +5,37 @@ import formatters, utils, llm
 import pandas as pd
 from tqdm.asyncio import tqdm_asyncio
 
+ADD_NEW_PATHS = True
+if ADD_NEW_PATHS:
+    with open("/Users/jamesqxd/Documents/norgai-docs/TAX/parsed/final_aus_tax.json", "r") as f:
+        tax_data = json.load(f)["contents"]
+    res = utils.traverse_fix_paths(tax_data)
+    new_df = pd.DataFrame(res)
+    print(new_df.shape)
+    df = pd.read_csv("ztest_tax_output/final3_formatted_tax_data_clustered.csv")
+    print(df.shape)
+
+    different_paths = df[df['path'] != new_df['path']]
+    
+    print(f"\nNumber of paths that have changed: {len(different_paths)}")
+    # print("\nPaths that have changed:")
+    # for index, row in different_paths.iterrows():
+    #     print(f"\nIndex: {index}")
+    #     print(f"Old path: {df.loc[index, 'path']}")
+    #     print(f"New path: {new_df.loc[index, 'path']}")
+    
+    new_df_duplicates = new_df[new_df.duplicated(subset='path', keep=False)]
+    if not new_df_duplicates.empty:
+        print("\n\n\n\nNon-unique paths in new_df:")
+        for _, row in new_df_duplicates.iterrows():
+            print(row['path'])
+    else:
+        print("\n\n\n\nNo duplicate paths found in new_df.")
+
+    df['path'] = new_df['new_path'] 
+    df.to_csv("ztest_tax_output/final4_formatted_tax_data_clustered_updated.csv", index=False)
+    print(df.shape)
+
 CODE_FIX = False
 if CODE_FIX:
     # FIX DEPTH AND HIERARCHY FUCK UP
