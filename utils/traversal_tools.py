@@ -117,11 +117,22 @@ async def df_recursive_semantic_search(df: pd.DataFrame, user_query: str, start_
     
     return output
 def strvec_to_numpy(x: str) -> np.array:
+    try:
+        return np.array(ast.literal_eval(x))
+    except (ValueError, SyntaxError):
+        print(f"Error processing embedding: ->{x}<-")
+        return None
+def convert_embedding(embedding) -> List[float]:
+    if isinstance(embedding, str):
         try:
-            return np.array(ast.literal_eval(x))
-        except (ValueError, SyntaxError):
-            print(f"Error processing embedding: ->{x}<-")
+            return [float(x) for x in ast.literal_eval(embedding)]
+        except:
+            print(f"Error processing embedding: ->{embedding}<-")
             return None
+    elif isinstance(embedding, (list, np.ndarray)):
+        return [float(x) for x in embedding]
+    print(f"Error processing embedding: ->{embedding}<-")
+    return None
 # old code
 def find_section_titles(tax_data, search_title=None):
     def search_children(children, search_title):

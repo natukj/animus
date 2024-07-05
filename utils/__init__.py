@@ -32,4 +32,5 @@ from .traversal_tools import (
     filter_embedded_df_by_hierarchy,
     df_recursive_semantic_search,
     strvec_to_numpy,
+    convert_embedding,
 )

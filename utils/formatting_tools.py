@@ -136,7 +136,7 @@ def traverse_fix_paths(data: list, current_path: str = "", current_updated_path:
             if not path_corrected:
                 corrected_full_path = full_path
 
-        # ff a correction was applied, use it for all children
+        # if a correction was applied, use it for all children
         if path_corrected:
             item_corrected_path = corrected_full_path + full_path[len(current_path):]
         else:

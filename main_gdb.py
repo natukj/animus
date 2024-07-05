@@ -149,7 +149,7 @@ async def main():
     search = gdb.Neo4jSearch(uri, user, password)
     
     try:
-        doc_id = "AUS_INCOME_TAX"
+        doc_id = "aus_income_tax_1997"
         start_time = time.time()
 
         if args.method == "query":
