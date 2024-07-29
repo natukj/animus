@@ -4,26 +4,21 @@ import asyncio
 from fastapi import UploadFile
 import fitz
 import pathlib
+import os
 import llm, prompts, utils
 
 class PDFToCParser:
-    def __init__(self, file: Union[UploadFile, str]) -> None:
+    def __init__(self, file: Union[UploadFile, str], output_dir: str, file_name: str, checkpoint: bool, verbose: bool) -> None:
+        self.output_dir = output_dir
+        self.checkpoint = checkpoint
+        self.verbose = verbose
         if isinstance(file, UploadFile):
             file_content = file.read()
             self.document = fitz.open(stream=file_content, filetype="pdf")
         elif isinstance(file, str):
             self.document = fitz.open(file)
-        else:
-            raise ValueError("file must be an instance of UploadFile or str.")
-        self.file_name: str = file.filename if isinstance(file, UploadFile) else pathlib.Path(file).stem
-        #self.toc_pages: List[int] = list(range(1, 45))
-        # with open("toc.md", "r") as f:
-        #     self.toc_md_str = f.read()
-        # self.toc_md_lines = self.toc_md_str.split("\n")
-        # with open("content.md", "r") as f:
-        #     self.content_md_str = f.read()
-        # self.content_md_lines = self.content_md_str.split("\n")
-        self.doc_title: str = None
+
+        self.file_name: str = file.filename if isinstance(file, UploadFile) else file_name
         self.toc_pages: List[int] = None
         self.toc_pages_md: List[Dict[str, Any]] = None
         self.toc_md_str: str = None
@@ -39,7 +34,7 @@ class PDFToCParser:
         """
         Convert the given text to Markdown format.
         """
-        return utils.to_markdownOG(doc, pages=pages, page_chunks=page_chunks)
+        return utils.to_markdown(doc, pages=pages, page_chunks=page_chunks)
     
     async def find_toc_pages(self) -> List[int]:
         """
@@ -76,8 +71,8 @@ class PDFToCParser:
 
         toc_pages = []
         i = 0
-        check_right = True
-        max_gap = 5 
+        check_right = True 
+        max_gap = 5
         while i < self.document.page_count - 1:
             page = self.document[i]
             page_rect = page.rect
@@ -101,7 +96,8 @@ class PDFToCParser:
                     i = 0
         if not toc_pages:
             raise ValueError("No Table of Contents found - can not proceed.")
-        utils.print_coloured(f"Potential ToC pages: {toc_pages}", "yellow")
+        if self.verbose:
+            utils.print_coloured(f"Potential ToC pages: {toc_pages}", "yellow")
         start_index = 0
         end_index = len(toc_pages) - 1
         start_found, end_found = False, False
@@ -129,9 +125,11 @@ class PDFToCParser:
                     end_count += 1
                 else:
                     end_index -= 1
-        verified_toc_pages = list(range(max(0, toc_pages[start_index] - start_count), toc_pages[end_index] + end_count + 1)) 
-        utils.print_coloured(f"Verified ToC pages: {verified_toc_pages}", "green")
-        utils.is_correct()
+        verified_toc_pages = list(range(max(0, toc_pages[start_index] - start_count), toc_pages[end_index] + end_count + 1))
+        if self.verbose: 
+            utils.print_coloured(f"Verified ToC pages: {verified_toc_pages}", "green")
+        if self.checkpoint:
+            utils.is_correct("are ToC pages correct? (Y/n): ")
         return verified_toc_pages
     
     async def extract_toc(self) -> None:
@@ -149,40 +147,48 @@ class PDFToCParser:
         self.toc_pages_md = self.to_markdown(self.document, self.toc_pages, True)
         self.content_md_str = self.to_markdown(self.document, content_pages, False)
 
-        with open(f"{self.file_name}_toc_pages.json", "w") as f:
+        # save the ToC md pages and content to files
+        toc_pages_file = os.path.join(self.output_dir, f"{self.file_name}_toc_pages.json")
+        with open(toc_pages_file, "w") as f:
             json.dump(self.toc_pages_md, f, indent=4)
-        pathlib.Path(f"{self.file_name}_content.md").write_bytes(self.content_md_str.encode())
+        content_file = os.path.join(self.output_dir, f"{self.file_name}_content.md")
+        pathlib.Path(content_file).write_bytes(self.content_md_str.encode())
+        if self.verbose:
+            utils.print_coloured(f"Paginated Table of Contents saved to: {toc_pages_file}", "green")
+            utils.print_coloured(f"Content saved to: {content_file}", "green")
 
-        # with open(f"{self.file_name}_toc_pages.json", "r") as f:
-        #     self.toc_pages_md = json.load(f)
-        # with open(f"{self.file_name}_content.md", "r") as f:
-        #     self.content_md_str = f.read()
-
-        meta_doc_title = self.toc_pages_md[0]['metadata'].get('title')
-        self.doc_title = meta_doc_title if meta_doc_title else self.file_name
         toc_md_str = ""
         for page in self.toc_pages_md:
             toc_md_str += page.get("text", "")
         self.toc_md_str = toc_md_str
-        pathlib.Path(f"{self.doc_title}_toc.md").write_bytes(self.toc_md_str.encode())
+        
+        toc_file = os.path.join(self.output_dir, f"{self.file_name}_toc.md")
+        pathlib.Path(toc_file).write_bytes(self.toc_md_str.encode())
         self.toc_md_lines = [line for line in self.toc_md_str.split("\n") if line.strip()]
-        pathlib.Path(f"{self.doc_title}_content.md").write_bytes(self.content_md_str.encode())
+        
         self.content_md_lines = [line for line in self.content_md_str.split("\n") if line.strip()]
+        if self.verbose:
+            utils.print_coloured(f"TOC markdown saved to: {toc_file}", "green")
+        if self.checkpoint:
+            utils.is_correct("is ToC extracted correctly? (Y/n): ")
     
     async def determine_toc_structure(self):
         if not self.toc_md_lines and not self.content_md_lines:
             await self.extract_toc()
         toc_md_section_lines = [line for line in self.toc_md_lines if line.startswith("#")]
-        utils.print_coloured(f"{len(toc_md_section_lines)} / {len(self.toc_md_lines)} -> {len(toc_md_section_lines) / len(self.toc_md_lines)}", "yellow")
+        if self.verbose:
+            utils.print_coloured(f"{len(toc_md_section_lines)} / {len(self.toc_md_lines)} -> {len(toc_md_section_lines) / len(self.toc_md_lines)}", "yellow")
         if len(toc_md_section_lines) / len(self.toc_md_lines) > 0.05:
             if len(self.toc_pages) >= 3:
                 return "VarTextSize"
             else:
-                return "VarTextSizeSmall"
+                # using same adapter for now
+                return "VarTextSize"
         else:
             if len(self.toc_pages) >= 3:
                 return "SameTextSize"
             else:
+                # don't have adapter for this yet
                 return "SameTextSizeSmall"
             
     async def rate_limited_process(
@@ -213,7 +219,6 @@ class PDFToCParser:
                 except Exception as e:
                     function_name = process_function.__name__ if hasattr(process_function, '__name__') else 'Unknown function'
                     utils.print_coloured(f"Error during RLP {function_name}: {e}", "red")
-                    # utils.print_coloured(f"Retrying... Attempt {attempts + 1}\nargs: {args} and kwargs: {kwargs}", "red")
                     utils.print_coloured(f"Retrying... Attempt {attempts + 1}", "red")
                     attempts += 1
                     if attempts >= max_attempts:

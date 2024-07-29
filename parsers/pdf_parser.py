@@ -8,7 +8,10 @@ import llm, prompts, schemas, utils
 
 
 class PDFParser(ABC):
-    def __init__(self, rate_limit: int = 50):
+    def __init__(self, output_dir: str, checkpoint: bool, verbose: bool, rate_limit: int = 50):
+        self.output_dir = output_dir
+        self.checkpoint = checkpoint
+        self.verbose = verbose
         self.semaphore = asyncio.Semaphore(rate_limit)
         self.remaining_section_lines: List[Tuple[str, int]] = []
         self.child_format_section_name: Callable = None

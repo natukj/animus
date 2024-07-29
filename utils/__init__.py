@@ -1,6 +1,4 @@
-from .pdf2md import to_markdown
-from .pdf2mdOG import to_markdownOG
-from .pdf2mdOOG import to_markdownOOG
+from .pdf2mdqxd import to_markdown
 from .tools import (
     print_coloured,
     count_tokens,

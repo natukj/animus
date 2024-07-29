@@ -396,7 +396,7 @@ if __name__ == "__main__":
 
     # get the file name
     #filename = sys.argv[1]
-    filename = "/Users/jamesqxd/Documents/norgai-docs/ACTS/ukCOMPANIESACT2006.pdf"
+    filename = input("Enter the filepath: ")
 
     # check if footer margin is given
     if len(sys.argv) > 2:

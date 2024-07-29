@@ -1,19 +1,23 @@
 from typing import Any, Dict
 import json
 import asyncio
+import os
 import uuid
 import parsers, schemas, utils
 
 class VarTextSizeAdapter(parsers.PDFParser):
-    def __init__(self, toc_parser: parsers.PDFToCParser, rate_limit: int = 50) -> None:
+    def __init__(self, toc_parser: parsers.PDFToCParser, output_dir: str, checkpoint: bool, verbose: bool, rate_limit: int = 50) -> None:
         """
         PDFParser adapter that uses the variable text size for hierarchy determination.
         
         :param toc_parser: An instance of PDFToCParser containing the parsed data.
+        :param output_dir: Directory to save output files.
+        :param checkpoint: Whether to use checkpoints during parsing.
+        :param verbose: Whether to print verbose output.
+        :param rate_limit: Rate limit for API calls.
         """
-        super().__init__(rate_limit)
-        self.doc_title = toc_parser.doc_title
-        self.doc_title = toc_parser.doc_title
+        super().__init__(output_dir, checkpoint, verbose, rate_limit)
+        self.doc_title = toc_parser.file_name
         self.toc_md_lines = toc_parser.toc_md_lines
         self.content_md_lines = toc_parser.content_md_lines
         self.master_toc = toc_parser.master_toc
@@ -96,14 +100,20 @@ class VarTextSizeAdapter(parsers.PDFParser):
 
         replace_placeholders(parts, heading_futures, processed_headings)
         replace_placeholders(parts, item_futures, processed_items)
-        with open(f"{self.doc_title}_parts.json", "w") as f:
+
+        toc_parts_file = os.path.join(self.output_dir, f"{self.doc_title}_parts.json")
+        with open(toc_parts_file, "w") as f:
             json.dump(parts, f, indent=2)
-        utils.print_coloured(f"{self.doc_title}_parts.json created", "green")
+        if self.verbose:
+            utils.print_coloured(f"ToC parts saved to: {self.doc_title}_parts.json", "green")
+
         master_toc = schemas.parse_toc_dict(parts)
         self.master_toc = [toc.model_dump() for toc in master_toc]
-        with open(f"{self.doc_title}_master_toc.json", "w") as f:
+        master_toc_file = os.path.join(self.output_dir, f"{self.doc_title}_master_toc.json")
+        with open(master_toc_file, "w") as f:
             json.dump(self.master_toc, f, indent=2, default=lambda x: x.dict())
-        utils.print_coloured(f"{self.doc_title}_master_toc.json created", "green")
+        if self.verbose:
+            utils.print_coloured(f"Master ToC saved to: {self.doc_title}_master_toc.json", "green")
     
     def format_section_name(self, section: str, number: str, title: str) -> str:
         formatted_parts = []
@@ -120,7 +130,7 @@ class VarTextSizeAdapter(parsers.PDFParser):
         return self.call_add_content_to_master_toc(self.master_toc)
     
     async def fake_create_master_toc(self) -> None:
-        with open("master_toc.json", "r") as f:
+        with open("add_dir_to_master_toc.json", "r") as f:
             self.master_toc = json.load(f)
     
     async def parse(self) -> Dict[str, Dict[str, Any]]:
@@ -129,5 +139,3 @@ class VarTextSizeAdapter(parsers.PDFParser):
         self.init_remaining_content_section_lines(self.content_md_lines)
         master_toc_dict = self.add_content_to_master_toc()
         return master_toc_dict
-    
-    

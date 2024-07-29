@@ -1,21 +1,26 @@
 from typing import Any, Dict, Tuple, List
 import json
 import asyncio
+import os
 import copy
 import uuid
 from thefuzz import process  
 import parsers, llm, prompts, schemas, utils
 
 class SameTextSizeAdapter(parsers.PDFParser):
-    def __init__(self, toc_parser: parsers.PDFToCParser, rate_limit: int = 50) -> None:
+    def __init__(self, toc_parser: parsers.PDFToCParser, output_dir: str, checkpoint: bool, verbose: bool, rate_limit: int = 50) -> None:
         """
-        PDFParser adapter for PDFs with no variation in text size.
+        PDFParser adapter for PDFs with no discernible variation in text size.
 
         :param toc_parser: An instance of PDFToCParser containing the parsed data.
+        :param output_dir: Directory to save output files.
+        :param checkpoint: Whether to use checkpoints during parsing.
+        :param verbose: Whether to print verbose output.
+        :param rate_limit: Rate limit for API calls.
         """
-        super().__init__(rate_limit)
+        super().__init__(output_dir, checkpoint, verbose, rate_limit)
         self.document = toc_parser.document
-        self.doc_title = toc_parser.doc_title
+        self.doc_title = toc_parser.file_name
         self.toc_pages = toc_parser.toc_pages
         self.toc_pages_md = toc_parser.toc_pages_md
         self.toc_md_lines = toc_parser.toc_md_lines
@@ -54,13 +59,6 @@ class SameTextSizeAdapter(parsers.PDFParser):
         if self.grouped_appendix_pages_text:
             self.toc_md_lines = [line for group_text in grouped_pages_text.values() for line in group_text.split("\n") if line.strip()]
             self.toc_md_apx_lines = [line for line in end_pages_text.split("\n") if line.strip()]
-        # for i, (group, text) in enumerate(self.grouped_appendix_pages_text.items()):
-        #     print(f"Pages({i}) {group}: {text}")
-        # for i, (group, text) in enumerate(self.grouped_pages_text.items()):
-        #     print(f"Pages({i}) {group}: {len(text)}")
-        #     # if i == 11:
-        #     #     print(text)
-        # utils.is_correct()
 
     async def gen_toc_hierarchy_schema(self) -> None:
         """
@@ -110,12 +108,14 @@ class SameTextSizeAdapter(parsers.PDFParser):
             if "description" in value:
                 prior_schema_descriptions.append(f"(array of strings, ALL verbatim {key} section lines from the text identified as the {value['description']})")
                 del value["description"]
-        prior_schema_template = copy.deepcopy(prior_schema) 
-        utils.print_coloured(json.dumps(prior_schema, indent=2), "yellow")
+        prior_schema_template = copy.deepcopy(prior_schema)
+        if self.verbose: 
+            utils.print_coloured(json.dumps(prior_schema, indent=2), "yellow")
         for key, description in zip(list(prior_schema_template.keys()), prior_schema_descriptions):
             prior_schema_template[key]["lines"] = description
-        utils.print_coloured(json.dumps(appendix_schema, indent=2), "yellow")
-        utils.print_coloured(json.dumps(prior_schema_template, indent=2), "yellow")
+        if self.verbose:
+            utils.print_coloured(json.dumps(appendix_schema, indent=2), "yellow")
+            utils.print_coloured(json.dumps(prior_schema_template, indent=2), "yellow")
         # create an example for llm
         prior_schema_example = copy.deepcopy(prior_schema) 
         _, text = next(iter(self.grouped_pages_text.items()))
@@ -144,8 +144,10 @@ class SameTextSizeAdapter(parsers.PDFParser):
         for key, details in prior_schema_example.items():
             details["lines"] = [line for line in details["lines"] if line in example_substring_lines]
         example += f"<example_output>{json.dumps(prior_schema_example, indent=2)}</example_output>"
-        utils.print_coloured(json.dumps(prior_schema_example, indent=2), "green")
-        utils.is_correct()
+        if self.verbose:
+            utils.print_coloured(json.dumps(prior_schema_example, indent=2), "green")
+        if self.checkpoint:
+            utils.is_correct()
         toc_hierarchy_schemas = await asyncio.gather(
             *[
                 self.rate_limited_process(
@@ -174,19 +176,32 @@ class SameTextSizeAdapter(parsers.PDFParser):
                         break
             if apx_idxs:
                 split_idx = min(apx_idxs)
-                utils.print_coloured(f"Length of content_md_lines: {len(self.content_md_lines)}", "yellow")
+                if self.verbose:
+                    utils.print_coloured(f"Length of content_md_lines: {len(self.content_md_lines)}", "yellow")
                 self.appendix_md_lines = self.content_md_lines[split_idx:]
                 main_content = self.content_md_lines[:split_idx]
                 self.content_md_lines = main_content
-                utils.print_coloured(f"Splitting at {split_idx}", "yellow")
-                utils.print_coloured(f"Length of content_md_lines after split: {len(self.content_md_lines)}", "yellow")
-                with open(f"z{self.doc_title}_content.md", "w") as f:
+                if self.verbose:
+                    utils.print_coloured(f"Splitting at {split_idx}", "yellow")
+                    utils.print_coloured(f"Length of content_md_lines after split: {len(self.content_md_lines)}", "yellow")
+
+
+                content_split_file = os.path.join(self.output_dir, f"{self.doc_title}_content_split.md")
+                apx_file = os.path.join(self.output_dir, f"{self.doc_title}_apx.md")
+
+                with open(content_split_file, "w") as f:
                     f.write('\n'.join(main_content))
-                with open(f"zz{self.doc_title}_apx.md", "w") as f:
+                with open(apx_file, "w") as f:
                     f.write('\n'.join(self.appendix_md_lines))
-                utils.is_correct(prompt="Splitting content and appendix")
+
+                if self.verbose:
+                    utils.print_coloured(f"Split content saved to: {content_split_file}", "green")
+                    utils.print_coloured(f"Appendix content saved to: {apx_file}", "green")
+
+                if self.checkpoint:
+                    utils.is_correct(prompt="Content and appendix have been split correctly? (Y/n): ")
             else:
-                utils.print_coloured("NO APX SPLIT FOUND", "red")
+                utils.print_coloured("No appendix split found!", "red")
                             
         combined_toc_hierarchy_schema = {}
         for schema in [prior_schema] + toc_hierarchy_schemas:
@@ -200,21 +215,30 @@ class SameTextSizeAdapter(parsers.PDFParser):
         toc_hierarchy_schema_items = sorted(combined_toc_hierarchy_schema.items(), key=lambda x: x[0].count('#'))
         self.toc_hierarchy_schema = dict(toc_hierarchy_schema_items)
         self.remaining_sections = [heading for headings in self.toc_hierarchy_schema.values() for heading in headings]
-        utils.print_coloured(f"{json.dumps(self.appendix_toc_hierarchy_schema, indent=4)}", "green")
-        utils.print_coloured(f"{json.dumps(self.toc_hierarchy_schema, indent=4)}", "green")
-        with open(f"{self.doc_title}_toc_hierarchy_schema.json", "w") as f:
+        if self.verbose:
+            utils.print_coloured(f"{json.dumps(self.appendix_toc_hierarchy_schema, indent=4)}", "green")
+            utils.print_coloured(f"{json.dumps(self.toc_hierarchy_schema, indent=4)}", "green")
+
+        toc_hierarchy_schema_file = os.path.join(self.output_dir, f"{self.doc_title}_toc_hierarchy_schema.json")
+        with open(toc_hierarchy_schema_file, "w") as f:
             json.dump(self.toc_hierarchy_schema, f, indent=4)
-        with open(f"{self.doc_title}_appendix_toc_hierarchy_schema.json", "w") as f:
-            json.dump(self.appendix_toc_hierarchy_schema, f, indent=4)
+        if self.verbose:
+            utils.print_coloured(f"ToC hierarchy schema saved to: {toc_hierarchy_schema_file}", "green")
+        if self.appendix_toc_hierarchy_schema:
+            appendix_toc_hierarchy_schema_file = os.path.join(self.output_dir, f"{self.doc_title}_appendix_toc_hierarchy_schema.json")
+            with open(appendix_toc_hierarchy_schema_file, "w") as f:
+                json.dump(self.appendix_toc_hierarchy_schema, f, indent=4)
+            if self.verbose:
+                utils.print_coloured(f"Appendix ToC hierarchy schema saved to: {appendix_toc_hierarchy_schema_file}", "green")
     
     async def create_master_toc(self, toc_hierarchy_schema_levels: Dict[str, int], is_apx: bool = False) -> None:
         if is_apx:
             toc_lines = self.toc_md_apx_lines
-            parts_file = f"{self.doc_title}_apx_parts.json"
-            master_toc_file = f"{self.doc_title}_apx_master_toc.json"
+            parts_file = os.path.join(self.output_dir, f"{self.doc_title}_apx_parts.json")
+            master_toc_file = os.path.join(self.output_dir, f"{self.doc_title}_apx_master_toc.json")
         else:
-            parts_file = f"{self.doc_title}_parts.json"
-            master_toc_file = f"{self.doc_title}_master_toc.json"
+            parts_file = os.path.join(self.output_dir, f"{self.doc_title}_parts.json")
+            master_toc_file = os.path.join(self.output_dir, f"{self.doc_title}_master_toc.json")
             toc_lines = self.toc_md_lines
         parts = {}
         stack = []
@@ -233,19 +257,21 @@ class SameTextSizeAdapter(parsers.PDFParser):
                 else:
                     trimmed_heading = heading
                 if trimmed_heading == stripped_line:
-                    utils.print_coloured(f"Matched: {heading} in {stripped_line}", "green")
+                    if self.verbose:
+                        utils.print_coloured(f"Matched: {heading} in {stripped_line}", "green")
                     level = level_num
                     if len(heading) > len(stripped_line):
                         skip_next_line = True
                     break
                 if not match_found and ' ' in trimmed_heading and len(trimmed_heading) >= max_line_length*0.8:
-                    # TODO fix this (UK companies act)
+                    # TODO generalise this (UK companies act)
                     if "The Companies (Northern Ireland) Order 1986" in trimmed_heading:
                         trimmed_heading = "Part 2 — The Companies (Northern Ireland) Order 1986 (S.I. 1986/1032"
                     else:
                         trimmed_heading = ' '.join(trimmed_heading.split(' ')[:-1])
                     if trimmed_heading in stripped_line:
-                        utils.print_coloured(f"Matched after trim: {heading} in {stripped_line}", "yellow")
+                        if self.verbose:
+                            utils.print_coloured(f"Matched after trim: {heading} in {stripped_line}", "yellow")
                         match_found = skip_next_line = True
                         level = level_num
                         break
@@ -275,7 +301,8 @@ class SameTextSizeAdapter(parsers.PDFParser):
                 heading_futures.append((self.rate_limited_process(self.process_heading, heading), placeholder))
             else:
                 if skip_next_line:
-                    utils.print_coloured(f"Skipping line: {stripped_line}", "yellow")
+                    if self.verbose:
+                        utils.print_coloured(f"Skipping line: {stripped_line}", "yellow")
                     skip_next_line = False
                     continue
                 else:
@@ -288,7 +315,8 @@ class SameTextSizeAdapter(parsers.PDFParser):
             if stack:
                 current = stack[-1][1]
                 current["contents"] = placeholder
-        utils.is_correct()
+        if self.checkpoint:
+            utils.is_correct()
         processed_headings, processed_items = await asyncio.gather(
             self.process_queue(heading_futures),
             self.process_queue(item_futures)
@@ -323,18 +351,21 @@ class SameTextSizeAdapter(parsers.PDFParser):
         replace_placeholders(parts, item_futures, processed_items)
         with open(parts_file, "w") as f:
             json.dump(parts, f, indent=2)
-        utils.print_coloured(f"{parts_file} created", "green")
+        if self.verbose:
+            utils.print_coloured(f"{parts_file} created", "green")
         master_toc = schemas.parse_toc_dict(parts, pre_process=False)
         if is_apx:
             self.master_apx_toc = [toc.model_dump() for toc in master_toc]
             with open(master_toc_file, "w") as f:
                 json.dump(self.master_apx_toc, f, indent=2, default=lambda x: x.dict())
-            utils.print_coloured(f"{master_toc_file} created", "green")
+            if self.verbose:
+                utils.print_coloured(f"{master_toc_file} created", "green")
         else:
             self.master_toc = [toc.model_dump() for toc in master_toc]
             with open(master_toc_file, "w") as f:
                 json.dump(self.master_toc, f, indent=2, default=lambda x: x.dict())
-            utils.print_coloured(f"{master_toc_file} created", "green")
+            if self.verbose:
+                utils.print_coloured(f"{master_toc_file} created", "green")
 
     async def call_create_master_toc(self) -> None:
         if not self.toc_hierarchy_schema:
@@ -359,7 +390,8 @@ class SameTextSizeAdapter(parsers.PDFParser):
         full_section_name = f"{section} {number} {title}".strip()
         section_match = process.extractOne(full_section_name, self.toc_hierarchy_schema.keys(), score_cutoff=98)
         if section_match:
-            utils.print_coloured(f"{full_section_name} -> {section_match[0]} ({section_match[1]})", "cyan")
+            if self.verbose:
+                utils.print_coloured(f"{full_section_name} -> {section_match[0]} ({section_match[1]})", "cyan")
             return section_match[0]
         variations = [
             f"{section} {number}".strip(),
@@ -371,15 +403,16 @@ class SameTextSizeAdapter(parsers.PDFParser):
             if variation:
                 section_match = process.extractOne(variation, self.toc_hierarchy_schema.keys(), score_cutoff=98)
                 if section_match:
-                    utils.print_coloured(f"{variation} -> {section_match[0]} ({section_match[1]})", "yellow")
+                    if self.verbose:
+                        utils.print_coloured(f"{variation} -> {section_match[0]} ({section_match[1]})", "yellow")
                     return section_match[0]
         if section != "":
             utils.print_coloured(f"Could not match: {full_section_name}", "red")
         return full_section_name
     
     def format_section_name_apx(self, section: str, number: str, title: str) -> str:
-        # this is not generalisable - maybe get LLM to dynamically generate the schema
-        # specific to UK legislation
+        # TODO this is not generalisable - maybe get LLM to dynamically generate the schema
+        # below is specific to UK legislation
         return f'{section} {number}'
     
     def format_section_name(self, section: str, number: str, title: str) -> str:
@@ -412,6 +445,7 @@ class SameTextSizeAdapter(parsers.PDFParser):
         return self.call_add_content_to_master_toc(master_toc)
     
     async def fake_create_master_toc(self) -> None:
+        """use existing files"""
         with open(f"{self.doc_title}_toc_hierarchy_schema.json", "r") as f:
             self.toc_hierarchy_schema = json.load(f)
         with open(f"{self.doc_title}_appendix_toc_hierarchy_schema.json", "r") as f:
@@ -443,9 +477,10 @@ class SameTextSizeAdapter(parsers.PDFParser):
                 f.write('\n'.join(self.appendix_md_lines))
     
     async def parse(self) -> Dict[str, Dict[str, Any]]:
-        await self.fake_create_master_toc()
-        #await self.call_create_master_toc()
-        utils.is_correct(prompt="check master tocs")
+        #await self.fake_create_master_toc()
+        await self.call_create_master_toc()
+        if self.checkpoint:
+            utils.is_correct(prompt="check master tocs")
         self.init_remaining_content_section_lines(self.content_md_lines, md_levels=False)
         master_toc_dict = self.add_content_to_master_toc(self.master_toc)
         if self.master_apx_toc:
