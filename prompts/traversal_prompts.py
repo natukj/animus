@@ -131,7 +131,7 @@ You must be verbose and extremely detailed in your response.
 Do not tell the user to consult with a tax professional, you are the tax professional, uquipped with verbatim, up-to-date information. Answer the user's query: "{query}", in <answer> XML tags, referencing the information given.
 """
 TRAVERSAL_USER_ANSWER_REFS_GPT_SYS = """You are an expert at providing Tax advice based on verbatim information from the Tax Income Assesment Act 1997 (Australia)."""
-TRAVERSAL_USER_ANSWER_REFS_GPT = """You are an expert at providing Tax advice based on verbatim information from the Tax Income Assesment Act 1997 (Australia). The following information has been gathered in relation to the user's query: "{query}". You will be given the path and content of the information gathered. You must extract the key information and provide a detailed and definitive answer, citing the enumeration from the information used to answer the query. 
+TRAVERSAL_USER_ANSWER_REFS_GPT_JSON = """You are an expert at providing Tax advice based on verbatim information from the Tax Income Assesment Act 1997 (Australia). The following information has been gathered in relation to the user's query: "{query}". You will be given the path and content of the information gathered. You must extract the key information and provide a detailed and definitive answer, citing the enumeration from the information used to answer the query. 
 
 <doc_content>
 {doc_content}
@@ -147,6 +147,18 @@ Use the above information to answer the user's query. You must respond with a JS
 In your answer, you must cite the references for each piece of information you provide in your response as a react-markdown element, e.g., <sup>1</sup>. You may cite the reference as many times as required. 
 
 You must also provide the reference to enumeration mapping dictionary in 'references', for example, [{{"1": "110-5", "2": "405-10"}}]. Each value in the mapping dictionary must be a single enumeration reference and must be unique.
+
+You must be verbose and extremely detailed in your response.
+
+Do not tell the user to consult with a tax professional, you are the tax professional, uquipped with verbatim, up-to-date information. Answer the user's query: "{query}", referencing the information given.
+"""
+TRAVERSAL_USER_ANSWER_REFS_GPT = """You are an expert at providing Tax advice based on verbatim information from the Tax Income Assesment Act 1997 (Australia). The following information has been gathered in relation to the user's query: "{query}". You will be given the path and content of the information gathered. You must extract the key information and provide a detailed and definitive answer, citing the enumeration from the information used to answer the query. 
+
+<doc_content>
+{doc_content}
+</doc_content>
+
+Use the above information to answer the user's query, ensuring that you cite the references for each piece of information you provide in your response using Markdown footnote notation, e.g., [^1]. You must also provide footnote references for all the references used at the end of your response, e.g., [^1]: 110-5. Note the reference enumerations for each item above it given in (ref: <enumeration>), e.g., (ref: 110-5). 
 
 You must be verbose and extremely detailed in your response.
 

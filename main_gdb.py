@@ -161,7 +161,7 @@ async def main():
 
             messages = [{"role": "system", "content": prompts.TRAVERSAL_USER_ANSWER_REFS_GPT_SYS}, 
                         {"role": "user", "content": formatted_answer_prompt}]
-            response = await llm.openai_client_chat_completion_request(messages)
+            response = await llm.openai_client_chat_completion_request(messages, response_format="text")
             responses = [("main", response.choices[0].message.content)]
         else:  # branch method not that good
             formatted_branches = await process_query_branch(args.query, doc_id, search, use_cluster=args.use_cluster, use_reranking=args.use_reranking)

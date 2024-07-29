@@ -76,7 +76,8 @@ class PDFToCParser:
 
         toc_pages = []
         i = 0
-        check_right = True 
+        check_right = True
+        max_gap = 5 
         while i < self.document.page_count - 1:
             page = self.document[i]
             page_rect = page.rect
@@ -88,8 +89,11 @@ class PDFToCParser:
             words = [w for w in words if fitz.Rect(w[:4]) in rect]
             page_num_count = sum(1 for w in words if w[4].isdigit())
             percentage = page_num_count / len(words) if len(words) > 0 else 0
-            if percentage > 0.4:
-                toc_pages.append(i)
+            if percentage > 0.4: # somewhat arbitrary threshold
+                if not toc_pages or i - toc_pages[-1] <= max_gap:
+                    toc_pages.append(i)
+                elif toc_pages:
+                    break
             i += 1
             if i == 15 and check_right: # logic if there are not toc page nums
                 if not toc_pages:
@@ -127,7 +131,7 @@ class PDFToCParser:
                     end_index -= 1
         verified_toc_pages = list(range(max(0, toc_pages[start_index] - start_count), toc_pages[end_index] + end_count + 1)) 
         utils.print_coloured(f"Verified ToC pages: {verified_toc_pages}", "green")
-        #utils.is_correct()
+        utils.is_correct()
         return verified_toc_pages
     
     async def extract_toc(self) -> None:

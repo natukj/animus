@@ -19,14 +19,19 @@ Australian Securities and Investments Commission Act 2001
 """
 
 async def main_run():
-    for i in range(2, 11):
-        vol_num = f"{i:02d}"
-        pdf_path = f"/Users/jamesqxd/Documents/norgai-docs/TAX/C2024C00046VOL{vol_num}.pdf"
-        print(f"Processing {pdf_path}")
-        router = PDFParserRouter()
-        parsed_content = await router.parse(pdf_path)
-        with open(f"/Users/jamesqxd/Documents/norgai-docs/TAX/parsed/final_aus_tax_{vol_num}.json", "w") as f:
-            json.dump(parsed_content, f, indent=4)
+    pdf_path="/Users/jamesqxd/Developer/norg-qxdparse/docs/GNU_C_reference_manual_libc.pdf"
+    router = PDFParserRouter()
+    parsed_content = await router.parse(pdf_path)
+    with open(f"/Users/jamesqxd/Developer/norg-qxdparse/docs/GNU_C_reference_manual_libc.json", "w") as f:
+        json.dump(parsed_content, f, indent=4)
+    # for i in range(2, 11):
+    #     vol_num = f"{i:02d}"
+    #     pdf_path = f"/Users/jamesqxd/Documents/norgai-docs/TAX/C2024C00046VOL{vol_num}.pdf"
+    #     print(f"Processing {pdf_path}")
+    #     router = PDFParserRouter()
+    #     parsed_content = await router.parse(pdf_path)
+    #     with open(f"/Users/jamesqxd/Documents/norgai-docs/TAX/parsed/final_aus_tax_{vol_num}.json", "w") as f:
+    #         json.dump(parsed_content, f, indent=4)
 asyncio.run(main_run())
 
 async def main_crane():
