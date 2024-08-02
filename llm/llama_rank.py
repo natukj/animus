@@ -13,14 +13,15 @@ async def llama_rank_docs(user_query: str, content_nodes: List[Dict[str, Any]], 
 
     async def process_item(node: Dict[str, Any]):
         async with semaphore:
-            doc_content = f"{node['id']}\n\nTitle: {node['title']}\n\nContent: {node['content']}\n\n"
+            doc_content = f"{node['path']}\n\nTitle: {node['title']}\n\nContent: {node['content']}\n\n"
             messages = [
                 {"role": "system", "content": SYS_PROMPT.format(query=user_query)},
                 {"role": "user", "content": doc_content}
             ]
             if utils.count_tokens(json.dumps(messages)) > 8000:
                 utils.print_coloured(f"Token count exceeds 8000 for {node['id']}. Skipping...", "yellow")
-                return node, "invalid"
+                # just add it to the list of relevant docs incase 
+                return node, "true"
             for attempt in range(max_retries):
                 try:
                     response = await groq_client_chat_completion_request(messages, model=model, max_tokens=1)
@@ -40,8 +41,8 @@ async def llama_rank_docs(user_query: str, content_nodes: List[Dict[str, Any]], 
         
         relevant_docs = []
         for node, api_result in results:
-            utils.print_coloured(f"{node['self_ref']}: {node['title']}", "blue")
-            utils.print_coloured(f"ID: {node['id']}", "cyan")
+            utils.print_coloured(f"{node['id']}: {node['title']}", "blue")
+            utils.print_coloured(f"{node['path']}", "cyan")
             if api_result == "true":
                 utils.print_coloured(api_result, "green")
                 relevant_docs.append(node)

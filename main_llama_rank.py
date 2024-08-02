@@ -15,7 +15,7 @@ async def main():
         user_query = input("Enter a query: ")
         start_time = time.time()
         embedding = await llm.openai_client_embedding_request(user_query)
-        all_docs = search.tree(doc_id, embedding, return_refs=False)
+        all_docs = search.tree(doc_id, embedding, return_refs=True)
         num_all_docs = len(all_docs)
         relevant_docs = await llm.llama_rank_docs(user_query, all_docs, model="llama3-8b-8192")
         num_relevant_docs = len(relevant_docs)
