@@ -57,7 +57,8 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
                 depth: List[int] = None, 
                 cluster: int = None,
                 id_startswith: str = None,
-                return_refs: bool = False) -> List[Dict[str, Any]]:
+                return_refs: bool = False,
+                clean_output: bool = True) -> List[Dict[str, Any]]:
         query = """
         CALL db.index.vector.queryNodes($index_name, 10000, $embedding)
         YIELD node, score
@@ -120,7 +121,35 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
             'id_startswith': id_startswith
         }
 
-        return self.execute_query(query, parameters)
+        results = self.execute_query(query, parameters)
+
+        # only return unique nodes
+        # NOTE this may lose some content nodes (refs of refs)
+        processed_results = []
+        unique_nodes = set()
+        def process_node(node):
+            return {
+                'id': node['id'].split('||', 1)[-1] if '||' in node['id'] else node['id'],
+                'self_ref': node.get('self_ref'),
+                'title': node['title'],
+                'content': node['content']
+            }
+        for result in results:
+            if result['id'] not in unique_nodes:
+                if clean_output:
+                    processed_results.append(process_node(result))
+                else:
+                    processed_results.append(result)
+                unique_nodes.add(result['id'])
+                if 'references' in result and result['references']:
+                    for ref in result['references']:
+                        if ref['id'] not in unique_nodes:
+                            if clean_output:
+                                processed_results.append(process_node(ref))
+                            else:
+                                processed_results.append(ref)
+                            unique_nodes.add(ref['id'])
+        return processed_results
     
     def section(self, 
             doc_id: Optional[str] = None,
@@ -311,9 +340,11 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
     
     def tree(self,
              doc_id: str, 
-             embedding: List[float]) -> List[Dict[str, Any]]:
+             embedding: List[float],
+             top_k: int = 50,
+             return_refs: bool = True) -> List[Dict[str, Any]]:
         # NOTE simple but probably the best
-        content_nodes = self.by_embedding(doc_id, embedding, "content_embedding", top_k=100, return_refs=True)
+        content_nodes = self.by_embedding(doc_id, embedding, "content_embedding", top_k=top_k, return_refs=return_refs)
         return content_nodes
     
     def tree_branch(self, 

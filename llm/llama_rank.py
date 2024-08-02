@@ -40,7 +40,7 @@ async def llama_rank_docs(user_query: str, content_nodes: List[Dict[str, Any]], 
         
         relevant_docs = []
         for node, api_result in results:
-            utils.print_coloured(f"Title: {node['title']}", "blue")
+            utils.print_coloured(f"{node['self_ref']}: {node['title']}", "blue")
             utils.print_coloured(f"ID: {node['id']}", "cyan")
             if api_result == "true":
                 utils.print_coloured(api_result, "green")
