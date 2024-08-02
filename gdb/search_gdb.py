@@ -313,7 +313,7 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
              doc_id: str, 
              embedding: List[float]) -> List[Dict[str, Any]]:
         # NOTE simple but probably the best
-        content_nodes = self.by_embedding(doc_id, embedding, "content_embedding", top_k=50,return_refs=True)
+        content_nodes = self.by_embedding(doc_id, embedding, "content_embedding", top_k=100, return_refs=True)
         return content_nodes
     
     def tree_branch(self, 

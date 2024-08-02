@@ -158,7 +158,7 @@ TRAVERSAL_USER_ANSWER_REFS_GPT = """You are an expert at providing Tax advice ba
 {doc_content}
 </doc_content>
 
-Use the above information to answer the user's query, ensuring that you cite the references for each piece of information you provide in your response using Markdown footnote notation, e.g., [^1]. You must also provide footnote references for all the references used at the end of your response, e.g., [^1]: 110-5. Note the reference enumerations for each item above it given in (ref: <enumeration>), e.g., (ref: 110-5). 
+Use the above information to answer the user's query, ensuring that you cite the references for each piece of information you provide in your response using Markdown footnote notation, e.g., [^1], [^2], [^3],..., [^n]. You must also provide footnote references for all the references used at the end of your response, e.g., [^1]: 110-5, [^2]: 40-880, ..., [^n]: 328-360. Each footnote can only contian a SINGLE reference enumeration. Note the reference enumerations for each item above are given in (ref: <enumeration>), e.g., (ref: 110-5). 
 
 You must be verbose and extremely detailed in your response.
 

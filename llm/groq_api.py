@@ -6,12 +6,12 @@ from groq import AsyncGroq
 client = AsyncGroq()
 GROQ_API_KEY = os.environ.get('GROQ_API_KEY')
 
-async def groq_client_chat_completion_request(messages, model="llama3-8b-8192"):
+async def groq_client_chat_completion_request(messages, model="llama3-8b-8192", max_tokens=1024):
     try:
         response = await client.chat.completions.create(
             model=model,
             messages=messages,
-            max_tokens=10,
+            max_tokens=max_tokens,
         )
         return response
     except Exception as e:
