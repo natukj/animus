@@ -127,31 +127,55 @@ class Neo4jSearch(gdb.SyncNeo4jConnection):
         # NOTE this may lose some content nodes (refs of refs)
         processed_results = []
         unique_nodes = set()
-        def process_node(node, clean=False):
-            if clean:
-                # CARE changing the formatting here: id -> path; self_ref -> id
-                # more intuitive for ai to interpret
-                processed = {
-                    'path': node['id'].split('||', 1)[-1] if '||' in node['id'] else node['id'],
-                    'id': node.get('self_ref'),
-                    'title': node['title'],
-                    'content': node['content']
-                }
-            else:
-                processed = node.copy()
-            
-            if 'references' in node:
-                processed['references'] = [process_node(ref, clean) for ref in node['references'] if ref['id'] not in unique_nodes]
-                for ref in processed['references']:
-                    unique_nodes.add(ref['id'])
-            return processed
-
+        def process_node(node):
+            # CARE changing the formatting here: id -> path; self_ref -> id
+            # more intuitive for ai to interpret
+            return {
+                'path': node['id'].split('||', 1)[-1] if '||' in node['id'] else node['id'],
+                'id': node.get('self_ref'),
+                'title': node['title'],
+                'content': node['content']
+            }
         for result in results:
             if result['id'] not in unique_nodes:
-                processed_results.append(process_node(result, clean_output))
+                if clean_output:
+                    processed_results.append(process_node(result))
+                else:
+                    processed_results.append(result)
                 unique_nodes.add(result['id'])
-
+                if 'references' in result and result['references']:
+                    for ref in result['references']:
+                        if ref['id'] not in unique_nodes:
+                            if clean_output:
+                                processed_results.append(process_node(ref))
+                            else:
+                                processed_results.append(ref)
+                            unique_nodes.add(ref['id'])
         return processed_results
+        ## keep references hierarchy (removed to simplify FE parsing)
+        # def process_node(node, clean=False):
+        #         if clean:
+        #             # CARE changing the formatting here: id -> path; self_ref -> id
+        #             # more intuitive for ai to interpret
+        #             processed = {
+        #                 'path': node['id'].split('||', 1)[-1] if '||' in node['id'] else node['id'],
+        #                 'id': node.get('self_ref'),
+        #                 'title': node['title'],
+        #                 'content': node['content']
+        #             }
+        #         else:
+        #             processed = node.copy()
+                
+        #         if 'references' in node:
+        #             processed['references'] = [process_node(ref, clean) for ref in node['references'] if ref['id'] not in unique_nodes]
+        #             for ref in processed['references']:
+        #                 unique_nodes.add(ref['id'])
+        #         return processed
+
+        #     for result in results:
+        #         if result['id'] not in unique_nodes:
+        #             processed_results.append(process_node(result, clean_output))
+        #             unique_nodes.add(result['id'])
     
     def section(self, 
             doc_id: Optional[str] = None,

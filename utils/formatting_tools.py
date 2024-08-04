@@ -28,7 +28,7 @@ def calculate_depths_and_hierarchy(data: list, current_path: str = "", depth: in
             path_components.append(item['title'])
 
         item_path = " ".join(path_components)
-        full_path = "/".join(filter(None, [current_path, item_path]))
+        full_path = ">".join(filter(None, [current_path, item_path]))
         
         has_children = 'children' in item
         
@@ -58,7 +58,7 @@ def traverse_contents(data: list, current_path: str ="", all_references: set = N
             path_components.append(item['title'])
 
         item_path = " ".join(path_components)
-        full_path = "/".join(filter(None, [current_path, item_path]))
+        full_path = ">".join(filter(None, [current_path, item_path]))
 
         if 'content' in item:
             if item.get('section') and item.get('number'):
@@ -172,7 +172,7 @@ def traverse_contents_depth(data: list, current_path: str ="", all_references: s
             path_components.append(item['title'])
 
         item_path = " ".join(path_components)
-        full_path = "/".join(filter(None, [current_path, item_path]))
+        full_path = ">".join(filter(None, [current_path, item_path]))
 
         if 'content' in item:
             if item.get('section') and item.get('number'):
@@ -194,7 +194,7 @@ def traverse_contents_depth(data: list, current_path: str ="", all_references: s
         else:
             utils.print_coloured(f"Missing content for {full_path}", "red")    
         if 'children' in item:
-            child_results, _ = traverse_contents(item['children'], full_path, all_references, depth + 1)
+            child_results, _ = traverse_contents_depth(item['children'], full_path, all_references, depth + 1)
             results.extend(child_results)
     
     return results, all_references

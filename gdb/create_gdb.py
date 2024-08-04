@@ -19,7 +19,26 @@ def parse_references(x):
         refs = x
     else:
         return []
-    return [ref.strip() for ref in refs if '995' not in ref]
+    return [ref.strip() for ref in refs]
+    # return [ref.strip() for ref in refs if '995' not in ref]
+# def parse_references(x, self_ref):
+#     if pd.isna(x):
+#         return []
+#     if isinstance(x, str):
+#         try:
+#             refs = ast.literal_eval(x)
+#         except (ValueError, SyntaxError):
+#             refs = x.split(',') if ',' in x else [x]
+#     elif isinstance(x, list):
+#         refs = x
+#     else:
+#         return []
+#     # check if self_ref is not NaN and is a string starting with 'A'
+#     if not pd.isna(self_ref) and isinstance(self_ref, str) and self_ref.startswith('A'):
+#         refs = [ref.strip() for ref in refs if ref.strip() != 'Appendix A']
+#     else:
+#         refs = [ref.strip() for ref in refs]
+#     return refs
 
 class GraphDatabaseBuilder(gdb.SyncNeo4jConnection):
     def __init__(self, uri: str, user: str, pwd: str, batch_size: int = 100):
@@ -131,23 +150,29 @@ class GraphDatabaseBuilder(gdb.SyncNeo4jConnection):
         relationships = []
         references = []
 
+        has_embedding = 'embedding' in df.columns
+        has_clusters = 'd_cluster' in df.columns and 'hl_cluster' in df.columns
+
         for _, row in df.iterrows():
             node_id = f"{doc_id}||{row['path']}"
             node = {
                 'id': node_id,
                 'title': row['title'],
                 'depth': int(row['depth']),
-                'self_ref': row['self_ref'],
+                'self_ref': row['self_ref'] if pd.notna(row['self_ref']) else '',
                 'content': row['content'],
-                'cluster': int(row['d_cluster'] if row['hierarchy_level'] > 0 else row['hl_cluster']),
                 'added': current_date
             }
             
-            if pd.notna(row['embedding']):
+            if has_embedding and pd.notna(row['embedding']):
                 node['embedding'] = utils.convert_embedding(row['embedding'])
 
+            if has_clusters:
+                node['cluster'] = int(row['d_cluster'] if row['hierarchy_level'] > 0 else row['hl_cluster'])
+
             if row['hierarchy_level'] == 0:
-                node['summary'] = row['summary']
+                if 'summary' in row and pd.notna(row['summary']):
+                    node['summary'] = row['summary']
                 node['label'] = 'Content'
             else:
                 node['label'] = 'Section'
@@ -168,6 +193,7 @@ class GraphDatabaseBuilder(gdb.SyncNeo4jConnection):
                 })
 
             refs = parse_references(row['references'])
+            #refs = parse_references(row['references'], row['self_ref'])
             for ref in refs:
                 references.append({
                     'source_id': node_id,
@@ -187,8 +213,9 @@ class GraphDatabaseBuilder(gdb.SyncNeo4jConnection):
             batch = references[i:i+self.batch_size]
             self.add_references_batch(batch)
 
-        embedding_dim = 1536
-        self.create_vector_index("section_embedding", "Section", "embedding", dimensions=embedding_dim)
-        self.create_vector_index("content_embedding", "Content", "embedding", dimensions=embedding_dim)
+        if has_embedding:
+            embedding_dim = 1536
+            self.create_vector_index("section_embedding", "Section", "embedding", dimensions=embedding_dim)
+            self.create_vector_index("content_embedding", "Content", "embedding", dimensions=embedding_dim)
 
         self.logger.info(f"Graph built for document {doc_id}")

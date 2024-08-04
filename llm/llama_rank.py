@@ -39,13 +39,18 @@ async def llama_rank_docs(user_query: str, content_nodes: List[Dict[str, Any]], 
         tasks = [process_item(node) for node in content_nodes]
         results = await asyncio.gather(*tasks)
         
-        relevant_docs = []
+        relevant_docs = {}
         for node, api_result in results:
             utils.print_coloured(f"{node['id']}: {node['title']}", "blue")
             utils.print_coloured(f"{node['path']}", "cyan")
             if api_result == "true":
                 utils.print_coloured(api_result, "green")
-                relevant_docs.append(node)
+                relevant_docs[node['id']] = {
+                    'path': node['path'],
+                    'id': node['id'],
+                    'title': node['title'],
+                    'content': node['content']
+                }
             elif api_result == "false":
                 utils.print_coloured(api_result, "red")
             else:

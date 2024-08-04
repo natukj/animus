@@ -6,5 +6,6 @@ from .gpt_formatter import (
     format_content_plus_summary_gpt,
 )
 from .code_formatter import (
+    add_refs_to_df,
     add_refs_to_contents,
 )
